@@ -4,7 +4,7 @@
 export: button
 
 -- import: fastn-community.github.io/design-system/form/icon-button as icon-button-module
-export: icon-button
+export: icon-button, circle-text-button
 
 -- import: fastn-community.github.io/design-system/typography as typography-module
 export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny, copy-large, copy-regular, copy-small, fine-print, source-code, link

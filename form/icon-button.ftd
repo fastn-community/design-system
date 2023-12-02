@@ -9,12 +9,6 @@
 
 
 
-
-
-
-
-
-
 -- component icon-button:
 optional caption title:
 ftd.image-src icon:
@@ -57,6 +51,8 @@ white-space: nowrap
 -- end: icon-button
 
 
+
+
 -- component square-button:
 ftd.image-src icon:
 optional string link:
@@ -69,6 +65,8 @@ integer kind: $kind-default
 
 -- end: square-button
 
+
+
 -- component circle-button:
 ftd.image-src icon:
 optional string link:
@@ -80,3 +78,20 @@ integer kind: $kind-default
 -- ftd.text: circle-button
 
 -- end: circle-button
+
+
+
+-- component circle-text-button:
+caption text:
+optional string link:
+
+-- ftd.text: $circle-text-button.text
+padding.px: 8
+color: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.cta-primary.base
+border-color: $inherited.colors.cta-primary.border
+border-width.px: 2
+border-radius.percent: 50
+link: $circle-text-button.link
+
+-- end: circle-text-button
