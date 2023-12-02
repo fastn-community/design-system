@@ -5,6 +5,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 -- component icon-button:
 optional caption title:
 ftd.image-src icon:
@@ -18,7 +28,31 @@ integer kind: $button.kind-default
 ;; private stuff
 boolean $hover: false
 
--- ftd.text: icon-button
+-- ftd.row:
+background.solid: $inherited.colors.background.step-1
+border-radius.px: 8
+padding-horizontal.px: 16
+padding-vertical.px: 10
+align-content: center
+background.solid if { icon-button.hover }: $inherited.colors.background.step-2
+$on-mouse-enter$: $ftd.set-bool($a = $icon-button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $icon-button.hover, v = false)
+spacing.fixed.px: 8
+width: hug-content
+min-width: auto
+link: $icon-button.link
+
+-- ftd.image: $icon-button.icon
+width.fixed.px: 16
+height.fixed.px: 16
+
+-- ftd.text: $icon-button.title
+if: { icon-button.title != NULL }
+role: $inherited.types.button-small
+color: $inherited.colors.text-strong
+white-space: nowrap
+
+-- end: ftd.row
 
 -- end: icon-button
 
