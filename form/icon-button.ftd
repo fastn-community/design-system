@@ -10,12 +10,13 @@ ftd.image-src icon:
 optional string link:
 integer variant: $button.solid
 integer width: $button.width-default
-integer size: $medium
+integer size: $button.medium
 boolean outline: false
-integer kind: $kind-default
+integer kind: $button.kind-default
 ;; private stuff
 boolean $hover: false
 
+-- ftd.text: icon-button
 
 -- end: icon-button
 
@@ -28,7 +29,7 @@ integer size: $medium
 boolean outline: false
 integer kind: $kind-default
 
-
+-- ftd.text: square-button
 
 -- end: square-button
 
@@ -39,5 +40,7 @@ boolean enabled: true
 integer size: $medium
 boolean outline: false
 integer kind: $kind-default
+
+-- ftd.text: circle-button
 
 -- end: circle-button

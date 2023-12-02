@@ -1,17 +1,17 @@
 -- import: fastn-community.github.io/dark-flame-cs
--- import: fastn-community.github.io/midnight-storm-typography
+-- import: fastn-community.github.io/roboto-typography
 -- import: fastn-community.github.io/design-system/button
 export: button
 
 
--- ftd.color-scheme colors: $dark-flame-colors.main
--- ftd.type-data types: $midnight-storm-typography.types
+-- ftd.color-scheme colors: $dark-flame-cs.main
+-- ftd.type-data types: $roboto-typography.types
 
 
 -- ftd.column:
 width: fill-container
 height: fill-container
-background: $colors.background.base
+background.solid: $colors.background.base
 
 
 -- ftd.text: design-system
