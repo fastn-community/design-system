@@ -1,7 +1,9 @@
 -- import: fastn-community.github.io/dark-flame-cs
 -- import: fastn-community.github.io/roboto-typography
--- import: fastn-community.github.io/design-system/button
+-- import: fastn-community.github.io/design-system/form/button
 export: button
+-- import: fastn-community.github.io/design-system/form/icon-button
+export: icon-button
 
 
 -- ftd.color-scheme colors: $dark-flame-cs.main
