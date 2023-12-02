@@ -5,8 +5,8 @@
 
 -- component icon-button:
 optional caption title:
-integer icon-position: $icon-at-start
 ftd.image-src icon:
+integer icon-position: $icon-at-start
 optional string link:
 integer variant: $button.solid
 integer width: $button.width-default
