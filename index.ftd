@@ -1,8 +1,8 @@
 -- import: fastn-community.github.io/dark-flame-cs
 -- import: fastn-community.github.io/roboto-typography
--- import: fastn-community.github.io/design-system/form/button
+-- import: fastn-community.github.io/design-system/form/button as button-module
 export: button
--- import: fastn-community.github.io/design-system/form/icon-button
+-- import: fastn-community.github.io/design-system/form/icon-button as icon-button-module
 export: icon-button
 
 
@@ -19,7 +19,6 @@ background.solid: $colors.background.base
 -- ftd.text: design-system
 role: $types.heading-large
 color: $colors.text-strong
-
 
 -- end: ftd.column
 
