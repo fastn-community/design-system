@@ -2,9 +2,12 @@
 -- import: fastn-community.github.io/roboto-typography
 -- import: fastn-community.github.io/design-system/form/button as button-module
 export: button
+
 -- import: fastn-community.github.io/design-system/form/icon-button as icon-button-module
 export: icon-button
 
+-- import: fastn-community.github.io/design-system/typography as typography-module
+export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny, copy-large, copy-regular, copy-small, fine-print, source-code, link
 
 -- ftd.color-scheme colors: $dark-flame-cs.main
 -- ftd.type-data types: $roboto-typography.types

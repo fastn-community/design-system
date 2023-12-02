@@ -1,0 +1,137 @@
+-- component heading-hero:
+caption or body text:
+ftd.color color: $inherited.colors.text-strong
+
+-- ftd.text: $heading-hero.text
+color: $heading-hero.color
+role: $inherited.types.heading-hero
+
+-- end: heading-hero
+
+
+-- component heading-large:
+caption or body text:
+ftd.color color: $inherited.colors.text-strong
+
+-- ftd.text: $heading-large.text
+color: $heading-large.color
+role: $inherited.types.heading-large
+
+-- end: heading-large
+
+
+-- component heading-medium:
+caption or body text:
+ftd.color color: $inherited.colors.text-strong
+
+-- ftd.text: $heading-medium.text
+color: $heading-medium.color
+role: $inherited.types.heading-medium
+
+-- end: heading-medium
+
+
+-- component heading-small:
+caption or body text:
+ftd.color color: $inherited.colors.text-strong
+
+-- ftd.text: $heading-small.text
+color: $heading-small.color
+role: $inherited.types.heading-small
+
+-- end: heading-small
+
+
+-- component heading-tiny:
+caption or body text:
+ftd.color color: $inherited.colors.text-strong
+
+-- ftd.text: $heading-tiny.text
+color: $heading-tiny.color
+role: $inherited.types.heading-tiny
+
+-- end: heading-tiny
+
+
+-- component copy-large:
+caption or body text:
+ftd.color color: $inherited.colors.text
+ftd.display display: inline
+
+-- ftd.text: $copy-large.text
+color: $copy-large.color
+role: $inherited.types.copy-large
+
+-- end: copy-large
+
+
+
+-- component copy-regular:
+caption or body text:
+ftd.color color: $inherited.colors.text
+ftd.display display: inline
+
+-- ftd.text: $copy-regular.text
+color: $copy-regular.color
+role: $inherited.types.copy-regular
+
+-- end: copy-regular
+
+
+-- component copy-small:
+caption or body text:
+ftd.color color: $inherited.colors.text
+ftd.display display: inline
+
+-- ftd.text: $copy-small.text
+color: $copy-small.color
+role: $inherited.types.copy-small
+
+-- end: copy-small
+
+
+-- component fine-print:
+caption or body text:
+ftd.color color: $inherited.colors.text
+ftd.display display: inline
+
+-- ftd.text: $fine-print.text
+color: $fine-print.color
+role: $inherited.types.fine-print
+
+-- end: fine-print
+
+
+
+
+-- component source-code:
+caption or body text:
+ftd.color color: $inherited.colors.text
+ftd.display display: inline
+
+-- ftd.text: $source-code.text
+color: $source-code.color
+role: $inherited.types.source-code
+display: $source-code.display
+
+-- end: source-code
+
+
+
+-- component link:
+caption or body text:
+string link:
+ftd.color color: $inherited.colors.cta-primary.base
+ftd.display display: inline
+
+-- ftd.text: $link.text
+color: $link.color
+role: $inherited.types.link
+display: $link.display
+
+-- end: link
+
+
+
+
+
