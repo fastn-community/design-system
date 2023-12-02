@@ -1,0 +1,79 @@
+-- integer kind-default: 0
+-- integer kind-primary: 1
+-- integer kind-secondary: 2
+-- integer kind-tertiary: 3
+-- integer kind-success: 4
+-- integer kind-warning: 5
+-- integer kind-danger: 6
+-- integer kind-info: 7
+
+
+-- or-type button-kind:
+
+-- constant integer kind-default: 0
+-- constant integer kind-primary: 1
+-- constant integer kind-secondary: 2
+-- constant integer kind-tertiary: 3
+-- constant integer kind-success: 4
+-- constant integer kind-warning: 5
+-- constant integer kind-danger: 6
+-- constant integer kind-info: 7
+
+-- end: button-kind
+
+
+-- integer solid: 0
+-- integer outline: 1
+-- integer ghost: 2
+-- integer link: 3
+
+
+;; default padding
+-- integer width-default: 0
+;; extra wide buttons
+-- integer width-wide: 1
+;; full width buttons
+-- integer width-full: 2
+
+
+-- integer large: 0
+-- integer medium: 1
+-- integer small: 2
+-- integer extra-small: 3
+
+
+-- component button:
+caption title:
+optional string link:
+boolean enabled: true
+integer width: $width-default
+integer size: $medium
+integer variant: $solid
+integer kind: $kind-default
+;; private stuff
+boolean $hover: false
+
+-- ftd.row:
+background.solid: $inherited.colors.background.step-1
+border-radius.px: 8
+padding-horizontal.px: 16
+padding-vertical.px: 10
+align-content: center
+background.solid if { button.hover }: $inherited.colors.background.step-2
+$on-mouse-enter$: $ftd.set-bool($a = $button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.hover, v = false)
+spacing.fixed.px: 8
+width: hug-content
+min-width: auto
+
+-- ftd.text: $button.title
+if: { button.title != NULL }
+;; if: { ftd.or-type-to-integer(button.kind) == 0 }
+role: $inherited.types.button-small
+color: $inherited.colors.text-strong
+link: $button.button-link
+white-space: nowrap
+
+-- end: ftd.row
+
+-- end: button

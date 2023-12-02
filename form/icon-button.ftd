@@ -1,0 +1,43 @@
+-- import: fastn-community.github.io/design-system/form/button
+
+-- integer icon-at-start: 0
+-- integer icon-at-end: 1
+
+-- component icon-button:
+optional caption title:
+integer icon-position: $icon-at-start
+ftd.image-src icon:
+optional string link:
+integer variant: $button.solid
+integer width: $button.width-default
+integer size: $medium
+boolean outline: false
+integer kind: $kind-default
+;; private stuff
+boolean $hover: false
+
+
+-- end: icon-button
+
+
+-- component square-button:
+ftd.image-src icon:
+optional string link:
+boolean enabled: true
+integer size: $medium
+boolean outline: false
+integer kind: $kind-default
+
+
+
+-- end: square-button
+
+-- component circle-button:
+ftd.image-src icon:
+optional string link:
+boolean enabled: true
+integer size: $medium
+boolean outline: false
+integer kind: $kind-default
+
+-- end: circle-button
