@@ -3,6 +3,7 @@ caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-hero.text
+width: fill-container
 color: $heading-hero.color
 role: $inherited.types.heading-hero
 
@@ -25,6 +26,7 @@ caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-medium.text
+width: fill-container
 color: $heading-medium.color
 role: $inherited.types.heading-medium
 
@@ -36,6 +38,7 @@ caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-small.text
+width: fill-container
 color: $heading-small.color
 role: $inherited.types.heading-small
 
@@ -47,6 +50,7 @@ caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-tiny.text
+width: fill-container
 color: $heading-tiny.color
 role: $inherited.types.heading-tiny
 

@@ -5,6 +5,7 @@
 children content:
 integer width: 800
 integer spacing: 20
+integer padding: 20
 
 
 -- ftd.column:
@@ -16,10 +17,12 @@ align-content: top-center
 -- dms.dark-mode-switcher-float:
 
 -- ftd.column:
-width.fixed.px: $blank-page.width
+max-width.fixed.px: $blank-page.width
 spacing.fixed.px: $blank-page.spacing
 color: $inherited.colors.text
+padding.px: $blank-page.padding
 children: $blank-page.content
+align-content: left
 
 -- end: ftd.column
 
