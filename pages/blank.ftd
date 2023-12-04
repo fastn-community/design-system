@@ -1,0 +1,30 @@
+-- import: fastn-community.github.io/dark-mode-switcher as dms
+
+
+-- component blank-page:
+children content:
+integer width: 800
+integer spacing: 20
+
+
+-- ftd.column:
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+align-content: top-center
+
+-- dms.dark-mode-switcher-float:
+
+-- ftd.column:
+width.fixed.px: $blank-page.width
+spacing.fixed.px: $blank-page.spacing
+color: $inherited.colors.text
+children: $blank-page.content
+
+-- end: ftd.column
+
+
+-- end: ftd.column
+
+
+-- end: blank-page
