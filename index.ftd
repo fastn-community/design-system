@@ -23,11 +23,7 @@ exposing: heading-large, copy-regular
 
 
 
--- blank.blank-page:
-
--- heading-large: design-system
-
--- copy-regular:
+-- blank.blank-page: design-system
 
 this is the package you ahve been waiting for!
 
