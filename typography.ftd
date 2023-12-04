@@ -1,5 +1,5 @@
 -- component heading-hero:
-caption or body text:
+caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-hero.text
@@ -10,7 +10,7 @@ role: $inherited.types.heading-hero
 
 
 -- component heading-large:
-caption or body text:
+caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-large.text
@@ -21,7 +21,7 @@ role: $inherited.types.heading-large
 
 
 -- component heading-medium:
-caption or body text:
+caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-medium.text
@@ -32,7 +32,7 @@ role: $inherited.types.heading-medium
 
 
 -- component heading-small:
-caption or body text:
+caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-small.text
@@ -43,7 +43,7 @@ role: $inherited.types.heading-small
 
 
 -- component heading-tiny:
-caption or body text:
+caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-tiny.text
@@ -54,7 +54,7 @@ role: $inherited.types.heading-tiny
 
 
 -- component copy-large:
-caption or body text:
+body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -67,7 +67,7 @@ role: $inherited.types.copy-large
 
 
 -- component copy-regular:
-caption or body text:
+body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -79,7 +79,7 @@ role: $inherited.types.copy-regular
 
 
 -- component copy-small:
-caption or body text:
+body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -91,7 +91,7 @@ role: $inherited.types.copy-small
 
 
 -- component fine-print:
-caption or body text:
+body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -101,20 +101,6 @@ role: $inherited.types.fine-print
 
 -- end: fine-print
 
-
-
-
--- component source-code:
-caption or body text:
-ftd.color color: $inherited.colors.text
-ftd.display display: inline
-
--- ftd.text: $source-code.text
-color: $source-code.color
-role: $inherited.types.source-code
-display: $source-code.display
-
--- end: source-code
 
 
 
