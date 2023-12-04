@@ -333,7 +333,7 @@ td {
     </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column __w-3 __h-4 __bgc-5 __jc-6 __ali-7"><div data-id="4" class="ft_row __pos-8 __p-9 __bw-10 __br-11 __bc-12 __b-13 __r-14 __z-15 __bgc-16"><comment data-id="5"></comment><div data-id="6" class="ft_row __cur-17"><img data-id="7" src="-/fastn-community.github.io/dark-mode-switcher/static/system-mode-active.png" class="__as-18 __w-19 __h-20"></img></div><comment data-id="8"></comment><comment data-id="9"></comment></div><div data-id="10" class="ft_column __w-21 __c-22 __g-23"><div data-id="11" class="__rl-24 __c-25">design-system</div></div></div></div></body><style id="styles">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column __w-3 __h-4 __bgc-5 __jc-6 __ali-7"><div data-id="4" class="ft_row __pos-8 __p-9 __bw-10 __br-11 __bc-12 __b-13 __r-14 __z-15 __bgc-16"><comment data-id="5"></comment><div data-id="6" class="ft_row __cur-17"><img data-id="7" src="-/fastn-community.github.io/dark-mode-switcher/static/system-mode-active.png" class="__as-18 __w-19 __h-20"></img></div><comment data-id="8"></comment><comment data-id="9"></comment></div><div data-id="10" class="ft_column __p-21 __c-22 __mxw-23 __jc-24 __ali-25 __g-26"><div data-id="11" class="__rl-27 __c-28">design-system</div><div data-id="12" class="__rl-29 __c-30">this is the package you ahve been waiting for!</div></div></div></div></body><style id="styles">
     .__w-1 { width: 100%; }
 	.__h-2 { height: 100%; }
 	.__w-3 { width: 100%; }
@@ -356,18 +356,27 @@ td {
 	.__as-18 { align-self: center; }
 	.__w-19 { width: 19px; }
 	.__h-20 { height: 19px; }
-	.__w-21 { width: 800px; }
+	.__p-21 { padding: 20px; }
 	.__c-22 { color: #584b42 !important; }
 	body.dark .__c-22 { color: #a8a29e !important; }
 	.__c-22:visited { color: #584b42 !important; }
 	body.dark  .__c-22:visited { color: #a8a29e !important; }
-	.__g-23 { gap: 20px; }
-	.__rl-24 {  font-family: sans-serif; font-size: 50px; font-weight: 400; line-height: 65px; }
-	body.mobile .__rl-24 {  font-family: sans-serif; font-size: 36px; font-weight: 400; line-height: 54px; }
-	.__c-25 { color: #141414 !important; }
-	body.dark .__c-25 { color: #ffffff !important; }
-	.__c-25:visited { color: #141414 !important; }
-	body.dark  .__c-25:visited { color: #ffffff !important; }
+	.__mxw-23 { max-width: 800px; }
+	.__jc-24 { justify-content: center; }
+	.__ali-25 { align-items: start; }
+	.__g-26 { gap: 20px; }
+	.__rl-27 {  font-family: sans-serif; font-size: 50px; font-weight: 400; line-height: 65px; }
+	body.mobile .__rl-27 {  font-family: sans-serif; font-size: 36px; font-weight: 400; line-height: 54px; }
+	.__c-28 { color: #141414 !important; }
+	body.dark .__c-28 { color: #ffffff !important; }
+	.__c-28:visited { color: #141414 !important; }
+	body.dark  .__c-28:visited { color: #ffffff !important; }
+	.__rl-29 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+	body.mobile .__rl-29 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+	.__c-30 { color: #584b42 !important; }
+	body.dark .__c-30 { color: #a8a29e !important; }
+	.__c-30:visited { color: #584b42 !important; }
+	body.dark  .__c-30:visited { color: #a8a29e !important; }
     </style>
 <script>
     (function() {
@@ -379,6 +388,11 @@ td {
       content: fastn.mutableList([function (root, inherited) {
         let rooti0 = fastn_community_github_io_design_system___heading_large(root, inherited, {
           text: "design-system"
+        });
+      },
+      function (root, inherited) {
+        let rooti0 = fastn_community_github_io_design_system___copy_regular(root, inherited, {
+          text: "this is the package you ahve been waiting for!"
         });
       }
       ])
@@ -521,6 +535,7 @@ let fastn_community_github_io_design_system_pages_blank__blank_page = function (
       content: fastn.mutableList([]),
       width: 800,
       spacing: 20,
+      padding: 20,
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
@@ -534,8 +549,10 @@ let fastn_community_github_io_design_system_pages_blank__blank_page = function (
     },
     function (root, inherited) {
       let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
-      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(__args__.width)), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Padding, fastn_dom.Length.Px(__args__.padding), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(__args__.width)), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Left, inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(__args__.spacing)), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Children, __args__.content, inherited);
     }
@@ -566,8 +583,31 @@ let fastn_community_github_io_design_system_typography__heading_large = function
   }
 }
 global["fastn_community_github_io_design_system_typography__heading_large"] = fastn_community_github_io_design_system_typography__heading_large;
+let fastn_community_github_io_design_system_typography__copy_regular = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "fastn_community_github_io_design_system";
+  try {
+    let __args__ = {
+      color: inherited.get("colors").get("text"),
+      display: fastn_dom.Display.Inline,
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Text);
+    parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.text, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Color, __args__.color, inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["fastn_community_github_io_design_system_typography__copy_regular"] = fastn_community_github_io_design_system_typography__copy_regular;
 let fastn_community_github_io_design_system___heading_large = fastn_community_github_io_design_system_typography__heading_large;
 global["fastn_community_github_io_design_system___heading_large"] = fastn_community_github_io_design_system___heading_large;
+let fastn_community_github_io_design_system___copy_regular = fastn_community_github_io_design_system_typography__copy_regular;
+global["fastn_community_github_io_design_system___copy_regular"] = fastn_community_github_io_design_system___copy_regular;
 fastn_dom.codeData.availableThemes["coldark-theme.dark"] = "code-theme-9A3284FD117DFF7CFD432FF860A5E14169FA592BC3DA4F5E8A6975143F5EA07F.css";
 fastn_dom.codeData.availableThemes["coldark-theme.light"] = "code-theme-99CD7B013C96C4632F0AEA39AC265387B814AE85A7D33666A4AE4BEFF59016D0.css";
 fastn_dom.codeData.availableThemes["coy-theme"] = "code-theme-B3AEA322EADEDA61F0E219845A0E9C8E73F6345E49362B46E6F52CEE40471248.css";
