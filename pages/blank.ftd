@@ -1,11 +1,21 @@
 -- import: fastn-community.github.io/dark-mode-switcher as dms
+-- import: fastn-community.github.io/design-system/typography
 
 
 -- component blank-page:
+optional caption title:
+optional body description:
+optional string seo-title: $blank-page.title
+optional string seo-description: $blank-page.description
 children content:
 integer width: 800
 integer spacing: 20
 integer padding: 20
+
+
+-- ftd.document:
+title: $blank-page.seo-title
+description: $blank-page.seo-description
 
 
 -- ftd.column:
@@ -21,13 +31,32 @@ max-width.fixed.px: $blank-page.width
 spacing.fixed.px: $blank-page.spacing
 color: $inherited.colors.text
 padding.px: $blank-page.padding
-children: $blank-page.content
 align-content: left
 
+
+
+-- typography.heading-large: $blank-page.title
+if: { blank-page.title != NULL }
+
+-- typography.copy-regular:
+if: { blank-page.description != NULL }
+
+$blank-page.description
+
+-- ftd.column:
+width: fill-container
+children: $blank-page.content
+spacing.fixed.px: $blank-page.spacing
+
 -- end: ftd.column
 
 
 -- end: ftd.column
+
+
+-- end: ftd.column
+
+-- end: ftd.document
 
 
 -- end: blank-page
