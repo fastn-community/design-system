@@ -1,0 +1,36 @@
+-- import: fastn-community.github.io/design-system/pages/full-width
+
+-- component hero-with-two-cta:
+module design-system: ds
+integer flush: $full-width.flush-to-header
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.row:
+width if { hero-with-two-cta.flush == full-width.flush-full }: fill-container
+;; width.fixed.px if { hero-with-two-cta.flush == full-width.flush-narrow }: $inherited.header-width-narrow
+;; width.fixed.px if { hero-with-two-cta.flush == full-width.flush-wide }: $inherited.header-width-wide
+width.fixed: $inherited.header-width
+align-content: center
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 300
+background.solid: red
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 300
+background.solid: yellow
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: hero-with-two-cta

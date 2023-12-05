@@ -11,10 +11,13 @@ export: button
 export: blank-page
 
 -- import: fastn-community.github.io/design-system/pages/full-width
-export: full-width-page
+export: full-width-page, section-grid
 
 -- import: fastn-community.github.io/design-system/headers/basic-header as bhm
 export: basic-header
+
+-- import: fastn-community.github.io/design-system/hero/with-two-cta
+export: hero-with-two-cta
 
 
 

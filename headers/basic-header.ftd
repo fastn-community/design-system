@@ -3,24 +3,8 @@
 
 
 
-
--- integer width-full: 0
--- integer width-half: 1
--- integer one-by-three: 2
--- integer two-by-three: 3
--- integer one-by-four: 4
--- integer three-by-four: 5
--- integer width-sidebar: 6
-
--- integer flush-to-header: 0
--- integer flush-full: 1
--- integer flush-wide: 2
--- integer flush-narrow: 3
-
-
 -- component basic-header:
 module design-system: ds
-integer width: $full-width.width-full
 integer flush: $full-width.flush-to-header
 
 -- ftd.column:
