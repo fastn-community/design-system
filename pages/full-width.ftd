@@ -60,17 +60,24 @@ children: $full-width-page.content
 
 -- component section-grid:
 module design-system: ds
-integer flush: $full-width.flush-to-header
+integer flush: $flush-to-header
 children content:
+
+-- ftd.column:
+width: fill-container
+align-content: center
 
 -- ftd.row:
 width if { section-grid.flush == flush-full }: fill-container
-width.fixed.px: $inherited.header-width
+width.fixed if { section-grid.flush == flush-narrow }: $inherited.widths.narrow
+width.fixed if { section-grid.flush == flush-wide }: $inherited.widths.wide
+width.fixed: $inherited.widths.regular
 children: $section-grid.content
 align-content: center
 
 -- end: ftd.row
 
+-- end: ftd.column
 
 -- end: section-grid
 
