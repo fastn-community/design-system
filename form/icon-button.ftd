@@ -25,14 +25,14 @@ boolean $hover: false
 -- ftd.row:
 background.solid: $inherited.colors.background.step-1
 border-radius.px: 8
-padding-horizontal.px: 16
-padding-vertical.px: 10
+padding-horizontal.px: 18
+padding-vertical.px: 16
 align-content: center
 background.solid if { icon-button.hover }: $inherited.colors.background.step-2
 $on-mouse-enter$: $ftd.set-bool($a = $icon-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $icon-button.hover, v = false)
 spacing.fixed.px: 8
-width: hug-content
+width.fixed.px: 322
 min-width: auto
 link: $icon-button.link
 
