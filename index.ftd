@@ -25,8 +25,11 @@ exposing: heading-large, copy-regular
 
 -- blank.blank-page: design-system
 
-this is the package you ahve been waiting for!
+This is the package you have been waiting for!
+
+- [Button](form/button/)
+- [Icon Button](form/icon-button/)
+- [Button Group](form/button-group/)
+- [typography](typography/)
 
 -- end: blank.blank-page
-
-
