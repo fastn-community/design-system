@@ -1,0 +1,57 @@
+-- import: fastn-community.github.io/dark-mode-switcher as dms
+
+
+-- integer width-full: 0
+-- integer width-half: 1
+-- integer one-by-three: 2
+-- integer two-by-three: 3
+-- integer one-by-four: 4
+-- integer three-by-four: 5
+-- integer width-sidebar: 6
+
+-- integer flush-to-header: 0
+-- integer flush-full: 1
+-- integer flush-wide: 2
+-- integer flush-narrow: 3
+
+
+-- component full-width-page:
+optional string seo-title:
+optional string seo-description:
+children content:
+module design-system: ds
+ftd.length.px header-width: 800
+ftd.length.px spacing: 0
+
+-- ftd.document:
+title: $full-width-page.seo-title
+description: $full-width-page.seo-description
+colors: $full-width-page.design-system.colors
+types: $full-width-page.design-system.types
+
+
+-- dms.dark-mode-switcher-float:
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+spacing.fixed: $full-width-page.spacing
+color: $inherited.colors.text
+children: $full-width-page.content
+
+-- end: ftd.column
+
+-- end: ftd.document
+
+
+-- end: full-width-page
+
+
+
+-- full-width-page:
+design-system: ds
+
+-- ds.basic-header:
+design-system: ds
+
+-- end: full-width-page
