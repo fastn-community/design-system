@@ -10,6 +10,13 @@ export: button
 -- import: fastn-community.github.io/design-system/pages/blank
 export: blank-page
 
+-- import: fastn-community.github.io/design-system/pages/full-width
+export: full-width-page
+
+-- import: fastn-community.github.io/design-system/headers/basic-header as bhm
+export: basic-header
+
+
 
 -- import: fastn-community.github.io/design-system/form/icon-button as icon-button-module
 export: icon-button, circle-text-button, phosphor-icon-button, fa-icon-button
@@ -45,6 +52,9 @@ This is the package you have been waiting for!
 - [Icon Buttons](form/icon-button/)
 - [Button Group (WIP)](form/button-group/)
 - [Typography](typography/)
+- [Empty Page](pages/empty/)
+- [Full Width Page](pages/full-width/)
+- [Basic Header](headers/basic-header/)
 
 
 

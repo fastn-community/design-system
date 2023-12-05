@@ -16,6 +16,8 @@ module design-system: ds
 -- ftd.document:
 title: $blank-page.seo-title
 description: $blank-page.seo-description
+colors: $blank-page.design-system.colors
+types: $blank-page.design-system.types
 
 -- ftd.column:
 background.solid: $inherited.colors.background.base
@@ -26,7 +28,8 @@ align-content: top-center
 -- dms.dark-mode-switcher-float:
 
 -- ftd.column:
-max-width.fixed: $blank-page.width
+width.fixed if { ftd.device == "desktop" }: $blank-page.width
+width: fill-container
 spacing.fixed: $blank-page.spacing
 color: $inherited.colors.text
 padding: $blank-page.padding
