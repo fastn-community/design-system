@@ -20,11 +20,12 @@ optional string seo-title:
 optional string seo-description:
 children content:
 module design-system: ds
-ftd.length.px header-width: 800
+integer header-width: 800
 ftd.length.px spacing: 0
-;; integer header-width-narrow: $ftd.multiply(a=$full-width-page.header-width, b=0.8)
-;; integer header-width-wide: $ftd.multiply(a=$full-width-page.header-width, b=1.2)
-
+;; integer header-width-narrow: $multiply(a=$full-width-page.header-width, b=0.8)
+integer header-width-narrow: 700
+;; integer header-width-wide: $multiply(a=$full-width-page.header-width, b=1.2)
+integer header-width-wide: 900
 
 -- ftd.document:
 title: $full-width-page.seo-title
@@ -59,7 +60,7 @@ children content:
 
 -- ftd.row:
 width if { section-grid.flush == flush-full }: fill-container
-width.fixed: $inherited.header-width
+width.fixed.px: $inherited.header-width
 children: $section-grid.content
 align-content: center
 
@@ -82,7 +83,29 @@ design-system: ds
 
 -- ds.hero-with-two-cta:
 design-system: ds
+flush: $flush-wide
 
+-- ds.basic-header:
+design-system: ds
+flush: $flush-full
+
+-- ds.hero-with-two-cta:
+design-system: ds
+flush: $flush-narrow
+
+-- ds.basic-header:
+design-system: ds
 ;; flush: $flush-full
 
+-- ds.hero-with-two-cta:
+design-system: ds
+
 -- end: full-width-page
+
+
+
+-- integer multiply(a, b):
+integer a:
+decimal b:
+
+a * b
