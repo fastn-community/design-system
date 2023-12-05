@@ -19,6 +19,7 @@ integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
 integer kind: $button.kind-default
+module design-system: ds
 ;; private stuff
 boolean $hover: false
 
@@ -54,14 +55,20 @@ white-space: nowrap
 
 
 -- component square-button:
-ftd.image-src icon:
+caption ftd.image-src icon:
 optional string link:
 boolean enabled: true
-integer size: $medium
+integer size: $button.medium
 boolean outline: false
-integer kind: $kind-default
+integer kind: $button.kind-default
+module design-system: ds
 
--- ftd.text: square-button
+-- ftd.image: $square-button.icon
+width.fixed.px: 30
+height.fixed.px: 30
+border-radius.px: 5
+background.solid: $inherited.colors.background.step-1
+padding.px: 5
 
 -- end: square-button
 
@@ -71,11 +78,18 @@ integer kind: $kind-default
 ftd.image-src icon:
 optional string link:
 boolean enabled: true
-integer size: $medium
+integer size: $button.medium
 boolean outline: false
-integer kind: $kind-default
+integer kind: $button.kind-default
+module design-system: ds
 
--- ftd.text: circle-button
+-- ftd.image: $circle-button.icon
+width.fixed.px: 30
+height.fixed.px: 30
+border-radius.percent: 50
+background.solid: $inherited.colors.background.step-1
+padding.px: 5
+
 
 -- end: circle-button
 
@@ -84,6 +98,7 @@ integer kind: $kind-default
 -- component circle-text-button:
 caption text:
 optional string link:
+module design-system: ds
 
 -- ftd.text: $circle-text-button.text
 padding.px: 8
@@ -95,3 +110,48 @@ border-radius.percent: 50
 link: $circle-text-button.link
 
 -- end: circle-text-button
+
+
+
+
+
+
+-- ds.blank-page: Icon Button
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+
+-- end: ds.rendered
+
+
+-- ds.rendered:
+
+\-- square-button:
+icon: $assets.files.assets.convert.svg
+link: /
+-- square-button:
+icon: $assets.files.assets.convert.svg
+link: /
+
+-- end: ds.rendered
+
+
+-- ds.rendered:
+
+\-- circle-button:
+icon: $assets.files.assets.convert.svg
+link: /
+-- circle-button:
+icon: $assets.files.assets.convert.svg
+link: /
+
+-- end: ds.rendered
+
+-- end: ds.blank-page
