@@ -142,6 +142,10 @@ link: $link.link
 
 -- ds.blank-page: Typography
 
+-- ds.phosphor-icon-button: Back
+icon: arrow-left
+link: index.html
+
 -- ds.rendered:
 
 \-- heading-hero: Heading hero typography
