@@ -118,16 +118,40 @@ link: $circle-text-button.link
 
 -- ds.blank-page: Icon Button
 
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
 -- icon-button: Icon
 icon: $assets.files.assets.convert.svg
 link: /
 
+-- end: ds.rendered
+
+
+-- ds.rendered:
+
+\-- square-button:
+icon: $assets.files.assets.convert.svg
+link: /
 -- square-button:
 icon: $assets.files.assets.convert.svg
 link: /
 
+-- end: ds.rendered
+
+
+-- ds.rendered:
+
+\-- circle-button:
+icon: $assets.files.assets.convert.svg
+link: /
 -- circle-button:
 icon: $assets.files.assets.convert.svg
 link: /
+
+-- end: ds.rendered
 
 -- end: ds.blank-page
