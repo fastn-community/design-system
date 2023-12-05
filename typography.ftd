@@ -1,4 +1,5 @@
 -- component heading-hero:
+module design-system: ds
 caption text:
 ftd.color color: $inherited.colors.text-strong
 
@@ -11,6 +12,7 @@ role: $inherited.types.heading-hero
 
 
 -- component heading-large:
+module design-system: ds
 caption text:
 ftd.color color: $inherited.colors.text-strong
 
@@ -22,6 +24,7 @@ role: $inherited.types.heading-large
 
 
 -- component heading-medium:
+module design-system: ds
 caption text:
 ftd.color color: $inherited.colors.text-strong
 
@@ -34,6 +37,7 @@ role: $inherited.types.heading-medium
 
 
 -- component heading-small:
+module design-system: ds
 caption text:
 ftd.color color: $inherited.colors.text-strong
 
@@ -46,6 +50,7 @@ role: $inherited.types.heading-small
 
 
 -- component heading-tiny:
+module design-system: ds
 caption text:
 ftd.color color: $inherited.colors.text-strong
 
@@ -58,6 +63,7 @@ role: $inherited.types.heading-tiny
 
 
 -- component copy-large:
+module design-system: ds
 body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
@@ -71,6 +77,7 @@ role: $inherited.types.copy-large
 
 
 -- component copy-regular:
+module design-system: ds
 body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
@@ -83,6 +90,7 @@ role: $inherited.types.copy-regular
 
 
 -- component copy-small:
+module design-system: ds
 body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
@@ -95,6 +103,7 @@ role: $inherited.types.copy-small
 
 
 -- component fine-print:
+module design-system: ds
 body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
@@ -109,6 +118,7 @@ role: $inherited.types.fine-print
 
 
 -- component link:
+module design-system: ds
 caption or body text:
 string link:
 ftd.color color: $inherited.colors.cta-primary.base
@@ -121,8 +131,3 @@ display: $link.display
 link: $link.link
 
 -- end: link
-
-
-
-
-

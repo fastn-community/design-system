@@ -15,7 +15,7 @@
     
                 <script src="markdown-24E09EFC0C2B9A11DEA9AC71888EB3A1E85864FA7D9C95A3EB5075A0E0F49A5F.js"></script>
                 <script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
-                <script src="default-302CDB74C5F4F7A1FBACC04907C4B203DE7BAFF514C94A84F7951CB978897466.js"></script>
+                <script src="default-EA618DCF070516DCABB9D2C0B3A41E272F9C78636F938ACAF9FD79574C470CC7.js"></script>
                 <link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
                 
             
@@ -333,7 +333,7 @@ td {
     </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column ft_full_size"><div data-id="4" class="ft_column __w-3 __h-4 __bgc-5 __jc-6 __ali-7"><div data-id="5" class="ft_row __pos-8 __p-9 __bw-10 __br-11 __bc-12 __b-13 __r-14 __z-15 __bgc-16"><comment data-id="6"></comment><div data-id="7" class="ft_row __cur-17"><img data-id="8" src="-/fastn-community.github.io/dark-mode-switcher/static/system-mode-active.png" class="__as-18 __w-19 __h-20"></img></div><comment data-id="9"></comment><comment data-id="10"></comment></div><div data-id="11" class="ft_column __p-21 __c-22 __mxw-23 __jc-24 __ali-25 __g-26"><comment data-id="12"></comment><div data-id="13" class="__rl-27 __c-28">design-system</div><comment data-id="14"></comment><div data-id="15" class="__rl-29 __c-30">this is the package you ahve been waiting for!</div><div data-id="16" class="ft_column __w-31 __g-32"></div></div></div></div></div></body><style id="styles">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column ft_full_size"><div data-id="4" class="ft_column __w-3 __h-4 __bgc-5 __jc-6 __ali-7"><div data-id="5" class="ft_row __pos-8 __p-9 __bw-10 __br-11 __bc-12 __b-13 __r-14 __z-15 __bgc-16"><comment data-id="6"></comment><div data-id="7" class="ft_row __cur-17"><img data-id="8" src="-/fastn-community.github.io/dark-mode-switcher/static/system-mode-active.png" class="__as-18 __w-19 __h-20"></img></div><comment data-id="9"></comment><comment data-id="10"></comment></div><div data-id="11" class="ft_column __p-21 __c-22 __mxw-23 __jc-24 __ali-25 __g-26"><comment data-id="12"></comment><div data-id="13" class="__rl-27 __c-28">design-system</div><comment data-id="14"></comment><div data-id="15" class="__rl-29 __c-30">This is the package you have been waiting for!</div><div data-id="16" class="ft_column __w-31 __g-32"></div></div></div></div></div></body><style id="styles">
     .__w-1 { width: 100%; }
 	.__h-2 { height: 100%; }
 	.__w-3 { width: 100%; }
@@ -388,7 +388,7 @@ td {
   try {
     let parenti0 = fastn_community_github_io_design_system_pages_blank__blank_page(parent, inherited, {
       title: "design-system",
-      description: "this is the package you ahve been waiting for!"
+      description: "This is the package you have been waiting for!"
     });
   } finally {
     __fastn_package_name__ = __fastn_super_package_name__;
@@ -525,6 +525,7 @@ let fastn_community_github_io_design_system_typography__heading_large = function
   __fastn_package_name__ = "fastn_community_github_io_design_system";
   try {
     let __args__ = {
+      design_system: fastn.module("fastn_community_github_io_design_system", global),
       color: inherited.get("colors").get("text_strong"),
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
@@ -545,6 +546,7 @@ let fastn_community_github_io_design_system_typography__copy_regular = function 
   __fastn_package_name__ = "fastn_community_github_io_design_system";
   try {
     let __args__ = {
+      design_system: fastn.module("fastn_community_github_io_design_system", global),
       color: inherited.get("colors").get("text"),
       display: fastn_dom.Display.Inline,
     };
@@ -569,9 +571,10 @@ let fastn_community_github_io_design_system_pages_blank__blank_page = function (
       title: null,
       description: null,
       content: fastn.mutableList([]),
-      width: 800,
-      spacing: 20,
-      padding: 20,
+      width: fastn_dom.Length.Px(800),
+      spacing: fastn_dom.Length.Px(20),
+      padding: fastn_dom.Length.Px(20),
+      design_system: fastn.module("fastn_community_github_io_design_system", global),
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
@@ -589,18 +592,18 @@ let fastn_community_github_io_design_system_pages_blank__blank_page = function (
       },
       function (root, inherited) {
         let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
-        rooti0.setProperty(fastn_dom.PropertyKind.Padding, fastn_dom.Length.Px(__args__.padding), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Padding, __args__.padding, inherited);
         rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
-        rooti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(__args__.width)), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn_dom.Resizing.Fixed(__args__.width), inherited);
         rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Left, inherited);
-        rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(__args__.spacing)), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(__args__.spacing), inherited);
         rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
           fastn_dom.conditionalDom(root, [
             __args__.title
           ], function () {
             return (fastn_utils.getter(__args__.title) !== null);
           }, function (root) {
-            let rooti0 = fastn_community_github_io_design_system_typography__heading_large(root, inherited, {
+            let rooti0 = fastn_utils.getStaticValue(__args__.design_system.get("heading_large")) (root, inherited, {
               text: __args__.title
             });
             return rooti0;
@@ -612,7 +615,7 @@ let fastn_community_github_io_design_system_pages_blank__blank_page = function (
           ], function () {
             return (fastn_utils.getter(__args__.description) !== null);
           }, function (root) {
-            let rooti0 = fastn_community_github_io_design_system_typography__copy_regular(root, inherited, {
+            let rooti0 = fastn_utils.getStaticValue(__args__.design_system.get("copy_regular")) (root, inherited, {
               text: __args__.description
             });
             return rooti0;
@@ -621,7 +624,7 @@ let fastn_community_github_io_design_system_pages_blank__blank_page = function (
         function (root, inherited) {
           let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
           rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
-          rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(__args__.spacing)), inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(__args__.spacing), inherited);
           rooti0.setProperty(fastn_dom.PropertyKind.Children, __args__.content, inherited);
         }
         ]), inherited);
@@ -637,6 +640,10 @@ let fastn_community_github_io_design_system_pages_blank__blank_page = function (
   }
 }
 global["fastn_community_github_io_design_system_pages_blank__blank_page"] = fastn_community_github_io_design_system_pages_blank__blank_page;
+let fastn_community_github_io_design_system__heading_large = fastn_community_github_io_design_system_typography__heading_large;
+global["fastn_community_github_io_design_system__heading_large"] = fastn_community_github_io_design_system__heading_large;
+let fastn_community_github_io_design_system__copy_regular = fastn_community_github_io_design_system_typography__copy_regular;
+global["fastn_community_github_io_design_system__copy_regular"] = fastn_community_github_io_design_system__copy_regular;
 fastn_dom.codeData.availableThemes["coldark-theme.dark"] = "code-theme-9A3284FD117DFF7CFD432FF860A5E14169FA592BC3DA4F5E8A6975143F5EA07F.css";
 fastn_dom.codeData.availableThemes["coldark-theme.light"] = "code-theme-99CD7B013C96C4632F0AEA39AC265387B814AE85A7D33666A4AE4BEFF59016D0.css";
 fastn_dom.codeData.availableThemes["coy-theme"] = "code-theme-B3AEA322EADEDA61F0E219845A0E9C8E73F6345E49362B46E6F52CEE40471248.css";

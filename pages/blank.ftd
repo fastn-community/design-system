@@ -8,15 +8,14 @@ optional body description:
 optional string seo-title: $blank-page.title
 optional string seo-description: $blank-page.description
 children content:
-integer width: 800
-integer spacing: 20
-integer padding: 20
-
+ftd.length.px width: 800
+ftd.length.px spacing: 20
+ftd.length.px padding: 20
+module design-system: ds
 
 -- ftd.document:
 title: $blank-page.seo-title
 description: $blank-page.seo-description
-
 
 -- ftd.column:
 background.solid: $inherited.colors.background.base
@@ -27,18 +26,16 @@ align-content: top-center
 -- dms.dark-mode-switcher-float:
 
 -- ftd.column:
-max-width.fixed.px: $blank-page.width
-spacing.fixed.px: $blank-page.spacing
+max-width.fixed: $blank-page.width
+spacing.fixed: $blank-page.spacing
 color: $inherited.colors.text
-padding.px: $blank-page.padding
+padding: $blank-page.padding
 align-content: left
 
-
-
--- typography.heading-large: $blank-page.title
+-- blank-page.design-system.heading-large: $blank-page.title
 if: { blank-page.title != NULL }
 
--- typography.copy-regular:
+-- blank-page.design-system.copy-regular:
 if: { blank-page.description != NULL }
 
 $blank-page.description

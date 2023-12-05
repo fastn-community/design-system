@@ -50,6 +50,7 @@ integer width: $width-default
 integer size: $medium
 integer variant: $solid
 integer kind: $kind-default
+module design-system: ds
 ;; private stuff
 boolean $hover: false
 

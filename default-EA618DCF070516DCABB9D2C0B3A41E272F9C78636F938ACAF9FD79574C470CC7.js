@@ -447,6 +447,21 @@ Prism.languages.ftd = {
         getAllFields() {
             return this.#fields;
         }
+        getClonedFields() {
+            let clonedFields = {};
+            for (let key in this.#fields) {
+                let field_value = this.#fields[key];
+                if (field_value instanceof fastn.recordInstanceClass
+                    || field_value instanceof fastn.mutableClass
+                    || field_value instanceof fastn.mutableListClass) {
+                    clonedFields[key] = this.#fields[key].getClone();
+                }
+                else {
+                    clonedFields[key] = this.#fields[key];
+                }
+            }
+            return clonedFields;
+        }
         addClosure(closure) {
             this.#closures.push(closure);
         }
@@ -3047,17 +3062,17 @@ let fastn_utils = {
     },
     getInheritedValues(default_args, inherited, function_args) {
         let record_fields = {
-            "colors": ftd.default_colors.getClone().setAndReturn("is-root", true),
-            "types": ftd.default_types.getClone().setAndReturn("is-root", true)
+            "colors": ftd.default_colors.getClone().setAndReturn("is_root", true),
+            "types": ftd.default_types.getClone().setAndReturn("is_root", true)
         }
         Object.assign(record_fields, default_args);
         let fields = {};
         if (inherited instanceof fastn.recordInstanceClass) {
-            fields = inherited.getAllFields();
-            if (fields["colors"].get("is-root")) {
+            fields = inherited.getClonedFields();
+            if (fastn_utils.getStaticValue(fields["colors"].get("is_root"))) {
                delete fields.colors;
             }
-            if (fields["types"].get("is-root")) {
+            if (fastn_utils.getStaticValue(fields["types"].get("is_root"))) {
                delete fields.types;
             }
         }
