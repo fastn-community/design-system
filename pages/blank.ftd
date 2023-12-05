@@ -12,11 +12,9 @@ integer width: 800
 integer spacing: 20
 integer padding: 20
 
-
 -- ftd.document:
 title: $blank-page.seo-title
 description: $blank-page.seo-description
-
 
 -- ftd.column:
 background.solid: $inherited.colors.background.base
@@ -28,12 +26,11 @@ align-content: top-center
 
 -- ftd.column:
 max-width.fixed.px: $blank-page.width
+max-width if { ftd.device == "mobile" }: fill-container
 spacing.fixed.px: $blank-page.spacing
 color: $inherited.colors.text
 padding.px: $blank-page.padding
 align-content: left
-
-
 
 -- typography.heading-large: $blank-page.title
 if: { blank-page.title != NULL }
@@ -50,13 +47,10 @@ spacing.fixed.px: $blank-page.spacing
 
 -- end: ftd.column
 
-
 -- end: ftd.column
-
 
 -- end: ftd.column
 
 -- end: ftd.document
-
 
 -- end: blank-page
