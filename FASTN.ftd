@@ -8,3 +8,4 @@ favicon: /favicon.ico
 -- fastn.dependency: fastn-community.github.io/dark-flame-cs
 -- fastn.dependency: fastn-community.github.io/code-block
 
+-- fastn.auto-import: fastn-community.github.io/design-system as ds

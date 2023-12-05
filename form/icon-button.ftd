@@ -19,6 +19,7 @@ integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
 integer kind: $button.kind-default
+module design-system: ds
 ;; private stuff
 boolean $hover: false
 
@@ -60,6 +61,7 @@ boolean enabled: true
 integer size: $medium
 boolean outline: false
 integer kind: $kind-default
+module design-system: ds
 
 -- ftd.text: square-button
 
@@ -74,6 +76,7 @@ boolean enabled: true
 integer size: $medium
 boolean outline: false
 integer kind: $kind-default
+module design-system: ds
 
 -- ftd.text: circle-button
 
@@ -84,6 +87,7 @@ integer kind: $kind-default
 -- component circle-text-button:
 caption text:
 optional string link:
+module design-system: ds
 
 -- ftd.text: $circle-text-button.text
 padding.px: 8
