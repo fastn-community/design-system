@@ -10,9 +10,9 @@ align-content: center
 
 -- ftd.row:
 width if { hero-with-two-cta.flush == full-width.flush-full }: fill-container
-width.fixed if { hero-with-two-cta.flush == full-width.flush-narrow }: $inherited.header-width-narrow
-width.fixed if { hero-with-two-cta.flush == full-width.flush-wide }: $inherited.header-width-wide
-width.fixed: $inherited.header-width
+width.fixed if { hero-with-two-cta.flush == full-width.flush-narrow }: $inherited.widths.narrow
+width.fixed if { hero-with-two-cta.flush == full-width.flush-wide }: $inherited.widths.wide
+width.fixed: $inherited.widths.regular
 align-content: center
 
 -- ftd.column:

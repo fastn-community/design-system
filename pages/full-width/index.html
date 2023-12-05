@@ -365,7 +365,7 @@ td {
 	body.dark .__bgc-23 { background-color: #111111; }
 	.__jc-24 { justify-content: center; }
 	.__ali-25 { align-items: center; }
-	.__w-26 { width: 800px; }
+	.__w-26 { width: 400px; }
 	.__w-27 { width: fit-content; }
 	.__pl-28 { padding-left: 16px; }
 	.__pr-29 { padding-right: 16px; }
@@ -388,7 +388,7 @@ td {
 	.__w-41 { width: 100%; }
 	.__jc-42 { justify-content: center; }
 	.__ali-43 { align-items: center; }
-	.__w-44 { width: 900px; }
+	.__w-44 { width: 1200px; }
 	.__jc-45 { justify-content: center; }
 	.__ali-46 { align-items: center; }
 	.__w-47 { width: 50%; }
@@ -427,7 +427,7 @@ td {
 	.__w-74 { width: 100%; }
 	.__jc-75 { justify-content: center; }
 	.__ali-76 { align-items: center; }
-	.__w-77 { width: 700px; }
+	.__w-77 { width: 300px; }
 	.__jc-78 { justify-content: center; }
 	.__ali-79 { align-items: center; }
 	.__w-80 { width: 50%; }
@@ -443,7 +443,7 @@ td {
 	body.dark .__bgc-89 { background-color: #111111; }
 	.__jc-90 { justify-content: center; }
 	.__ali-91 { align-items: center; }
-	.__w-92 { width: 800px; }
+	.__w-92 { width: 400px; }
 	.__w-93 { width: fit-content; }
 	.__pl-94 { padding-left: 16px; }
 	.__pr-95 { padding-right: 16px; }
@@ -466,7 +466,7 @@ td {
 	.__w-107 { width: 100%; }
 	.__jc-108 { justify-content: center; }
 	.__ali-109 { align-items: center; }
-	.__w-110 { width: 800px; }
+	.__w-110 { width: 400px; }
 	.__jc-111 { justify-content: center; }
 	.__ali-112 { align-items: center; }
 	.__w-113 { width: 50%; }
@@ -951,7 +951,8 @@ font-family: fastn-community-github-io-roboto-font-Roboto }
         });
       }
       ]),
-      design_system: fastn.module("fastn_community_github_io_design_system", global)
+      design_system: fastn.module("fastn_community_github_io_design_system", global),
+      widths: global.fastn_community_github_io_design_system_pages_full_width___test_widths
     });
   } finally {
     __fastn_package_name__ = __fastn_super_package_name__;
@@ -1082,6 +1083,11 @@ let fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float = fun
   }
 }
 global["fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float"] = fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float;
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_pages_full_width___default_widths", fastn.recordInstance({
+  regular: fastn_dom.Length.Px(800),
+  narrow: fastn_dom.Length.Px(700),
+  wide: fastn_dom.Length.Px(900)
+}));
 let fastn_community_github_io_design_system_pages_full_width___full_width_page = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -1092,10 +1098,8 @@ let fastn_community_github_io_design_system_pages_full_width___full_width_page =
       seo_description: null,
       content: fastn.mutableList([]),
       design_system: fastn.module("fastn_community_github_io_design_system", global),
-      header_width: fastn_dom.Length.Px(800),
       spacing: fastn_dom.Length.Px(0),
-      header_width_narrow: fastn_dom.Length.Px(700),
-      header_width_wide: fastn_dom.Length.Px(900),
+      widths: global.fastn_community_github_io_design_system_pages_full_width___default_widths,
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
@@ -1221,13 +1225,13 @@ let fastn_community_github_io_design_system_headers_basic_header__basic_header =
       let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
       rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([__args__.flush,
       global.fastn_community_github_io_design_system_pages_full_width__flush_full,
-      inherited.get("header_width")], function () {
+      inherited.get("widths").get("regular")], function () {
         if (function () {
           return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_pages_full_width__flush_full));
         }()) {
           return fastn_dom.Resizing.FillContainer;
         } else {
-          return inherited.get("header_width");
+          return inherited.get("widths").get("regular");
         }
       }
       ), inherited);
@@ -1266,13 +1270,13 @@ let fastn_community_github_io_design_system_hero_with_two_cta__hero_with_two_cta
       let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
       rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_pages_full_width__flush_full,
       __args__.flush,
-      inherited.get("header_width_narrow"),
+      inherited.get("widths").get("narrow"),
       global.fastn_community_github_io_design_system_pages_full_width__flush_narrow,
       __args__.flush,
-      inherited.get("header_width_wide"),
+      inherited.get("widths").get("wide"),
       global.fastn_community_github_io_design_system_pages_full_width__flush_wide,
       __args__.flush,
-      inherited.get("header_width")], function () {
+      inherited.get("widths").get("regular")], function () {
         if (function () {
           return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_pages_full_width__flush_full));
         }()) {
@@ -1280,13 +1284,13 @@ let fastn_community_github_io_design_system_hero_with_two_cta__hero_with_two_cta
         } else if (function () {
           return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_pages_full_width__flush_narrow));
         }()) {
-          return inherited.get("header_width_narrow");
+          return inherited.get("widths").get("narrow");
         } else if (function () {
           return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_pages_full_width__flush_wide));
         }()) {
-          return inherited.get("header_width_wide");
+          return inherited.get("widths").get("wide");
         } else {
-          return inherited.get("header_width");
+          return inherited.get("widths").get("regular");
         }
       }
       ), inherited);
@@ -1321,6 +1325,11 @@ global["fastn_community_github_io_design_system_hero_with_two_cta__hero_with_two
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_pages_full_width___flush_wide", 2);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_pages_full_width___flush_full", 1);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_pages_full_width___flush_narrow", 3);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_pages_full_width___test_widths", fastn.recordInstance({
+  regular: fastn_dom.Length.Px(400),
+  narrow: fastn_dom.Length.Px(300),
+  wide: fastn_dom.Length.Px(1200)
+}));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_roboto_font_assets__fonts", fastn.recordInstance({
   Roboto: "fastn-community-github-io-roboto-font-Roboto"
 }));

@@ -14,16 +14,23 @@
 -- integer flush-wide: 2
 -- integer flush-narrow: 3
 
+-- record page-widths:
+ftd.length regular:
+ftd.length narrow:
+ftd.length wide:
+
+-- page-widths default-widths:
+regular.px: 800
+narrow.px: 700
+wide.px: 900
 
 -- component full-width-page:
 optional string seo-title:
 optional string seo-description:
 children content:
 module design-system: ds
-ftd.length.px header-width: 800
 ftd.length.px spacing: 0
-ftd.length.px header-width-narrow: 700
-ftd.length.px header-width-wide: 900
+page-widths widths: $default-widths
 
 -- ftd.document:
 title: $full-width-page.seo-title
@@ -72,8 +79,15 @@ align-content: center
 
 
 
+-- page-widths test-widths:
+regular.px: 400
+narrow.px: 300
+wide.px: 1200
+
+
 -- full-width-page:
 design-system: ds
+widths: $test-widths
 
 -- ds.basic-header:
 design-system: ds
