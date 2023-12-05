@@ -131,3 +131,39 @@ display: $link.display
 link: $link.link
 
 -- end: link
+
+
+
+
+
+
+
+
+
+-- ds.blank-page: Typography
+
+-- heading-hero: Heading hero typography
+-- heading-large: Heading large typography
+-- heading-medium: Heading medium typography
+-- heading-small: Heading small typography
+-- heading-tiny: Heading tiny typography
+-- copy-large:
+
+Copy large typography
+
+-- copy-regular:
+
+Copy regular typography
+
+-- copy-small:
+
+Copy small typography
+
+-- fine-print:
+
+Fine print typography
+
+-- link: Link typography
+link: /
+
+-- end: ds.blank-page

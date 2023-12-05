@@ -55,15 +55,20 @@ white-space: nowrap
 
 
 -- component square-button:
-ftd.image-src icon:
+caption ftd.image-src icon:
 optional string link:
 boolean enabled: true
-integer size: $medium
+integer size: $button.medium
 boolean outline: false
-integer kind: $kind-default
+integer kind: $button.kind-default
 module design-system: ds
 
--- ftd.text: square-button
+-- ftd.image: $square-button.icon
+width.fixed.px: 30
+height.fixed.px: 30
+border-radius.px: 5
+background.solid: $inherited.colors.background.step-1
+padding.px: 5
 
 -- end: square-button
 
@@ -73,12 +78,18 @@ module design-system: ds
 ftd.image-src icon:
 optional string link:
 boolean enabled: true
-integer size: $medium
+integer size: $button.medium
 boolean outline: false
-integer kind: $kind-default
+integer kind: $button.kind-default
 module design-system: ds
 
--- ftd.text: circle-button
+-- ftd.image: $circle-button.icon
+width.fixed.px: 30
+height.fixed.px: 30
+border-radius.percent: 50
+background.solid: $inherited.colors.background.step-1
+padding.px: 5
+
 
 -- end: circle-button
 
@@ -99,3 +110,24 @@ border-radius.percent: 50
 link: $circle-text-button.link
 
 -- end: circle-text-button
+
+
+
+
+
+
+-- ds.blank-page: Icon Button
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+
+-- square-button:
+icon: $assets.files.assets.convert.svg
+link: /
+
+-- circle-button:
+icon: $assets.files.assets.convert.svg
+link: /
+
+-- end: ds.blank-page

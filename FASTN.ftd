@@ -9,3 +9,4 @@ favicon: /favicon.ico
 -- fastn.dependency: fastn-community.github.io/code-block
 
 -- fastn.auto-import: fastn-community.github.io/design-system as ds
+-- fastn.auto-import: fastn-community.github.io/design-system/assets

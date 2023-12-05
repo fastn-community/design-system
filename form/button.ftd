@@ -72,9 +72,21 @@ if: { button.title != NULL }
 ;; if: { ftd.or-type-to-integer(button.kind) == 0 }
 role: $inherited.types.button-small
 color: $inherited.colors.text-strong
-link: $button.button-link
+link: $button.link
 white-space: nowrap
 
 -- end: ftd.row
 
 -- end: button
+
+
+
+
+
+
+-- ds.blank-page: Button
+
+-- button: Default button
+link: /
+
+-- end: ds.blank-page
