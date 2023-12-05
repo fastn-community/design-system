@@ -12,14 +12,25 @@ flush: $hero-with-two-cta.flush
 -- ftd.column:
 width.fixed.percent: 50
 height.fixed.px: 300
-background.solid: red
+background.solid: $inherited.colors.background.step-1
+align-content: center
+
+
+-- hero-with-two-cta.design-system.fine-print:
+
+TODO
 
 -- end: ftd.column
 
 -- ftd.column:
 width.fixed.percent: 50
 height.fixed.px: 300
-background.solid: yellow
+background.solid: $inherited.colors.background.step-2
+align-content: center
+
+-- hero-with-two-cta.design-system.fine-print:
+
+TODO
 
 -- end: ftd.column
 
