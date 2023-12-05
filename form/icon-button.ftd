@@ -107,7 +107,6 @@ width: fill-container
 
 -- end: ftd.container
 
-
 -- end: circle-button
 
 
@@ -148,7 +147,7 @@ link: $circle-text-button.link
 
 -- component phosphor-icon-button:
 optional caption title:
-integer phosphor-variant: $phosphor-regular
+integer phosphor-variant: $phosphor-bold
 string icon:
 integer icon-position: $icon-at-start
 optional string link:
@@ -173,27 +172,27 @@ kind: $phosphor-icon-button.kind
 design-system: $phosphor-icon-button.design-system
 
 -- phosphor.regular: $phosphor-icon-button.icon
-size: 24
+size: 16
 if: { phosphor-icon-button.phosphor-variant == phosphor-regular }
 
 -- phosphor.bold: $phosphor-icon-button.icon
-size: 24
+size: 16
 if: { phosphor-icon-button.phosphor-variant == phosphor-bold }
 
 -- phosphor.duotone: $phosphor-icon-button.icon
-size: 24
+size: 16
 if: { phosphor-icon-button.phosphor-variant == phosphor-duotone }
 
 -- phosphor.fill: $phosphor-icon-button.icon
-size: 24
+size: 16
 if: { phosphor-icon-button.phosphor-variant == phosphor-fill }
 
 -- phosphor.light: $phosphor-icon-button.icon
-size: 24
+size: 16
 if: { phosphor-icon-button.phosphor-variant == phosphor-light }
 
 -- phosphor.thin: $phosphor-icon-button.icon
-size: 24
+size: 16
 if: { phosphor-icon-button.phosphor-variant == phosphor-thin }
 
 -- end: button-wrapper
@@ -236,11 +235,11 @@ kind: $fa-icon-button.kind
 design-system: $fa-icon-button.design-system
 
 -- fa.brand: $fa-icon-button.icon
-size: 16
+size: 13
 if: { fa-icon-button.brand }
 
 -- fa.regular: $fa-icon-button.icon
-size: 16
+size: 13
 if: { !fa-icon-button.brand }
 
 -- end: button-wrapper
@@ -286,6 +285,7 @@ spacing.fixed.px: 8
 width: hug-content
 min-width: auto
 link: $button-wrapper.link
+color: $inherited.colors.text-strong
 
 -- ui:
 for: $ui in $button-wrapper.uis
@@ -295,6 +295,7 @@ if: { button-wrapper.title != NULL }
 role: $inherited.types.button-small
 color: $inherited.colors.text-strong
 white-space: nowrap
+align-self: center
 
 -- end: ftd.row
 
@@ -354,7 +355,7 @@ icon: app-store-logo
 link: /
 
 -- phosphor-icon-button: PI button
-icon: address-book
+icon: app-store-logo
 link: /
 
 -- end: ds.rendered
