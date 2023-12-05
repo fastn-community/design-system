@@ -12,7 +12,7 @@ export: blank-page
 
 
 -- import: fastn-community.github.io/design-system/form/icon-button as icon-button-module
-export: icon-button, circle-text-button
+export: icon-button, circle-text-button, phosphor-icon-button, fa-icon-button
 
 -- import: fastn-community.github.io/design-system/typography as typography-module
 export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny, copy-large, copy-regular, copy-small, fine-print, source-code, link
@@ -25,11 +25,27 @@ exposing: heading-large, copy-regular
 
 -- blank.blank-page: design-system
 
+-- ftd.row:
+
+-- ds.phosphor-icon-button: Github
+icon: github-logo
+link: https://github.com/fastn-community/design-system/
+
+-- ds.phosphor-icon-button: BSD (Open Source)
+icon: scales
+link: https://github.com/fastn-community/design-system/blob/main/LICENSE
+
+-- end: ftd.row
+
+-- copy-regular:
+
 This is the package you have been waiting for!
 
-- [Button](form/button/)
-- [Icon Button](form/icon-button/)
-- [Button Group](form/button-group/)
-- [typography](typography/)
+- [Buttons](form/button/)
+- [Icon Buttons](form/icon-button/)
+- [Button Group (WIP)](form/button-group/)
+- [Typography](typography/)
+
+
 
 -- end: blank.blank-page

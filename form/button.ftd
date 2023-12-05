@@ -84,7 +84,11 @@ white-space: nowrap
 
 
 
--- ds.blank-page: Button
+-- ds.blank-page: Buttons
+
+-- ds.phosphor-icon-button: Back
+icon: arrow-left
+link: index.html
 
 -- ds.rendered:
 
