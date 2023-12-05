@@ -22,6 +22,9 @@ children content:
 module design-system: ds
 ftd.length.px header-width: 800
 ftd.length.px spacing: 0
+;; integer header-width-narrow: $ftd.multiply(a=$full-width-page.header-width, b=0.8)
+;; integer header-width-wide: $ftd.multiply(a=$full-width-page.header-width, b=1.2)
+
 
 -- ftd.document:
 title: $full-width-page.seo-title
@@ -48,10 +51,38 @@ children: $full-width-page.content
 
 
 
+
+-- component section-grid:
+module design-system: ds
+integer flush: $full-width.flush-to-header
+children content:
+
+-- ftd.row:
+width if { section-grid.flush == flush-full }: fill-container
+width.fixed: $inherited.header-width
+children: $section-grid.content
+align-content: center
+
+-- end: ftd.row
+
+
+-- end: section-grid
+
+
+
+
+
+
 -- full-width-page:
 design-system: ds
 
 -- ds.basic-header:
 design-system: ds
+;; flush: $flush-full
+
+-- ds.hero-with-two-cta:
+design-system: ds
+
+;; flush: $flush-full
 
 -- end: full-width-page

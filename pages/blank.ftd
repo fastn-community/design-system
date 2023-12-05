@@ -3,6 +3,7 @@
 
 
 -- component blank-page:
+module design-system: ds
 optional caption title:
 optional body description:
 optional string seo-title: $blank-page.title
@@ -11,7 +12,6 @@ children content:
 ftd.length.px width: 800
 ftd.length.px spacing: 20
 ftd.length.px padding: 20
-module design-system: ds
 
 -- ftd.document:
 title: $blank-page.seo-title

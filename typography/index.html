@@ -1926,13 +1926,13 @@ let fastn_community_github_io_design_system_pages_blank__blank_page = function (
   __fastn_package_name__ = "fastn_community_github_io_design_system";
   try {
     let __args__ = {
+      design_system: fastn.module("fastn_community_github_io_design_system", global),
       title: null,
       description: null,
       content: fastn.mutableList([]),
       width: fastn_dom.Length.Px(800),
       spacing: fastn_dom.Length.Px(20),
       padding: fastn_dom.Length.Px(20),
-      design_system: fastn.module("fastn_community_github_io_design_system", global),
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
