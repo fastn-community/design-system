@@ -1092,10 +1092,10 @@ let fastn_community_github_io_design_system_pages_full_width___full_width_page =
       seo_description: null,
       content: fastn.mutableList([]),
       design_system: fastn.module("fastn_community_github_io_design_system", global),
-      header_width: 800,
+      header_width: fastn_dom.Length.Px(800),
       spacing: fastn_dom.Length.Px(0),
-      header_width_narrow: 700,
-      header_width_wide: 900,
+      header_width_narrow: fastn_dom.Length.Px(700),
+      header_width_wide: fastn_dom.Length.Px(900),
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
@@ -1220,13 +1220,14 @@ let fastn_community_github_io_design_system_headers_basic_header__basic_header =
     parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
       let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
       rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([__args__.flush,
-      global.fastn_community_github_io_design_system_pages_full_width__flush_full], function () {
+      global.fastn_community_github_io_design_system_pages_full_width__flush_full,
+      inherited.get("header_width")], function () {
         if (function () {
           return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_pages_full_width__flush_full));
         }()) {
           return fastn_dom.Resizing.FillContainer;
         } else {
-          return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(800));
+          return inherited.get("header_width");
         }
       }
       ), inherited);
@@ -1265,10 +1266,13 @@ let fastn_community_github_io_design_system_hero_with_two_cta__hero_with_two_cta
       let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
       rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_pages_full_width__flush_full,
       __args__.flush,
+      inherited.get("header_width_narrow"),
       global.fastn_community_github_io_design_system_pages_full_width__flush_narrow,
       __args__.flush,
+      inherited.get("header_width_wide"),
       global.fastn_community_github_io_design_system_pages_full_width__flush_wide,
-      __args__.flush], function () {
+      __args__.flush,
+      inherited.get("header_width")], function () {
         if (function () {
           return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_pages_full_width__flush_full));
         }()) {
@@ -1276,13 +1280,13 @@ let fastn_community_github_io_design_system_hero_with_two_cta__hero_with_two_cta
         } else if (function () {
           return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_pages_full_width__flush_narrow));
         }()) {
-          return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(700));
+          return inherited.get("header_width_narrow");
         } else if (function () {
           return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_pages_full_width__flush_wide));
         }()) {
-          return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(900));
+          return inherited.get("header_width_wide");
         } else {
-          return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(800));
+          return inherited.get("header_width");
         }
       }
       ), inherited);

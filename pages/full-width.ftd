@@ -20,12 +20,10 @@ optional string seo-title:
 optional string seo-description:
 children content:
 module design-system: ds
-integer header-width: 800
+ftd.length.px header-width: 800
 ftd.length.px spacing: 0
-;; integer header-width-narrow: $multiply(a=$full-width-page.header-width, b=0.8)
-integer header-width-narrow: 700
-;; integer header-width-wide: $multiply(a=$full-width-page.header-width, b=1.2)
-integer header-width-wide: 900
+ftd.length.px header-width-narrow: 700
+ftd.length.px header-width-wide: 900
 
 -- ftd.document:
 title: $full-width-page.seo-title
@@ -104,8 +102,3 @@ design-system: ds
 
 
 
--- integer multiply(a, b):
-integer a:
-decimal b:
-
-a * b
