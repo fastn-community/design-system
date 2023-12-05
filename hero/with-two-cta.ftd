@@ -10,12 +10,9 @@ align-content: center
 
 -- ftd.row:
 width if { hero-with-two-cta.flush == full-width.flush-full }: fill-container
-;; width.fixed.px if { hero-with-two-cta.flush == full-width.flush-narrow }: $inherited.header-width-narrow
-width.fixed.px if { hero-with-two-cta.flush == full-width.flush-narrow }: 700
-;; width.fixed.px if { hero-with-two-cta.flush == full-width.flush-wide }: $inherited.header-width-wide
-width.fixed.px if { hero-with-two-cta.flush == full-width.flush-wide }: 900
-;; width.fixed.px: $inherited.header-width
-width.fixed.px: 800
+width.fixed if { hero-with-two-cta.flush == full-width.flush-narrow }: $inherited.header-width-narrow
+width.fixed if { hero-with-two-cta.flush == full-width.flush-wide }: $inherited.header-width-wide
+width.fixed: $inherited.header-width
 align-content: center
 
 -- ftd.column:

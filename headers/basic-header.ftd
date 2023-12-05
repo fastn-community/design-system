@@ -16,8 +16,7 @@ align-content: center
 
 -- ftd.column:
 width if { basic-header.flush == full-width.flush-full }: fill-container
-;; width.fixed.px: $inherited.header-width
-width.fixed.px: 800
+width.fixed: $inherited.header-width
 
 -- ds.button: LOGO
 link: /
