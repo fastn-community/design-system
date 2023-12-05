@@ -27,9 +27,9 @@ exposing: heading-large, copy-regular
 
 This is the package you have been waiting for!
 
-- [Button](/form/button/)
-- [Icon Button](/form/icon-button/)
-- [Button Group](/form/button-group/)
-- [typography](/typography/)
+- [Button](form/button/)
+- [Icon Button](form/icon-button/)
+- [Button Group](form/button-group/)
+- [typography](typography/)
 
 -- end: blank.blank-page
