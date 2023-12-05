@@ -86,7 +86,14 @@ white-space: nowrap
 
 -- ds.blank-page: Button
 
+-- ds.rendered:
+
+\-- button: Default button
+link: /
+
 -- button: Default button
 link: /
+
+-- end: ds.rendered
 
 -- end: ds.blank-page
