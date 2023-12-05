@@ -1252,7 +1252,7 @@ let fastn_community_github_io_design_system_headers_basic_header__basic_header =
 global["fastn_community_github_io_design_system_headers_basic_header__basic_header"] = fastn_community_github_io_design_system_headers_basic_header__basic_header;
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_pages_full_width__flush_narrow", 3);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_pages_full_width__flush_wide", 2);
-let fastn_community_github_io_design_system_hero_with_two_cta__hero_with_two_cta = function (parent, inherited, args)
+let fastn_community_github_io_design_system_pages_full_width__section_grid = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
   __fastn_package_name__ = "fastn_community_github_io_design_system";
@@ -1260,6 +1260,7 @@ let fastn_community_github_io_design_system_hero_with_two_cta__hero_with_two_cta
     let __args__ = {
       design_system: fastn.module("fastn_community_github_io_design_system", global),
       flush: global.fastn_community_github_io_design_system_pages_full_width__flush_to_header,
+      content: fastn.mutableList([]),
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
@@ -1295,7 +1296,30 @@ let fastn_community_github_io_design_system_hero_with_two_cta__hero_with_two_cta
       }
       ), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
-      rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      rooti0.setProperty(fastn_dom.PropertyKind.Children, __args__.content, inherited);
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["fastn_community_github_io_design_system_pages_full_width__section_grid"] = fastn_community_github_io_design_system_pages_full_width__section_grid;
+let fastn_community_github_io_design_system_hero_with_two_cta__hero_with_two_cta = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "fastn_community_github_io_design_system";
+  try {
+    let __args__ = {
+      design_system: fastn.module("fastn_community_github_io_design_system", global),
+      flush: global.fastn_community_github_io_design_system_pages_full_width__flush_to_header,
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_community_github_io_design_system_pages_full_width__section_grid(parent, inherited, {
+      design_system: __args__.design_system,
+      flush: __args__.flush,
+      content: fastn.mutableList([function (root, inherited) {
         let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
         rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Percent(50)), inherited);
         rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(300)), inherited);
@@ -1313,9 +1337,8 @@ let fastn_community_github_io_design_system_hero_with_two_cta__hero_with_two_cta
           light: "yellow"
         })), inherited);
       }
-      ]), inherited);
-    }
-    ]), inherited);
+      ])
+    });
     return parenti0;
   } finally {
     __fastn_package_name__ = __fastn_super_package_name__;

@@ -4,16 +4,10 @@
 module design-system: ds
 integer flush: $full-width.flush-to-header
 
--- ftd.column:
-width: fill-container
-align-content: center
 
--- ftd.row:
-width if { hero-with-two-cta.flush == full-width.flush-full }: fill-container
-width.fixed if { hero-with-two-cta.flush == full-width.flush-narrow }: $inherited.widths.narrow
-width.fixed if { hero-with-two-cta.flush == full-width.flush-wide }: $inherited.widths.wide
-width.fixed: $inherited.widths.regular
-align-content: center
+-- full-width.section-grid:
+design-system: $hero-with-two-cta.design-system
+flush: $hero-with-two-cta.flush
 
 -- ftd.column:
 width.fixed.percent: 50
@@ -29,8 +23,7 @@ background.solid: yellow
 
 -- end: ftd.column
 
--- end: ftd.row
+-- end: full-width.section-grid
 
--- end: ftd.column
 
 -- end: hero-with-two-cta
