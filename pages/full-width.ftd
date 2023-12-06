@@ -20,9 +20,9 @@ ftd.length narrow:
 ftd.length wide:
 
 -- page-widths default-widths:
-regular.px: 800
-narrow.px: 700
-wide.px: 900
+regular.px: 1000
+narrow.px: 800
+wide.px: 1200
 
 -- component full-width-page:
 optional string seo-title:
@@ -83,6 +83,43 @@ align-content: center
 
 
 
+-- component split-section:
+module design-system: ds
+integer flush: $flush-to-header
+ftd.ui list start:
+ftd.ui list end:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.row:
+width if { split-section.flush == flush-full }: fill-container
+width.fixed if { split-section.flush == flush-narrow }: $inherited.widths.narrow
+width.fixed if { split-section.flush == flush-wide }: $inherited.widths.wide
+width.fixed: $inherited.widths.regular
+align-content: center
+
+-- ftd.column:
+width: fill-container
+children: $split-section.start
+
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+children: $split-section.end
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: split-section
+
+
 
 
 
@@ -94,7 +131,7 @@ wide.px: 1200
 
 -- full-width-page:
 design-system: ds
-widths: $test-widths
+;; widths: $test-widths
 
 -- ds.basic-header:
 design-system: ds
@@ -118,6 +155,43 @@ design-system: ds
 
 -- ds.hero-with-two-cta:
 design-system: ds
+
+-- split-section:
+design-system: ds
+flush: $flush-wide
+
+-- split-section.start:
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 300
+background.solid: $inherited.colors.background.step-2
+align-content: center
+
+-- ds.fine-print:
+
+Split Start
+
+-- end: ftd.column
+
+-- end: split-section.start
+
+-- split-section.end:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.text:
+background.solid: $inherited.colors.background.step-1
+color: $inherited.colors.text
+
+Split End
+
+-- end: ftd.column
+
+-- end: split-section.end
+
 
 -- end: full-width-page
 
