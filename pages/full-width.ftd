@@ -86,12 +86,19 @@ align-content: center
 -- component split-section:
 module design-system: ds
 integer flush: $flush-to-header
+optional ftd.length padding-top:
+optional ftd.length padding-bottom:
+optional ftd.length padding-vertical:
 ftd.ui list start:
+ftd.length spacing-start:
 ftd.ui list end:
 
 -- ftd.column:
 width: fill-container
 align-content: center
+padding-top: $split-section.padding-top
+padding-bottom: $split-section.padding-bottom
+padding-vertical: $split-section.padding-vertical
 
 -- ftd.row:
 width if { split-section.flush == flush-full }: fill-container
@@ -102,6 +109,7 @@ align-content: center
 
 -- ftd.column:
 width: fill-container
+spacing.fixed: $split-section.spacing-start
 children: $split-section.start
 
 
@@ -159,36 +167,37 @@ design-system: ds
 -- split-section:
 design-system: ds
 flush: $flush-wide
+padding-vertical.px: 20
+spacing-start.px: 20
 
 -- split-section.start:
 
--- ftd.column:
-width: fill-container
-height.fixed.px: 300
-background.solid: $inherited.colors.background.step-2
-align-content: center
+-- ds.heading-tiny: DROPBASE
 
--- ds.fine-print:
+-- ds.heading-hero: Unlock insights from Conversations using GenAI
 
-Split Start
+-- ds.copy-large:
 
--- end: ftd.column
+Leverage AI driven insights & actionables from your customer conversations
+across all channels - Calls, Chats & Meetings to boost your business efficiency
+
+-- ds.button-group:
+spacing.px: 10
+
+-- ds.button: Book Demo
+-- ds.phosphor-icon-button: Documentation
+icon: caret-right
+
+-- end: ds.button-group
 
 -- end: split-section.start
 
 -- split-section.end:
 
--- ftd.column:
-width: fill-container
-align-content: center
-
--- ftd.text:
-background.solid: $inherited.colors.background.step-1
-color: $inherited.colors.text
-
-Split End
-
--- end: ftd.column
+-- ftd.image:
+width.fixed.percent: 80
+align-self: center
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
 
 -- end: split-section.end
 

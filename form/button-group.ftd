@@ -1,7 +1,13 @@
 -- component button-group:
 module design-system: ds
+children buttons:
+ftd.length.px spacing: 10
 
--- ftd.text: button group
+-- ftd.row:
+spacing.fixed: $button-group.spacing
+children: $button-group.buttons
+
+-- end: ftd.row
 
 -- end: button-group
 

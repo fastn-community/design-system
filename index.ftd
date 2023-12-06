@@ -7,6 +7,9 @@ export: code, rendered
 -- import: fastn-community.github.io/design-system/form/button as button-module
 export: button
 
+-- import: fastn-community.github.io/design-system/form/button-group as bg-module
+export: button-group
+
 -- import: fastn-community.github.io/design-system/pages/blank
 export: blank-page
 
@@ -55,7 +58,7 @@ This is the package you have been waiting for!
 - [Icon Buttons](form/icon-button/)
 - [Button Group (WIP)](form/button-group/)
 - [Typography](typography/)
-- [Empty Page](pages/empty/)
+- [Blank Page](pages/blank/)
 - [Full Width Page](pages/full-width/)
 - [Basic Header](headers/basic-header/)
 
