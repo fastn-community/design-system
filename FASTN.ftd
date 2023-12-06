@@ -7,6 +7,7 @@ favicon: /favicon.ico
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 -- fastn.dependency: fastn-community.github.io/dark-flame-cs
 -- fastn.dependency: fastn-community.github.io/code-block
+-- fastn.dependency: fastn-community.github.io/svg-icons
 
 -- fastn.auto-import: fastn-community.github.io/design-system as ds
 -- fastn.auto-import: fastn-community.github.io/design-system/assets
