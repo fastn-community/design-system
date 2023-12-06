@@ -1,0 +1,30 @@
+-- import: fastn-community.github.io/design-system/pages/full-width
+
+
+
+
+-- component basic-header:
+module design-system: ds
+integer flush: $full-width.flush-to-header
+
+-- ftd.column:
+sticky: true
+top.px: 0
+width: fill-container
+background.solid: $inherited.colors.background.step-1
+align-content: center
+
+-- ftd.column:
+width if { basic-header.flush == full-width.flush-full }: fill-container
+width.fixed: $inherited.widths.regular
+
+-- ds.button: LOGO
+link: /
+
+-- end: ftd.column
+
+
+
+-- end: ftd.column
+
+-- end: basic-header

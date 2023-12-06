@@ -3,6 +3,7 @@
 
 
 -- component blank-page:
+module design-system: ds
 optional caption title:
 optional body description:
 optional string seo-title: $blank-page.title
@@ -11,11 +12,12 @@ children content:
 ftd.length.px width: 800
 ftd.length.px spacing: 20
 ftd.length.px padding: 20
-module design-system: ds
 
 -- ftd.document:
 title: $blank-page.seo-title
 description: $blank-page.seo-description
+colors: $blank-page.design-system.colors
+types: $blank-page.design-system.types
 
 -- ftd.column:
 background.solid: $inherited.colors.background.base
@@ -26,9 +28,9 @@ align-content: top-center
 -- dms.dark-mode-switcher-float:
 
 -- ftd.column:
-max-width.fixed.px: $blank-page.width
-max-width if { ftd.device == "mobile" }: fill-container
-spacing.fixed.px: $blank-page.spacing
+width.fixed if { ftd.device == "desktop" }: $blank-page.width
+width: fill-container
+spacing.fixed: $blank-page.spacing
 color: $inherited.colors.text
 padding: $blank-page.padding
 align-content: left
