@@ -1,0 +1,99 @@
+;; https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
+
+-- record hv:
+caption integer horizontal:
+integer vertical: $hv.horizontal
+
+-- record insets:
+hv extra-small:
+hv small:
+hv medium:
+hv large:
+hv extra-large:
+
+
+-- record squishes:
+hv small:
+hv medium:
+hv large:
+
+
+-- record stretches:
+hv small:
+hv medium:
+
+-- record gap:
+caption integer gap:
+
+-- record gaps:
+gap extra-extra-small: ;; the largest name
+gap extra-small:
+gap small:
+gap medium:
+gap large:
+gap extra-large:
+
+
+;; $inherited.spaces.inset-square.small
+
+-- record space-data:
+insets inset-square:
+squishes inset-squish:
+stretches inset-stretch:
+gaps vertical-gap:
+gaps horizontal-gap:
+
+
+-- space-data spaces:
+inset-square: $insets_
+inset-squish: $squishes_
+inset-stretch: $stretches_
+vertical-gap: $gaps_
+horizontal-gap: $gaps_
+
+
+-- insets insets_:
+extra-small: 4
+small: 8
+medium: 16
+large: 32
+extra-large: 64
+
+-- hv squishes_s:
+horizontal: 8
+vertical: 4
+
+-- hv squishes_m:
+horizontal: 16
+vertical: 8
+
+-- hv squishes_l:
+horizontal: 32
+vertical: 16
+
+-- squishes squishes_:
+small: $squishes_s
+medium: $squishes_m
+large: $squishes_l
+
+
+-- hv stretches_s:
+horizontal: 8
+vertical: 12
+
+-- hv stretches_m:
+horizontal: 16
+vertical: 24
+
+
+-- stretches stretches_:
+small: $stretches_s
+medium: $stretches_m
+
+-- gaps gaps_:
+extra-extra-small: 2
+extra-small: 4
+small: 8
+medium: 16
+large: 32
+extra-large: 64

@@ -1,6 +1,9 @@
 -- import: fastn-community.github.io/dark-flame-cs
 -- import: fastn-community.github.io/roboto-typography
 
+-- import: fastn-community.github.io/design-system/spaces as spaces-module
+export: spaces, hv, gap, insets, squishes, stretches, gaps, space-data
+
 -- import: fastn-community.github.io/code-block
 export: code, rendered
 
