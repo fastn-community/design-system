@@ -1,6 +1,9 @@
 -- import: fastn-community.github.io/dark-flame-cs
 -- import: fastn-community.github.io/roboto-typography
 
+-- import: fastn-community.github.io/design-system/spaces as spaces-module
+export: hv, gap, insets, squishes, stretches, gaps, space-data
+
 -- import: fastn-community.github.io/code-block
 export: code, rendered
 
@@ -33,6 +36,8 @@ exposing: heading-large, copy-regular
 
 -- ftd.color-scheme colors: $dark-flame-cs.main
 -- ftd.type-data types: $roboto-typography.types
+
+-- spaces-module.space-data spaces: $spaces-module.spaces
 
 
 

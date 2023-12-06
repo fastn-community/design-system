@@ -10,8 +10,8 @@ optional string seo-title: $blank-page.title
 optional string seo-description: $blank-page.description
 children content:
 ftd.length.px width: 800
-ftd.length.px spacing: 20
-ftd.length.px padding: 20
+ds.gap spacing: 20
+ds.hv padding: $ds.spaces.inset-square.medium
 
 -- ftd.document:
 title: $blank-page.seo-title
@@ -30,9 +30,10 @@ align-content: top-center
 -- ftd.column:
 width.fixed if { ftd.device == "desktop" }: $blank-page.width
 width: fill-container
-spacing.fixed: $blank-page.spacing
+spacing.fixed.px: $blank-page.spacing.gap
 color: $inherited.colors.text
-padding: $blank-page.padding
+padding-vertical.px: $blank-page.padding.vertical
+padding-horizontal.px: $blank-page.padding.horizontal
 align-content: left
 
 -- blank-page.design-system.heading-large: $blank-page.title
@@ -46,7 +47,7 @@ $blank-page.description
 -- ftd.column:
 width: fill-container
 children: $blank-page.content
-spacing.fixed.px: $blank-page.spacing
+spacing.fixed.px: $blank-page.spacing.gap
 
 -- end: ftd.column
 
