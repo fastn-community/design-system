@@ -333,7 +333,7 @@ td {
     </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column ft_full_size"><div data-id="4" class="ft_column __w-3 __h-4 __bgc-5 __jc-6 __ali-7"><div data-id="5" class="ft_row __pos-8 __p-9 __bw-10 __br-11 __bc-12 __b-13 __r-14 __z-15 __bgc-16"><comment data-id="6"></comment><div data-id="7" class="ft_row __cur-17"><img data-id="8" src="-/fastn-community.github.io/dark-mode-switcher/static/system-mode-active.png" class="__as-18 __w-19 __h-20"></img></div><comment data-id="9"></comment><comment data-id="10"></comment></div><div data-id="11" class="ft_column __w-21 __pl-22 __pr-23 __pt-24 __pb-25 __c-26 __jc-27 __ali-28 __g-29"><comment data-id="12"></comment><div data-id="13" class="__rl-30 __c-31">The Blank Page</div><comment data-id="14"></comment><div data-id="15" class="ft_column __w-32 __g-33"></div></div></div></div></div></body><style id="styles">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column ft_full_size"><div data-id="4" class="ft_column __w-3 __h-4 __bgc-5 __jc-6 __ali-7"><div data-id="5" class="ft_row __pos-8 __p-9 __bw-10 __br-11 __bc-12 __b-13 __r-14 __z-15 __bgc-16"><comment data-id="6"></comment><div data-id="7" class="ft_row __cur-17"><img data-id="8" src="-/fastn-community.github.io/dark-mode-switcher/static/system-mode-active.png" class="__as-18 __w-19 __h-20"></img></div><comment data-id="9"></comment><comment data-id="10"></comment></div><div data-id="11">64</div><div data-id="12">64</div><div data-id="13" class="ft_column __w-21 __pl-22 __pr-23 __pt-24 __pb-25 __c-26 __jc-27 __ali-28 __g-29"><comment data-id="14"></comment><div data-id="15" class="__rl-30 __c-31">The Blank Page</div><comment data-id="16"></comment><div data-id="17" class="ft_column __w-32 __g-33"></div></div></div></div></div></body><style id="styles">
     .__w-1 { width: 100%; }
 	.__h-2 { height: 100%; }
 	.__w-3 { width: 100%; }
@@ -1088,9 +1088,8 @@ let fastn_community_github_io_design_system_pages_blank___blank_page = function 
       description: null,
       content: fastn.mutableList([]),
       width: fastn_dom.Length.Px(800),
-      spacing: fastn.recordInstance({
-        gap: 20
-      }),
+      s: 64,
+      spacing: global.fastn_community_github_io_design_system__spaces.get("vertical_gap").get("extra_large"),
       padding: global.fastn_community_github_io_design_system__spaces.get("inset_square").get("medium"),
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
@@ -1111,6 +1110,14 @@ let fastn_community_github_io_design_system_pages_blank___blank_page = function 
       rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.TopCenter, inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
         let rooti0 = fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float(root, inherited);
+      },
+      function (root, inherited) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Integer);
+        rooti0.setProperty(fastn_dom.PropertyKind.IntegerValue, __args__.spacing.get("gap"), inherited);
+      },
+      function (root, inherited) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Integer);
+        rooti0.setProperty(fastn_dom.PropertyKind.IntegerValue, __args__.s, inherited);
       },
       function (root, inherited) {
         let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
