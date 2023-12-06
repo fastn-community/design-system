@@ -1,35 +1,26 @@
 -- import: fastn-community.github.io/dark-flame-cs
 -- import: fastn-community.github.io/roboto-typography
-
--- import: fastn-community.github.io/code-block
-export: code, rendered
-
 -- import: fastn-community.github.io/design-system/form/button as button-module
 export: button
-
--- import: fastn-community.github.io/design-system/pages/blank
-export: blank-page
-
 
 -- import: fastn-community.github.io/design-system/form/icon-button as icon-button-module
 export: icon-button, circle-text-button
 
 -- import: fastn-community.github.io/design-system/typography as typography-module
-export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny, copy-large, copy-regular, copy-small, fine-print, source-code, link
-exposing: heading-large, copy-regular
+export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny,button-large, button-medium, button-small, copy-large, copy-regular, copy-small, fine-print, source-code, link
 
 -- ftd.color-scheme colors: $dark-flame-cs.main
 -- ftd.type-data types: $roboto-typography.types
 
 
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: $colors.background.base
 
--- blank.blank-page: design-system
 
-This is the package you have been waiting for!
+-- ftd.text: design-system
+role: $types.heading-large
+color: $colors.text-strong
 
-- [Button](form/button/)
-- [Icon Button](form/icon-button/)
-- [Button Group](form/button-group/)
-- [typography](typography/)
-
--- end: blank.blank-page
+-- end: ftd.column

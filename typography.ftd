@@ -1,10 +1,8 @@
 -- component heading-hero:
-module design-system: ds
-caption text:
+caption or body text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-hero.text
-width: fill-container
 color: $heading-hero.color
 role: $inherited.types.heading-hero
 
@@ -12,8 +10,7 @@ role: $inherited.types.heading-hero
 
 
 -- component heading-large:
-module design-system: ds
-caption text:
+caption or body text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-large.text
@@ -24,12 +21,10 @@ role: $inherited.types.heading-large
 
 
 -- component heading-medium:
-module design-system: ds
-caption text:
+caption or body text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-medium.text
-width: fill-container
 color: $heading-medium.color
 role: $inherited.types.heading-medium
 
@@ -37,12 +32,10 @@ role: $inherited.types.heading-medium
 
 
 -- component heading-small:
-module design-system: ds
-caption text:
+caption or body text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-small.text
-width: fill-container
 color: $heading-small.color
 role: $inherited.types.heading-small
 
@@ -50,21 +43,54 @@ role: $inherited.types.heading-small
 
 
 -- component heading-tiny:
-module design-system: ds
-caption text:
+caption or body text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-tiny.text
-width: fill-container
 color: $heading-tiny.color
 role: $inherited.types.heading-tiny
 
 -- end: heading-tiny
 
 
+-- component button-large:
+caption or body text:
+ftd.color color: $inherited.colors.text-strong
+ftd.display display: inline
+
+-- ftd.text: $button-large.text
+color: $button-large.color
+role: $inherited.types.button-large
+
+-- end: button-large
+
+
+-- component button-medium:
+caption or body text:
+ftd.color color: $inherited.colors.text-strong
+ftd.display display: inline
+
+-- ftd.text: $button-medium.text
+color: $button-medium.color
+role: $inherited.types.button-medium
+
+-- end: button-medium
+
+
+-- component button-small:
+caption or body text:
+ftd.color color: $inherited.colors.text-strong
+ftd.display display: inline
+
+-- ftd.text: $button-small.text
+color: $button-small.color
+role: $inherited.types.button-small
+
+-- end: button-small
+
+
 -- component copy-large:
-module design-system: ds
-body text:
+caption or body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -77,8 +103,7 @@ role: $inherited.types.copy-large
 
 
 -- component copy-regular:
-module design-system: ds
-body text:
+caption or body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -90,8 +115,7 @@ role: $inherited.types.copy-regular
 
 
 -- component copy-small:
-module design-system: ds
-body text:
+caption or body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -103,8 +127,7 @@ role: $inherited.types.copy-small
 
 
 -- component fine-print:
-module design-system: ds
-body text:
+caption or body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -117,8 +140,21 @@ role: $inherited.types.fine-print
 
 
 
+-- component source-code:
+caption or body text:
+ftd.color color: $inherited.colors.text
+ftd.display display: inline
+
+-- ftd.text: $source-code.text
+color: $source-code.color
+role: $inherited.types.source-code
+display: $source-code.display
+
+-- end: source-code
+
+
+
 -- component link:
-module design-system: ds
 caption or body text:
 string link:
 ftd.color color: $inherited.colors.cta-primary.base
@@ -131,125 +167,3 @@ display: $link.display
 link: $link.link
 
 -- end: link
-
-
-
-
-
-
-
-
-
--- ds.blank-page: Typography
-
--- ds.rendered:
-
-\-- heading-hero: Heading hero typography
--- heading-hero: Heading hero typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- heading-large: Heading large typography
--- heading-large: Heading large typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- heading-medium: Heading medium typography
--- heading-medium: Heading medium typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- heading-small: Heading small typography
--- heading-small: Heading small typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- heading-tiny: Heading tiny typography
--- heading-tiny: Heading tiny typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- copy-large:
-
-Copy large typography
-
--- copy-large:
-
-Copy large typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- copy-regular:
-
-Copy regular typography
-
--- copy-regular:
-
-Copy regular typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- copy-small:
-
-Copy small typography
-
--- copy-small:
-
-Copy small typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- fine-print:
-
-Fine print typography
-
--- fine-print:
-
-Fine print typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- link: Link typography
-link: /
--- link: Link typography
-link: /
-
--- end: ds.rendered
-
--- end: ds.blank-page
