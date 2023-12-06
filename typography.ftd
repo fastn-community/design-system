@@ -1,8 +1,10 @@
 -- component heading-hero:
-caption or body text:
+module design-system: ds
+caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-hero.text
+width: fill-container
 color: $heading-hero.color
 role: $inherited.types.heading-hero
 
@@ -10,7 +12,8 @@ role: $inherited.types.heading-hero
 
 
 -- component heading-large:
-caption or body text:
+module design-system: ds
+caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-large.text
@@ -21,10 +24,12 @@ role: $inherited.types.heading-large
 
 
 -- component heading-medium:
-caption or body text:
+module design-system: ds
+caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-medium.text
+width: fill-container
 color: $heading-medium.color
 role: $inherited.types.heading-medium
 
@@ -32,10 +37,12 @@ role: $inherited.types.heading-medium
 
 
 -- component heading-small:
-caption or body text:
+module design-system: ds
+caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-small.text
+width: fill-container
 color: $heading-small.color
 role: $inherited.types.heading-small
 
@@ -43,54 +50,21 @@ role: $inherited.types.heading-small
 
 
 -- component heading-tiny:
-caption or body text:
+module design-system: ds
+caption text:
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-tiny.text
+width: fill-container
 color: $heading-tiny.color
 role: $inherited.types.heading-tiny
 
 -- end: heading-tiny
 
 
--- component button-large:
-caption or body text:
-ftd.color color: $inherited.colors.text-strong
-ftd.display display: inline
-
--- ftd.text: $button-large.text
-color: $button-large.color
-role: $inherited.types.button-large
-
--- end: button-large
-
-
--- component button-medium:
-caption or body text:
-ftd.color color: $inherited.colors.text-strong
-ftd.display display: inline
-
--- ftd.text: $button-medium.text
-color: $button-medium.color
-role: $inherited.types.button-medium
-
--- end: button-medium
-
-
--- component button-small:
-caption or body text:
-ftd.color color: $inherited.colors.text-strong
-ftd.display display: inline
-
--- ftd.text: $button-small.text
-color: $button-small.color
-role: $inherited.types.button-small
-
--- end: button-small
-
-
 -- component copy-large:
-caption or body text:
+module design-system: ds
+body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -103,7 +77,8 @@ role: $inherited.types.copy-large
 
 
 -- component copy-regular:
-caption or body text:
+module design-system: ds
+body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -115,7 +90,8 @@ role: $inherited.types.copy-regular
 
 
 -- component copy-small:
-caption or body text:
+module design-system: ds
+body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -127,7 +103,8 @@ role: $inherited.types.copy-small
 
 
 -- component fine-print:
-caption or body text:
+module design-system: ds
+body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 
@@ -140,21 +117,8 @@ role: $inherited.types.fine-print
 
 
 
--- component source-code:
-caption or body text:
-ftd.color color: $inherited.colors.text
-ftd.display display: inline
-
--- ftd.text: $source-code.text
-color: $source-code.color
-role: $inherited.types.source-code
-display: $source-code.display
-
--- end: source-code
-
-
-
 -- component link:
+module design-system: ds
 caption or body text:
 string link:
 ftd.color color: $inherited.colors.cta-primary.base

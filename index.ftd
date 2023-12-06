@@ -1,5 +1,9 @@
 -- import: fastn-community.github.io/dark-flame-cs
 -- import: fastn-community.github.io/roboto-typography
+
+-- import: fastn-community.github.io/code-block
+export: code, rendered
+
 -- import: fastn-community.github.io/design-system/form/button as button-module
 export: button
 
@@ -21,16 +25,13 @@ export: hero-with-two-cta
 export: icon-button, circle-text-button, phosphor-icon-button, fa-icon-button
 
 -- import: fastn-community.github.io/design-system/typography as typography-module
-export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny,button-large, button-medium, button-small, copy-large, copy-regular, copy-small, fine-print, source-code, link
+export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny, copy-large, copy-regular, copy-small, fine-print, source-code, link
+exposing: heading-large, copy-regular
 
 -- ftd.color-scheme colors: $dark-flame-cs.main
 -- ftd.type-data types: $roboto-typography.types
 
 
--- ftd.column:
-width: fill-container
-height: fill-container
-background.solid: $colors.background.base
 
 -- blank.blank-page: design-system
 
@@ -60,4 +61,4 @@ This is the package you have been waiting for!
 
 
 
--- end: ftd.column
+-- end: blank.blank-page
