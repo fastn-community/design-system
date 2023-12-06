@@ -32,6 +32,7 @@ width: fill-container
 height: fill-container
 background.solid: $colors.background.base
 
+-- blank.blank-page: design-system
 
 -- ftd.row:
 
@@ -59,4 +60,4 @@ This is the package you have been waiting for!
 
 
 
--- end: blank.blank-page
+-- end: ftd.column
