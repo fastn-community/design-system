@@ -7,6 +7,9 @@ export: code, rendered
 -- import: fastn-community.github.io/design-system/form/button as button-module
 export: button
 
+-- import: fastn-community.github.io/design-system/form/button-group as bg-module
+export: button-group
+
 -- import: fastn-community.github.io/design-system/pages/blank
 export: blank-page
 
