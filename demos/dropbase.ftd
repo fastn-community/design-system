@@ -13,26 +13,54 @@ wide.px: 1400
 design-system: ds
 widths: $widths
 
--- ds.basic-header:
+-- ds.section-grid:
 design-system: ds
-;; flush: $flush-full
+background.solid: $inherited.colors.background.step-1
+spacing: $ds.spaces.vertical-gap.space-between
+
+-- ds.button: LOGO
+
+-- ds.row:
+width: hug-content
+
+-- ds.heading-tiny: Docs
+width: hug-content
+
+-- ds.heading-tiny: Blog
+width: hug-content
+
+-- ds.heading-tiny: Pricing
+width: hug-content
+
+-- end: ds.row
+
+
+-- ds.row:
+width: hug-content
+
+-- ds.phosphor-icon-button: Search
+icon: magnifying-glass
+
+-- ds.heading-tiny: Login
+width: hug-content
+
+-- ds.button: Book demo
+-- end: ds.row
+
+-- end: ds.section-grid
 
 -- ds.section-grid:
 design-system: ds
 
 -- ds.column:
-
 -- ds.heading-tiny: DROPBASE
-
 -- ds.heading-hero: Unlock insights from Conversations using GenAI
-
 -- ds.copy-large:
 
 Leverage AI driven insights & actionables from your customer conversations
 across all channels - Calls, Chats & Meetings to boost your business efficiency
 
 -- ds.button-group:
-spacing.px: 10
 
 -- ds.button: Book Demo
 -- ds.phosphor-icon-button: Documentation

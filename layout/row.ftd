@@ -4,14 +4,16 @@
 module design-system: ds
 ds.hv inset: $ds.spaces.inset-square.zero
 ds.gap spacing: $ds.spaces.horizontal-gap.medium
+ftd.resizing width: fill-container
 children content:
 
 -- ftd.row:
-width: fill-container
+width: $row.width
 padding-vertical.px: $row.inset.vertical
 padding-horizontal.px: $row.inset.horizontal
 spacing.fixed.px: $row.spacing.gap
 spacing if { row.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
+align-content: center
 children: $row.content
 
 -- end: ftd.row

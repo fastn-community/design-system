@@ -1,10 +1,10 @@
 -- component button-group:
 module design-system: ds
 children buttons:
-ftd.length.px spacing: 10
+ds.gap spacing: $ds.spaces.vertical-gap.small
 
 -- ftd.row:
-spacing.fixed: $button-group.spacing
+spacing.fixed.px: $button-group.spacing.gap
 children: $button-group.buttons
 
 -- end: ftd.row
