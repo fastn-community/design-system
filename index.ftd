@@ -22,8 +22,11 @@ export: full-width-page, section-grid, flush-wide, page-widths
 -- import: fastn-community.github.io/design-system/section-grid as section-grid-module
 export: section-grid
 
--- import: fastn-community.github.io/design-system/stack as stack-module
-export: stack
+-- import: fastn-community.github.io/design-system/layout/column as column-module
+export: column
+
+-- import: fastn-community.github.io/design-system/layout/row as row-module
+export: row
 
 -- import: fastn-community.github.io/design-system/headers/basic-header as bhm
 export: basic-header

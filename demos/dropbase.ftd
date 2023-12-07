@@ -20,7 +20,7 @@ design-system: ds
 -- ds.section-grid:
 design-system: ds
 
--- ds.stack:
+-- ds.column:
 spacing.px: 20
 
 -- ds.heading-tiny: DROPBASE
@@ -41,16 +41,16 @@ icon: caret-right
 
 -- end: ds.button-group
 
--- end: ds.stack
+-- end: ds.column
 
--- ds.stack:
+-- ds.column:
 
 -- ftd.image:
 width.fixed.percent: 80
 align-self: center
 src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
 
--- end: ds.stack
+-- end: ds.column
 
 -- end: ds.section-grid
 
