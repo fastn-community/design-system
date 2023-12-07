@@ -17,11 +17,11 @@ widths: $widths
 design-system: ds
 ;; flush: $flush-full
 
--- ds.split-section:
+-- ds.section-grid:
 design-system: ds
-spacing-start.px: 20
 
--- ds.split-section.start:
+-- ds.stack:
+spacing.px: 20
 
 -- ds.heading-tiny: DROPBASE
 
@@ -41,16 +41,18 @@ icon: caret-right
 
 -- end: ds.button-group
 
--- end: ds.split-section.start
+-- end: ds.stack
 
--- ds.split-section.end:
+-- ds.stack:
 
 -- ftd.image:
 width.fixed.percent: 80
 align-self: center
 src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
 
--- end: ds.split-section.end
+-- end: ds.stack
+
+-- end: ds.section-grid
 
 
 -- end: ds.full-width-page
