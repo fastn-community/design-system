@@ -1,0 +1,56 @@
+-- import: fastn-community.github.io/design-system/hack
+
+-- integer hack-flush-to-header: 0
+-- integer hack-flush-full: 1
+-- integer hack-flush-wide: 2
+-- integer hack-flush-narrow: 3
+
+
+
+-- component section-column:
+optional caption title:
+module design-system: ds
+integer flush: $hack-flush-to-header
+children content:
+optional ds.gap spacing:
+optional ftd.background background:
+ds.hv inset: $ds.spaces.inset-wide.medium
+ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
+
+-- ftd.column:
+width: fill-container
+align-content: center
+background: $section-column.background
+margin-bottom: $section-column.margin
+padding-vertical.px: $section-column.inset.vertical
+padding-horizontal.px: $section-column.inset.horizontal
+
+-- ftd.column:
+width if { section-column.flush == hack-flush-full }: fill-container
+max-width.fixed if { section-column.flush == hack-flush-narrow }: $inherited.widths.narrow
+max-width.fixed if { section-column.flush == hack-flush-wide }: $inherited.widths.wide
+width.fixed: $inherited.widths.regular
+children: $section-column.content
+align-content: center
+spacing if { section-column.spacing != NULL && section-column.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
+spacing.fixed.px: $section-column.spacing.gap
+if: { section-column.spacing != NULL } ;; TODO: this is hack (remove this condition and below row)
+
+-- end: ftd.column
+
+
+
+-- ftd.row:
+width if { section-column.flush == hack-flush-full }: fill-container
+max-width.fixed if { section-column.flush == hack-flush-narrow }: $inherited.widths.narrow
+max-width.fixed if { section-column.flush == hack-flush-wide }: $inherited.widths.wide
+max-width.fixed: $inherited.widths.regular
+children: $section-column.content
+align-content: center
+if: { section-column.spacing == NULL }
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: section-column

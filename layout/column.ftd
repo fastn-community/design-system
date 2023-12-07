@@ -4,7 +4,7 @@
 optional caption title:
 module design-system: ds
 ds.hv inset: $ds.spaces.inset-square.zero
-ds.gap spacing: $ds.spaces.vertical-gap.medium
+ds.gap spacing: $ds.spaces.horizontal-gap.medium
 ftd.resizing width: fill-container
 children content:
 

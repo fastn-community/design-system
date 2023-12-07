@@ -24,9 +24,24 @@ design-system: ds
 -- hero:
 design-system: ds
 
+-- any-data-or-api:
+design-system: ds
+
 
 -- end: ds.full-width-page
 
+
+
+
+-- component any-data-or-api:
+module design-system: ds
+
+-- ds.section-column:
+design-system: $any-data-or-api.design-system
+
+-- end: ds.section-column
+
+-- end: any-data-or-api
 
 
 
@@ -34,7 +49,7 @@ design-system: ds
 -- component hero:
 module design-system: ds
 
--- ds.section-grid: hero section
+-- ds.section-row: hero section
 design-system: $hero.design-system
 
 
@@ -78,7 +93,7 @@ width: fill-container
 
 
 
--- end: ds.section-grid
+-- end: ds.section-row
 
 -- end: hero
 
@@ -96,7 +111,7 @@ width: fill-container
 -- component header:
 module design-system: ds
 
--- ds.section-grid:
+-- ds.section-row:
 design-system: $header.design-system
 background.solid: $inherited.colors.background.step-1
 spacing: $ds.spaces.vertical-gap.space-between
@@ -144,6 +159,6 @@ design-system: $header.design-system
 
 
 
--- end: ds.section-grid
+-- end: ds.section-row
 
 -- end: header
