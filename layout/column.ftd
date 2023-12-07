@@ -4,10 +4,11 @@
 module design-system: ds
 ds.hv inset: $ds.spaces.inset-square.zero
 ds.gap spacing: $ds.spaces.vertical-gap.medium
+ftd.resizing width: fill-container
 children content:
 
 -- ftd.column:
-width: fill-container
+width: $column.width
 padding-vertical.px: $column.inset.vertical
 padding-horizontal.px: $column.inset.horizontal
 spacing.fixed.px: $column.spacing.gap

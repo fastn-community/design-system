@@ -333,7 +333,7 @@ td {
     </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column ft_full_size"><div data-id="4" class="ft_column __w-3 __h-4 __bgc-5 __jc-6 __ali-7"><div data-id="5" class="ft_row __pos-8 __p-9 __bw-10 __br-11 __bc-12 __b-13 __r-14 __z-15 __bgc-16"><comment data-id="6"></comment><div data-id="7" class="ft_row __cur-17"><img data-id="8" src="-/fastn-community.github.io/dark-mode-switcher/static/system-mode-active.png" class="__as-18 __w-19 __h-20"></img></div><comment data-id="9"></comment><comment data-id="10"></comment></div><div data-id="11" class="ft_column __w-21 __pl-22 __pr-23 __pt-24 __pb-25 __c-26 __jc-27 __ali-28 __g-29"><comment data-id="12"></comment><div data-id="13" class="__rl-30 __c-31">The Blank Page</div><comment data-id="14"></comment><div data-id="15" class="ft_column __w-32 __g-33"></div></div></div></div></div></body><style id="styles">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column ft_full_size"><div data-id="4" class="ft_column __w-3 __h-4 __bgc-5 __jc-6 __ali-7"><div data-id="5" class="ft_row __pos-8 __p-9 __bw-10 __br-11 __bc-12 __b-13 __r-14 __z-15 __bgc-16"><comment data-id="6"></comment><div data-id="7" class="ft_row __cur-17"><img data-id="8" src="-/fastn-community.github.io/dark-mode-switcher/static/system-mode-active.png" class="__as-18 __w-19 __h-20"></img></div><comment data-id="9"></comment><comment data-id="10"></comment></div><div data-id="11" class="ft_column __w-21 __pl-22 __pr-23 __pt-24 __pb-25 __c-26 __jc-27 __ali-28 __g-29"><comment data-id="12"></comment><div data-id="13" class="__rl-30 __w-31 __c-32">The Blank Page</div><comment data-id="14"></comment><div data-id="15" class="ft_column __w-33 __g-34"></div></div></div></div></div></body><style id="styles">
     .__w-1 { width: 100%; }
 	.__h-2 { height: 100%; }
 	.__w-3 { width: 100%; }
@@ -371,12 +371,13 @@ td {
 	.__g-29 { gap: 16px; }
 	.__rl-30 {  font-family: fastn-community-github-io-roboto-font-Roboto; letter-spacing: 0px; font-size: 40px; font-weight: 700; line-height: 48px; }
 	body.mobile .__rl-30 {  font-family: fastn-community-github-io-roboto-font-Roboto; letter-spacing: 0px; font-size: 40px; font-weight: 700; line-height: 48px; }
-	.__c-31 { color: #333333 !important; }
-	body.dark .__c-31 { color: #FFFFFF !important; }
-	.__c-31:visited { color: #333333 !important; }
-	body.dark  .__c-31:visited { color: #FFFFFF !important; }
-	.__w-32 { width: 100%; }
-	.__g-33 { gap: 16px; }
+	.__w-31 { width: 100%; }
+	.__c-32 { color: #333333 !important; }
+	body.dark .__c-32 { color: #FFFFFF !important; }
+	.__c-32:visited { color: #333333 !important; }
+	body.dark  .__c-32:visited { color: #FFFFFF !important; }
+	.__w-33 { width: 100%; }
+	.__g-34 { gap: 16px; }
     </style><style>
 
 
@@ -1075,6 +1076,7 @@ let fastn_community_github_io_design_system_typography__heading_large = function
   try {
     let __args__ = {
       design_system: fastn.module("fastn_community_github_io_design_system", global),
+      width: fastn_dom.Resizing.FillContainer,
       color: inherited.get("colors").get("text_strong"),
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
@@ -1082,6 +1084,7 @@ let fastn_community_github_io_design_system_typography__heading_large = function
     let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Text);
     parenti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_large"), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.text, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, __args__.width, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Color, __args__.color, inherited);
     return parenti0;
   } finally {

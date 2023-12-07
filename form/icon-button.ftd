@@ -20,7 +20,7 @@ integer variant: $button.solid
 integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
-integer kind: $button.kind-default
+integer kind: $button.kind-primary
 module design-system: ds
 ;; private stuff
 boolean $hover: false
@@ -55,7 +55,7 @@ optional string link:
 boolean enabled: true
 integer size: $button.medium
 boolean outline: false
-integer kind: $button.kind-default
+integer kind: $button.kind-primary
 module design-system: ds
 ;; private stuff
 boolean $hover: false
@@ -86,7 +86,7 @@ optional string link:
 boolean enabled: true
 integer size: $button.medium
 boolean outline: false
-integer kind: $button.kind-default
+integer kind: $button.kind-primary
 module design-system: ds
 ;; private stuff
 boolean $hover: false
@@ -155,7 +155,7 @@ integer variant: $button.solid
 integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
-integer kind: $button.kind-default
+integer kind: $button.kind-primary
 module design-system: ds
 ;; private stuff
 boolean $hover: false
@@ -218,7 +218,7 @@ integer variant: $button.solid
 integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
-integer kind: $button.kind-default
+integer kind: $button.kind-primary
 module design-system: ds
 ;; private stuff
 boolean $hover: false
@@ -265,7 +265,7 @@ integer variant: $button.solid
 integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
-integer kind: $button.kind-default
+integer kind: $button.kind-primary
 module design-system: ds
 children uis:
 ftd.length.px border-radius: 8
