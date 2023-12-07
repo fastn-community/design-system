@@ -83,50 +83,6 @@ align-content: center
 
 
 
--- component split-section:
-module design-system: ds
-integer flush: $flush-to-header
-optional ftd.length padding-top:
-optional ftd.length padding-bottom:
-optional ftd.length padding-vertical:
-ftd.ui list start:
-ftd.length spacing-start:
-ftd.ui list end:
-
--- ftd.column:
-width: fill-container
-align-content: center
-padding-top: $split-section.padding-top
-padding-bottom: $split-section.padding-bottom
-padding-vertical: $split-section.padding-vertical
-
--- ftd.row:
-width if { split-section.flush == flush-full }: fill-container
-width.fixed if { split-section.flush == flush-narrow }: $inherited.widths.narrow
-width.fixed if { split-section.flush == flush-wide }: $inherited.widths.wide
-width.fixed: $inherited.widths.regular
-align-content: center
-
--- ftd.column:
-width: fill-container
-spacing.fixed: $split-section.spacing-start
-children: $split-section.start
-
-
--- end: ftd.column
-
--- ftd.column:
-width: fill-container
-children: $split-section.end
-
--- end: ftd.column
-
--- end: ftd.row
-
--- end: ftd.column
-
--- end: split-section
-
 
 
 
