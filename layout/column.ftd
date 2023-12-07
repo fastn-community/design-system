@@ -1,4 +1,4 @@
--- component stack:
+-- component column:
 module design-system: ds
 ds.hv inset: $ds.spaces.inset-square.zero
 ftd.length.px spacing: $ds.spaces.vertical-gap.medium.gap
@@ -6,11 +6,11 @@ children content:
 
 -- ftd.column:
 width: fill-container
-padding-vertical.px: $stack.inset.vertical
-padding-horizontal.px: $stack.inset.horizontal
-spacing.fixed: $stack.spacing
-children: $stack.content
+padding-vertical.px: $column.inset.vertical
+padding-horizontal.px: $column.inset.horizontal
+spacing.fixed: $column.spacing
+children: $column.content
 
 -- end: ftd.column
 
--- end: stack
+-- end: column

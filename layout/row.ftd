@@ -1,0 +1,16 @@
+-- component row:
+module design-system: ds
+ds.hv inset: $ds.spaces.inset-square.zero
+ftd.length.px spacing: $ds.spaces.horizontal-gap.medium.gap
+children content:
+
+-- ftd.row:
+width: fill-container
+padding-vertical.px: $row.inset.vertical
+padding-horizontal.px: $row.inset.horizontal
+spacing.fixed: $row.spacing
+children: $row.content
+
+-- end: ftd.row
+
+-- end: row
