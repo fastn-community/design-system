@@ -59,28 +59,6 @@ background.solid: $inherited.colors.background.base
 
 
 
--- component section-grid:
-module design-system: ds
-integer flush: $flush-to-header
-children content:
-
--- ftd.column:
-width: fill-container
-align-content: center
-
--- ftd.row:
-width if { section-grid.flush == flush-full }: fill-container
-max-width.fixed if { section-grid.flush == flush-narrow }: $inherited.widths.narrow
-max-width.fixed if { section-grid.flush == flush-wide }: $inherited.widths.wide
-max-width.fixed: $inherited.widths.regular
-children: $section-grid.content
-align-content: center
-
--- end: ftd.row
-
--- end: ftd.column
-
--- end: section-grid
 
 
 
@@ -139,6 +117,3 @@ src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7
 
 
 -- end: full-width-page
-
-
-

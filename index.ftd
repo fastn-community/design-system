@@ -19,8 +19,14 @@ export: blank-page
 -- import: fastn-community.github.io/design-system/pages/full-width
 export: full-width-page, section-grid, flush-wide, page-widths
 
--- import: fastn-community.github.io/design-system/sections/split as split-section-module
+-- import: fastn-community.github.io/design-system/sections/split
 export: split-section
+
+-- import: fastn-community.github.io/design-system/sections/grid
+export: section-grid
+
+-- import: fastn-community.github.io/design-system/stack as stack-module
+export: stack
 
 -- import: fastn-community.github.io/design-system/headers/basic-header as bhm
 export: basic-header
@@ -75,5 +81,6 @@ This is the package you have been waiting for!
 -- copy-regular:
 
 - [Dropbase.io](demos/dropbase/)
+- [Dropbase.io Grid](demos/dropbase-using-grid-and-stack/)
 
 -- end: blank.blank-page
