@@ -26,7 +26,7 @@ export: section-grid
 export: column
 
 -- import: fastn-community.github.io/design-system/layout/row as row-module
-export: row
+export: row, inline-row
 
 -- import: fastn-community.github.io/design-system/headers/basic-header as bhm
 export: basic-header
