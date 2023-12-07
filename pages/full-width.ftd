@@ -25,16 +25,16 @@ narrow.px: 800
 wide.px: 1200
 
 -- component full-width-page:
-optional string seo-title:
-optional string seo-description:
+optional caption title:
+optional body description:
 children content:
 module design-system: ds
 ftd.length.px spacing: 0
 page-widths widths: $default-widths
 
 -- ftd.document:
-title: $full-width-page.seo-title
-description: $full-width-page.seo-description
+title: $full-width-page.title
+description: $full-width-page.description
 colors: $full-width-page.design-system.colors
 types: $full-width-page.design-system.types
 
