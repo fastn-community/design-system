@@ -8,7 +8,7 @@ export: hv, gap, insets, squishes, stretches, gaps, space-data
 export: code, rendered
 
 -- import: fastn-community.github.io/design-system/form/button as button-module
-export: button
+export: button, primary-button, secondary-button, tertiary-button, success-button, warning-button, danger-button, info-button
 
 -- import: fastn-community.github.io/design-system/form/button-group as bg-module
 export: button-group

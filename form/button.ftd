@@ -42,6 +42,284 @@
 -- integer extra-small: 3
 
 
+
+
+
+
+
+
+
+
+-- component primary-button:
+caption title:
+optional string link:
+module design-system: ds
+boolean $hover: false
+
+-- ftd.row:
+background.solid: $inherited.colors.cta-primary.base
+border-radius.px: 8
+padding-horizontal.px: 18
+padding-vertical.px: 16
+align-content: center
+background.solid if { primary-button.hover }: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $primary-button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $primary-button.hover, v = false)
+spacing.fixed.px: 8
+width: hug-content
+min-width.fixed.px: 322
+
+-- ftd.text: $primary-button.title
+if: { primary-button.title != NULL }
+role: $inherited.types.button-small
+color: $inherited.colors.cta-primary.text
+link: $primary-button.link
+white-space: nowrap
+
+-- end: ftd.row
+
+-- end: primary-button
+
+
+
+
+
+
+
+
+
+
+-- component secondary-button:
+caption title:
+optional string link:
+module design-system: ds
+boolean $hover: false
+
+-- ftd.row:
+background.solid: $inherited.colors.cta-secondary.base
+border-radius.px: 8
+padding-horizontal.px: 18
+padding-vertical.px: 16
+align-content: center
+background.solid if { secondary-button.hover }: $inherited.colors.cta-secondary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $secondary-button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $secondary-button.hover, v = false)
+spacing.fixed.px: 8
+width: hug-content
+min-width.fixed.px: 322
+
+-- ftd.text: $secondary-button.title
+if: { secondary-button.title != NULL }
+role: $inherited.types.button-small
+color: $inherited.colors.cta-secondary.text
+link: $secondary-button.link
+white-space: nowrap
+
+-- end: ftd.row
+
+-- end: secondary-button
+
+
+
+
+
+
+
+
+
+
+-- component tertiary-button:
+caption title:
+optional string link:
+module design-system: ds
+boolean $hover: false
+
+-- ftd.row:
+background.solid: $inherited.colors.cta-tertiary.base
+border-radius.px: 8
+padding-horizontal.px: 18
+padding-vertical.px: 16
+align-content: center
+background.solid if { tertiary-button.hover }: $inherited.colors.cta-tertiary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $tertiary-button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $tertiary-button.hover, v = false)
+spacing.fixed.px: 8
+width: hug-content
+min-width.fixed.px: 322
+
+-- ftd.text: $tertiary-button.title
+if: { tertiary-button.title != NULL }
+role: $inherited.types.button-small
+color: $inherited.colors.cta-tertiary.text
+link: $tertiary-button.link
+white-space: nowrap
+
+-- end: ftd.row
+
+-- end: tertiary-button
+
+
+
+
+
+
+
+
+
+
+-- component success-button:
+caption title:
+optional string link:
+module design-system: ds
+boolean $hover: false
+
+-- ftd.row:
+background.solid: $inherited.colors.success.base
+border-radius.px: 8
+padding-horizontal.px: 18
+padding-vertical.px: 16
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $success-button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $success-button.hover, v = false)
+spacing.fixed.px: 8
+width: hug-content
+min-width.fixed.px: 322
+
+-- ftd.text: $success-button.title
+if: { success-button.title != NULL }
+role: $inherited.types.button-small
+color: $inherited.colors.success.text
+link: $success-button.link
+white-space: nowrap
+
+-- end: ftd.row
+
+-- end: success-button
+
+
+
+
+
+
+
+
+
+
+-- component warning-button:
+caption title:
+optional string link:
+module design-system: ds
+boolean $hover: false
+
+-- ftd.row:
+background.solid: $inherited.colors.warning.base
+border-radius.px: 8
+padding-horizontal.px: 18
+padding-vertical.px: 16
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $warning-button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $warning-button.hover, v = false)
+spacing.fixed.px: 8
+width: hug-content
+min-width.fixed.px: 322
+
+-- ftd.text: $warning-button.title
+if: { warning-button.title != NULL }
+role: $inherited.types.button-small
+color: $inherited.colors.warning.text
+link: $warning-button.link
+white-space: nowrap
+
+-- end: ftd.row
+
+-- end: warning-button
+
+
+
+
+
+
+
+
+
+
+-- component danger-button:
+caption title:
+optional string link:
+module design-system: ds
+boolean $hover: false
+
+-- ftd.row:
+background.solid: $inherited.colors.cta-danger.base
+border-radius.px: 8
+padding-horizontal.px: 18
+padding-vertical.px: 16
+align-content: center
+background.solid if { danger-button.hover }: $inherited.colors.cta-danger.hover
+$on-mouse-enter$: $ftd.set-bool($a = $danger-button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $danger-button.hover, v = false)
+spacing.fixed.px: 8
+width: hug-content
+min-width.fixed.px: 322
+
+-- ftd.text: $danger-button.title
+if: { danger-button.title != NULL }
+role: $inherited.types.button-small
+color: $inherited.colors.cta-danger.text
+link: $danger-button.link
+white-space: nowrap
+
+-- end: ftd.row
+
+-- end: danger-button
+
+
+
+
+
+
+
+
+
+
+-- component info-button:
+caption title:
+optional string link:
+module design-system: ds
+boolean $hover: false
+
+-- ftd.row:
+background.solid: $inherited.colors.info.base
+border-radius.px: 8
+padding-horizontal.px: 18
+padding-vertical.px: 16
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $info-button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $info-button.hover, v = false)
+spacing.fixed.px: 8
+width: hug-content
+min-width.fixed.px: 322
+
+-- ftd.text: $info-button.title
+if: { info-button.title != NULL }
+role: $inherited.types.button-small
+color: $inherited.colors.info.text
+link: $info-button.link
+white-space: nowrap
+
+-- end: ftd.row
+
+-- end: info-button
+
+
+
+
+
+
+
+
+
+
 -- component button:
 caption title:
 optional string link:
