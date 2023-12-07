@@ -116,14 +116,21 @@ caption text:
 optional string link:
 module design-system: ds
 
--- ftd.text: $circle-text-button.text
-padding.px: 8
+-- ftd.column:
 color: $inherited.colors.cta-primary.text
 background.solid: $inherited.colors.cta-primary.base
 border-color: $inherited.colors.cta-primary.border
 border-width.px: 2
 border-radius.percent: 50
+min-width.fixed.px: 24
+min-height.fixed.px: 24
 link: $circle-text-button.link
+role: $inherited.types.fine-print
+align-content: center
+
+-- ftd.text: $circle-text-button.text
+
+-- end: ftd.column
 
 -- end: circle-text-button
 
