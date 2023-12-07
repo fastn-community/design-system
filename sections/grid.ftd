@@ -1,0 +1,28 @@
+-- integer hack-flush-to-header: 0
+-- integer hack-flush-full: 1
+-- integer hack-flush-wide: 2
+-- integer hack-flush-narrow: 3
+
+
+-- component section-grid:
+module design-system: ds
+integer flush: $hack-flush-to-header
+children content:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.row:
+width if { section-grid.flush == hack-flush-full }: fill-container
+max-width.fixed if { section-grid.flush == hack-flush-narrow }: $inherited.widths.narrow
+max-width.fixed if { section-grid.flush == hack-flush-wide }: $inherited.widths.wide
+max-width.fixed: $inherited.widths.regular
+children: $section-grid.content
+align-content: center
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: section-grid
