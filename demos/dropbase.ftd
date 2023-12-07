@@ -17,51 +17,75 @@ Dropbase is a developer platform that makes it easy to build internal apps for
 customer success, support, and operations teams. Dashboards, admin panels, and
 custom tools with SQL and Python in minutes.
 
+
 -- header:
 design-system: ds
 
--- ds.section-grid:
+-- hero:
 design-system: ds
 
--- ds.column:
+
+-- end: ds.full-width-page
+
+
+
+
+
+-- component hero:
+module design-system: ds
+
+-- ds.section-grid: hero section
+design-system: $hero.design-system
+
+
+-- ds.column: left column
 
 -- ds.heading-tiny: DROPBASE
-design-system: ds
+design-system: $hero.design-system
 
 -- ds.heading-hero: Unlock insights from Conversations using GenAI
-design-system: ds
+design-system: $hero.design-system
 
 -- ds.copy-large:
+design-system: $hero.design-system
 
 Leverage AI driven insights & actionables from your customer conversations
 across all channels - Calls, Chats & Meetings to boost your business efficiency
 
 -- ds.button-group:
-design-system: ds
+design-system: $hero.design-system
 
 -- ds.button: Book Demo
-design-system: ds
+design-system: $hero.design-system
 
 -- ds.phosphor-icon-button: Documentation
-design-system: ds
+design-system: $hero.design-system
 icon: caret-right
 
 -- end: ds.button-group
 
 -- end: ds.column
 
--- ds.column:
 
--- ftd.image:
+
+-- ds.column: right column
+design-system: $hero.design-system
+
+-- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
 width: fill-container
-src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
 
 -- end: ds.column
 
+
+
 -- end: ds.section-grid
 
+-- end: hero
 
--- end: ds.full-width-page
+
+
+
+
 
 
 
@@ -81,41 +105,44 @@ inset: $ds.spaces.inset-wide.large
 
 
 -- ds.inline-row: Logo | Docs | Blog | Pricing
-design-system: ds
+design-system: $header.design-system
 
 -- ds.button: LOGO
-design-system: ds
+design-system: $header.design-system
 
 -- ds.header-link: Docs
-design-system: ds
+design-system: $header.design-system
 link: /
 
 -- ds.header-link: Blog
-design-system: ds
+design-system: $header.design-system
 link: /
 
 -- ds.header-link: Pricing
-design-system: ds
+design-system: $header.design-system
 link: /
 
 -- end: ds.inline-row
+
 
 
 -- ds.inline-row: Search | Login | Book Demo
-design-system: ds
+design-system: $header.design-system
 
 -- ds.phosphor-icon-button: Search
-design-system: ds
+design-system: $header.design-system
 icon: magnifying-glass
 
 -- ds.header-link: Login
-design-system: ds
+design-system: $header.design-system
 link: /
 
 -- ds.button: Book demo
-design-system: ds
+design-system: $header.design-system
 
 -- end: ds.inline-row
+
+
 
 -- end: ds.section-grid
 

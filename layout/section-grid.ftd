@@ -8,6 +8,7 @@
 
 
 -- component section-grid:
+optional caption title:
 module design-system: ds
 integer flush: $hack-flush-to-header
 children content:

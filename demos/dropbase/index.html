@@ -1020,63 +1020,8 @@ font-family: fastn-community-github-io-roboto-font-Roboto }
         });
       },
       function (root, inherited) {
-        let rooti0 = fastn_community_github_io_design_system__section_grid(root, inherited, {
-          design_system: fastn.module("fastn_community_github_io_design_system", global),
-          content: fastn.mutableList([function (root, inherited) {
-            let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
-              content: fastn.mutableList([function (root, inherited) {
-                let rooti0 = fastn_community_github_io_design_system__heading_tiny(root, inherited, {
-                  design_system: fastn.module("fastn_community_github_io_design_system", global),
-                  text: "DROPBASE"
-                });
-              },
-              function (root, inherited) {
-                let rooti0 = fastn_community_github_io_design_system__heading_hero(root, inherited, {
-                  design_system: fastn.module("fastn_community_github_io_design_system", global),
-                  text: "Unlock insights from Conversations using GenAI"
-                });
-              },
-              function (root, inherited) {
-                let rooti0 = fastn_community_github_io_design_system__copy_large(root, inherited, {
-                  text: "Leverage AI driven insights & actionables from your customer conversations\nacross all channels - Calls, Chats & Meetings to boost your business efficiency"
-                });
-              },
-              function (root, inherited) {
-                let rooti0 = fastn_community_github_io_design_system__button_group(root, inherited, {
-                  design_system: fastn.module("fastn_community_github_io_design_system", global),
-                  buttons: fastn.mutableList([function (root, inherited) {
-                    let rooti0 = fastn_community_github_io_design_system__button(root, inherited, {
-                      title: "Book Demo",
-                      design_system: fastn.module("fastn_community_github_io_design_system", global)
-                    });
-                  },
-                  function (root, inherited) {
-                    let rooti0 = fastn_community_github_io_design_system__phosphor_icon_button(root, inherited, {
-                      title: "Documentation",
-                      icon: "caret-right",
-                      design_system: fastn.module("fastn_community_github_io_design_system", global)
-                    });
-                  }
-                  ])
-                });
-              }
-              ])
-            });
-          },
-          function (root, inherited) {
-            let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
-              content: fastn.mutableList([function (root, inherited) {
-                let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
-                rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, fastn.recordInstance({
-                  dark: "https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp",
-                  light: "https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp"
-                }), inherited);
-                rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
-              }
-              ])
-            });
-          }
-          ])
+        let rooti0 = fastn_community_github_io_design_system_demos_dropbase___hero(root, inherited, {
+          design_system: fastn.module("fastn_community_github_io_design_system", global)
         });
       }
       ]),
@@ -1387,6 +1332,7 @@ let fastn_community_github_io_design_system_layout_section_grid__section_grid = 
   __fastn_package_name__ = "fastn_community_github_io_design_system";
   try {
     let __args__ = {
+      title: null,
       design_system: fastn.module("fastn_community_github_io_design_system", global),
       flush: global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_to_header,
       content: fastn.mutableList([]),
@@ -2077,30 +2023,30 @@ let fastn_community_github_io_design_system_demos_dropbase___header = function (
       content: fastn.mutableList([function (root, inherited) {
         let rooti0 = fastn_community_github_io_design_system__inline_row(root, inherited, {
           title: "Logo | Docs | Blog | Pricing",
-          design_system: fastn.module("fastn_community_github_io_design_system", global),
+          design_system: __args__.design_system,
           content: fastn.mutableList([function (root, inherited) {
             let rooti0 = fastn_community_github_io_design_system__button(root, inherited, {
               title: "LOGO",
-              design_system: fastn.module("fastn_community_github_io_design_system", global)
+              design_system: __args__.design_system
             });
           },
           function (root, inherited) {
             let rooti0 = fastn_community_github_io_design_system__header_link(root, inherited, {
-              design_system: fastn.module("fastn_community_github_io_design_system", global),
+              design_system: __args__.design_system,
               text: "Docs",
               link: "/"
             });
           },
           function (root, inherited) {
             let rooti0 = fastn_community_github_io_design_system__header_link(root, inherited, {
-              design_system: fastn.module("fastn_community_github_io_design_system", global),
+              design_system: __args__.design_system,
               text: "Blog",
               link: "/"
             });
           },
           function (root, inherited) {
             let rooti0 = fastn_community_github_io_design_system__header_link(root, inherited, {
-              design_system: fastn.module("fastn_community_github_io_design_system", global),
+              design_system: __args__.design_system,
               text: "Pricing",
               link: "/"
             });
@@ -2111,17 +2057,17 @@ let fastn_community_github_io_design_system_demos_dropbase___header = function (
       function (root, inherited) {
         let rooti0 = fastn_community_github_io_design_system__inline_row(root, inherited, {
           title: "Search | Login | Book Demo",
-          design_system: fastn.module("fastn_community_github_io_design_system", global),
+          design_system: __args__.design_system,
           content: fastn.mutableList([function (root, inherited) {
             let rooti0 = fastn_community_github_io_design_system__phosphor_icon_button(root, inherited, {
               title: "Search",
               icon: "magnifying-glass",
-              design_system: fastn.module("fastn_community_github_io_design_system", global)
+              design_system: __args__.design_system
             });
           },
           function (root, inherited) {
             let rooti0 = fastn_community_github_io_design_system__header_link(root, inherited, {
-              design_system: fastn.module("fastn_community_github_io_design_system", global),
+              design_system: __args__.design_system,
               text: "Login",
               link: "/"
             });
@@ -2129,7 +2075,7 @@ let fastn_community_github_io_design_system_demos_dropbase___header = function (
           function (root, inherited) {
             let rooti0 = fastn_community_github_io_design_system__button(root, inherited, {
               title: "Book demo",
-              design_system: fastn.module("fastn_community_github_io_design_system", global)
+              design_system: __args__.design_system
             });
           }
           ])
@@ -2147,6 +2093,43 @@ let fastn_community_github_io_design_system_demos_dropbase___header = function (
   }
 }
 global["fastn_community_github_io_design_system_demos_dropbase___header"] = fastn_community_github_io_design_system_demos_dropbase___header;
+let fastn_community_github_io_design_system_layout_column__column = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "fastn_community_github_io_design_system";
+  try {
+    let __args__ = {
+      title: null,
+      design_system: fastn.module("fastn_community_github_io_design_system", global),
+      inset: global.fastn_community_github_io_design_system__spaces.get("inset_square").get("zero"),
+      spacing: global.fastn_community_github_io_design_system__spaces.get("vertical_gap").get("medium"),
+      width: fastn_dom.Resizing.FillContainer,
+      content: fastn.mutableList([]),
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, __args__.width, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(__args__.inset.get("horizontal")), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(__args__.inset.get("vertical")), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([__args__.spacing.get("gap"),
+    global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER], function () {
+      if (function () {
+        return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER));
+      }()) {
+        return fastn_dom.Spacing.SpaceBetween;
+      } else {
+        return fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(__args__.spacing.get("gap")));
+      }
+    }
+    ), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, __args__.content, inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["fastn_community_github_io_design_system_layout_column__column"] = fastn_community_github_io_design_system_layout_column__column;
 let fastn_community_github_io_design_system_typography__heading_tiny = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -2236,42 +2219,85 @@ let fastn_community_github_io_design_system_form_button_group__button_group = fu
   }
 }
 global["fastn_community_github_io_design_system_form_button_group__button_group"] = fastn_community_github_io_design_system_form_button_group__button_group;
-let fastn_community_github_io_design_system_layout_column__column = function (parent, inherited, args)
+let fastn_community_github_io_design_system_demos_dropbase___hero = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
   __fastn_package_name__ = "fastn_community_github_io_design_system";
   try {
     let __args__ = {
       design_system: fastn.module("fastn_community_github_io_design_system", global),
-      inset: global.fastn_community_github_io_design_system__spaces.get("inset_square").get("zero"),
-      spacing: global.fastn_community_github_io_design_system__spaces.get("vertical_gap").get("medium"),
-      width: fastn_dom.Resizing.FillContainer,
-      content: fastn.mutableList([]),
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
-    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
-    parenti0.setProperty(fastn_dom.PropertyKind.Width, __args__.width, inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(__args__.inset.get("horizontal")), inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(__args__.inset.get("vertical")), inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([__args__.spacing.get("gap"),
-    global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER], function () {
-      if (function () {
-        return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER));
-      }()) {
-        return fastn_dom.Spacing.SpaceBetween;
-      } else {
-        return fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(__args__.spacing.get("gap")));
+    let parenti0 = fastn_community_github_io_design_system__section_grid(parent, inherited, {
+      title: "hero section",
+      design_system: __args__.design_system,
+      content: fastn.mutableList([function (root, inherited) {
+        let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
+          title: "left column",
+          content: fastn.mutableList([function (root, inherited) {
+            let rooti0 = fastn_community_github_io_design_system__heading_tiny(root, inherited, {
+              design_system: __args__.design_system,
+              text: "DROPBASE"
+            });
+          },
+          function (root, inherited) {
+            let rooti0 = fastn_community_github_io_design_system__heading_hero(root, inherited, {
+              design_system: __args__.design_system,
+              text: "Unlock insights from Conversations using GenAI"
+            });
+          },
+          function (root, inherited) {
+            let rooti0 = fastn_community_github_io_design_system__copy_large(root, inherited, {
+              design_system: __args__.design_system,
+              text: "Leverage AI driven insights & actionables from your customer conversations\nacross all channels - Calls, Chats & Meetings to boost your business efficiency"
+            });
+          },
+          function (root, inherited) {
+            let rooti0 = fastn_community_github_io_design_system__button_group(root, inherited, {
+              design_system: __args__.design_system,
+              buttons: fastn.mutableList([function (root, inherited) {
+                let rooti0 = fastn_community_github_io_design_system__button(root, inherited, {
+                  title: "Book Demo",
+                  design_system: __args__.design_system
+                });
+              },
+              function (root, inherited) {
+                let rooti0 = fastn_community_github_io_design_system__phosphor_icon_button(root, inherited, {
+                  title: "Documentation",
+                  icon: "caret-right",
+                  design_system: __args__.design_system
+                });
+              }
+              ])
+            });
+          }
+          ])
+        });
+      },
+      function (root, inherited) {
+        let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
+          title: "right column",
+          design_system: __args__.design_system,
+          content: fastn.mutableList([function (root, inherited) {
+            let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+            rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, fastn.recordInstance({
+              dark: "https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp",
+              light: "https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp"
+            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+          }
+          ])
+        });
       }
-    }
-    ), inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.Children, __args__.content, inherited);
+      ])
+    });
     return parenti0;
   } finally {
     __fastn_package_name__ = __fastn_super_package_name__;
   }
 }
-global["fastn_community_github_io_design_system_layout_column__column"] = fastn_community_github_io_design_system_layout_column__column;
+global["fastn_community_github_io_design_system_demos_dropbase___hero"] = fastn_community_github_io_design_system_demos_dropbase___hero;
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_demos_dropbase___widths", fastn.recordInstance({
   regular: fastn_dom.Length.Px(1200),
   narrow: fastn_dom.Length.Px(1000),
@@ -3014,6 +3040,8 @@ let fastn_community_github_io_design_system__inline_row = fastn_community_github
 global["fastn_community_github_io_design_system__inline_row"] = fastn_community_github_io_design_system__inline_row;
 let fastn_community_github_io_design_system__phosphor_icon_button = fastn_community_github_io_design_system_form_icon_button__phosphor_icon_button;
 global["fastn_community_github_io_design_system__phosphor_icon_button"] = fastn_community_github_io_design_system__phosphor_icon_button;
+let fastn_community_github_io_design_system__column = fastn_community_github_io_design_system_layout_column__column;
+global["fastn_community_github_io_design_system__column"] = fastn_community_github_io_design_system__column;
 let fastn_community_github_io_design_system__heading_tiny = fastn_community_github_io_design_system_typography__heading_tiny;
 global["fastn_community_github_io_design_system__heading_tiny"] = fastn_community_github_io_design_system__heading_tiny;
 let fastn_community_github_io_design_system__heading_hero = fastn_community_github_io_design_system_typography__heading_hero;
@@ -3022,8 +3050,6 @@ let fastn_community_github_io_design_system__copy_large = fastn_community_github
 global["fastn_community_github_io_design_system__copy_large"] = fastn_community_github_io_design_system__copy_large;
 let fastn_community_github_io_design_system__button_group = fastn_community_github_io_design_system_form_button_group__button_group;
 global["fastn_community_github_io_design_system__button_group"] = fastn_community_github_io_design_system__button_group;
-let fastn_community_github_io_design_system__column = fastn_community_github_io_design_system_layout_column__column;
-global["fastn_community_github_io_design_system__column"] = fastn_community_github_io_design_system__column;
 fastn_dom.codeData.availableThemes["coldark-theme.dark"] = "code-theme-9A3284FD117DFF7CFD432FF860A5E14169FA592BC3DA4F5E8A6975143F5EA07F.css";
 fastn_dom.codeData.availableThemes["coldark-theme.light"] = "code-theme-99CD7B013C96C4632F0AEA39AC265387B814AE85A7D33666A4AE4BEFF59016D0.css";
 fastn_dom.codeData.availableThemes["coy-theme"] = "code-theme-B3AEA322EADEDA61F0E219845A0E9C8E73F6345E49362B46E6F52CEE40471248.css";
