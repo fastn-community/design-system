@@ -7,7 +7,7 @@
 module design-system: ds
 integer flush: $full-width.flush-to-header
 ;; margin is margin bottom most of the times
-ds.hv inset: $ds.spaces.inset-squish.medium
+ds.hv inset: $ds.spaces.inset-wide.medium
 ftd.length.px margin: $ds.spaces.vertical-gap.large.gap ;; TODO refer .design-system
 
 -- ftd.column:

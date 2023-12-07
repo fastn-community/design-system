@@ -102,32 +102,11 @@ design-system: ds
 design-system: ds
 ;; flush: $flush-full
 
--- ds.hero-with-two-cta:
+-- ds.split-section:
 design-system: ds
-flush: $flush-wide
-
--- ds.basic-header:
-design-system: ds
-flush: $flush-full
-
--- ds.hero-with-two-cta:
-design-system: ds
-flush: $flush-narrow
-
--- ds.basic-header:
-design-system: ds
-;; flush: $flush-full
-
--- ds.hero-with-two-cta:
-design-system: ds
-
--- split-section:
-design-system: ds
-flush: $flush-wide
-padding-vertical.px: 20
 spacing-start.px: 20
 
--- split-section.start:
+-- ds.split-section.start:
 
 -- ds.heading-tiny: DROPBASE
 
@@ -147,16 +126,16 @@ icon: caret-right
 
 -- end: ds.button-group
 
--- end: split-section.start
+-- end: ds.split-section.start
 
--- split-section.end:
+-- ds.split-section.end:
 
 -- ftd.image:
 width.fixed.percent: 80
 align-self: center
 src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
 
--- end: split-section.end
+-- end: ds.split-section.end
 
 
 -- end: full-width-page

@@ -8,7 +8,7 @@
 module design-system: ds
 integer flush: $hack-flush-to-header
 ftd.length.px margin: $ds.spaces.vertical-gap.large.gap ;; TODO refer .design-system
-ds.hv inset: $ds.spaces.inset-squish.medium
+ds.hv inset: $ds.spaces.inset-wide.medium
 ftd.ui list start:
 ds.hv inset-start: $ds.spaces.inset-square.zero
 ftd.length spacing-start:
