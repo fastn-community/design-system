@@ -1,5 +1,7 @@
 ;; https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
 
+-- import: fastn-community.github.io/design-system/hack
+
 -- record hv:
 caption integer horizontal:
 integer vertical:
@@ -40,6 +42,7 @@ gap small:
 gap medium:
 gap large:
 gap extra-large:
+gap space-between:
 
 
 ;; $inherited.spaces.inset-square.small
@@ -155,3 +158,4 @@ small: 8
 medium: 16
 large: 32
 extra-large: 64
+space-between: $hack.SPACE-BETWEEN-MAGIC-NUMBER

@@ -1,10 +1,11 @@
 -- component heading-hero:
 module design-system: ds
 caption text:
+ftd.resizing width: fill-container
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-hero.text
-width: fill-container
+width: $heading-hero.width
 color: $heading-hero.color
 role: $inherited.types.heading-hero
 
@@ -14,9 +15,11 @@ role: $inherited.types.heading-hero
 -- component heading-large:
 module design-system: ds
 caption text:
+ftd.resizing width: fill-container
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-large.text
+width: $heading-large.width
 color: $heading-large.color
 role: $inherited.types.heading-large
 
@@ -26,10 +29,11 @@ role: $inherited.types.heading-large
 -- component heading-medium:
 module design-system: ds
 caption text:
+ftd.resizing width: fill-container
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-medium.text
-width: fill-container
+width: $heading-medium.width
 color: $heading-medium.color
 role: $inherited.types.heading-medium
 
@@ -39,10 +43,11 @@ role: $inherited.types.heading-medium
 -- component heading-small:
 module design-system: ds
 caption text:
+ftd.resizing width: fill-container
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-small.text
-width: fill-container
+width: $heading-small.width
 color: $heading-small.color
 role: $inherited.types.heading-small
 
@@ -52,10 +57,11 @@ role: $inherited.types.heading-small
 -- component heading-tiny:
 module design-system: ds
 caption text:
+ftd.resizing width: fill-container
 ftd.color color: $inherited.colors.text-strong
 
 -- ftd.text: $heading-tiny.text
-width: fill-container
+width: $heading-tiny.width
 color: $heading-tiny.color
 role: $inherited.types.heading-tiny
 

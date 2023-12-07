@@ -1,4 +1,3 @@
--- integer kind-default: 0
 -- integer kind-primary: 1
 -- integer kind-secondary: 2
 -- integer kind-tertiary: 3
@@ -10,7 +9,6 @@
 
 -- or-type button-kind:
 
--- constant integer kind-default: 0
 -- constant integer kind-primary: 1
 -- constant integer kind-secondary: 2
 -- constant integer kind-tertiary: 3
@@ -21,7 +19,7 @@
 
 -- end: button-kind
 
-
+;; These are variants
 -- integer solid: 0
 -- integer outline: 1
 -- integer ghost: 2
@@ -327,7 +325,7 @@ boolean enabled: true
 integer width: $width-default
 integer size: $medium
 integer variant: $solid
-integer kind: $kind-default
+integer kind: $kind-primary
 module design-system: ds
 ;; private stuff
 boolean $hover: false
@@ -356,6 +354,27 @@ white-space: nowrap
 -- end: ftd.row
 
 -- end: button
+
+
+
+
+
+
+-- component header-link:
+module design-system: ds
+caption or body text:
+string link:
+integer kind: $kind-primary
+
+-- ftd.text: $header-link.text
+color: $inherited.colors.text-strong
+role: $inherited.types.link
+link: $header-link.link
+
+-- end: header-link
+
+
+
 
 
 

@@ -25,16 +25,16 @@ narrow.px: 800
 wide.px: 1200
 
 -- component full-width-page:
-optional string seo-title:
-optional string seo-description:
+optional caption title:
+optional body description:
 children content:
 module design-system: ds
 ftd.length.px spacing: 0
 page-widths widths: $default-widths
 
 -- ftd.document:
-title: $full-width-page.seo-title
-description: $full-width-page.seo-description
+title: $full-width-page.title
+description: $full-width-page.description
 colors: $full-width-page.design-system.colors
 types: $full-width-page.design-system.types
 
@@ -59,28 +59,6 @@ background.solid: $inherited.colors.background.base
 
 
 
--- component section-grid:
-module design-system: ds
-integer flush: $flush-to-header
-children content:
-
--- ftd.column:
-width: fill-container
-align-content: center
-
--- ftd.row:
-width if { section-grid.flush == flush-full }: fill-container
-max-width.fixed if { section-grid.flush == flush-narrow }: $inherited.widths.narrow
-max-width.fixed if { section-grid.flush == flush-wide }: $inherited.widths.wide
-max-width.fixed: $inherited.widths.regular
-children: $section-grid.content
-align-content: center
-
--- end: ftd.row
-
--- end: ftd.column
-
--- end: section-grid
 
 
 
@@ -94,31 +72,25 @@ narrow.px: 300
 wide.px: 1200
 
 
--- full-width-page:
+-- ds.full-width-page:
 design-system: ds
 ;; widths: $test-widths
 
--- ds.basic-header:
+-- header:
 design-system: ds
-;; flush: $flush-full
 
--- ds.split-section:
+-- ds.section-grid:
 design-system: ds
-spacing-start.px: 20
 
--- ds.split-section.start:
-
+-- ds.column:
 -- ds.heading-tiny: DROPBASE
-
 -- ds.heading-hero: Unlock insights from Conversations using GenAI
-
 -- ds.copy-large:
 
 Leverage AI driven insights & actionables from your customer conversations
 across all channels - Calls, Chats & Meetings to boost your business efficiency
 
 -- ds.button-group:
-spacing.px: 10
 
 -- ds.button: Book Demo
 -- ds.phosphor-icon-button: Documentation
@@ -126,19 +98,65 @@ icon: caret-right
 
 -- end: ds.button-group
 
--- end: ds.split-section.start
+-- end: ds.column
 
--- ds.split-section.end:
+-- ds.column:
 
 -- ftd.image:
 width.fixed.percent: 80
 align-self: center
 src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
 
--- end: ds.split-section.end
+-- end: ds.column
+
+-- end: ds.section-grid
 
 
--- end: full-width-page
+-- end: ds.full-width-page
 
 
 
+
+
+
+
+-- component header:
+module design-system: ds
+
+-- ds.section-grid:
+design-system: $header.design-system
+background.solid: $inherited.colors.background.step-1
+spacing: $ds.spaces.vertical-gap.space-between
+
+-- ds.button: LOGO
+
+-- ds.row: Docs Blog Pricing
+width: hug-content
+
+-- ds.header-link: Docs
+link: /
+
+-- ds.header-link: Blog
+link: /
+
+-- ds.header-link: Pricing
+link: /
+
+-- end: ds.row
+
+
+-- ds.row:
+width: hug-content
+
+-- ds.phosphor-icon-button: Search
+icon: magnifying-glass
+
+-- ds.header-link: Login
+link: /
+
+-- ds.button: Book demo
+-- end: ds.row
+
+-- end: ds.section-grid
+
+-- end: header

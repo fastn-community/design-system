@@ -1,0 +1,55 @@
+-- import: fastn-community.github.io/design-system/hack
+
+-- integer hack-flush-to-header: 0
+-- integer hack-flush-full: 1
+-- integer hack-flush-wide: 2
+-- integer hack-flush-narrow: 3
+
+
+
+-- component section-grid:
+module design-system: ds
+integer flush: $hack-flush-to-header
+children content:
+optional ds.gap spacing:
+optional ftd.background background:
+ds.hv inset: $ds.spaces.inset-wide.medium
+ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
+
+-- ftd.column:
+width: fill-container
+align-content: center
+background: $section-grid.background
+margin-bottom: $section-grid.margin
+padding-vertical.px: $section-grid.inset.vertical
+padding-horizontal.px: $section-grid.inset.horizontal
+
+-- ftd.row:
+width if { section-grid.flush == hack-flush-full }: fill-container
+max-width.fixed if { section-grid.flush == hack-flush-narrow }: $inherited.widths.narrow
+max-width.fixed if { section-grid.flush == hack-flush-wide }: $inherited.widths.wide
+width.fixed: $inherited.widths.regular
+children: $section-grid.content
+align-content: center
+spacing if { section-grid.spacing != NULL && section-grid.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
+spacing.fixed.px: $section-grid.spacing.gap
+if: { section-grid.spacing != NULL } ;; TODO: this is hack (remove this condition and below row)
+
+-- end: ftd.row
+
+
+
+-- ftd.row:
+width if { section-grid.flush == hack-flush-full }: fill-container
+max-width.fixed if { section-grid.flush == hack-flush-narrow }: $inherited.widths.narrow
+max-width.fixed if { section-grid.flush == hack-flush-wide }: $inherited.widths.wide
+max-width.fixed: $inherited.widths.regular
+children: $section-grid.content
+align-content: center
+if: { section-grid.spacing == NULL }
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: section-grid

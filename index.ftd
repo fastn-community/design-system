@@ -8,7 +8,7 @@ export: hv, gap, insets, squishes, stretches, gaps, space-data
 export: code, rendered
 
 -- import: fastn-community.github.io/design-system/form/button as button-module
-export: button, primary-button, secondary-button, tertiary-button, success-button, warning-button, danger-button, info-button
+export: button, primary-button, secondary-button, tertiary-button, success-button, warning-button, danger-button, info-button, header-link
 
 -- import: fastn-community.github.io/design-system/form/button-group as bg-module
 export: button-group
@@ -19,8 +19,14 @@ export: blank-page
 -- import: fastn-community.github.io/design-system/pages/full-width
 export: full-width-page, section-grid, flush-wide, page-widths
 
--- import: fastn-community.github.io/design-system/split-section as split-section-module
-export: split-section
+-- import: fastn-community.github.io/design-system/layout/section-grid as section-grid-module
+export: section-grid
+
+-- import: fastn-community.github.io/design-system/layout/column as column-module
+export: column
+
+-- import: fastn-community.github.io/design-system/layout/row as row-module
+export: row, inline-row
 
 -- import: fastn-community.github.io/design-system/headers/basic-header as bhm
 export: basic-header
