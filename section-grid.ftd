@@ -8,6 +8,7 @@
 module design-system: ds
 integer flush: $hack-flush-to-header
 children content:
+optional ftd.spacing spacing:
 
 -- ftd.column:
 width: fill-container
@@ -20,6 +21,7 @@ max-width.fixed if { section-grid.flush == hack-flush-wide }: $inherited.widths.
 max-width.fixed: $inherited.widths.regular
 children: $section-grid.content
 align-content: center
+spacing: $section-grid.spacing
 
 -- end: ftd.row
 
