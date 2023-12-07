@@ -1,3 +1,5 @@
+-- import: fastn-community.github.io/design-system/hack
+
 -- integer hack-flush-to-header: 0
 -- integer hack-flush-full: 1
 -- integer hack-flush-wide: 2
@@ -8,7 +10,7 @@
 module design-system: ds
 integer flush: $hack-flush-to-header
 children content:
-optional ftd.spacing spacing:
+optional ds.gap spacing:
 
 -- ftd.column:
 width: fill-container
@@ -21,7 +23,8 @@ max-width.fixed if { section-grid.flush == hack-flush-wide }: $inherited.widths.
 max-width.fixed: $inherited.widths.regular
 children: $section-grid.content
 align-content: center
-spacing: $section-grid.spacing
+spacing if { section-grid.spacing != NULL && section-grid.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
+spacing.fixed.px if { section-grid.spacing != NULL }: $section-grid.spacing.gap
 
 -- end: ftd.row
 
