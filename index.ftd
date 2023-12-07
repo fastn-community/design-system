@@ -19,7 +19,7 @@ export: blank-page
 -- import: fastn-community.github.io/design-system/pages/full-width
 export: full-width-page, section-grid, flush-wide, page-widths
 
--- import: fastn-community.github.io/design-system/split-section as split-section-module
+-- import: fastn-community.github.io/design-system/sections/split as split-section-module
 export: split-section
 
 -- import: fastn-community.github.io/design-system/headers/basic-header as bhm

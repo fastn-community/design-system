@@ -1354,6 +1354,7 @@ let fastn_community_github_io_design_system_headers_basic_header__basic_header =
       flush: global.fastn_community_github_io_design_system_pages_full_width__flush_to_header,
       inset: global.fastn_community_github_io_design_system__spaces.get("inset_wide").get("medium"),
       margin: fastn_dom.Length.Px(global.fastn_community_github_io_design_system__spaces.get("vertical_gap").get("large").get("gap")),
+      sticky: true,
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
@@ -1362,8 +1363,15 @@ let fastn_community_github_io_design_system_headers_basic_header__basic_header =
     parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(__args__.inset.get("horizontal")), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(__args__.inset.get("vertical")), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.MarginBottom, __args__.margin, inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.Top, fastn_dom.Length.Px(0), inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.Sticky, true, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Top, fastn.formula([__args__.sticky], function () {
+      if (function () {
+        return fastn_utils.getter(__args__.sticky);
+      }()) {
+        return fastn_dom.Length.Px(0);
+      }
+    }
+    ), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Sticky, __args__.sticky, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("step_1")), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
@@ -1396,18 +1404,18 @@ let fastn_community_github_io_design_system_headers_basic_header__basic_header =
   }
 }
 global["fastn_community_github_io_design_system_headers_basic_header__basic_header"] = fastn_community_github_io_design_system_headers_basic_header__basic_header;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_split_section__hack_flush_to_header", 0);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_split_section__hack_flush_full", 1);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_split_section__hack_flush_narrow", 3);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_split_section__hack_flush_wide", 2);
-let fastn_community_github_io_design_system_split_section__split_section = function (parent, inherited, args)
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_sections_split__hack_flush_to_header", 0);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_sections_split__hack_flush_full", 1);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_sections_split__hack_flush_narrow", 3);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_sections_split__hack_flush_wide", 2);
+let fastn_community_github_io_design_system_sections_split__split_section = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
   __fastn_package_name__ = "fastn_community_github_io_design_system";
   try {
     let __args__ = {
       design_system: fastn.module("fastn_community_github_io_design_system", global),
-      flush: global.fastn_community_github_io_design_system_split_section__hack_flush_to_header,
+      flush: global.fastn_community_github_io_design_system_sections_split__hack_flush_to_header,
       margin: fastn_dom.Length.Px(global.fastn_community_github_io_design_system__spaces.get("vertical_gap").get("large").get("gap")),
       inset: global.fastn_community_github_io_design_system__spaces.get("inset_wide").get("medium"),
       start: fastn.mutableList([]),
@@ -1424,28 +1432,28 @@ let fastn_community_github_io_design_system_split_section__split_section = funct
     parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
       let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
-      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_split_section__hack_flush_full,
+      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_sections_split__hack_flush_full,
       __args__.flush], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_split_section__hack_flush_full));
+          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_sections_split__hack_flush_full));
         }()) {
           return fastn_dom.Resizing.FillContainer;
         }
       }
       ), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn.formula([inherited.get("widths").get("narrow"),
-      global.fastn_community_github_io_design_system_split_section__hack_flush_narrow,
+      global.fastn_community_github_io_design_system_sections_split__hack_flush_narrow,
       __args__.flush,
       inherited.get("widths").get("wide"),
-      global.fastn_community_github_io_design_system_split_section__hack_flush_wide,
+      global.fastn_community_github_io_design_system_sections_split__hack_flush_wide,
       __args__.flush,
       inherited.get("widths").get("regular")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_split_section__hack_flush_narrow));
+          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_sections_split__hack_flush_narrow));
         }()) {
           return inherited.get("widths").get("narrow");
         } else if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_split_section__hack_flush_wide));
+          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_sections_split__hack_flush_wide));
         }()) {
           return inherited.get("widths").get("wide");
         } else {
@@ -1478,7 +1486,7 @@ let fastn_community_github_io_design_system_split_section__split_section = funct
     __fastn_package_name__ = __fastn_super_package_name__;
   }
 }
-global["fastn_community_github_io_design_system_split_section__split_section"] = fastn_community_github_io_design_system_split_section__split_section;
+global["fastn_community_github_io_design_system_sections_split__split_section"] = fastn_community_github_io_design_system_sections_split__split_section;
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_demos_dropbase___widths", fastn.recordInstance({
   regular: fastn_dom.Length.Px(1200),
   narrow: fastn_dom.Length.Px(1000),
@@ -2726,7 +2734,7 @@ let fastn_community_github_io_design_system__button = fastn_community_github_io_
 global["fastn_community_github_io_design_system__button"] = fastn_community_github_io_design_system__button;
 let fastn_community_github_io_design_system__basic_header = fastn_community_github_io_design_system_headers_basic_header__basic_header;
 global["fastn_community_github_io_design_system__basic_header"] = fastn_community_github_io_design_system__basic_header;
-let fastn_community_github_io_design_system__split_section = fastn_community_github_io_design_system_split_section__split_section;
+let fastn_community_github_io_design_system__split_section = fastn_community_github_io_design_system_sections_split__split_section;
 global["fastn_community_github_io_design_system__split_section"] = fastn_community_github_io_design_system__split_section;
 let fastn_community_github_io_design_system__heading_tiny = fastn_community_github_io_design_system_typography__heading_tiny;
 global["fastn_community_github_io_design_system__heading_tiny"] = fastn_community_github_io_design_system__heading_tiny;
