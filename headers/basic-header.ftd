@@ -9,10 +9,11 @@ integer flush: $full-width.flush-to-header
 ;; margin is margin bottom most of the times
 ds.hv inset: $ds.spaces.inset-wide.medium
 ftd.length.px margin: $ds.spaces.vertical-gap.large.gap ;; TODO refer .design-system
+boolean sticky: true
 
 -- ftd.column:
-sticky: true
-top.px: 0
+sticky: $basic-header.sticky
+top.px if { basic-header.sticky }: 0
 width: fill-container
 background.solid: $inherited.colors.background.step-1
 align-content: center
