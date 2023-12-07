@@ -53,8 +53,7 @@ icon: caret-right
 -- ds.column:
 
 -- ftd.image:
-width.fixed.percent: 80
-align-self: center
+width: fill-container
 src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
 
 -- end: ds.column
@@ -77,12 +76,14 @@ module design-system: ds
 design-system: $header.design-system
 background.solid: $inherited.colors.background.step-1
 spacing: $ds.spaces.vertical-gap.space-between
+margin.px:  $ds.spaces.vertical-gap.extra-large.gap
+inset: $ds.spaces.inset-wide.large
 
--- ds.button: LOGO
+
+-- ds.inline-row: Logo | Docs | Blog | Pricing
 design-system: ds
 
-
--- ds.inline-row: Docs | Blog | Pricing
+-- ds.button: LOGO
 design-system: ds
 
 -- ds.header-link: Docs
