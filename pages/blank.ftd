@@ -11,7 +11,7 @@ optional string seo-description: $blank-page.description
 children content:
 ftd.length.px width: 800
 integer s: 64
-ds.gap spacing: $ds.spaces.vertical-gap.extra-large
+ds.gap spacing: $ds.spaces.vertical-gap.medium
 ds.hv padding: $ds.spaces.inset-square.medium
 
 -- ftd.document:
@@ -28,15 +28,10 @@ align-content: top-center
 
 -- dms.dark-mode-switcher-float:
 
--- ftd.integer: $blank-page.spacing.gap
--- ftd.integer: $blank-page.s
-
 -- ftd.column:
 width.fixed if { ftd.device == "desktop" }: $blank-page.width
 width: fill-container
 spacing.fixed.px: $blank-page.spacing.gap
-;; spacing.fixed.px: $blank-page.s
-;; spacing.fixed.px: 30
 color: $inherited.colors.text
 padding-vertical.px: $blank-page.padding.vertical
 padding-horizontal.px: $blank-page.padding.horizontal
