@@ -8,7 +8,7 @@ export: hv, gap, insets, squishes, stretches, gaps, space-data
 export: code, rendered
 
 -- import: fastn-community.github.io/design-system/form/button as button-module
-export: button
+export: button, header-link
 
 -- import: fastn-community.github.io/design-system/form/button-group as bg-module
 export: button-group

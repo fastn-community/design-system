@@ -13,41 +13,8 @@ wide.px: 1400
 design-system: ds
 widths: $widths
 
--- ds.section-grid:
+-- header:
 design-system: ds
-background.solid: $inherited.colors.background.step-1
-spacing: $ds.spaces.vertical-gap.space-between
-
--- ds.button: LOGO
-
--- ds.row:
-width: hug-content
-
--- ds.heading-tiny: Docs
-width: hug-content
-
--- ds.heading-tiny: Blog
-width: hug-content
-
--- ds.heading-tiny: Pricing
-width: hug-content
-
--- end: ds.row
-
-
--- ds.row:
-width: hug-content
-
--- ds.phosphor-icon-button: Search
-icon: magnifying-glass
-
--- ds.heading-tiny: Login
-width: hug-content
-
--- ds.button: Book demo
--- end: ds.row
-
--- end: ds.section-grid
 
 -- ds.section-grid:
 design-system: ds
@@ -83,3 +50,50 @@ src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7
 
 
 -- end: ds.full-width-page
+
+
+
+
+
+
+
+-- component header:
+module design-system: ds
+
+-- ds.section-grid:
+design-system: $header.design-system
+background.solid: $inherited.colors.background.step-1
+spacing: $ds.spaces.vertical-gap.space-between
+
+-- ds.button: LOGO
+
+-- ds.row: Docs Blog Pricing
+width: hug-content
+
+-- ds.header-link: Docs
+link: /
+
+-- ds.header-link: Blog
+link: /
+
+-- ds.header-link: Pricing
+link: /
+
+-- end: ds.row
+
+
+-- ds.row:
+width: hug-content
+
+-- ds.phosphor-icon-button: Search
+icon: magnifying-glass
+
+-- ds.header-link: Login
+link: /
+
+-- ds.button: Book demo
+-- end: ds.row
+
+-- end: ds.section-grid
+
+-- end: header

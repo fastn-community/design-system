@@ -1,6 +1,7 @@
 -- import: fastn-community.github.io/design-system/hack
 
 -- component row:
+optional caption title:
 module design-system: ds
 ds.hv inset: $ds.spaces.inset-square.zero
 ds.gap spacing: $ds.spaces.horizontal-gap.medium
