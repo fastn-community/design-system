@@ -19,7 +19,6 @@ design-system: ds
 
 -- ds.split-section:
 design-system: ds
-padding-vertical.px: 20
 spacing-start.px: 20
 
 -- ds.split-section.start:

@@ -5,6 +5,7 @@ caption integer horizontal:
 integer vertical:
 
 -- record insets:
+hv zero:
 hv extra-small:
 hv small:
 hv medium:
@@ -12,15 +13,17 @@ hv large:
 hv extra-large:
 
 
+;; for buttons and cell-like containers like a data table or list item.
 -- record squishes:
 hv small:
 hv medium:
 hv large:
 
-
+;; for textboxes, textareas, and other form elements.
 -- record stretches:
 hv small:
 hv medium:
+
 
 -- record gap:
 caption integer gap:
@@ -52,6 +55,10 @@ vertical-gap: $gaps_
 horizontal-gap: $gaps_
 
 
+-- hv insets_zero:
+horizontal: 0
+vertical: 0
+
 -- hv insets_xs:
 horizontal: 4
 vertical: 4
@@ -73,6 +80,7 @@ horizontal: 64
 vertical: 64
 
 -- insets insets_:
+zero: $insets_zero
 extra-small: $insets_xs
 small: $insets_s
 medium: $insets_m

@@ -6,6 +6,9 @@
 -- component basic-header:
 module design-system: ds
 integer flush: $full-width.flush-to-header
+;; margin is margin bottom most of the times
+ds.hv inset: $ds.spaces.inset-squish.medium
+ftd.length.px margin: $ds.spaces.vertical-gap.large.gap ;; TODO refer .design-system
 
 -- ftd.column:
 sticky: true
@@ -13,10 +16,14 @@ top.px: 0
 width: fill-container
 background.solid: $inherited.colors.background.step-1
 align-content: center
+margin-bottom: $basic-header.margin
+padding-vertical.px: $basic-header.inset.vertical
+padding-horizontal.px: $basic-header.inset.horizontal
 
 -- ftd.column:
 width if { basic-header.flush == full-width.flush-full }: fill-container
-width.fixed: $inherited.widths.regular
+width.fixed: $inherited.widths.regular ;; TODO: this should be max-width
+align-content: left
 
 -- ds.button: LOGO
 link: /
