@@ -55,12 +55,12 @@ module design-system: ds
 boolean $hover: false
 
 -- ftd.row:
-background.solid: $inherited.colors.background.step-1
+background.solid: $inherited.colors.cta-primary.base
 border-radius.px: 8
 padding-horizontal.px: 16
 padding-vertical.px: 10
 align-content: center
-background.solid if { button.hover }: $inherited.colors.background.step-2
+background.solid if { button.hover }: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.hover, v = false)
 spacing.fixed.px: 8
@@ -71,7 +71,7 @@ min-width: auto
 if: { button.title != NULL }
 ;; if: { ftd.or-type-to-integer(button.kind) == 0 }
 role: $inherited.types.button-small
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 link: $button.link
 white-space: nowrap
 

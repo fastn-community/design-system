@@ -1069,6 +1069,10 @@ let fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float = fun
   }
 }
 global["fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float"] = fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float;
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__insets_zero", fastn.recordInstance({
+  horizontal: 0,
+  vertical: 0
+}));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__insets_xs", fastn.recordInstance({
   horizontal: 4,
   vertical: 4
@@ -1090,40 +1094,66 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   vertical: 64
 }));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__insets_", fastn.recordInstance({
+  zero: global.fastn_community_github_io_design_system_spaces__insets_zero,
   extra_small: global.fastn_community_github_io_design_system_spaces__insets_xs,
   small: global.fastn_community_github_io_design_system_spaces__insets_s,
   medium: global.fastn_community_github_io_design_system_spaces__insets_m,
   large: global.fastn_community_github_io_design_system_spaces__insets_l,
   extra_large: global.fastn_community_github_io_design_system_spaces__insets_xl
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__squishes_s", fastn.recordInstance({
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__wides_s", fastn.recordInstance({
   horizontal: 8,
   vertical: 4
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__squishes_m", fastn.recordInstance({
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__wides_m", fastn.recordInstance({
   horizontal: 16,
   vertical: 8
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__squishes_l", fastn.recordInstance({
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__wides_l", fastn.recordInstance({
   horizontal: 32,
   vertical: 16
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__squishes_", fastn.recordInstance({
-  small: global.fastn_community_github_io_design_system_spaces__squishes_s,
-  medium: global.fastn_community_github_io_design_system_spaces__squishes_m,
-  large: global.fastn_community_github_io_design_system_spaces__squishes_l
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__wides_sz", fastn.recordInstance({
+  horizontal: 8,
+  vertical: 0
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__stretches_s", fastn.recordInstance({
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__wides_mz", fastn.recordInstance({
+  horizontal: 16,
+  vertical: 0
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__wides_lz", fastn.recordInstance({
+  horizontal: 32,
+  vertical: 0
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__wides_", fastn.recordInstance({
+  small: global.fastn_community_github_io_design_system_spaces__wides_s,
+  medium: global.fastn_community_github_io_design_system_spaces__wides_m,
+  large: global.fastn_community_github_io_design_system_spaces__wides_l,
+  small_zero: global.fastn_community_github_io_design_system_spaces__wides_sz,
+  medium_zero: global.fastn_community_github_io_design_system_spaces__wides_mz,
+  large_zero: global.fastn_community_github_io_design_system_spaces__wides_lz
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__talls_s", fastn.recordInstance({
   horizontal: 8,
   vertical: 12
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__stretches_m", fastn.recordInstance({
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__talls_m", fastn.recordInstance({
   horizontal: 16,
   vertical: 24
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__stretches_", fastn.recordInstance({
-  small: global.fastn_community_github_io_design_system_spaces__stretches_s,
-  medium: global.fastn_community_github_io_design_system_spaces__stretches_m
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__talls_zs", fastn.recordInstance({
+  horizontal: 0,
+  vertical: 12
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__talls_zm", fastn.recordInstance({
+  horizontal: 0,
+  vertical: 24
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__talls_", fastn.recordInstance({
+  small: global.fastn_community_github_io_design_system_spaces__talls_s,
+  medium: global.fastn_community_github_io_design_system_spaces__talls_m,
+  zero_small: global.fastn_community_github_io_design_system_spaces__talls_zs,
+  zero_medium: global.fastn_community_github_io_design_system_spaces__talls_zm
 }));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__gaps_", fastn.recordInstance({
   extra_extra_small: fastn.recordInstance({
@@ -1147,8 +1177,8 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
 }));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__spaces", fastn.recordInstance({
   inset_square: global.fastn_community_github_io_design_system_spaces__insets_,
-  inset_squish: global.fastn_community_github_io_design_system_spaces__squishes_,
-  inset_stretch: global.fastn_community_github_io_design_system_spaces__stretches_,
+  inset_wide: global.fastn_community_github_io_design_system_spaces__wides_,
+  inset_tall: global.fastn_community_github_io_design_system_spaces__talls_,
   vertical_gap: global.fastn_community_github_io_design_system_spaces__gaps_,
   horizontal_gap: global.fastn_community_github_io_design_system_spaces__gaps_
 }));

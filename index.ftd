@@ -17,7 +17,10 @@ export: button-group
 export: blank-page
 
 -- import: fastn-community.github.io/design-system/pages/full-width
-export: full-width-page, section-grid
+export: full-width-page, section-grid, flush-wide, page-widths
+
+-- import: fastn-community.github.io/design-system/split-section as split-section-module
+export: split-section
 
 -- import: fastn-community.github.io/design-system/headers/basic-header as bhm
 export: basic-header
@@ -43,7 +46,7 @@ exposing: heading-large, copy-regular
 
 -- blank.blank-page: design-system
 
--- ftd.row:
+-- ds.button-group:
 
 -- ds.phosphor-icon-button: Github
 icon: github-logo
@@ -53,7 +56,7 @@ link: https://github.com/fastn-community/design-system/
 icon: scales
 link: https://github.com/fastn-community/design-system/blob/main/LICENSE
 
--- end: ftd.row
+-- end: ds.button-group
 
 -- copy-regular:
 
@@ -67,6 +70,10 @@ This is the package you have been waiting for!
 - [Full Width Page](pages/full-width/)
 - [Basic Header](headers/basic-header/)
 
+-- heading-large: Demos
 
+-- copy-regular:
+
+- [Dropbase.io](demos/dropbase/)
 
 -- end: blank.blank-page

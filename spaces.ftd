@@ -5,6 +5,7 @@ caption integer horizontal:
 integer vertical:
 
 -- record insets:
+hv zero:
 hv extra-small:
 hv small:
 hv medium:
@@ -12,15 +13,22 @@ hv large:
 hv extra-large:
 
 
--- record squishes:
+;; for buttons and cell-like containers like a data table or list item.
+-- record wides:
 hv small:
 hv medium:
 hv large:
+hv small-zero:
+hv medium-zero:
+hv large-zero:
 
-
--- record stretches:
+;; for textboxes, textareas, and other form elements.
+-- record talls:
 hv small:
 hv medium:
+hv zero-small:
+hv zero-medium:
+
 
 -- record gap:
 caption integer gap:
@@ -38,19 +46,23 @@ gap extra-large:
 
 -- record space-data:
 insets inset-square:
-squishes inset-squish:
-stretches inset-stretch:
+wides inset-wide:
+talls inset-tall:
 gaps vertical-gap:
 gaps horizontal-gap:
 
 
 -- space-data spaces:
 inset-square: $insets_
-inset-squish: $squishes_
-inset-stretch: $stretches_
+inset-wide: $wides_
+inset-tall: $talls_
 vertical-gap: $gaps_
 horizontal-gap: $gaps_
 
+
+-- hv insets_zero:
+horizontal: 0
+vertical: 0
 
 -- hv insets_xs:
 horizontal: 4
@@ -73,42 +85,68 @@ horizontal: 64
 vertical: 64
 
 -- insets insets_:
+zero: $insets_zero
 extra-small: $insets_xs
 small: $insets_s
 medium: $insets_m
 large: $insets_l
 extra-large: $insets_xl
 
--- hv squishes_s:
+-- hv wides_s:
 horizontal: 8
 vertical: 4
 
--- hv squishes_m:
+-- hv wides_m:
 horizontal: 16
 vertical: 8
 
--- hv squishes_l:
+-- hv wides_l:
 horizontal: 32
 vertical: 16
 
--- squishes squishes_:
-small: $squishes_s
-medium: $squishes_m
-large: $squishes_l
+
+-- hv wides_sz:
+horizontal: 8
+vertical: 0
+
+-- hv wides_mz:
+horizontal: 16
+vertical: 0
+
+-- hv wides_lz:
+horizontal: 32
+vertical: 0
+
+-- wides wides_:
+small: $wides_s
+medium: $wides_m
+large: $wides_l
+small-zero: $wides_sz
+medium-zero: $wides_mz
+large-zero: $wides_lz
 
 
--- hv stretches_s:
+-- hv talls_s:
 horizontal: 8
 vertical: 12
 
--- hv stretches_m:
+-- hv talls_m:
 horizontal: 16
 vertical: 24
 
+-- hv talls_zs:
+horizontal: 0
+vertical: 12
 
--- stretches stretches_:
-small: $stretches_s
-medium: $stretches_m
+-- hv talls_zm:
+horizontal: 0
+vertical: 24
+
+-- talls talls_:
+small: $talls_s
+medium: $talls_m
+zero-small: $talls_zs
+zero-medium: $talls_zm
 
 -- gaps gaps_:
 extra-extra-small: 2

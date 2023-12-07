@@ -47,6 +47,7 @@ height: fill-container
 spacing.fixed: $full-width-page.spacing
 color: $inherited.colors.text
 children: $full-width-page.content
+background.solid: $inherited.colors.background.base
 
 -- end: ftd.column
 
@@ -69,9 +70,9 @@ align-content: center
 
 -- ftd.row:
 width if { section-grid.flush == flush-full }: fill-container
-width.fixed if { section-grid.flush == flush-narrow }: $inherited.widths.narrow
-width.fixed if { section-grid.flush == flush-wide }: $inherited.widths.wide
-width.fixed: $inherited.widths.regular
+max-width.fixed if { section-grid.flush == flush-narrow }: $inherited.widths.narrow
+max-width.fixed if { section-grid.flush == flush-wide }: $inherited.widths.wide
+max-width.fixed: $inherited.widths.regular
 children: $section-grid.content
 align-content: center
 
@@ -82,50 +83,6 @@ align-content: center
 -- end: section-grid
 
 
-
--- component split-section:
-module design-system: ds
-integer flush: $flush-to-header
-optional ftd.length padding-top:
-optional ftd.length padding-bottom:
-optional ftd.length padding-vertical:
-ftd.ui list start:
-ftd.length spacing-start:
-ftd.ui list end:
-
--- ftd.column:
-width: fill-container
-align-content: center
-padding-top: $split-section.padding-top
-padding-bottom: $split-section.padding-bottom
-padding-vertical: $split-section.padding-vertical
-
--- ftd.row:
-width if { split-section.flush == flush-full }: fill-container
-width.fixed if { split-section.flush == flush-narrow }: $inherited.widths.narrow
-width.fixed if { split-section.flush == flush-wide }: $inherited.widths.wide
-width.fixed: $inherited.widths.regular
-align-content: center
-
--- ftd.column:
-width: fill-container
-spacing.fixed: $split-section.spacing-start
-children: $split-section.start
-
-
--- end: ftd.column
-
--- ftd.column:
-width: fill-container
-children: $split-section.end
-
--- end: ftd.column
-
--- end: ftd.row
-
--- end: ftd.column
-
--- end: split-section
 
 
 
@@ -145,32 +102,11 @@ design-system: ds
 design-system: ds
 ;; flush: $flush-full
 
--- ds.hero-with-two-cta:
+-- ds.split-section:
 design-system: ds
-flush: $flush-wide
-
--- ds.basic-header:
-design-system: ds
-flush: $flush-full
-
--- ds.hero-with-two-cta:
-design-system: ds
-flush: $flush-narrow
-
--- ds.basic-header:
-design-system: ds
-;; flush: $flush-full
-
--- ds.hero-with-two-cta:
-design-system: ds
-
--- split-section:
-design-system: ds
-flush: $flush-wide
-padding-vertical.px: 20
 spacing-start.px: 20
 
--- split-section.start:
+-- ds.split-section.start:
 
 -- ds.heading-tiny: DROPBASE
 
@@ -190,16 +126,16 @@ icon: caret-right
 
 -- end: ds.button-group
 
--- end: split-section.start
+-- end: ds.split-section.start
 
--- split-section.end:
+-- ds.split-section.end:
 
 -- ftd.image:
 width.fixed.percent: 80
 align-self: center
 src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
 
--- end: split-section.end
+-- end: ds.split-section.end
 
 
 -- end: full-width-page
