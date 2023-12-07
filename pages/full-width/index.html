@@ -1254,11 +1254,11 @@ let fastn_community_github_io_design_system_pages_full_width__full_width_page = 
   }
 }
 global["fastn_community_github_io_design_system_pages_full_width__full_width_page"] = fastn_community_github_io_design_system_pages_full_width__full_width_page;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_section_grid__hack_flush_full", 1);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_section_grid__hack_flush_narrow", 3);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_section_grid__hack_flush_wide", 2);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_grid__hack_flush_full", 1);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_grid__hack_flush_narrow", 3);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_grid__hack_flush_wide", 2);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER", - 4321);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_section_grid__hack_flush_to_header", 0);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_grid__hack_flush_to_header", 0);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__insets_zero", fastn.recordInstance({
   horizontal: 0,
   vertical: 0
@@ -1376,14 +1376,14 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   horizontal_gap: global.fastn_community_github_io_design_system_spaces__gaps_
 }));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system__spaces", global.fastn_community_github_io_design_system_spaces__spaces);
-let fastn_community_github_io_design_system_section_grid__section_grid = function (parent, inherited, args)
+let fastn_community_github_io_design_system_layout_section_grid__section_grid = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
   __fastn_package_name__ = "fastn_community_github_io_design_system";
   try {
     let __args__ = {
       design_system: fastn.module("fastn_community_github_io_design_system", global),
-      flush: global.fastn_community_github_io_design_system_section_grid__hack_flush_to_header,
+      flush: global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_to_header,
       content: fastn.mutableList([]),
       spacing: null,
       background: null,
@@ -1406,11 +1406,11 @@ let fastn_community_github_io_design_system_section_grid__section_grid = functio
         return (fastn_utils.getter(__args__.spacing) !== null);
       }, function (root) {
         let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
-        rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_section_grid__hack_flush_full,
+        rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_full,
         __args__.flush,
         inherited.get("widths").get("regular")], function () {
           if (function () {
-            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_section_grid__hack_flush_full));
+            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_full));
           }()) {
             return fastn_dom.Resizing.FillContainer;
           } else {
@@ -1419,17 +1419,17 @@ let fastn_community_github_io_design_system_section_grid__section_grid = functio
         }
         ), inherited);
         rooti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn.formula([inherited.get("widths").get("narrow"),
-        global.fastn_community_github_io_design_system_section_grid__hack_flush_narrow,
+        global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_narrow,
         __args__.flush,
         inherited.get("widths").get("wide"),
-        global.fastn_community_github_io_design_system_section_grid__hack_flush_wide,
+        global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_wide,
         __args__.flush], function () {
           if (function () {
-            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_section_grid__hack_flush_narrow));
+            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_narrow));
           }()) {
             return inherited.get("widths").get("narrow");
           } else if (function () {
-            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_section_grid__hack_flush_wide));
+            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_wide));
           }()) {
             return inherited.get("widths").get("wide");
           }
@@ -1459,28 +1459,28 @@ let fastn_community_github_io_design_system_section_grid__section_grid = functio
         return (fastn_utils.getter(__args__.spacing) == null);
       }, function (root) {
         let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
-        rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_section_grid__hack_flush_full,
+        rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_full,
         __args__.flush], function () {
           if (function () {
-            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_section_grid__hack_flush_full));
+            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_full));
           }()) {
             return fastn_dom.Resizing.FillContainer;
           }
         }
         ), inherited);
         rooti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn.formula([inherited.get("widths").get("narrow"),
-        global.fastn_community_github_io_design_system_section_grid__hack_flush_narrow,
+        global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_narrow,
         __args__.flush,
         inherited.get("widths").get("wide"),
-        global.fastn_community_github_io_design_system_section_grid__hack_flush_wide,
+        global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_wide,
         __args__.flush,
         inherited.get("widths").get("regular")], function () {
           if (function () {
-            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_section_grid__hack_flush_narrow));
+            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_narrow));
           }()) {
             return inherited.get("widths").get("narrow");
           } else if (function () {
-            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_section_grid__hack_flush_wide));
+            return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_grid__hack_flush_wide));
           }()) {
             return inherited.get("widths").get("wide");
           } else {
@@ -1499,7 +1499,7 @@ let fastn_community_github_io_design_system_section_grid__section_grid = functio
     __fastn_package_name__ = __fastn_super_package_name__;
   }
 }
-global["fastn_community_github_io_design_system_section_grid__section_grid"] = fastn_community_github_io_design_system_section_grid__section_grid;
+global["fastn_community_github_io_design_system_layout_section_grid__section_grid"] = fastn_community_github_io_design_system_layout_section_grid__section_grid;
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__width_default", 0);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__medium", 1);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__solid", 0);
@@ -2984,7 +2984,7 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system__colors", global.fastn_community_github_io_dark_flame_cs__main);
 let fastn_community_github_io_design_system__full_width_page = fastn_community_github_io_design_system_pages_full_width__full_width_page;
 global["fastn_community_github_io_design_system__full_width_page"] = fastn_community_github_io_design_system__full_width_page;
-let fastn_community_github_io_design_system__section_grid = fastn_community_github_io_design_system_section_grid__section_grid;
+let fastn_community_github_io_design_system__section_grid = fastn_community_github_io_design_system_layout_section_grid__section_grid;
 global["fastn_community_github_io_design_system__section_grid"] = fastn_community_github_io_design_system__section_grid;
 let fastn_community_github_io_design_system__button = fastn_community_github_io_design_system_form_button__button;
 global["fastn_community_github_io_design_system__button"] = fastn_community_github_io_design_system__button;
