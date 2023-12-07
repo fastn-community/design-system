@@ -21,7 +21,6 @@ design-system: ds
 design-system: ds
 
 -- ds.column:
-spacing.px: 20
 
 -- ds.heading-tiny: DROPBASE
 

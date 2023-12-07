@@ -1,14 +1,17 @@
+-- import: fastn-community.github.io/design-system/hack
+
 -- component row:
 module design-system: ds
 ds.hv inset: $ds.spaces.inset-square.zero
-ftd.length.px spacing: $ds.spaces.horizontal-gap.medium.gap
+ds.gap spacing: $ds.spaces.horizontal-gap.medium
 children content:
 
 -- ftd.row:
 width: fill-container
 padding-vertical.px: $row.inset.vertical
 padding-horizontal.px: $row.inset.horizontal
-spacing.fixed: $row.spacing
+spacing.fixed.px: $row.spacing.gap
+spacing if { row.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 children: $row.content
 
 -- end: ftd.row
