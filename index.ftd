@@ -89,24 +89,8 @@ This is the package you have been waiting for!
 - [Typography](typography/)
 - [Page](layout/page/)
 
--- demo:
+-- demos.demo:
 
 -- end: ds.section-column
 
 -- end: ds.page
-
-
-
--- component demo:
-
--- ds.section-column:
-
--- ds.heading-large: Demos
-
--- ds.copy-regular:
-
-- [Dropbase.io](demos/dropbase/)
-
--- end: ds.section-column
-
--- end: demo
