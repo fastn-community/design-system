@@ -23,24 +23,4 @@ children: $row.content
 
 
 
--- component inline-row:
-optional caption title:
-module design-system: ds
-ds.hv inset: $ds.spaces.inset-square.zero
-ds.gap spacing: $ds.spaces.horizontal-gap.medium
-ftd.resizing width: hug-content
-children content:
 
--- ftd.row:
-width: $inline-row.width
-padding-vertical.px: $inline-row.inset.vertical
-padding-horizontal.px: $inline-row.inset.horizontal
-spacing.fixed.px: $inline-row.spacing.gap
-spacing if { inline-row.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
-align-content: center
-children: $inline-row.content
-
--- end: ftd.row
-
-
--- end: inline-row

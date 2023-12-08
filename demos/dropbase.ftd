@@ -27,10 +27,46 @@ design-system: ds
 -- any-data-or-api:
 design-system: ds
 
+-- existing-py:
+design-system: ds
 
 -- end: ds.page
 
 
+-- component existing-py:
+module design-system: ds
+
+-- ds.section-row: hero section
+design-system: $existing-py.design-system
+margin.px: $ds.spaces.vertical-gap.extra-extra-large.gap
+
+
+-- ds.column: left column
+
+-- ds.heading-hero: Works with your existing .py scripts
+design-system: $existing-py.design-system
+
+
+-- ds.copy-large:
+design-system: $existing-py.design-system
+
+Instead of re-writing your scripts to fit yet another framework, Dropbase just
+ works with them. Layer a beautifully designed UI atop all your .py scripts or
+ runbooks.
+
+-- end: ds.column
+
+-- ds.column: right column
+design-system: $existing-py.design-system
+
+-- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/652763340f644d671d70bc24_Python%20scripts-p-1600.webp
+width: fill-container
+
+-- end: ds.column
+
+-- end: ds.section-row
+
+-- end: existing-py
 
 
 -- component any-data-or-api:
@@ -38,8 +74,11 @@ module design-system: ds
 
 -- ds.section-column:
 design-system: $any-data-or-api.design-system
+margin.px: $ds.spaces.vertical-gap.extra-large.gap
+spacing: $ds.spaces.vertical-gap.medium
 
 -- ds.inline-row:
+spacing: $ds.spaces.horizontal-gap.extra-large
 
 -- ftd.image:
 src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9dd14ce920c12e0191e_postgres.svg
@@ -67,6 +106,7 @@ module design-system: ds
 
 -- ds.section-row: hero section
 design-system: $hero.design-system
+margin.px: $ds.spaces.vertical-gap.extra-extra-large.gap
 
 
 -- ds.column: left column
@@ -131,7 +171,7 @@ module design-system: ds
 design-system: $header.design-system
 background.solid: $inherited.colors.background.step-1
 spacing: $ds.spaces.vertical-gap.space-between
-margin.px:  $ds.spaces.vertical-gap.extra-large.gap
+margin.px: $ds.spaces.vertical-gap.extra-large.gap
 inset: $ds.spaces.inset-wide.large
 
 
