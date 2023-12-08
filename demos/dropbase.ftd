@@ -36,69 +36,89 @@ design-system: ds
 -- smart-tables:
 design-system: ds
 
--- cards:
+-- features:
+design-system: ds
+
+-- book-demo:
 design-system: ds
 
 -- end: ds.page
 
 
+-- component book-demo:
+module design-system: ds
+
+-- book-demo.design-system.section-column:
+design-system: $book-demo.design-system
+margin.px: $ds.spaces.vertical-gap.extra-large.gap
+spacing: $ds.spaces.vertical-gap.medium
+inner-background.solid: $inherited.colors.background.step-1
+
+-- ds.copy-large:
+text-align: center
+
+Build apps for your customer success and ops teams today
+
+-- end: book-demo.design-system.section-column
+
+-- end: book-demo
 
 
 
--- component cards:
+-- component features:
 module design-system: ds
 
 -- ds.section-row:
 wrap: true
 
--- card: $with-space(a = Dropbase Studio.)
-design-system: $cards.design-system
+-- feature: Dropbase Studio.
+design-system: $features.design-system
 
 Write, debug, and preview your apps in one place
 
--- card:  $with-space(a = UI Components.)
-design-system: $cards.design-system
+-- feature:  UI Components.
+design-system: $features.design-system
 
 Select UI components from a dropdown
 
--- card:  $with-space(a = All Python.)
-design-system: $cards.design-system
+-- feature:  All Python.
+design-system: $features.design-system
 
 Write any function in Python. Get full code flexibility
 
--- card:  $with-space(a = Code completion.)
-design-system: $cards.design-system
+-- feature:  Code completion.
+design-system: $features.design-system
 
 Built-in Python LSP to speed up development
 
--- card:  $with-space(a = Smart Tables.)
-design-system: $cards.design-system
+-- feature:  Smart Tables.
+design-system: $features.design-system
 
 Turn any SQL into an inline editable tables
 
--- card:  $with-space(a = Instant deploys.)
-design-system: $cards.design-system
+-- feature:  Instant deploys.
+design-system: $features.design-system
 
 Apps automatically deployed as you build them
 
--- card:  $with-space(a = Synced state.)
-design-system: $cards.design-system
+-- feature:  Synced state.
+design-system: $features.design-system
 
 Client-server share state. No need to write React
 
--- card:  $with-space(a = Python libraries.)
-design-system: $cards.design-system
+-- feature:  Python libraries.
+design-system: $features.design-system
 
 Access libraries such as numpy and pandas
 
--- card:  $with-space(a = Integrations.)
-design-system: $cards.design-system
+-- feature:  Integrations.
+design-system: $features.design-system
 
 Connect Postgres or any internal or external REST API
 
 -- end: ds.section-row
 
--- end: cards
+-- end: features
 
 
 
@@ -106,29 +126,29 @@ Connect Postgres or any internal or external REST API
 
 
 
--- component card:
+-- component feature:
 module design-system: ds
 caption title:
 body description:
 
 -- ds.container:
-inset: $card.design-system.spaces.inset-square.large
+inset: $feature.design-system.spaces.inset-square.large
 background.solid: $inherited.colors.background.step-1
 width.fixed.percent: 30
-radius: $card.design-system.radius.large
+radius: $feature.design-system.radius.large
 
 -- ds.copy-regular:
 color: $inherited.colors.text-strong
 
-$card.title
+$with-space(a = $feature.title)
 
 -- ds.copy-regular:
 
-$card.description
+$feature.description
 
 -- end: ds.container
 
--- end: card
+-- end: feature
 
 
 

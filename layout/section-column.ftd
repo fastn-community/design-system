@@ -13,7 +13,8 @@ module design-system: ds
 integer flush: $hack-flush-to-header
 children content:
 ds.gap spacing: $ds.spaces.vertical-gap.large
-optional ftd.background background:
+optional ftd.background outer-background:
+optional ftd.background inner-background:
 ds.hv inset: $ds.spaces.inset-wide.medium
 ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
 ftd.align align: center
@@ -21,7 +22,7 @@ ftd.align align: center
 -- ftd.column:
 width: fill-container
 align-content: center
-background: $section-column.background
+background: $section-column.outer-background
 margin-bottom: $section-column.margin
 padding-vertical.px: $section-column.inset.vertical
 padding-horizontal.px: $section-column.inset.horizontal
@@ -35,6 +36,7 @@ children: $section-column.content
 spacing if { section-column.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 spacing.fixed.px: $section-column.spacing.gap
 align-content: $section-column.align
+background: $section-column.inner-background
 
 -- end: ftd.column
 
