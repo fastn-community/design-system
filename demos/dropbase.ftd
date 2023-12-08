@@ -36,7 +36,103 @@ design-system: ds
 -- smart-tables:
 design-system: ds
 
+-- cards:
+design-system: ds
+
 -- end: ds.page
+
+
+
+
+
+-- component cards:
+module design-system: ds
+
+-- ds.section-row:
+wrap: true
+
+-- card: $with-space(a = Dropbase Studio.)
+design-system: $cards.design-system
+
+Write, debug, and preview your apps in one place
+
+-- card:  $with-space(a = UI Components.)
+design-system: $cards.design-system
+
+Select UI components from a dropdown
+
+-- card:  $with-space(a = All Python.)
+design-system: $cards.design-system
+
+Write any function in Python. Get full code flexibility
+
+-- card:  $with-space(a = Code completion.)
+design-system: $cards.design-system
+
+Built-in Python LSP to speed up development
+
+-- card:  $with-space(a = Smart Tables.)
+design-system: $cards.design-system
+
+Turn any SQL into an inline editable tables
+
+-- card:  $with-space(a = Instant deploys.)
+design-system: $cards.design-system
+
+Apps automatically deployed as you build them
+
+-- card:  $with-space(a = Synced state.)
+design-system: $cards.design-system
+
+Client-server share state. No need to write React
+
+-- card:  $with-space(a = Python libraries.)
+design-system: $cards.design-system
+
+Access libraries such as numpy and pandas
+
+-- card:  $with-space(a = Integrations.)
+design-system: $cards.design-system
+
+Connect Postgres or any internal or external REST API
+
+-- end: ds.section-row
+
+-- end: cards
+
+
+
+
+
+
+
+-- component card:
+module design-system: ds
+caption title:
+body description:
+
+-- ds.container:
+inset: $ds.spaces.inset-square.medium
+background.solid: $inherited.colors.background.step-1
+width.fixed.percent: 30
+
+-- ds.copy-regular:
+color: $inherited.colors.text-strong
+
+$card.title
+
+-- ds.copy-regular:
+
+$card.description
+
+-- end: ds.container
+
+-- end: card
+
+
+
+
+
 
 
 
@@ -291,3 +387,11 @@ design-system: $header.design-system
 -- end: ds.section-row
 
 -- end: header
+
+
+
+
+-- string with-space(a):
+string a:
+
+a + " "

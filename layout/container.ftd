@@ -1,0 +1,20 @@
+-- import: fastn-community.github.io/design-system/hack
+
+-- component container:
+optional caption title:
+module design-system: ds
+ds.hv inset: $ds.spaces.inset-square.zero
+ftd.resizing width: fill-container
+optional ftd.background background:
+children content:
+
+-- ftd.container:
+width: $container.width
+padding-vertical.px: $container.inset.vertical
+padding-horizontal.px: $container.inset.horizontal
+children: $container.content
+background: $container.background
+
+-- end: ftd.container
+
+-- end: container

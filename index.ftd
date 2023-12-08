@@ -23,6 +23,9 @@ export: section-row
 -- import: fastn-community.github.io/design-system/layout/section-column as section-column-module
 export: section-column
 
+-- import: fastn-community.github.io/design-system/layout/container as container-module
+export: container
+
 -- import: fastn-community.github.io/design-system/layout/column as column-module
 export: column
 

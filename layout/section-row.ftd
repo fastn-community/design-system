@@ -16,6 +16,7 @@ ds.gap spacing: $ds.spaces.horizontal-gap.large
 optional ftd.background background:
 ds.hv inset: $ds.spaces.inset-wide.medium
 ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
+boolean wrap: false
 
 -- ftd.column:
 width: fill-container
@@ -34,6 +35,7 @@ children: $section-row.content
 align-content: center
 spacing if { section-row.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 spacing.fixed.px: $section-row.spacing.gap
+wrap: $section-row.wrap
 
 -- end: ftd.row
 

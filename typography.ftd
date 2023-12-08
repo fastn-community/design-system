@@ -95,6 +95,7 @@ ftd.display display: inline
 -- ftd.text: $copy-regular.text
 color: $copy-regular.color
 role: $inherited.types.copy-regular
+display: $copy-regular.display
 
 -- end: copy-regular
 
@@ -108,6 +109,7 @@ ftd.display display: inline
 -- ftd.text: $copy-small.text
 color: $copy-small.color
 role: $inherited.types.copy-small
+display: $copy-small.display
 
 -- end: copy-small
 
@@ -121,6 +123,7 @@ ftd.display display: inline
 -- ftd.text: $fine-print.text
 color: $fine-print.color
 role: $inherited.types.fine-print
+display: $fine-print.display
 
 -- end: fine-print
 
