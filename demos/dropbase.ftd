@@ -58,6 +58,7 @@ module design-system: ds
 -- ds.section-column:
 inner-background.solid: $inherited.colors.background.step-2
 inset: $ds.spaces.inset-square.extra-large
+spacing: $ds.spaces.vertical-gap.extra-extra-large
 
 -- ds.row:
 ;; spacing: $ds.spaces.vertical-gap.space-between
@@ -153,6 +154,16 @@ link: /
 link: /
 
 -- end: ds.column
+
+-- end: ds.row
+
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.space-between
+
+-- ds.copyright-text: © Copyright 2023 - Dropbase • All rights reserved.
+-- ds.copyright-text: San Francisco
+-- ds.copyright-text: Twitter, LinkedIn, Posts
 
 -- end: ds.row
 

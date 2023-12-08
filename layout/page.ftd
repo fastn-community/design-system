@@ -38,6 +38,7 @@ children content:
 module design-system: ds
 ftd.length.px spacing: 0
 page-widths widths: $default-widths
+ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
 
 -- ftd.document:
 title: $page.title
@@ -52,8 +53,20 @@ width: fill-container
 height: fill-container
 spacing.fixed: $page.spacing
 color: $inherited.colors.text
-children: $page.content
 background.solid: $inherited.colors.background.base
+
+-- ui:
+for: $ui in $page.content
+
+-- ftd.column:
+height.fixed: $page.margin
+width: fill-container
+align-content: center
+
+-- ftd.text: Created using fastn
+color: $inherited.colors.background.base
+
+-- end: ftd.column
 
 -- end: ftd.column
 

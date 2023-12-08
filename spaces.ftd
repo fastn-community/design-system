@@ -44,6 +44,7 @@ gap large:
 gap extra-large:
 gap extra-extra-large:
 gap space-between:
+gap zero:
 
 
 ;; $inherited.spaces.inset-square.small
@@ -162,3 +163,4 @@ large: 32
 extra-large: 64
 extra-extra-large: 128
 space-between: $hack.SPACE-BETWEEN-MAGIC-NUMBER
+zero: 0
