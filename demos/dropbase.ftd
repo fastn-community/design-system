@@ -39,6 +39,22 @@ module design-system: ds
 -- ds.section-column:
 design-system: $any-data-or-api.design-system
 
+-- ds.inline-row:
+
+-- ftd.image:
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9dd14ce920c12e0191e_postgres.svg
+
+-- ftd.image:
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9f325d99b3d6333bdbe_stripe.svg
+
+-- ftd.image:
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9ebaeb0d581b82b9aee_hubspot.svg
+
+-- end: ds.inline-row
+
+-- ds.heading-small: and any REST API.
+width: hug-content
+
 -- end: ds.section-column
 
 -- end: any-data-or-api
