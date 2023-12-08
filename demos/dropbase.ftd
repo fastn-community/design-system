@@ -9,7 +9,7 @@ wide.px: 1400
 
 
 
--- ds.full-width-page: Dropbase | Build internal apps with SQL and Python in minutes
+-- ds.page: Dropbase | Build internal apps with SQL and Python in minutes
 design-system: ds
 widths: $widths
 
@@ -28,7 +28,7 @@ design-system: ds
 design-system: ds
 
 
--- end: ds.full-width-page
+-- end: ds.page
 
 
 

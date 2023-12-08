@@ -1,4 +1,5 @@
 -- import: fastn-community.github.io/dark-mode-switcher as dms
+-- import: fastn-community.github.io/design-system/demos
 
 
 -- integer width-full: 0
@@ -24,7 +25,13 @@ regular.px: 1000
 narrow.px: 800
 wide.px: 1200
 
--- component full-width-page:
+-- ds.page-widths narrow-widths:
+regular.px: 800
+narrow.px: 600
+wide.px: 1000
+
+
+-- component page:
 optional caption title:
 optional body description:
 children content:
@@ -33,28 +40,26 @@ ftd.length.px spacing: 0
 page-widths widths: $default-widths
 
 -- ftd.document:
-title: $full-width-page.title
-description: $full-width-page.description
-colors: $full-width-page.design-system.colors
-types: $full-width-page.design-system.types
-
+title: $page.title
+description: $page.description
+colors: $page.design-system.colors
+types: $page.design-system.types
 
 -- dms.dark-mode-switcher-float:
 
 -- ftd.column:
 width: fill-container
 height: fill-container
-spacing.fixed: $full-width-page.spacing
+spacing.fixed: $page.spacing
 color: $inherited.colors.text
-children: $full-width-page.content
+children: $page.content
 background.solid: $inherited.colors.background.base
 
 -- end: ftd.column
 
 -- end: ftd.document
 
-
--- end: full-width-page
+-- end: page
 
 
 
@@ -72,47 +77,13 @@ narrow.px: 300
 wide.px: 1200
 
 
--- ds.full-width-page:
+-- ds.page:
 design-system: ds
 ;; widths: $test-widths
 
--- header:
-design-system: ds
+-- ds.demo:
 
--- ds.section-grid:
-design-system: ds
-
--- ds.column:
--- ds.heading-tiny: DROPBASE
--- ds.heading-hero: Unlock insights from Conversations using GenAI
--- ds.copy-large:
-
-Leverage AI driven insights & actionables from your customer conversations
-across all channels - Calls, Chats & Meetings to boost your business efficiency
-
--- ds.button-group:
-
--- ds.button: Book Demo
--- ds.phosphor-icon-button: Documentation
-icon: caret-right
-
--- end: ds.button-group
-
--- end: ds.column
-
--- ds.column:
-
--- ftd.image:
-width.fixed.percent: 80
-align-self: center
-src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
-
--- end: ds.column
-
--- end: ds.section-grid
-
-
--- end: ds.full-width-page
+-- end: ds.page
 
 
 

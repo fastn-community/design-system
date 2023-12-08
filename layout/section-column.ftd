@@ -31,25 +31,21 @@ max-width.fixed if { section-column.flush == hack-flush-narrow }: $inherited.wid
 max-width.fixed if { section-column.flush == hack-flush-wide }: $inherited.widths.wide
 width.fixed: $inherited.widths.regular
 children: $section-column.content
-align-content: center
-spacing if { section-column.spacing != NULL && section-column.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
+spacing if { section-column.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 spacing.fixed.px: $section-column.spacing.gap
 if: { section-column.spacing != NULL } ;; TODO: this is hack (remove this condition and below row)
 
 -- end: ftd.column
 
-
-
--- ftd.row:
+-- ftd.column:
 width if { section-column.flush == hack-flush-full }: fill-container
 max-width.fixed if { section-column.flush == hack-flush-narrow }: $inherited.widths.narrow
 max-width.fixed if { section-column.flush == hack-flush-wide }: $inherited.widths.wide
-max-width.fixed: $inherited.widths.regular
+width.fixed: $inherited.widths.regular
 children: $section-column.content
-align-content: center
 if: { section-column.spacing == NULL }
 
--- end: ftd.row
+-- end: ftd.column
 
 -- end: ftd.column
 

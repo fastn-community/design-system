@@ -1,5 +1,6 @@
 -- import: fastn-community.github.io/dark-flame-cs
 -- import: fastn-community.github.io/roboto-typography
+-- import: fastn-community.github.io/design-system/demos
 
 -- import: fastn-community.github.io/design-system/spaces as spaces-module
 export: hv, gap, insets, squishes, stretches, gaps, space-data
@@ -13,11 +14,8 @@ export: button, header-link
 -- import: fastn-community.github.io/design-system/form/button-group as bg-module
 export: button-group
 
--- import: fastn-community.github.io/design-system/pages/blank
-export: blank-page
-
--- import: fastn-community.github.io/design-system/pages/full-width
-export: full-width-page, section-grid, flush-wide, page-widths
+-- import: fastn-community.github.io/design-system/layout/page as page-module
+export: page, section-grid, flush-wide, page-widths
 
 -- import: fastn-community.github.io/design-system/layout/section-row as section-row-module
 export: section-row
@@ -31,20 +29,15 @@ export: column
 -- import: fastn-community.github.io/design-system/layout/row as row-module
 export: row, inline-row
 
--- import: fastn-community.github.io/design-system/headers/basic-header as bhm
-export: basic-header
-
--- import: fastn-community.github.io/design-system/hero/with-two-cta
-export: hero-with-two-cta
-
-
-
 -- import: fastn-community.github.io/design-system/form/icon-button as icon-button-module
 export: icon-button, circle-text-button, phosphor-icon-button, fa-icon-button
 
 -- import: fastn-community.github.io/design-system/typography as typography-module
 export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny, copy-large, copy-regular, copy-small, fine-print, source-code, link
 exposing: heading-large, copy-regular
+
+
+
 
 -- ftd.color-scheme colors: $dark-flame-cs.main
 -- ftd.type-data types: $roboto-typography.types
@@ -53,7 +46,26 @@ exposing: heading-large, copy-regular
 
 
 
--- blank.blank-page: design-system
+-- ds.page-widths hack-hack-default-widths:
+regular.px: 1000
+narrow.px: 800
+wide.px: 1200
+
+-- ds.page-widths hack-hack-narrow-widths:
+regular.px: 800
+narrow.px: 600
+wide.px: 1000
+
+
+
+
+-- ds.page:
+widths: $hack-hack-narrow-widths
+
+-- ds.section-column:
+spacing: $ds.spaces.vertical-gap.medium
+
+-- ds.heading-hero: Design System
 
 -- ds.button-group:
 
@@ -67,7 +79,7 @@ link: https://github.com/fastn-community/design-system/blob/main/LICENSE
 
 -- end: ds.button-group
 
--- copy-regular:
+-- ds.copy-regular:
 
 This is the package you have been waiting for!
 
@@ -75,14 +87,26 @@ This is the package you have been waiting for!
 - [Icon Buttons](form/icon-button/)
 - [Button Group (WIP)](form/button-group/)
 - [Typography](typography/)
-- [Blank Page](pages/blank/)
-- [Full Width Page](pages/full-width/)
-- [Basic Header](headers/basic-header/)
+- [Page](layout/page/)
 
--- heading-large: Demos
+-- demo:
 
--- copy-regular:
+-- end: ds.section-column
+
+-- end: ds.page
+
+
+
+-- component demo:
+
+-- ds.section-column:
+
+-- ds.heading-large: Demos
+
+-- ds.copy-regular:
 
 - [Dropbase.io](demos/dropbase/)
 
--- end: blank.blank-page
+-- end: ds.section-column
+
+-- end: demo

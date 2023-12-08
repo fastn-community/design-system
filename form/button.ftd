@@ -103,7 +103,9 @@ link: $header-link.link
 
 
 
--- ds.blank-page: Buttons
+-- ds.page:
+
+-- ds.heading-hero: Buttons
 
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
@@ -119,4 +121,4 @@ link: /
 
 -- end: ds.rendered
 
--- end: ds.blank-page
+-- end: ds.page
