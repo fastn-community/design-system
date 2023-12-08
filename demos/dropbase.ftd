@@ -112,9 +112,10 @@ caption title:
 body description:
 
 -- ds.container:
-inset: $ds.spaces.inset-square.medium
+inset: $card.design-system.spaces.inset-square.large
 background.solid: $inherited.colors.background.step-1
 width.fixed.percent: 30
+radius: $card.design-system.radius.large
 
 -- ds.copy-regular:
 color: $inherited.colors.text-strong
@@ -141,7 +142,7 @@ module design-system: ds
 
 -- ds.section-column:
 design-system: $smart-tables.design-system
-margin.px: $ds.spaces.vertical-gap.extra-extra-large.gap
+margin.px: $ds.spaces.vertical-gap.large.gap
 
 -- ds.heading-hero: Turn any SQL SELECT into an admin panel with Smart Tables.
 design-system: $smart-tables.design-system
