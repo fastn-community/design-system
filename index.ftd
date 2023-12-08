@@ -80,6 +80,7 @@ widths: $hack-hack-narrow-widths
 
 -- ds.section-column:
 spacing: $ds.spaces.vertical-gap.medium
+align: left
 
 -- ds.heading-hero: Design System
 
