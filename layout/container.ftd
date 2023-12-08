@@ -6,6 +6,7 @@ module design-system: ds
 ds.hv inset: $ds.spaces.inset-square.zero
 ftd.resizing width: fill-container
 optional ftd.background background:
+ds.element-radius radius: $ds.radius.medium
 children content:
 
 -- ftd.container:
@@ -14,6 +15,15 @@ padding-vertical.px: $container.inset.vertical
 padding-horizontal.px: $container.inset.horizontal
 children: $container.content
 background: $container.background
+border-top-left-radius.px if { container.radius.top-left != $hack.RADIUS-ROUND }: $container.radius.top-left
+border-top-right-radius.px if { container.radius.top-right != $hack.RADIUS-ROUND }: $container.radius.top-right
+border-bottom-left-radius.px if { container.radius.bottom-left != $hack.RADIUS-ROUND }: $container.radius.bottom-left
+border-bottom-right-radius.px if { container.radius.bottom-right != $hack.RADIUS-ROUND }: $container.radius.bottom-right
+border-top-left-radius.percent if { container.radius.top-left == $hack.RADIUS-ROUND }: 50
+border-top-right-radius.percent if { container.radius.top-right == $hack.RADIUS-ROUND }: 50
+border-bottom-left-radius.percent if { container.radius.bottom-left == $hack.RADIUS-ROUND }: 50
+border-bottom-right-radius.percent if { container.radius.bottom-right == $hack.RADIUS-ROUND }: 50
+
 
 -- end: ftd.container
 
