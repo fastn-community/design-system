@@ -53,11 +53,14 @@ design-system: $book-demo.design-system
 margin.px: $ds.spaces.vertical-gap.extra-large.gap
 spacing: $ds.spaces.vertical-gap.medium
 inner-background.solid: $inherited.colors.background.step-1
+inset: $ds.spaces.inset-square.large
 
 -- ds.copy-large:
 text-align: center
 
 Build apps for your customer success and ops teams today
+
+-- ds.button: Book demo
 
 -- end: book-demo.design-system.section-column
 
@@ -69,6 +72,7 @@ Build apps for your customer success and ops teams today
 module design-system: ds
 
 -- ds.section-row:
+spacing: $ds.spaces.vertical-gap.space-between
 wrap: true
 
 -- feature: Dropbase Studio.
@@ -296,7 +300,7 @@ module design-system: ds
 
 -- ds.section-row: hero section
 design-system: $hero.design-system
-margin.px: $ds.spaces.vertical-gap.extra-extra-large.gap
+;; margin.px: $ds.spaces.vertical-gap.extra-extra-large.gap
 
 
 -- ds.column: left column

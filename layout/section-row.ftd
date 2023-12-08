@@ -23,8 +23,6 @@ width: fill-container
 align-content: center
 background: $section-row.background
 margin-bottom: $section-row.margin
-padding-vertical.px: $section-row.inset.vertical
-padding-horizontal.px: $section-row.inset.horizontal
 
 -- ftd.row:
 width if { section-row.flush == hack-flush-full }: fill-container
@@ -36,6 +34,8 @@ align-content: center
 spacing if { section-row.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 spacing.fixed.px: $section-row.spacing.gap
 wrap: $section-row.wrap
+padding-vertical.px: $section-row.inset.vertical
+padding-horizontal.px: $section-row.inset.horizontal
 
 -- end: ftd.row
 

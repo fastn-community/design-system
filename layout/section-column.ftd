@@ -24,8 +24,6 @@ width: fill-container
 align-content: center
 background: $section-column.outer-background
 margin-bottom: $section-column.margin
-padding-vertical.px: $section-column.inset.vertical
-padding-horizontal.px: $section-column.inset.horizontal
 
 -- ftd.column:
 width if { section-column.flush == hack-flush-full }: fill-container
@@ -37,6 +35,8 @@ spacing if { section-column.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: sp
 spacing.fixed.px: $section-column.spacing.gap
 align-content: $section-column.align
 background: $section-column.inner-background
+padding-vertical.px: $section-column.inset.vertical
+padding-horizontal.px: $section-column.inset.horizontal
 
 -- end: ftd.column
 
