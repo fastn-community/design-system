@@ -33,7 +33,42 @@ design-system: ds
 -- granular-permissions:
 design-system: ds
 
+-- smart-tables:
+design-system: ds
+
 -- end: ds.page
+
+
+
+-- component smart-tables:
+module design-system: ds
+
+-- ds.section-column:
+design-system: $smart-tables.design-system
+margin.px: $ds.spaces.vertical-gap.extra-extra-large.gap
+
+-- ds.heading-hero: Turn any SQL SELECT into an admin panel with Smart Tables.
+design-system: $smart-tables.design-system
+text-align: center
+
+-- ds.copy-large:
+design-system: $smart-tables.design-system
+text-align: center
+
+Convert any SQL select statement into an admin panel that lets you search and
+edit your data. It even works with JOIN statements without writing any
+additional queries or functions. Build admin panels in seconds.
+
+
+-- ftd.video:
+width.fixed.percent: 90
+src: https://cf-simple-s3-origin-cloudfrontfors3-355320424519.s3.amazonaws.com/dropbase-website-assets/Admin+Panel.mp4
+
+-- end: ds.section-column
+
+-- end: smart-tables
+
+
 
 
 -- component existing-py:

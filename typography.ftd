@@ -3,11 +3,13 @@ module design-system: ds
 caption text:
 ftd.resizing width: fill-container
 ftd.color color: $inherited.colors.text-strong
+optional ftd.text-align text-align:
 
 -- ftd.text: $heading-hero.text
 width: $heading-hero.width
 color: $heading-hero.color
 role: $inherited.types.heading-hero
+text-align: $heading-hero.text-align
 
 -- end: heading-hero
 
@@ -73,10 +75,12 @@ module design-system: ds
 body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
+optional ftd.text-align text-align:
 
 -- ftd.text: $copy-large.text
 color: $copy-large.color
 role: $inherited.types.copy-large
+text-align: $copy-large.text-align
 
 -- end: copy-large
 
