@@ -12,7 +12,13 @@ export: element-radius, radius-data
 export: code, rendered
 
 -- import: fastn-community.github.io/design-system/form/button as button-module
-export: button, header-link
+export: button
+
+-- import: fastn-community.github.io/design-system/header
+export: header-link
+
+-- import: fastn-community.github.io/design-system/footer as footer-module
+export: footer-heading, footer-secondary-heading, footer-link, copyright-text
 
 -- import: fastn-community.github.io/design-system/form/button-group as bg-module
 export: button-group

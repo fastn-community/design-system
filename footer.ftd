@@ -1,0 +1,55 @@
+-- component footer-heading:
+module design-system: ds
+caption title:
+
+-- footer-heading.design-system.heading-medium: $footer-heading.title
+design-system: $footer-heading.design-system
+
+-- end: footer-heading
+
+
+
+
+-- component footer-secondary-heading:
+module design-system: ds
+caption title:
+
+-- footer-secondary-heading.design-system.copy-regular:
+design-system: $footer-secondary-heading.design-system
+
+$footer-secondary-heading.title
+
+-- end: footer-secondary-heading
+
+
+
+
+-- component footer-link:
+caption title:
+string link:
+boolean $hover: false
+
+-- ftd.text: $footer-link.title
+link: $footer-link.link
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+color if { footer-link.hover }: $inherited.colors.text-strong
+$on-mouse-enter$: $ftd.set-boolean($a = $footer-link.hover, v = true)
+$on-mouse-enter$: $ftd.set-boolean($a = $footer-link.hover, v = false)
+
+-- end: footer-link
+
+
+
+
+
+-- component copyright-text:
+module design-system: ds
+caption or body text:
+
+-- copyright-text.design-system.copy-regular:
+design-system: $copyright-text.design-system
+
+$copyright-text.text
+
+-- end: copyright-text

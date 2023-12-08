@@ -82,20 +82,6 @@ white-space: nowrap
 
 
 
--- component header-link:
-module design-system: ds
-caption or body text:
-string link:
-integer kind: $kind-primary
-
--- ftd.text: $header-link.text
-color: $inherited.colors.text-strong
-role: $inherited.types.link
-link: $header-link.link
-
--- end: header-link
-
-
 
 
 

@@ -91,11 +91,13 @@ module design-system: ds
 body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
+optional ftd.length.px margin:
 
 -- ftd.text: $copy-regular.text
 color: $copy-regular.color
 role: $inherited.types.copy-regular
 display: $copy-regular.display
+margin-bottom: $copy-regular.margin
 
 -- end: copy-regular
 

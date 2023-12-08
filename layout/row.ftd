@@ -6,6 +6,7 @@ module design-system: ds
 ds.hv inset: $ds.spaces.inset-square.zero
 ds.gap spacing: $ds.spaces.horizontal-gap.medium
 ftd.resizing width: fill-container
+ftd.align align-content: center
 children content:
 
 -- ftd.row:
@@ -14,13 +15,9 @@ padding-vertical.px: $row.inset.vertical
 padding-horizontal.px: $row.inset.horizontal
 spacing.fixed.px: $row.spacing.gap
 spacing if { row.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
-align-content: center
+align-content: $row.align-content
 children: $row.content
 
 -- end: ftd.row
 
 -- end: row
-
-
-
-

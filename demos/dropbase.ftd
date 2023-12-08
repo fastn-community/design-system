@@ -42,7 +42,127 @@ design-system: ds
 -- book-demo:
 design-system: ds
 
+-- footer:
+design-system: ds
+
 -- end: ds.page
+
+
+
+
+
+
+-- component footer:
+module design-system: ds
+
+-- ds.section-column:
+inner-background.solid: $inherited.colors.background.step-2
+inset: $ds.spaces.inset-square.extra-large
+
+-- ds.row:
+;; spacing: $ds.spaces.vertical-gap.space-between
+spacing: $ds.spaces.horizontal-gap.extra-large
+align-content: top-center
+
+-- ds.column:
+
+-- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6125a1fa1160592fd373d33b_Dropbase%20logo%20website.svg
+width.fixed.px: 195
+
+-- ds.copy-regular:
+margin: $ds.spaces.vertical-gap.medium.gap
+
+The developer platform to build internal customer success apps.
+
+-- ds.footer-secondary-heading: Backed by
+
+-- ds.column:
+spacing: $ds.spaces.horizontal-gap.extra-extra-small
+
+-- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6334e9c7c49cd57891a61167_Gradient.svg
+width.fixed.px: 150
+
+-- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6334ea24e5307cc2a91ef616_ycombinator-ar21%201.svg
+width.fixed.px: 114
+
+-- end: ds.column
+
+
+-- end: ds.column
+
+
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.footer-heading: Apps
+-- ds.footer-link: Database Editors
+link: /
+
+-- ds.footer-link: Admin Panels
+link: /
+
+-- end: ds.column
+
+
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.footer-heading: Product
+-- ds.footer-link: Request a demo
+link: /
+
+-- ds.footer-link: Pricing
+link: /
+
+-- end: ds.column
+
+
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.footer-heading: Resources
+-- ds.footer-link: Docs
+link: /
+
+-- ds.footer-link: Local setup
+link: /
+
+-- ds.footer-link: Blog
+link: /
+
+-- ds.footer-link: Support
+link: /
+
+-- end: ds.column
+
+
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.footer-heading: Company
+-- ds.footer-link: Contact us
+link: /
+
+-- ds.footer-link: Security Center
+link: /
+
+-- ds.footer-link: Terms
+link: /
+
+-- ds.footer-link: Privacy
+link: /
+
+-- end: ds.column
+
+-- end: ds.row
+
+-- end: ds.section-column
+
+-- end: footer
+
+
+
+
 
 
 -- component book-demo:
