@@ -25,6 +25,7 @@ $footer-secondary-heading.title
 
 
 -- component footer-link:
+module design-system: ds
 caption title:
 string link:
 boolean $hover: false
