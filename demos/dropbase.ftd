@@ -30,6 +30,9 @@ design-system: ds
 -- existing-py:
 design-system: ds
 
+-- granular-permissions:
+design-system: ds
+
 -- end: ds.page
 
 
@@ -67,6 +70,41 @@ width: fill-container
 -- end: ds.section-row
 
 -- end: existing-py
+
+
+-- component granular-permissions:
+module design-system: ds
+
+-- ds.section-row: hero section
+design-system: $granular-permissions.design-system
+margin.px: $ds.spaces.vertical-gap.extra-extra-large.gap
+
+-- ds.column: right column
+design-system: $granular-permissions.design-system
+
+-- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/652763340f644d671d70bc24_Python%20scripts-p-1600.webp
+width: fill-container
+
+-- end: ds.column
+
+-- ds.column: left column
+
+-- ds.heading-hero: Granular permissions for surgical app control.
+design-system: $granular-permissions.design-system
+
+
+-- ds.copy-large:
+design-system: $granular-permissions.design-system
+
+Surgically control end-user access on an app-by-app basis. Assign app
+permissions to users or groups. Control who can view, edit or own any app.
+
+-- end: ds.column
+
+
+-- end: ds.section-row
+
+-- end: granular-permissions
 
 
 -- component any-data-or-api:

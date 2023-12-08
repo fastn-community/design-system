@@ -12,7 +12,7 @@ optional caption title:
 module design-system: ds
 integer flush: $hack-flush-to-header
 children content:
-optional ds.gap spacing:
+ds.gap spacing: $ds.spaces.vertical-gap.large
 optional ftd.background background:
 ds.hv inset: $ds.spaces.inset-wide.medium
 ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
@@ -35,18 +35,6 @@ children: $section-column.content
 spacing if { section-column.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 spacing.fixed.px: $section-column.spacing.gap
 align-content: $section-column.align
-if: { section-column.spacing != NULL } ;; TODO: this is hack (remove this condition and below row)
-
--- end: ftd.column
-
--- ftd.column:
-width if { section-column.flush == hack-flush-full }: fill-container
-max-width.fixed if { section-column.flush == hack-flush-narrow }: $inherited.widths.narrow
-max-width.fixed if { section-column.flush == hack-flush-wide }: $inherited.widths.wide
-width.fixed: $inherited.widths.regular
-children: $section-column.content
-align-content: $section-column.align
-if: { section-column.spacing == NULL }
 
 -- end: ftd.column
 
