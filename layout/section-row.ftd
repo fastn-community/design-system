@@ -14,7 +14,7 @@ integer flush: $hack-flush-to-header
 children content:
 design-system.gap spacing: $design-system.spaces.horizontal-gap.large
 optional ftd.background background:
-design-system.hv inset: $design-system.spaces.inset-wide.medium
+design-system.hv inset: $design-system.spaces.inset-wide.large
 ftd.length.px margin: $design-system.spaces.vertical-gap.large.gap
 boolean wrap: false
 

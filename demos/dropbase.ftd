@@ -57,8 +57,8 @@ module ds: design-system
 ds: $header.ds
 background.solid: $inherited.colors.background.step-1
 spacing: $header.ds.spaces.vertical-gap.space-between
-margin.px: $header.ds.spaces.vertical-gap.extra-large.gap
-inset: $header.ds.spaces.inset-wide.large
+margin.px: $design-system.spaces.vertical-gap.extra-large.gap
+inset: $design-system.spaces.inset-wide.large
 
 
 -- header.ds.inline-row: Logo | Docs | Blog | Pricing
@@ -342,7 +342,7 @@ module ds: design-system
 
 -- book-demo.ds.section-column:
 ds: $book-demo.ds
-margin.px: $book-demo.ds.spaces.vertical-gap.extra-large.gap
+margin.px: $design-system.spaces.vertical-gap.extra-large.gap
 inner-background.solid: $inherited.colors.background.step-1
 inset: $book-demo.ds.spaces.inset-square.large
 
@@ -459,7 +459,7 @@ module ds: design-system
 
 -- smart-tables.ds.section-column:
 ds: $smart-tables.ds
-margin.px: $smart-tables.ds.spaces.vertical-gap.large.gap
+margin.px: $design-system.spaces.vertical-gap.extra-large.gap
 
 -- smart-tables.ds.heading-hero: Turn any SQL SELECT into an admin panel with Smart Tables.
 ds: $smart-tables.ds
@@ -490,7 +490,7 @@ module ds: design-system
 
 -- existing-py.ds.section-row: hero section
 ds: $existing-py.ds
-margin.px: $existing-py.ds.spaces.vertical-gap.extra-extra-large.gap
+margin.px: $design-system.spaces.vertical-gap.extra-large.gap
 
 
 -- existing-py.ds.column: left column
@@ -529,7 +529,7 @@ module ds: design-system
 
 -- granular-permissions.ds.section-row: hero section
 ds: $granular-permissions.ds
-margin.px: $granular-permissions.ds.spaces.vertical-gap.extra-extra-large.gap
+margin.px: $design-system.spaces.vertical-gap.extra-large.gap
 
 -- granular-permissions.ds.column: left column
 ds: $granular-permissions.ds
@@ -570,7 +570,7 @@ module ds: design-system
 
 -- any-data-or-api.ds.section-column:
 ds: $any-data-or-api.ds
-margin.px: $any-data-or-api.ds.spaces.vertical-gap.extra-large.gap
+margin.px: $design-system.spaces.vertical-gap.extra-large.gap
 spacing: $any-data-or-api.ds.spaces.vertical-gap.medium
 
 -- any-data-or-api.ds.inline-row:
