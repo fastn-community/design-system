@@ -14,6 +14,23 @@ text-align: $heading-hero.text-align
 -- end: heading-hero
 
 
+-- component heading-eyebrow:
+module ds: design-system
+caption text:
+ftd.resizing width: fill-container
+ftd.color color: $inherited.colors.text-strong
+optional ftd.text-align text-align:
+;; todo: style: uppercase, bold, code
+
+-- ftd.text: $heading-eyebrow.text
+width: $heading-eyebrow.width
+color: $heading-eyebrow.color
+role: $inherited.types.heading-small
+text-align: $heading-eyebrow.text-align
+
+-- end: heading-eyebrow
+
+
 -- component heading-large:
 module ds: design-system
 caption text:
@@ -69,6 +86,21 @@ role: $inherited.types.heading-tiny
 
 -- end: heading-tiny
 
+
+
+-- component copy-lede:
+module ds: design-system
+body text:
+ftd.color color: $inherited.colors.text
+ftd.display display: inline
+optional ftd.text-align text-align:
+
+-- ftd.text: $copy-lede.text
+color: $copy-lede.color
+role: $inherited.types.copy-large ;; TODO: add copy-lede to ftd.color-scheme
+text-align: $copy-lede.text-align
+
+-- end: copy-lede
 
 -- component copy-large:
 module ds: design-system
