@@ -1,9 +1,9 @@
 -- component footer-heading:
-module design-system: ds
+module ds: design-system
 caption title:
 
--- footer-heading.design-system.heading-medium: $footer-heading.title
-design-system: $footer-heading.design-system
+-- footer-heading.ds.heading-medium: $footer-heading.title
+ds: $footer-heading.ds
 
 -- end: footer-heading
 
@@ -11,11 +11,11 @@ design-system: $footer-heading.design-system
 
 
 -- component footer-secondary-heading:
-module design-system: ds
+module ds: design-system
 caption title:
 
--- footer-secondary-heading.design-system.copy-regular:
-design-system: $footer-secondary-heading.design-system
+-- footer-secondary-heading.ds.copy-regular:
+ds: $footer-secondary-heading.ds
 
 $footer-secondary-heading.title
 
@@ -25,7 +25,7 @@ $footer-secondary-heading.title
 
 
 -- component footer-link:
-module design-system: ds
+module ds: design-system
 caption title:
 string link:
 boolean $hover: false
@@ -45,11 +45,11 @@ $on-mouse-enter$: $ftd.set-boolean($a = $footer-link.hover, v = false)
 
 
 -- component copyright-text:
-module design-system: ds
+module ds: design-system
 caption or body text:
 
--- copyright-text.design-system.copy-regular:
-design-system: $copyright-text.design-system
+-- copyright-text.ds.copy-regular:
+ds: $copyright-text.ds
 
 $copyright-text.text
 
