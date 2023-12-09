@@ -1,7 +1,7 @@
 -- component button-group:
-module design-system: ds
+module ds: design-system
 children buttons:
-ds.gap spacing: $ds.spaces.vertical-gap.small
+design-system.gap spacing: $design-system.spaces.vertical-gap.small
 
 -- ftd.row:
 spacing.fixed.px: $button-group.spacing.gap
@@ -14,17 +14,17 @@ children: $button-group.buttons
 
 
 
--- ds.blank-page: Button Group
+-- design-system.page: Button Group
 
--- ds.phosphor-icon-button: Back
+-- design-system.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
 
--- ds.rendered:
+-- design-system.rendered:
 
 \-- button-group:
--- button-group:
+-- design-system.button-group:
 
--- end: ds.rendered
+-- end: design-system.rendered
 
--- end: ds.blank-page
+-- end: design-system.page

@@ -2,6 +2,7 @@
 
 -- fastn.package: fastn-community.github.io/design-system
 favicon: /favicon.ico
+;; ds: fastn-community.github.io/design-system
 
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
 -- fastn.dependency: fastn-community.github.io/roboto-typography
@@ -9,5 +10,5 @@ favicon: /favicon.ico
 -- fastn.dependency: fastn-community.github.io/code-block
 -- fastn.dependency: fastn-community.github.io/svg-icons
 
--- fastn.auto-import: fastn-community.github.io/design-system as ds
+-- fastn.auto-import: fastn-community.github.io/design-system
 -- fastn.auto-import: fastn-community.github.io/design-system/assets

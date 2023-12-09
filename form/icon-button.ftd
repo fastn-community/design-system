@@ -12,6 +12,7 @@
 
 
 -- component icon-button:
+module ds: design-system
 optional caption title:
 ftd.image-src icon:
 integer icon-position: $icon-at-start
@@ -26,6 +27,7 @@ module design-system: ds
 boolean $hover: false
 
 -- button-wrapper:
+ds: $icon-button.ds
 title: $icon-button.title
 icon-position: $icon-button.icon-position
 link: $icon-button.link
@@ -34,7 +36,6 @@ width: $icon-button.width
 size: $icon-button.size
 outline: $icon-button.outline
 kind: $icon-button.kind
-design-system: $icon-button.design-system
 
 -- ftd.image:
 src: $icon-button.icon
@@ -50,6 +51,7 @@ height.fixed.px: 16
 
 
 -- component square-button:
+module ds: design-system
 caption ftd.image-src icon:
 optional string link:
 boolean enabled: true
@@ -81,6 +83,7 @@ width: fill-container
 
 
 -- component circle-button:
+module ds: design-system
 ftd.image-src icon:
 optional string link:
 boolean enabled: true
@@ -112,9 +115,9 @@ width: fill-container
 
 
 -- component circle-text-button:
+module ds: design-system
 caption text:
 optional string link:
-module design-system: ds
 
 -- ftd.text: $circle-text-button.text
 padding.px: 8
@@ -156,7 +159,7 @@ integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
 integer kind: $button.kind-primary
-module design-system: ds
+module ds: design-system
 ;; private stuff
 boolean $hover: false
 
@@ -169,7 +172,7 @@ width: $phosphor-icon-button.width
 size: $phosphor-icon-button.size
 outline: $phosphor-icon-button.outline
 kind: $phosphor-icon-button.kind
-design-system: $phosphor-icon-button.design-system
+ds: $phosphor-icon-button.ds
 
 -- phosphor.regular: $phosphor-icon-button.icon
 size: 16
@@ -219,7 +222,7 @@ integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
 integer kind: $button.kind-primary
-module design-system: ds
+module ds: design-system
 ;; private stuff
 boolean $hover: false
 
@@ -232,7 +235,7 @@ width: $fa-icon-button.width
 size: $fa-icon-button.size
 outline: $fa-icon-button.outline
 kind: $fa-icon-button.kind
-design-system: $fa-icon-button.design-system
+ds: $fa-icon-button.ds
 
 -- fa.brand: $fa-icon-button.icon
 size: 13
@@ -266,7 +269,7 @@ integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
 integer kind: $button.kind-primary
-module design-system: ds
+module ds: design-system
 children uis:
 ftd.length.px border-radius: 8
 ;; private stuff
@@ -309,13 +312,15 @@ align-self: center
 
 
 
--- ds.blank-page: Icon Buttons
+-- design-system.page: Icon Buttons
 
--- ds.phosphor-icon-button: Back
+-- design-system.section-column:
+
+-- design-system.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
 
--- ds.rendered:
+-- design-system.rendered:
 
 \-- icon-button: Icon
 icon: $assets.files.assets.convert.svg
@@ -324,10 +329,10 @@ link: /
 icon: $assets.files.assets.convert.svg
 link: /
 
--- end: ds.rendered
+-- end: design-system.rendered
 
 
--- ds.rendered:
+-- design-system.rendered:
 
 \-- square-button:
 icon: $assets.files.assets.convert.svg
@@ -336,10 +341,10 @@ link: /
 icon: $assets.files.assets.convert.svg
 link: /
 
--- end: ds.rendered
+-- end: design-system.rendered
 
 
--- ds.rendered:
+-- design-system.rendered:
 
 \-- circle-button:
 icon: $assets.files.assets.convert.svg
@@ -348,10 +353,10 @@ link: /
 icon: $assets.files.assets.convert.svg
 link: /
 
--- end: ds.rendered
+-- end: design-system.rendered
 
 
--- ds.rendered:
+-- design-system.rendered:
 
 \-- phosphor-icon-button: PI button
 icon: app-store-logo
@@ -361,10 +366,10 @@ link: /
 icon: app-store-logo
 link: /
 
--- end: ds.rendered
+-- end: design-system.rendered
 
 
--- ds.rendered:
+-- design-system.rendered:
 
 \-- fa-icon-button: FAI button
 icon: bell
@@ -374,6 +379,8 @@ link: /
 icon: bell
 link: /
 
--- end: ds.rendered
+-- end: design-system.rendered
 
--- end: ds.blank-page
+-- end: design-system.section-column
+
+-- end: design-system.page

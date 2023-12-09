@@ -41,6 +41,7 @@
 
 
 -- component button:
+module ds: design-system
 caption title:
 optional string link:
 boolean enabled: true
@@ -48,7 +49,6 @@ integer width: $width-default
 integer size: $medium
 integer variant: $solid
 integer kind: $kind-primary
-module design-system: ds
 ;; private stuff
 boolean $hover: false
 
@@ -82,18 +82,6 @@ white-space: nowrap
 
 
 
--- component header-link:
-module design-system: ds
-caption or body text:
-string link:
-integer kind: $kind-primary
-
--- ftd.text: $header-link.text
-color: $inherited.colors.text-strong
-role: $inherited.types.link
-link: $header-link.link
-
--- end: header-link
 
 
 
@@ -101,15 +89,15 @@ link: $header-link.link
 
 
 
+-- design-system.page:
 
+-- design-system.heading-hero: Buttons
 
--- ds.blank-page: Buttons
-
--- ds.phosphor-icon-button: Back
+-- design-system.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
 
--- ds.rendered:
+-- design-system.rendered:
 
 \-- button: Default button
 link: /
@@ -117,6 +105,6 @@ link: /
 -- button: Default button
 link: /
 
--- end: ds.rendered
+-- end: design-system.rendered
 
--- end: ds.blank-page
+-- end: design-system.page
