@@ -2,11 +2,11 @@
 
 -- component container:
 optional caption title:
-module design-system: ds
-ds.hv inset: $ds.spaces.inset-square.zero
+module ds: design-system
+design-system.hv inset: $design-system.spaces.inset-square.zero
 ftd.resizing width: fill-container
 optional ftd.background background:
-ds.element-radius radius: $ds.radius.medium
+design-system.element-radius radius: $design-system.radius.medium
 children content:
 
 -- ftd.container:

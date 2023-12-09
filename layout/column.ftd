@@ -2,9 +2,9 @@
 
 -- component column:
 optional caption title:
-module design-system: ds
-ds.hv inset: $ds.spaces.inset-square.zero
-ds.gap spacing: $ds.spaces.horizontal-gap.medium
+module ds: design-system
+design-system.hv inset: $design-system.spaces.inset-square.zero
+design-system.gap spacing: $design-system.spaces.horizontal-gap.medium
 ftd.resizing width: fill-container
 children content:
 

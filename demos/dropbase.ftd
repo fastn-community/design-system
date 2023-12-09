@@ -2,7 +2,7 @@
 -- integer hack-flush-wide: 2
 
 
--- ds.page-widths widths:
+-- design-system.page-widths widths:
 regular.px: 1200
 narrow.px: 1000
 wide.px: 1400
@@ -43,7 +43,7 @@ ds: design-system
 ds: design-system
 
 -- footer:
-ds: ds
+ds: design-system
 
 -- end: design-system.page
 
@@ -53,7 +53,7 @@ ds: ds
 
 
 -- component footer:
-module ds: ds
+module ds: design-system
 
 -- footer.ds.section-column:
 ds: $footer.ds
@@ -122,6 +122,7 @@ inset: $footer.ds.spaces.inset-tall.zero-small
 
 -- footer.ds.footer-heading: Product
 ds: $footer.ds
+
 -- footer.ds.footer-link: Request a demo
 ds: $footer.ds
 link: /
@@ -165,6 +166,7 @@ inset: $footer.ds.spaces.inset-tall.zero-small
 
 -- footer.ds.footer-heading: Company
 ds: $footer.ds
+
 -- footer.ds.footer-link: Contact us
 ds: $footer.ds
 link: /
@@ -238,7 +240,7 @@ ds: $book-demo.ds
 module ds: design-system
 
 -- features.ds.section-row:
-spacing: $feature.ds.spaces.vertical-gap.space-between
+spacing: $features.ds.spaces.vertical-gap.space-between
 wrap: true
 
 -- feature: Dropbase Studio.
