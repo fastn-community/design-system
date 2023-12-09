@@ -25,7 +25,7 @@ regular.px: 1000
 narrow.px: 800
 wide.px: 1200
 
--- ds.page-widths narrow-widths:
+-- design-system.page-widths narrow-widths:
 regular.px: 800
 narrow.px: 600
 wide.px: 1000
@@ -35,16 +35,17 @@ wide.px: 1000
 optional caption title:
 optional body description:
 children content:
-module design-system: ds
+module ds: design-system
 ftd.length.px spacing: 0
 page-widths widths: $default-widths
-ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
+;; todo: is the follow reference to `design-system` correct?
+ftd.length.px margin: $design-system.spaces.vertical-gap.large.gap
 
 -- ftd.document:
 title: $page.title
 description: $page.description
-colors: $page.design-system.colors
-types: $page.design-system.types
+colors: $page.ds.colors
+types: $page.ds.types
 
 -- dms.dark-mode-switcher-float:
 
@@ -90,13 +91,13 @@ narrow.px: 300
 wide.px: 1200
 
 
--- ds.page:
-design-system: ds
+-- design-system.page:
+ds: design-system
 ;; widths: $test-widths
 
 -- demos.demo:
 
--- end: ds.page
+-- end: design-system.page
 
 
 
@@ -104,43 +105,3 @@ design-system: ds
 
 
 
--- component header:
-module design-system: ds
-
--- ds.section-grid:
-design-system: $header.design-system
-background.solid: $inherited.colors.background.step-1
-spacing: $ds.spaces.vertical-gap.space-between
-
--- ds.button: LOGO
-
--- ds.row: Docs Blog Pricing
-width: hug-content
-
--- ds.header-link: Docs
-link: /
-
--- ds.header-link: Blog
-link: /
-
--- ds.header-link: Pricing
-link: /
-
--- end: ds.row
-
-
--- ds.row:
-width: hug-content
-
--- ds.phosphor-icon-button: Search
-icon: magnifying-glass
-
--- ds.header-link: Login
-link: /
-
--- ds.button: Book demo
--- end: ds.row
-
--- end: ds.section-grid
-
--- end: header

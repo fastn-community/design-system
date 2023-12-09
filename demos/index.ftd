@@ -1,23 +1,23 @@
 -- component demo:
 
--- ds.section-column:
+-- design-system.section-column:
 align: left
 
--- ds.heading-large: Demos
+-- design-system.heading-large: Demos
 
--- ds.copy-regular:
+-- design-system.copy-regular:
 
 - [Dropbase.io](demos/dropbase/)
 
--- end: ds.section-column
+-- end: design-system.section-column
 
 -- end: demo
 
 
 
 
--- ds.page:
+-- design-system.page:
 
 -- demo:
 
--- end: ds.page
+-- end: design-system.page

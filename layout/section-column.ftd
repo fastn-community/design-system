@@ -9,16 +9,18 @@
 
 -- component section-column:
 optional caption title:
-module design-system: ds
+module ds: design-system
 integer flush: $hack-flush-to-header
 children content:
-ds.gap spacing: $ds.spaces.vertical-gap.large
+;; todo: is the follow reference to `design-system` correct?
+design-system.gap spacing: $design-system.spaces.vertical-gap.large
 optional ftd.background outer-background:
 optional ftd.background inner-background:
-ds.hv inset: $ds.spaces.inset-wide.medium
-ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
+;; todo: is the follow reference to `design-system` correct?
+design-system.hv inset: $design-system.spaces.inset-wide.medium
+ftd.length.px margin: $design-system.spaces.vertical-gap.large.gap
 ftd.align align: center
-ds.element-radius radius: $ds.radius.medium
+design-system.element-radius radius: $design-system.radius.medium
 
 -- ftd.column:
 width: fill-container

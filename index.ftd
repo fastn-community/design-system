@@ -24,7 +24,7 @@ export: footer-heading, footer-secondary-heading, footer-link, copyright-text
 export: button-group
 
 -- import: fastn-community.github.io/design-system/layout/page as page-module
-export: page, section-grid, flush-wide, page-widths
+export: page, flush-wide, page-widths
 
 -- import: fastn-community.github.io/design-system/layout/section-row as section-row-module
 export: section-row
@@ -62,12 +62,12 @@ exposing: heading-large, copy-regular
 
 
 
--- ds.page-widths hack-hack-default-widths:
+-- design-system.page-widths hack-hack-default-widths:
 regular.px: 1000
 narrow.px: 800
 wide.px: 1200
 
--- ds.page-widths hack-hack-narrow-widths:
+-- design-system.page-widths hack-hack-narrow-widths:
 regular.px: 800
 narrow.px: 600
 wide.px: 1000
@@ -75,28 +75,28 @@ wide.px: 1000
 
 
 
--- ds.page:
+-- design-system.page:
 widths: $hack-hack-narrow-widths
 
--- ds.section-column:
-spacing: $ds.spaces.vertical-gap.medium
+-- design-system.section-column:
+spacing: $design-system.spaces.vertical-gap.medium
 align: left
 
--- ds.heading-hero: Design System
+-- design-system.heading-hero: Design System
 
--- ds.button-group:
+-- design-system.button-group:
 
--- ds.phosphor-icon-button: Github
+-- design-system.phosphor-icon-button: Github
 icon: github-logo
 link: https://github.com/fastn-community/design-system/
 
--- ds.phosphor-icon-button: BSD (Open Source)
+-- design-system.phosphor-icon-button: BSD (Open Source)
 icon: scales
 link: https://github.com/fastn-community/design-system/blob/main/LICENSE
 
--- end: ds.button-group
+-- end: design-system.button-group
 
--- ds.copy-regular:
+-- design-system.copy-regular:
 
 This is the package you have been waiting for!
 
@@ -108,6 +108,6 @@ This is the package you have been waiting for!
 
 -- demos.demo:
 
--- end: ds.section-column
+-- end: design-system.section-column
 
--- end: ds.page
+-- end: design-system.page

@@ -9,13 +9,13 @@
 
 -- component section-row:
 optional caption title:
-module design-system: ds
+module ds: design-system
 integer flush: $hack-flush-to-header
 children content:
-ds.gap spacing: $ds.spaces.horizontal-gap.large
+design-system.gap spacing: $design-system.spaces.horizontal-gap.large
 optional ftd.background background:
-ds.hv inset: $ds.spaces.inset-wide.medium
-ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
+design-system.hv inset: $design-system.spaces.inset-wide.medium
+ftd.length.px margin: $design-system.spaces.vertical-gap.large.gap
 boolean wrap: false
 
 -- ftd.column:
