@@ -57,7 +57,6 @@ gaps vertical-gap:
 gaps horizontal-gap:
 
 
-extra-extra-large: 128
 -- space-data spaces:
 inset-square: $insets_
 inset-wide: $wides_

@@ -39,7 +39,6 @@ padding-horizontal.px: $section-row.inset.horizontal
 
 -- end: ftd.row
 
-
 -- end: ftd.column
 
 -- end: section-row

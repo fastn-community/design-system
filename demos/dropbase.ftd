@@ -50,6 +50,126 @@ ds: design-system
 
 
 
+-- component header:
+module ds: design-system
+
+-- header.ds.section-row:
+ds: $header.ds
+background.solid: $inherited.colors.background.step-1
+spacing: $header.ds.spaces.vertical-gap.space-between
+margin.px: $header.ds.spaces.vertical-gap.extra-large.gap
+inset: $header.ds.spaces.inset-wide.large
+
+
+-- header.ds.inline-row: Logo | Docs | Blog | Pricing
+ds: $header.ds
+
+-- header.ds.button: LOGO
+ds: $header.ds
+
+-- header.ds.header-link: Docs
+ds: $header.ds
+link: /
+
+-- header.ds.header-link: Blog
+ds: $header.ds
+link: /
+
+-- header.ds.header-link: Pricing
+ds: $header.ds
+link: /
+
+-- end: header.ds.inline-row
+
+
+-- header.ds.inline-row: Search | Login | Book Demo
+ds: $header.ds
+
+-- header.ds.phosphor-icon-button: Search
+ds: $header.ds
+icon: magnifying-glass
+
+-- header.ds.header-link: Login
+ds: $header.ds
+link: /
+
+-- header.ds.button: Book demo
+ds: $header.ds
+
+-- end: header.ds.inline-row
+
+
+
+-- end: header.ds.section-row
+
+-- end: header
+
+
+
+
+
+
+-- component hero:
+module ds: design-system
+
+-- hero.ds.section-row: hero section
+ds: $hero.ds
+;; this doesn't work
+;; margin.px: $hero.ds.spaces.vertical-gap.extra-extra-large.gap
+;; following both work
+;; margin.px: 128
+;; TODO
+margin.px: $design-system.spaces.vertical-gap.extra-extra-large.gap
+
+
+-- hero.ds.column: left column
+
+-- hero.ds.heading-tiny: DROPBASE
+ds: $hero.ds
+
+-- hero.ds.heading-hero: Unlock insights from Conversations using GenAI
+ds: $hero.ds
+
+-- hero.ds.copy-large:
+ds: $hero.ds
+
+Leverage AI driven insights & actionables from your customer conversations
+across all channels - Calls, Chats & Meetings to boost your business efficiency
+
+-- hero.ds.button-group:
+ds: $hero.ds
+
+-- hero.ds.button: Book Demo
+ds: $hero.ds
+
+-- hero.ds.phosphor-icon-button: Documentation
+ds: $hero.ds
+icon: caret-right
+
+-- end: hero.ds.button-group
+
+-- end: hero.ds.column
+
+
+
+-- hero.ds.column: right column
+ds: $hero.ds
+
+-- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
+width: fill-container
+
+-- end: hero.ds.column
+
+
+
+-- end: hero.ds.section-row
+
+-- end: hero
+
+
+
+
+
 
 
 
@@ -477,57 +597,6 @@ width: hug-content
 
 
 
--- component hero:
-module ds: design-system
-
--- hero.ds.section-row: hero section
-ds: $hero.ds
-;; margin.px: $ds.spaces.vertical-gap.extra-extra-large.gap
-
-
--- hero.ds.column: left column
-
--- hero.ds.heading-tiny: DROPBASE
-ds: $hero.ds
-
--- hero.ds.heading-hero: Unlock insights from Conversations using GenAI
-ds: $hero.ds
-
--- hero.ds.copy-large:
-ds: $hero.ds
-
-Leverage AI driven insights & actionables from your customer conversations
-across all channels - Calls, Chats & Meetings to boost your business efficiency
-
--- hero.ds.button-group:
-ds: $hero.ds
-
--- hero.ds.button: Book Demo
-ds: $hero.ds
-
--- hero.ds.phosphor-icon-button: Documentation
-ds: $hero.ds
-icon: caret-right
-
--- end: hero.ds.button-group
-
--- end: hero.ds.column
-
-
-
--- hero.ds.column: right column
-ds: $hero.ds
-
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
-width: fill-container
-
--- end: hero.ds.column
-
-
-
--- end: hero.ds.section-row
-
--- end: hero
 
 
 
@@ -540,60 +609,6 @@ width: fill-container
 
 
 
--- component header:
-module ds: design-system
-
--- header.ds.section-row:
-ds: $header.ds
-background.solid: $inherited.colors.background.step-1
-spacing: $header.ds.spaces.vertical-gap.space-between
-margin.px: $header.ds.spaces.vertical-gap.extra-large.gap
-inset: $header.ds.spaces.inset-wide.large
-
-
--- header.ds.inline-row: Logo | Docs | Blog | Pricing
-ds: $header.ds
-
--- header.ds.button: LOGO
-ds: $header.ds
-
--- header.ds.header-link: Docs
-ds: $header.ds
-link: /
-
--- header.ds.header-link: Blog
-ds: $header.ds
-link: /
-
--- header.ds.header-link: Pricing
-ds: $header.ds
-link: /
-
--- end: header.ds.inline-row
-
-
-
--- header.ds.inline-row: Search | Login | Book Demo
-ds: $header.ds
-
--- header.ds.phosphor-icon-button: Search
-ds: $header.ds
-icon: magnifying-glass
-
--- header.ds.header-link: Login
-ds: $header.ds
-link: /
-
--- header.ds.button: Book demo
-ds: $header.ds
-
--- end: header.ds.inline-row
-
-
-
--- end: header.ds.section-row
-
--- end: header
 
 
 
