@@ -127,7 +127,7 @@ margin.px: $design-system.spaces.vertical-gap.extra-extra-large.gap
 -- hero.ds.heading-tiny: DROPBASE
 ds: $hero.ds
 
--- hero.ds.heading-hero: Unlock insights from Conversations using GenAI
+-- hero.ds.heading-large: Unlock insights from Conversations using GenAI
 ds: $hero.ds
 
 -- hero.ds.copy-large:
@@ -176,11 +176,12 @@ width: fill-container
 -- component footer:
 module ds: design-system
 
--- footer.ds.section-column:
+-- footer.ds.section-column: asdas
 ds: $footer.ds
 inner-background.solid: $inherited.colors.background.step-2
 inset: $footer.ds.spaces.inset-square.extra-large
 spacing: $footer.ds.spaces.vertical-gap.extra-extra-large
+
 
 -- footer.ds.row:
 ds: $footer.ds
