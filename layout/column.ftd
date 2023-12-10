@@ -7,6 +7,8 @@ design-system.hv inset: $design-system.spaces.inset-square.zero
 design-system.gap spacing: $design-system.spaces.horizontal-gap.medium
 ftd.resizing width: fill-container
 children content:
+optional ftd.background background:
+
 
 -- ftd.column:
 width: $column.width
@@ -15,6 +17,7 @@ padding-horizontal.px: $column.inset.horizontal
 spacing.fixed.px: $column.spacing.gap
 spacing if { column.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 children: $column.content
+background: $column.background
 
 -- end: ftd.column
 

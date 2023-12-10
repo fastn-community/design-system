@@ -17,6 +17,7 @@ optional ftd.background background:
 design-system.hv inset: $design-system.spaces.inset-wide.large
 ftd.length.px margin: $design-system.spaces.vertical-gap.large.gap
 boolean wrap: false
+ftd.align align: center
 
 -- ftd.column:
 width: fill-container
@@ -30,7 +31,7 @@ max-width.fixed if { section-row.flush == hack-flush-narrow }: $inherited.widths
 max-width.fixed if { section-row.flush == hack-flush-wide }: $inherited.widths.wide
 width.fixed: $inherited.widths.regular
 children: $section-row.content
-align-content: center
+align-content: $section-row.align
 spacing if { section-row.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 spacing.fixed.px: $section-row.spacing.gap
 wrap: $section-row.wrap

@@ -28,6 +28,7 @@ hv large-zero:
 -- record talls:
 hv small:
 hv medium:
+hv large:
 hv zero-small:
 hv zero-medium:
 
@@ -139,6 +140,10 @@ vertical: 12
 horizontal: 16
 vertical: 24
 
+-- hv talls_l:
+horizontal: 24
+vertical: 36
+
 -- hv talls_zs:
 horizontal: 0
 vertical: 12
@@ -150,6 +155,7 @@ vertical: 24
 -- talls talls_:
 small: $talls_s
 medium: $talls_m
+large: $talls_l
 zero-small: $talls_zs
 zero-medium: $talls_zm
 

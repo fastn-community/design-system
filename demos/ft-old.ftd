@@ -1,0 +1,186 @@
+-- integer hack-flush-full: 1
+-- integer hack-flush-to-header: 0
+-- integer hack-icon-at-end: 1
+
+-- design-system.page-widths widths:
+regular.px: 1400
+narrow.px: 1200
+wide.px: 1600
+
+
+-- design-system.page: FifthTry | Building fastn and hostn
+ds: design-system
+widths: $widths
+
+-- header:
+ds: design-system
+
+-- products:
+ds: design-system
+
+-- footer:
+ds: design-system
+
+-- end: design-system.page
+
+
+
+-- component footer:
+module ds: design-system
+
+-- footer.ds.section-row:
+ds: $footer.ds
+
+-- ftd.image:
+src: https://www.fifthtry.com/-/fifthtry.com/assets/images/logo-ycom-dark.svg
+
+-- footer.ds.row:
+ds: $footer.ds
+spacing: $footer.ds.spaces.horizontal-gap.extra-large
+
+-- footer.ds.footer-link: Our Partners
+ds: $footer.ds
+link: /
+
+
+-- footer.ds.footer-link: Why partner with us?
+ds: $footer.ds
+link: /
+
+
+-- footer.ds.footer-link: How to partner with us?
+ds: $footer.ds
+link: /
+
+-- footer.ds.copyright-text: © 2023 FifthTry. All rights reserved
+ds: $footer.ds
+
+-- end: footer.ds.row
+
+-- end: footer.ds.section-row
+
+-- end: footer
+
+
+
+-- component products:
+module ds: design-system
+
+-- products.ds.section-row:
+ds: $products.ds
+background.solid: $inherited.colors.background.step-1
+align: top-center
+margin.px: $design-system.spaces.vertical-gap.extra-extra-large.gap
+
+-- product: FTD Language for prose
+ds: $products.ds
+icon: https://www.fifthtry.com/-/fifthtry.com/assets/images/ftd-logo.svg
+link: /
+
+FTD is the innovative programming language for writing prose. Say goodbye to
+the complexities of traditional programming languages and hello to a simplified
+and intuitive experience.
+
+
+-- product: Fastn static site generator
+ds: $products.ds
+icon: https://www.fifthtry.com/-/fifthtry.com/assets/images/fastn-logo.svg
+link: /
+
+Fastn is a powerful command line tool written in Rust that offers a seamless
+experience for ftd package management and static site generation. With Fastn,
+you can easily convert your .ftd files into .html files.
+
+
+-- product: HOSTN hosting fastn sites
+ds: $products.ds
+link: /
+icon: https://www.fifthtry.com/-/fifthtry.com/assets/images/hostn-logo.svg
+
+An FASTN package contains one or more “ftd modules”, and the modules export one
+or more “symbols”, eg records, variables, components and so on. Hosting FASTN
+sites made simple by HOSTN.
+
+-- end: products.ds.section-row
+
+-- end: products
+
+
+-- component product:
+module ds: design-system
+caption title:
+string icon:
+body about:
+string link:
+
+-- product.ds.column:
+ds: $product.ds
+background.solid: $inherited.colors.background.step-2
+inset: $design-system.spaces.inset-tall.large
+
+-- product.ds.row:
+
+-- ftd.image: $product.icon
+-- product.ds.heading-small: $product.title
+ds: $product.ds
+
+-- end: product.ds.row
+
+-- product.ds.copy-regular:
+ds: $product.ds
+
+$product.about
+
+-- product.ds.phosphor-icon-button: Read More
+ds: $product.ds
+icon: arrow-right
+link: $product.link
+icon-position: $hack-icon-at-end
+
+-- end: product.ds.column
+
+-- end: product
+
+
+
+
+
+
+-- component header:
+module ds: design-system
+
+-- header.ds.section-row:
+ds: $header.ds
+background.solid: $inherited.colors.background.step-1
+inset: $design-system.spaces.inset-square.large
+spacing: $header.ds.spaces.horizontal-gap.space-between
+flush: $hack-flush-full
+margin.px: $design-system.spaces.vertical-gap.extra-large.gap
+
+-- ftd.image:
+height.fixed.px: 38
+max-width.fixed.px: 120
+src: https://www.fifthtry.com/-/fifthtry.com/assets/images/logo-fifthtry-dark.svg
+
+-- header.ds.inline-row:
+ds: $header.ds
+spacing: $header.ds.spaces.horizontal-gap.large
+
+-- header.ds.header-link: Home
+ds: $header.ds
+link: /
+
+-- header.ds.header-link: Team
+ds: $header.ds
+link: /
+
+-- header.ds.header-link: Handbook
+ds: $header.ds
+link: /
+
+
+-- end: header.ds.inline-row
+
+-- end: header.ds.section-row
+
+-- end: header
