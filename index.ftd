@@ -1,4 +1,5 @@
 -- import: fastn-community.github.io/dark-flame-cs
+-- import: fastn-community.github.io/saturated-sunset-cs
 -- import: fastn-community.github.io/roboto-typography
 -- import: fastn-community.github.io/design-system/demos
 
@@ -54,7 +55,9 @@ exposing: heading-large, copy-regular
 
 
 
+;; -- ftd.color-scheme colors: $saturated-sunset-cs.main
 -- ftd.color-scheme colors: $dark-flame-cs.main
+
 -- ftd.type-data types: $roboto-typography.types
 
 -- spaces-module.space-data spaces: $spaces-module.spaces
