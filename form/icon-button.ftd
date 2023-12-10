@@ -290,11 +290,18 @@ min-width: auto
 link: $button-wrapper.link
 color: $inherited.colors.text-strong
 
+-- ftd.text: $button-wrapper.title
+if: { button-wrapper.title != NULL && button-wrapper.icon-position == icon-at-end}
+role: $inherited.types.button-small
+color: $inherited.colors.text-strong
+white-space: nowrap
+align-self: center
+
 -- ui:
 for: $ui in $button-wrapper.uis
 
 -- ftd.text: $button-wrapper.title
-if: { button-wrapper.title != NULL }
+if: { button-wrapper.title != NULL && button-wrapper.icon-position == icon-at-start}
 role: $inherited.types.button-small
 color: $inherited.colors.text-strong
 white-space: nowrap
