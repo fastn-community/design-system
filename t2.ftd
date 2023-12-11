@@ -1,0 +1,14 @@
+-- import: fastn-community.github.io/design-system/t
+
+
+-- component fancy-button:
+caption button-type bt:
+
+-- ftd.text: !Smol
+text if { fancy-button.bt == t.small }: Smol
+
+-- end: fancy-button
+
+
+
+-- fancy-button: small
