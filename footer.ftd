@@ -11,11 +11,9 @@ ds: $footer-heading.ds
 
 
 -- component footer-secondary-heading:
-module ds: design-system
 caption title:
 
--- footer-secondary-heading.ds.copy-regular:
-ds: $footer-secondary-heading.ds
+-- ds.copy-regular:
 
 $footer-secondary-heading.title
 

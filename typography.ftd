@@ -124,12 +124,14 @@ body text:
 ftd.color color: $inherited.colors.text
 ftd.display display: inline
 optional ftd.length.px margin:
+optional ftd.resizing height:
 
 -- ftd.text: $copy-regular.text
 color: $copy-regular.color
 role: $inherited.types.copy-regular
 display: $copy-regular.display
 margin-bottom: $copy-regular.margin
+height: $copy-regular.height
 
 -- end: copy-regular
 
