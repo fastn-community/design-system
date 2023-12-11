@@ -2,10 +2,10 @@
 
 
 -- component fancy-button:
-caption button-type bt:
+caption t.button-type bt:
 
 -- ftd.text: !Smol
-text if { fancy-button.bt == t.small }: Smol
+text if { fancy-button.bt == small }: Smol
 
 -- end: fancy-button
 
