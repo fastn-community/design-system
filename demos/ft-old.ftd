@@ -117,6 +117,7 @@ string link:
 ds: $product.ds
 background.solid: $inherited.colors.background.step-2
 inset: $design-system.spaces.inset-tall.large
+height: fill-container
 
 -- product.ds.row:
 
@@ -128,6 +129,7 @@ ds: $product.ds
 
 -- product.ds.copy-regular:
 ds: $product.ds
+height: fill-container
 
 $product.about
 

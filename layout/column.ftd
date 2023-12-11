@@ -8,6 +8,7 @@ design-system.gap spacing: $design-system.spaces.horizontal-gap.medium
 ftd.resizing width: fill-container
 children content:
 optional ftd.background background:
+optional ftd.resizing height:
 
 
 -- ftd.column:
@@ -18,6 +19,7 @@ spacing.fixed.px: $column.spacing.gap
 spacing if { column.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 children: $column.content
 background: $column.background
+height: $column.height
 
 -- end: ftd.column
 
