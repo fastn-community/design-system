@@ -1805,9 +1805,13 @@ let fastn_community_github_io_design_system_typography__copy_regular = function 
   }
 }
 global["fastn_community_github_io_design_system_typography__copy_regular"] = fastn_community_github_io_design_system_typography__copy_regular;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__icon_position", fastn.recordInstance({
-  at_start: 0,
-  at_end: 1
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__phosphor_variant", fastn.recordInstance({
+  regular: 0,
+  bold: 1,
+  duotone: 2,
+  fill: 3,
+  light: 4,
+  thin: 5
 }));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_svg_icons_assets__files.helper.js", "-/fastn-community.github.io/svg-icons/helper.js");
 fastn_utils.createNestedObject(global, "fastn_community_github_io_svg_icons_helper__SVG_ICON_CLASS", "fastn-community-svg-icon-helper");
@@ -1880,7 +1884,6 @@ let fastn_community_github_io_svg_icons_phosphor__regular = function (parent, in
   }
 }
 global["fastn_community_github_io_svg_icons_phosphor__regular"] = fastn_community_github_io_svg_icons_phosphor__regular;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__phosphor_regular", 0);
 let fastn_community_github_io_svg_icons_phosphor__svg_url = function (args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -1920,7 +1923,6 @@ let fastn_community_github_io_svg_icons_phosphor__bold = function (parent, inher
   }
 }
 global["fastn_community_github_io_svg_icons_phosphor__bold"] = fastn_community_github_io_svg_icons_phosphor__bold;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__phosphor_bold", 1);
 let fastn_community_github_io_svg_icons_phosphor__duotone = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -1947,7 +1949,6 @@ let fastn_community_github_io_svg_icons_phosphor__duotone = function (parent, in
   }
 }
 global["fastn_community_github_io_svg_icons_phosphor__duotone"] = fastn_community_github_io_svg_icons_phosphor__duotone;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__phosphor_duotone", 2);
 let fastn_community_github_io_svg_icons_phosphor__fill = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -1974,7 +1975,6 @@ let fastn_community_github_io_svg_icons_phosphor__fill = function (parent, inher
   }
 }
 global["fastn_community_github_io_svg_icons_phosphor__fill"] = fastn_community_github_io_svg_icons_phosphor__fill;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__phosphor_fill", 3);
 let fastn_community_github_io_svg_icons_phosphor__light = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -2001,7 +2001,6 @@ let fastn_community_github_io_svg_icons_phosphor__light = function (parent, inhe
   }
 }
 global["fastn_community_github_io_svg_icons_phosphor__light"] = fastn_community_github_io_svg_icons_phosphor__light;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__phosphor_light", 4);
 let fastn_community_github_io_svg_icons_phosphor__thin = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -2028,8 +2027,16 @@ let fastn_community_github_io_svg_icons_phosphor__thin = function (parent, inher
   }
 }
 global["fastn_community_github_io_svg_icons_phosphor__thin"] = fastn_community_github_io_svg_icons_phosphor__thin;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__phosphor_thin", 5);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__solid", 0);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__icon_position", fastn.recordInstance({
+  at_start: 0,
+  at_end: 1
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__button_variant", fastn.recordInstance({
+  solid: 0,
+  outline: 1,
+  ghost: 2,
+  link: 3
+}));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__width_default", 0);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__medium", 1);
 let fastn_community_github_io_design_system_form_icon_button__button_wrapper = function (parent, inherited, args)
@@ -2041,7 +2048,7 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
       title: null,
       icon_position: 0,
       link: null,
-      variant: global.fastn_community_github_io_design_system_form_button__solid,
+      variant: 0,
       width: global.fastn_community_github_io_design_system_form_button__width_default,
       size: global.fastn_community_github_io_design_system_form_button__medium,
       outline: false,
@@ -2139,10 +2146,10 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
   try {
     let __args__ = {
       title: null,
-      phosphor_variant: global.fastn_community_github_io_design_system_form_icon_button__phosphor_bold,
+      phosphor_variant: 1,
       icon_position: 0,
       link: null,
-      variant: global.fastn_community_github_io_design_system_form_button__solid,
+      variant: 0,
       width: global.fastn_community_github_io_design_system_form_button__width_default,
       size: global.fastn_community_github_io_design_system_form_button__medium,
       outline: false,
@@ -2165,9 +2172,9 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
       uis: fastn.mutableList([function (root, inherited) {
         fastn_dom.conditionalDom(root, [
           __args__.phosphor_variant,
-          global.fastn_community_github_io_design_system_form_icon_button__phosphor_regular
+          global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("regular")
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_regular));
+          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("regular")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__regular(root, inherited, {
             name: __args__.icon,
@@ -2178,10 +2185,10 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
       },
       function (root, inherited) {
         fastn_dom.conditionalDom(root, [
-          global.fastn_community_github_io_design_system_form_icon_button__phosphor_bold,
+          global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("bold"),
           __args__.phosphor_variant
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_bold));
+          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("bold")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__bold(root, inherited, {
             name: __args__.icon,
@@ -2192,10 +2199,10 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
       },
       function (root, inherited) {
         fastn_dom.conditionalDom(root, [
-          global.fastn_community_github_io_design_system_form_icon_button__phosphor_duotone,
+          global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("duotone"),
           __args__.phosphor_variant
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_duotone));
+          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("duotone")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__duotone(root, inherited, {
             name: __args__.icon,
@@ -2206,10 +2213,10 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
       },
       function (root, inherited) {
         fastn_dom.conditionalDom(root, [
-          global.fastn_community_github_io_design_system_form_icon_button__phosphor_fill,
+          global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("fill"),
           __args__.phosphor_variant
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_fill));
+          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("fill")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__fill(root, inherited, {
             name: __args__.icon,
@@ -2220,10 +2227,10 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
       },
       function (root, inherited) {
         fastn_dom.conditionalDom(root, [
-          __args__.phosphor_variant,
-          global.fastn_community_github_io_design_system_form_icon_button__phosphor_light
+          global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("light"),
+          __args__.phosphor_variant
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_light));
+          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("light")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__light(root, inherited, {
             name: __args__.icon,
@@ -2235,9 +2242,9 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
       function (root, inherited) {
         fastn_dom.conditionalDom(root, [
           __args__.phosphor_variant,
-          global.fastn_community_github_io_design_system_form_icon_button__phosphor_thin
+          global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("thin")
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_thin));
+          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("thin")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__thin(root, inherited, {
             name: __args__.icon,
