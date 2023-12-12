@@ -13,7 +13,7 @@ export: element-radius, radius-data
 export: code, rendered
 
 -- import: fastn-community.github.io/design-system/form/button as button-module
-export: button, button-kind, button-variant
+export: button, button-kind, button-variant, button-width, button-size
 
 -- import: fastn-community.github.io/design-system/header
 export: header-link

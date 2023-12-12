@@ -22,18 +22,26 @@
 -- end: button-variant
 
 
+-- or-type button-width:
+
 ;; default padding
--- integer width-default: 0
+-- constant integer default: 0
 ;; extra wide buttons
--- integer width-wide: 1
+-- constant integer wide: 1
 ;; full width buttons
--- integer width-full: 2
+-- constant integer full: 2
+
+-- end: button-width
 
 
--- integer large: 0
--- integer medium: 1
--- integer small: 2
--- integer extra-small: 3
+-- or-type button-size:
+
+-- constant integer large: 0
+-- constant integer medium: 1
+-- constant integer small: 2
+-- constant integer extra-small: 3
+
+-- end: button-size
 
 
 -- component button:
@@ -41,8 +49,8 @@ module ds: design-system
 caption title:
 optional string link:
 boolean enabled: true
-integer width: $width-default
-integer size: $medium
+button-width width: default
+button-size size: medium
 button-variant variant: solid
 button-kind kind: primary
 ;; private stuff
@@ -87,6 +95,8 @@ white-space: nowrap
 
 -- design-system.page:
 
+-- design-system.section-column:
+
 -- design-system.heading-hero: Buttons
 
 -- design-system.phosphor-icon-button: Back
@@ -102,5 +112,7 @@ link: /
 link: /
 
 -- end: design-system.rendered
+
+-- end: design-system.section-column
 
 -- end: design-system.page
