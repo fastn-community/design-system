@@ -2037,8 +2037,18 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   ghost: 2,
   link: 3
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__width_default", 0);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__medium", 1);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__button_width", fastn.recordInstance({
+default:
+  0,
+  wide: 1,
+  full: 2
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__button_size", fastn.recordInstance({
+  large: 0,
+  medium: 1,
+  small: 2,
+  extra_small: 3
+}));
 let fastn_community_github_io_design_system_form_icon_button__button_wrapper = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -2049,8 +2059,8 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
       icon_position: 0,
       link: null,
       variant: 0,
-      width: global.fastn_community_github_io_design_system_form_button__width_default,
-      size: global.fastn_community_github_io_design_system_form_button__medium,
+      width: 0,
+      size: 1,
       outline: false,
       kind: 1,
       ds: fastn.module("fastn_community_github_io_design_system", global),
@@ -2150,8 +2160,8 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
       icon_position: 0,
       link: null,
       variant: 0,
-      width: global.fastn_community_github_io_design_system_form_button__width_default,
-      size: global.fastn_community_github_io_design_system_form_button__medium,
+      width: 0,
+      size: 1,
       outline: false,
       kind: 1,
       ds: fastn.module("fastn_community_github_io_design_system", global),

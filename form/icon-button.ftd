@@ -20,8 +20,8 @@ ftd.image-src icon:
 icon-position icon-position: at-start
 optional string link:
 button.button-variant variant: solid
-integer width: $button.width-default
-integer size: $button.medium
+button.button-width width: default
+button.button-size size: medium
 boolean outline: false
 button.button-kind kind: primary
 module design-system: ds
@@ -57,7 +57,7 @@ module ds: design-system
 caption ftd.image-src icon:
 optional string link:
 boolean enabled: true
-integer size: $button.medium
+button.button-size size: medium
 boolean outline: false
 button.button-kind kind: primary
 module design-system: ds
@@ -89,7 +89,7 @@ module ds: design-system
 ftd.image-src icon:
 optional string link:
 boolean enabled: true
-integer size: $button.medium
+button.button-size size: medium
 boolean outline: false
 button.button-kind kind: primary
 module design-system: ds
@@ -159,8 +159,8 @@ string icon:
 icon-position icon-position: at-start
 optional string link:
 button.button-variant variant: solid
-integer width: $button.width-default
-integer size: $button.medium
+button.button-width width: default
+button.button-size size: medium
 boolean outline: false
 button.button-kind kind: primary
 module ds: design-system
@@ -222,8 +222,8 @@ string icon:
 icon-position icon-position: at-start
 optional string link:
 button.button-variant variant: solid
-integer width: $button.width-default
-integer size: $button.medium
+button.button-width width: default
+button.button-size size: medium
 boolean outline: false
 button.button-kind kind: primary
 module ds: design-system
@@ -269,8 +269,8 @@ optional caption title:
 icon-position icon-position: at-start
 optional string link:
 button.button-variant variant: solid
-integer width: $button.width-default
-integer size: $button.medium
+button.button-width width: default
+button.button-size size: medium
 boolean outline: false
 button.button-kind kind: primary
 module ds: design-system
