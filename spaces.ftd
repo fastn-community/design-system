@@ -1,6 +1,6 @@
 ;; https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
 
--- import: fastn-community.github.io/design-system/hack
+-- integer HACK-SPACE-BETWEEN-MAGIC-NUMBER: -4321
 
 -- record hv:
 caption integer horizontal:
@@ -167,5 +167,5 @@ medium: 16
 large: 32
 extra-large: 64
 extra-extra-large: 128
-space-between: $hack.SPACE-BETWEEN-MAGIC-NUMBER
+space-between: $HACK-SPACE-BETWEEN-MAGIC-NUMBER
 zero: 0

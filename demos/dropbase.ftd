@@ -1,6 +1,4 @@
 
--- integer hack-flush-wide: 2
-
 -- design-system.page-widths widths:
 regular.px: 1200
 narrow.px: 1000

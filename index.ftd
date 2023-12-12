@@ -25,7 +25,8 @@ export: footer-heading, footer-secondary-heading, footer-link, copyright-text
 export: button-group
 
 -- import: fastn-community.github.io/design-system/layout/page as page-module
-export: page, flush-wide, page-widths
+export: page, flush, page-widths, narrow-widths
+exposing: narrow-widths
 
 -- import: fastn-community.github.io/design-system/layout/section-row as section-row-module
 export: section-row
@@ -65,21 +66,8 @@ exposing: heading-large, copy-regular
 
 
 
--- design-system.page-widths hack-hack-default-widths:
-regular.px: 1000
-narrow.px: 800
-wide.px: 1200
-
--- design-system.page-widths hack-hack-narrow-widths:
-regular.px: 800
-narrow.px: 600
-wide.px: 1000
-
-
-
-
 -- design-system.page:
-widths: $hack-hack-narrow-widths
+widths: $narrow-widths
 
 -- design-system.section-column:
 spacing: $design-system.spaces.vertical-gap.medium
