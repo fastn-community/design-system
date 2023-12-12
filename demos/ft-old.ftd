@@ -1,6 +1,5 @@
 -- integer hack-flush-full: 1
 -- integer hack-flush-to-header: 0
--- integer hack-icon-at-end: 1
 
 -- design-system.page-widths widths:
 regular.px: 1400
@@ -137,7 +136,7 @@ $product.about
 ds: $product.ds
 icon: arrow-right
 link: $product.link
-icon-position: $hack-icon-at-end
+icon-position: at-end
 
 -- end: product.ds.column
 
