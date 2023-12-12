@@ -2331,10 +2331,18 @@ let fastn_community_github_io_svg_icons_phosphor__thin = function (parent, inher
 }
 global["fastn_community_github_io_svg_icons_phosphor__thin"] = fastn_community_github_io_svg_icons_phosphor__thin;
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__phosphor_thin", 5);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__button_kind", fastn.recordInstance({
+  primary: 1,
+  secondary: 2,
+  tertiary: 3,
+  success: 4,
+  warning: 5,
+  danger: 6,
+  info: 7
+}));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__solid", 0);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__width_default", 0);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__medium", 1);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__kind_primary", 1);
 let fastn_community_github_io_design_system_form_icon_button__button_wrapper = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -2348,7 +2356,7 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
       width: global.fastn_community_github_io_design_system_form_button__width_default,
       size: global.fastn_community_github_io_design_system_form_button__medium,
       outline: false,
-      kind: global.fastn_community_github_io_design_system_form_button__kind_primary,
+      kind: 1,
       ds: fastn.module("fastn_community_github_io_design_system", global),
       uis: fastn.mutableList([]),
       border_radius: fastn_dom.Length.Px(8),
@@ -2449,7 +2457,7 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
       width: global.fastn_community_github_io_design_system_form_button__width_default,
       size: global.fastn_community_github_io_design_system_form_button__medium,
       outline: false,
-      kind: global.fastn_community_github_io_design_system_form_button__kind_primary,
+      kind: 1,
       ds: fastn.module("fastn_community_github_io_design_system", global),
       hover: fastn.wrapMutable(false),
     };
