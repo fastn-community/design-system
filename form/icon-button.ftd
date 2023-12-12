@@ -2,10 +2,12 @@
 -- import: fastn-community.github.io/svg-icons/phosphor
 -- import: fastn-community.github.io/svg-icons/fa
 
--- integer icon-at-start: 0
--- integer icon-at-end: 1
+-- or-type icon-position:
 
+-- constant integer at-start: 0
+-- constant integer at-end: 1
 
+-- end: icon-position
 
 
 
@@ -15,7 +17,7 @@
 module ds: design-system
 optional caption title:
 ftd.image-src icon:
-integer icon-position: $icon-at-start
+icon-position icon-position: at-start
 optional string link:
 integer variant: $button.solid
 integer width: $button.width-default
@@ -152,7 +154,7 @@ link: $circle-text-button.link
 optional caption title:
 integer phosphor-variant: $phosphor-bold
 string icon:
-integer icon-position: $icon-at-start
+icon-position icon-position: at-start
 optional string link:
 integer variant: $button.solid
 integer width: $button.width-default
@@ -215,7 +217,7 @@ if: { phosphor-icon-button.phosphor-variant == phosphor-thin }
 optional caption title:
 boolean brand: false
 string icon:
-integer icon-position: $icon-at-start
+icon-position icon-position: at-start
 optional string link:
 integer variant: $button.solid
 integer width: $button.width-default
@@ -262,7 +264,7 @@ if: { !fa-icon-button.brand }
 
 -- component button-wrapper:
 optional caption title:
-integer icon-position: $icon-at-start
+icon-position icon-position: at-start
 optional string link:
 integer variant: $button.solid
 integer width: $button.width-default
@@ -291,7 +293,7 @@ link: $button-wrapper.link
 color: $inherited.colors.text-strong
 
 -- ftd.text: $button-wrapper.title
-if: { button-wrapper.title != NULL && button-wrapper.icon-position == icon-at-end}
+if: { button-wrapper.title != NULL && button-wrapper.icon-position == at-end}
 role: $inherited.types.button-small
 color: $inherited.colors.text-strong
 white-space: nowrap
@@ -301,7 +303,7 @@ align-self: center
 for: $ui in $button-wrapper.uis
 
 -- ftd.text: $button-wrapper.title
-if: { button-wrapper.title != NULL && button-wrapper.icon-position == icon-at-start}
+if: { button-wrapper.title != NULL && button-wrapper.icon-position == at-start}
 role: $inherited.types.button-small
 color: $inherited.colors.text-strong
 white-space: nowrap

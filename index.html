@@ -1361,7 +1361,10 @@ let fastn_community_github_io_design_system_typography__heading_hero = function 
   }
 }
 global["fastn_community_github_io_design_system_typography__heading_hero"] = fastn_community_github_io_design_system_typography__heading_hero;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__phosphor_bold", 1);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__icon_position", fastn.recordInstance({
+  at_start: 0,
+  at_end: 1
+}));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_svg_icons_assets__files.helper.js", "-/fastn-community.github.io/svg-icons/helper.js");
 fastn_utils.createNestedObject(global, "fastn_community_github_io_svg_icons_helper__SVG_ICON_CLASS", "fastn-community-svg-icon-helper");
 let fastn_community_github_io_svg_icons_helper__icon = function (parent, inherited, args)
@@ -1473,6 +1476,7 @@ let fastn_community_github_io_svg_icons_phosphor__bold = function (parent, inher
   }
 }
 global["fastn_community_github_io_svg_icons_phosphor__bold"] = fastn_community_github_io_svg_icons_phosphor__bold;
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__phosphor_bold", 1);
 let fastn_community_github_io_svg_icons_phosphor__duotone = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -1581,8 +1585,6 @@ let fastn_community_github_io_svg_icons_phosphor__thin = function (parent, inher
 }
 global["fastn_community_github_io_svg_icons_phosphor__thin"] = fastn_community_github_io_svg_icons_phosphor__thin;
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__phosphor_thin", 5);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__icon_at_start", 0);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_icon_button__icon_at_end", 1);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__solid", 0);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__width_default", 0);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_form_button__medium", 1);
@@ -1594,7 +1596,7 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
   try {
     let __args__ = {
       title: null,
-      icon_position: global.fastn_community_github_io_design_system_form_icon_button__icon_at_start,
+      icon_position: 0,
       link: null,
       variant: global.fastn_community_github_io_design_system_form_button__solid,
       width: global.fastn_community_github_io_design_system_form_button__width_default,
@@ -1642,11 +1644,11 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
     parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(8)), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
       fastn_dom.conditionalDom(root, [
+        global.fastn_community_github_io_design_system_form_icon_button__icon_position.get("at_end"),
         __args__.icon_position,
-        __args__.title,
-        global.fastn_community_github_io_design_system_form_icon_button__icon_at_end
+        __args__.title
       ], function () {
-        return (fastn_utils.getter(__args__.title) !== null && fastn_utils.getter(__args__.icon_position) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__icon_at_end));
+        return (fastn_utils.getter(__args__.title) !== null && fastn_utils.getter(__args__.icon_position) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__icon_position.get("at_end")));
       }, function (root) {
         let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
         rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("button_small"), inherited);
@@ -1665,11 +1667,11 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
     },
     function (root, inherited) {
       fastn_dom.conditionalDom(root, [
+        global.fastn_community_github_io_design_system_form_icon_button__icon_position.get("at_start"),
         __args__.icon_position,
-        __args__.title,
-        global.fastn_community_github_io_design_system_form_icon_button__icon_at_start
+        __args__.title
       ], function () {
-        return (fastn_utils.getter(__args__.title) !== null && fastn_utils.getter(__args__.icon_position) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__icon_at_start));
+        return (fastn_utils.getter(__args__.title) !== null && fastn_utils.getter(__args__.icon_position) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__icon_position.get("at_start")));
       }, function (root) {
         let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
         rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("button_small"), inherited);
@@ -1695,7 +1697,7 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
     let __args__ = {
       title: null,
       phosphor_variant: global.fastn_community_github_io_design_system_form_icon_button__phosphor_bold,
-      icon_position: global.fastn_community_github_io_design_system_form_icon_button__icon_at_start,
+      icon_position: 0,
       link: null,
       variant: global.fastn_community_github_io_design_system_form_button__solid,
       width: global.fastn_community_github_io_design_system_form_button__width_default,

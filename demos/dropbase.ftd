@@ -1,6 +1,5 @@
 
 -- integer hack-flush-wide: 2
--- integer hack-icon-at-end: 1
 
 -- design-system.page-widths widths:
 regular.px: 1200
@@ -145,7 +144,7 @@ ds: $hero.ds
 -- hero.ds.phosphor-icon-button: Documentation
 ds: $hero.ds
 icon: caret-right
-icon-position: $hack-icon-at-end
+icon-position: at-end
 
 -- end: hero.ds.button-group
 
