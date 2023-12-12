@@ -19,7 +19,7 @@ optional caption title:
 ftd.image-src icon:
 icon-position icon-position: at-start
 optional string link:
-integer variant: $button.solid
+button.button-variant variant: solid
 integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
@@ -139,24 +139,26 @@ link: $circle-text-button.link
 
 
 
--- integer phosphor-regular: 0
--- integer phosphor-bold: 1
--- integer phosphor-duotone: 2
--- integer phosphor-fill: 3
--- integer phosphor-light: 4
--- integer phosphor-thin: 5
+-- or-type phosphor-variant:
 
+-- constant integer regular: 0
+-- constant integer bold: 1
+-- constant integer duotone: 2
+-- constant integer fill: 3
+-- constant integer light: 4
+-- constant integer thin: 5
 
+-- end: phosphor-variant
 
 
 
 -- component phosphor-icon-button:
 optional caption title:
-integer phosphor-variant: $phosphor-bold
+phosphor-variant phosphor-variant: bold
 string icon:
 icon-position icon-position: at-start
 optional string link:
-integer variant: $button.solid
+button.button-variant variant: solid
 integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
@@ -178,27 +180,27 @@ ds: $phosphor-icon-button.ds
 
 -- phosphor.regular: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-regular }
+if: { phosphor-icon-button.phosphor-variant == regular }
 
 -- phosphor.bold: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-bold }
+if: { phosphor-icon-button.phosphor-variant == bold }
 
 -- phosphor.duotone: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-duotone }
+if: { phosphor-icon-button.phosphor-variant == duotone }
 
 -- phosphor.fill: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-fill }
+if: { phosphor-icon-button.phosphor-variant == fill }
 
 -- phosphor.light: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-light }
+if: { phosphor-icon-button.phosphor-variant == light }
 
 -- phosphor.thin: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-thin }
+if: { phosphor-icon-button.phosphor-variant == thin }
 
 -- end: button-wrapper
 
@@ -219,7 +221,7 @@ boolean brand: false
 string icon:
 icon-position icon-position: at-start
 optional string link:
-integer variant: $button.solid
+button.button-variant variant: solid
 integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false
@@ -266,7 +268,7 @@ if: { !fa-icon-button.brand }
 optional caption title:
 icon-position icon-position: at-start
 optional string link:
-integer variant: $button.solid
+button.button-variant variant: solid
 integer width: $button.width-default
 integer size: $button.medium
 boolean outline: false

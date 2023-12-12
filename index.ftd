@@ -13,7 +13,7 @@ export: element-radius, radius-data
 export: code, rendered
 
 -- import: fastn-community.github.io/design-system/form/button as button-module
-export: button, button-kind
+export: button, button-kind, button-variant
 
 -- import: fastn-community.github.io/design-system/header
 export: header-link
@@ -46,7 +46,7 @@ export: row
 export: inline-row
 
 -- import: fastn-community.github.io/design-system/form/icon-button as icon-button-module
-export: icon-button, circle-text-button, phosphor-icon-button, fa-icon-button, icon-position
+export: icon-button, circle-text-button, phosphor-icon-button, fa-icon-button, icon-position, phosphor-variant
 
 -- import: fastn-community.github.io/design-system/typography as typography-module
 export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny, copy-large, copy-regular, copy-small, fine-print, source-code, link

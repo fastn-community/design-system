@@ -11,10 +11,15 @@
 -- end: button-kind
 
 ;; These are variants
--- integer solid: 0
--- integer outline: 1
--- integer ghost: 2
--- integer link: 3
+
+-- or-type button-variant:
+
+-- constant integer solid: 0
+-- constant integer outline: 1
+-- constant integer ghost: 2
+-- constant integer link: 3
+
+-- end: button-variant
 
 
 ;; default padding
@@ -38,7 +43,7 @@ optional string link:
 boolean enabled: true
 integer width: $width-default
 integer size: $medium
-integer variant: $solid
+button-variant variant: solid
 button-kind kind: primary
 ;; private stuff
 boolean $hover: false
