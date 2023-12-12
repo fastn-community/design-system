@@ -10,10 +10,10 @@
 -- integer three-by-four: 5
 -- integer width-sidebar: 6
 
--- integer flush-to-header: 0
--- integer flush-full: 1
--- integer flush-wide: 2
--- integer flush-narrow: 3
+-- integer flush-to-header: 0 ;; as wide as header
+-- integer flush-full: 1      ;; edge to edge
+-- integer flush-wide: 2      ;; 20% wider than the header
+-- integer flush-narrow: 3    ;; 20% narrower
 
 -- record page-widths:
 ftd.length regular:
