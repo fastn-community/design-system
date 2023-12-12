@@ -1361,7 +1361,7 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   zero_small: global.fastn_community_github_io_design_system_spaces__talls_zs,
   zero_medium: global.fastn_community_github_io_design_system_spaces__talls_zm
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER", - 4321);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER", - 4321);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__gaps_", fastn.recordInstance({
   extra_extra_small: fastn.recordInstance({
     gap: 2
@@ -1385,7 +1385,7 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
     gap: 128
   }),
   space_between: fastn.recordInstance({
-    gap: global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER
+    gap: global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER
   }),
   zero: fastn.recordInstance({
     gap: 0
@@ -1460,10 +1460,12 @@ let fastn_community_github_io_design_system_layout_page__page = function (parent
   }
 }
 global["fastn_community_github_io_design_system_layout_page__page"] = fastn_community_github_io_design_system_layout_page__page;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_row__hack_flush_full", 1);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_row__hack_flush_narrow", 3);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_row__hack_flush_wide", 2);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_row__hack_flush_to_header", 0);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_page__flush", fastn.recordInstance({
+  to_header: 0,
+  full: 1,
+  wide: 2,
+  narrow: 3
+}));
 let fastn_community_github_io_design_system_layout_section_row__section_row = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -1472,7 +1474,7 @@ let fastn_community_github_io_design_system_layout_section_row__section_row = fu
     let __args__ = {
       title: null,
       ds: fastn.module("fastn_community_github_io_design_system", global),
-      flush: global.fastn_community_github_io_design_system_layout_section_row__hack_flush_to_header,
+      flush: 0,
       content: fastn.mutableList([]),
       spacing: global.fastn_community_github_io_design_system__spaces.get("horizontal_gap").get("large"),
       background: null,
@@ -1490,11 +1492,11 @@ let fastn_community_github_io_design_system_layout_section_row__section_row = fu
     parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
       let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
-      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_layout_section_row__hack_flush_full,
+      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_layout_page__flush.get("full"),
       __args__.flush,
       inherited.get("widths").get("regular")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_row__hack_flush_full));
+          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_page__flush.get("full")));
         }()) {
           return fastn_dom.Resizing.FillContainer;
         } else {
@@ -1505,17 +1507,17 @@ let fastn_community_github_io_design_system_layout_section_row__section_row = fu
       rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(__args__.inset.get("horizontal")), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(__args__.inset.get("vertical")), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn.formula([inherited.get("widths").get("narrow"),
-      global.fastn_community_github_io_design_system_layout_section_row__hack_flush_narrow,
+      global.fastn_community_github_io_design_system_layout_page__flush.get("narrow"),
       __args__.flush,
       inherited.get("widths").get("wide"),
-      global.fastn_community_github_io_design_system_layout_section_row__hack_flush_wide,
-      __args__.flush], function () {
+      __args__.flush,
+      global.fastn_community_github_io_design_system_layout_page__flush.get("wide")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_row__hack_flush_narrow));
+          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_page__flush.get("narrow")));
         }()) {
           return inherited.get("widths").get("narrow");
         } else if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_row__hack_flush_wide));
+          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_page__flush.get("wide")));
         }()) {
           return inherited.get("widths").get("wide");
         }
@@ -1523,10 +1525,10 @@ let fastn_community_github_io_design_system_layout_section_row__section_row = fu
       ), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Wrap, __args__.wrap, inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, __args__.align, inherited);
-      rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER,
+      rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER,
       __args__.spacing.get("gap")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER));
+          return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER));
         }()) {
           return fastn_dom.Spacing.SpaceBetween;
         } else {
@@ -1543,7 +1545,6 @@ let fastn_community_github_io_design_system_layout_section_row__section_row = fu
   }
 }
 global["fastn_community_github_io_design_system_layout_section_row__section_row"] = fastn_community_github_io_design_system_layout_section_row__section_row;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_demos_ft_old___hack_flush_full", 1);
 let fastn_community_github_io_design_system_layout_inline_row__inline_row = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -1564,10 +1565,10 @@ let fastn_community_github_io_design_system_layout_inline_row__inline_row = func
     parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(__args__.inset.get("horizontal")), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(__args__.inset.get("vertical")), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER,
-    __args__.spacing.get("gap")], function () {
+    parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([__args__.spacing.get("gap"),
+    global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER));
+        return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER));
       }()) {
         return fastn_dom.Spacing.SpaceBetween;
       } else {
@@ -1625,7 +1626,7 @@ let fastn_community_github_io_design_system_demos_ft_old___header = function (pa
     __args__ = fastn_utils.getArgs(__args__, args);
     let parenti0 = fastn_utils.getStaticValue(__args__.ds.get("section_row")) (parent, inherited, {
       ds: __args__.ds,
-      flush: global.fastn_community_github_io_design_system_demos_ft_old___hack_flush_full,
+      flush: 1,
       content: fastn.mutableList([function (root, inherited) {
         let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
         rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, fastn.recordInstance({
@@ -1699,9 +1700,9 @@ let fastn_community_github_io_design_system_layout_column__column = function (pa
     parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(__args__.inset.get("vertical")), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Background, __args__.background, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([__args__.spacing.get("gap"),
-    global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER], function () {
+    global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER));
+        return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER));
       }()) {
         return fastn_dom.Spacing.SpaceBetween;
       } else {
@@ -1737,10 +1738,10 @@ let fastn_community_github_io_design_system_layout_row__row = function (parent, 
     parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(__args__.inset.get("horizontal")), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(__args__.inset.get("vertical")), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, __args__.align_content, inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER,
-    __args__.spacing.get("gap")], function () {
+    parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([__args__.spacing.get("gap"),
+    global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER));
+        return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER));
       }()) {
         return fastn_dom.Spacing.SpaceBetween;
       } else {
@@ -3236,6 +3237,8 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system__colors", global.fastn_community_github_io_dark_flame_cs__main);
 let fastn_community_github_io_design_system__page = global["fastn_community_github_io_design_system_layout_page__page"];
 global["fastn_community_github_io_design_system__page"] = fastn_community_github_io_design_system__page;
+let fastn_community_github_io_design_system__flush = global["fastn_community_github_io_design_system_layout_page__flush"];
+global["fastn_community_github_io_design_system__flush"] = fastn_community_github_io_design_system__flush;
 let fastn_community_github_io_design_system__section_row = global["fastn_community_github_io_design_system_layout_section_row__section_row"];
 global["fastn_community_github_io_design_system__section_row"] = fastn_community_github_io_design_system__section_row;
 let fastn_community_github_io_design_system__inline_row = global["fastn_community_github_io_design_system_layout_inline_row__inline_row"];

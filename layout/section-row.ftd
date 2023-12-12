@@ -1,16 +1,11 @@
--- import: fastn-community.github.io/design-system/hack
-
--- integer hack-flush-to-header: 0
--- integer hack-flush-full: 1
--- integer hack-flush-wide: 2
--- integer hack-flush-narrow: 3
-
+-- import: fastn-community.github.io/design-system/spaces
+-- import: fastn-community.github.io/design-system
 
 
 -- component section-row:
 optional caption title:
 module ds: design-system
-integer flush: $hack-flush-to-header
+design-system.flush flush: to-header
 children content:
 design-system.gap spacing: $design-system.spaces.horizontal-gap.large
 optional ftd.background background:
@@ -26,13 +21,13 @@ background: $section-row.background
 margin-bottom: $section-row.margin
 
 -- ftd.row:
-width if { section-row.flush == hack-flush-full }: fill-container
-max-width.fixed if { section-row.flush == hack-flush-narrow }: $inherited.widths.narrow
-max-width.fixed if { section-row.flush == hack-flush-wide }: $inherited.widths.wide
+width if { section-row.flush == full }: fill-container
+max-width.fixed if { section-row.flush == narrow }: $inherited.widths.narrow
+max-width.fixed if { section-row.flush == wide }: $inherited.widths.wide
 width.fixed: $inherited.widths.regular
 children: $section-row.content
 align-content: $section-row.align
-spacing if { section-row.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
+spacing if { section-row.spacing.gap == $spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 spacing.fixed.px: $section-row.spacing.gap
 wrap: $section-row.wrap
 padding-vertical.px: $section-row.inset.vertical

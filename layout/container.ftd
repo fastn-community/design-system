@@ -1,4 +1,5 @@
--- import: fastn-community.github.io/design-system/hack
+-- import: fastn-community.github.io/design-system/spaces
+-- import: fastn-community.github.io/design-system/radius
 
 -- component container:
 optional caption title:
@@ -15,14 +16,14 @@ padding-vertical.px: $container.inset.vertical
 padding-horizontal.px: $container.inset.horizontal
 children: $container.content
 background: $container.background
-border-top-left-radius.px if { container.radius.top-left != $hack.RADIUS-ROUND }: $container.radius.top-left
-border-top-right-radius.px if { container.radius.top-right != $hack.RADIUS-ROUND }: $container.radius.top-right
-border-bottom-left-radius.px if { container.radius.bottom-left != $hack.RADIUS-ROUND }: $container.radius.bottom-left
-border-bottom-right-radius.px if { container.radius.bottom-right != $hack.RADIUS-ROUND }: $container.radius.bottom-right
-border-top-left-radius.percent if { container.radius.top-left == $hack.RADIUS-ROUND }: 50
-border-top-right-radius.percent if { container.radius.top-right == $hack.RADIUS-ROUND }: 50
-border-bottom-left-radius.percent if { container.radius.bottom-left == $hack.RADIUS-ROUND }: 50
-border-bottom-right-radius.percent if { container.radius.bottom-right == $hack.RADIUS-ROUND }: 50
+border-top-left-radius.px if { container.radius.top-left != $radius.HACK-RADIUS-ROUND }: $container.radius.top-left
+border-top-right-radius.px if { container.radius.top-right != $radius.HACK-RADIUS-ROUND }: $container.radius.top-right
+border-bottom-left-radius.px if { container.radius.bottom-left != $radius.HACK-RADIUS-ROUND }: $container.radius.bottom-left
+border-bottom-right-radius.px if { container.radius.bottom-right != $radius.HACK-RADIUS-ROUND }: $container.radius.bottom-right
+border-top-left-radius.percent if { container.radius.top-left == $radius.HACK-RADIUS-ROUND }: 50
+border-top-right-radius.percent if { container.radius.top-right == $radius.HACK-RADIUS-ROUND }: 50
+border-bottom-left-radius.percent if { container.radius.bottom-left == $radius.HACK-RADIUS-ROUND }: 50
+border-bottom-right-radius.percent if { container.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
 
 
 -- end: ftd.container

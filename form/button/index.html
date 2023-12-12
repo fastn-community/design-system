@@ -1219,7 +1219,7 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   zero_small: global.fastn_community_github_io_design_system_spaces__talls_zs,
   zero_medium: global.fastn_community_github_io_design_system_spaces__talls_zm
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER", - 4321);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER", - 4321);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_spaces__gaps_", fastn.recordInstance({
   extra_extra_small: fastn.recordInstance({
     gap: 2
@@ -1243,7 +1243,7 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
     gap: 128
   }),
   space_between: fastn.recordInstance({
-    gap: global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER
+    gap: global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER
   }),
   zero: fastn.recordInstance({
     gap: 0
@@ -2293,11 +2293,13 @@ let fastn_community_github_io_code_block__rendered = function (parent, inherited
   }
 }
 global["fastn_community_github_io_code_block__rendered"] = fastn_community_github_io_code_block__rendered;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_column__hack_flush_full", 1);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_column__hack_flush_narrow", 3);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_column__hack_flush_wide", 2);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_hack__RADIUS_ROUND", - 321);
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_section_column__hack_flush_to_header", 0);
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_layout_page__flush", fastn.recordInstance({
+  to_header: 0,
+  full: 1,
+  wide: 2,
+  narrow: 3
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND", - 321);
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_radius__zero", fastn.recordInstance({
   top_left: 0,
   top_right: 0,
@@ -2323,10 +2325,10 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   bottom_right: 16
 }));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_radius__round", fastn.recordInstance({
-  top_left: global.fastn_community_github_io_design_system_hack__RADIUS_ROUND,
-  top_right: global.fastn_community_github_io_design_system_hack__RADIUS_ROUND,
-  bottom_left: global.fastn_community_github_io_design_system_hack__RADIUS_ROUND,
-  bottom_right: global.fastn_community_github_io_design_system_hack__RADIUS_ROUND
+  top_left: global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
+  top_right: global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
+  bottom_left: global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
+  bottom_right: global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND
 }));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_radius__radius", fastn.recordInstance({
   zero: global.fastn_community_github_io_design_system_radius__zero,
@@ -2344,7 +2346,7 @@ let fastn_community_github_io_design_system_layout_section_column__section_colum
     let __args__ = {
       title: null,
       ds: fastn.module("fastn_community_github_io_design_system", global),
-      flush: global.fastn_community_github_io_design_system_layout_section_column__hack_flush_to_header,
+      flush: 0,
       content: fastn.mutableList([]),
       spacing: global.fastn_community_github_io_design_system__spaces.get("vertical_gap").get("large"),
       outer_background: null,
@@ -2363,11 +2365,11 @@ let fastn_community_github_io_design_system_layout_section_column__section_colum
     parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
       let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
-      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_layout_section_column__hack_flush_full,
+      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([global.fastn_community_github_io_design_system_layout_page__flush.get("full"),
       __args__.flush,
       inherited.get("widths").get("regular")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_column__hack_flush_full));
+          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_page__flush.get("full")));
         }()) {
           return fastn_dom.Resizing.FillContainer;
         } else {
@@ -2377,61 +2379,61 @@ let fastn_community_github_io_design_system_layout_section_column__section_colum
       ), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(__args__.inset.get("horizontal")), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(__args__.inset.get("vertical")), inherited);
-      rooti0.setProperty(fastn_dom.PropertyKind.BorderTopLeftRadius, fastn.formula([global.fastn_community_github_io_design_system_hack__RADIUS_ROUND,
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderTopLeftRadius, fastn.formula([global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("top_left"),
-      global.fastn_community_github_io_design_system_hack__RADIUS_ROUND,
+      global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("top_left")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.radius.get("top_left")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_hack__RADIUS_ROUND));
+          return (fastn_utils.getter(__args__.radius.get("top_left")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Px(__args__.radius.get("top_left"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.radius.get("top_left")) == fastn_utils.getter(global.fastn_community_github_io_design_system_hack__RADIUS_ROUND));
+          return (fastn_utils.getter(__args__.radius.get("top_left")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Percent(50);
         }
       }
       ), inherited);
-      rooti0.setProperty(fastn_dom.PropertyKind.BorderTopRightRadius, fastn.formula([global.fastn_community_github_io_design_system_hack__RADIUS_ROUND,
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderTopRightRadius, fastn.formula([global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("top_right"),
-      global.fastn_community_github_io_design_system_hack__RADIUS_ROUND,
+      global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("top_right")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.radius.get("top_right")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_hack__RADIUS_ROUND));
+          return (fastn_utils.getter(__args__.radius.get("top_right")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Px(__args__.radius.get("top_right"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.radius.get("top_right")) == fastn_utils.getter(global.fastn_community_github_io_design_system_hack__RADIUS_ROUND));
+          return (fastn_utils.getter(__args__.radius.get("top_right")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Percent(50);
         }
       }
       ), inherited);
-      rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomLeftRadius, fastn.formula([global.fastn_community_github_io_design_system_hack__RADIUS_ROUND,
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomLeftRadius, fastn.formula([global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("bottom_left"),
-      global.fastn_community_github_io_design_system_hack__RADIUS_ROUND,
+      global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("bottom_left")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.radius.get("bottom_left")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_hack__RADIUS_ROUND));
+          return (fastn_utils.getter(__args__.radius.get("bottom_left")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Px(__args__.radius.get("bottom_left"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.radius.get("bottom_left")) == fastn_utils.getter(global.fastn_community_github_io_design_system_hack__RADIUS_ROUND));
+          return (fastn_utils.getter(__args__.radius.get("bottom_left")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Percent(50);
         }
       }
       ), inherited);
-      rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomRightRadius, fastn.formula([global.fastn_community_github_io_design_system_hack__RADIUS_ROUND,
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomRightRadius, fastn.formula([global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("bottom_right"),
-      global.fastn_community_github_io_design_system_hack__RADIUS_ROUND,
+      global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("bottom_right")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.radius.get("bottom_right")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_hack__RADIUS_ROUND));
+          return (fastn_utils.getter(__args__.radius.get("bottom_right")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Px(__args__.radius.get("bottom_right"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.radius.get("bottom_right")) == fastn_utils.getter(global.fastn_community_github_io_design_system_hack__RADIUS_ROUND));
+          return (fastn_utils.getter(__args__.radius.get("bottom_right")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Percent(50);
         }
@@ -2439,27 +2441,27 @@ let fastn_community_github_io_design_system_layout_section_column__section_colum
       ), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Background, __args__.inner_background, inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.MaxWidth, fastn.formula([inherited.get("widths").get("narrow"),
-      global.fastn_community_github_io_design_system_layout_section_column__hack_flush_narrow,
+      global.fastn_community_github_io_design_system_layout_page__flush.get("narrow"),
       __args__.flush,
       inherited.get("widths").get("wide"),
-      global.fastn_community_github_io_design_system_layout_section_column__hack_flush_wide,
-      __args__.flush], function () {
+      __args__.flush,
+      global.fastn_community_github_io_design_system_layout_page__flush.get("wide")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_column__hack_flush_narrow));
+          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_page__flush.get("narrow")));
         }()) {
           return inherited.get("widths").get("narrow");
         } else if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_section_column__hack_flush_wide));
+          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_page__flush.get("wide")));
         }()) {
           return inherited.get("widths").get("wide");
         }
       }
       ), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, __args__.align, inherited);
-      rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER,
-      __args__.spacing.get("gap")], function () {
+      rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([__args__.spacing.get("gap"),
+      global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_hack__SPACE_BETWEEN_MAGIC_NUMBER));
+          return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER));
         }()) {
           return fastn_dom.Spacing.SpaceBetween;
         } else {
@@ -3209,6 +3211,8 @@ let fastn_community_github_io_design_system__phosphor_icon_button = global["fast
 global["fastn_community_github_io_design_system__phosphor_icon_button"] = fastn_community_github_io_design_system__phosphor_icon_button;
 let fastn_community_github_io_design_system__rendered = global["fastn_community_github_io_code_block__rendered"];
 global["fastn_community_github_io_design_system__rendered"] = fastn_community_github_io_design_system__rendered;
+let fastn_community_github_io_design_system__flush = global["fastn_community_github_io_design_system_layout_page__flush"];
+global["fastn_community_github_io_design_system__flush"] = fastn_community_github_io_design_system__flush;
 let fastn_community_github_io_design_system__section_column = global["fastn_community_github_io_design_system_layout_section_column__section_column"];
 global["fastn_community_github_io_design_system__section_column"] = fastn_community_github_io_design_system__section_column;
 fastn_dom.codeData.availableThemes["coldark-theme.dark"] = "code-theme-9A3284FD117DFF7CFD432FF860A5E14169FA592BC3DA4F5E8A6975143F5EA07F.css";

@@ -1,4 +1,4 @@
--- import: fastn-community.github.io/design-system/hack
+-- integer HACK-RADIUS-ROUND: -321
 
 -- record element-radius:
 integer top-left:
@@ -45,10 +45,10 @@ bottom-left: 16
 bottom-right: 16
 
 -- element-radius round:
-top-left: $hack.RADIUS-ROUND
-top-right: $hack.RADIUS-ROUND
-bottom-left: $hack.RADIUS-ROUND
-bottom-right: $hack.RADIUS-ROUND
+top-left: $HACK-RADIUS-ROUND
+top-right: $HACK-RADIUS-ROUND
+bottom-left: $HACK-RADIUS-ROUND
+bottom-right: $HACK-RADIUS-ROUND
 
 
 
