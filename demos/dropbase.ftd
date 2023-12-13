@@ -1,13 +1,12 @@
 
--- design-system.page-widths widths:
+-- ds.page-widths widths:
 regular.px: 1200
 narrow.px: 1000
 wide.px: 1400
 
 
 
--- design-system.page: Dropbase | Build internal apps with SQL and Python in minutes
-ds: design-system
+-- ds.page: Dropbase | Build internal apps with SQL and Python in minutes
 widths: $widths
 
 Dropbase is a developer platform that makes it easy to build internal apps for
@@ -16,88 +15,68 @@ custom tools with SQL and Python in minutes.
 
 
 -- header:
-ds: design-system
 
 -- hero:
-ds: design-system
 
 -- any-data-or-api:
-ds: design-system
 
 -- existing-py:
-ds: design-system
 
 -- granular-permissions:
-ds: design-system
 
 -- smart-tables:
-ds: design-system
 
 -- features:
-ds: design-system
 
 -- book-demo:
-ds: design-system
 
 -- footer:
-ds: design-system
 
--- end: design-system.page
+-- end: ds.page
 
 
 
 
 -- component header:
-module ds: design-system
 
--- header.ds.section-row:
-ds: $header.ds
-background.solid: $inherited.colors.background.step-1
-spacing: $header.ds.spaces.vertical-gap.space-between
-margin.px: $design-system.spaces.vertical-gap.extra-large.gap
-inset: $design-system.spaces.inset-wide.large
+-- ds.section-row:
+background.solid: $ds.colors.background.step-1
+spacing: $ds.spaces.vertical-gap.space-between
+margin.px: $ds.spaces.vertical-gap.extra-large.gap
+inset: $ds.spaces.inset-wide.large
 
 
--- header.ds.inline-row: Logo | Docs | Blog | Pricing
-ds: $header.ds
+-- ds.inline-row: Logo | Docs | Blog | Pricing
 
--- header.ds.button: LOGO
-ds: $header.ds
+-- ds.button: LOGO
 
--- header.ds.header-link: Docs
-ds: $header.ds
+-- ds.header-link: Docs
 link: /
 
--- header.ds.header-link: Blog
-ds: $header.ds
+-- ds.header-link: Blog
 link: /
 
--- header.ds.header-link: Pricing
-ds: $header.ds
+-- ds.header-link: Pricing
 link: /
 
--- end: header.ds.inline-row
+-- end: ds.inline-row
 
 
--- header.ds.inline-row: Search | Login | Book Demo
-ds: $header.ds
+-- ds.inline-row: Search | Login | Book Demo
 
--- header.ds.phosphor-icon-button: Search
-ds: $header.ds
+-- ds.phosphor-icon-button: Search
 icon: magnifying-glass
 
--- header.ds.header-link: Login
-ds: $header.ds
+-- ds.header-link: Login
 link: /
 
--- header.ds.button: Book demo
-ds: $header.ds
+-- ds.button: Book demo
 
--- end: header.ds.inline-row
-
+-- end: ds.inline-row
 
 
--- end: header.ds.section-row
+
+-- end: ds.section-row
 
 -- end: header
 
@@ -107,60 +86,51 @@ ds: $header.ds
 
 
 -- component hero:
-module ds: design-system
 
--- hero.ds.section-row: hero section
-ds: $hero.ds
+-- ds.section-row: hero section
 ;; this doesn't work
-;; margin.px: $hero.ds.spaces.vertical-gap.extra-extra-large.gap
+;; margin.px: $ds.spaces.vertical-gap.extra-extra-large.gap
 ;; following both work
 ;; margin.px: 128
 ;; TODO
-margin.px: $design-system.spaces.vertical-gap.extra-extra-large.gap
+margin.px: $ds.spaces.vertical-gap.extra-extra-large.gap
 
 
--- hero.ds.column: left column
+-- ds.column: left column
 
--- hero.ds.heading-tiny: DROPBASE
-ds: $hero.ds
+-- ds.heading-tiny: DROPBASE
 
--- hero.ds.heading-large: Unlock insights from Conversations using GenAI
-ds: $hero.ds
+-- ds.heading-large: Unlock insights from Conversations using GenAI
 
--- hero.ds.copy-large:
-ds: $hero.ds
+-- ds.copy-large:
 
 Leverage AI driven insights & actionables from your customer conversations
 across all channels - Calls, Chats & Meetings to boost your business efficiency
 
--- hero.ds.button-group:
-ds: $hero.ds
+-- ds.button-group:
 
--- hero.ds.button: Book Demo
-ds: $hero.ds
+-- ds.button: Book Demo
 
--- hero.ds.phosphor-icon-button: Documentation
-ds: $hero.ds
+-- ds.phosphor-icon-button: Documentation
 icon: caret-right
 icon-position: at-end
 
--- end: hero.ds.button-group
+-- end: ds.button-group
 
--- end: hero.ds.column
+-- end: ds.column
 
 
 
--- hero.ds.column: right column
-ds: $hero.ds
+-- ds.column: right column
 
 -- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
 width: fill-container
 
--- end: hero.ds.column
+-- end: ds.column
 
 
 
--- end: hero.ds.section-row
+-- end: ds.section-row
 
 -- end: hero
 
@@ -172,39 +142,32 @@ width: fill-container
 
 
 -- component footer:
-module ds: design-system
 
--- footer.ds.section-column: asdas
-ds: $footer.ds
-inner-background.solid: $inherited.colors.background.step-2
-inset: $footer.ds.spaces.inset-square.extra-large
-spacing: $footer.ds.spaces.vertical-gap.extra-extra-large
+-- ds.section-column: asdas
+inner-background.solid: $ds.colors.background.step-2
+inset: $ds.spaces.inset-square.extra-large
+spacing: $ds.spaces.vertical-gap.extra-extra-large
 
 
--- footer.ds.row:
-ds: $footer.ds
-;; spacing: $footer.ds.spaces.vertical-gap.space-between
-spacing: $footer.ds.spaces.horizontal-gap.extra-large
+-- ds.row:
+;; spacing: $ds.spaces.vertical-gap.space-between
+spacing: $ds.spaces.horizontal-gap.extra-large
 align-content: top-center
 
--- footer.ds.column:
-ds: $footer.ds
+-- ds.column:
 
 -- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6125a1fa1160592fd373d33b_Dropbase%20logo%20website.svg
 width.fixed.px: 195
 
--- footer.ds.copy-regular:
-ds: $footer.ds
-margin: $footer.ds.spaces.vertical-gap.medium.gap
+-- ds.copy-regular:
+margin: $ds.spaces.vertical-gap.medium.gap
 
 The developer platform to build internal customer success apps.
 
--- footer.ds.footer-secondary-heading: Backed by
-ds: $footer.ds
+-- ds.footer-secondary-heading: Backed by
 
--- footer.ds.column:
-ds: $footer.ds
-spacing: $footer.ds.spaces.horizontal-gap.extra-extra-small
+-- ds.column:
+spacing: $ds.spaces.horizontal-gap.extra-extra-small
 
 -- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6334e9c7c49cd57891a61167_Gradient.svg
 width.fixed.px: 150
@@ -212,118 +175,94 @@ width.fixed.px: 150
 -- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6334ea24e5307cc2a91ef616_ycombinator-ar21%201.svg
 width.fixed.px: 114
 
--- end: footer.ds.column
+-- end: ds.column
 
 
--- end: footer.ds.column
+-- end: ds.column
 
 
--- footer.ds.column:
-ds: $footer.ds
-inset: $footer.ds.spaces.inset-tall.zero-small
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
 
--- footer.ds.footer-heading: Apps
-ds: $footer.ds
+-- ds.footer-heading: Apps
 
--- footer.ds.footer-link: Database Editors
-ds: $footer.ds
+-- ds.footer-link: Database Editors
 link: /
 
--- footer.ds.footer-link: Admin Panels
-ds: $footer.ds
+-- ds.footer-link: Admin Panels
 link: /
 
--- end: footer.ds.column
+-- end: ds.column
 
 
--- footer.ds.column:
-ds: $footer.ds
-inset: $footer.ds.spaces.inset-tall.zero-small
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
 
--- footer.ds.footer-heading: Product
-ds: $footer.ds
+-- ds.footer-heading: Product
 
--- footer.ds.footer-link: Request a demo
-ds: $footer.ds
+-- ds.footer-link: Request a demo
 link: /
 
--- footer.ds.footer-link: Pricing
-ds: $footer.ds
+-- ds.footer-link: Pricing
 link: /
 
--- end: footer.ds.column
+-- end: ds.column
 
 
--- footer.ds.column:
-ds: $footer.ds
-inset: $footer.ds.spaces.inset-tall.zero-small
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
 
--- footer.ds.footer-heading: Resources
-ds: $footer.ds
+-- ds.footer-heading: Resources
 
--- footer.ds.footer-link: Docs
-ds: $footer.ds
+-- ds.footer-link: Docs
 link: /
 
--- footer.ds.footer-link: Local setup
-ds: $footer.ds
+-- ds.footer-link: Local setup
 link: /
 
--- footer.ds.footer-link: Blog
-ds: $footer.ds
+-- ds.footer-link: Blog
 link: /
 
--- footer.ds.footer-link: Support
-ds: $footer.ds
+-- ds.footer-link: Support
 link: /
 
--- end: footer.ds.column
+-- end: ds.column
 
 
--- footer.ds.column:
-ds: $footer.ds
-inset: $footer.ds.spaces.inset-tall.zero-small
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
 
--- footer.ds.footer-heading: Company
-ds: $footer.ds
+-- ds.footer-heading: Company
 
--- footer.ds.footer-link: Contact us
-ds: $footer.ds
+-- ds.footer-link: Contact us
 link: /
 
--- footer.ds.footer-link: Security Center
-ds: $footer.ds
+-- ds.footer-link: Security Center
 link: /
 
--- footer.ds.footer-link: Terms
-ds: $footer.ds
+-- ds.footer-link: Terms
 link: /
 
--- footer.ds.footer-link: Privacy
-ds: $footer.ds
+-- ds.footer-link: Privacy
 link: /
 
--- end: footer.ds.column
+-- end: ds.column
 
--- end: footer.ds.row
+-- end: ds.row
 
 
--- footer.ds.row:
-ds: $footer.ds
-spacing: $footer.ds.spaces.horizontal-gap.space-between
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.space-between
 
--- footer.ds.copyright-text: © Copyright 2023 - Dropbase • All rights reserved.
-ds: $footer.ds
+-- ds.copyright-text: © Copyright 2023 - Dropbase • All rights reserved.
 
--- footer.ds.copyright-text: San Francisco
-ds: $footer.ds
+-- ds.copyright-text: San Francisco
 
--- footer.ds.copyright-text: Twitter, LinkedIn, Posts
-ds: $footer.ds
+-- ds.copyright-text: Twitter, LinkedIn, Posts
 
--- end: footer.ds.row
+-- end: ds.row
 
--- end: footer.ds.section-column
+-- end: ds.section-column
 
 -- end: footer
 
@@ -337,82 +276,68 @@ ds: $footer.ds
 
 
 -- component book-demo:
-module ds: design-system
 
--- book-demo.ds.section-column:
-ds: $book-demo.ds
-margin.px: $design-system.spaces.vertical-gap.extra-large.gap
-inner-background.solid: $inherited.colors.background.step-1
-inset: $book-demo.ds.spaces.inset-square.large
+-- ds.section-column:
+margin.px: $ds.spaces.vertical-gap.extra-large.gap
+inner-background.solid: $ds.colors.background.step-1
+inset: $ds.spaces.inset-square.large
 
--- book-demo.ds.copy-large:
-ds: $book-demo.ds
+-- ds.copy-large:
 text-align: center
 
 Build apps for your customer success and ops teams today
 
--- book-demo.ds.button: Book demo
-ds: $book-demo.ds
+-- ds.button: Book demo
 
--- end: book-demo.ds.section-column
+-- end: ds.section-column
 
 -- end: book-demo
 
 
 
 -- component features:
-module ds: design-system
 
--- features.ds.section-row:
-spacing: $features.ds.spaces.vertical-gap.space-between
+-- ds.section-row:
+spacing: $ds.spaces.vertical-gap.space-between
 wrap: true
 
 -- feature: Dropbase Studio.
-ds: $features.ds
 
 Write, debug, and preview your apps in one place
 
 -- feature:  UI Components.
-ds: $features.ds
 
 Select UI components from a dropdown
 
 -- feature:  All Python.
-ds: $features.ds
 
 Write any function in Python. Get full code flexibility
 
 -- feature:  Code completion.
-ds: $features.ds
 
 Built-in Python LSP to speed up development
 
 -- feature:  Smart Tables.
-ds: $features.ds
 
 Turn any SQL into an inline editable tables
 
 -- feature:  Instant deploys.
-ds: $features.ds
 
 Apps automatically deployed as you build them
 
 -- feature:  Synced state.
-ds: $features.ds
 
 Client-server share state. No need to write React
 
 -- feature:  Python libraries.
-ds: $features.ds
 
 Access libraries such as numpy and pandas
 
 -- feature:  Integrations.
-ds: $features.ds
 
 Connect Postgres or any internal or external REST API
 
--- end: features.ds.section-row
+-- end: ds.section-row
 
 -- end: features
 
@@ -423,26 +348,25 @@ Connect Postgres or any internal or external REST API
 
 
 -- component feature:
-module ds: design-system
 caption title:
 body description:
 
--- feature.ds.container:
-inset: $feature.ds.spaces.inset-square.large
-background.solid: $inherited.colors.background.step-1
+-- ds.container:
+inset: $ds.spaces.inset-square.large
+background.solid: $ds.colors.background.step-1
 width.fixed.percent: 30
-radius: $feature.ds.radius.large
+radius: $ds.radius.large
 
--- feature.ds.copy-regular:
-color: $inherited.colors.text-strong
+-- ds.copy-regular:
+color: $ds.colors.text-strong
 
 $with-space(a = $feature.title)
 
--- feature.ds.copy-regular:
+-- ds.copy-regular:
 
 $feature.description
 
--- end: feature.ds.container
+-- end: ds.container
 
 -- end: feature
 
@@ -454,18 +378,14 @@ $feature.description
 
 
 -- component smart-tables:
-module ds: design-system
 
--- smart-tables.ds.section-column:
-ds: $smart-tables.ds
-margin.px: $design-system.spaces.vertical-gap.extra-large.gap
+-- ds.section-column:
+margin.px: $ds.spaces.vertical-gap.extra-large.gap
 
--- smart-tables.ds.heading-hero: Turn any SQL SELECT into an admin panel with Smart Tables.
-ds: $smart-tables.ds
+-- ds.heading-hero: Turn any SQL SELECT into an admin panel with Smart Tables.
 text-align: center
 
--- smart-tables.ds.copy-large:
-ds: $smart-tables.ds
+-- ds.copy-large:
 text-align: center
 
 Convert any SQL select statement into an admin panel that lets you search and
@@ -477,7 +397,7 @@ additional queries or functions. Build admin panels in seconds.
 width.fixed.percent: 90
 src: https://cf-simple-s3-origin-cloudfrontfors3-355320424519.s3.amazonaws.com/dropbase-website-assets/Admin+Panel.mp4
 
--- end: smart-tables.ds.section-column
+-- end: ds.section-column
 
 -- end: smart-tables
 
@@ -485,37 +405,32 @@ src: https://cf-simple-s3-origin-cloudfrontfors3-355320424519.s3.amazonaws.com/d
 
 
 -- component existing-py:
-module ds: design-system
 
--- existing-py.ds.section-row: hero section
-ds: $existing-py.ds
-margin.px: $design-system.spaces.vertical-gap.extra-large.gap
+-- ds.section-row: hero section
+margin.px: $ds.spaces.vertical-gap.extra-large.gap
 
 
--- existing-py.ds.column: left column
+-- ds.column: left column
 
--- existing-py.ds.heading-hero: Works with your existing .py scripts
-ds: $existing-py.ds
+-- ds.heading-hero: Works with your existing .py scripts
 
 
--- existing-py.ds.copy-large:
-ds: $existing-py.ds
+-- ds.copy-large:
 
 Instead of re-writing your scripts to fit yet another framework, Dropbase just
  works with them. Layer a beautifully designed UI atop all your .py scripts or
  runbooks.
 
--- end: existing-py.ds.column
+-- end: ds.column
 
--- existing-py.ds.column: right column
-ds: $existing-py.ds
+-- ds.column: right column
 
 -- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/652763340f644d671d70bc24_Python%20scripts-p-1600.webp
 width: fill-container
 
--- end: existing-py.ds.column
+-- end: ds.column
 
--- end: existing-py.ds.section-row
+-- end: ds.section-row
 
 -- end: existing-py
 
@@ -524,36 +439,31 @@ width: fill-container
 
 
 -- component granular-permissions:
-module ds: design-system
 
--- granular-permissions.ds.section-row: hero section
-ds: $granular-permissions.ds
-margin.px: $design-system.spaces.vertical-gap.extra-large.gap
+-- ds.section-row: hero section
+margin.px: $ds.spaces.vertical-gap.extra-large.gap
 
--- granular-permissions.ds.column: left column
-ds: $granular-permissions.ds
+-- ds.column: left column
 
 -- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/652763340f644d671d70bc24_Python%20scripts-p-1600.webp
 width: fill-container
 
--- end: granular-permissions.ds.column
+-- end: ds.column
 
 
--- granular-permissions.ds.column: right column
+-- ds.column: right column
 
--- granular-permissions.ds.heading-hero: Granular permissions for surgical app control.
-ds: $granular-permissions.ds
+-- ds.heading-hero: Granular permissions for surgical app control.
 
--- granular-permissions.ds.copy-large:
-ds: $granular-permissions.ds
+-- ds.copy-large:
 
 Surgically control end-user access on an app-by-app basis. Assign app
 permissions to users or groups. Control who can view, edit or own any app.
 
--- end: granular-permissions.ds.column
+-- end: ds.column
 
 
--- end: granular-permissions.ds.section-row
+-- end: ds.section-row
 
 -- end: granular-permissions
 
@@ -565,15 +475,13 @@ permissions to users or groups. Control who can view, edit or own any app.
 
 
 -- component any-data-or-api:
-module ds: design-system
 
--- any-data-or-api.ds.section-column:
-ds: $any-data-or-api.ds
-margin.px: $design-system.spaces.vertical-gap.extra-large.gap
-spacing: $any-data-or-api.ds.spaces.vertical-gap.medium
+-- ds.section-column:
+margin.px: $ds.spaces.vertical-gap.extra-large.gap
+spacing: $ds.spaces.vertical-gap.medium
 
--- any-data-or-api.ds.inline-row:
-spacing: $any-data-or-api.ds.spaces.horizontal-gap.extra-large
+-- ds.inline-row:
+spacing: $ds.spaces.horizontal-gap.extra-large
 
 -- ftd.image:
 src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9dd14ce920c12e0191e_postgres.svg
@@ -584,12 +492,12 @@ src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9f325
 -- ftd.image:
 src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9ebaeb0d581b82b9aee_hubspot.svg
 
--- end: any-data-or-api.ds.inline-row
+-- end: ds.inline-row
 
--- any-data-or-api.ds.heading-small: and any REST API.
+-- ds.heading-small: and any REST API.
 width: hug-content
 
--- end: any-data-or-api.ds.section-column
+-- end: ds.section-column
 
 -- end: any-data-or-api
 

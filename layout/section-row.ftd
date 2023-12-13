@@ -1,16 +1,14 @@
 -- import: fastn-community.github.io/design-system/spaces
--- import: fastn-community.github.io/design-system
 
 
 -- component section-row:
 optional caption title:
-module ds: design-system
-design-system.flush flush: to-header
+ds.flush flush: to-header
 children content:
-design-system.gap spacing: $design-system.spaces.horizontal-gap.large
+ds.gap spacing: $ds.spaces.horizontal-gap.large
 optional ftd.background background:
-design-system.hv inset: $design-system.spaces.inset-wide.large
-ftd.length.px margin: $design-system.spaces.vertical-gap.large.gap
+ds.hv inset: $ds.spaces.inset-wide.large
+ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
 boolean wrap: false
 ftd.align align: center
 
@@ -22,9 +20,9 @@ margin-bottom: $section-row.margin
 
 -- ftd.row:
 width if { section-row.flush == full }: fill-container
-max-width.fixed if { section-row.flush == narrow }: $inherited.widths.narrow
-max-width.fixed if { section-row.flush == wide }: $inherited.widths.wide
-width.fixed: $inherited.widths.regular
+max-width.fixed if { section-row.flush == narrow }: $ds.widths.narrow
+max-width.fixed if { section-row.flush == wide }: $ds.widths.wide
+width.fixed: $ds.widths.regular
 children: $section-row.content
 align-content: $section-row.align
 spacing if { section-row.spacing.gap == $spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between

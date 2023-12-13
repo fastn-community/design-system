@@ -23,7 +23,7 @@ regular.px: 1000
 narrow.px: 800
 wide.px: 1200
 
--- design-system.page-widths narrow-widths:
+-- ds.page-widths narrow-widths:
 regular.px: 800
 narrow.px: 600
 wide.px: 1000
@@ -33,11 +33,10 @@ wide.px: 1000
 optional caption title:
 optional body description:
 children content:
-module ds: design-system
 ftd.length.px spacing: 0
 page-widths widths: $default-widths
-;; todo: is the follow reference to `design-system` correct?
-ftd.length.px margin: $design-system.spaces.vertical-gap.large.gap
+;; todo: is the follow reference to `.gap` correct?
+ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
 
 -- ftd.document:
 title: $page.title
@@ -51,8 +50,8 @@ types: $page.ds.types
 width: fill-container
 height: fill-container
 spacing.fixed: $page.spacing
-color: $inherited.colors.text
-background.solid: $inherited.colors.background.base
+color: $ds.colors.text
+background.solid: $ds.colors.background.base
 
 -- ui:
 for: $ui in $page.content
@@ -63,7 +62,7 @@ width: fill-container
 align-content: center
 
 -- ftd.text: Created using fastn
-color: $inherited.colors.background.base
+color: $ds.colors.background.base
 
 -- end: ftd.column
 
@@ -89,13 +88,12 @@ narrow.px: 300
 wide.px: 1200
 
 
--- design-system.page:
-ds: design-system
+-- ds.page:
 ;; widths: $test-widths
 
 -- demos.demo:
 
--- end: design-system.page
+-- end: ds.page
 
 
 

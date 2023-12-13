@@ -1,117 +1,109 @@
 -- component heading-hero:
-module ds: design-system
 caption text:
 ftd.resizing width: fill-container
-ftd.color color: $inherited.colors.text-strong
+ftd.color color: $ds.colors.text-strong
 optional ftd.text-align text-align:
 
 -- ftd.text: $heading-hero.text
 width: $heading-hero.width
 color: $heading-hero.color
-role: $inherited.types.heading-hero
+role: $ds.types.heading-hero
 text-align: $heading-hero.text-align
 
 -- end: heading-hero
 
 
 -- component heading-eyebrow:
-module ds: design-system
 caption text:
 ftd.resizing width: fill-container
-ftd.color color: $inherited.colors.text-strong
+ftd.color color: $ds.colors.text-strong
 optional ftd.text-align text-align:
 ;; todo: style: uppercase, bold, code
 
 -- ftd.text: $heading-eyebrow.text
 width: $heading-eyebrow.width
 color: $heading-eyebrow.color
-role: $inherited.types.heading-small
+role: $ds.types.heading-small
 text-align: $heading-eyebrow.text-align
 
 -- end: heading-eyebrow
 
 
 -- component heading-large:
-module ds: design-system
 caption text:
 ftd.resizing width: fill-container
-ftd.color color: $inherited.colors.text-strong
+ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-large.text
 width: $heading-large.width
 color: $heading-large.color
-role: $inherited.types.heading-large
+role: $ds.types.heading-large
 
 -- end: heading-large
 
 
 -- component heading-medium:
-module ds: design-system
 caption text:
 ftd.resizing width: fill-container
-ftd.color color: $inherited.colors.text-strong
+ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-medium.text
 width: $heading-medium.width
 color: $heading-medium.color
-role: $inherited.types.heading-medium
+role: $ds.types.heading-medium
 
 -- end: heading-medium
 
 
 -- component heading-small:
-module ds: design-system
 caption text:
 ftd.resizing width: fill-container
-ftd.color color: $inherited.colors.text-strong
+ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-small.text
 width: $heading-small.width
 color: $heading-small.color
-role: $inherited.types.heading-small
+role: $ds.types.heading-small
 
 -- end: heading-small
 
 
 -- component heading-tiny:
-module ds: design-system
 caption text:
 ftd.resizing width: fill-container
-ftd.color color: $inherited.colors.text-strong
+ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-tiny.text
 width: $heading-tiny.width
 color: $heading-tiny.color
-role: $inherited.types.heading-tiny
+role: $ds.types.heading-tiny
 
 -- end: heading-tiny
 
 
 
 -- component copy-lede:
-module ds: design-system
 body text:
-ftd.color color: $inherited.colors.text
+ftd.color color: $ds.colors.text
 ftd.display display: inline
 optional ftd.text-align text-align:
 
 -- ftd.text: $copy-lede.text
 color: $copy-lede.color
-role: $inherited.types.copy-large ;; TODO: add copy-lede to ftd.color-scheme
+role: $ds.types.copy-large ;; TODO: add copy-lede to ftd.color-scheme
 text-align: $copy-lede.text-align
 
 -- end: copy-lede
 
 -- component copy-large:
-module ds: design-system
 body text:
-ftd.color color: $inherited.colors.text
+ftd.color color: $ds.colors.text
 ftd.display display: inline
 optional ftd.text-align text-align:
 
 -- ftd.text: $copy-large.text
 color: $copy-large.color
-role: $inherited.types.copy-large
+role: $ds.types.copy-large
 text-align: $copy-large.text-align
 
 -- end: copy-large
@@ -119,16 +111,15 @@ text-align: $copy-large.text-align
 
 
 -- component copy-regular:
-module ds: design-system
 body text:
-ftd.color color: $inherited.colors.text
+ftd.color color: $ds.colors.text
 ftd.display display: inline
 optional ftd.length.px margin:
 optional ftd.resizing height:
 
 -- ftd.text: $copy-regular.text
 color: $copy-regular.color
-role: $inherited.types.copy-regular
+role: $ds.types.copy-regular
 display: $copy-regular.display
 margin-bottom: $copy-regular.margin
 height: $copy-regular.height
@@ -137,28 +128,26 @@ height: $copy-regular.height
 
 
 -- component copy-small:
-module ds: design-system
 body text:
-ftd.color color: $inherited.colors.text
+ftd.color color: $ds.colors.text
 ftd.display display: inline
 
 -- ftd.text: $copy-small.text
 color: $copy-small.color
-role: $inherited.types.copy-small
+role: $ds.types.copy-small
 display: $copy-small.display
 
 -- end: copy-small
 
 
 -- component fine-print:
-module ds: design-system
 body text:
-ftd.color color: $inherited.colors.text
+ftd.color color: $ds.colors.text
 ftd.display display: inline
 
 -- ftd.text: $fine-print.text
 color: $fine-print.color
-role: $inherited.types.fine-print
+role: $ds.types.fine-print
 display: $fine-print.display
 
 -- end: fine-print
@@ -167,15 +156,14 @@ display: $fine-print.display
 
 
 -- component link:
-module ds: design-system
 caption or body text:
 string link:
-ftd.color color: $inherited.colors.cta-primary.base
+ftd.color color: $ds.colors.cta-primary.base
 ftd.display display: inline
 
 -- ftd.text: $link.text
 color: $link.color
-role: $inherited.types.link
+role: $ds.types.link
 display: $link.display
 link: $link.link
 
@@ -189,60 +177,60 @@ link: $link.link
 
 
 
--- design-system.page: Typography
+-- ds.page: Typography
 
--- design-system.section-column:
+-- ds.section-column:
 
--- design-system.phosphor-icon-button: Back
+-- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
 
--- design-system.rendered:
+-- ds.rendered:
 
 \-- heading-hero: Heading hero typography
 -- heading-hero: Heading hero typography
 
--- end: design-system.rendered
+-- end: ds.rendered
 
 
 
--- design-system.rendered:
+-- ds.rendered:
 
 \-- heading-large: Heading large typography
 -- heading-large: Heading large typography
 
--- end: design-system.rendered
+-- end: ds.rendered
 
 
 
--- design-system.rendered:
+-- ds.rendered:
 
 \-- heading-medium: Heading medium typography
 -- heading-medium: Heading medium typography
 
--- end: design-system.rendered
+-- end: ds.rendered
 
 
 
--- design-system.rendered:
+-- ds.rendered:
 
 \-- heading-small: Heading small typography
 -- heading-small: Heading small typography
 
--- end: design-system.rendered
+-- end: ds.rendered
 
 
 
--- design-system.rendered:
+-- ds.rendered:
 
 \-- heading-tiny: Heading tiny typography
 -- heading-tiny: Heading tiny typography
 
--- end: design-system.rendered
+-- end: ds.rendered
 
 
 
--- design-system.rendered:
+-- ds.rendered:
 
 \-- copy-large:
 
@@ -252,11 +240,11 @@ Copy large typography
 
 Copy large typography
 
--- end: design-system.rendered
+-- end: ds.rendered
 
 
 
--- design-system.rendered:
+-- ds.rendered:
 
 \-- copy-regular:
 
@@ -266,11 +254,11 @@ Copy regular typography
 
 Copy regular typography
 
--- end: design-system.rendered
+-- end: ds.rendered
 
 
 
--- design-system.rendered:
+-- ds.rendered:
 
 \-- copy-small:
 
@@ -280,11 +268,11 @@ Copy small typography
 
 Copy small typography
 
--- end: design-system.rendered
+-- end: ds.rendered
 
 
 
--- design-system.rendered:
+-- ds.rendered:
 
 \-- fine-print:
 
@@ -294,19 +282,19 @@ Fine print typography
 
 Fine print typography
 
--- end: design-system.rendered
+-- end: ds.rendered
 
 
 
--- design-system.rendered:
+-- ds.rendered:
 
 \-- link: Link typography
 link: /
 -- link: Link typography
 link: /
 
--- end: design-system.rendered
+-- end: ds.rendered
 
--- end: design-system.section-column
+-- end: ds.section-column
 
--- end: design-system.page
+-- end: ds.page

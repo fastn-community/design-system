@@ -66,28 +66,28 @@ exposing: heading-large, copy-regular
 
 
 
--- design-system.page:
+-- ds.page:
 widths: $narrow-widths
 
--- design-system.section-column:
-spacing: $design-system.spaces.vertical-gap.medium
+-- ds.section-column:
+spacing: $ds.spaces.vertical-gap.medium
 align: left
 
--- design-system.heading-hero: Design System
+-- ds.heading-hero: Design System
 
--- design-system.button-group:
+-- ds.button-group:
 
--- design-system.phosphor-icon-button: Github
+-- ds.phosphor-icon-button: Github
 icon: github-logo
 link: https://github.com/fastn-community/design-system/
 
--- design-system.phosphor-icon-button: BSD (Open Source)
+-- ds.phosphor-icon-button: BSD (Open Source)
 icon: scales
 link: https://github.com/fastn-community/design-system/blob/main/LICENSE
 
--- end: design-system.button-group
+-- end: ds.button-group
 
--- design-system.copy-regular:
+-- ds.copy-regular:
 
 This is the package you have been waiting for!
 
@@ -99,6 +99,6 @@ This is the package you have been waiting for!
 
 -- demos.demo:
 
--- end: design-system.section-column
+-- end: ds.section-column
 
--- end: design-system.page
+-- end: ds.page

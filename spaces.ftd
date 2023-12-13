@@ -48,7 +48,7 @@ gap space-between:
 gap zero:
 
 
-;; $inherited.spaces.inset-square.small
+;; $ds.spaces.inset-square.small
 
 -- record space-data:
 insets inset-square:

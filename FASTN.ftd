@@ -2,7 +2,8 @@
 
 -- fastn.package: fastn-community.github.io/design-system
 favicon: /favicon.ico
-;; ds: fastn-community.github.io/design-system
+system: ds
+system-is-confidential: false
 
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
 -- fastn.dependency: fastn-community.github.io/roboto-typography
@@ -12,5 +13,4 @@ favicon: /favicon.ico
 -- fastn.dependency: fastn-community.github.io/dark-flame-cs
 ;; -- fastn.dependency: fastn-community.github.io/saturated-sunset-cs
 
--- fastn.auto-import: fastn-community.github.io/design-system
 -- fastn.auto-import: fastn-community.github.io/design-system/assets
