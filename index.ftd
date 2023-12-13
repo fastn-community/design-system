@@ -25,7 +25,7 @@ export: footer-heading, footer-secondary-heading, footer-link, copyright-text
 export: button-group
 
 -- import: fastn-community.github.io/design-system/layout/page as page-module
-export: page, flush, page-widths, narrow-widths
+export: page, flush, page-widths, narrow-widths, widths
 exposing: narrow-widths
 
 -- import: fastn-community.github.io/design-system/layout/section-row as section-row-module

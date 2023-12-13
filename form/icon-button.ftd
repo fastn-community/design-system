@@ -27,7 +27,6 @@ button.button-kind kind: primary
 boolean $hover: false
 
 -- button-wrapper:
-ds: $icon-button.ds
 title: $icon-button.title
 icon-position: $icon-button.icon-position
 link: $icon-button.link
@@ -168,7 +167,6 @@ width: $phosphor-icon-button.width
 size: $phosphor-icon-button.size
 outline: $phosphor-icon-button.outline
 kind: $phosphor-icon-button.kind
-ds: $phosphor-icon-button.ds
 
 -- phosphor.regular: $phosphor-icon-button.icon
 size: 16
@@ -230,7 +228,6 @@ width: $fa-icon-button.width
 size: $fa-icon-button.size
 outline: $fa-icon-button.outline
 kind: $fa-icon-button.kind
-ds: $fa-icon-button.ds
 
 -- fa.brand: $fa-icon-button.icon
 size: 13

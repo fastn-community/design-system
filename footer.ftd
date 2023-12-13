@@ -11,8 +11,7 @@ caption title:
 -- component footer-secondary-heading:
 caption title:
 
--- footer-secondary-heading.ds.copy-regular:
-ds: $footer-secondary-heading.ds
+-- ds.copy-regular:
 
 $footer-secondary-heading.title
 
@@ -43,8 +42,7 @@ $on-mouse-enter$: $ftd.set-boolean($a = $footer-link.hover, v = false)
 -- component copyright-text:
 caption or body text:
 
--- copyright-text.ds.copy-regular:
-ds: $copyright-text.ds
+-- ds.copy-regular:
 
 $copyright-text.text
 

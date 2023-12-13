@@ -18,7 +18,7 @@ ftd.length regular:
 ftd.length narrow:
 ftd.length wide:
 
--- page-widths default-widths:
+-- page-widths widths:
 regular.px: 1000
 narrow.px: 800
 wide.px: 1200
@@ -34,15 +34,15 @@ optional caption title:
 optional body description:
 children content:
 ftd.length.px spacing: 0
-page-widths widths: $default-widths
+page-widths widths: $widths
 ;; todo: is the follow reference to `.gap` correct?
 ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
 
 -- ftd.document:
 title: $page.title
 description: $page.description
-colors: $page.ds.colors
-types: $page.ds.types
+colors: $ds.colors
+types: $ds.types
 
 -- dms.dark-mode-switcher-float:
 
