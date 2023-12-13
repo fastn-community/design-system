@@ -1,75 +1,61 @@
--- design-system.page-widths widths:
+-- ds.page-widths widths:
 regular.px: 1400
 narrow.px: 1200
 wide.px: 1600
 
 
--- design-system.page: FifthTry | Building fastn and hostn
-ds: design-system
+-- ds.page: FifthTry | Building fastn and hostn
 widths: $widths
 
 -- header:
-ds: design-system
 
 -- products:
-ds: design-system
 
 -- footer:
-ds: design-system
 
--- end: design-system.page
+-- end: ds.page
 
 
 
 -- component footer:
-module ds: design-system
 
--- footer.ds.section-row:
-ds: $footer.ds
+-- ds.section-row:
 
 -- ftd.image:
 src: https://www.fifthtry.com/-/fifthtry.com/assets/images/logo-ycom-dark.svg
 
--- footer.ds.row:
-ds: $footer.ds
-spacing: $footer.ds.spaces.horizontal-gap.extra-large
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.extra-large
 
--- footer.ds.footer-link: Our Partners
-ds: $footer.ds
+-- ds.footer-link: Our Partners
 link: /
 
 
--- footer.ds.footer-link: Why partner with us?
-ds: $footer.ds
+-- ds.footer-link: Why partner with us?
 link: /
 
 
--- footer.ds.footer-link: How to partner with us?
-ds: $footer.ds
+-- ds.footer-link: How to partner with us?
 link: /
 
--- footer.ds.copyright-text: © 2023 FifthTry. All rights reserved
-ds: $footer.ds
+-- ds.copyright-text: © 2023 FifthTry. All rights reserved
 
--- end: footer.ds.row
+-- end: ds.row
 
--- end: footer.ds.section-row
+-- end: ds.section-row
 
 -- end: footer
 
 
 
 -- component products:
-module ds: design-system
 
--- products.ds.section-row:
-ds: $products.ds
-background.solid: $inherited.colors.background.step-1
+-- ds.section-row:
+background.solid: $ds.colors.background.step-1
 align: top-center
-margin.px: $design-system.spaces.vertical-gap.extra-extra-large.gap
+margin: $ds.spaces.vertical-gap.extra-extra-large
 
 -- product: FTD Language for prose
-ds: $products.ds
 icon: https://www.fifthtry.com/-/fifthtry.com/assets/images/ftd-logo.svg
 link: /
 
@@ -79,7 +65,6 @@ and intuitive experience.
 
 
 -- product: Fastn static site generator
-ds: $products.ds
 icon: https://www.fifthtry.com/-/fifthtry.com/assets/images/fastn-logo.svg
 link: /
 
@@ -89,7 +74,6 @@ you can easily convert your .ftd files into .html files.
 
 
 -- product: HOSTN hosting fastn sites
-ds: $products.ds
 link: /
 icon: https://www.fifthtry.com/-/fifthtry.com/assets/images/hostn-logo.svg
 
@@ -97,45 +81,40 @@ An FASTN package contains one or more “ftd modules”, and the modules export 
 or more “symbols”, eg records, variables, components and so on. Hosting FASTN
 sites made simple by HOSTN.
 
--- end: products.ds.section-row
+-- end: ds.section-row
 
 -- end: products
 
 
 -- component product:
-module ds: design-system
 caption title:
 string icon:
 body about:
 string link:
 
--- product.ds.column:
-ds: $product.ds
-background.solid: $inherited.colors.background.step-2
-inset: $design-system.spaces.inset-tall.large
+-- ds.column:
+background.solid: $ds.colors.background.step-2
+inset: $ds.spaces.inset-tall.large
 height: fill-container
 
--- product.ds.row:
+-- ds.row:
 
 -- ftd.image: $product.icon
--- product.ds.heading-small: $product.title
-ds: $product.ds
+-- ds.heading-small: $product.title
 
--- end: product.ds.row
+-- end: ds.row
 
--- product.ds.copy-regular:
-ds: $product.ds
+-- ds.copy-regular:
 height: fill-container
 
 $product.about
 
--- product.ds.phosphor-icon-button: Read More
-ds: $product.ds
+-- ds.phosphor-icon-button: Read More
 icon: arrow-right
 link: $product.link
 icon-position: at-end
 
--- end: product.ds.column
+-- end: ds.column
 
 -- end: product
 
@@ -145,40 +124,34 @@ icon-position: at-end
 
 
 -- component header:
-module ds: design-system
 
--- header.ds.section-row:
-ds: $header.ds
-background.solid: $inherited.colors.background.step-1
-inset: $design-system.spaces.inset-square.large
-spacing: $header.ds.spaces.horizontal-gap.space-between
+-- ds.section-row:
+background.solid: $ds.colors.background.step-1
+inset: $ds.spaces.inset-square.large
+spacing: $ds.spaces.horizontal-gap.space-between
 flush: full
-margin.px: $design-system.spaces.vertical-gap.extra-large.gap
+margin: $ds.spaces.vertical-gap.extra-large
 
 -- ftd.image:
 height.fixed.px: 38
 max-width.fixed.px: 120
 src: https://www.fifthtry.com/-/fifthtry.com/assets/images/logo-fifthtry-dark.svg
 
--- header.ds.inline-row:
-ds: $header.ds
-spacing: $header.ds.spaces.horizontal-gap.large
+-- ds.inline-row:
+spacing: $ds.spaces.horizontal-gap.large
 
--- header.ds.header-link: Home
-ds: $header.ds
+-- ds.header-link: Home
 link: /
 
--- header.ds.header-link: Team
-ds: $header.ds
+-- ds.header-link: Team
 link: /
 
--- header.ds.header-link: Handbook
-ds: $header.ds
+-- ds.header-link: Handbook
 link: /
 
 
--- end: header.ds.inline-row
+-- end: ds.inline-row
 
--- end: header.ds.section-row
+-- end: ds.section-row
 
 -- end: header

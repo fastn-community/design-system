@@ -1,35 +1,33 @@
 -- import: fastn-community.github.io/design-system/spaces
 -- import: fastn-community.github.io/design-system/radius
--- import: fastn-community.github.io/design-system
 
 
 
 -- component section-column:
 optional caption title:
-module ds: design-system
-design-system.flush flush: to-header
+ds.flush flush: to-header
 children content:
 ;; todo: is the follow reference to `design-system` correct?
-design-system.gap spacing: $design-system.spaces.vertical-gap.large
+ds.gap spacing: $ds.spaces.vertical-gap.large
 optional ftd.background outer-background:
 optional ftd.background inner-background:
 ;; todo: is the follow reference to `design-system` correct?
-design-system.hv inset: $design-system.spaces.inset-wide.medium
-ftd.length.px margin: $design-system.spaces.vertical-gap.large.gap
+ds.hv inset: $ds.spaces.inset-wide.medium
+ds.gap margin: $ds.spaces.vertical-gap.large
 ftd.align align: center
-design-system.element-radius radius: $design-system.radius.medium
+ds.element-radius radius: $ds.radius.medium
 
 -- ftd.column:
 width: fill-container
 align-content: center
 background: $section-column.outer-background
-margin-bottom: $section-column.margin
+margin-bottom.px: $section-column.margin.gap
 
 -- ftd.column:
 width if { section-column.flush == full }: fill-container
-max-width.fixed if { section-column.flush == narrow }: $inherited.widths.narrow
-max-width.fixed if { section-column.flush == wide }: $inherited.widths.wide
-width.fixed: $inherited.widths.regular
+max-width.fixed if { section-column.flush == narrow }: $ds.widths.narrow
+max-width.fixed if { section-column.flush == wide }: $ds.widths.wide
+width.fixed: $ds.widths.regular
 children: $section-column.content
 spacing if { section-column.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 spacing.fixed.px: $section-column.spacing.gap

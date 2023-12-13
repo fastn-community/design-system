@@ -1,24 +1,24 @@
 -- component demo:
 
--- design-system.section-column:
+-- ds.section-column:
 align: left
 
--- design-system.heading-large: Demos
+-- ds.heading-large: Demos
 
--- design-system.copy-regular:
+-- ds.copy-regular:
 
 - [Dropbase.io](demos/dropbase/)
 - [ft(old)](demos/ft-old/)
 
--- end: design-system.section-column
+-- end: ds.section-column
 
 -- end: demo
 
 
 
 
--- design-system.page:
+-- ds.page:
 
 -- demo:
 
--- end: design-system.page
+-- end: ds.page

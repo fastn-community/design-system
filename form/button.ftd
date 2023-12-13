@@ -45,7 +45,6 @@
 
 
 -- component button:
-module ds: design-system
 caption title:
 optional string link:
 boolean enabled: true
@@ -57,12 +56,12 @@ button-kind kind: primary
 boolean $hover: false
 
 -- ftd.row:
-background.solid: $inherited.colors.cta-primary.base
+background.solid: $ds.colors.cta-primary.base
 border-radius.px: 8
 padding-horizontal.px: 16
 padding-vertical.px: 10
 align-content: center
-background.solid if { button.hover }: $inherited.colors.cta-primary.hover
+background.solid if { button.hover }: $ds.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.hover, v = false)
 spacing.fixed.px: 8
@@ -72,8 +71,8 @@ min-width: auto
 -- ftd.text: $button.title
 if: { button.title != NULL }
 ;; if: { ftd.or-type-to-integer(button.kind) == 0 }
-role: $inherited.types.button-small
-color: $inherited.colors.cta-primary.text
+role: $ds.types.button-small
+color: $ds.colors.cta-primary.text
 link: $button.link
 white-space: nowrap
 
@@ -93,17 +92,17 @@ white-space: nowrap
 
 
 
--- design-system.page:
+-- ds.page:
 
--- design-system.section-column:
+-- ds.section-column:
 
--- design-system.heading-hero: Buttons
+-- ds.heading-hero: Buttons
 
--- design-system.phosphor-icon-button: Back
+-- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
 
--- design-system.rendered:
+-- ds.rendered:
 
 \-- button: Default button
 link: /
@@ -111,8 +110,8 @@ link: /
 -- button: Default button
 link: /
 
--- end: design-system.rendered
+-- end: ds.rendered
 
--- end: design-system.section-column
+-- end: ds.section-column
 
--- end: design-system.page
+-- end: ds.page

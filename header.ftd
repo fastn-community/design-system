@@ -1,14 +1,13 @@
 -- import: fastn-community.github.io/design-system/form/button
 
 -- component header-link:
-module ds: design-system:
 caption or body text:
 string link:
 button.button-kind kind: primary
 
 -- ftd.text: $header-link.text
-color: $inherited.colors.text-strong
-role: $inherited.types.link
+color: $ds.colors.text-strong
+role: $ds.types.link
 link: $header-link.link
 
 -- end: header-link
