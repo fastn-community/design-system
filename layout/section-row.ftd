@@ -8,7 +8,7 @@ children content:
 ds.gap spacing: $ds.spaces.horizontal-gap.large
 optional ftd.background background:
 ds.hv inset: $ds.spaces.inset-wide.large
-ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
+ds.gap margin: $ds.spaces.vertical-gap.large
 boolean wrap: false
 ftd.align align: center
 
@@ -16,7 +16,7 @@ ftd.align align: center
 width: fill-container
 align-content: center
 background: $section-row.background
-margin-bottom: $section-row.margin
+margin-bottom.px: $section-row.margin.gap
 
 -- ftd.row:
 width if { section-row.flush == full }: fill-container

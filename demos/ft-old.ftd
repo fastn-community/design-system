@@ -53,7 +53,7 @@ link: /
 -- ds.section-row:
 background.solid: $ds.colors.background.step-1
 align: top-center
-margin.px: $ds.spaces.vertical-gap.extra-extra-large.gap
+margin: $ds.spaces.vertical-gap.extra-extra-large
 
 -- product: FTD Language for prose
 icon: https://www.fifthtry.com/-/fifthtry.com/assets/images/ftd-logo.svg
@@ -130,7 +130,7 @@ background.solid: $ds.colors.background.step-1
 inset: $ds.spaces.inset-square.large
 spacing: $ds.spaces.horizontal-gap.space-between
 flush: full
-margin.px: $ds.spaces.vertical-gap.extra-large.gap
+margin: $ds.spaces.vertical-gap.extra-large
 
 -- ftd.image:
 height.fixed.px: 38

@@ -114,14 +114,14 @@ text-align: $copy-large.text-align
 body text:
 ftd.color color: $ds.colors.text
 ftd.display display: inline
-optional ftd.length.px margin:
+optional ds.gap margin:
 optional ftd.resizing height:
 
 -- ftd.text: $copy-regular.text
 color: $copy-regular.color
 role: $ds.types.copy-regular
 display: $copy-regular.display
-margin-bottom: $copy-regular.margin
+margin-bottom.px if { copy-regular.margin != NULL }: $copy-regular.margin.gap
 height: $copy-regular.height
 
 -- end: copy-regular

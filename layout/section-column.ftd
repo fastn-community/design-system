@@ -13,7 +13,7 @@ optional ftd.background outer-background:
 optional ftd.background inner-background:
 ;; todo: is the follow reference to `design-system` correct?
 ds.hv inset: $ds.spaces.inset-wide.medium
-ftd.length.px margin: $ds.spaces.vertical-gap.large.gap
+ds.gap margin: $ds.spaces.vertical-gap.large
 ftd.align align: center
 ds.element-radius radius: $ds.radius.medium
 
@@ -21,7 +21,7 @@ ds.element-radius radius: $ds.radius.medium
 width: fill-container
 align-content: center
 background: $section-column.outer-background
-margin-bottom: $section-column.margin
+margin-bottom.px: $section-column.margin.gap
 
 -- ftd.column:
 width if { section-column.flush == full }: fill-container
