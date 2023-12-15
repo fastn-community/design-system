@@ -55,7 +55,6 @@
 -- component primary-button:
 caption title:
 optional string link:
-module design-system: ds
 boolean $hover: false
 
 -- ftd.row:
@@ -72,7 +71,6 @@ width: hug-content
 min-width.fixed.px: 322
 
 -- ftd.text: $primary-button.title
-if: { primary-button.title != NULL }
 role: $inherited.types.button-small
 color: $inherited.colors.cta-primary.text
 link: $primary-button.link
@@ -94,7 +92,6 @@ white-space: nowrap
 -- component secondary-button:
 caption title:
 optional string link:
-module design-system: ds
 boolean $hover: false
 
 -- ftd.row:
@@ -111,7 +108,6 @@ width: hug-content
 min-width.fixed.px: 322
 
 -- ftd.text: $secondary-button.title
-if: { secondary-button.title != NULL }
 role: $inherited.types.button-small
 color: $inherited.colors.cta-secondary.text
 link: $secondary-button.link
@@ -133,7 +129,6 @@ white-space: nowrap
 -- component tertiary-button:
 caption title:
 optional string link:
-module design-system: ds
 boolean $hover: false
 
 -- ftd.row:
@@ -150,7 +145,6 @@ width: hug-content
 min-width.fixed.px: 322
 
 -- ftd.text: $tertiary-button.title
-if: { tertiary-button.title != NULL }
 role: $inherited.types.button-small
 color: $inherited.colors.cta-tertiary.text
 link: $tertiary-button.link
@@ -172,7 +166,6 @@ white-space: nowrap
 -- component success-button:
 caption title:
 optional string link:
-module design-system: ds
 boolean $hover: false
 
 -- ftd.row:
@@ -188,7 +181,6 @@ width: hug-content
 min-width.fixed.px: 322
 
 -- ftd.text: $success-button.title
-if: { success-button.title != NULL }
 role: $inherited.types.button-small
 color: $inherited.colors.success.text
 link: $success-button.link
@@ -210,7 +202,6 @@ white-space: nowrap
 -- component warning-button:
 caption title:
 optional string link:
-module design-system: ds
 boolean $hover: false
 
 -- ftd.row:
@@ -226,7 +217,6 @@ width: hug-content
 min-width.fixed.px: 322
 
 -- ftd.text: $warning-button.title
-if: { warning-button.title != NULL }
 role: $inherited.types.button-small
 color: $inherited.colors.warning.text
 link: $warning-button.link
@@ -248,7 +238,6 @@ white-space: nowrap
 -- component danger-button:
 caption title:
 optional string link:
-module design-system: ds
 boolean $hover: false
 
 -- ftd.row:
@@ -265,7 +254,6 @@ width: hug-content
 min-width.fixed.px: 322
 
 -- ftd.text: $danger-button.title
-if: { danger-button.title != NULL }
 role: $inherited.types.button-small
 color: $inherited.colors.cta-danger.text
 link: $danger-button.link
@@ -287,7 +275,6 @@ white-space: nowrap
 -- component info-button:
 caption title:
 optional string link:
-module design-system: ds
 boolean $hover: false
 
 -- ftd.row:
@@ -303,7 +290,6 @@ width: hug-content
 min-width.fixed.px: 322
 
 -- ftd.text: $info-button.title
-if: { info-button.title != NULL }
 role: $inherited.types.button-small
 color: $inherited.colors.info.text
 link: $info-button.link
@@ -386,6 +372,76 @@ link: index.html
 link: /
 
 -- button: Default button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- primary-button: primary-button
+link: /
+
+-- primary-button: primary-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- secondary-button: secondary-button
+link: /
+
+-- secondary-button: secondary-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- tertiary-button: tertiary-button
+link: /
+
+-- tertiary-button: tertiary-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- success-button: success-button
+link: /
+
+-- success-button: success-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- warning-button: warning-button
+link: /
+
+-- warning-button: warning-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- danger-button: danger-button
+link: /
+
+-- danger-button: danger-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- info-button: info-button
+link: /
+
+-- info-button: info-button
 link: /
 
 -- end: ds.rendered
