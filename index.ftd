@@ -1,56 +1,79 @@
 -- import: fastn-community.github.io/dark-flame-cs
+-- import: fastn-community.github.io/saturated-sunset-cs
 -- import: fastn-community.github.io/roboto-typography
+-- import: fastn-community.github.io/design-system/demos
 
 -- import: fastn-community.github.io/design-system/spaces as spaces-module
 export: hv, gap, insets, squishes, stretches, gaps, space-data
+
+-- import: fastn-community.github.io/design-system/radius as radius-module
+export: element-radius, radius-data
 
 -- import: fastn-community.github.io/code-block
 export: code, rendered
 
 -- import: fastn-community.github.io/design-system/form/button as button-module
-export: button, primary-button, secondary-button, tertiary-button, success-button, warning-button, danger-button, info-button, header-link
+export: button, button-kind, button-variant, button-width, button-size, primary-button, secondary-button, tertiary-button, success-button, warning-button, danger-button, info-button, header-link
+
+-- import: fastn-community.github.io/design-system/header
+export: header-link
+
+-- import: fastn-community.github.io/design-system/footer as footer-module
+export: footer-heading, footer-secondary-heading, footer-link, copyright-text
 
 -- import: fastn-community.github.io/design-system/form/button-group as bg-module
 export: button-group
 
--- import: fastn-community.github.io/design-system/pages/blank
-export: blank-page
+-- import: fastn-community.github.io/design-system/layout/page as page-module
+export: page, flush, page-widths, narrow-widths, widths
+exposing: narrow-widths
 
--- import: fastn-community.github.io/design-system/pages/full-width
-export: full-width-page, section-grid, flush-wide, page-widths
+-- import: fastn-community.github.io/design-system/layout/section-row as section-row-module
+export: section-row
 
--- import: fastn-community.github.io/design-system/layout/section-grid as section-grid-module
-export: section-grid
+-- import: fastn-community.github.io/design-system/layout/section-column as section-column-module
+export: section-column
+
+-- import: fastn-community.github.io/design-system/layout/container as container-module
+export: container
 
 -- import: fastn-community.github.io/design-system/layout/column as column-module
 export: column
 
 -- import: fastn-community.github.io/design-system/layout/row as row-module
-export: row, inline-row
+export: row
 
--- import: fastn-community.github.io/design-system/headers/basic-header as bhm
-export: basic-header
-
--- import: fastn-community.github.io/design-system/hero/with-two-cta
-export: hero-with-two-cta
-
-
+-- import: fastn-community.github.io/design-system/layout/inline-row as inline-row-module
+export: inline-row
 
 -- import: fastn-community.github.io/design-system/form/icon-button as icon-button-module
-export: icon-button, circle-text-button, phosphor-icon-button, fa-icon-button
+export: icon-button, circle-text-button, phosphor-icon-button, fa-icon-button, icon-position, phosphor-variant
 
 -- import: fastn-community.github.io/design-system/typography as typography-module
 export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny, copy-large, copy-regular, copy-small, fine-print, source-code, link
 exposing: heading-large, copy-regular
 
+
+
+
+;; -- ftd.color-scheme colors: $saturated-sunset-cs.main
 -- ftd.color-scheme colors: $dark-flame-cs.main
+
 -- ftd.type-data types: $roboto-typography.types
 
 -- spaces-module.space-data spaces: $spaces-module.spaces
+-- radius-module.radius-data radius: $radius-module.radius
 
 
 
--- blank.blank-page: design-system
+-- ds.page:
+widths: $narrow-widths
+
+-- ds.section-column:
+spacing: $ds.spaces.vertical-gap.medium
+align: left
+
+-- ds.heading-hero: Design System
 
 -- ds.button-group:
 
@@ -64,7 +87,7 @@ link: https://github.com/fastn-community/design-system/blob/main/LICENSE
 
 -- end: ds.button-group
 
--- copy-regular:
+-- ds.copy-regular:
 
 This is the package you have been waiting for!
 
@@ -72,14 +95,10 @@ This is the package you have been waiting for!
 - [Icon Buttons](form/icon-button/)
 - [Button Group (WIP)](form/button-group/)
 - [Typography](typography/)
-- [Blank Page](pages/blank/)
-- [Full Width Page](pages/full-width/)
-- [Basic Header](headers/basic-header/)
+- [Page](layout/page/)
 
--- heading-large: Demos
+-- demos.demo:
 
--- copy-regular:
+-- end: ds.section-column
 
-- [Dropbase.io](demos/dropbase/)
-
--- end: blank.blank-page
+-- end: ds.page

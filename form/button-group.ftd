@@ -1,5 +1,4 @@
 -- component button-group:
-module design-system: ds
 children buttons:
 ds.gap spacing: $ds.spaces.vertical-gap.small
 
@@ -14,7 +13,7 @@ children: $button-group.buttons
 
 
 
--- ds.blank-page: Button Group
+-- ds.page: Button Group
 
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
@@ -23,8 +22,8 @@ link: index.html
 -- ds.rendered:
 
 \-- button-group:
--- button-group:
+-- ds.button-group:
 
 -- end: ds.rendered
 
--- end: ds.blank-page
+-- end: ds.page

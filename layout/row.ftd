@@ -1,11 +1,11 @@
--- import: fastn-community.github.io/design-system/hack
+-- import: fastn-community.github.io/design-system/spaces
 
 -- component row:
 optional caption title:
-module design-system: ds
 ds.hv inset: $ds.spaces.inset-square.zero
 ds.gap spacing: $ds.spaces.horizontal-gap.medium
 ftd.resizing width: fill-container
+ftd.align align-content: center
 children content:
 
 -- ftd.row:
@@ -13,34 +13,10 @@ width: $row.width
 padding-vertical.px: $row.inset.vertical
 padding-horizontal.px: $row.inset.horizontal
 spacing.fixed.px: $row.spacing.gap
-spacing if { row.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
-align-content: center
+spacing if { row.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
+align-content: $row.align-content
 children: $row.content
 
 -- end: ftd.row
 
 -- end: row
-
-
-
--- component inline-row:
-optional caption title:
-module design-system: ds
-ds.hv inset: $ds.spaces.inset-square.zero
-ds.gap spacing: $ds.spaces.horizontal-gap.medium
-ftd.resizing width: hug-content
-children content:
-
--- ftd.row:
-width: $inline-row.width
-padding-vertical.px: $inline-row.inset.vertical
-padding-horizontal.px: $inline-row.inset.horizontal
-spacing.fixed.px: $inline-row.spacing.gap
-spacing if { inline-row.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
-align-content: center
-children: $inline-row.content
-
--- end: ftd.row
-
-
--- end: inline-row

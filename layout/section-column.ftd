@@ -1,0 +1,51 @@
+-- import: fastn-community.github.io/design-system/spaces
+-- import: fastn-community.github.io/design-system/radius
+
+
+
+-- component section-column:
+optional caption title:
+ds.flush flush: to-header
+children content:
+;; todo: is the follow reference to `design-system` correct?
+ds.gap spacing: $ds.spaces.vertical-gap.large
+optional ftd.background outer-background:
+optional ftd.background inner-background:
+;; todo: is the follow reference to `design-system` correct?
+ds.hv inset: $ds.spaces.inset-wide.medium
+ds.gap margin: $ds.spaces.vertical-gap.large
+ftd.align align: center
+ds.element-radius radius: $ds.radius.medium
+
+-- ftd.column:
+width: fill-container
+align-content: center
+background: $section-column.outer-background
+margin-bottom.px: $section-column.margin.gap
+
+-- ftd.column:
+width if { section-column.flush == full }: fill-container
+max-width.fixed if { section-column.flush == narrow }: $ds.widths.narrow
+max-width.fixed if { section-column.flush == wide }: $ds.widths.wide
+width.fixed: $ds.widths.regular
+children: $section-column.content
+spacing if { section-column.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
+spacing.fixed.px: $section-column.spacing.gap
+align-content: $section-column.align
+background: $section-column.inner-background
+padding-vertical.px: $section-column.inset.vertical
+padding-horizontal.px: $section-column.inset.horizontal
+border-top-left-radius.px if { section-column.radius.top-left != $radius.HACK-RADIUS-ROUND }: $section-column.radius.top-left
+border-top-right-radius.px if { section-column.radius.top-right != $radius.HACK-RADIUS-ROUND }: $section-column.radius.top-right
+border-bottom-left-radius.px if { section-column.radius.bottom-left != $radius.HACK-RADIUS-ROUND }: $section-column.radius.bottom-left
+border-bottom-right-radius.px if { section-column.radius.bottom-right != $radius.HACK-RADIUS-ROUND }: $section-column.radius.bottom-right
+border-top-left-radius.percent if { section-column.radius.top-left == $radius.HACK-RADIUS-ROUND }: 50
+border-top-right-radius.percent if { section-column.radius.top-right == $radius.HACK-RADIUS-ROUND }: 50
+border-bottom-left-radius.percent if { section-column.radius.bottom-left == $radius.HACK-RADIUS-ROUND }: 50
+border-bottom-right-radius.percent if { section-column.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: section-column

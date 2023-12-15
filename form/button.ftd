@@ -1,43 +1,47 @@
--- integer kind-primary: 1
--- integer kind-secondary: 2
--- integer kind-tertiary: 3
--- integer kind-success: 4
--- integer kind-warning: 5
--- integer kind-danger: 6
--- integer kind-info: 7
-
-
 -- or-type button-kind:
 
--- constant integer kind-primary: 1
--- constant integer kind-secondary: 2
--- constant integer kind-tertiary: 3
--- constant integer kind-success: 4
--- constant integer kind-warning: 5
--- constant integer kind-danger: 6
--- constant integer kind-info: 7
+-- constant integer primary: 1
+-- constant integer secondary: 2
+-- constant integer tertiary: 3
+-- constant integer success: 4
+-- constant integer warning: 5
+-- constant integer danger: 6
+-- constant integer info: 7
 
 -- end: button-kind
 
 ;; These are variants
--- integer solid: 0
--- integer outline: 1
--- integer ghost: 2
--- integer link: 3
 
+-- or-type button-variant:
+
+-- constant integer solid: 0
+-- constant integer outline: 1
+-- constant integer ghost: 2
+-- constant integer link: 3
+
+-- end: button-variant
+
+
+-- or-type button-width:
 
 ;; default padding
--- integer width-default: 0
+-- constant integer default: 0
 ;; extra wide buttons
--- integer width-wide: 1
+-- constant integer wide: 1
 ;; full width buttons
--- integer width-full: 2
+-- constant integer full: 2
+
+-- end: button-width
 
 
--- integer large: 0
--- integer medium: 1
--- integer small: 2
--- integer extra-small: 3
+-- or-type button-size:
+
+-- constant integer large: 0
+-- constant integer medium: 1
+-- constant integer small: 2
+-- constant integer extra-small: 3
+
+-- end: button-size
 
 
 
@@ -322,21 +326,20 @@ white-space: nowrap
 caption title:
 optional string link:
 boolean enabled: true
-integer width: $width-default
-integer size: $medium
-integer variant: $solid
-integer kind: $kind-primary
-module design-system: ds
+button-width width: default
+button-size size: medium
+button-variant variant: solid
+button-kind kind: primary
 ;; private stuff
 boolean $hover: false
 
 -- ftd.row:
-background.solid: $inherited.colors.cta-primary.base
+background.solid: $ds.colors.cta-primary.base
 border-radius.px: 8
 padding-horizontal.px: 16
 padding-vertical.px: 10
 align-content: center
-background.solid if { button.hover }: $inherited.colors.cta-primary.hover
+background.solid if { button.hover }: $ds.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.hover, v = false)
 spacing.fixed.px: 8
@@ -346,8 +349,8 @@ min-width: auto
 -- ftd.text: $button.title
 if: { button.title != NULL }
 ;; if: { ftd.or-type-to-integer(button.kind) == 0 }
-role: $inherited.types.button-small
-color: $inherited.colors.cta-primary.text
+role: $ds.types.button-small
+color: $ds.colors.cta-primary.text
 link: $button.link
 white-space: nowrap
 
@@ -360,18 +363,6 @@ white-space: nowrap
 
 
 
--- component header-link:
-module design-system: ds
-caption or body text:
-string link:
-integer kind: $kind-primary
-
--- ftd.text: $header-link.text
-color: $inherited.colors.text-strong
-role: $inherited.types.link
-link: $header-link.link
-
--- end: header-link
 
 
 
@@ -379,9 +370,11 @@ link: $header-link.link
 
 
 
+-- ds.page:
 
+-- ds.section-column:
 
--- ds.blank-page: Buttons
+-- ds.heading-hero: Buttons
 
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
@@ -397,4 +390,6 @@ link: /
 
 -- end: ds.rendered
 
--- end: ds.blank-page
+-- end: ds.section-column
+
+-- end: ds.page

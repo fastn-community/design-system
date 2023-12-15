@@ -1,20 +1,24 @@
--- import: fastn-community.github.io/design-system/hack
+-- import: fastn-community.github.io/design-system/spaces
 
 -- component column:
 optional caption title:
-module design-system: ds
 ds.hv inset: $ds.spaces.inset-square.zero
-ds.gap spacing: $ds.spaces.vertical-gap.medium
+ds.gap spacing: $ds.spaces.horizontal-gap.medium
 ftd.resizing width: fill-container
 children content:
+optional ftd.background background:
+optional ftd.resizing height:
+
 
 -- ftd.column:
 width: $column.width
 padding-vertical.px: $column.inset.vertical
 padding-horizontal.px: $column.inset.horizontal
 spacing.fixed.px: $column.spacing.gap
-spacing if { column.spacing.gap == hack.SPACE-BETWEEN-MAGIC-NUMBER }: space-between
+spacing if { column.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 children: $column.content
+background: $column.background
+height: $column.height
 
 -- end: ftd.column
 

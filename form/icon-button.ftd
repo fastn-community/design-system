@@ -2,10 +2,12 @@
 -- import: fastn-community.github.io/svg-icons/phosphor
 -- import: fastn-community.github.io/svg-icons/fa
 
--- integer icon-at-start: 0
--- integer icon-at-end: 1
+-- or-type icon-position:
 
+-- constant integer at-start: 0
+-- constant integer at-end: 1
 
+-- end: icon-position
 
 
 
@@ -14,14 +16,13 @@
 -- component icon-button:
 optional caption title:
 ftd.image-src icon:
-integer icon-position: $icon-at-start
+icon-position icon-position: at-start
 optional string link:
-integer variant: $button.solid
-integer width: $button.width-default
-integer size: $button.medium
+button.button-variant variant: solid
+button.button-width width: default
+button.button-size size: medium
 boolean outline: false
-integer kind: $button.kind-primary
-module design-system: ds
+button.button-kind kind: primary
 ;; private stuff
 boolean $hover: false
 
@@ -34,7 +35,6 @@ width: $icon-button.width
 size: $icon-button.size
 outline: $icon-button.outline
 kind: $icon-button.kind
-design-system: $icon-button.design-system
 
 -- ftd.image:
 src: $icon-button.icon
@@ -53,10 +53,9 @@ height.fixed.px: 16
 caption ftd.image-src icon:
 optional string link:
 boolean enabled: true
-integer size: $button.medium
+button.button-size size: medium
 boolean outline: false
-integer kind: $button.kind-primary
-module design-system: ds
+button.button-kind kind: primary
 ;; private stuff
 boolean $hover: false
 
@@ -64,8 +63,8 @@ boolean $hover: false
 width.fixed.px: 30
 height.fixed.px: 30
 border-radius.px: 5
-background.solid: $inherited.colors.background.step-1
-background.solid if { square-button.hover }: $inherited.colors.background.step-2
+background.solid: $ds.colors.background.step-1
+background.solid if { square-button.hover }: $ds.colors.background.step-2
 padding.px: 5
 link: $square-button.link
 $on-mouse-enter$: $ftd.set-bool($a = $square-button.hover, v = true)
@@ -84,10 +83,9 @@ width: fill-container
 ftd.image-src icon:
 optional string link:
 boolean enabled: true
-integer size: $button.medium
+button.button-size size: medium
 boolean outline: false
-integer kind: $button.kind-primary
-module design-system: ds
+button.button-kind kind: primary
 ;; private stuff
 boolean $hover: false
 
@@ -95,8 +93,8 @@ boolean $hover: false
 width.fixed.px: 30
 height.fixed.px: 30
 border-radius.percent: 50
-background.solid: $inherited.colors.background.step-1
-background.solid if { circle-button.hover }: $inherited.colors.background.step-2
+background.solid: $ds.colors.background.step-1
+background.solid if { circle-button.hover }: $ds.colors.background.step-2
 padding.px: 5
 link: $circle-button.link
 $on-mouse-enter$: $ftd.set-bool($a = $circle-button.hover, v = true)
@@ -114,23 +112,18 @@ width: fill-container
 -- component circle-text-button:
 caption text:
 optional string link:
-module design-system: ds
 
--- ftd.column:
-background.solid: $inherited.colors.cta-primary.base
-border-color: $inherited.colors.cta-primary.border
+-- ftd.text: $circle-text-button.text
+padding.px: 8
+color: $ds.colors.cta-primary.text
+background.solid: $ds.colors.cta-primary.base
+border-color: $ds.colors.cta-primary.border
 border-width.px: 2
 border-radius.percent: 50
 min-width.fixed.px: 24
 min-height.fixed.px: 24
 link: $circle-text-button.link
 align-content: center
-
--- ds.fine-print: 
-text: $circle-text-button.text
-color: $inherited.colors.cta-primary.text
-
--- end: ftd.column
 
 -- end: circle-text-button
 
@@ -141,29 +134,30 @@ color: $inherited.colors.cta-primary.text
 
 
 
--- integer phosphor-regular: 0
--- integer phosphor-bold: 1
--- integer phosphor-duotone: 2
--- integer phosphor-fill: 3
--- integer phosphor-light: 4
--- integer phosphor-thin: 5
+-- or-type phosphor-variant:
 
+-- constant integer regular: 0
+-- constant integer bold: 1
+-- constant integer duotone: 2
+-- constant integer fill: 3
+-- constant integer light: 4
+-- constant integer thin: 5
 
+-- end: phosphor-variant
 
 
 
 -- component phosphor-icon-button:
 optional caption title:
-integer phosphor-variant: $phosphor-bold
+phosphor-variant phosphor-variant: bold
 string icon:
-integer icon-position: $icon-at-start
+icon-position icon-position: at-start
 optional string link:
-integer variant: $button.solid
-integer width: $button.width-default
-integer size: $button.medium
+button.button-variant variant: solid
+button.button-width width: default
+button.button-size size: medium
 boolean outline: false
-integer kind: $button.kind-primary
-module design-system: ds
+button.button-kind kind: primary
 ;; private stuff
 boolean $hover: false
 
@@ -176,31 +170,30 @@ width: $phosphor-icon-button.width
 size: $phosphor-icon-button.size
 outline: $phosphor-icon-button.outline
 kind: $phosphor-icon-button.kind
-design-system: $phosphor-icon-button.design-system
 
 -- phosphor.regular: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-regular }
+if: { phosphor-icon-button.phosphor-variant == regular }
 
 -- phosphor.bold: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-bold }
+if: { phosphor-icon-button.phosphor-variant == bold }
 
 -- phosphor.duotone: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-duotone }
+if: { phosphor-icon-button.phosphor-variant == duotone }
 
 -- phosphor.fill: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-fill }
+if: { phosphor-icon-button.phosphor-variant == fill }
 
 -- phosphor.light: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-light }
+if: { phosphor-icon-button.phosphor-variant == light }
 
 -- phosphor.thin: $phosphor-icon-button.icon
 size: 16
-if: { phosphor-icon-button.phosphor-variant == phosphor-thin }
+if: { phosphor-icon-button.phosphor-variant == thin }
 
 -- end: button-wrapper
 
@@ -219,14 +212,13 @@ if: { phosphor-icon-button.phosphor-variant == phosphor-thin }
 optional caption title:
 boolean brand: false
 string icon:
-integer icon-position: $icon-at-start
+icon-position icon-position: at-start
 optional string link:
-integer variant: $button.solid
-integer width: $button.width-default
-integer size: $button.medium
+button.button-variant variant: solid
+button.button-width width: default
+button.button-size size: medium
 boolean outline: false
-integer kind: $button.kind-primary
-module design-system: ds
+button.button-kind kind: primary
 ;; private stuff
 boolean $hover: false
 
@@ -239,7 +231,6 @@ width: $fa-icon-button.width
 size: $fa-icon-button.size
 outline: $fa-icon-button.outline
 kind: $fa-icon-button.kind
-design-system: $fa-icon-button.design-system
 
 -- fa.brand: $fa-icon-button.icon
 size: 13
@@ -266,41 +257,47 @@ if: { !fa-icon-button.brand }
 
 -- component button-wrapper:
 optional caption title:
-integer icon-position: $icon-at-start
+icon-position icon-position: at-start
 optional string link:
-integer variant: $button.solid
-integer width: $button.width-default
-integer size: $button.medium
+button.button-variant variant: solid
+button.button-width width: default
+button.button-size size: medium
 boolean outline: false
-integer kind: $button.kind-primary
-module design-system: ds
+button.button-kind kind: primary
 children uis:
 ftd.length.px border-radius: 8
 ;; private stuff
 boolean $hover: false
 
 -- ftd.row:
-background.solid: $inherited.colors.background.step-1
+background.solid: $ds.colors.background.step-1
 border-radius: $button-wrapper.border-radius
 padding-horizontal.px: 18
 padding-vertical.px: 16
 align-content: center
-background.solid if { button-wrapper.hover }: $inherited.colors.background.step-2
+background.solid if { button-wrapper.hover }: $ds.colors.background.step-2
 $on-mouse-enter$: $ftd.set-bool($a = $button-wrapper.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-wrapper.hover, v = false)
 spacing.fixed.px: 8
 width: hug-content
 min-width: auto
 link: $button-wrapper.link
-color: $inherited.colors.text-strong
+color: $ds.colors.text-strong
+
+-- ftd.text: $button-wrapper.title
+if: { button-wrapper.title != NULL && button-wrapper.icon-position == at-end}
+role: $ds.types.button-small
+color: $ds.colors.text-strong
+white-space: nowrap
+align-self: center
 
 -- ui:
 for: $ui in $button-wrapper.uis
 
 -- ftd.text: $button-wrapper.title
-if: { button-wrapper.title != NULL }
-role: $inherited.types.button-small
-color: $inherited.colors.text-strong
+if: { button-wrapper.title != NULL && button-wrapper.icon-position == at-start}
+role: $ds.types.button-small
+color: $ds.colors.text-strong
 white-space: nowrap
 align-self: center
 
@@ -316,7 +313,9 @@ align-self: center
 
 
 
--- ds.blank-page: Icon Buttons
+-- ds.page: Icon Buttons
+
+-- ds.section-column:
 
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
@@ -383,4 +382,6 @@ link: /
 
 -- end: ds.rendered
 
--- end: ds.blank-page
+-- end: ds.section-column
+
+-- end: ds.page

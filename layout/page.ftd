@@ -1,0 +1,96 @@
+-- import: fastn-community.github.io/dark-mode-switcher as dms
+-- import: fastn-community.github.io/design-system/demos
+
+
+-- or-type flush:
+
+-- constant integer to-header: 0 ;; as wide as header
+-- constant integer full: 1      ;; edge to edge
+-- constant integer wide: 2      ;; 20% wider than the header
+-- constant integer narrow: 3    ;; 20% narrower
+
+-- end: flush
+
+
+
+-- record page-widths:
+ftd.length regular:
+ftd.length narrow:
+ftd.length wide:
+
+-- page-widths widths:
+regular.px: 1000
+narrow.px: 800
+wide.px: 1200
+
+-- ds.page-widths narrow-widths:
+regular.px: 800
+narrow.px: 600
+wide.px: 1000
+
+
+-- component page:
+optional caption title:
+optional body description:
+children content:
+ftd.length.px spacing: 0
+page-widths widths: $widths
+;; todo: is the follow reference to `.gap` correct?
+ds.gap margin: $ds.spaces.vertical-gap.large
+
+-- ftd.document:
+title: $page.title
+description: $page.description
+colors: $ds.colors
+types: $ds.types
+
+-- dms.dark-mode-switcher-float:
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+spacing.fixed: $page.spacing
+color: $ds.colors.text
+background.solid: $ds.colors.background.base
+
+-- ui:
+for: $ui in $page.content
+
+-- ftd.column:
+height.fixed.px: $page.margin.gap
+width: fill-container
+align-content: center
+
+-- ftd.text: Created using fastn
+color: $ds.colors.background.base
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.document
+
+-- end: page
+
+
+
+
+
+
+
+
+
+
+
+-- page-widths test-widths:
+regular.px: 400
+narrow.px: 300
+wide.px: 1200
+
+
+-- ds.page:
+;; widths: $test-widths
+
+-- demos.demo:
+
+-- end: ds.page

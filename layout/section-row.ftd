@@ -1,0 +1,38 @@
+-- import: fastn-community.github.io/design-system/spaces
+
+
+-- component section-row:
+optional caption title:
+ds.flush flush: to-header
+children content:
+ds.gap spacing: $ds.spaces.horizontal-gap.large
+optional ftd.background background:
+ds.hv inset: $ds.spaces.inset-wide.large
+ds.gap margin: $ds.spaces.vertical-gap.large
+boolean wrap: false
+ftd.align align: center
+
+-- ftd.column:
+width: fill-container
+align-content: center
+background: $section-row.background
+margin-bottom.px: $section-row.margin.gap
+
+-- ftd.row:
+width if { section-row.flush == full }: fill-container
+max-width.fixed if { section-row.flush == narrow }: $ds.widths.narrow
+max-width.fixed if { section-row.flush == wide }: $ds.widths.wide
+width.fixed: $ds.widths.regular
+children: $section-row.content
+align-content: $section-row.align
+spacing if { section-row.spacing.gap == $spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
+spacing.fixed.px: $section-row.spacing.gap
+wrap: $section-row.wrap
+padding-vertical.px: $section-row.inset.vertical
+padding-horizontal.px: $section-row.inset.horizontal
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: section-row
