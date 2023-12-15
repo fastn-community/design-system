@@ -123,7 +123,6 @@ border-radius.percent: 50
 min-width.fixed.px: 24
 min-height.fixed.px: 24
 link: $circle-text-button.link
-align-content: center
 
 -- end: circle-text-button
 
