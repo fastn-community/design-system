@@ -120,7 +120,10 @@ background.solid: $ds.colors.cta-primary.base
 border-color: $ds.colors.cta-primary.border
 border-width.px: 2
 border-radius.percent: 50
+min-width.fixed.px: 24
+min-height.fixed.px: 24
 link: $circle-text-button.link
+align-content: center
 
 -- end: circle-text-button
 
@@ -269,8 +272,8 @@ boolean $hover: false
 -- ftd.row:
 background.solid: $ds.colors.background.step-1
 border-radius: $button-wrapper.border-radius
-padding-horizontal.px: 16
-padding-vertical.px: 10
+padding-horizontal.px: 18
+padding-vertical.px: 16
 align-content: center
 background.solid if { button-wrapper.hover }: $ds.colors.background.step-2
 $on-mouse-enter$: $ftd.set-bool($a = $button-wrapper.hover, v = true)
