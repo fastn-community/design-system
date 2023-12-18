@@ -40,7 +40,7 @@ custom tools with SQL and Python in minutes.
 -- component header:
 
 -- ds.section-row:
-background.solid: $ds.colors.background.step-1
+outer-background.solid: $ds.colors.background.step-1
 spacing: $ds.spaces.vertical-gap.space-between
 margin: $ds.spaces.vertical-gap.extra-large
 inset: $ds.spaces.inset-wide.large
