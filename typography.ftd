@@ -32,12 +32,14 @@ text-align: $heading-eyebrow.text-align
 -- component heading-large:
 caption text:
 ftd.resizing width: fill-container
+optional ftd.text-align text-align:
 ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-large.text
 width: $heading-large.width
 color: $heading-large.color
 role: $ds.types.heading-large
+text-align: $heading-large.text-align
 
 -- end: heading-large
 
@@ -45,12 +47,14 @@ role: $ds.types.heading-large
 -- component heading-medium:
 caption text:
 ftd.resizing width: fill-container
+optional ftd.text-align text-align:
 ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-medium.text
 width: $heading-medium.width
 color: $heading-medium.color
 role: $ds.types.heading-medium
+text-align: $heading-medium.text-align
 
 -- end: heading-medium
 
@@ -58,12 +62,14 @@ role: $ds.types.heading-medium
 -- component heading-small:
 caption text:
 ftd.resizing width: fill-container
+optional ftd.text-align text-align:
 ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-small.text
 width: $heading-small.width
 color: $heading-small.color
 role: $ds.types.heading-small
+text-align: $heading-small.text-align
 
 -- end: heading-small
 
@@ -71,12 +77,14 @@ role: $ds.types.heading-small
 -- component heading-tiny:
 caption text:
 ftd.resizing width: fill-container
+optional ftd.text-align text-align:
 ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-tiny.text
 width: $heading-tiny.width
 color: $heading-tiny.color
 role: $ds.types.heading-tiny
+text-align: $heading-tiny.text-align
 
 -- end: heading-tiny
 
@@ -115,6 +123,7 @@ body text:
 ftd.color color: $ds.colors.text
 ftd.display display: inline
 optional ds.gap margin:
+optional ftd.text-align text-align:
 optional ftd.resizing height:
 
 -- ftd.text: $copy-regular.text
@@ -123,6 +132,7 @@ role: $ds.types.copy-regular
 display: $copy-regular.display
 margin-bottom.px if { copy-regular.margin != NULL }: $copy-regular.margin.gap
 height: $copy-regular.height
+text-align: $copy-regular.text-align
 
 -- end: copy-regular
 
@@ -130,12 +140,14 @@ height: $copy-regular.height
 -- component copy-small:
 body text:
 ftd.color color: $ds.colors.text
+optional ftd.text-align text-align:
 ftd.display display: inline
 
 -- ftd.text: $copy-small.text
 color: $copy-small.color
 role: $ds.types.copy-small
 display: $copy-small.display
+text-align: $copy-small.text-align
 
 -- end: copy-small
 
@@ -143,12 +155,14 @@ display: $copy-small.display
 -- component fine-print:
 body text:
 ftd.color color: $ds.colors.text
+optional ftd.text-align text-align:
 ftd.display display: inline
 
 -- ftd.text: $fine-print.text
 color: $fine-print.color
 role: $ds.types.fine-print
 display: $fine-print.display
+text-align: $fine-print.text-align
 
 -- end: fine-print
 
@@ -159,6 +173,7 @@ display: $fine-print.display
 caption or body text:
 string link:
 ftd.color color: $ds.colors.cta-primary.base
+optional ftd.text-align text-align:
 ftd.display display: inline
 
 -- ftd.text: $link.text
@@ -166,6 +181,7 @@ color: $link.color
 role: $ds.types.link
 display: $link.display
 link: $link.link
+text-align: $link.text-align
 
 -- end: link
 
