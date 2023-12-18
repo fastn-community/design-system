@@ -6,7 +6,8 @@ optional caption title:
 ds.flush flush: to-header
 children content:
 ds.gap spacing: $ds.spaces.horizontal-gap.large
-optional ftd.background background:
+optional ftd.background outer-background:
+optional ftd.background inner-background:
 ds.hv inset: $ds.spaces.inset-wide.large
 ds.gap margin: $ds.spaces.vertical-gap.large
 boolean wrap: false
@@ -15,7 +16,7 @@ ftd.align align: center
 -- ftd.column:
 width: fill-container
 align-content: center
-background: $section-row.background
+background: $section-row.outer-background
 margin-bottom.px: $section-row.margin.gap
 
 -- ftd.row:
@@ -30,6 +31,7 @@ spacing.fixed.px: $section-row.spacing.gap
 wrap: $section-row.wrap
 padding-vertical.px: $section-row.inset.vertical
 padding-horizontal.px: $section-row.inset.horizontal
+background: $section-row.inner-background
 
 -- end: ftd.row
 
