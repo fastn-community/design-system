@@ -6,6 +6,7 @@ ds.hv inset: $ds.spaces.inset-square.zero
 ds.gap spacing: $ds.spaces.horizontal-gap.medium
 ftd.resizing width: fill-container
 children content:
+ftd.align align-content: center
 optional ftd.background background:
 optional ftd.resizing height:
 
@@ -18,6 +19,7 @@ spacing.fixed.px: $column.spacing.gap
 spacing if { column.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 children: $column.content
 background: $column.background
+align-content: $column.align-content
 height: $column.height
 
 -- end: ftd.column
