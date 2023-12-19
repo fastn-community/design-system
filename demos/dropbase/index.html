@@ -4660,6 +4660,7 @@ let fastn_community_github_io_design_system_layout_row__row = function (parent, 
       width: fastn_dom.Resizing.FillContainer,
       align_content: fastn_dom.AlignContent.Center,
       content: fastn.mutableList([]),
+      link: null,
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
@@ -4667,6 +4668,7 @@ let fastn_community_github_io_design_system_layout_row__row = function (parent, 
     parenti0.setProperty(fastn_dom.PropertyKind.Width, __args__.width, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(__args__.inset.get("horizontal")), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(__args__.inset.get("vertical")), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Link, __args__.link, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, __args__.align_content, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([__args__.spacing.get("gap"),
     global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER], function () {

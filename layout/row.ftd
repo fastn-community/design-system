@@ -7,6 +7,7 @@ ds.gap spacing: $ds.spaces.horizontal-gap.medium
 ftd.resizing width: fill-container
 ftd.align align-content: center
 children content:
+optional string link:
 
 -- ftd.row:
 width: $row.width
@@ -16,6 +17,7 @@ spacing.fixed.px: $row.spacing.gap
 spacing if { row.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 align-content: $row.align-content
 children: $row.content
+link: $row.link
 
 -- end: ftd.row
 
