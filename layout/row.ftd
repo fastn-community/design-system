@@ -8,6 +8,7 @@ ftd.resizing width: fill-container
 ftd.align align-content: center
 children content:
 optional string link:
+boolean wrap: false
 
 -- ftd.row:
 width: $row.width
@@ -18,6 +19,7 @@ spacing if { row.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-
 align-content: $row.align-content
 children: $row.content
 link: $row.link
+wrap: $row.wrap
 
 -- end: ftd.row
 
