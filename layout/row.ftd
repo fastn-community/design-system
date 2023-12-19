@@ -9,6 +9,7 @@ ftd.align align-content: center
 children content:
 optional string link:
 boolean wrap: false
+optional ftd.background background:
 
 -- ftd.row:
 width: $row.width
@@ -18,6 +19,7 @@ spacing.fixed.px: $row.spacing.gap
 spacing if { row.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 align-content: $row.align-content
 children: $row.content
+background: $column.background
 link: $row.link
 wrap: $row.wrap
 
