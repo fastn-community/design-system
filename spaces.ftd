@@ -24,7 +24,7 @@ hv small-zero:
 hv medium-zero:
 hv large-zero:
 
-;; for textboxes, textareas, and other form elements.
+;; for text-boxes, text-area, and other form elements.
 -- record talls:
 hv small:
 hv medium:
