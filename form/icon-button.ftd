@@ -269,7 +269,6 @@ ftd.length.px border-radius: 8
 boolean $hover: false
 
 -- ftd.row:
-background.solid if { button-wrapper.variant == solid }: $ds.colors.background.step-1
 background.solid if { button-wrapper.kind == primary && button-wrapper.variant == solid}: $ds.colors.cta-primary.base
 background.solid if { button-wrapper.kind == secondary && button-wrapper.variant == solid}: $ds.colors.cta-secondary.base
 background.solid if { button-wrapper.kind == tertiary && button-wrapper.variant == solid}: $ds.colors.cta-tertiary.base
@@ -286,17 +285,16 @@ border-color if { button-wrapper.variant == outline && button-wrapper.kind == su
 border-color if { button-wrapper.variant == outline && button-wrapper.kind == warning}: $ds.colors.warning.border
 border-color if { button-wrapper.variant == outline && button-wrapper.kind == danger}: $ds.colors.cta-danger.border
 border-color if { button-wrapper.variant == outline && button-wrapper.kind == info}: $ds.colors.info.border
-padding-horizontal.px: 18
-padding-vertical.px: 16
+padding-horizontal.px: 16
+padding-vertical.px: 12
 align-content: center
 background.solid if { button-wrapper.hover }: $ds.colors.background.step-2
 $on-mouse-enter$: $ftd.set-bool($a = $button-wrapper.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-wrapper.hover, v = false)
 spacing.fixed.px: 8
-width: hug-content
+width: auto
 min-width.fixed.px: 322
 link: $button-wrapper.link
-color: $ds.colors.text-strong
 color if { button-wrapper.kind == primary }: $ds.colors.cta-primary.text
 color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.text
 color if { button-wrapper.kind == tertiary }: $ds.colors.cta-tertiary.text
@@ -345,11 +343,263 @@ link: index.html
 \-- icon-button: Icon
 icon: $assets.files.assets.convert.svg
 link: /
+kind: primary
+
 -- icon-button: Icon
 icon: $assets.files.assets.convert.svg
 link: /
+kind: primary
 
 -- end: ds.rendered
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: secondary
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: secondary
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: tertiary
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: tertiary
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: success
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: success
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: warning
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: warning
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: danger
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: danger
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: info
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: info
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: primary
+variant: outline
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: primary
+variant: outline
+
+-- end: ds.rendered
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: secondary
+variant: outline
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: secondary
+variant: outline
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: tertiary
+variant: outline
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: tertiary
+variant: outline
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: success
+variant: outline
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: success
+variant: outline
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: warning
+variant: outline
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: warning
+variant: outline
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: danger
+variant: outline
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: danger
+variant: outline
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: info
+variant: outline
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: info
+variant: outline
+
+-- end: ds.rendered
+
+
+
 
 
 -- ds.rendered:
