@@ -289,9 +289,13 @@ width: hug-content
 min-width.fixed.px: 322
 link: $button-wrapper.link
 color: $ds.colors.text-strong
-color if { button-wrapper.kind == danger }: $ds.colors.cta-danger.text
+color if { button-wrapper.kind == primary }: $ds.colors.cta-primary.text
 color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.text
 color if { button-wrapper.kind == tertiary }: $ds.colors.cta-tertiary.text
+color if { button-wrapper.kind == success }: $ds.colors.success.text
+color if { button-wrapper.kind == warning }: $ds.colors.warning.text
+color if { button-wrapper.kind == danger }: $ds.colors.cta-danger.text
+color if { button-wrapper.kind == info }: $ds.colors.info.text
 
 -- ftd.text: $button-wrapper.title
 if: { button-wrapper.title != NULL && button-wrapper.icon-position == at-end}
