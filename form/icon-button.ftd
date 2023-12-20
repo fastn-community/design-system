@@ -114,7 +114,7 @@ caption text:
 optional string link:
 
 -- ftd.text: $circle-text-button.text
-padding.px: 8
+padding.px: 2
 color: $ds.colors.cta-primary.text
 background.solid: $ds.colors.cta-primary.base
 border-color: $ds.colors.cta-primary.border
@@ -270,6 +270,13 @@ boolean $hover: false
 
 -- ftd.row:
 background.solid: $ds.colors.background.step-1
+background.solid if { button-wrapper.kind == primary }: $ds.colors.cta-primary.base
+background.solid if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.base
+background.solid if { button-wrapper.kind == tertiary }: $ds.colors.cta-tertiary.base
+background.solid if { button-wrapper.kind == success }: $ds.colors.success.base
+background.solid if { button-wrapper.kind == warning }: $ds.colors.warning.base
+background.solid if { button-wrapper.kind == danger }: $ds.colors.cta-danger.base
+background.solid if { button-wrapper.kind == info }: $ds.colors.info.base
 border-radius: $button-wrapper.border-radius
 padding-horizontal.px: 18
 padding-vertical.px: 16
@@ -279,14 +286,16 @@ $on-mouse-enter$: $ftd.set-bool($a = $button-wrapper.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-wrapper.hover, v = false)
 spacing.fixed.px: 8
 width: hug-content
-min-width: auto
+min-width.fixed.px: 322
 link: $button-wrapper.link
 color: $ds.colors.text-strong
+color if { button-wrapper.kind == danger }: $ds.colors.cta-danger.text
+color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.text
+color if { button-wrapper.kind == tertiary }: $ds.colors.cta-tertiary.text
 
 -- ftd.text: $button-wrapper.title
 if: { button-wrapper.title != NULL && button-wrapper.icon-position == at-end}
 role: $ds.types.button-small
-color: $ds.colors.text-strong
 white-space: nowrap
 align-self: center
 
@@ -296,7 +305,6 @@ for: $ui in $button-wrapper.uis
 -- ftd.text: $button-wrapper.title
 if: { button-wrapper.title != NULL && button-wrapper.icon-position == at-start}
 role: $ds.types.button-small
-color: $ds.colors.text-strong
 white-space: nowrap
 align-self: center
 
