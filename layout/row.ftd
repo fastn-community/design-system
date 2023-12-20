@@ -19,7 +19,7 @@ spacing.fixed.px: $row.spacing.gap
 spacing if { row.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 align-content: $row.align-content
 children: $row.content
-background: $column.background
+background: $row.background
 link: $row.link
 wrap: $row.wrap
 
