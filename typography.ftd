@@ -98,10 +98,15 @@ optional ftd.text-align text-align:
 
 -- ftd.text: $copy-lede.text
 color: $copy-lede.color
+display if { copy-lede.text-align == NULL }: $copy-lede.display
 role: $ds.types.copy-large ;; TODO: add copy-lede to ftd.color-scheme
 text-align: $copy-lede.text-align
 
 -- end: copy-lede
+
+
+
+
 
 -- component copy-large:
 body text:
@@ -111,6 +116,7 @@ optional ftd.text-align text-align:
 
 -- ftd.text: $copy-large.text
 color: $copy-large.color
+display if { copy-large.text-align == NULL }: $copy-large.display
 role: $ds.types.copy-large
 text-align: $copy-large.text-align
 
@@ -129,12 +135,15 @@ optional ftd.resizing height:
 -- ftd.text: $copy-regular.text
 color: $copy-regular.color
 role: $ds.types.copy-regular
-display: $copy-regular.display
+display if { copy-regular.text-align == NULL }: $copy-regular.display
 margin-bottom.px if { copy-regular.margin != NULL }: $copy-regular.margin.gap
 height: $copy-regular.height
 text-align: $copy-regular.text-align
 
 -- end: copy-regular
+
+
+
 
 
 -- component copy-small:
@@ -146,7 +155,7 @@ ftd.display display: inline
 -- ftd.text: $copy-small.text
 color: $copy-small.color
 role: $ds.types.copy-small
-display: $copy-small.display
+display if { copy-small.text-align == NULL }: $copy-small.display
 text-align: $copy-small.text-align
 
 -- end: copy-small
@@ -161,7 +170,7 @@ ftd.display display: inline
 -- ftd.text: $fine-print.text
 color: $fine-print.color
 role: $ds.types.fine-print
-display: $fine-print.display
+display if { fine-print.text-align == NULL }: $fine-print.display
 text-align: $fine-print.text-align
 
 -- end: fine-print
@@ -179,7 +188,7 @@ ftd.display display: inline
 -- ftd.text: $link.text
 color: $link.color
 role: $ds.types.link
-display: $link.display
+display if { link.text-align == NULL }: $link.display
 link: $link.link
 text-align: $link.text-align
 
