@@ -22,7 +22,7 @@ button.button-variant variant: solid
 button.button-width width: default
 button.button-size size: medium
 boolean outline: false
-button.button-kind kind: primary
+button.button-kind kind:
 ;; private stuff
 boolean $hover: false
 
@@ -262,7 +262,7 @@ button.button-variant variant: solid
 button.button-width width: default
 button.button-size size: medium
 boolean outline: false
-button.button-kind kind: primary
+button.button-kind kind:
 children uis:
 ftd.length.px border-radius: 8
 ;; private stuff
@@ -296,7 +296,7 @@ spacing.fixed.px: 8
 width: hug-content
 min-width.fixed.px: 322
 link: $button-wrapper.link
-color: $ds.colors.text-strong
+color if { button-wrapper.kind == NULL }: $ds.colors.text-strong
 color if { button-wrapper.kind == primary }: $ds.colors.cta-primary.text
 color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.text
 color if { button-wrapper.kind == tertiary }: $ds.colors.cta-tertiary.text
@@ -345,7 +345,6 @@ link: index.html
 \-- icon-button: Icon
 icon: $assets.files.assets.convert.svg
 link: /
-
 -- icon-button: Icon
 icon: $assets.files.assets.convert.svg
 link: /
@@ -358,7 +357,6 @@ link: /
 \-- square-button:
 icon: $assets.files.assets.convert.svg
 link: /
-
 -- square-button:
 icon: $assets.files.assets.convert.svg
 link: /
@@ -371,7 +369,6 @@ link: /
 \-- circle-button:
 icon: $assets.files.assets.convert.svg
 link: /
-
 -- circle-button:
 icon: $assets.files.assets.convert.svg
 link: /
