@@ -269,15 +269,23 @@ ftd.length.px border-radius: 8
 boolean $hover: false
 
 -- ftd.row:
-background.solid: $ds.colors.background.step-1
-background.solid if { button-wrapper.kind == primary }: $ds.colors.cta-primary.base
-background.solid if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.base
-background.solid if { button-wrapper.kind == tertiary }: $ds.colors.cta-tertiary.base
-background.solid if { button-wrapper.kind == success }: $ds.colors.success.base
-background.solid if { button-wrapper.kind == warning }: $ds.colors.warning.base
-background.solid if { button-wrapper.kind == danger }: $ds.colors.cta-danger.base
-background.solid if { button-wrapper.kind == info }: $ds.colors.info.base
+background.solid if { button-wrapper.variant == solid }: $ds.colors.background.step-1
+background.solid if { button-wrapper.kind == primary && button-wrapper.variant == solid}: $ds.colors.cta-primary.base
+background.solid if { button-wrapper.kind == secondary && button-wrapper.variant == solid}: $ds.colors.cta-secondary.base
+background.solid if { button-wrapper.kind == tertiary && button-wrapper.variant == solid}: $ds.colors.cta-tertiary.base
+background.solid if { button-wrapper.kind == success && button-wrapper.variant == solid}: $ds.colors.success.base
+background.solid if { button-wrapper.kind == warning && button-wrapper.variant == solid}: $ds.colors.warning.base
+background.solid if { button-wrapper.kind == danger && button-wrapper.variant == solid}: $ds.colors.cta-danger.base
+background.solid if { button-wrapper.kind == info && button-wrapper.variant == solid}: $ds.colors.info.base
 border-radius: $button-wrapper.border-radius
+border-width.px if { button-wrapper.variant == outline }: 1
+border-color if { button-wrapper.variant == outline && button-wrapper.kind == primary}: $ds.colors.cta-primary.border
+border-color if { button-wrapper.variant == outline && button-wrapper.kind == secondary}: $ds.colors.cta-secondary.border
+border-color if { button-wrapper.variant == outline && button-wrapper.kind == tertiary}: $ds.colors.cta-tertiary.border
+border-color if { button-wrapper.variant == outline && button-wrapper.kind == success}: $ds.colors.success.border
+border-color if { button-wrapper.variant == outline && button-wrapper.kind == warning}: $ds.colors.warning.border
+border-color if { button-wrapper.variant == outline && button-wrapper.kind == danger}: $ds.colors.cta-danger.border
+border-color if { button-wrapper.variant == outline && button-wrapper.kind == info}: $ds.colors.info.border
 padding-horizontal.px: 18
 padding-vertical.px: 16
 align-content: center
@@ -337,6 +345,7 @@ link: index.html
 \-- icon-button: Icon
 icon: $assets.files.assets.convert.svg
 link: /
+
 -- icon-button: Icon
 icon: $assets.files.assets.convert.svg
 link: /
@@ -349,6 +358,7 @@ link: /
 \-- square-button:
 icon: $assets.files.assets.convert.svg
 link: /
+
 -- square-button:
 icon: $assets.files.assets.convert.svg
 link: /
@@ -361,6 +371,7 @@ link: /
 \-- circle-button:
 icon: $assets.files.assets.convert.svg
 link: /
+
 -- circle-button:
 icon: $assets.files.assets.convert.svg
 link: /
