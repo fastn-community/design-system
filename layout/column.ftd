@@ -9,6 +9,9 @@ children content:
 ftd.align align-content: center
 optional ftd.background background:
 optional ftd.resizing height:
+optional ftd.length border-radius:
+optional ftd.length border-width:
+optional ftd.color border-color:
 
 
 -- ftd.column:
@@ -21,6 +24,9 @@ children: $column.content
 background: $column.background
 align-content: $column.align-content
 height: $column.height
+border-radius: $column.border-radius
+border-width: $column.border-width
+border-color: $column.border-color
 
 -- end: ftd.column
 

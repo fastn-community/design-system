@@ -2143,7 +2143,15 @@ let fastn_community_github_io_design_system_typography__copy_regular = function 
     ), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Color, __args__.color, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.TextAlign, __args__.text_align, inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.Display, __args__.display, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Display, fastn.formula([__args__.display,
+    __args__.text_align], function () {
+      if (function () {
+        return (fastn_utils.getter(__args__.text_align) == null);
+      }()) {
+        return __args__.display;
+      }
+    }
+    ), inherited);
     return parenti0;
   } finally {
     __fastn_package_name__ = __fastn_super_package_name__;
