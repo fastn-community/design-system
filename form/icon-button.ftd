@@ -22,7 +22,7 @@ button.button-variant variant: solid
 button.button-width width: default
 button.button-size size: medium
 boolean outline: false
-button.button-kind kind:
+button.button-kind kind: primary
 ;; private stuff
 boolean $hover: false
 
@@ -38,8 +38,8 @@ kind: $icon-button.kind
 
 -- ftd.image:
 src: $icon-button.icon
-width.fixed.px: 16
-height.fixed.px: 16
+width.fixed.px: 18
+height.fixed.px: 18
 
 -- end: button-wrapper
 
@@ -262,7 +262,7 @@ button.button-variant variant: solid
 button.button-width width: default
 button.button-size size: medium
 boolean outline: false
-button.button-kind kind:
+button.button-kind kind: primary
 children uis:
 ftd.length.px border-radius: 8
 ;; private stuff
@@ -296,7 +296,7 @@ spacing.fixed.px: 8
 width: hug-content
 min-width.fixed.px: 322
 link: $button-wrapper.link
-color if { button-wrapper.kind == NULL }: $ds.colors.text-strong
+color: $ds.colors.text-strong
 color if { button-wrapper.kind == primary }: $ds.colors.cta-primary.text
 color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.text
 color if { button-wrapper.kind == tertiary }: $ds.colors.cta-tertiary.text
