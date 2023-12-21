@@ -1,12 +1,11 @@
 -- or-type display-type:
 
 -- constant integer inline: 1
--- constant integer block: 2
 -- constant integer inline-block: 3
--- constant integer text-center: 4
--- constant integer text-left: 5
--- constant integer text-right: 6
--- constant integer text-justify: 7
+-- constant integer center: 4
+-- constant integer left: 5
+-- constant integer right: 6
+-- constant integer justify: 7
 
 -- end: display-type
 
@@ -26,11 +25,10 @@ display-type display-align: inline
 width: $heading-hero.width
 color: $heading-hero.color
 role: $ds.types.heading-hero
-text-align if { heading-hero.display-align == block }: center
-text-align if { heading-hero.display-align == text-left }: start
-text-align if { heading-hero.display-align == text-right }: end
-text-align if { heading-hero.display-align == text-center }: center
-text-align if { heading-hero.display-align == text-justify }: justify
+text-align if { heading-hero.display-align == left }: start
+text-align if { heading-hero.display-align == right }: end
+text-align if { heading-hero.display-align == center }: center
+text-align if { heading-hero.display-align == justify }: justify
 display if { heading-hero.display-align == inline }: inline
 display if { heading-hero.display-align == inline-block }: inline-block
 
@@ -52,11 +50,10 @@ display-type display-align: inline
 width: $heading-eyebrow.width
 color: $heading-eyebrow.color
 role: $ds.types.heading-small
-text-align if { heading-eyebrow.display-align == block }: center
-text-align if { heading-eyebrow.display-align == text-left }: start
-text-align if { heading-eyebrow.display-align == text-right }: end
-text-align if { heading-eyebrow.display-align == text-center }: center
-text-align if { heading-eyebrow.display-align == text-justify }: justify
+text-align if { heading-eyebrow.display-align == left }: start
+text-align if { heading-eyebrow.display-align == right }: end
+text-align if { heading-eyebrow.display-align == center }: center
+text-align if { heading-eyebrow.display-align == justify }: justify
 display if { heading-eyebrow.display-align == inline }: inline
 display if { heading-eyebrow.display-align == inline-block }: inline-block
 
@@ -73,11 +70,10 @@ ftd.color color: $ds.colors.text-strong
 width: $heading-large.width
 color: $heading-large.color
 role: $ds.types.heading-large
-text-align if { heading-large.display-align == block }: center
-text-align if { heading-large.display-align == text-left }: start
-text-align if { heading-large.display-align == text-right }: end
-text-align if { heading-large.display-align == text-center }: center
-text-align if { heading-large.display-align == text-justify }: justify
+text-align if { heading-large.display-align == left }: start
+text-align if { heading-large.display-align == right }: end
+text-align if { heading-large.display-align == center }: center
+text-align if { heading-large.display-align == justify }: justify
 display if { heading-large.display-align == inline }: inline
 display if { heading-large.display-align == inline-block }: inline-block
 
@@ -94,11 +90,10 @@ ftd.color color: $ds.colors.text-strong
 width: $heading-medium.width
 color: $heading-medium.color
 role: $ds.types.heading-medium
-text-align if { heading-medium.display-align == block }: center
-text-align if { heading-medium.display-align == text-left }: start
-text-align if { heading-medium.display-align == text-right }: end
-text-align if { heading-medium.display-align == text-center }: center
-text-align if { heading-medium.display-align == text-justify }: justify
+text-align if { heading-medium.display-align == left }: start
+text-align if { heading-medium.display-align == right }: end
+text-align if { heading-medium.display-align == center }: center
+text-align if { heading-medium.display-align == justify }: justify
 display if { heading-medium.display-align == inline }: inline
 display if { heading-medium.display-align == inline-block }: inline-block
 
@@ -115,11 +110,10 @@ ftd.color color: $ds.colors.text-strong
 width: $heading-small.width
 color: $heading-small.color
 role: $ds.types.heading-small
-text-align if { heading-small.display-align == block }: center
-text-align if { heading-small.display-align == text-left }: start
-text-align if { heading-small.display-align == text-right }: end
-text-align if { heading-small.display-align == text-center }: center
-text-align if { heading-small.display-align == text-justify }: justify
+text-align if { heading-small.display-align == left }: start
+text-align if { heading-small.display-align == right }: end
+text-align if { heading-small.display-align == center }: center
+text-align if { heading-small.display-align == justify }: justify
 display if { heading-small.display-align == inline }: inline
 display if { heading-small.display-align == inline-block }: inline-block
 
@@ -139,11 +133,10 @@ ftd.color color: $ds.colors.text-strong
 width: $heading-tiny.width
 color: $heading-tiny.color
 role: $ds.types.heading-tiny
-text-align if { heading-tiny.display-align == block }: center
-text-align if { heading-tiny.display-align == text-left }: start
-text-align if { heading-tiny.display-align == text-right }: end
-text-align if { heading-tiny.display-align == text-center }: center
-text-align if { heading-tiny.display-align == text-justify }: justify
+text-align if { heading-tiny.display-align == left }: start
+text-align if { heading-tiny.display-align == right }: end
+text-align if { heading-tiny.display-align == center }: center
+text-align if { heading-tiny.display-align == justify }: justify
 display if { heading-tiny.display-align == inline }: inline
 display if { heading-tiny.display-align == inline-block }: inline-block
 
@@ -162,11 +155,10 @@ display-type display-align: inline
 -- ftd.text: $copy-large.text
 color: $copy-large.color
 role: $ds.types.copy-large
-text-align if { copy-large.display-align == block }: center
-text-align if { copy-large.display-align == text-left }: start
-text-align if { copy-large.display-align == text-right }: end
-text-align if { copy-large.display-align == text-center }: center
-text-align if { copy-large.display-align == text-justify }: justify
+text-align if { copy-large.display-align == left }: start
+text-align if { copy-large.display-align == right }: end
+text-align if { copy-large.display-align == center }: center
+text-align if { copy-large.display-align == justify }: justify
 display if { copy-large.display-align == inline }: inline
 display if { copy-large.display-align == inline-block }: inline-block
 
@@ -186,11 +178,10 @@ color: $copy-regular.color
 role: $ds.types.copy-regular
 margin-bottom.px if { copy-regular.margin != NULL }: $copy-regular.margin.gap
 height: $copy-regular.height
-text-align if { copy-regular.display-align == block }: center
-text-align if { copy-regular.display-align == text-left }: start
-text-align if { copy-regular.display-align == text-right }: end
-text-align if { copy-regular.display-align == text-center }: center
-text-align if { copy-regular.display-align == text-justify }: justify
+text-align if { copy-regular.display-align == left }: start
+text-align if { copy-regular.display-align == right }: end
+text-align if { copy-regular.display-align == center }: center
+text-align if { copy-regular.display-align == justify }: justify
 display if { copy-regular.display-align == inline }: inline
 display if { copy-regular.display-align == inline-block }: inline-block
 
@@ -208,11 +199,10 @@ display-type display-align: inline
 -- ftd.text: $copy-small.text
 color: $copy-small.color
 role: $ds.types.copy-small
-text-align if { copy-small.display-align == block }: center
-text-align if { copy-small.display-align == text-left }: start
-text-align if { copy-small.display-align == text-right }: end
-text-align if { copy-small.display-align == text-center }: center
-text-align if { copy-small.display-align == text-justify }: justify
+text-align if { copy-small.display-align == left }: start
+text-align if { copy-small.display-align == right }: end
+text-align if { copy-small.display-align == center }: center
+text-align if { copy-small.display-align == justify }: justify
 display if { copy-small.display-align == inline }: inline
 display if { copy-small.display-align == inline-block }: inline-block
 
@@ -227,11 +217,10 @@ display-type display-align: inline
 -- ftd.text: $fine-print.text
 color: $fine-print.color
 role: $ds.types.fine-print
-text-align if { fine-print.display-align == block }: center
-text-align if { fine-print.display-align == text-left }: start
-text-align if { fine-print.display-align == text-right }: end
-text-align if { fine-print.display-align == text-center }: center
-text-align if { fine-print.display-align == text-justify }: justify
+text-align if { fine-print.display-align == left }: start
+text-align if { fine-print.display-align == right }: end
+text-align if { fine-print.display-align == center }: center
+text-align if { fine-print.display-align == justify }: justify
 display if { fine-print.display-align == inline }: inline
 display if { fine-print.display-align == inline-block }: inline-block
 
@@ -250,11 +239,10 @@ display-type display-align: inline
 color: $link.color
 role: $ds.types.link
 link: $link.link
-text-align if { link.display-align == block }: center
-text-align if { link.display-align == text-left }: start
-text-align if { link.display-align == text-right }: end
-text-align if { link.display-align == text-center }: center
-text-align if { link.display-align == text-justify }: justify
+text-align if { link.display-align == left }: start
+text-align if { link.display-align == right }: end
+text-align if { link.display-align == center }: center
+text-align if { link.display-align == justify }: justify
 display if { link.display-align == inline }: inline
 display if { link.display-align == inline-block }: inline-block
 
