@@ -1209,6 +1209,26 @@ fastn_dom.Length = {
         }
         return `${value}vw`;
     },
+    Dvh: (value) => {
+        if (value instanceof fastn.mutableClass) {
+            return fastn.formula([value], function () { return `${value.get()}dvh`})
+        }
+        return `${value}dvh`;
+    },
+    Lvh: (value) => {
+        if (value instanceof fastn.mutableClass) {
+            return fastn.formula([value], function () { return `${value.get()}lvh`})
+        }
+         return `${value}lvh`;
+    },
+    Svh: (value) => {
+        if (value instanceof fastn.mutableClass) {
+             return fastn.formula([value], function () { return `${value.get()}svh`})
+        }
+        return `${value}svh`;
+    },
+
+
     Vmin: (value) => {
         if (value instanceof fastn.mutableClass) {
             return fastn.formula([value], function () { return `${value.get()}vmin`})
