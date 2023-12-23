@@ -171,6 +171,7 @@ body text:
 ftd.color color: $ds.colors.text
 optional ds.gap margin:
 display-type align: inline
+ftd.length width: fill-container
 optional ftd.resizing height:
 
 -- ftd.text: $copy-regular.text
@@ -184,6 +185,7 @@ text-align if { copy-regular.align == center }: center
 text-align if { copy-regular.align == justify }: justify
 display if { copy-regular.align == inline }: inline
 display if { copy-regular.align == inline-block }: inline-block
+width: $copy-regular.width
 
 -- end: copy-regular
 
