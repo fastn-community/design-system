@@ -12,12 +12,15 @@ ds.hv inset: $ds.spaces.inset-wide.large
 ds.gap margin: $ds.spaces.vertical-gap.large
 boolean wrap: false
 ftd.align align: center
+optional integer border-bottom-width: 0
 
 -- ftd.column:
 width: fill-container
 align-content: center
 background: $section-row.outer-background
 margin-bottom.px: $section-row.margin.gap
+border-bottom-width.px: $section-row.border-bottom-width
+border-color: $ds.colors.border
 
 -- ftd.row:
 width if { section-row.flush == full }: fill-container
