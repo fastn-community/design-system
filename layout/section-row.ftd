@@ -11,7 +11,7 @@ optional ftd.background inner-background:
 ds.hv inset: $ds.spaces.inset-wide.large
 ds.gap margin: $ds.spaces.vertical-gap.large
 boolean wrap: false
-ftd.align align: center
+ftd.align align-content: center
 optional integer border-bottom-width: 0
 
 -- ftd.column:
@@ -28,7 +28,7 @@ max-width.fixed if { section-row.flush == narrow }: $ds.widths.narrow
 max-width.fixed if { section-row.flush == wide }: $ds.widths.wide
 width.fixed: $ds.widths.regular
 children: $section-row.content
-align-content: $section-row.align
+align-content: $section-row.align-content
 spacing if { section-row.spacing.gap == $spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 spacing.fixed.px: $section-row.spacing.gap
 wrap: $section-row.wrap
