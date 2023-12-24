@@ -14,7 +14,7 @@ optional ftd.background inner-background:
 ;; todo: is the follow reference to `design-system` correct?
 ds.hv inset: $ds.spaces.inset-wide.medium
 ds.gap margin: $ds.spaces.vertical-gap.large
-ftd.align align: center
+ftd.align align-content: center
 ds.element-radius radius: $ds.radius.medium
 
 -- ftd.column:
@@ -31,7 +31,7 @@ width.fixed: $ds.widths.regular
 children: $section-column.content
 spacing if { section-column.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 spacing.fixed.px: $section-column.spacing.gap
-align-content: $section-column.align
+align-content: $section-column.align-content
 background: $section-column.inner-background
 padding-vertical.px: $section-column.inset.vertical
 padding-horizontal.px: $section-column.inset.horizontal

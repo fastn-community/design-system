@@ -52,7 +52,7 @@ link: /
 
 -- ds.section-row:
 outer-background.solid: $ds.colors.background.step-1
-align: top-center
+align-content: top-center
 margin: $ds.spaces.vertical-gap.extra-extra-large
 
 -- product: FTD Language for prose

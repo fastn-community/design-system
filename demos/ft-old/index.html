@@ -2244,7 +2244,7 @@ let fastn_community_github_io_design_system_layout_section_row__section_row = fu
       inset: global.fastn_community_github_io_design_system__spaces.get("inset_wide").get("large"),
       margin: global.fastn_community_github_io_design_system__spaces.get("vertical_gap").get("large"),
       wrap: false,
-      align: fastn_dom.AlignContent.Center,
+      align_content: fastn_dom.AlignContent.Center,
       border_bottom_width: 0,
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
@@ -2288,7 +2288,7 @@ let fastn_community_github_io_design_system_layout_section_row__section_row = fu
       }
       ), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Wrap, __args__.wrap, inherited);
-      rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, __args__.align, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, __args__.align_content, inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER,
       __args__.spacing.get("gap")], function () {
         if (function () {
@@ -3422,7 +3422,7 @@ let fastn_community_github_io_design_system_demos_ft_old___products = function (
       ]),
       outer_background: fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("background").get("step_1")),
       margin: global.fastn_community_github_io_design_system__spaces.get("vertical_gap").get("extra_extra_large"),
-      align: fastn_dom.AlignContent.TopCenter
+      align_content: fastn_dom.AlignContent.TopCenter
     });
     return parenti0;
   } finally {
