@@ -1,7 +1,7 @@
 -- component demo:
 
 -- ds.section-column:
-align: left
+align-content: left
 
 -- ds.heading-large: Demos
 
