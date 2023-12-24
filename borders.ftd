@@ -1,0 +1,11 @@
+-- record border-data:
+integer none:
+integer thin:
+integer thick:
+
+
+-- border-data borders:
+none: 0
+thin: 1
+thick: 4
+
