@@ -292,8 +292,9 @@ background.solid if { button-wrapper.hover }: $ds.colors.background.step-2
 $on-mouse-enter$: $ftd.set-bool($a = $button-wrapper.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-wrapper.hover, v = false)
 spacing.fixed.px: 8
-width: auto
-min-width.fixed.px: 322
+width if { button.width == default }: hug-content
+width.fixed.px if { button.width == wide }: 200
+width if { button.width == full }: fill-container
 link: $button-wrapper.link
 color if { button-wrapper.kind == primary }: $ds.colors.cta-primary.text
 color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.text
