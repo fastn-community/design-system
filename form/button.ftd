@@ -24,7 +24,7 @@
 
 -- or-type button-width:
 
-;; default padding
+;; default padding: hug-content
 -- constant integer default: 0
 ;; extra wide buttons
 -- constant integer wide: 1
@@ -329,8 +329,9 @@ background.solid if { button.hover }: $ds.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.hover, v = false)
 spacing.fixed.px: 8
-width: hug-content
-min-width: auto
+width if { button.width == default }: hug-content
+width.fixed.px if { button.width == wide }: 200
+width if { button.width == full }: fill-container
 
 -- ftd.text: $button.title
 if: { button.title != NULL }
