@@ -3,11 +3,14 @@
 -- import: fastn-community.github.io/roboto-typography
 -- import: fastn-community.github.io/design-system/demos
 
--- import: fastn-community.github.io/design-system/spaces as spaces-module
-export: hv, gap, insets, squishes, stretches, gaps, space-data
+-- import: fastn-community.github.io/design-system/borders as _
+export: borders, border-data
 
--- import: fastn-community.github.io/design-system/radius as radius-module
-export: element-radius, radius-data
+-- import: fastn-community.github.io/design-system/spaces as _
+export: hv, gap, insets, squishes, stretches, gaps, space-data, spaces
+
+-- import: fastn-community.github.io/design-system/radius as _
+export: element-radius, radius-data, radius
 
 -- import: fastn-community.github.io/code-block
 export: code, rendered
@@ -61,8 +64,6 @@ exposing: heading-large, copy-regular
 
 -- ftd.type-data types: $roboto-typography.types
 
--- spaces-module.space-data spaces: $spaces-module.spaces
--- radius-module.radius-data radius: $radius-module.radius
 
 
 
