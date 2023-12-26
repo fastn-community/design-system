@@ -4,7 +4,8 @@
 -- import: fastn-community.github.io/design-system/demos
 
 -- import: fastn-community.github.io/design-system/borders as _
-export: borders, border-data
+export: border-data
+exposing: border-data
 
 -- import: fastn-community.github.io/design-system/spaces as _
 export: hv, gap, insets, squishes, stretches, gaps, space-data, spaces
@@ -58,6 +59,11 @@ exposing: heading-large, copy-regular
 
 
 
+
+-- border-data borders:
+none: 0
+thin: 1
+thick: 4
 
 ;; -- ftd.color-scheme colors: $saturated-sunset-cs.main
 -- ftd.color-scheme colors: $dark-flame-cs.main
