@@ -8,7 +8,6 @@ wide.px: 1400
 
 -- ds.page: Dropbase | Build internal apps with SQL and Python in minutes
 widths: $widths
-background.solid: $ds.colors.background.base
 
 Dropbase is a developer platform that makes it easy to build internal apps for
 customer success, support, and operations teams. Dashboards, admin panels, and
