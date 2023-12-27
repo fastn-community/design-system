@@ -13,11 +13,13 @@ ds.gap margin: $ds.spaces.vertical-gap.large
 boolean wrap: false
 ftd.align align-content: center
 optional integer border-bottom-width: 0
+optional ftd.background-image bg-image:
 
 -- ftd.column:
 width: fill-container
+background.image: $section-row.bg-image
 align-content: center
-background: $section-row.outer-background
+background if { section-row.bg-image == NULL }: $section-row.outer-background
 margin-bottom.px: $section-row.margin.gap
 border-bottom-width.px: $section-row.border-bottom-width
 border-color: $ds.colors.border

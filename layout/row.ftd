@@ -10,6 +10,7 @@ children content:
 optional string link:
 boolean wrap: false
 optional ftd.background background:
+optional ftd.background-image bg-image:
 
 -- ftd.row:
 width: $row.width
@@ -19,7 +20,8 @@ spacing.fixed.px: $row.spacing.gap
 spacing if { row.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 align-content: $row.align-content
 children: $row.content
-background: $row.background
+background if { row.bg-image == NULL }: $row.background
+background.image: $row.bg-image
 link: $row.link
 wrap: $row.wrap
 
