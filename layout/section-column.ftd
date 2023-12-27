@@ -16,13 +16,11 @@ ds.hv inset: $ds.spaces.inset-wide.medium
 ds.gap margin: $ds.spaces.vertical-gap.large
 ftd.align align-content: center
 ds.element-radius radius: $ds.radius.medium
-optional ftd.background-image bg-image:
 
 -- ftd.column:
 width: fill-container
 align-content: center
-background if { section-column.bg-image == NULL }: $section-column.outer-background
-background.image: $section-column.bg-image
+background: $section-column.outer-background
 margin-bottom.px: $section-column.margin.gap
 
 -- ftd.column:
