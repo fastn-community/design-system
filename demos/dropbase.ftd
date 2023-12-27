@@ -144,7 +144,7 @@ width: fill-container
 -- component footer:
 
 -- ds.section-column: asdas
-;;inner-background.solid: $ds.colors.background.step-2
+inner-background.solid: $ds.colors.background.step-2
 inset: $ds.spaces.inset-square.extra-large
 spacing: $ds.spaces.vertical-gap.extra-extra-large
 
@@ -227,6 +227,7 @@ link: /
 link: /
 
 -- end: ds.column
+
 
 -- ds.column:
 inset: $ds.spaces.inset-tall.zero-small
