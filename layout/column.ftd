@@ -13,7 +13,6 @@ optional ftd.length border-radius:
 optional ftd.length border-width:
 optional ftd.color border-color:
 
-
 -- ftd.column:
 width: $column.width
 padding-vertical.px: $column.inset.vertical

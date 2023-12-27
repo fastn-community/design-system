@@ -1921,6 +1921,7 @@ let fastn_community_github_io_design_system_layout_page__page = function (parent
       spacing: fastn_dom.Length.Px(0),
       widths: global.fastn_community_github_io_design_system_layout_page__widths,
       margin: global.fastn_community_github_io_design_system__spaces.get("vertical_gap").get("large"),
+      background: fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("background").get("base")),
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
@@ -1938,7 +1939,7 @@ let fastn_community_github_io_design_system_layout_page__page = function (parent
       rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Color, global.fastn_community_github_io_design_system__colors.get("text"), inherited);
-      rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("background").get("base")), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Background, __args__.background, inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(__args__.spacing), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
         fastn_utils.getter(__args__.content).forLoop(root, function (root, item, index) {
