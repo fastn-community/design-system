@@ -12,7 +12,6 @@ optional ftd.resizing height:
 optional ftd.length border-radius:
 optional ftd.length border-width:
 optional ftd.color border-color:
-optional ftd.background-image bg-image:
 
 -- ftd.column:
 width: $column.width
@@ -21,13 +20,12 @@ padding-horizontal.px: $column.inset.horizontal
 spacing.fixed.px: $column.spacing.gap
 spacing if { column.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 children: $column.content
-background if { column.bg-image == NULL }: $column.background
+background: $column.background
 align-content: $column.align-content
 height: $column.height
 border-radius: $column.border-radius
 border-width: $column.border-width
 border-color: $column.border-color
-background.image: $column.bg-image
 
 -- end: ftd.column
 

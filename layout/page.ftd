@@ -37,7 +37,7 @@ ftd.length.px spacing: 0
 page-widths widths: $widths
 ;; todo: is the follow reference to `.gap` correct?
 ds.gap margin: $ds.spaces.vertical-gap.large
-optional ftd.background-image bg-image:
+optional ftd.background background:
 
 -- ftd.document:
 title: $page.title
@@ -52,8 +52,7 @@ width: fill-container
 height: fill-container
 spacing.fixed: $page.spacing
 color: $ds.colors.text
-background.image: $page.bg-image
-background.solid if { page.bg-image == NULL }: $ds.colors.background.base
+background: $page.background
 
 -- ui:
 for: $ui in $page.content
