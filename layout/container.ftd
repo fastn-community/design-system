@@ -9,8 +9,8 @@ optional ftd.background background:
 ds.element-radius radius: $ds.radius.medium
 children content:
 optional ftd.resizing height:
-ds.gap margin-vertical: $ds.spaces.vertical-gap.large
-ds.gap margin-horizontal: $ds.spaces.vertical-gap.large
+ds.gap margin-vertical: $ds.spaces.vertical-gap.small
+ds.gap margin-horizontal: $ds.spaces.vertical-gap.small
 
 -- ftd.container:
 width: $container.width
