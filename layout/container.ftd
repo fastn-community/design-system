@@ -8,9 +8,13 @@ ftd.resizing width: fill-container
 optional ftd.background background:
 ds.element-radius radius: $ds.radius.medium
 children content:
+optional ftd.resizing height:
+ds.gap margin-vertical: $ds.spaces.vertical-gap.large
+ds.gap margin-horizontal: $ds.spaces.vertical-gap.large
 
 -- ftd.container:
 width: $container.width
+min-height.fixed.px: $container.height
 padding-vertical.px: $container.inset.vertical
 padding-horizontal.px: $container.inset.horizontal
 children: $container.content
@@ -23,7 +27,8 @@ border-top-left-radius.percent if { container.radius.top-left == $radius.HACK-RA
 border-top-right-radius.percent if { container.radius.top-right == $radius.HACK-RADIUS-ROUND }: 50
 border-bottom-left-radius.percent if { container.radius.bottom-left == $radius.HACK-RADIUS-ROUND }: 50
 border-bottom-right-radius.percent if { container.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
-
+margin-vertical.px: $container.margin-vertical.gap
+margin-horizontal.px: $container.margin-horizontal.gap
 
 -- end: ftd.container
 
