@@ -20,6 +20,7 @@ caption text:
 ftd.resizing width: fill-container
 ftd.color color: $ds.colors.text-strong
 display-type align: inline
+optional ds.gap margin:
 
 -- ftd.text: $heading-hero.text
 width: $heading-hero.width
@@ -31,6 +32,7 @@ text-align if { heading-hero.align == center }: center
 text-align if { heading-hero.align == justify }: justify
 display if { heading-hero.align == inline }: inline
 display if { heading-hero.align == inline-block }: inline-block
+margin-bottom.px if { heading-hero.margin != NULL }: $heading-hero.margin.gap
 
 -- end: heading-hero
 
@@ -44,6 +46,7 @@ caption text:
 ftd.resizing width: fill-container
 ftd.color color: $ds.colors.text-strong
 display-type align: inline
+optional ds.gap margin:
 ;; todo: style: uppercase, bold, code
 
 -- ftd.text: $heading-eyebrow.text
@@ -56,6 +59,7 @@ text-align if { heading-eyebrow.align == center }: center
 text-align if { heading-eyebrow.align == justify }: justify
 display if { heading-eyebrow.align == inline }: inline
 display if { heading-eyebrow.align == inline-block }: inline-block
+margin-bottom.px if { heading-eyebrow.margin != NULL }: $heading-eyebrow.margin.gap
 
 -- end: heading-eyebrow
 
@@ -64,6 +68,7 @@ display if { heading-eyebrow.align == inline-block }: inline-block
 caption text:
 ftd.resizing width: fill-container
 display-type align: inline
+optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-large.text
@@ -76,6 +81,7 @@ text-align if { heading-large.align == center }: center
 text-align if { heading-large.align == justify }: justify
 display if { heading-large.align == inline }: inline
 display if { heading-large.align == inline-block }: inline-block
+margin-bottom.px if { heading-large.margin != NULL }: $heading-large.margin.gap
 
 -- end: heading-large
 
@@ -84,6 +90,7 @@ display if { heading-large.align == inline-block }: inline-block
 caption text:
 ftd.resizing width: fill-container
 display-type align: inline
+optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-medium.text
@@ -96,6 +103,7 @@ text-align if { heading-medium.align == center }: center
 text-align if { heading-medium.align == justify }: justify
 display if { heading-medium.align == inline }: inline
 display if { heading-medium.align == inline-block }: inline-block
+margin-bottom.px if { heading-medium.margin != NULL }: $heading-medium.margin.gap
 
 -- end: heading-medium
 
@@ -104,6 +112,7 @@ display if { heading-medium.align == inline-block }: inline-block
 caption text:
 ftd.resizing width: fill-container
 display-type align: inline
+optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-small.text
@@ -116,6 +125,7 @@ text-align if { heading-small.align == center }: center
 text-align if { heading-small.align == justify }: justify
 display if { heading-small.align == inline }: inline
 display if { heading-small.align == inline-block }: inline-block
+margin-bottom.px if { heading-small.margin != NULL }: $heading-small.margin.gap
 
 -- end: heading-small
 
@@ -127,6 +137,7 @@ display if { heading-small.align == inline-block }: inline-block
 caption text:
 ftd.resizing width: fill-container
 display-type align: inline
+optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
 
 -- ftd.text: $heading-tiny.text
@@ -139,6 +150,7 @@ text-align if { heading-tiny.align == center }: center
 text-align if { heading-tiny.align == justify }: justify
 display if { heading-tiny.align == inline }: inline
 display if { heading-tiny.align == inline-block }: inline-block
+margin-bottom.px if { heading-tiny.margin != NULL }: $heading-tiny.margin.gap
 
 -- end: heading-tiny
 
@@ -151,6 +163,7 @@ display if { heading-tiny.align == inline-block }: inline-block
 body text:
 ftd.color color: $ds.colors.text
 display-type align: inline
+optional ds.gap margin:
 
 -- ftd.text: $copy-large.text
 color: $copy-large.color
@@ -161,6 +174,7 @@ text-align if { copy-large.align == center }: center
 text-align if { copy-large.align == justify }: justify
 display if { copy-large.align == inline }: inline
 display if { copy-large.align == inline-block }: inline-block
+margin-bottom.px if { copy-large.margin != NULL }: $copy-large.margin.gap
 
 -- end: copy-large
 
@@ -197,6 +211,7 @@ width: $copy-regular.width
 body text:
 ftd.color color: $ds.colors.text
 display-type align: inline
+optional ds.gap margin:
 
 -- ftd.text: $copy-small.text
 color: $copy-small.color
@@ -207,6 +222,7 @@ text-align if { copy-small.align == center }: center
 text-align if { copy-small.align == justify }: justify
 display if { copy-small.align == inline }: inline
 display if { copy-small.align == inline-block }: inline-block
+margin-bottom.px if { copy-small.margin != NULL }: $copy-small.margin.gap
 
 -- end: copy-small
 
@@ -215,6 +231,7 @@ display if { copy-small.align == inline-block }: inline-block
 body text:
 ftd.color color: $ds.colors.text
 display-type align: inline
+optional ds.gap margin:
 
 -- ftd.text: $fine-print.text
 color: $fine-print.color
@@ -225,6 +242,7 @@ text-align if { fine-print.align == center }: center
 text-align if { fine-print.align == justify }: justify
 display if { fine-print.align == inline }: inline
 display if { fine-print.align == inline-block }: inline-block
+margin-bottom.px if { fine-print.margin != NULL }: $fine-print.margin.gap
 
 -- end: fine-print
 
@@ -236,6 +254,7 @@ caption or body text:
 string link:
 ftd.color color: $ds.colors.cta-primary.base
 display-type align: inline
+optional ds.gap margin:
 
 -- ftd.text: $link.text
 color: $link.color
@@ -247,6 +266,7 @@ text-align if { link.align == center }: center
 text-align if { link.align == justify }: justify
 display if { link.align == inline }: inline
 display if { link.align == inline-block }: inline-block
+margin-bottom.px if { link.margin != NULL }: $link.margin.gap
 
 -- end: link
 
