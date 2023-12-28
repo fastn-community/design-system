@@ -1,4 +1,5 @@
 -- import: fastn-community.github.io/design-system/spaces
+-- import: fastn-community.github.io/design-system/radius
 
 -- component row:
 optional caption title:
@@ -10,6 +11,7 @@ children content:
 optional string link:
 boolean wrap: false
 optional ftd.background background:
+ds.element-radius radius: $ds.radius.medium
 
 -- ftd.row:
 width: $row.width
@@ -20,6 +22,10 @@ spacing if { row.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-
 align-content: $row.align-content
 children: $row.content
 background: $row.background
+border-top-left-radius.px if { row.radius.top-left != $radius.HACK-RADIUS-ROUND }: $row.radius.top-left
+border-top-right-radius.px if { row.radius.top-right != $radius.HACK-RADIUS-ROUND }: $row.radius.top-right
+border-bottom-left-radius.px if { row.radius.bottom-left != $radius.HACK-RADIUS-ROUND }: $row.radius.bottom-left
+border-bottom-right-radius.px if { row.radius.bottom-right != $radius.HACK-RADIUS-ROUND }: $row.radius.bottom-right
 link: $row.link
 wrap: $row.wrap
 
