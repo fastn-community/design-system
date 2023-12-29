@@ -1,3 +1,5 @@
+-- import: fastn-community.github.io/design-system/spaces
+
 -- or-type button-kind:
 
 -- constant integer primary: 1
@@ -56,27 +58,27 @@
 caption title:
 optional string link:
 boolean $hover: false
+button-width width: default
 
--- ftd.row:
+-- ds.row:
 background.solid: $inherited.colors.cta-primary.base
-border-radius.px: 8
-padding-horizontal.px: 18
-padding-vertical.px: 16
+radius: $ds.radius.medium
+inset: $ds.spaces.inset-wide.medium
 align-content: center
 background.solid if { primary-button.hover }: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $primary-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $primary-button.hover, v = false)
-spacing.fixed.px: 8
-width: hug-content
-min-width.fixed.px: 322
+spacing: $ds.spaces.horizontal-gap.small
+width if { primary-button.width == default }: hug-content
+width.fixed.px if { primary-button.width == wide }: 200
+width if { primary-button.width == full }: fill-container
 
--- ftd.text: $primary-button.title
-role: $inherited.types.button-small
+-- ds.link: 
+text: $primary-button.title
 color: $inherited.colors.cta-primary.text
 link: $primary-button.link
-white-space: nowrap
 
--- end: ftd.row
+-- end: ds.row
 
 -- end: primary-button
 
@@ -93,27 +95,27 @@ white-space: nowrap
 caption title:
 optional string link:
 boolean $hover: false
+button-width width: default
 
--- ftd.row:
+-- ds.row:
 background.solid: $inherited.colors.cta-secondary.base
-border-radius.px: 8
-padding-horizontal.px: 18
-padding-vertical.px: 16
+radius: $ds.radius.medium
+inset: $ds.spaces.inset-wide.medium
 align-content: center
 background.solid if { secondary-button.hover }: $inherited.colors.cta-secondary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $secondary-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $secondary-button.hover, v = false)
-spacing.fixed.px: 8
-width: hug-content
-min-width.fixed.px: 322
+spacing: $ds.spaces.horizontal-gap.small
+width if { secondary-button.width == default }: hug-content
+width.fixed.px if { secondary-button.width == wide }: 200
+width if { secondary-button.width == full }: fill-container
 
--- ftd.text: $secondary-button.title
-role: $inherited.types.button-small
+-- ds.link: 
+text: $secondary-button.title
 color: $inherited.colors.cta-secondary.text
 link: $secondary-button.link
-white-space: nowrap
 
--- end: ftd.row
+-- end: ds.row
 
 -- end: secondary-button
 
@@ -130,27 +132,27 @@ white-space: nowrap
 caption title:
 optional string link:
 boolean $hover: false
+button-width width: default
 
--- ftd.row:
+-- ds.row:
 background.solid: $inherited.colors.cta-tertiary.base
-border-radius.px: 8
-padding-horizontal.px: 18
-padding-vertical.px: 16
+radius: $ds.radius.medium
+inset: $ds.spaces.inset-wide.medium
 align-content: center
 background.solid if { tertiary-button.hover }: $inherited.colors.cta-tertiary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $tertiary-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $tertiary-button.hover, v = false)
-spacing.fixed.px: 8
-width: hug-content
-min-width.fixed.px: 322
+spacing: $ds.spaces.horizontal-gap.small
+width if { tertiary-button.width == default }: hug-content
+width.fixed.px if { tertiary-button.width == wide }: 200
+width if { tertiary-button.width == full }: fill-container
 
--- ftd.text: $tertiary-button.title
-role: $inherited.types.button-small
+-- ds.link: 
+text: $tertiary-button.title
 color: $inherited.colors.cta-tertiary.text
 link: $tertiary-button.link
-white-space: nowrap
 
--- end: ftd.row
+-- end: ds.row
 
 -- end: tertiary-button
 
@@ -167,26 +169,26 @@ white-space: nowrap
 caption title:
 optional string link:
 boolean $hover: false
+button-width width: default
 
--- ftd.row:
+-- ds.row:
 background.solid: $inherited.colors.success.base
-border-radius.px: 8
-padding-horizontal.px: 18
-padding-vertical.px: 16
+radius: $ds.radius.medium
+inset: $ds.spaces.inset-wide.medium
 align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $success-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $success-button.hover, v = false)
-spacing.fixed.px: 8
-width: hug-content
-min-width.fixed.px: 322
+spacing: $ds.spaces.horizontal-gap.small
+width if { success-button.width == default }: hug-content
+width.fixed.px if { success-button.width == wide }: 200
+width if { success-button.width == full }: fill-container
 
--- ftd.text: $success-button.title
-role: $inherited.types.button-small
+-- ds.link: 
+text: $success-button.title
 color: $inherited.colors.success.text
 link: $success-button.link
-white-space: nowrap
 
--- end: ftd.row
+-- end: ds.row
 
 -- end: success-button
 
@@ -203,26 +205,26 @@ white-space: nowrap
 caption title:
 optional string link:
 boolean $hover: false
+button-width width: default
 
--- ftd.row:
+-- ds.row:
 background.solid: $inherited.colors.warning.base
-border-radius.px: 8
-padding-horizontal.px: 18
-padding-vertical.px: 16
+radius: $ds.radius.medium
+inset: $ds.spaces.inset-wide.medium
 align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $warning-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $warning-button.hover, v = false)
-spacing.fixed.px: 8
-width: hug-content
-min-width.fixed.px: 322
+spacing: $ds.spaces.horizontal-gap.small
+width if { warning-button.width == default }: hug-content
+width.fixed.px if { warning-button.width == wide }: 200
+width if { warning-button.width == full }: fill-container
 
--- ftd.text: $warning-button.title
-role: $inherited.types.button-small
+-- ds.link: 
+text: $warning-button.title
 color: $inherited.colors.warning.text
 link: $warning-button.link
-white-space: nowrap
 
--- end: ftd.row
+-- end: ds.row
 
 -- end: warning-button
 
@@ -239,27 +241,27 @@ white-space: nowrap
 caption title:
 optional string link:
 boolean $hover: false
+button-width width: default
 
--- ftd.row:
+-- ds.row:
 background.solid: $inherited.colors.cta-danger.base
-border-radius.px: 8
-padding-horizontal.px: 18
-padding-vertical.px: 16
+radius: $ds.radius.medium
+inset: $ds.spaces.inset-wide.medium
 align-content: center
 background.solid if { danger-button.hover }: $inherited.colors.cta-danger.hover
 $on-mouse-enter$: $ftd.set-bool($a = $danger-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $danger-button.hover, v = false)
-spacing.fixed.px: 8
-width: hug-content
-min-width.fixed.px: 322
+spacing: $ds.spaces.horizontal-gap.small
+width if { danger-button.width == default }: hug-content
+width.fixed.px if { danger-button.width == wide }: 200
+width if { danger-button.width == full }: fill-container
 
--- ftd.text: $danger-button.title
-role: $inherited.types.button-small
+-- ds.link: 
+text: $danger-button.title
 color: $inherited.colors.cta-danger.text
 link: $danger-button.link
-white-space: nowrap
 
--- end: ftd.row
+-- end: ds.row
 
 -- end: danger-button
 
@@ -276,77 +278,28 @@ white-space: nowrap
 caption title:
 optional string link:
 boolean $hover: false
+button-width width: default
 
--- ftd.row:
+-- ds.row:
 background.solid: $inherited.colors.info.base
-border-radius.px: 8
-padding-horizontal.px: 18
-padding-vertical.px: 16
+radius: $ds.radius.medium
+inset: $ds.spaces.inset-wide.medium
 align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $info-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $info-button.hover, v = false)
-spacing.fixed.px: 8
-width: hug-content
-min-width.fixed.px: 322
+spacing: $ds.spaces.horizontal-gap.small
+width if { info-button.width == default }: hug-content
+width.fixed.px if { info-button.width == wide }: 200
+width if { info-button.width == full }: fill-container
 
--- ftd.text: $info-button.title
-role: $inherited.types.button-small
+-- ds.link: 
+text: $info-button.title
 color: $inherited.colors.info.text
 link: $info-button.link
-white-space: nowrap
 
--- end: ftd.row
+-- end: ds.row
 
 -- end: info-button
-
-
-
-
-
-
-
-
-
-
--- component button:
-caption title:
-optional string link:
-boolean enabled: true
-button-width width: default
-button-size size: medium
-button-variant variant: solid
-button-kind kind: primary
-;; private stuff
-boolean $hover: false
-
--- ftd.row:
-background.solid: $ds.colors.cta-primary.base
-border-radius.px: 8
-padding-horizontal.px: 16
-padding-vertical.px: 10
-align-content: center
-background.solid if { button.hover }: $ds.colors.cta-primary.hover
-$on-mouse-enter$: $ftd.set-bool($a = $button.hover, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $button.hover, v = false)
-spacing.fixed.px: 8
-width if { button.width == default }: hug-content
-width.fixed.px if { button.width == wide }: 200
-width if { button.width == full }: fill-container
-
--- ftd.text: $button.title
-if: { button.title != NULL }
-;; if: { ftd.or-type-to-integer(button.kind) == 0 }
-role: $ds.types.button-small
-color: $ds.colors.cta-primary.text
-link: $button.link
-white-space: nowrap
-
--- end: ftd.row
-
--- end: button
-
-
-
 
 
 
@@ -366,16 +319,6 @@ white-space: nowrap
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
-
--- ds.rendered:
-
-\-- button: Default button
-link: /
-
--- button: Default button
-link: /
-
--- end: ds.rendered
 
 -- ds.rendered:
 
