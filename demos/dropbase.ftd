@@ -48,7 +48,7 @@ inset: $ds.spaces.inset-wide.large
 
 -- ds.inline-row: Logo | Docs | Blog | Pricing
 
--- ds.button: LOGO
+-- ds.primary-button: LOGO
 
 -- ds.header-link: Docs
 link: /
@@ -70,7 +70,7 @@ icon: magnifying-glass
 -- ds.header-link: Login
 link: /
 
--- ds.button: Book demo
+-- ds.primary-button: Book demo
 
 -- end: ds.inline-row
 
@@ -109,7 +109,7 @@ across all channels - Calls, Chats & Meetings to boost your business efficiency
 
 -- ds.button-group:
 
--- ds.button: Book Demo
+-- ds.primary-button: Book Demo
 
 -- ds.phosphor-icon-button: Documentation
 icon: caret-right
@@ -287,7 +287,7 @@ align: center
 
 Build apps for your customer success and ops teams today
 
--- ds.button: Book demo
+-- ds.primary-button: Book demo
 
 -- end: ds.section-column
 
@@ -356,6 +356,7 @@ inset: $ds.spaces.inset-square.large
 background.solid: $ds.colors.background.step-1
 width.fixed.percent: 30
 radius: $ds.radius.large
+height.fixed.px: 244
 
 -- ds.copy-regular:
 color: $ds.colors.text-strong
