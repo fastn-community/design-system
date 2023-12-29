@@ -59,13 +59,16 @@ caption title:
 optional string link:
 boolean $hover: false
 button-width width: default
+boolean enabled: true
+button-size size: medium
+button-variant variant: solid
 
 -- ds.row:
-background.solid: $inherited.colors.cta-primary.base
+background.solid if { primary-button.variant != link }: $inherited.colors.cta-primary.base
+background.solid if { primary-button.hover && primary-button.variant != link }: $inherited.colors.cta-primary.hover
 radius: $ds.radius.medium
 inset: $ds.spaces.inset-wide.medium
 align-content: center
-background.solid if { primary-button.hover }: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $primary-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $primary-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
@@ -96,13 +99,16 @@ caption title:
 optional string link:
 boolean $hover: false
 button-width width: default
+boolean enabled: true
+button-size size: medium
+button-variant variant: solid
 
 -- ds.row:
-background.solid: $inherited.colors.cta-secondary.base
+background.solid if { secondary-button.variant != link }: $inherited.colors.cta-secondary.base
 radius: $ds.radius.medium
 inset: $ds.spaces.inset-wide.medium
 align-content: center
-background.solid if { secondary-button.hover }: $inherited.colors.cta-secondary.hover
+background.solid if { secondary-button.hover && secondary-button.variant != link }: $inherited.colors.cta-secondary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $secondary-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $secondary-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
@@ -133,13 +139,16 @@ caption title:
 optional string link:
 boolean $hover: false
 button-width width: default
+boolean enabled: true
+button-size size: medium
+button-variant variant: solid
 
 -- ds.row:
-background.solid: $inherited.colors.cta-tertiary.base
+background.solid if { tertiary-button.variant != link }: $inherited.colors.cta-tertiary.base
 radius: $ds.radius.medium
 inset: $ds.spaces.inset-wide.medium
 align-content: center
-background.solid if { tertiary-button.hover }: $inherited.colors.cta-tertiary.hover
+background.solid if { tertiary-button.hover && tertiary-button.variant != link }: $inherited.colors.cta-tertiary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $tertiary-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $tertiary-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
@@ -170,9 +179,12 @@ caption title:
 optional string link:
 boolean $hover: false
 button-width width: default
+boolean enabled: true
+button-size size: medium
+button-variant variant: solid
 
 -- ds.row:
-background.solid: $inherited.colors.success.base
+background.solid if { success-button.variant != link }: $inherited.colors.success.base
 radius: $ds.radius.medium
 inset: $ds.spaces.inset-wide.medium
 align-content: center
@@ -206,9 +218,12 @@ caption title:
 optional string link:
 boolean $hover: false
 button-width width: default
+boolean enabled: true
+button-size size: medium
+button-variant variant: solid
 
 -- ds.row:
-background.solid: $inherited.colors.warning.base
+background.solid if { warning-button.variant != link }: $inherited.colors.warning.base
 radius: $ds.radius.medium
 inset: $ds.spaces.inset-wide.medium
 align-content: center
@@ -242,9 +257,12 @@ caption title:
 optional string link:
 boolean $hover: false
 button-width width: default
+boolean enabled: true
+button-size size: medium
+button-variant variant: solid
 
 -- ds.row:
-background.solid: $inherited.colors.cta-danger.base
+background.solid if { danger-button.variant != link }: $inherited.colors.cta-danger.base
 radius: $ds.radius.medium
 inset: $ds.spaces.inset-wide.medium
 align-content: center
@@ -279,9 +297,12 @@ caption title:
 optional string link:
 boolean $hover: false
 button-width width: default
+boolean enabled: true
+button-size size: medium
+button-variant variant: solid
 
 -- ds.row:
-background.solid: $inherited.colors.info.base
+background.solid if { info-button.variant != link }: $inherited.colors.info.base
 radius: $ds.radius.medium
 inset: $ds.spaces.inset-wide.medium
 align-content: center
@@ -389,6 +410,93 @@ link: /
 link: /
 
 -- end: ds.rendered
+
+-- ds.rendered:
+
+\-- primary-button: primary-button
+link: /
+variant: link
+
+-- primary-button: primary-button
+link: /
+variant: link
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- secondary-button: secondary-button
+link: /
+variant: link
+
+-- secondary-button: secondary-button
+link: /
+variant: link
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- tertiary-button: tertiary-button
+link: /
+variant: link
+
+-- tertiary-button: tertiary-button
+link: /
+variant: link
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- success-button: success-button
+link: /
+variant: link
+
+-- success-button: success-button
+link: /
+variant: link
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- warning-button: warning-button
+link: /
+variant: link
+
+-- warning-button: warning-button
+link: /
+variant: link
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- danger-button: danger-button
+link: /
+variant: link
+
+-- danger-button: danger-button
+link: /
+variant: link
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- info-button: info-button
+link: /
+variant: link
+
+-- info-button: info-button
+link: /
+variant: link
+
+-- end: ds.rendered
+
+
+
 
 -- end: ds.section-column
 

@@ -605,6 +605,146 @@ variant: outline
 
 -- ds.rendered:
 
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: primary
+variant: link
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: primary
+variant: link
+
+-- end: ds.rendered
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: secondary
+variant: link
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: secondary
+variant: link
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: tertiary
+variant: link
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: tertiary
+variant: link
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: success
+variant: link
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: success
+variant: link
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: warning
+variant: link
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: warning
+variant: link
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: danger
+variant: link
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: danger
+variant: link
+
+-- end: ds.rendered
+
+
+
+
+
+-- ds.rendered:
+
+\-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: info
+variant: link
+
+-- icon-button: Icon
+icon: $assets.files.assets.convert.svg
+link: /
+kind: info
+variant: link
+
+-- end: ds.rendered
+
+
+
+
+
+
+-- ds.rendered:
+
 \-- square-button:
 icon: $assets.files.assets.convert.svg
 link: /
