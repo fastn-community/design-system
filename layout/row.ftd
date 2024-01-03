@@ -17,6 +17,7 @@ integer border-top: $ds.borders.none
 integer border-bottom: $ds.borders.none
 integer border-left: $ds.borders.none
 integer border-right: $ds.borders.none
+optional ftd.color border-color:
 
 -- ftd.row:
 width: $row.width
@@ -41,6 +42,7 @@ border-top-width.px: $row.border-top
 border-bottom-width.px: $row.border-bottom
 border-right-width.px: $row.border-right
 border-left-width.px: $row.border-left
+border-color: $row.border-color
 
 -- end: ftd.row
 
