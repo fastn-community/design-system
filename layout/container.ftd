@@ -39,8 +39,61 @@ border-top-width.px: $container.border-top
 border-bottom-width.px: $container.border-bottom
 border-right-width.px: $container.border-right
 border-left-width.px: $container.border-left
-border-color: $column.border-color
+border-color: $container.border-color
 
 -- end: ftd.container
 
 -- end: container
+
+
+
+
+
+
+
+
+
+
+-- ds.page:
+
+-- ds.section-column:
+
+-- ds.heading-hero: Buttons
+
+-- ds.phosphor-icon-button: Back
+icon: arrow-left
+link: index.html
+
+-- ds.rendered:
+
+\-- ds.container:
+width.fixed.px: 200
+height.fixed.px: 200
+border-top: $ds.borders.thick
+border-left: $ds.borders.thick
+border-right: $ds.borders.thick
+border-bottom: $ds.borders.thick
+radius: $ds.radius.large
+background.solid: $ds.colors.custom.three
+border-color: $ds.colors.border
+margin-vertical: $ds.spaces.vertical-gap.medium
+margin-horizontal: $ds.spaces.vertical-gap.small
+
+-- ds.container:
+width.fixed.px: 200
+height.fixed.px: 200
+border-top: $ds.borders.thick
+border-left: $ds.borders.thick
+border-right: $ds.borders.thick
+border-bottom: $ds.borders.thick
+radius: $ds.radius.large
+background.solid: $ds.colors.custom.three
+border-color: $ds.colors.border
+margin-vertical: $ds.spaces.vertical-gap.medium
+margin-horizontal: $ds.spaces.vertical-gap.small
+
+-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page

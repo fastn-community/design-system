@@ -11,6 +11,7 @@ ftd.align align-content: center
 children content:
 optional string link:
 boolean wrap: false
+optional ftd.resizing height:
 optional ftd.background background:
 ds.element-radius radius: $ds.radius.medium
 integer border-top: $ds.borders.none
@@ -21,6 +22,7 @@ optional ftd.color border-color:
 
 -- ftd.row:
 width: $row.width
+height: $row.height
 padding-vertical.px: $row.inset.vertical
 padding-horizontal.px: $row.inset.horizontal
 spacing.fixed.px: $row.spacing.gap
@@ -47,3 +49,52 @@ border-color: $row.border-color
 -- end: ftd.row
 
 -- end: row
+
+
+
+
+
+
+
+
+
+
+-- ds.page:
+
+-- ds.section-column:
+
+-- ds.heading-hero: Buttons
+
+-- ds.phosphor-icon-button: Back
+icon: arrow-left
+link: index.html
+
+-- ds.rendered:
+
+\-- ds.row:
+width.fixed.px: 200
+height.fixed.px: 200
+border-top: $ds.borders.thin
+border-left: $ds.borders.thin
+border-right: $ds.borders.thin
+border-bottom: $ds.borders.thin
+radius: $ds.radius.small
+background.solid: $ds.colors.custom.five
+align-content: center
+
+-- ds.row:
+width.fixed.px: 200
+height.fixed.px: 200
+border-top: $ds.borders.thin
+border-left: $ds.borders.thin
+border-right: $ds.borders.thin
+border-bottom: $ds.borders.thin
+radius: $ds.radius.small
+background.solid: $ds.colors.custom.five
+align-content: center
+
+-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page
