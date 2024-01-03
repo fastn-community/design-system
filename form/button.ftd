@@ -75,6 +75,11 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { primary-button.width == default }: hug-content
 width.fixed.px if { primary-button.width == wide }: 200
 width if { primary-button.width == full }: fill-container
+border-top-width.px if { primary-button.variant == outline }: 1
+border-left-width.px if { primary-button.variant == outline }: 1
+border-right-width.px if { primary-button.variant == outline }: 1
+border-bottom-width.px if { primary-button.variant == outline }: 1
+border-color if { primary-button.variant == outline}: $ds.colors.cta-primary.border
 
 -- ds.link: 
 text: $primary-button.title
@@ -115,6 +120,11 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { secondary-button.width == default }: hug-content
 width.fixed.px if { secondary-button.width == wide }: 200
 width if { secondary-button.width == full }: fill-container
+border-top-width.px if { secondary-button.variant == outline }: 1
+border-left-width.px if { secondary-button.variant == outline }: 1
+border-right-width.px if { secondary-button.variant == outline }: 1
+border-bottom-width.px if { secondary-button.variant == outline }: 1
+border-color if { secondary-button.variant == outline}: $ds.colors.cta-secondary.border
 
 -- ds.link: 
 text: $secondary-button.title
@@ -155,6 +165,11 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { tertiary-button.width == default }: hug-content
 width.fixed.px if { tertiary-button.width == wide }: 200
 width if { tertiary-button.width == full }: fill-container
+border-top-width.px if { tertiary-button.variant == outline }: 1
+border-left-width.px if { tertiary-button.variant == outline }: 1
+border-right-width.px if { tertiary-button.variant == outline }: 1
+border-bottom-width.px if { tertiary-button.variant == outline }: 1
+border-color if { tertiary-button.variant == outline}: $ds.colors.cta-tertiary.border
 
 -- ds.link: 
 text: $tertiary-button.title
@@ -194,6 +209,11 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { success-button.width == default }: hug-content
 width.fixed.px if { success-button.width == wide }: 200
 width if { success-button.width == full }: fill-container
+border-top-width.px if { success-button.variant == outline }: 1
+border-left-width.px if { success-button.variant == outline }: 1
+border-right-width.px if { success-button.variant == outline }: 1
+border-bottom-width.px if { success-button.variant == outline }: 1
+border-color if { success-button.variant == outline}: $ds.colors.success.border
 
 -- ds.link: 
 text: $success-button.title
@@ -233,6 +253,11 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { warning-button.width == default }: hug-content
 width.fixed.px if { warning-button.width == wide }: 200
 width if { warning-button.width == full }: fill-container
+border-top-width.px if { warning-button.variant == outline }: 1
+border-left-width.px if { warning-button.variant == outline }: 1
+border-right-width.px if { warning-button.variant == outline }: 1
+border-bottom-width.px if { warning-button.variant == outline }: 1
+border-color if { warning-button.variant == outline}: $ds.colors.warning.border
 
 -- ds.link: 
 text: $warning-button.title
@@ -273,6 +298,11 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { danger-button.width == default }: hug-content
 width.fixed.px if { danger-button.width == wide }: 200
 width if { danger-button.width == full }: fill-container
+border-top-width.px if { danger-button.variant == outline }: 1
+border-left-width.px if { danger-button.variant == outline }: 1
+border-right-width.px if { danger-button.variant == outline }: 1
+border-bottom-width.px if { danger-button.variant == outline }: 1
+border-color if { danger-button.variant == outline}: $ds.colors.cta-danger.border
 
 -- ds.link: 
 text: $danger-button.title
@@ -312,6 +342,11 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { info-button.width == default }: hug-content
 width.fixed.px if { info-button.width == wide }: 200
 width if { info-button.width == full }: fill-container
+border-top-width.px if { info-button.variant == outline }: 1
+border-left-width.px if { info-button.variant == outline }: 1
+border-right-width.px if { info-button.variant == outline }: 1
+border-bottom-width.px if { info-button.variant == outline }: 1
+border-color if { info-button.variant == outline}: $ds.colors.info.border
 
 -- ds.link: 
 text: $info-button.title
@@ -341,6 +376,8 @@ link: $info-button.link
 icon: arrow-left
 link: index.html
 
+-- ds.section-row:
+
 -- ds.rendered:
 
 \-- primary-button: primary-button
@@ -353,61 +390,13 @@ link: /
 
 -- ds.rendered:
 
-\-- secondary-button: secondary-button
+\-- primary-button: primary-button
 link: /
+variant: outline
 
--- secondary-button: secondary-button
+-- primary-button: primary-button
 link: /
-
--- end: ds.rendered
-
--- ds.rendered:
-
-\-- tertiary-button: tertiary-button
-link: /
-
--- tertiary-button: tertiary-button
-link: /
-
--- end: ds.rendered
-
--- ds.rendered:
-
-\-- success-button: success-button
-link: /
-
--- success-button: success-button
-link: /
-
--- end: ds.rendered
-
--- ds.rendered:
-
-\-- warning-button: warning-button
-link: /
-
--- warning-button: warning-button
-link: /
-
--- end: ds.rendered
-
--- ds.rendered:
-
-\-- danger-button: danger-button
-link: /
-
--- danger-button: danger-button
-link: /
-
--- end: ds.rendered
-
--- ds.rendered:
-
-\-- info-button: info-button
-link: /
-
--- info-button: info-button
-link: /
+variant: outline
 
 -- end: ds.rendered
 
@@ -423,6 +412,32 @@ variant: link
 
 -- end: ds.rendered
 
+-- end: ds.section-row
+
+-- ds.section-row:
+
+-- ds.rendered:
+
+\-- secondary-button: secondary-button
+link: /
+
+-- secondary-button: secondary-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- secondary-button: secondary-button
+link: /
+variant: outline
+
+-- secondary-button: secondary-button
+link: /
+variant: outline
+
+-- end: ds.rendered
+
 -- ds.rendered:
 
 \-- secondary-button: secondary-button
@@ -432,6 +447,32 @@ variant: link
 -- secondary-button: secondary-button
 link: /
 variant: link
+
+-- end: ds.rendered
+
+-- end: ds.section-row
+
+-- ds.section-row:
+
+-- ds.rendered:
+
+\-- tertiary-button: tertiary-button
+link: /
+
+-- tertiary-button: tertiary-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- tertiary-button: tertiary-button
+link: /
+variant: outline
+
+-- tertiary-button: tertiary-button
+link: /
+variant: outline
 
 -- end: ds.rendered
 
@@ -447,6 +488,32 @@ variant: link
 
 -- end: ds.rendered
 
+-- end: ds.section-row
+
+-- ds.section-row:
+
+-- ds.rendered:
+
+\-- success-button: success-button
+link: /
+
+-- success-button: success-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- success-button: success-button
+link: /
+variant: outline
+
+-- success-button: success-button
+link: /
+variant: outline
+
+-- end: ds.rendered
+
 -- ds.rendered:
 
 \-- success-button: success-button
@@ -456,6 +523,32 @@ variant: link
 -- success-button: success-button
 link: /
 variant: link
+
+-- end: ds.rendered
+
+-- end: ds.section-row
+
+-- ds.section-row:
+
+-- ds.rendered:
+
+\-- warning-button: warning-button
+link: /
+
+-- warning-button: warning-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- warning-button: warning-button
+link: /
+variant: outline
+
+-- warning-button: warning-button
+link: /
+variant: outline
 
 -- end: ds.rendered
 
@@ -471,6 +564,32 @@ variant: link
 
 -- end: ds.rendered
 
+-- end: ds.section-row
+
+-- ds.section-row:
+
+-- ds.rendered:
+
+\-- danger-button: danger-button
+link: /
+
+-- danger-button: danger-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- danger-button: danger-button
+link: /
+variant: outline
+
+-- danger-button: danger-button
+link: /
+variant: outline
+
+-- end: ds.rendered
+
 -- ds.rendered:
 
 \-- danger-button: danger-button
@@ -480,6 +599,32 @@ variant: link
 -- danger-button: danger-button
 link: /
 variant: link
+
+-- end: ds.rendered
+
+-- end: ds.section-row
+
+-- ds.section-row:
+
+-- ds.rendered:
+
+\-- info-button: info-button
+link: /
+
+-- info-button: info-button
+link: /
+
+-- end: ds.rendered
+
+-- ds.rendered:
+
+\-- info-button: info-button
+link: /
+variant: outline
+
+-- info-button: info-button
+link: /
+variant: outline
 
 -- end: ds.rendered
 
@@ -495,8 +640,7 @@ variant: link
 
 -- end: ds.rendered
 
-
-
+-- end: ds.section-row
 
 -- end: ds.section-column
 
