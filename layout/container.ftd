@@ -1,5 +1,6 @@
 -- import: fastn-community.github.io/design-system/spaces
 -- import: fastn-community.github.io/design-system/radius
+-- import: fastn-community.github.io/design-system/borders
 
 -- component container:
 optional caption title:
@@ -11,6 +12,12 @@ children content:
 optional ftd.resizing height:
 ds.gap margin-vertical: $ds.spaces.vertical-gap.small
 ds.gap margin-horizontal: $ds.spaces.vertical-gap.small
+integer border: $ds.borders.uniform.none
+integer border-top: $ds.borders.none
+integer border-bottom: $ds.borders.none
+integer border-left: $ds.borders.none
+integer border-right: $ds.borders.none
+optional ftd.color border-color:
 
 -- ftd.container:
 width: $container.width
@@ -29,7 +36,66 @@ border-bottom-left-radius.percent if { container.radius.bottom-left == $radius.H
 border-bottom-right-radius.percent if { container.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
 margin-vertical.px: $container.margin-vertical.gap
 margin-horizontal.px: $container.margin-horizontal.gap
+border-top-width.px: $container.border-top
+border-bottom-width.px: $container.border-bottom
+border-right-width.px: $container.border-right
+border-left-width.px: $container.border-left
+border-width.px: $container.border
+border-color: $container.border-color
 
 -- end: ftd.container
 
 -- end: container
+
+
+
+
+
+
+
+
+
+
+-- ds.page:
+
+-- ds.section-column:
+
+-- ds.heading-hero: Buttons
+
+-- ds.phosphor-icon-button: Back
+icon: arrow-left
+link: index.html
+
+-- ds.rendered:
+
+\-- ds.container:
+width.fixed.px: 200
+height.fixed.px: 200
+border-top: $ds.borders.thick
+border-left: $ds.borders.thick
+border-right: $ds.borders.thick
+border-bottom: $ds.borders.thick
+radius: $ds.radius.large
+background.solid: $ds.colors.custom.three
+border-color: $ds.colors.border
+margin-vertical: $ds.spaces.vertical-gap.medium
+margin-horizontal: $ds.spaces.vertical-gap.small
+
+-- ds.container:
+width.fixed.px: 200
+height.fixed.px: 200
+border-top: $ds.borders.thick
+border-left: $ds.borders.thick
+border-right: $ds.borders.thick
+border-bottom: $ds.borders.thick
+radius: $ds.radius.large
+background.solid: $ds.colors.custom.three
+border-color: $ds.colors.border
+margin-vertical: $ds.spaces.vertical-gap.medium
+margin-horizontal: $ds.spaces.vertical-gap.small
+
+-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page

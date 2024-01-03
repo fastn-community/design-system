@@ -1,4 +1,5 @@
 -- import: fastn-community.github.io/design-system/spaces
+-- import: fastn-community.github.io/design-system/radius
 
 -- component column:
 optional caption title:
@@ -9,7 +10,7 @@ children content:
 ftd.align align-content: center
 optional ftd.background background:
 optional ftd.resizing height:
-optional ftd.length border-radius:
+ds.element-radius radius: $ds.radius.medium
 optional ftd.length border-width:
 optional ftd.color border-color:
 
@@ -23,7 +24,14 @@ children: $column.content
 background: $column.background
 align-content: $column.align-content
 height: $column.height
-border-radius: $column.border-radius
+border-top-left-radius.px if { column.radius.top-left != $radius.HACK-RADIUS-ROUND }: $column.radius.top-left
+border-top-right-radius.px if { column.radius.top-right != $radius.HACK-RADIUS-ROUND }: $column.radius.top-right
+border-bottom-left-radius.px if { column.radius.bottom-left != $radius.HACK-RADIUS-ROUND }: $column.radius.bottom-left
+border-bottom-right-radius.px if { column.radius.bottom-right != $radius.HACK-RADIUS-ROUND }: $column.radius.bottom-right
+border-top-left-radius.percent if { column.radius.top-left == $radius.HACK-RADIUS-ROUND }: 50
+border-top-right-radius.percent if { column.radius.top-right == $radius.HACK-RADIUS-ROUND }: 50
+border-bottom-left-radius.percent if { column.radius.bottom-left == $radius.HACK-RADIUS-ROUND }: 50
+border-bottom-right-radius.percent if { column.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
 border-width: $column.border-width
 border-color: $column.border-color
 
