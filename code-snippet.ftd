@@ -1,0 +1,83 @@
+-- ds.page:
+
+-- ds.section-column:
+
+-- ds.heading-hero: Card
+
+-- ds.phosphor-icon-button: Back
+icon: arrow-left
+link: index.html
+
+-- ds.rendered:
+
+\-- ds.container:
+width.fixed.percent: 38
+border-top: $ds.borders.thin
+border-left: $ds.borders.thin
+border-right: $ds.borders.thin
+border-bottom: $ds.borders.thin
+inset: $ds.spaces.inset-square.large
+
+\-- ds.column:
+align-content: left
+
+\-- ftd.image:
+src: https://bit.ly/2k1H1t6
+width.fixed.px: 300
+border-radius.px: 8
+
+\-- ds.copy-regular: 
+text: PLUS VERIFIED • CAPE TOWN
+color: $ds.colors.custom.eight
+
+\-- ds.copy-large: 
+text: Modern, Chic Penthouse with Mountain, City & Sea Views
+
+\-- ds.copy-small: 
+text: \$119/night
+
+\-- ds.copy-regular: 
+text: ⭐ 4.84 (190)
+
+\-- end: ds.column
+
+\-- end: ds.container
+
+-- ds.container:
+width.fixed.percent: 38
+border-top: $ds.borders.thin
+border-left: $ds.borders.thin
+border-right: $ds.borders.thin
+border-bottom: $ds.borders.thin
+inset: $ds.spaces.inset-square.large
+
+-- ds.column:
+align-content: left
+
+-- ftd.image:
+src: https://bit.ly/2k1H1t6
+width.fixed.px: 300
+border-radius.px: 8
+
+-- ds.copy-regular: 
+text: PLUS VERIFIED • CAPE TOWN
+color: $ds.colors.custom.eight
+
+-- ds.copy-large: 
+text: Modern, Chic Penthouse with Mountain, City & Sea Views
+
+-- ds.copy-small: 
+text: \$119/night
+
+-- ds.copy-regular: 
+text: ⭐ 4.84 (190)
+
+-- end: ds.column
+
+-- end: ds.container
+
+-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page
