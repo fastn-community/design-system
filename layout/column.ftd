@@ -91,15 +91,15 @@ align-content: center
 inset: $ds.spaces.inset-square.small
 
 -- ds.copy-regular:
-text: Text 1
+text: Column Text
 width: hug-content
 
 -- ds.copy-regular:
-text: Text 1
+text: Column Text
 width: hug-content
 
 -- ds.copy-regular:
-text: Text 1
+text: Column Text
 width: hug-content
 
 -- end: ds.column
