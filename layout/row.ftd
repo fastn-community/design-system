@@ -72,7 +72,7 @@ link: index.html
 -- ds.rendered:
 
 \-- ds.row:
-width.fixed.px: 200
+width.fixed.px: 280
 height.fixed.px: 200
 border-top: $ds.borders.thin
 border-left: $ds.borders.thin
@@ -82,8 +82,22 @@ radius: $ds.radius.small
 background.solid: $ds.colors.custom.five
 align-content: center
 
+\-- ds.copy-regular:
+text: Text 1
+width: hug-content
+
+\-- ds.copy-regular:
+text: Text 1
+width: hug-content
+
+\-- ds.copy-regular:
+text: Text 1
+width: hug-content
+
+\-- end: ds.row
+
 -- ds.row:
-width.fixed.px: 200
+width.fixed.px: 280
 height.fixed.px: 200
 border-top: $ds.borders.thin
 border-left: $ds.borders.thin
@@ -92,6 +106,20 @@ border-bottom: $ds.borders.thin
 radius: $ds.radius.small
 background.solid: $ds.colors.custom.five
 align-content: center
+
+-- ds.copy-regular:
+text: Row Text
+width: hug-content
+
+-- ds.copy-regular:
+text: Row Text
+width: hug-content
+
+-- ds.copy-regular:
+text: Row Text
+width: hug-content
+
+-- end: ds.row
 
 -- end: ds.rendered
 

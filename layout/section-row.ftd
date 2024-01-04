@@ -75,11 +75,20 @@ spacing: $ds.spaces.vertical-gap.space-between
 flush: full
 
 \-- ds.row:
-width: hug-content
-align-content: center
-inset: $ds.spaces.inset-wide.large
+width.fixed.px: 80
+height.fixed.px: 80
+background.solid: $ds.colors.custom.one
 
-\-- ds.column:
+\-- end: ds.row
+
+\-- ds.row:
+width.fixed.px: 80
+height.fixed.px: 80
+background.solid: $ds.colors.custom.one
+
+\-- end: ds.row
+
+\-- ds.row:
 width.fixed.px: 80
 height.fixed.px: 80
 background.solid: $ds.colors.custom.one
@@ -91,15 +100,28 @@ background.solid: $ds.colors.custom.one
 -- ds.section-row:
 inset: $ds.spaces.inset-wide.large
 outer-background.solid: $ds.colors.background.step-1
-spacing: $ds.spaces.vertical-gap.space-between
+spacing: $ds.spaces.vertical-gap.small
 flush: full
 
--- ds.row:
+-- ds.copy-regular:
+text: This is section-row
 width: hug-content
-align-content: center
-inset: $ds.spaces.inset-wide.large
 
--- ds.column:
+-- ds.row:
+width.fixed.px: 80
+height.fixed.px: 80
+background.solid: $ds.colors.custom.one
+
+-- end: ds.row
+
+-- ds.row:
+width.fixed.px: 80
+height.fixed.px: 80
+background.solid: $ds.colors.custom.one
+
+-- end: ds.row
+
+-- ds.row:
 width.fixed.px: 80
 height.fixed.px: 80
 background.solid: $ds.colors.custom.one
