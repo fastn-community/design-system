@@ -1,4 +1,5 @@
 -- import: fastn-community.github.io/design-system/spaces
+-- import: fastn-community.github.io/design-system/borders
 
 
 -- component section-row:
@@ -12,14 +13,17 @@ ds.hv inset: $ds.spaces.inset-wide.large
 ds.gap margin: $ds.spaces.vertical-gap.large
 boolean wrap: false
 ftd.align align-content: center
-optional integer border-bottom-width: 0
+integer border-top: $ds.borders.none
+integer border-bottom: $ds.borders.none
+integer border-left: $ds.borders.none
+integer border-right: $ds.borders.none
 
 -- ftd.column:
 width: fill-container
 align-content: center
 background: $section-row.outer-background
 margin-bottom.px: $section-row.margin.gap
-border-bottom-width.px: $section-row.border-bottom-width
+border-bottom-width.px: $section-row.border-bottom
 border-color: $ds.colors.border
 
 -- ftd.row:
@@ -41,3 +45,93 @@ background: $section-row.inner-background
 -- end: ftd.column
 
 -- end: section-row
+
+
+
+
+
+
+
+
+
+
+
+-- ds.page:
+
+-- ds.section-column:
+
+-- ds.heading-hero: Buttons
+
+-- ds.phosphor-icon-button: Back
+icon: arrow-left
+link: index.html
+
+-- ds.rendered:
+
+\-- ds.section-row:
+inset: $ds.spaces.inset-wide.large
+outer-background.solid: $ds.colors.background.step-1
+spacing: $ds.spaces.vertical-gap.space-between
+flush: full
+
+\-- ds.row:
+width.fixed.px: 80
+height.fixed.px: 80
+background.solid: $ds.colors.custom.one
+
+\-- end: ds.row
+
+\-- ds.row:
+width.fixed.px: 80
+height.fixed.px: 80
+background.solid: $ds.colors.custom.one
+
+\-- end: ds.row
+
+\-- ds.row:
+width.fixed.px: 80
+height.fixed.px: 80
+background.solid: $ds.colors.custom.one
+
+\-- end: ds.row
+
+\-- end: ds.section-row
+
+-- ds.section-row:
+inset: $ds.spaces.inset-wide.large
+outer-background.solid: $ds.colors.background.step-1
+spacing: $ds.spaces.vertical-gap.small
+flush: full
+
+-- ds.copy-regular:
+text: This is section-row
+width: hug-content
+
+-- ds.row:
+width.fixed.px: 80
+height.fixed.px: 80
+background.solid: $ds.colors.custom.one
+
+-- end: ds.row
+
+-- ds.row:
+width.fixed.px: 80
+height.fixed.px: 80
+background.solid: $ds.colors.custom.one
+
+-- end: ds.row
+
+-- ds.row:
+width.fixed.px: 80
+height.fixed.px: 80
+background.solid: $ds.colors.custom.one
+
+-- end: ds.row
+
+-- end: ds.section-row
+
+-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page

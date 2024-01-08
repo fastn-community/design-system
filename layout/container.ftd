@@ -12,7 +12,6 @@ children content:
 optional ftd.resizing height:
 ds.gap margin-vertical: $ds.spaces.vertical-gap.small
 ds.gap margin-horizontal: $ds.spaces.vertical-gap.small
-integer border: $ds.borders.uniform.none
 integer border-top: $ds.borders.none
 integer border-bottom: $ds.borders.none
 integer border-left: $ds.borders.none
@@ -40,7 +39,6 @@ border-top-width.px: $container.border-top
 border-bottom-width.px: $container.border-bottom
 border-right-width.px: $container.border-right
 border-left-width.px: $container.border-left
-border-width.px: $container.border
 border-color: $container.border-color
 
 -- end: ftd.container
@@ -69,30 +67,96 @@ link: index.html
 -- ds.rendered:
 
 \-- ds.container:
-width.fixed.px: 200
+width: fill-container
 height.fixed.px: 200
-border-top: $ds.borders.thick
-border-left: $ds.borders.thick
-border-right: $ds.borders.thick
-border-bottom: $ds.borders.thick
+border-top: $ds.borders.thin
+border-left: $ds.borders.thin
+border-right: $ds.borders.thin
+border-bottom: $ds.borders.thin
 radius: $ds.radius.large
-background.solid: $ds.colors.custom.three
+background.solid: $ds.colors.background.step-1
 border-color: $ds.colors.border
 margin-vertical: $ds.spaces.vertical-gap.medium
 margin-horizontal: $ds.spaces.vertical-gap.small
 
+\-- ds.row:
+spacing: $ds.spaces.horizontal-gap.large
+inset: $ds.spaces.inset-square.small
+
+\-- ds.column:
+width.fixed.px: 220
+height.fixed.px: 120
+inset: $ds.spaces.inset-square.small
+background.solid: $ds.colors.background.step-2
+
+\-- ds.copy-small:
+text: Column inside row
+
+\-- end: ds.column
+
+\-- ds.column:
+width.fixed.px: 220
+height.fixed.px: 120
+inset: $ds.spaces.inset-square.small
+background.solid: $ds.colors.background.step-2
+
+\-- ds.copy-small:
+text: Column inside row
+
+\-- end: ds.column
+
+\-- end: ds.row
+
+\-- end: ds.container
+
+
 -- ds.container:
-width.fixed.px: 200
+width: fill-container
 height.fixed.px: 200
-border-top: $ds.borders.thick
-border-left: $ds.borders.thick
-border-right: $ds.borders.thick
-border-bottom: $ds.borders.thick
+border-top: $ds.borders.thin
+border-left: $ds.borders.thin
+border-right: $ds.borders.thin
+border-bottom: $ds.borders.thin
 radius: $ds.radius.large
-background.solid: $ds.colors.custom.three
+background.solid: $ds.colors.background.step-1
 border-color: $ds.colors.border
 margin-vertical: $ds.spaces.vertical-gap.medium
 margin-horizontal: $ds.spaces.vertical-gap.small
+inset: $ds.spaces.inset-square.small
+
+-- ds.copy-regular:
+text: This is inside a container
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.large
+inset: $ds.spaces.inset-square.small
+
+
+-- ds.column:
+width.fixed.px: 220
+height.fixed.px: 120
+inset: $ds.spaces.inset-square.small
+background.solid: $ds.colors.background.step-2
+
+-- ds.copy-small:
+text: Column inside row
+
+-- end: ds.column
+
+-- ds.column:
+width.fixed.px: 220
+height.fixed.px: 120
+inset: $ds.spaces.inset-square.small
+background.solid: $ds.colors.background.step-2
+
+-- ds.copy-small:
+text: Column inside row
+
+-- end: ds.column
+
+-- end: ds.row
+
+-- end: ds.container
 
 -- end: ds.rendered
 

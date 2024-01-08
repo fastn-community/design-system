@@ -99,6 +99,11 @@ This is the package you have been waiting for!
 - [Button Group (WIP)](form/button-group/)
 - [Typography](typography/)
 - [Page](layout/page/)
+- [Column](layout/column/)
+- [Container](layout/container/)
+- [Row](layout/row/)
+- [section-row](layout/section-row/)
+- [section-column](layout/section-column/)
 
 -- demos.demo:
 

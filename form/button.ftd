@@ -1,4 +1,5 @@
 -- import: fastn-community.github.io/design-system/spaces
+-- import: fastn-community.github.io/design-system/borders
 
 -- or-type button-kind:
 
@@ -75,10 +76,10 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { primary-button.width == default }: hug-content
 width.fixed.px if { primary-button.width == wide }: 200
 width if { primary-button.width == full }: fill-container
-border-top if { primary-button.variant == outline }: 1
-border-left if { primary-button.variant == outline }: 1
-border-right if { primary-button.variant == outline }: 1
-border-bottom if { primary-button.variant == outline }: 1
+border-top if { primary-button.variant == outline }: $ds.borders.thin
+border-left if { primary-button.variant == outline }: $ds.borders.thin
+border-right if { primary-button.variant == outline }: $ds.borders.thin
+border-bottom if { primary-button.variant == outline }: $ds.borders.thin
 border-color if { primary-button.variant == outline}: $ds.colors.cta-primary.border
 
 -- ds.link: 
@@ -120,10 +121,10 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { secondary-button.width == default }: hug-content
 width.fixed.px if { secondary-button.width == wide }: 200
 width if { secondary-button.width == full }: fill-container
-border-top if { secondary-button.variant == outline }: 1
-border-left if { secondary-button.variant == outline }: 1
-border-right if { secondary-button.variant == outline }: 1
-border-bottom if { secondary-button.variant == outline }: 1
+border-top if { secondary-button.variant == outline }: $ds.borders.thin
+border-left if { secondary-button.variant == outline }: $ds.borders.thin
+border-right if { secondary-button.variant == outline }: $ds.borders.thin
+border-bottom if { secondary-button.variant == outline }: $ds.borders.thin
 border-color if { secondary-button.variant == outline}: $ds.colors.cta-secondary.border
 
 -- ds.link: 
@@ -165,10 +166,10 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { tertiary-button.width == default }: hug-content
 width.fixed.px if { tertiary-button.width == wide }: 200
 width if { tertiary-button.width == full }: fill-container
-border-top if { tertiary-button.variant == outline }: 1
-border-left if { tertiary-button.variant == outline }: 1
-border-right if { tertiary-button.variant == outline }: 1
-border-bottom if { tertiary-button.variant == outline }: 1
+border-top if { tertiary-button.variant == outline }: $ds.borders.thin
+border-left if { tertiary-button.variant == outline }: $ds.borders.thin
+border-right if { tertiary-button.variant == outline }: $ds.borders.thin
+border-bottom if { tertiary-button.variant == outline }: $ds.borders.thin
 border-color if { tertiary-button.variant == outline}: $ds.colors.cta-tertiary.border
 
 -- ds.link: 
@@ -209,10 +210,10 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { success-button.width == default }: hug-content
 width.fixed.px if { success-button.width == wide }: 200
 width if { success-button.width == full }: fill-container
-border-top if { success-button.variant == outline }: 1
-border-left if { success-button.variant == outline }: 1
-border-right if { success-button.variant == outline }: 1
-border-bottom if { success-button.variant == outline }: 1
+border-top if { success-button.variant == outline }: $ds.borders.thin
+border-left if { success-button.variant == outline }: $ds.borders.thin
+border-right if { success-button.variant == outline }: $ds.borders.thin
+border-bottom if { success-button.variant == outline }: $ds.borders.thin
 border-color if { success-button.variant == outline}: $ds.colors.success.border
 
 -- ds.link: 
@@ -253,10 +254,10 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { warning-button.width == default }: hug-content
 width.fixed.px if { warning-button.width == wide }: 200
 width if { warning-button.width == full }: fill-container
-border-top if { warning-button.variant == outline }: 1
-border-left if { warning-button.variant == outline }: 1
-border-right if { warning-button.variant == outline }: 1
-border-bottom if { warning-button.variant == outline }: 1
+border-top if { warning-button.variant == outline }: $ds.borders.thin
+border-left if { warning-button.variant == outline }: $ds.borders.thin
+border-right if { warning-button.variant == outline }: $ds.borders.thin
+border-bottom if { warning-button.variant == outline }: $ds.borders.thin
 border-color if { warning-button.variant == outline}: $ds.colors.warning.border
 
 -- ds.link: 
@@ -298,10 +299,10 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { danger-button.width == default }: hug-content
 width.fixed.px if { danger-button.width == wide }: 200
 width if { danger-button.width == full }: fill-container
-border-top if { danger-button.variant == outline }: 1
-border-left if { danger-button.variant == outline }: 1
-border-right if { danger-button.variant == outline }: 1
-border-bottom if { danger-button.variant == outline }: 1
+border-top if { danger-button.variant == outline }: $ds.borders.thin
+border-left if { danger-button.variant == outline }: $ds.borders.thin
+border-right if { danger-button.variant == outline }: $ds.borders.thin
+border-bottom if { danger-button.variant == outline }: $ds.borders.thin
 border-color if { danger-button.variant == outline}: $ds.colors.cta-danger.border
 
 -- ds.link: 
@@ -342,10 +343,10 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { info-button.width == default }: hug-content
 width.fixed.px if { info-button.width == wide }: 200
 width if { info-button.width == full }: fill-container
-border-top if { info-button.variant == outline }: 1
-border-left if { info-button.variant == outline }: 1
-border-right if { info-button.variant == outline }: 1
-border-bottom if { info-button.variant == outline }: 1
+border-top if { info-button.variant == outline }: $ds.borders.thin
+border-left if { info-button.variant == outline }: $ds.borders.thin
+border-right if { info-button.variant == outline }: $ds.borders.thin
+border-bottom if { info-button.variant == outline }: $ds.borders.thin
 border-color if { info-button.variant == outline}: $ds.colors.info.border
 
 -- ds.link: 
