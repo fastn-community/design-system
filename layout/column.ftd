@@ -1,4 +1,6 @@
 -- import: fastn-community.github.io/design-system/spaces
+-- import: fastn-community.github.io/design-system/radius
+-- import: fastn-community.github.io/design-system/borders
 
 -- component column:
 optional caption title:
@@ -9,8 +11,11 @@ children content:
 ftd.align align-content: center
 optional ftd.background background:
 optional ftd.resizing height:
-optional ftd.length border-radius:
-optional ftd.length border-width:
+ds.element-radius radius: $ds.radius.medium
+integer border-top: $ds.borders.none
+integer border-bottom: $ds.borders.none
+integer border-left: $ds.borders.none
+integer border-right: $ds.borders.none
 optional ftd.color border-color:
 
 -- ftd.column:
@@ -22,11 +27,85 @@ spacing if { column.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: spa
 children: $column.content
 background: $column.background
 align-content: $column.align-content
-height: $column.height
-border-radius: $column.border-radius
-border-width: $column.border-width
 border-color: $column.border-color
+height: $column.height
+border-top-left-radius.px if { column.radius.top-left != $radius.HACK-RADIUS-ROUND }: $column.radius.top-left
+border-top-right-radius.px if { column.radius.top-right != $radius.HACK-RADIUS-ROUND }: $column.radius.top-right
+border-bottom-left-radius.px if { column.radius.bottom-left != $radius.HACK-RADIUS-ROUND }: $column.radius.bottom-left
+border-bottom-right-radius.px if { column.radius.bottom-right != $radius.HACK-RADIUS-ROUND }: $column.radius.bottom-right
+border-top-left-radius.percent if { column.radius.top-left == $radius.HACK-RADIUS-ROUND }: 50
+border-top-right-radius.percent if { column.radius.top-right == $radius.HACK-RADIUS-ROUND }: 50
+border-bottom-left-radius.percent if { column.radius.bottom-left == $radius.HACK-RADIUS-ROUND }: 50
+border-bottom-right-radius.percent if { column.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
+border-top-width.px: $column.border-top
+border-bottom-width.px: $column.border-bottom
+border-right-width.px: $column.border-right
+border-left-width.px: $column.border-left
 
 -- end: ftd.column
 
 -- end: column
+
+
+
+
+
+
+
+
+
+
+-- ds.page:
+
+-- ds.section-column:
+
+-- ds.heading-hero: Buttons
+
+-- ds.phosphor-icon-button: Back
+icon: arrow-left
+link: index.html
+
+-- ds.rendered:
+
+\-- ds.column:
+width.fixed.px: 200
+height.fixed.px: 200
+border-top: $ds.borders.thin
+border-left: $ds.borders.thin
+border-right: $ds.borders.thin
+border-bottom: $ds.borders.thin
+radius: $ds.radius.small
+background.solid: $ds.colors.custom.two
+align-content: center
+
+-- ds.column:
+width.fixed.px: 200
+height.fixed.px: 200
+border-top: $ds.borders.thin
+border-left: $ds.borders.thin
+border-right: $ds.borders.thin
+border-bottom: $ds.borders.thin
+radius: $ds.radius.small
+background.solid: $ds.colors.background.step-1
+align-content: center
+inset: $ds.spaces.inset-square.small
+
+-- ds.copy-regular:
+text: Column Text
+width: hug-content
+
+-- ds.copy-regular:
+text: Column Text
+width: hug-content
+
+-- ds.copy-regular:
+text: Column Text
+width: hug-content
+
+-- end: ds.column
+
+-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page
