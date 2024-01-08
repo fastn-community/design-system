@@ -160,7 +160,7 @@ margin-bottom.px if { heading-tiny.margin != NULL }: $heading-tiny.margin.gap
 
 
 -- component copy-large:
-body text:
+caption or body text:
 ftd.color color: $ds.colors.text
 display-type align: inline
 optional ds.gap margin:
@@ -181,7 +181,7 @@ margin-bottom.px if { copy-large.margin != NULL }: $copy-large.margin.gap
 
 
 -- component copy-regular:
-body text:
+caption or body text:
 ftd.color color: $ds.colors.text
 optional ds.gap margin:
 display-type align: inline
@@ -208,7 +208,7 @@ width: $copy-regular.width
 
 
 -- component copy-small:
-body text:
+caption or body text:
 ftd.color color: $ds.colors.text
 display-type align: inline
 optional ds.gap margin:
@@ -227,8 +227,11 @@ margin-bottom.px if { copy-small.margin != NULL }: $copy-small.margin.gap
 -- end: copy-small
 
 
+
+
+
 -- component fine-print:
-body text:
+caption or body text:
 ftd.color color: $ds.colors.text
 display-type align: inline
 optional ds.gap margin:
