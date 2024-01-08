@@ -8,7 +8,7 @@
 icon: arrow-left
 link: index.html
 
--- ds.rendered:
+-- ds.code:
 
 \-- card: Modern, Chic Penthouse with Mountain, City & Sea Views
 image: $assets.files.assets.placeholder.jpg
@@ -25,9 +25,6 @@ rating: 4.84 (190)
 location: CAPE TOWN
 tag: PLUS
 verified: VERIFIED
-
-
--- end: ds.rendered
 
 -- end: ds.section-column
 
