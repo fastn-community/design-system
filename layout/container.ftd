@@ -12,6 +12,7 @@ children content:
 optional ftd.resizing height:
 ds.gap margin-vertical: $ds.spaces.vertical-gap.small
 ds.gap margin-horizontal: $ds.spaces.vertical-gap.small
+integer border: $ds.borders.uniform.none
 integer border-top: $ds.borders.none
 integer border-bottom: $ds.borders.none
 integer border-left: $ds.borders.none
@@ -39,6 +40,7 @@ border-top-width.px: $container.border-top
 border-bottom-width.px: $container.border-bottom
 border-right-width.px: $container.border-right
 border-left-width.px: $container.border-left
+border-width.px: $container.border
 border-color: $container.border-color
 
 -- end: ftd.container
@@ -67,14 +69,14 @@ link: index.html
 -- ds.rendered:
 
 \-- ds.container:
-width: fill-container
+width.fixed.px: 200
 height.fixed.px: 200
-border-top: $ds.borders.thin
-border-left: $ds.borders.thin
-border-right: $ds.borders.thin
-border-bottom: $ds.borders.thin
+border-top: $ds.borders.thick
+border-left: $ds.borders.thick
+border-right: $ds.borders.thick
+border-bottom: $ds.borders.thick
 radius: $ds.radius.large
-background.solid: $ds.colors.background.step-1
+background.solid: $ds.colors.custom.three
 border-color: $ds.colors.border
 margin-vertical: $ds.spaces.vertical-gap.medium
 margin-horizontal: $ds.spaces.vertical-gap.small

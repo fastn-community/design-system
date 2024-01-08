@@ -62,19 +62,17 @@ align-content: left
 -- ftd.image:
 src: $card.image
 width: fill-container
-border-radius.px: 8
+;;border-radius.px: $ds.radius.medium
 
 -- ds.row:
 align-content: left
 spacing: $ds.spaces.horizontal-gap.small
 
--- ds.copy-regular:
-text: $card.tag
+-- ds.copy-regular: $card.tag
 color: $ds.colors.custom.eight
 width: hug-content
 
--- ds.copy-regular:
-text: $card.verified
+-- ds.copy-regular: $card.verified
 color: $ds.colors.custom.eight
 width: hug-content
 
@@ -86,18 +84,15 @@ background.solid: $ds.colors.custom.eight
 
 -- end: ds.column
 
--- ds.copy-regular:
-text: $card.location
+-- ds.copy-regular: $card.location
 color: $ds.colors.custom.eight
 width: hug-content
 
 -- end: ds.row
 
--- ds.copy-large: 
-text: $card.title
+-- ds.copy-large: $card.title
 
--- ds.copy-small: 
-text: $card.price
+-- ds.copy-small: $card.price
 
 -- ds.row:
 spacing: $ds.spaces.horizontal-gap.extra-small
@@ -107,8 +102,7 @@ src: $assets.files.assets.star.svg
 width.fixed.px: 18
 height.fixed.px: 18
 
--- ds.copy-regular:
-text: $card.rating 
+-- ds.copy-regular: $card.rating 
 
 -- end: ds.row
 
