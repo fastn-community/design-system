@@ -66,7 +66,7 @@ border-color: $container.border-color
 icon: arrow-left
 link: index.html
 
--- ds.rendered:
+-- ds.code:
 
 \-- ds.container:
 width.fixed.px: 200
@@ -159,8 +159,6 @@ text: Column inside row
 -- end: ds.row
 
 -- end: ds.container
-
--- end: ds.rendered
 
 -- end: ds.section-column
 
