@@ -8,6 +8,7 @@ uniform-border-data uniform:
 none: 0
 thin: 1
 thick: 4
+<<<<<<< Updated upstream
 uniform: $uniform
 
 -- record uniform-border-data:
@@ -19,3 +20,5 @@ integer thick:
 none: 0
 thin: 1
 thick: 4
+=======
+>>>>>>> Stashed changes

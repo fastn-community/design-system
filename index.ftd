@@ -76,37 +76,37 @@ widths: $narrow-widths
 spacing: $ds.spaces.vertical-gap.medium
 align-content: left
 
--- ds.heading-hero: Design System
+	-- ds.heading-hero: Design System
+	
+	-- ds.button-group:
+	
+		-- ds.phosphor-icon-button: Github
+		icon: github-logo
+		link: https://github.com/fastn-community/design-system/
+		
+		-- ds.phosphor-icon-button: BSD (Open Source)
+		icon: scales
+		link: https://github.com/fastn-community/design-system/blob/main/LICENSE
+		
+	-- end: ds.button-group
 
--- ds.button-group:
-
--- ds.phosphor-icon-button: Github
-icon: github-logo
-link: https://github.com/fastn-community/design-system/
-
--- ds.phosphor-icon-button: BSD (Open Source)
-icon: scales
-link: https://github.com/fastn-community/design-system/blob/main/LICENSE
-
--- end: ds.button-group
-
--- ds.copy-regular:
-
-This is the package you have been waiting for!
-
-- [Buttons](form/button/)
-- [Icon Buttons](form/icon-button/)
-- [Button Group (WIP)](form/button-group/)
-- [Typography](typography/)
-- [Page](layout/page/)
-- [Column](layout/column/)
-- [Container](layout/container/)
-- [Row](layout/row/)
-- [section-row](layout/section-row/)
-- [section-column](layout/section-column/)
-
--- demos.demo:
-
+	-- ds.copy-regular:
+	
+	This is the package you have been waiting for!
+	
+	- [Buttons](form/button/)
+	- [Icon Buttons](form/icon-button/)
+	- [Button Group (WIP)](form/button-group/)
+	- [Typography](typography/)
+	- [Page](layout/page/)
+	- [Column](layout/column/)
+	- [Container](layout/container/)
+	- [Row](layout/row/)
+	- [section-row](layout/section-row/)
+	- [section-column](layout/section-column/)
+	
+	-- demos.demo:
+	
 -- end: ds.section-column
 
 -- end: ds.page

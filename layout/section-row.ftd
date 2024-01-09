@@ -26,21 +26,21 @@ margin-bottom.px: $section-row.margin.gap
 border-bottom-width.px: $section-row.border-bottom
 border-color: $ds.colors.border
 
--- ftd.row:
-width if { section-row.flush == full }: fill-container
-max-width.fixed if { section-row.flush == narrow }: $ds.widths.narrow
-max-width.fixed if { section-row.flush == wide }: $ds.widths.wide
-width.fixed: $ds.widths.regular
-children: $section-row.content
-align-content: $section-row.align-content
-spacing if { section-row.spacing.gap == $spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
-spacing.fixed.px: $section-row.spacing.gap
-wrap: $section-row.wrap
-padding-vertical.px: $section-row.inset.vertical
-padding-horizontal.px: $section-row.inset.horizontal
-background: $section-row.inner-background
-
--- end: ftd.row
+	-- ftd.row:
+	width if { section-row.flush == full }: fill-container
+	max-width.fixed if { section-row.flush == narrow }: $ds.widths.narrow
+	max-width.fixed if { section-row.flush == wide }: $ds.widths.wide
+	width.fixed: $ds.widths.regular
+	children: $section-row.content
+	align-content: $section-row.align-content
+	spacing if { section-row.spacing.gap == $spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
+	spacing.fixed.px: $section-row.spacing.gap
+	wrap: $section-row.wrap
+	padding-vertical.px: $section-row.inset.vertical
+	padding-horizontal.px: $section-row.inset.horizontal
+	background: $section-row.inner-background
+	
+	-- end: ftd.row
 
 -- end: ftd.column
 
@@ -60,77 +60,91 @@ background: $section-row.inner-background
 
 -- ds.section-column:
 
+<<<<<<< Updated upstream
 -- ds.heading-hero: Buttons
+=======
+	-- ds.row:
+	align-content: left
+	
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: index.html
+		
+		-- ds.heading-hero: Section Row
+		width: hug-content
+		
+	-- end: ds.row
+>>>>>>> Stashed changes
 
--- ds.phosphor-icon-button: Back
-icon: arrow-left
-link: index.html
+	-- ds.rendered:
+	
+	\-- ds.section-row:
+	inset: $ds.spaces.inset-wide.large
+	outer-background.solid: $ds.colors.background.step-1
+	spacing: $ds.spaces.vertical-gap.space-between
+	flush: full
+	
+	\-- ds.row:
+	width.fixed.px: 80
+	height.fixed.px: 80
+	background.solid: $ds.colors.custom.one
+	
+	\-- end: ds.row
+	
+	\-- ds.row:
+	width.fixed.px: 80
+	height.fixed.px: 80
+	background.solid: $ds.colors.custom.one
+	
+	\-- end: ds.row
+	
+	\-- ds.row:
+	width.fixed.px: 80
+	height.fixed.px: 80
+	background.solid: $ds.colors.custom.one
+	
+	\-- end: ds.row
+	
+	\-- end: ds.section-row
+	
+		-- ds.section-row:
+		inset: $ds.spaces.inset-wide.large
+		outer-background.solid: $ds.colors.background.step-1
+		spacing: $ds.spaces.vertical-gap.small
+		flush: full
+		
+			-- ds.copy-regular:
+			text: This is section-row
+			width: hug-content
+			
+			-- ds.row:
+			width.fixed.px: 80
+			height.fixed.px: 80
+			background.solid: $ds.colors.custom.one
+			
+			-- end: ds.row
 
+<<<<<<< Updated upstream
 -- ds.rendered:
+=======
+			-- ds.row:
+			width.fixed.px: 80
+			height.fixed.px: 80
+			background.solid: $ds.colors.custom.one
+			
+			-- end: ds.row
 
-\-- ds.section-row:
-inset: $ds.spaces.inset-wide.large
-outer-background.solid: $ds.colors.background.step-1
-spacing: $ds.spaces.vertical-gap.space-between
-flush: full
+			-- ds.row:
+			width.fixed.px: 80
+			height.fixed.px: 80
+			background.solid: $ds.colors.custom.one
+			
+			-- end: ds.row
 
-\-- ds.row:
-width.fixed.px: 80
-height.fixed.px: 80
-background.solid: $ds.colors.custom.one
+		-- end: ds.section-row
+>>>>>>> Stashed changes
 
-\-- end: ds.row
-
-\-- ds.row:
-width.fixed.px: 80
-height.fixed.px: 80
-background.solid: $ds.colors.custom.one
-
-\-- end: ds.row
-
-\-- ds.row:
-width.fixed.px: 80
-height.fixed.px: 80
-background.solid: $ds.colors.custom.one
-
-\-- end: ds.row
-
-\-- end: ds.section-row
-
--- ds.section-row:
-inset: $ds.spaces.inset-wide.large
-outer-background.solid: $ds.colors.background.step-1
-spacing: $ds.spaces.vertical-gap.small
-flush: full
-
--- ds.copy-regular:
-text: This is section-row
-width: hug-content
-
--- ds.row:
-width.fixed.px: 80
-height.fixed.px: 80
-background.solid: $ds.colors.custom.one
-
--- end: ds.row
-
--- ds.row:
-width.fixed.px: 80
-height.fixed.px: 80
-background.solid: $ds.colors.custom.one
-
--- end: ds.row
-
--- ds.row:
-width.fixed.px: 80
-height.fixed.px: 80
-background.solid: $ds.colors.custom.one
-
--- end: ds.row
-
--- end: ds.section-row
-
--- end: ds.rendered
+	-- end: ds.rendered
 
 -- end: ds.section-column
 

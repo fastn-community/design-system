@@ -82,11 +82,11 @@ border-right if { primary-button.variant == outline }: $ds.borders.thin
 border-bottom if { primary-button.variant == outline }: $ds.borders.thin
 border-color if { primary-button.variant == outline}: $ds.colors.cta-primary.border
 
--- ds.link: 
-text: $primary-button.title
-color: $inherited.colors.cta-primary.text
-link: $primary-button.link
-
+	-- ds.link:
+	text: $primary-button.title
+	color: $inherited.colors.cta-primary.text
+	link: $primary-button.link
+	
 -- end: ds.row
 
 -- end: primary-button
@@ -127,11 +127,11 @@ border-right if { secondary-button.variant == outline }: $ds.borders.thin
 border-bottom if { secondary-button.variant == outline }: $ds.borders.thin
 border-color if { secondary-button.variant == outline}: $ds.colors.cta-secondary.border
 
--- ds.link: 
-text: $secondary-button.title
-color: $inherited.colors.cta-secondary.text
-link: $secondary-button.link
-
+	-- ds.link:
+	text: $secondary-button.title
+	color: $inherited.colors.cta-secondary.text
+	link: $secondary-button.link
+	
 -- end: ds.row
 
 -- end: secondary-button
@@ -172,11 +172,11 @@ border-right if { tertiary-button.variant == outline }: $ds.borders.thin
 border-bottom if { tertiary-button.variant == outline }: $ds.borders.thin
 border-color if { tertiary-button.variant == outline}: $ds.colors.cta-tertiary.border
 
--- ds.link: 
-text: $tertiary-button.title
-color: $inherited.colors.cta-tertiary.text
-link: $tertiary-button.link
-
+	-- ds.link:
+	text: $tertiary-button.title
+	color: $inherited.colors.cta-tertiary.text
+	link: $tertiary-button.link
+	
 -- end: ds.row
 
 -- end: tertiary-button
@@ -216,11 +216,11 @@ border-right if { success-button.variant == outline }: $ds.borders.thin
 border-bottom if { success-button.variant == outline }: $ds.borders.thin
 border-color if { success-button.variant == outline}: $ds.colors.success.border
 
--- ds.link: 
-text: $success-button.title
-color: $inherited.colors.success.text
-link: $success-button.link
-
+	-- ds.link:
+	text: $success-button.title
+	color: $inherited.colors.success.text
+	link: $success-button.link
+	
 -- end: ds.row
 
 -- end: success-button
@@ -260,11 +260,11 @@ border-right if { warning-button.variant == outline }: $ds.borders.thin
 border-bottom if { warning-button.variant == outline }: $ds.borders.thin
 border-color if { warning-button.variant == outline}: $ds.colors.warning.border
 
--- ds.link: 
-text: $warning-button.title
-color: $inherited.colors.warning.text
-link: $warning-button.link
-
+	-- ds.link:
+	text: $warning-button.title
+	color: $inherited.colors.warning.text
+	link: $warning-button.link
+	
 -- end: ds.row
 
 -- end: warning-button
@@ -305,11 +305,11 @@ border-right if { danger-button.variant == outline }: $ds.borders.thin
 border-bottom if { danger-button.variant == outline }: $ds.borders.thin
 border-color if { danger-button.variant == outline}: $ds.colors.cta-danger.border
 
--- ds.link: 
-text: $danger-button.title
-color: $inherited.colors.cta-danger.text
-link: $danger-button.link
-
+	-- ds.link:
+	text: $danger-button.title
+	color: $inherited.colors.cta-danger.text
+	link: $danger-button.link
+	
 -- end: ds.row
 
 -- end: danger-button
@@ -349,11 +349,11 @@ border-right if { info-button.variant == outline }: $ds.borders.thin
 border-bottom if { info-button.variant == outline }: $ds.borders.thin
 border-color if { info-button.variant == outline}: $ds.colors.info.border
 
--- ds.link: 
-text: $info-button.title
-color: $inherited.colors.info.text
-link: $info-button.link
-
+	-- ds.link:
+	text: $info-button.title
+	color: $inherited.colors.info.text
+	link: $info-button.link
+	
 -- end: ds.row
 
 -- end: info-button
@@ -371,6 +371,7 @@ link: $info-button.link
 
 -- ds.section-column:
 
+<<<<<<< Updated upstream
 -- ds.heading-hero: Buttons
 
 -- ds.phosphor-icon-button: Back
@@ -642,6 +643,307 @@ variant: link
 -- end: ds.rendered
 
 -- end: ds.section-row
+=======
+	-- ds.row:
+	align-content: left
+	
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: index.html
+		
+		-- ds.heading-hero: Buttons
+		align: center
+		width: hug-content
+		
+	-- end: ds.row
+
+	-- ds.heading-hero: Primary Buttons
+	
+	-- ds.section-row:
+	flush: full
+	
+		-- ds.rendered:
+		
+		\-- primary-button: primary-button
+		link: /
+		
+			-- primary-button: primary-button
+			link: /
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- primary-button: primary-button
+		link: /
+		variant: outline
+		
+			-- primary-button: primary-button
+			link: /
+			variant: outline
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- primary-button: primary-button
+		link: /
+		variant: link
+		
+			-- primary-button: primary-button
+			link: /
+			variant: link
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
+
+	-- ds.heading-hero: Secondary Buttons
+	
+	-- ds.section-row:
+	flush: full
+	
+		-- ds.rendered:
+		
+		\-- secondary-button: secondary-button
+		link: /
+		
+			-- secondary-button: secondary-button
+			link: /
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- secondary-button: secondary-button
+		link: /
+		variant: outline
+		
+			-- secondary-button: secondary-button
+			link: /
+			variant: outline
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- secondary-button: secondary-button
+		link: /
+		variant: link
+		
+			-- secondary-button: secondary-button
+			link: /
+			variant: link
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
+
+	-- ds.heading-hero: Tertiary Buttons
+	
+	-- ds.section-row:
+	flush: full
+	
+		-- ds.rendered:
+		
+		\-- tertiary-button: tertiary-button
+		link: /
+		
+			-- tertiary-button: tertiary-button
+			link: /
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- tertiary-button: tertiary-button
+		link: /
+		variant: outline
+		
+			-- tertiary-button: tertiary-button
+			link: /
+			variant: outline
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- tertiary-button: tertiary-button
+		link: /
+		variant: link
+		
+			-- tertiary-button: tertiary-button
+			link: /
+			variant: link
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
+
+	-- ds.heading-hero: Success Buttons
+	
+	-- ds.section-row:
+	flush: full
+	
+		-- ds.rendered:
+		
+		\-- success-button: success-button
+		link: /
+		
+			-- success-button: success-button
+			link: /
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- success-button: success-button
+		link: /
+		variant: outline
+		
+			-- success-button: success-button
+			link: /
+			variant: outline
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- success-button: success-button
+		link: /
+		variant: link
+		
+			-- success-button: success-button
+			link: /
+			variant: link
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
+
+	-- ds.heading-hero: Warning Buttons
+	
+	-- ds.section-row:
+	flush: full
+	
+		-- ds.rendered:
+		
+		\-- warning-button: warning-button
+		link: /
+		
+			-- warning-button: warning-button
+			link: /
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- warning-button: warning-button
+		link: /
+		variant: outline
+		
+			-- warning-button: warning-button
+			link: /
+			variant: outline
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- warning-button: warning-button
+		link: /
+		variant: link
+		
+			-- warning-button: warning-button
+			link: /
+			variant: link
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
+
+	-- ds.heading-hero: Danger Buttons
+	
+	-- ds.section-row:
+	flush: full
+	
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		
+			-- danger-button: danger-button
+			link: /
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		variant: outline
+		
+			-- danger-button: danger-button
+			link: /
+			variant: outline
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		variant: link
+		
+			-- danger-button: danger-button
+			link: /
+			variant: link
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
+
+	-- ds.heading-hero: Info Buttons
+	
+	-- ds.section-row:
+	flush: full
+	
+		-- ds.rendered:
+		
+		\-- info-button: info-button
+		link: /
+		
+			-- info-button: info-button
+			link: /
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- info-button: info-button
+		link: /
+		variant: outline
+		
+			-- info-button: info-button
+			link: /
+			variant: outline
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- info-button: info-button
+		link: /
+		variant: link
+		
+			-- info-button: info-button
+			link: /
+			variant: link
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
+>>>>>>> Stashed changes
 
 -- end: ds.section-column
 

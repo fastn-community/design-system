@@ -285,6 +285,7 @@ margin-bottom.px if { link.margin != NULL }: $link.margin.gap
 
 -- ds.section-column:
 
+<<<<<<< Updated upstream
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
@@ -295,109 +296,129 @@ link: index.html
 -- heading-hero: Heading hero typography
 
 -- end: ds.rendered
+=======
+	-- ds.row:
+	align-content: left
+	
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: index.html
+		
+		-- ds.heading-hero: Typography
+		width: hug-content
+		
+	-- end: ds.row
+
+	-- ds.rendered:
+	
+	\-- heading-hero: Heading hero typography
+		-- heading-hero: Heading hero typography
+		
+	-- end: ds.rendered
+>>>>>>> Stashed changes
 
 
 
--- ds.rendered:
-
-\-- heading-large: Heading large typography
--- heading-large: Heading large typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- heading-medium: Heading medium typography
--- heading-medium: Heading medium typography
-
--- end: ds.rendered
+	-- ds.rendered:
+	
+	\-- heading-large: Heading large typography
+		-- heading-large: Heading large typography
+		
+	-- end: ds.rendered
 
 
 
--- ds.rendered:
-
-\-- heading-small: Heading small typography
--- heading-small: Heading small typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- heading-tiny: Heading tiny typography
--- heading-tiny: Heading tiny typography
-
--- end: ds.rendered
+	-- ds.rendered:
+	
+	\-- heading-medium: Heading medium typography
+		-- heading-medium: Heading medium typography
+		
+	-- end: ds.rendered
 
 
 
--- ds.rendered:
-
-\-- copy-large:
-
-Copy large typography
-
--- copy-large:
-
-Copy large typography
-
--- end: ds.rendered
+	-- ds.rendered:
+	
+	\-- heading-small: Heading small typography
+		-- heading-small: Heading small typography
+		
+	-- end: ds.rendered
 
 
 
--- ds.rendered:
-
-\-- copy-regular:
-
-Copy regular typography
-
--- copy-regular:
-
-Copy regular typography
-
--- end: ds.rendered
+	-- ds.rendered:
+	
+	\-- heading-tiny: Heading tiny typography
+		-- heading-tiny: Heading tiny typography
+		
+	-- end: ds.rendered
 
 
 
--- ds.rendered:
-
-\-- copy-small:
-
-Copy small typography
-
--- copy-small:
-
-Copy small typography
-
--- end: ds.rendered
-
-
-
--- ds.rendered:
-
-\-- fine-print:
-
-Fine print typography
-
--- fine-print:
-
-Fine print typography
-
--- end: ds.rendered
+	-- ds.rendered:
+	
+	\-- copy-large:
+	
+	Copy large typography
+	
+		-- copy-large:
+		
+		Copy large typography
+		
+	-- end: ds.rendered
 
 
 
--- ds.rendered:
+	-- ds.rendered:
+	
+	\-- copy-regular:
+	
+	Copy regular typography
+	
+		-- copy-regular:
+		
+		Copy regular typography
+		
+	-- end: ds.rendered
 
-\-- link: Link typography
-link: /
--- link: Link typography
-link: /
 
--- end: ds.rendered
+
+	-- ds.rendered:
+	
+	\-- copy-small:
+	
+	Copy small typography
+	
+		-- copy-small:
+		
+		Copy small typography
+		
+	-- end: ds.rendered
+
+
+
+	-- ds.rendered:
+	
+	\-- fine-print:
+	
+	Fine print typography
+	
+		-- fine-print:
+		
+		Fine print typography
+		
+	-- end: ds.rendered
+
+
+
+	-- ds.rendered:
+	
+	\-- link: Link typography
+	link: /
+		-- link: Link typography
+		link: /
+		
+	-- end: ds.rendered
 
 -- end: ds.section-column
 

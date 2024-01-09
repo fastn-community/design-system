@@ -49,7 +49,6 @@ gap zero:
 
 
 ;; $ds.spaces.inset-square.small
-
 -- record space-data:
 insets inset-square:
 wides inset-wide:

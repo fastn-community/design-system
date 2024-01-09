@@ -45,29 +45,29 @@ description: $page.description
 colors: $ds.colors
 types: $ds.types
 
--- dms.dark-mode-switcher-float:
+	-- dms.dark-mode-switcher-float:
+	
+	-- ftd.column:
+	width: fill-container
+	height: fill-container
+	spacing.fixed: $page.spacing
+	color: $ds.colors.text
+	background: $page.background
+	
+		-- ui:
+		for: $ui in $page.content
+		
+		-- ftd.column:
+		height.fixed.px: $page.margin.gap
+		width: fill-container
+		align-content: center
+		
+			-- ftd.text: Created using fastn
+			color: $ds.colors.background.base
+			
+		-- end: ftd.column
 
--- ftd.column:
-width: fill-container
-height: fill-container
-spacing.fixed: $page.spacing
-color: $ds.colors.text
-background: $page.background
-
--- ui:
-for: $ui in $page.content
-
--- ftd.column:
-height.fixed.px: $page.margin.gap
-width: fill-container
-align-content: center
-
--- ftd.text: Created using fastn
-color: $ds.colors.background.base
-
--- end: ftd.column
-
--- end: ftd.column
+	-- end: ftd.column
 
 -- end: ftd.document
 
