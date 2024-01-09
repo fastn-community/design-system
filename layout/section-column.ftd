@@ -112,6 +112,8 @@ margin-bottom.px: $section-column.margin.gap
 			background.solid: $ds.colors.custom.one
 			
 			-- end: ds.column
+	
+		-- end: ds.section-column
 
 	-- end: ds.rendered
 

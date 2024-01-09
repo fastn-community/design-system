@@ -52,6 +52,7 @@ string verified:
 width.fixed.percent: 38
 border: $ds.borders.uniform.thin
 inset: $ds.spaces.inset-square.large
+border-color: $ds.colors.border
 
 -- ds.column:
 align-content: left
