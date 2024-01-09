@@ -1212,6 +1212,7 @@ src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-latin.
 font-family: fastn-community-github-io-roboto-font-Roboto }
 
 
+
 </style>
 <script>
     (function() {
@@ -2287,10 +2288,16 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   wide: 2,
   narrow: 3
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system__borders", fastn.recordInstance({
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_borders__uniform", fastn.recordInstance({
   none: 0,
   thin: 1,
   thick: 4
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_borders__borders", fastn.recordInstance({
+  none: 0,
+  thin: 1,
+  thick: 4,
+  uniform: global.fastn_community_github_io_design_system_borders__uniform
 }));
 let fastn_community_github_io_design_system_layout_section_row__section_row = function (parent, inherited, args)
 {
@@ -3810,6 +3817,8 @@ let fastn_community_github_io_design_system__flush = global["fastn_community_git
 global["fastn_community_github_io_design_system__flush"] = fastn_community_github_io_design_system__flush;
 let fastn_community_github_io_design_system__widths = global["fastn_community_github_io_design_system_layout_page__widths"];
 global["fastn_community_github_io_design_system__widths"] = fastn_community_github_io_design_system__widths;
+let fastn_community_github_io_design_system__borders = global["fastn_community_github_io_design_system_borders__borders"];
+global["fastn_community_github_io_design_system__borders"] = fastn_community_github_io_design_system__borders;
 let fastn_community_github_io_design_system__section_row = global["fastn_community_github_io_design_system_layout_section_row__section_row"];
 global["fastn_community_github_io_design_system__section_row"] = fastn_community_github_io_design_system__section_row;
 let fastn_community_github_io_design_system__header_link = global["fastn_community_github_io_design_system_header__header_link"];

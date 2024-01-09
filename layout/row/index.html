@@ -2935,10 +2935,16 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   large: global.fastn_community_github_io_design_system_radius__large,
   round: global.fastn_community_github_io_design_system_radius__round
 }));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system__borders", fastn.recordInstance({
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_borders__uniform", fastn.recordInstance({
   none: 0,
   thin: 1,
   thick: 4
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_borders__borders", fastn.recordInstance({
+  none: 0,
+  thin: 1,
+  thick: 4,
+  uniform: global.fastn_community_github_io_design_system_borders__uniform
 }));
 let fastn_community_github_io_design_system_layout_row__row = function (parent, inherited, args)
 {
@@ -3664,6 +3670,8 @@ let fastn_community_github_io_design_system__heading_hero = global["fastn_commun
 global["fastn_community_github_io_design_system__heading_hero"] = fastn_community_github_io_design_system__heading_hero;
 let fastn_community_github_io_design_system__radius = global["fastn_community_github_io_design_system_radius__radius"];
 global["fastn_community_github_io_design_system__radius"] = fastn_community_github_io_design_system__radius;
+let fastn_community_github_io_design_system__borders = global["fastn_community_github_io_design_system_borders__borders"];
+global["fastn_community_github_io_design_system__borders"] = fastn_community_github_io_design_system__borders;
 let fastn_community_github_io_design_system__row = global["fastn_community_github_io_design_system_layout_row__row"];
 global["fastn_community_github_io_design_system__row"] = fastn_community_github_io_design_system__row;
 let fastn_community_github_io_design_system__copy_regular = global["fastn_community_github_io_design_system_typography__copy_regular"];

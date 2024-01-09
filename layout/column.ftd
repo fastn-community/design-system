@@ -59,58 +59,56 @@ border-left-width.px: $column.border-left
 
 -- ds.section-column:
 
--- ds.row:
-align-content: left
+	-- ds.row:
+	align-content: left
+	
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: index.html
+		
+		-- ds.heading-hero: Column
+		width: hug-content
+		
+	-- end: ds.row
 
--- ds.phosphor-icon-button: Back
-icon: arrow-left
-link: index.html
-
--- ds.heading-hero: Column
-width: hug-content
-
--- end: ds.row
-
--- ds.rendered:
-
-\-- ds.column:
-width.fixed.px: 200
-height.fixed.px: 200
-border-top: $ds.borders.thin
-border-left: $ds.borders.thin
-border-right: $ds.borders.thin
-border-bottom: $ds.borders.thin
-radius: $ds.radius.small
-background.solid: $ds.colors.custom.two
-align-content: center
-
--- ds.column:
-width.fixed.px: 200
-height.fixed.px: 200
-border-top: $ds.borders.thin
-border-left: $ds.borders.thin
-border-right: $ds.borders.thin
-border-bottom: $ds.borders.thin
-radius: $ds.radius.small
-background.solid: $ds.colors.background.step-1
-align-content: center
-inset: $ds.spaces.inset-square.small
-
--- ds.copy-regular:
-text: Column Text
-width: hug-content
-
--- ds.copy-regular:
-text: Column Text
-width: hug-content
-
--- ds.copy-regular:
-text: Column Text
-width: hug-content
-
--- end: ds.column
-
--- end: ds.rendered
+	-- ds.rendered:
+	
+	\-- ds.column:
+	width.fixed.px: 200
+	height.fixed.px: 200
+	border-top: $ds.borders.thin
+	border-left: $ds.borders.thin
+	border-right: $ds.borders.thin
+	border-bottom: $ds.borders.thin
+	radius: $ds.radius.small
+	background.solid: $ds.colors.custom.two
+	align-content: center
+	
+		-- ds.column:
+		width.fixed.px: 200
+		height.fixed.px: 200
+		border-top: $ds.borders.thin
+		border-left: $ds.borders.thin
+		border-right: $ds.borders.thin
+		border-bottom: $ds.borders.thin
+		radius: $ds.radius.small
+		background.solid: $ds.colors.background.step-1
+		align-content: center
+		inset: $ds.spaces.inset-square.small
+		
+			-- ds.copy-regular:
+			text: Column Text
+			width: hug-content
+			
+			-- ds.copy-regular:
+			text: Column Text
+			width: hug-content
+			
+			-- ds.copy-regular:
+			text: Column Text
+			width: hug-content
+			
+		-- end: ds.column
 
 -- end: ds.section-column
 

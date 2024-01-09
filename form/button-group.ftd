@@ -22,8 +22,8 @@ link: index.html
 -- ds.rendered:
 
 \-- button-group:
--- ds.button-group:
-
+	-- ds.button-group:
+	
 -- end: ds.rendered
 
 -- end: ds.page
