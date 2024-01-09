@@ -3875,10 +3875,10 @@ let fastn_community_github_io_design_system_layout_container__container = functi
       margin_vertical: global.fastn_community_github_io_design_system__spaces.get("vertical_gap").get("small"),
       margin_horizontal: global.fastn_community_github_io_design_system__spaces.get("vertical_gap").get("small"),
       border: global.fastn_community_github_io_design_system__borders.get("uniform").get("none"),
-      border_top: global.fastn_community_github_io_design_system__borders.get("none"),
-      border_bottom: global.fastn_community_github_io_design_system__borders.get("none"),
-      border_left: global.fastn_community_github_io_design_system__borders.get("none"),
-      border_right: global.fastn_community_github_io_design_system__borders.get("none"),
+      border_top: null,
+      border_bottom: null,
+      border_left: null,
+      border_right: null,
       border_color: null,
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
@@ -3890,10 +3890,38 @@ let fastn_community_github_io_design_system_layout_container__container = functi
     parenti0.setProperty(fastn_dom.PropertyKind.MarginHorizontal, fastn_dom.Length.Px(__args__.margin_horizontal.get("gap")), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.MarginVertical, fastn_dom.Length.Px(__args__.margin_vertical.get("gap")), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.BorderWidth, fastn_dom.Length.Px(__args__.border), inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.BorderTopWidth, fastn_dom.Length.Px(__args__.border_top), inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.BorderBottomWidth, fastn_dom.Length.Px(__args__.border_bottom), inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.BorderLeftWidth, fastn_dom.Length.Px(__args__.border_left), inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.BorderRightWidth, fastn_dom.Length.Px(__args__.border_right), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.BorderTopWidth, fastn.formula([__args__.border_top], function () {
+      if (function () {
+        return (fastn_utils.getter(__args__.border_top) !== null);
+      }()) {
+        return fastn_dom.Length.Px(__args__.border_top);
+      }
+    }
+    ), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.BorderBottomWidth, fastn.formula([__args__.border_bottom], function () {
+      if (function () {
+        return (fastn_utils.getter(__args__.border_bottom) !== null);
+      }()) {
+        return fastn_dom.Length.Px(__args__.border_bottom);
+      }
+    }
+    ), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.BorderLeftWidth, fastn.formula([__args__.border_left], function () {
+      if (function () {
+        return (fastn_utils.getter(__args__.border_left) !== null);
+      }()) {
+        return fastn_dom.Length.Px(__args__.border_left);
+      }
+    }
+    ), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.BorderRightWidth, fastn.formula([__args__.border_right], function () {
+      if (function () {
+        return (fastn_utils.getter(__args__.border_right) !== null);
+      }()) {
+        return fastn_dom.Length.Px(__args__.border_right);
+      }
+    }
+    ), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.BorderTopLeftRadius, fastn.formula([global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
     __args__.radius.get("top_left"),
     global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
