@@ -84,31 +84,31 @@ border-left-width.px: $column.border-left
 	background.solid: $ds.colors.custom.two
 	align-content: center
 	
-		-- ds.column:
-		width.fixed.px: 200
-		height.fixed.px: 200
-		border-top: $ds.borders.thin
-		border-left: $ds.borders.thin
-		border-right: $ds.borders.thin
-		border-bottom: $ds.borders.thin
-		radius: $ds.radius.small
-		background.solid: $ds.colors.background.step-1
-		align-content: center
-		inset: $ds.spaces.inset-square.small
+	-- ds.column:
+	width.fixed.px: 200
+	height.fixed.px: 200
+	border-top: $ds.borders.thin
+	border-left: $ds.borders.thin
+	border-right: $ds.borders.thin
+	border-bottom: $ds.borders.thin
+	radius: $ds.radius.small
+	background.solid: $ds.colors.background.step-1
+	align-content: center
+	inset: $ds.spaces.inset-square.small
+	
+		-- ds.copy-regular:
+		text: Column Text
+		width: hug-content
 		
-			-- ds.copy-regular:
-			text: Column Text
-			width: hug-content
-			
-			-- ds.copy-regular:
-			text: Column Text
-			width: hug-content
-			
-			-- ds.copy-regular:
-			text: Column Text
-			width: hug-content
-			
-		-- end: ds.column
+		-- ds.copy-regular:
+		text: Column Text
+		width: hug-content
+		
+		-- ds.copy-regular:
+		text: Column Text
+		width: hug-content
+		
+	-- end: ds.column
 
 -- end: ds.section-column
 

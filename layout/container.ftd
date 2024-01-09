@@ -72,99 +72,99 @@ border-color: $container.border-color
 		
 	-- end: ds.row
 
--- ds.code:
+	-- ds.code:
+	
+	\-- ds.container:
+	width.fixed.px: 200
+	height.fixed.px: 200
+	border-top: $ds.borders.thick
+	border-left: $ds.borders.thick
+	border-right: $ds.borders.thick
+	border-bottom: $ds.borders.thick
+	radius: $ds.radius.large
+	background.solid: $ds.colors.custom.three
+	border-color: $ds.colors.border
+	margin-vertical: $ds.spaces.vertical-gap.medium
+	margin-horizontal: $ds.spaces.vertical-gap.small
+	
+	\-- ds.row:
+	spacing: $ds.spaces.horizontal-gap.large
+	inset: $ds.spaces.inset-square.small
+	
+	\-- ds.column:
+	width.fixed.px: 220
+	height.fixed.px: 120
+	inset: $ds.spaces.inset-square.small
+	background.solid: $ds.colors.background.step-2
+	
+	\-- ds.copy-small:
+	text: Column inside row
+	
+	\-- end: ds.column
+	
+	\-- ds.column:
+	width.fixed.px: 220
+	height.fixed.px: 120
+	inset: $ds.spaces.inset-square.small
+	background.solid: $ds.colors.background.step-2
+	
+	\-- ds.copy-small:
+	text: Column inside row
+	
+	\-- end: ds.column
+	
+	\-- end: ds.row
+	
+	\-- end: ds.container
+	
+	
+	-- ds.container:
+	width: fill-container
+	height.fixed.px: 200
+	border-top: $ds.borders.thin
+	border-left: $ds.borders.thin
+	border-right: $ds.borders.thin
+	border-bottom: $ds.borders.thin
+	radius: $ds.radius.large
+	background.solid: $ds.colors.background.step-1
+	border-color: $ds.colors.border
+	margin-vertical: $ds.spaces.vertical-gap.medium
+	margin-horizontal: $ds.spaces.vertical-gap.small
+	inset: $ds.spaces.inset-square.small
+	
+		-- ds.copy-regular:
+		text: This is inside a container
+		
+		-- ds.row:
+		spacing: $ds.spaces.horizontal-gap.large
+		inset: $ds.spaces.inset-square.small
+		
+		
+			-- ds.column:
+			width.fixed.px: 220
+			height.fixed.px: 120
+			inset: $ds.spaces.inset-square.small
+			background.solid: $ds.colors.background.step-2
+			
+				-- ds.copy-small:
+				text: Column inside row
+				
+			-- end: ds.column
 
-\-- ds.container:
-width.fixed.px: 200
-height.fixed.px: 200
-border-top: $ds.borders.thick
-border-left: $ds.borders.thick
-border-right: $ds.borders.thick
-border-bottom: $ds.borders.thick
-radius: $ds.radius.large
-background.solid: $ds.colors.custom.three
-border-color: $ds.colors.border
-margin-vertical: $ds.spaces.vertical-gap.medium
-margin-horizontal: $ds.spaces.vertical-gap.small
+			-- ds.column:
+			width.fixed.px: 220
+			height.fixed.px: 120
+			inset: $ds.spaces.inset-square.small
+			background.solid: $ds.colors.background.step-2
+			
+				-- ds.copy-small:
+				text: Column inside row
+				
+			-- end: ds.column
 
-\-- ds.row:
-spacing: $ds.spaces.horizontal-gap.large
-inset: $ds.spaces.inset-square.small
+		-- end: ds.row
 
-\-- ds.column:
-width.fixed.px: 220
-height.fixed.px: 120
-inset: $ds.spaces.inset-square.small
-background.solid: $ds.colors.background.step-2
-
-\-- ds.copy-small:
-text: Column inside row
-
-\-- end: ds.column
-
-\-- ds.column:
-width.fixed.px: 220
-height.fixed.px: 120
-inset: $ds.spaces.inset-square.small
-background.solid: $ds.colors.background.step-2
-
-\-- ds.copy-small:
-text: Column inside row
-
-\-- end: ds.column
-
-\-- end: ds.row
-
-\-- end: ds.container
-
-
--- ds.container:
-width: fill-container
-height.fixed.px: 200
-border-top: $ds.borders.thin
-border-left: $ds.borders.thin
-border-right: $ds.borders.thin
-border-bottom: $ds.borders.thin
-radius: $ds.radius.large
-background.solid: $ds.colors.background.step-1
-border-color: $ds.colors.border
-margin-vertical: $ds.spaces.vertical-gap.medium
-margin-horizontal: $ds.spaces.vertical-gap.small
-inset: $ds.spaces.inset-square.small
-
--- ds.copy-regular:
-text: This is inside a container
-
--- ds.row:
-spacing: $ds.spaces.horizontal-gap.large
-inset: $ds.spaces.inset-square.small
-
-
--- ds.column:
-width.fixed.px: 220
-height.fixed.px: 120
-inset: $ds.spaces.inset-square.small
-background.solid: $ds.colors.background.step-2
-
--- ds.copy-small:
-text: Column inside row
-
--- end: ds.column
-
--- ds.column:
-width.fixed.px: 220
-height.fixed.px: 120
-inset: $ds.spaces.inset-square.small
-background.solid: $ds.colors.background.step-2
-
--- ds.copy-small:
-text: Column inside row
-
--- end: ds.column
-
--- end: ds.row
-
--- end: ds.container
+	-- end: ds.container
 
 -- end: ds.section-column
 
