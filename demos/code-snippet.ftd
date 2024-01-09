@@ -66,7 +66,7 @@ border-color: $ds.colors.border
 		-- ftd.image:
 		src: $card.image
 		width: fill-container
-		;;border-radius.px: $ds.radius.medium
+		border-radius.px: $ds.radius.uniform.medium
 		
 		-- ds.row:
 		align-content: left
