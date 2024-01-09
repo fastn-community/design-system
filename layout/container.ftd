@@ -58,11 +58,17 @@ border-color: $container.border-color
 
 -- ds.section-column:
 
--- ds.heading-hero: Buttons
+-- ds.row:
+align-content: left
 
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
+
+-- ds.heading-hero: Container
+width: hug-content
+
+-- end: ds.row
 
 -- ds.rendered:
 

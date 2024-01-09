@@ -285,9 +285,17 @@ margin-bottom.px if { link.margin != NULL }: $link.margin.gap
 
 -- ds.section-column:
 
+-- ds.row:
+align-content: left
+
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
+
+-- ds.heading-hero: Typography
+width: hug-content
+
+-- end: ds.row
 
 -- ds.rendered:
 

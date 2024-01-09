@@ -59,11 +59,17 @@ border-left-width.px: $column.border-left
 
 -- ds.section-column:
 
--- ds.heading-hero: Buttons
+-- ds.row:
+align-content: left
 
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
+
+-- ds.heading-hero: Column
+width: hug-content
+
+-- end: ds.row
 
 -- ds.rendered:
 
