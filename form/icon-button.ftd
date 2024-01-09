@@ -335,9 +335,17 @@ align-self: center
 
 -- ds.section-column:
 
+-- ds.row:
+align-content: left
+
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
+
+-- ds.heading-hero: Icon Buttons
+width: hug-content
+
+-- end: ds.row
 
 -- ds.rendered:
 

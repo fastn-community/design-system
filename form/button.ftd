@@ -80,7 +80,7 @@ border-top if { primary-button.variant == outline }: $ds.borders.thin
 border-left if { primary-button.variant == outline }: $ds.borders.thin
 border-right if { primary-button.variant == outline }: $ds.borders.thin
 border-bottom if { primary-button.variant == outline }: $ds.borders.thin
-border-color if { primary-button.variant == outline}: $ds.colors.cta-primary.border
+border-color if { primary-button.variant == outline }: $ds.colors.cta-primary.border
 
 -- ds.link: 
 text: $primary-button.title
@@ -370,14 +370,26 @@ link: $info-button.link
 -- ds.page:
 
 -- ds.section-column:
+flush: full
+align-content: center
 
--- ds.heading-hero: Buttons
+-- ds.row:
+align-content: left
 
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
 
+-- ds.heading-hero: Buttons
+align: center
+width: hug-content
+
+-- end: ds.row
+
+-- ds.heading-hero: Primary Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -415,7 +427,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Secondary Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -453,7 +468,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Tertiary Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -491,7 +509,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Success Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -529,7 +550,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Warning Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -567,7 +591,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Danger Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -605,7 +632,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Info Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 

@@ -63,11 +63,17 @@ border-bottom-right-radius.percent if { section-column.radius.bottom-right == $r
 
 -- ds.section-column:
 
--- ds.heading-hero: Buttons
+-- ds.row:
+align-content: left
 
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
+
+-- ds.heading-hero: Section Column
+width: hug-content
+
+-- end: ds.row
 
 -- ds.rendered:
 
