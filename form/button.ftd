@@ -82,11 +82,11 @@ border-right if { primary-button.variant == outline }: $ds.borders.thin
 border-bottom if { primary-button.variant == outline }: $ds.borders.thin
 border-color if { primary-button.variant == outline }: $ds.colors.cta-primary.border
 
--- ds.link: 
-text: $primary-button.title
-color: $inherited.colors.cta-primary.text
-link: $primary-button.link
-
+	-- ds.link:
+	text: $primary-button.title
+	color: $inherited.colors.cta-primary.text
+	link: $primary-button.link
+	
 -- end: ds.row
 
 -- end: primary-button
@@ -127,11 +127,11 @@ border-right if { secondary-button.variant == outline }: $ds.borders.thin
 border-bottom if { secondary-button.variant == outline }: $ds.borders.thin
 border-color if { secondary-button.variant == outline}: $ds.colors.cta-secondary.border
 
--- ds.link: 
-text: $secondary-button.title
-color: $inherited.colors.cta-secondary.text
-link: $secondary-button.link
-
+	-- ds.link:
+	text: $secondary-button.title
+	color: $inherited.colors.cta-secondary.text
+	link: $secondary-button.link
+	
 -- end: ds.row
 
 -- end: secondary-button
@@ -172,11 +172,11 @@ border-right if { tertiary-button.variant == outline }: $ds.borders.thin
 border-bottom if { tertiary-button.variant == outline }: $ds.borders.thin
 border-color if { tertiary-button.variant == outline}: $ds.colors.cta-tertiary.border
 
--- ds.link: 
-text: $tertiary-button.title
-color: $inherited.colors.cta-tertiary.text
-link: $tertiary-button.link
-
+	-- ds.link:
+	text: $tertiary-button.title
+	color: $inherited.colors.cta-tertiary.text
+	link: $tertiary-button.link
+	
 -- end: ds.row
 
 -- end: tertiary-button
@@ -216,11 +216,11 @@ border-right if { success-button.variant == outline }: $ds.borders.thin
 border-bottom if { success-button.variant == outline }: $ds.borders.thin
 border-color if { success-button.variant == outline}: $ds.colors.success.border
 
--- ds.link: 
-text: $success-button.title
-color: $inherited.colors.success.text
-link: $success-button.link
-
+	-- ds.link:
+	text: $success-button.title
+	color: $inherited.colors.success.text
+	link: $success-button.link
+	
 -- end: ds.row
 
 -- end: success-button
@@ -260,11 +260,11 @@ border-right if { warning-button.variant == outline }: $ds.borders.thin
 border-bottom if { warning-button.variant == outline }: $ds.borders.thin
 border-color if { warning-button.variant == outline}: $ds.colors.warning.border
 
--- ds.link: 
-text: $warning-button.title
-color: $inherited.colors.warning.text
-link: $warning-button.link
-
+	-- ds.link:
+	text: $warning-button.title
+	color: $inherited.colors.warning.text
+	link: $warning-button.link
+	
 -- end: ds.row
 
 -- end: warning-button
@@ -305,11 +305,11 @@ border-right if { danger-button.variant == outline }: $ds.borders.thin
 border-bottom if { danger-button.variant == outline }: $ds.borders.thin
 border-color if { danger-button.variant == outline}: $ds.colors.cta-danger.border
 
--- ds.link: 
-text: $danger-button.title
-color: $inherited.colors.cta-danger.text
-link: $danger-button.link
-
+	-- ds.link:
+	text: $danger-button.title
+	color: $inherited.colors.cta-danger.text
+	link: $danger-button.link
+	
 -- end: ds.row
 
 -- end: danger-button
@@ -349,11 +349,11 @@ border-right if { info-button.variant == outline }: $ds.borders.thin
 border-bottom if { info-button.variant == outline }: $ds.borders.thin
 border-color if { info-button.variant == outline}: $ds.colors.info.border
 
--- ds.link: 
-text: $info-button.title
-color: $inherited.colors.info.text
-link: $info-button.link
-
+	-- ds.link:
+	text: $info-button.title
+	color: $inherited.colors.info.text
+	link: $info-button.link
+	
 -- end: ds.row
 
 -- end: info-button
