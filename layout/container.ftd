@@ -13,10 +13,10 @@ optional ftd.resizing height:
 ds.gap margin-vertical: $ds.spaces.vertical-gap.small
 ds.gap margin-horizontal: $ds.spaces.vertical-gap.small
 integer border: $ds.borders.uniform.none
-integer border-top: $ds.borders.none
-integer border-bottom: $ds.borders.none
-integer border-left: $ds.borders.none
-integer border-right: $ds.borders.none
+optional integer border-top: $ds.borders.none
+optional integer border-bottom: $ds.borders.none
+optional integer border-left: $ds.borders.none
+optional integer border-right: $ds.borders.none
 optional ftd.color border-color:
 
 -- ftd.container:
@@ -36,11 +36,11 @@ border-bottom-left-radius.percent if { container.radius.bottom-left == $radius.H
 border-bottom-right-radius.percent if { container.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
 margin-vertical.px: $container.margin-vertical.gap
 margin-horizontal.px: $container.margin-horizontal.gap
-border-top-width.px: $container.border-top
-border-bottom-width.px: $container.border-bottom
-border-right-width.px: $container.border-right
-border-left-width.px: $container.border-left
 border-width.px: $container.border
+border-top-width.px if { container.border-top != NULL }: $container.border-top
+border-bottom-width.px if { container.border-bottom != NULL }: $container.border-bottom
+border-right-width.px if { container.border-right != NULL }: $container.border-right
+border-left-width.px if { container.border-left != NULL }: $container.border-left
 border-color: $container.border-color
 
 -- end: ftd.container
