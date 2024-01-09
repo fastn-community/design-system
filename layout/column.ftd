@@ -59,9 +59,6 @@ border-left-width.px: $column.border-left
 
 -- ds.section-column:
 
-<<<<<<< Updated upstream
--- ds.heading-hero: Buttons
-=======
 	-- ds.row:
 	align-content: left
 	
@@ -73,7 +70,6 @@ border-left-width.px: $column.border-left
 		width: hug-content
 		
 	-- end: ds.row
->>>>>>> Stashed changes
 
 	-- ds.rendered:
 	
@@ -114,7 +110,7 @@ border-left-width.px: $column.border-left
 			
 		-- end: ds.column
 
-<<<<<<< Updated upstream
+
 -- ds.rendered:
 
 \-- ds.column:
@@ -155,9 +151,6 @@ width: hug-content
 -- end: ds.column
 
 -- end: ds.rendered
-=======
-	-- end: ds.rendered
->>>>>>> Stashed changes
 
 -- end: ds.section-column
 

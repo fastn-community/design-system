@@ -63,9 +63,6 @@ margin-bottom.px: $section-column.margin.gap
 
 -- ds.section-column:
 
-<<<<<<< Updated upstream
--- ds.heading-hero: Buttons
-=======
 	-- ds.row:
 	align-content: left
 	
@@ -77,7 +74,6 @@ margin-bottom.px: $section-column.margin.gap
 		width: hug-content
 		
 	-- end: ds.row
->>>>>>> Stashed changes
 
 	-- ds.rendered:
 	
@@ -116,26 +112,6 @@ margin-bottom.px: $section-column.margin.gap
 			background.solid: $ds.colors.custom.one
 			
 			-- end: ds.column
-
-<<<<<<< Updated upstream
--- ds.rendered:
-=======
-			-- ds.column:
-			width.fixed.px: 80
-			height.fixed.px: 80
-			background.solid: $ds.colors.custom.one
-			
-			-- end: ds.column
-
-			-- ds.column:
-			width.fixed.px: 80
-			height.fixed.px: 80
-			background.solid: $ds.colors.custom.one
-			
-			-- end: ds.column
-
-		-- end: ds.section-column
->>>>>>> Stashed changes
 
 	-- end: ds.rendered
 

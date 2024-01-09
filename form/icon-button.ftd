@@ -335,13 +335,6 @@ color if { button-wrapper.kind == info }: $ds.colors.info.text
 
 -- ds.section-column:
 
-<<<<<<< Updated upstream
--- ds.phosphor-icon-button: Back
-icon: arrow-left
-link: index.html
-
--- ds.rendered:
-=======
 	-- ds.row:
 	align-content: left
 	
@@ -388,7 +381,6 @@ link: index.html
 
 
 
->>>>>>> Stashed changes
 
 	-- ds.rendered:
 	

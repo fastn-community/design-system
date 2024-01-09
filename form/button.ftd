@@ -80,7 +80,7 @@ border-top if { primary-button.variant == outline }: $ds.borders.thin
 border-left if { primary-button.variant == outline }: $ds.borders.thin
 border-right if { primary-button.variant == outline }: $ds.borders.thin
 border-bottom if { primary-button.variant == outline }: $ds.borders.thin
-border-color if { primary-button.variant == outline}: $ds.colors.cta-primary.border
+border-color if { primary-button.variant == outline }: $ds.colors.cta-primary.border
 
 	-- ds.link:
 	text: $primary-button.title
@@ -370,15 +370,26 @@ border-color if { info-button.variant == outline}: $ds.colors.info.border
 -- ds.page:
 
 -- ds.section-column:
+flush: full
+align-content: center
 
-<<<<<<< Updated upstream
--- ds.heading-hero: Buttons
+-- ds.row:
+align-content: left
 
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
 
+-- ds.heading-hero: Buttons
+align: center
+width: hug-content
+
+-- end: ds.row
+
+-- ds.heading-hero: Primary Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -416,7 +427,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Secondary Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -454,7 +468,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Tertiary Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -492,7 +509,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Success Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -530,7 +550,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Warning Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -568,7 +591,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Danger Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -606,7 +632,10 @@ variant: link
 
 -- end: ds.section-row
 
+-- ds.heading-hero: Info Buttons
+
 -- ds.section-row:
+flush: full
 
 -- ds.rendered:
 
@@ -643,307 +672,6 @@ variant: link
 -- end: ds.rendered
 
 -- end: ds.section-row
-=======
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: index.html
-		
-		-- ds.heading-hero: Buttons
-		align: center
-		width: hug-content
-		
-	-- end: ds.row
-
-	-- ds.heading-hero: Primary Buttons
-	
-	-- ds.section-row:
-	flush: full
-	
-		-- ds.rendered:
-		
-		\-- primary-button: primary-button
-		link: /
-		
-			-- primary-button: primary-button
-			link: /
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- primary-button: primary-button
-		link: /
-		variant: outline
-		
-			-- primary-button: primary-button
-			link: /
-			variant: outline
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- primary-button: primary-button
-		link: /
-		variant: link
-		
-			-- primary-button: primary-button
-			link: /
-			variant: link
-			
-		-- end: ds.rendered
-
-	-- end: ds.section-row
-
-	-- ds.heading-hero: Secondary Buttons
-	
-	-- ds.section-row:
-	flush: full
-	
-		-- ds.rendered:
-		
-		\-- secondary-button: secondary-button
-		link: /
-		
-			-- secondary-button: secondary-button
-			link: /
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- secondary-button: secondary-button
-		link: /
-		variant: outline
-		
-			-- secondary-button: secondary-button
-			link: /
-			variant: outline
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- secondary-button: secondary-button
-		link: /
-		variant: link
-		
-			-- secondary-button: secondary-button
-			link: /
-			variant: link
-			
-		-- end: ds.rendered
-
-	-- end: ds.section-row
-
-	-- ds.heading-hero: Tertiary Buttons
-	
-	-- ds.section-row:
-	flush: full
-	
-		-- ds.rendered:
-		
-		\-- tertiary-button: tertiary-button
-		link: /
-		
-			-- tertiary-button: tertiary-button
-			link: /
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- tertiary-button: tertiary-button
-		link: /
-		variant: outline
-		
-			-- tertiary-button: tertiary-button
-			link: /
-			variant: outline
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- tertiary-button: tertiary-button
-		link: /
-		variant: link
-		
-			-- tertiary-button: tertiary-button
-			link: /
-			variant: link
-			
-		-- end: ds.rendered
-
-	-- end: ds.section-row
-
-	-- ds.heading-hero: Success Buttons
-	
-	-- ds.section-row:
-	flush: full
-	
-		-- ds.rendered:
-		
-		\-- success-button: success-button
-		link: /
-		
-			-- success-button: success-button
-			link: /
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- success-button: success-button
-		link: /
-		variant: outline
-		
-			-- success-button: success-button
-			link: /
-			variant: outline
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- success-button: success-button
-		link: /
-		variant: link
-		
-			-- success-button: success-button
-			link: /
-			variant: link
-			
-		-- end: ds.rendered
-
-	-- end: ds.section-row
-
-	-- ds.heading-hero: Warning Buttons
-	
-	-- ds.section-row:
-	flush: full
-	
-		-- ds.rendered:
-		
-		\-- warning-button: warning-button
-		link: /
-		
-			-- warning-button: warning-button
-			link: /
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- warning-button: warning-button
-		link: /
-		variant: outline
-		
-			-- warning-button: warning-button
-			link: /
-			variant: outline
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- warning-button: warning-button
-		link: /
-		variant: link
-		
-			-- warning-button: warning-button
-			link: /
-			variant: link
-			
-		-- end: ds.rendered
-
-	-- end: ds.section-row
-
-	-- ds.heading-hero: Danger Buttons
-	
-	-- ds.section-row:
-	flush: full
-	
-		-- ds.rendered:
-		
-		\-- danger-button: danger-button
-		link: /
-		
-			-- danger-button: danger-button
-			link: /
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- danger-button: danger-button
-		link: /
-		variant: outline
-		
-			-- danger-button: danger-button
-			link: /
-			variant: outline
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- danger-button: danger-button
-		link: /
-		variant: link
-		
-			-- danger-button: danger-button
-			link: /
-			variant: link
-			
-		-- end: ds.rendered
-
-	-- end: ds.section-row
-
-	-- ds.heading-hero: Info Buttons
-	
-	-- ds.section-row:
-	flush: full
-	
-		-- ds.rendered:
-		
-		\-- info-button: info-button
-		link: /
-		
-			-- info-button: info-button
-			link: /
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- info-button: info-button
-		link: /
-		variant: outline
-		
-			-- info-button: info-button
-			link: /
-			variant: outline
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- info-button: info-button
-		link: /
-		variant: link
-		
-			-- info-button: info-button
-			link: /
-			variant: link
-			
-		-- end: ds.rendered
-
-	-- end: ds.section-row
->>>>>>> Stashed changes
 
 -- end: ds.section-column
 

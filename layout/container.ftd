@@ -60,9 +60,6 @@ border-color: $container.border-color
 
 -- ds.section-column:
 
-<<<<<<< Updated upstream
--- ds.heading-hero: Buttons
-=======
 	-- ds.row:
 	align-content: left
 	
@@ -74,7 +71,6 @@ border-color: $container.border-color
 		width: hug-content
 		
 	-- end: ds.row
->>>>>>> Stashed changes
 
 	-- ds.rendered:
 	
@@ -155,7 +151,6 @@ border-color: $container.border-color
 					
 				-- end: ds.column
 
-<<<<<<< Updated upstream
 -- ds.code:
 
 \-- ds.container:
@@ -249,24 +244,6 @@ text: Column inside row
 -- end: ds.row
 
 -- end: ds.container
-=======
-				-- ds.column:
-				width.fixed.px: 220
-				height.fixed.px: 120
-				inset: $ds.spaces.inset-square.small
-				background.solid: $ds.colors.background.step-2
-				
-					-- ds.copy-small:
-					text: Column inside row
-					
-				-- end: ds.column
-
-			-- end: ds.row
-
-		-- end: ds.container
-
-	-- end: ds.rendered
->>>>>>> Stashed changes
 
 -- end: ds.section-column
 
