@@ -13,10 +13,10 @@ optional ftd.resizing height:
 ds.gap margin-vertical: $ds.spaces.vertical-gap.small
 ds.gap margin-horizontal: $ds.spaces.vertical-gap.small
 integer border: $ds.borders.uniform.none
-optional integer border-top: $ds.borders.none
-optional integer border-bottom: $ds.borders.none
-optional integer border-left: $ds.borders.none
-optional integer border-right: $ds.borders.none
+optional integer border-top:
+optional integer border-bottom:
+optional integer border-left:
+optional integer border-right:
 optional ftd.color border-color:
 
 -- ftd.container:
