@@ -5,6 +5,7 @@ integer top-left:
 integer top-right:
 integer bottom-left:
 integer bottom-right:
+integer uniform:
 
 -- record radius-data:
 element-radius zero:
@@ -25,27 +26,32 @@ top-left: 0
 top-right: 0
 bottom-left: 0
 bottom-right: 0
+uniform: 0
 
 -- element-radius small:
 top-left: 4
 top-right: 4
 bottom-left: 4
 bottom-right: 4
+uniform: 4
 
 -- element-radius medium:
 top-left: 8
 top-right: 8
 bottom-left: 8
 bottom-right: 8
+uniform: 8
 
 -- element-radius large:
 top-left: 16
 top-right: 16
 bottom-left: 16
 bottom-right: 16
+uniform: 16
 
 -- element-radius round:
 top-left: $HACK-RADIUS-ROUND
 top-right: $HACK-RADIUS-ROUND
 bottom-left: $HACK-RADIUS-ROUND
 bottom-right: $HACK-RADIUS-ROUND
+uniform: $HACK-RADIUS-ROUND
