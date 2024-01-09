@@ -1,10 +1,11 @@
 -- record border-data:
-optional integer none:
+integer none:
 integer thin:
 integer thick:
 uniform-border-data uniform:
 
 -- border-data borders:
+none: 0
 thin: 1
 thick: 4
 uniform: $uniform
