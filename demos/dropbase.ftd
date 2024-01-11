@@ -38,7 +38,7 @@ custom tools with SQL and Python in minutes.
 
 
 -- component header:
-optional boolean $open: false
+boolean $open: false
 
 -- ds.column:
 
@@ -85,9 +85,8 @@ link: /
 -- ftd.mobile:
 
 -- ds.section-column:
-;;background.solid: $ds.colors.background.step-1
 spacing: $ds.spaces.vertical-gap.space-between
-;;margin: $ds.spaces.vertical-gap.extra-large
+margin: $ds.spaces.vertical-gap.extra-large
 inset: $ds.spaces.inset-wide.large
 align-content: top-left
 
@@ -106,8 +105,27 @@ $on-click$: $ftd.toggle($a = $header.open)
 
 -- end: ds.row
 
+-- menu:
+if: { header.open }
+
+-- end: ds.section-column
+
+-- end: ftd.mobile
+
+-- end: ds.column
+
+-- end: header
+
+
+
+
+
+
+
+
+-- component menu:
+
 -- ds.column:
-if: {header.open}
 anchor: parent
 top: 72
 bottom: 0
@@ -116,7 +134,6 @@ right: 0
 height: hug-content
 background.solid: $ds.colors.background.step-1
 z-index: 1
-$on-click$: $ftd.toggle($a = $header.open)
 align-content: top-left
 inset: $ds.spaces.inset-square.medium
 
@@ -140,14 +157,7 @@ link: /
 
 -- end: ds.column
 
--- end: ds.section-column
-
--- end: ftd.mobile
-
--- end: ds.column
-
--- end: header
-
+-- end: menu
 
 
 
@@ -191,7 +201,7 @@ icon-position: at-end
 
 -- ds.column: right column
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
+-- ftd.image: $assets.files.assets.image.webp
 width: fill-container
 
 -- end: ds.column
@@ -229,7 +239,7 @@ variant: link
 
 -- end: ds.button-group
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
+-- ftd.image: $assets.files.assets.image.webp
 width: fill-container
 border-radius.px: $ds.radius.uniform.medium
 margin-top.px: $ds.spaces.vertical-gap.large.gap
@@ -263,13 +273,12 @@ inset: $ds.spaces.inset-square.extra-large
 spacing: $ds.spaces.vertical-gap.extra-extra-large
 
 -- ds.row:
-;; spacing: $ds.spaces.vertical-gap.space-between
 spacing: $ds.spaces.horizontal-gap.extra-large
 align-content: top-center
 
 -- ds.column:
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6125a1fa1160592fd373d33b_Dropbase%20logo%20website.svg
+-- ftd.image: $assets.files.assets.logo.svg
 width.fixed.px: 195
 
 -- ds.copy-regular:
@@ -282,10 +291,10 @@ The developer platform to build internal customer success apps.
 -- ds.column:
 spacing: $ds.spaces.horizontal-gap.extra-extra-small
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6334e9c7c49cd57891a61167_Gradient.svg
+-- ftd.image: $assets.files.assets.gradient.svg
 width.fixed.px: 150
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6334ea24e5307cc2a91ef616_ycombinator-ar21%201.svg
+-- ftd.image: $assets.files.assets.yc.svg
 width.fixed.px: 114
 
 -- end: ds.column
@@ -384,7 +393,7 @@ spacing: $ds.spaces.vertical-gap.extra-large
 spacing: $ds.spaces.horizontal-gap.medium
 align-content: center
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6125a1fa1160592fd373d33b_Dropbase%20logo%20website.svg
+-- ftd.image: $assets.files.assets.logo.avg
 width.fixed.px: 195
 
 -- ds.fine-print:
@@ -399,10 +408,10 @@ align: center
 -- ds.column:
 spacing: $ds.spaces.horizontal-gap.extra-extra-small
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6334e9c7c49cd57891a61167_Gradient.svg
+-- ftd.image: $assets.files.assets.gradient.svg
 width.fixed.px: 150
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6334ea24e5307cc2a91ef616_ycombinator-ar21%201.svg
+-- ftd.image: $assets.files.assets.yc.svg
 width.fixed.px: 114
 
 -- end: ds.column
@@ -644,7 +653,7 @@ additional queries or functions. Build admin panels in seconds.
 
 -- ftd.video:
 width.fixed.percent: 90
-src: https://cf-simple-s3-origin-cloudfrontfors3-355320424519.s3.amazonaws.com/dropbase-website-assets/Admin+Panel.mp4
+src: $assets.files.assets.video.mp4
 
 -- end: ds.section-column
 
@@ -666,7 +675,7 @@ edit your data. It even works with JOIN statements without writing any
 additional queries or functions. Build admin panels in seconds.
 
 -- ftd.video:
-src: https://cf-simple-s3-origin-cloudfrontfors3-355320424519.s3.amazonaws.com/dropbase-website-assets/Admin+Panel.mp4
+src: $assets.files.assets.video.mp4
 width: fill-container
 border-radius.px: $ds.radius.uniform.medium
 margin-top.px: $ds.spaces.vertical-gap.extra-large.gap
@@ -711,7 +720,7 @@ runbooks.
 
 -- ds.column: right column
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/652763340f644d671d70bc24_Python%20scripts-p-1600.webp
+-- ftd.image: $assets.files.assets.image.webp
 width: fill-container
 
 -- end: ds.column
@@ -736,7 +745,7 @@ Instead of re-writing your scripts to fit yet another framework, Dropbase just
 works with them. Layer a beautifully designed UI atop all your .py scripts or
 runbooks.
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/652763340f644d671d70bc24_Python%20scripts-p-1600.webp
+-- ftd.image: $assets.files.assets.image.webp
 width: fill-container
 border-radius.px: $ds.radius.uniform.medium
 margin-top.px: $ds.spaces.vertical-gap.extra-large.gap
@@ -769,7 +778,7 @@ margin: $ds.spaces.vertical-gap.extra-large
 
 -- ds.column: left column
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/652763340f644d671d70bc24_Python%20scripts-p-1600.webp
+-- ftd.image: $assets.files.assets.image.webp
 width: fill-container
 
 -- end: ds.column
@@ -804,7 +813,7 @@ align: center
 Surgically control end-user access on an app-by-app basis. Assign app
 permissions to users or groups. Control who can view, edit or own any app.
 
--- ftd.image: https://assets-global.website-files.com/5f2c87246b17fcf662282594/652763340f644d671d70bc24_Python%20scripts-p-1600.webp
+-- ftd.image: $assets.files.assets.image.webp
 width: fill-container
 border-radius.px: $ds.radius.uniform.medium
 margin-top.px: $ds.spaces.vertical-gap.large.gap
@@ -840,13 +849,13 @@ spacing: $ds.spaces.vertical-gap.medium
 spacing: $ds.spaces.horizontal-gap.extra-large
 
 -- ftd.image:
-src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9dd14ce920c12e0191e_postgres.svg
+src: $assets.files.assets.postgres.svg
 
 -- ftd.image:
-src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9f325d99b3d6333bdbe_stripe.svg
+src: $assets.files.assets.stripe.svg
 
 -- ftd.image:
-src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9ebaeb0d581b82b9aee_hubspot.svg
+src: $assets.files.assets.hubspot.svg
 
 -- end: ds.inline-row
 
@@ -868,13 +877,13 @@ wrap: true
 spacing: $ds.spaces.horizontal-gap.large
 
 -- ftd.image:
-src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9dd14ce920c12e0191e_postgres.svg
+src: $assets.files.assets.postgres.svg
 
 -- ftd.image:
-src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9f325d99b3d6333bdbe_stripe.svg
+src: $assets.files.assets.stripe.svg
 
 -- ftd.image:
-src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9ebaeb0d581b82b9aee_hubspot.svg
+src: $assets.files.assets.hubspot.svg
 
 -- end: ds.inline-row
 
