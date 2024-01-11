@@ -164,6 +164,7 @@ caption or body text:
 ftd.color color: $ds.colors.text
 display-type align: inline
 optional ds.gap margin:
+ftd.text-style list style:
 
 -- ftd.text: $copy-large.text
 color: $copy-large.color
@@ -175,6 +176,7 @@ text-align if { copy-large.align == justify }: justify
 display if { copy-large.align == inline }: inline
 display if { copy-large.align == inline-block }: inline-block
 margin-bottom.px if { copy-large.margin != NULL }: $copy-large.margin.gap
+style: $copy-large.style
 
 -- end: copy-large
 
@@ -187,6 +189,7 @@ optional ds.gap margin:
 display-type align: inline
 ftd.resizing width: fill-container
 optional ftd.resizing height:
+ftd.text-style list style:
 
 -- ftd.text: $copy-regular.text
 color: $copy-regular.color
@@ -200,6 +203,7 @@ text-align if { copy-regular.align == justify }: justify
 display if { copy-regular.align == inline }: inline
 display if { copy-regular.align == inline-block }: inline-block
 width: $copy-regular.width
+style: $copy-regular.style
 
 -- end: copy-regular
 
@@ -212,6 +216,7 @@ caption or body text:
 ftd.color color: $ds.colors.text
 display-type align: inline
 optional ds.gap margin:
+ftd.text-style list style:
 
 -- ftd.text: $copy-small.text
 color: $copy-small.color
@@ -223,6 +228,7 @@ text-align if { copy-small.align == justify }: justify
 display if { copy-small.align == inline }: inline
 display if { copy-small.align == inline-block }: inline-block
 margin-bottom.px if { copy-small.margin != NULL }: $copy-small.margin.gap
+style: $copy-small.style
 
 -- end: copy-small
 
