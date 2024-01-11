@@ -285,8 +285,8 @@ border-color if { button-wrapper.variant == outline && button-wrapper.kind == su
 border-color if { button-wrapper.variant == outline && button-wrapper.kind == warning}: $ds.colors.warning.border
 border-color if { button-wrapper.variant == outline && button-wrapper.kind == danger}: $ds.colors.cta-danger.border
 border-color if { button-wrapper.variant == outline && button-wrapper.kind == info}: $ds.colors.info.border
-padding-horizontal.px: 16
-padding-vertical.px: 12
+padding-horizontal.px: 12
+padding-vertical.px: 8
 align-content: center
 background.solid if { button-wrapper.hover }: $ds.colors.background.step-2
 $on-mouse-enter$: $ftd.set-bool($a = $button-wrapper.hover, v = true)

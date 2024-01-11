@@ -17,6 +17,12 @@ integer border-bottom: $ds.borders.none
 integer border-left: $ds.borders.none
 integer border-right: $ds.borders.none
 optional ftd.color border-color:
+optional ftd.anchor anchor:
+optional integer top:
+optional integer bottom:
+optional integer left:
+optional integer right:
+optional integer z-index:
 
 -- ftd.column:
 width: $column.width
@@ -41,6 +47,12 @@ border-top-width.px: $column.border-top
 border-bottom-width.px: $column.border-bottom
 border-right-width.px: $column.border-right
 border-left-width.px: $column.border-left
+anchor: $column.anchor
+top.px: $column.top
+bottom.px: $column.bottom
+left.px: $column.left
+right.px: $column.right
+z-index: $column.z-index
 
 -- end: ftd.column
 
