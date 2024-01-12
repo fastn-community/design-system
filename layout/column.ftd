@@ -23,6 +23,8 @@ optional integer bottom:
 optional integer left:
 optional integer right:
 optional integer z-index:
+string list css:
+string list js:
 
 -- ftd.column:
 width: $column.width
@@ -53,6 +55,8 @@ bottom.px: $column.bottom
 left.px: $column.left
 right.px: $column.right
 z-index: $column.z-index
+css: $column.css
+js: $column.js
 
 -- end: ftd.column
 

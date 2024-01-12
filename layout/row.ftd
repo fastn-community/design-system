@@ -25,6 +25,8 @@ optional integer bottom:
 optional integer left:
 optional integer right:
 optional integer z-index:
+string list css:
+string list js:
 
 -- ftd.row:
 width: $row.width
@@ -57,6 +59,8 @@ bottom.px: $row.bottom
 left.px: $row.left
 right.px: $row.right
 z-index: $row.z-index
+css: $row.css
+js: $row.js
 
 -- end: ftd.row
 
