@@ -1,6 +1,7 @@
 -- import: fastn-community.github.io/design-system/spaces
 -- import: fastn-community.github.io/design-system/radius
 -- import: fastn-community.github.io/design-system/borders
+-- import: fastn-community.github.io/design-system/shadow
 
 -- component row:
 optional caption title:
@@ -19,14 +20,10 @@ integer border-bottom: $ds.borders.none
 integer border-left: $ds.borders.none
 integer border-right: $ds.borders.none
 optional ftd.color border-color:
-optional ftd.anchor anchor:
-optional integer top:
-optional integer bottom:
-optional integer left:
-optional integer right:
 optional integer z-index:
 string list css:
 string list js:
+optional ftd.shadow shadow:
 
 -- ftd.row:
 width: $row.width
@@ -53,14 +50,10 @@ border-bottom-width.px: $row.border-bottom
 border-right-width.px: $row.border-right
 border-left-width.px: $row.border-left
 border-color: $row.border-color
-anchor: $row.anchor
-top.px: $row.top
-bottom.px: $row.bottom
-left.px: $row.left
-right.px: $row.right
 z-index: $row.z-index
 css: $row.css
 js: $row.js
+shadow: $row.shadow
 
 -- end: ftd.row
 
@@ -103,6 +96,7 @@ js: $row.js
 	radius: $ds.radius.small
 	background.solid: $ds.colors.custom.five
 	align-content: center
+	shadow: $ds.shadow.extra-large
 	
 	\-- ds.copy-regular:
 	text: Text 1
@@ -128,6 +122,7 @@ js: $row.js
 		radius: $ds.radius.small
 		background.solid: $ds.colors.custom.five
 		align-content: center
+		shadow: $ds.shadow.extra-large
 		
 			-- ds.copy-regular:
 			text: Row Text

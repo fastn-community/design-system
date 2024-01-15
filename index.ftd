@@ -7,6 +7,9 @@
 export: border-data, borders
 exposing: border-data, borders
 
+-- import: fastn-community.github.io/design-system/shadow as _
+export: shadow-data, shadow
+
 -- import: fastn-community.github.io/design-system/spaces as _
 export: hv, gap, insets, squishes, stretches, gaps, space-data, spaces
 
@@ -43,6 +46,9 @@ export: container
 
 -- import: fastn-community.github.io/design-system/layout/column as _
 export: column
+
+-- import: fastn-community.github.io/design-system/layout/floater as _
+export: floater
 
 -- import: fastn-community.github.io/design-system/layout/row as _
 export: row

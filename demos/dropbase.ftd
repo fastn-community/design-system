@@ -125,7 +125,7 @@ boolean $open: false
 
 -- component menu:
 
--- ds.column:
+-- ds.floater:
 anchor: parent
 top: 72
 bottom: 0
@@ -155,7 +155,7 @@ inset: $ds.spaces.inset-square.medium
 		
 	-- end: ds.column
 
--- end: ds.column
+-- end: ds.floater
 
 -- end: menu
 

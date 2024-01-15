@@ -6,6 +6,7 @@ ds.hv inset: $ds.spaces.inset-square.zero
 ds.gap spacing: $ds.spaces.horizontal-gap.medium
 ftd.resizing width: hug-content
 children content:
+boolean wrap: false
 
 -- ftd.row:
 width: $inline-row.width
@@ -15,6 +16,7 @@ spacing.fixed.px: $inline-row.spacing.gap
 spacing if { inline-row.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 align-content: center
 children: $inline-row.content
+wrap: $inline-row.wrap
 
 -- end: ftd.row
 
