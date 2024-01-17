@@ -4,8 +4,8 @@
 -- import: fastn-community.github.io/design-system/demos
 
 -- import: fastn-community.github.io/design-system/borders as _
-export: border-data, border-thickness
-exposing: border-data, border-thickness
+export: border-data, border-thickness, borders
+exposing: border-data, border-thickness, borders
 
 -- import: fastn-community.github.io/design-system/shadow as _
 export: shadow-data, shadow

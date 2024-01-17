@@ -13,17 +13,14 @@ ds.hv inset: $ds.spaces.inset-wide.large
 ds.gap margin: $ds.spaces.vertical-gap.large
 boolean wrap: false
 ftd.align align-content: center
-integer border-top: $ds.borders.none
-integer border-bottom: $ds.borders.none
-integer border-left: $ds.borders.none
-integer border-right: $ds.borders.none
+ds.border-data border: $ds.borders.uniform.small
 
 -- ftd.column:
 width: fill-container
 align-content: center
 background: $section-row.outer-background
 margin-bottom.px: $section-row.margin.gap
-border-bottom-width.px: $section-row.border-bottom
+border-bottom-width.px: $section-row.border.bottom
 border-color: $ds.colors.border
 
 	-- ftd.row:

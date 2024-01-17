@@ -38,7 +38,10 @@ border-top-left-radius.percent if { column.radius.top-left == $radius.HACK-RADIU
 border-top-right-radius.percent if { column.radius.top-right == $radius.HACK-RADIUS-ROUND }: 50
 border-bottom-left-radius.percent if { column.radius.bottom-left == $radius.HACK-RADIUS-ROUND }: 50
 border-bottom-right-radius.percent if { column.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
-border-width.px: $column.border
+border-top-width.px: $column.border.top
+border-bottom-width.px: $column.border.bottom
+border-left-width.px: $column.border.left
+border-right-width.px: $column.border.right
 css: $column.css
 js: $column.js
 shadow: $column.shadow

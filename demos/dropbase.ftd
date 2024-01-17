@@ -241,7 +241,10 @@ inset: $ds.spaces.inset-square.medium
 
 			-- ftd.image: $assets.files.assets.image-2.svg
 			width: fill-container
-			border-radius.px: $ds.radius.uniform.medium
+			border-top-left-radius.px: $ds.radius.medium.top-left
+			border-top-right-radius.px: $ds.radius.medium.top-right
+			border-bottom-left-radius.px: $ds.radius.medium.bottom-left
+			border-bottom-right-radius.px: $ds.radius.medium.bottom-right
 			margin-top.px: $ds.spaces.vertical-gap.large.gap
 			
 		-- end: ds.section-column
@@ -677,7 +680,10 @@ height.fixed.px if { ftd.device != "mobile" }: 244
 			-- ftd.video:
 			src: $assets.files.assets.video.mp4
 			width: fill-container
-			border-radius.px: $ds.radius.uniform.medium
+			border-top-left-radius.px: $ds.radius.medium.top-left
+			border-top-right-radius.px: $ds.radius.medium.top-right
+			border-bottom-left-radius.px: $ds.radius.medium.bottom-left
+			border-bottom-right-radius.px: $ds.radius.medium.bottom-right
 			margin-top.px: $ds.spaces.vertical-gap.extra-large.gap
 			
 		-- end: ds.section-column
@@ -747,7 +753,10 @@ height.fixed.px if { ftd.device != "mobile" }: 244
 			
 			-- ftd.image: $assets.files.assets.image.svg
 			width: fill-container
-			border-radius.px: $ds.radius.uniform.medium
+            border-top-left-radius.px: $ds.radius.medium.top-left
+            border-top-right-radius.px: $ds.radius.medium.top-right
+            border-bottom-left-radius.px: $ds.radius.medium.bottom-left
+            border-bottom-right-radius.px: $ds.radius.medium.bottom-right
 			margin-top.px: $ds.spaces.vertical-gap.extra-large.gap
 			
 		-- end: ds.section-column
@@ -815,7 +824,10 @@ height.fixed.px if { ftd.device != "mobile" }: 244
 			
 			-- ftd.image: $assets.files.assets.image-2.svg
 			width: fill-container
-			border-radius.px: $ds.radius.uniform.medium
+			border-top-left-radius.px: $ds.radius.medium.top-left
+			border-top-right-radius.px: $ds.radius.medium.top-right
+			border-bottom-left-radius.px: $ds.radius.medium.bottom-left
+			border-bottom-right-radius.px: $ds.radius.medium.bottom-right
 			margin-top.px: $ds.spaces.vertical-gap.large.gap
 			
 		-- end: ds.section-column

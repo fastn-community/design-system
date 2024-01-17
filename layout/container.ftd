@@ -32,7 +32,10 @@ border-bottom-left-radius.percent if { container.radius.bottom-left == $radius.H
 border-bottom-right-radius.percent if { container.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
 margin-vertical.px: $container.margin-vertical.gap
 margin-horizontal.px: $container.margin-horizontal.gap
-border-width.px: $container.border
+border-top-width.px: $container.border.top
+border-bottom-width.px: $container.border.bottom
+border-left-width.px: $container.border.left
+border-right-width.px: $container.border.right
 border-color: $container.border-color
 
 -- end: ftd.container
@@ -113,10 +116,7 @@ border-color: $container.border-color
 	-- ds.container:
 	width: fill-container
 	height.fixed.px: 200
-	border-top: $ds.borders.thin
-	border-left: $ds.borders.thin
-	border-right: $ds.borders.thin
-	border-bottom: $ds.borders.thin
+	border: $ds.borders.uniform.small
 	radius: $ds.radius.large
 	background.solid: $ds.colors.background.step-1
 	border-color: $ds.colors.border

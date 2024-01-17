@@ -10,8 +10,23 @@ border-data small:
 border-data medium:
 border-data large:
 
+-- record all-borders-data:
+border-thickness uniform:
+border-thickness vertical:
+border-thickness horizontal:
+border-thickness top:
+border-thickness bottom:
+border-thickness left:
+border-thickness right:
 
-
+-- all-borders-data borders:
+uniform: $uniform
+vertical: $vertical
+horizontal: $horizontal
+top: $top
+bottom: $bottom
+left: $left
+right: $right
 
 
 -- border-thickness uniform:
