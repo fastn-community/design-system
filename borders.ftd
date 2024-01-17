@@ -6,6 +6,7 @@ integer bottom:
 
 
 -- record border-thickness:
+border-data zero:
 border-data small:
 border-data medium:
 border-data large:
@@ -30,6 +31,12 @@ right: $right
 
 
 -- border-thickness uniform:
+
+-- uniform.zero:
+top: 0
+bottom: 0
+right: 0
+left: 0
 
 -- uniform.small:
 top: 1
@@ -57,6 +64,12 @@ left: 8
 
 -- border-thickness vertical:
 
+-- vertical.zero:
+top: 0
+bottom: 0
+right: 0
+left: 0
+
 -- vertical.small:
 top: 1
 bottom: 1
@@ -82,6 +95,12 @@ left: 0
 
 
 -- border-thickness horizontal:
+
+-- horizontal.zero:
+top: 0
+bottom: 0
+right: 0
+left: 0
 
 -- horizontal.small:
 top: 0
@@ -109,6 +128,12 @@ left: 8
 
 -- border-thickness top:
 
+-- top.zero:
+top: 0
+bottom: 0
+right: 0
+left: 0
+
 -- top.small:
 top: 1
 bottom: 0
@@ -134,6 +159,12 @@ left: 0
 
 
 -- border-thickness bottom:
+
+-- bottom.zero:
+top: 0
+bottom: 0
+right: 0
+left: 0
 
 -- bottom.small:
 top: 0
@@ -161,6 +192,12 @@ left: 0
 
 -- border-thickness left:
 
+-- left.zero:
+top: 0
+bottom: 0
+right: 0
+left: 0
+
 -- left.small:
 top: 0
 bottom: 0
@@ -186,6 +223,12 @@ left: 8
 
 
 -- border-thickness right:
+
+-- right.zero:
+top: 0
+bottom: 0
+right: 0
+left: 0
 
 -- right.small:
 top: 0

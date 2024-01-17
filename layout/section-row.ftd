@@ -13,7 +13,7 @@ ds.hv inset: $ds.spaces.inset-wide.large
 ds.gap margin: $ds.spaces.vertical-gap.large
 boolean wrap: false
 ftd.align align-content: center
-ds.border-data border: $ds.borders.uniform.small
+ds.border-data border: $ds.borders.uniform.zero
 
 -- ftd.column:
 width: fill-container

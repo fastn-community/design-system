@@ -753,10 +753,10 @@ height.fixed.px if { ftd.device != "mobile" }: 244
 			
 			-- ftd.image: $assets.files.assets.image.svg
 			width: fill-container
-            border-top-left-radius.px: $ds.radius.medium.top-left
-            border-top-right-radius.px: $ds.radius.medium.top-right
-            border-bottom-left-radius.px: $ds.radius.medium.bottom-left
-            border-bottom-right-radius.px: $ds.radius.medium.bottom-right
+			border-top-left-radius.px: $ds.radius.medium.top-left
+			border-top-right-radius.px: $ds.radius.medium.top-right
+			border-bottom-left-radius.px: $ds.radius.medium.bottom-left
+			border-bottom-right-radius.px: $ds.radius.medium.bottom-right
 			margin-top.px: $ds.spaces.vertical-gap.extra-large.gap
 			
 		-- end: ds.section-column

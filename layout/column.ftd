@@ -13,7 +13,7 @@ ftd.align align-content: center
 optional ftd.background background:
 optional ftd.resizing height:
 ds.element-radius radius: $ds.radius.medium
-ds.border-data border: $ds.borders.uniform.small
+ds.border-data border: $ds.borders.uniform.zero
 ftd.color border-color: $ds.colors.border
 string list css:
 string list js:
@@ -80,7 +80,7 @@ shadow: $column.shadow
 	\-- ds.column:
 	width.fixed.px: 200
 	height.fixed.px: 200
-	border: $ds.borders.vertical.medium
+	border: $ds.borders.uniform.small
 	radius: $ds.radius.small
 	background.solid: $ds.colors.custom.two
 	align-content: center
@@ -89,7 +89,7 @@ shadow: $column.shadow
 	width.fixed.px: 200
 	height.fixed.px: 200
 	radius: $ds.radius.small
-	;;border: $ds.borders.vertical.medium
+	border: $ds.borders.uniform.small
 	background.solid: $ds.colors.background.step-1
 	align-content: center
 	inset: $ds.spaces.inset-square.small

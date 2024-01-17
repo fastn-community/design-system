@@ -15,7 +15,7 @@ boolean wrap: false
 optional ftd.resizing height:
 optional ftd.background background:
 ds.element-radius radius: $ds.radius.medium
-ds.border-data border: $ds.borders.uniform.small
+ds.border-data border: $ds.borders.uniform.zero
 ftd.color border-color: $ds.colors.border
 optional integer z-index:
 string list css:
