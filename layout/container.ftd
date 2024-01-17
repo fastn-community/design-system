@@ -12,12 +12,8 @@ children content:
 optional ftd.resizing height:
 ds.gap margin-vertical: $ds.spaces.vertical-gap.small
 ds.gap margin-horizontal: $ds.spaces.vertical-gap.small
-integer border: $ds.borders.uniform.none
-optional integer border-top:
-optional integer border-bottom:
-optional integer border-left:
-optional integer border-right:
-optional ftd.color border-color:
+ds.border-data border: $ds.borders.uniform.small
+ftd.color border-color: $ds.colors.border
 
 -- ftd.container:
 width: $container.width
@@ -37,10 +33,6 @@ border-bottom-right-radius.percent if { container.radius.bottom-right == $radius
 margin-vertical.px: $container.margin-vertical.gap
 margin-horizontal.px: $container.margin-horizontal.gap
 border-width.px: $container.border
-border-top-width.px if { container.border-top != NULL }: $container.border-top
-border-bottom-width.px if { container.border-bottom != NULL }: $container.border-bottom
-border-right-width.px if { container.border-right != NULL }: $container.border-right
-border-left-width.px if { container.border-left != NULL }: $container.border-left
 border-color: $container.border-color
 
 -- end: ftd.container

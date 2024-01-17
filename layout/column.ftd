@@ -13,11 +13,8 @@ ftd.align align-content: center
 optional ftd.background background:
 optional ftd.resizing height:
 ds.element-radius radius: $ds.radius.medium
-integer border-top: $ds.borders.none
-integer border-bottom: $ds.borders.none
-integer border-left: $ds.borders.none
-integer border-right: $ds.borders.none
-optional ftd.color border-color:
+ds.border-data border: $ds.borders.uniform.small
+ftd.color border-color: $ds.colors.border
 string list css:
 string list js:
 optional ftd.shadow shadow:
@@ -41,10 +38,7 @@ border-top-left-radius.percent if { column.radius.top-left == $radius.HACK-RADIU
 border-top-right-radius.percent if { column.radius.top-right == $radius.HACK-RADIUS-ROUND }: 50
 border-bottom-left-radius.percent if { column.radius.bottom-left == $radius.HACK-RADIUS-ROUND }: 50
 border-bottom-right-radius.percent if { column.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
-border-top-width.px: $column.border-top
-border-bottom-width.px: $column.border-bottom
-border-right-width.px: $column.border-right
-border-left-width.px: $column.border-left
+border-width.px: $column.border
 css: $column.css
 js: $column.js
 shadow: $column.shadow
@@ -83,10 +77,7 @@ shadow: $column.shadow
 	\-- ds.column:
 	width.fixed.px: 200
 	height.fixed.px: 200
-	border-top: $ds.borders.thin
-	border-left: $ds.borders.thin
-	border-right: $ds.borders.thin
-	border-bottom: $ds.borders.thin
+	border: $ds.borders.vertical.medium
 	radius: $ds.radius.small
 	background.solid: $ds.colors.custom.two
 	align-content: center
@@ -94,11 +85,8 @@ shadow: $column.shadow
 	-- ds.column:
 	width.fixed.px: 200
 	height.fixed.px: 200
-	border-top: $ds.borders.thin
-	border-left: $ds.borders.thin
-	border-right: $ds.borders.thin
-	border-bottom: $ds.borders.thin
 	radius: $ds.radius.small
+	;;border: $ds.borders.vertical.medium
 	background.solid: $ds.colors.background.step-1
 	align-content: center
 	inset: $ds.spaces.inset-square.small
