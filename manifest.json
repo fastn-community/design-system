@@ -1,159 +1,159 @@
 {
   "files": {
-    "form/icon-button.ftd": {
-      "name": "form/icon-button.ftd",
-      "hash": "CF06816B9A7C88D7022387B5FB755CB4641ECBEB00D1AFBA96F9026522C5C4CB",
-      "size": 15135
-    },
-    "demos/index.ftd": {
-      "name": "demos/index.ftd",
-      "hash": "667ACFB0FB665574EB99FB9E0C14B802FB6821A58695F67FA68BDEDEEF42B988",
-      "size": 294
-    },
-    "form/button.ftd": {
-      "name": "form/button.ftd",
-      "hash": "B56645F9D2C4854B8280DEB619F598211B66F20BBC999CAE79189C3EB76A22E8",
-      "size": 14802
-    },
-    "form/button-group.ftd": {
-      "name": "form/button-group.ftd",
-      "hash": "2445A1575C7240FD5F60B54078330B94929E5D859694E889FE25CF9BF3B11E5C",
-      "size": 412
-    },
-    "typography.ftd": {
-      "name": "typography.ftd",
-      "hash": "0EA7C01F8EBE84956776BF92594E1CAD2C77E8E6203823AC8A7716D9A186CECD",
-      "size": 9722
-    },
-    "footer.ftd": {
-      "name": "footer.ftd",
-      "hash": "E2363B4FBB0988FB41E86E4CF73B6E0C326656BBC0E5DE13742540BCB16C2BD1",
-      "size": 788
-    },
-    "demos/code-snippet.ftd": {
-      "name": "demos/code-snippet.ftd",
-      "hash": "CDB8D392FD1885B69B509EDABCAD82FF6385EDFE4F9F2C18565D67EE2CBDB76D",
-      "size": 2013
-    },
-    "header.ftd": {
-      "name": "header.ftd",
-      "hash": "A50B05EBF8AF41123403E5A132408C7B64EB92DF7BCC6C13FD77735C75D1FF69",
-      "size": 286
-    },
     "FASTN.ftd": {
       "name": "FASTN.ftd",
-      "hash": "CFC777457291D4F3803FB615BE59EF3113B4D322FA52AAEB66A3E797DD6CA1FA",
+      "checksum": "CFC777457291D4F3803FB615BE59EF3113B4D322FA52AAEB66A3E797DD6CA1FA",
       "size": 588
-    },
-    "demos/dropbase.ftd": {
-      "name": "demos/dropbase.ftd",
-      "hash": "36BCC77D2701C8264991BE6ECC04E4F85D63E2496D1CC8BF3E4183AFFFCF8AA9",
-      "size": 9243
-    },
-    "slide.ftd": {
-      "name": "slide.ftd",
-      "hash": "DED1E77FBF1E5845FF5DB62A98BB3EB7711FC1D33D89015DF9082B3EA8DE4689",
-      "size": 721
-    },
-    "assets/convert-dark.svg": {
-      "name": "assets/convert-dark.svg",
-      "hash": "21F8AF60080DB695FF6ABD4DC4D154CFB984CC94D907EAB710B39E2D405E4BCE",
-      "size": 1291
-    },
-    "radius.ftd": {
-      "name": "radius.ftd",
-      "hash": "07C32204FD42F311C2AE55F3235A5E9B4C4D96937FEE3D9922641AD85456CBF8",
-      "size": 1106
-    },
-    "favicon.ico": {
-      "name": "favicon.ico",
-      "hash": "65056A1D6C6AAE6E3DC4626E29F4BD4B628B17A8E9CC1D3A5E8FE9F6743F306B",
-      "size": 15406
     },
     "LICENSE": {
       "name": "LICENSE",
-      "hash": "BEA38468FFF430BF0DC2208700612436E5EAE55EFF7B6956A833375E213CDC66",
+      "checksum": "BEA38468FFF430BF0DC2208700612436E5EAE55EFF7B6956A833375E213CDC66",
       "size": 1501
     },
-    "layout/section-row.ftd": {
-      "name": "layout/section-row.ftd",
-      "hash": "FD7C372D703EA1C3131AF8B4549916178B476CEC98FDC2711C3087DACEEFC511",
-      "size": 3070
+    "README.md": {
+      "name": "README.md",
+      "checksum": "2C372A7AA51EFF6E5BE56E3D2D56DD55D63FBDF58A4D2E279392A02B55DDB960",
+      "size": 1416
+    },
+    "_config.yml": {
+      "name": "_config.yml",
+      "checksum": "A42D91290C93B5F17412C3B346737EA1C796E5D287306758AFE8B20470119D80",
+      "size": 21
+    },
+    "assets/convert-dark.svg": {
+      "name": "assets/convert-dark.svg",
+      "checksum": "21F8AF60080DB695FF6ABD4DC4D154CFB984CC94D907EAB710B39E2D405E4BCE",
+      "size": 1291
     },
     "assets/convert.svg": {
       "name": "assets/convert.svg",
-      "hash": "0D5834C7CED25B3DF79D62625C1CFDE9CBFFDBDEB549E3448677D8439828BE2C",
+      "checksum": "0D5834C7CED25B3DF79D62625C1CFDE9CBFFDBDEB549E3448677D8439828BE2C",
       "size": 1291
+    },
+    "assets/placeholder.jpg": {
+      "name": "assets/placeholder.jpg",
+      "checksum": "3CBF7363F01A7FDE9B486232738E557629FC5F1D66EA1602C69233AF189F110A",
+      "size": 4733932
+    },
+    "assets/star.svg": {
+      "name": "assets/star.svg",
+      "checksum": "7774F60F53D680F2CC43E234249C09440D338092FF79A710083916E82C260A77",
+      "size": 736
     },
     "borders.ftd": {
       "name": "borders.ftd",
-      "hash": "6D010817B48BD61555FDA8B1DC46DD82F1609F00EBDA137E62D3796E57594DD1",
+      "checksum": "6D010817B48BD61555FDA8B1DC46DD82F1609F00EBDA137E62D3796E57594DD1",
       "size": 296
+    },
+    "demos/code-snippet.ftd": {
+      "name": "demos/code-snippet.ftd",
+      "checksum": "CDB8D392FD1885B69B509EDABCAD82FF6385EDFE4F9F2C18565D67EE2CBDB76D",
+      "size": 2013
+    },
+    "demos/dropbase.ftd": {
+      "name": "demos/dropbase.ftd",
+      "checksum": "36BCC77D2701C8264991BE6ECC04E4F85D63E2496D1CC8BF3E4183AFFFCF8AA9",
+      "size": 9243
     },
     "demos/ft-old.ftd": {
       "name": "demos/ft-old.ftd",
-      "hash": "61F1CC812F23E85F1F1939BBCC2F5677ACE32387FA485E9B72883987BFBF999F",
+      "checksum": "61F1CC812F23E85F1F1939BBCC2F5677ACE32387FA485E9B72883987BFBF999F",
       "size": 3027
     },
-    "spaces.ftd": {
-      "name": "spaces.ftd",
-      "hash": "91118AAEA9A1C047D31715C96507D318DFAE6533E5B46DA899B8C8397F34C019",
-      "size": 2397
+    "demos/index.ftd": {
+      "name": "demos/index.ftd",
+      "checksum": "667ACFB0FB665574EB99FB9E0C14B802FB6821A58695F67FA68BDEDEEF42B988",
+      "size": 294
     },
-    "layout/container.ftd": {
-      "name": "layout/container.ftd",
-      "hash": "01AF400F28D1614467D15E00607017E3CC532B968FC345462ED3D35A12AEF166",
-      "size": 4788
+    "favicon.ico": {
+      "name": "favicon.ico",
+      "checksum": "65056A1D6C6AAE6E3DC4626E29F4BD4B628B17A8E9CC1D3A5E8FE9F6743F306B",
+      "size": 15406
+    },
+    "footer.ftd": {
+      "name": "footer.ftd",
+      "checksum": "E2363B4FBB0988FB41E86E4CF73B6E0C326656BBC0E5DE13742540BCB16C2BD1",
+      "size": 788
+    },
+    "form/button-group.ftd": {
+      "name": "form/button-group.ftd",
+      "checksum": "2445A1575C7240FD5F60B54078330B94929E5D859694E889FE25CF9BF3B11E5C",
+      "size": 412
+    },
+    "form/button.ftd": {
+      "name": "form/button.ftd",
+      "checksum": "B56645F9D2C4854B8280DEB619F598211B66F20BBC999CAE79189C3EB76A22E8",
+      "size": 14802
+    },
+    "form/icon-button.ftd": {
+      "name": "form/icon-button.ftd",
+      "checksum": "CF06816B9A7C88D7022387B5FB755CB4641ECBEB00D1AFBA96F9026522C5C4CB",
+      "size": 15135
+    },
+    "header.ftd": {
+      "name": "header.ftd",
+      "checksum": "A50B05EBF8AF41123403E5A132408C7B64EB92DF7BCC6C13FD77735C75D1FF69",
+      "size": 286
     },
     "index.ftd": {
       "name": "index.ftd",
-      "hash": "8AE93744E6EC5A80C1D9EEF174D51D5B60513C2CDFAB0FF16C38C172926FBDAA",
+      "checksum": "8AE93744E6EC5A80C1D9EEF174D51D5B60513C2CDFAB0FF16C38C172926FBDAA",
       "size": 3497
     },
     "layout/column.ftd": {
       "name": "layout/column.ftd",
-      "hash": "007FC16B6E000A8E77979E6C744D6C25C12945800CAF7BF49F872BFF2634890B",
+      "checksum": "007FC16B6E000A8E77979E6C744D6C25C12945800CAF7BF49F872BFF2634890B",
       "size": 3338
     },
-    "assets/placeholder.jpg": {
-      "name": "assets/placeholder.jpg",
-      "hash": "3CBF7363F01A7FDE9B486232738E557629FC5F1D66EA1602C69233AF189F110A",
-      "size": 4733932
-    },
-    "_config.yml": {
-      "name": "_config.yml",
-      "hash": "A42D91290C93B5F17412C3B346737EA1C796E5D287306758AFE8B20470119D80",
-      "size": 21
-    },
-    "layout/section-column.ftd": {
-      "name": "layout/section-column.ftd",
-      "hash": "A47A12EF2DAAF53176F3878D3A4340A357B749BC06DDFB45299FBB717E1173DD",
-      "size": 3576
+    "layout/container.ftd": {
+      "name": "layout/container.ftd",
+      "checksum": "01AF400F28D1614467D15E00607017E3CC532B968FC345462ED3D35A12AEF166",
+      "size": 4788
     },
     "layout/inline-row.ftd": {
       "name": "layout/inline-row.ftd",
-      "hash": "A4BFD9A5E0A0CE3E6A014277482ADD802CEA31F1897991FB9095FCFEDEF71989",
+      "checksum": "A4BFD9A5E0A0CE3E6A014277482ADD802CEA31F1897991FB9095FCFEDEF71989",
       "size": 657
-    },
-    "assets/star.svg": {
-      "name": "assets/star.svg",
-      "hash": "7774F60F53D680F2CC43E234249C09440D338092FF79A710083916E82C260A77",
-      "size": 736
-    },
-    "layout/row.ftd": {
-      "name": "layout/row.ftd",
-      "hash": "2C24B41DB268FD31B58CF957CEE27E65FB39FEC8191DF48B435F46E2B863230A",
-      "size": 3491
     },
     "layout/page.ftd": {
       "name": "layout/page.ftd",
-      "hash": "A2E89F47BD228A3F251E3B81A38B47B1C293F3D375D802AF984EE12E98346297",
+      "checksum": "A2E89F47BD228A3F251E3B81A38B47B1C293F3D375D802AF984EE12E98346297",
       "size": 1645
     },
-    "README.md": {
-      "name": "README.md",
-      "hash": "2C372A7AA51EFF6E5BE56E3D2D56DD55D63FBDF58A4D2E279392A02B55DDB960",
-      "size": 1416
+    "layout/row.ftd": {
+      "name": "layout/row.ftd",
+      "checksum": "2C24B41DB268FD31B58CF957CEE27E65FB39FEC8191DF48B435F46E2B863230A",
+      "size": 3491
+    },
+    "layout/section-column.ftd": {
+      "name": "layout/section-column.ftd",
+      "checksum": "A47A12EF2DAAF53176F3878D3A4340A357B749BC06DDFB45299FBB717E1173DD",
+      "size": 3576
+    },
+    "layout/section-row.ftd": {
+      "name": "layout/section-row.ftd",
+      "checksum": "FD7C372D703EA1C3131AF8B4549916178B476CEC98FDC2711C3087DACEEFC511",
+      "size": 3070
+    },
+    "radius.ftd": {
+      "name": "radius.ftd",
+      "checksum": "07C32204FD42F311C2AE55F3235A5E9B4C4D96937FEE3D9922641AD85456CBF8",
+      "size": 1106
+    },
+    "slide.ftd": {
+      "name": "slide.ftd",
+      "checksum": "DED1E77FBF1E5845FF5DB62A98BB3EB7711FC1D33D89015DF9082B3EA8DE4689",
+      "size": 721
+    },
+    "spaces.ftd": {
+      "name": "spaces.ftd",
+      "checksum": "91118AAEA9A1C047D31715C96507D318DFAE6533E5B46DA899B8C8397F34C019",
+      "size": 2397
+    },
+    "typography.ftd": {
+      "name": "typography.ftd",
+      "checksum": "0EA7C01F8EBE84956776BF92594E1CAD2C77E8E6203823AC8A7716D9A186CECD",
+      "size": 9722
     }
   },
   "zip_url": "https://github.com/fastn-community/design-system/archive/cba93cb54034396ac0a60a57dc0a51793c5d57b0.zip",
