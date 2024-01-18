@@ -14,11 +14,10 @@ boolean wrap: false
 optional ftd.resizing height:
 optional ftd.background background:
 ds.element-radius radius: $ds.radius.medium
-integer border-top: $ds.borders.none
-integer border-bottom: $ds.borders.none
-integer border-left: $ds.borders.none
-integer border-right: $ds.borders.none
-optional ftd.color border-color:
+ds.border-data border: $ds.borders.uniform.zero
+ftd.color border-color: $ds.colors.border
+optional ftd.color color:
+optional integer z-index:
 string list css:
 string list js:
 
@@ -42,11 +41,13 @@ border-top-left-radius.percent if { row.radius.top-left == $radius.HACK-RADIUS-R
 border-top-right-radius.percent if { row.radius.top-right == $radius.HACK-RADIUS-ROUND }: 50
 border-bottom-left-radius.percent if { row.radius.bottom-left == $radius.HACK-RADIUS-ROUND }: 50
 border-bottom-right-radius.percent if { row.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
-border-top-width.px: $row.border-top
-border-bottom-width.px: $row.border-bottom
-border-right-width.px: $row.border-right
-border-left-width.px: $row.border-left
+border-top-width.px: $row.border.top
+border-bottom-width.px: $row.border.bottom
+border-left-width.px: $row.border.left
+border-right-width.px: $row.border.right
 border-color: $row.border-color
+z-index: $row.z-index
+color: $row.color
 css: $row.css
 js: $row.js
 
