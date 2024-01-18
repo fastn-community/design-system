@@ -35,10 +35,11 @@
 optional caption label:
 optional string hint:
 optional string error:
-optional ftd.image-src icon-1:
-optional ftd.image-src icon-2:
+optional ftd.image-src icon-start:
+optional ftd.image-src icon-end:
 input-size size: medium
 input-radius radius: none
+boolean $flag: false
 
 -- ds.column:
 align-content: top-left
@@ -63,10 +64,11 @@ inset: $ds.spaces.inset-square.small
 	inset if { $text-input.size == large }: $ds.spaces.inset-wide.large
 	border-color if { text-input.error }: $ds.colors.cta-danger.border
 	background.solid: $inherited.colors.background.step-1
+	border-color if { text-input.flag }: $inherited.colors.shadow
 
 	-- ftd.image:
-	if: { text-input.icon-1 }
-	src: $text-input.icon-1
+	if: { text-input.icon-start }
+	src: $text-input.icon-start
 	width.fixed.px: 20
 	align-self: center
 
@@ -76,10 +78,12 @@ inset: $ds.spaces.inset-square.small
 	background.solid: $inherited.colors.background.step-1
 	color: $ds.colors.text-strong
 	color if { text-input.error }: $ds.colors.cta-danger.text
+	$on-focus$: $ftd.set-bool($a = $text-input.flag, v = true) 
+	$on-blur$: $ftd.set-bool($a = $text-input.flag, v = false) 
 
     -- ftd.image:
-    if: { text-input.icon-2 }
-	src: $text-input.icon-2
+    if: { text-input.icon-end }
+	src: $text-input.icon-end
 	width.fixed.px: 20
 	align-self: center
 	
@@ -131,14 +135,14 @@ inset: $ds.spaces.inset-square.small
 			\-- text-input: Label
 			size: small
 			hint: hint
-			icon-1: $assets.files.assets.convert.svg
-			icon-2: $assets.files.assets.convert.svg
+			icon-start: $assets.files.assets.convert.svg
+			icon-end: $assets.files.assets.convert.svg
 
 			-- text-input: Label
 			size: small
 			hint: hint
-			icon-1: $assets.files.assets.convert.svg
-			icon-2: $assets.files.assets.convert.svg
+			icon-start: $assets.files.assets.convert.svg
+			icon-end: $assets.files.assets.convert.svg
 
 		-- end: ds.rendered
 
@@ -148,13 +152,13 @@ inset: $ds.spaces.inset-square.small
 			size: small
 			hint: hint
 			radius: curved
-			icon-1: $assets.files.assets.convert.svg
+			icon-start: $assets.files.assets.convert.svg
 
 			-- text-input: Label
 			size: small
 			hint: hint
 			radius: curved
-			icon-1: $assets.files.assets.convert.svg
+			icon-start: $assets.files.assets.convert.svg
 
 		-- end: ds.rendered
 
@@ -262,6 +266,8 @@ inset: $ds.spaces.inset-square.small
 
 		-- end: ds.row
 
+		;; error message to be added
+		
 		-- ds.rendered:
 
 			\-- text-input: Label
