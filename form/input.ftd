@@ -17,7 +17,6 @@
 
 -- constant integer none: 0
 -- constant integer curved: 1
--- constant integer round: 2
 
 -- end: input-radius
 
@@ -40,6 +39,7 @@ optional ftd.image-src icon-end:
 input-size size: medium
 input-radius radius: none
 boolean $flag: false
+boolean rounded: false
 
 -- ds.column:
 align-content: top-left
@@ -50,12 +50,12 @@ inset: $ds.spaces.inset-square.small
 	if: { text-input.label != NULL }
 	
 	-- ds.row:
+	width.fixed.px: 360
 	border-color: $inherited.colors.border
+	radius if { text-input.rounded }: $ds.radius.large
 	radius if { text-input.radius == none }: $ds.radius.zero
 	radius if { text-input.radius == curved }: $ds.radius.medium
-	radius if { text-input.radius == round }: $ds.radius.large
 	border: $ds.borders.uniform.small
-	width.fixed.px: 360
 	height.fixed.px if { $text-input.size == small }: 40
 	height.fixed.px if { $text-input.size == medium }: 46
 	height.fixed.px if { $text-input.size == large }: 49
@@ -97,7 +97,6 @@ inset: $ds.spaces.inset-square.small
 	color: $ds.colors.cta-danger.text
 	
 -- end: ds.column
-
 
 -- end: text-input
 
@@ -167,12 +166,12 @@ inset: $ds.spaces.inset-square.small
 			\-- text-input: Label
 			size: small
 			hint: hint
-			radius: round
+			rounded: true
 
 			-- text-input: Label
 			size: small
 			hint: hint
-			radius: round
+			rounded: true
 
 		-- end: ds.rendered
 
@@ -211,12 +210,12 @@ inset: $ds.spaces.inset-square.small
 			\-- text-input: Label
 			size: medium
 			hint: hint
-			radius: round
+			rounded: true
 
 			-- text-input: Label
 			size: medium
 			hint: hint
-			radius: round
+			rounded: true
 
 		-- end: ds.rendered
 
@@ -255,12 +254,12 @@ inset: $ds.spaces.inset-square.small
 			\-- text-input: Label
 			size: large
 			hint: hint
-			radius: round
+			rounded: true
 
 			-- text-input: Label
 			size: large
 			hint: hint
-			radius: round
+			rounded: true
 
 		-- end: ds.rendered
 
