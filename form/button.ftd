@@ -6,10 +6,7 @@
 -- constant integer primary: 1
 -- constant integer secondary: 2
 -- constant integer tertiary: 3
--- constant integer success: 4
--- constant integer warning: 5
--- constant integer danger: 6
--- constant integer info: 7
+-- constant integer danger: 4
 
 -- end: button-kind
 
@@ -19,7 +16,7 @@
 
 -- constant integer solid: 0
 -- constant integer outline: 1
--- constant integer ghost: 2
+-- constant integer disabled: 2
 -- constant integer link: 3
 
 -- end: button-variant
@@ -39,12 +36,20 @@
 
 -- or-type button-size:
 
--- constant integer large: 0
--- constant integer medium: 1
--- constant integer small: 2
--- constant integer extra-small: 3
+-- constant integer extra-large: 0
+-- constant integer large: 1
+-- constant integer medium: 2
+-- constant integer small: 3
 
 -- end: button-size
+
+
+-- or-type button-radius:
+
+-- constant integer none: 0
+-- constant integer curved: 1
+
+-- end: button-radius
 
 
 
@@ -62,13 +67,20 @@ boolean $hover: false
 button-width width: default
 boolean enabled: true
 button-size size: medium
+button-radius radius: none
 button-variant variant: solid
+boolean rounded: false
 
 -- ds.row:
-background.solid if { primary-button.variant == solid }: $inherited.colors.cta-primary.base
-background.solid if { primary-button.hover && primary-button.variant != link }: $inherited.colors.cta-primary.hover
-radius: $ds.radius.medium
-inset: $ds.spaces.inset-wide.medium
+background.solid if { primary-button.variant == solid }: $ds.colors.cta-primary.base
+background.solid if { primary-button.variant == disabled }: $ds.colors.cta-primary.disabled
+background.solid if { primary-button.hover }: $ds.colors.cta-primary.hover
+radius if { primary-button.rounded }: $ds.radius.large
+radius if { primary-button.radius == none }: $ds.radius.zero
+radius if { primary-button.radius == curved }: $ds.radius.medium
+inset if { primary-button.size == small }: $ds.spaces.inset-wide.small
+inset if { primary-button.size == medium }: $ds.spaces.inset-wide.medium
+inset if { primary-button.size == large }: $ds.spaces.inset-wide.large
 align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $primary-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $primary-button.hover, v = false)
@@ -76,12 +88,10 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { primary-button.width == default }: hug-content
 width.fixed.px if { primary-button.width == wide }: 200
 width if { primary-button.width == full }: fill-container
-border if { primary-button.variant == outline }: $ds.borders.uniform.small
-border-color if { primary-button.variant == outline }: $ds.colors.cta-primary.border
 
 	-- ds.link:
 	text: $primary-button.title
-	color: $inherited.colors.cta-primary.text
+	color: $ds.colors.cta-primary.text
 	link: $primary-button.link
 	
 -- end: ds.row
@@ -104,26 +114,33 @@ boolean $hover: false
 button-width width: default
 boolean enabled: true
 button-size size: medium
+button-radius radius: none
 button-variant variant: solid
+boolean rounded: false
 
 -- ds.row:
-background.solid if { secondary-button.variant == solid }: $inherited.colors.cta-secondary.base
-radius: $ds.radius.medium
-inset: $ds.spaces.inset-wide.medium
+background.solid if { secondary-button.variant == solid }: $ds.colors.cta-secondary.base
+background.solid if { secondary-button.variant == disabled }: $ds.colors.cta-secondary.disabled
+background.solid if { secondary-button.hover }: $ds.colors.cta-secondary.hover
+radius if { secondary-button.rounded }: $ds.radius.large
+radius if { secondary-button.radius == none }: $ds.radius.zero
+radius if { secondary-button.radius == curved }: $ds.radius.medium
+inset if { secondary-button.size == small }: $ds.spaces.inset-wide.small
+inset if { secondary-button.size == medium }: $ds.spaces.inset-wide.medium
+inset if { secondary-button.size == large }: $ds.spaces.inset-wide.large
 align-content: center
-background.solid if { secondary-button.hover && secondary-button.variant != link }: $inherited.colors.cta-secondary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $secondary-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $secondary-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
 width if { secondary-button.width == default }: hug-content
 width.fixed.px if { secondary-button.width == wide }: 200
 width if { secondary-button.width == full }: fill-container
-border if { secondary-button.variant == outline }: $ds.borders.uniform.small
-border-color if { secondary-button.variant == outline}: $ds.colors.cta-secondary.border
+border: $ds.borders.uniform.small
+border-color: $ds.colors.cta-secondary.border
 
 	-- ds.link:
 	text: $secondary-button.title
-	color: $inherited.colors.cta-secondary.text
+	color: $ds.colors.cta-secondary.text
 	link: $secondary-button.link
 	
 -- end: ds.row
@@ -142,30 +159,24 @@ border-color if { secondary-button.variant == outline}: $ds.colors.cta-secondary
 -- component tertiary-button:
 caption title:
 optional string link:
-boolean $hover: false
 button-width width: default
 boolean enabled: true
 button-size size: medium
-button-variant variant: solid
 
 -- ds.row:
-background.solid if { tertiary-button.variant == solid }: $inherited.colors.cta-tertiary.base
-radius: $ds.radius.medium
 inset: $ds.spaces.inset-wide.medium
 align-content: center
-background.solid if { tertiary-button.hover && tertiary-button.variant != link }: $inherited.colors.cta-tertiary.hover
-$on-mouse-enter$: $ftd.set-bool($a = $tertiary-button.hover, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $tertiary-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
 width if { tertiary-button.width == default }: hug-content
 width.fixed.px if { tertiary-button.width == wide }: 200
 width if { tertiary-button.width == full }: fill-container
-border if { tertiary-button.variant == outline }: $ds.borders.uniform.small
-border-color if { tertiary-button.variant == outline}: $ds.colors.cta-tertiary.border
+inset if { tertiary-button.size == small }: $ds.spaces.inset-wide.small
+inset if { tertiary-button.size == medium }: $ds.spaces.inset-wide.medium
+inset if { tertiary-button.size == large }: $ds.spaces.inset-wide.large
 
 	-- ds.link:
 	text: $tertiary-button.title
-	color: $inherited.colors.cta-tertiary.text
+	color: $ds.colors.cta-tertiary.text
 	link: $tertiary-button.link
 	
 -- end: ds.row
@@ -181,78 +192,40 @@ border-color if { tertiary-button.variant == outline}: $ds.colors.cta-tertiary.b
 
 
 
--- component success-button:
+
+
+-- component link-button:
 caption title:
 optional string link:
-boolean $hover: false
 button-width width: default
 boolean enabled: true
 button-size size: medium
-button-variant variant: solid
-
--- ds.row:
-background.solid if { success-button.variant == solid }: $inherited.colors.success.base
-radius: $ds.radius.medium
-inset: $ds.spaces.inset-wide.medium
-align-content: center
-$on-mouse-enter$: $ftd.set-bool($a = $success-button.hover, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $success-button.hover, v = false)
-spacing: $ds.spaces.horizontal-gap.small
-width if { success-button.width == default }: hug-content
-width.fixed.px if { success-button.width == wide }: 200
-width if { success-button.width == full }: fill-container
-border if { success-button.variant == outline }: $ds.borders.uniform.small
-border-color if { success-button.variant == outline}: $ds.colors.success.border
-
-	-- ds.link:
-	text: $success-button.title
-	color: $inherited.colors.success.text
-	link: $success-button.link
-	
--- end: ds.row
-
--- end: success-button
-
-
-
-
-
-
-
-
-
-
--- component warning-button:
-caption title:
-optional string link:
 boolean $hover: false
-button-width width: default
-boolean enabled: true
-button-size size: medium
-button-variant variant: solid
 
 -- ds.row:
-background.solid if { warning-button.variant == solid }: $inherited.colors.warning.base
-radius: $ds.radius.medium
 inset: $ds.spaces.inset-wide.medium
 align-content: center
-$on-mouse-enter$: $ftd.set-bool($a = $warning-button.hover, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $warning-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
-width if { warning-button.width == default }: hug-content
-width.fixed.px if { warning-button.width == wide }: 200
-width if { warning-button.width == full }: fill-container
-border if { warning-button.variant == outline }: $ds.borders.uniform.small
-border-color if { warning-button.variant == outline}: $ds.colors.warning.border
+width if { link-button.width == default }: hug-content
+width.fixed.px if { link-button.width == wide }: 200
+width if { link-button.width == full }: fill-container
+inset if { link-button.size == small }: $ds.spaces.inset-wide.small
+inset if { link-button.size == medium }: $ds.spaces.inset-wide.medium
+inset if { link-button.size == large }: $ds.spaces.inset-wide.large
+border if { link-button.hover }: $ds.borders.bottom.small
+border-color if { link-button.hover }: $ds.colors.accent.primary
+$on-mouse-enter$: $ftd.set-bool($a = $link-button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $link-button.hover, v = false)
 
 	-- ds.link:
-	text: $warning-button.title
-	color: $inherited.colors.warning.text
-	link: $warning-button.link
+	text: $link-button.title
+	color: $ds.colors.accent.primary
+	link: $link-button.link
 	
 -- end: ds.row
 
--- end: warning-button
+-- end: link-button
+
 
 
 
@@ -270,73 +243,36 @@ boolean $hover: false
 button-width width: default
 boolean enabled: true
 button-size size: medium
+button-radius radius: none
 button-variant variant: solid
+boolean rounded: false
 
 -- ds.row:
-background.solid if { danger-button.variant == solid }: $inherited.colors.cta-danger.base
-radius: $ds.radius.medium
-inset: $ds.spaces.inset-wide.medium
+background.solid if { danger-button.variant == solid }: $ds.colors.cta-danger.base
+background.solid if { danger-button.variant == disabled }: $ds.colors.cta-danger.disabled
+background.solid if { danger-button.hover }: $ds.colors.cta-danger.hover
+radius if { danger-button.rounded }: $ds.radius.large
+radius if { danger-button.radius == none }: $ds.radius.zero
+radius if { danger-button.radius == curved }: $ds.radius.medium
+inset if { danger-button.size == small }: $ds.spaces.inset-wide.small
+inset if { danger-button.size == medium }: $ds.spaces.inset-wide.medium
+inset if { danger-button.size == large }: $ds.spaces.inset-wide.large
 align-content: center
-background.solid if { danger-button.hover }: $inherited.colors.cta-danger.hover
 $on-mouse-enter$: $ftd.set-bool($a = $danger-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $danger-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
 width if { danger-button.width == default }: hug-content
 width.fixed.px if { danger-button.width == wide }: 200
 width if { danger-button.width == full }: fill-container
-border if { danger-button.variant == outline }: $ds.borders.uniform.small
-border-color if { danger-button.variant == outline}: $ds.colors.cta-danger.border
 
 	-- ds.link:
 	text: $danger-button.title
-	color: $inherited.colors.cta-danger.text
+	color: $ds.colors.cta-danger.text
 	link: $danger-button.link
 	
 -- end: ds.row
 
 -- end: danger-button
-
-
-
-
-
-
-
-
-
-
--- component info-button:
-caption title:
-optional string link:
-boolean $hover: false
-button-width width: default
-boolean enabled: true
-button-size size: medium
-button-variant variant: solid
-
--- ds.row:
-background.solid if { info-button.variant == solid }: $inherited.colors.info.base
-radius: $ds.radius.medium
-inset: $ds.spaces.inset-wide.medium
-align-content: center
-$on-mouse-enter$: $ftd.set-bool($a = $info-button.hover, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $info-button.hover, v = false)
-spacing: $ds.spaces.horizontal-gap.small
-width if { info-button.width == default }: hug-content
-width.fixed.px if { info-button.width == wide }: 200
-width if { info-button.width == full }: fill-container
-border if { info-button.variant == outline }: $ds.borders.uniform.small
-border-color if { info-button.variant == outline}: $ds.colors.info.border
-
-	-- ds.link:
-	text: $info-button.title
-	color: $inherited.colors.info.text
-	link: $info-button.link
-	
--- end: ds.row
-
--- end: info-button
-
 
 
 
@@ -370,13 +306,18 @@ align-content: center
 	-- ds.section-row:
 	flush: full
 	
+		-- ds.heading-small: Default
+		width: hug-content
+		
 		-- ds.rendered:
 		
 		\-- primary-button: primary-button
 		link: /
+		size: small
 		
 			-- primary-button: primary-button
 			link: /
+			size: small
 			
 		-- end: ds.rendered
 
@@ -384,11 +325,13 @@ align-content: center
 		
 		\-- primary-button: primary-button
 		link: /
-		variant: outline
+		size: medium
+		radius: curved
 		
 			-- primary-button: primary-button
 			link: /
-			variant: outline
+			size: medium
+			radius: curved
 			
 		-- end: ds.rendered
 
@@ -396,11 +339,63 @@ align-content: center
 		
 		\-- primary-button: primary-button
 		link: /
-		variant: link
+		size: large
+		rounded: true
 		
 			-- primary-button: primary-button
 			link: /
-			variant: link
+			size: large
+			rounded: true
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
+
+	-- ds.section-row:
+	flush: full
+	
+		-- ds.heading-small: Disabled
+		width: hug-content
+		
+		-- ds.rendered:
+		
+		\-- primary-button: primary-button
+		link: /
+		size: small
+		variant: disabled
+		
+			-- primary-button: primary-button
+			link: /
+			size: small
+			variant: disabled
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- primary-button: primary-button
+		link: /
+		size: medium
+		variant: disabled
+		
+			-- primary-button: primary-button
+			link: /
+			size: medium
+			variant: disabled
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- primary-button: primary-button
+		link: /
+		size: large
+		variant: disabled
+		
+			-- primary-button: primary-button
+			link: /
+			size: large
+			variant: disabled
 			
 		-- end: ds.rendered
 
@@ -411,13 +406,18 @@ align-content: center
 	-- ds.section-row:
 	flush: full
 	
+		-- ds.heading-small: Default
+		width: hug-content
+		
 		-- ds.rendered:
 		
 		\-- secondary-button: secondary-button
 		link: /
+		size: small
 		
 			-- secondary-button: secondary-button
 			link: /
+			size: small
 			
 		-- end: ds.rendered
 
@@ -425,11 +425,13 @@ align-content: center
 		
 		\-- secondary-button: secondary-button
 		link: /
-		variant: outline
+		size: medium
+		radius: curved
 		
 			-- secondary-button: secondary-button
 			link: /
-			variant: outline
+			size: medium
+			radius: curved
 			
 		-- end: ds.rendered
 
@@ -437,11 +439,64 @@ align-content: center
 		
 		\-- secondary-button: secondary-button
 		link: /
-		variant: link
+		size: large
+		rounded: true
 		
 			-- secondary-button: secondary-button
 			link: /
-			variant: link
+			size: large
+			rounded: true
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
+
+	
+	-- ds.section-row:
+	flush: full
+	
+		-- ds.heading-small: Disabled
+		width: hug-content
+		
+		-- ds.rendered:
+		
+		\-- secondary-button: secondary-button
+		link: /
+		size: small
+		variant: disabled
+		
+			-- secondary-button: secondary-button
+			link: /
+			size: small
+			variant: disabled
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- secondary-button: secondary-button
+		link: /
+		size: medium
+		variant: disabled
+		
+			-- secondary-button: secondary-button
+			link: /
+			size: medium
+			variant: disabled
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- secondary-button: secondary-button
+		link: /
+		size: large
+		variant: disabled
+		
+			-- secondary-button: secondary-button
+			link: /
+			size: large
+			variant: disabled
 			
 		-- end: ds.rendered
 
@@ -452,13 +507,18 @@ align-content: center
 	-- ds.section-row:
 	flush: full
 	
+		-- ds.heading-small: Default
+		width: hug-content
+		
 		-- ds.rendered:
 		
 		\-- tertiary-button: tertiary-button
 		link: /
+		size: small
 		
 			-- tertiary-button: tertiary-button
 			link: /
+			size: small
 			
 		-- end: ds.rendered
 
@@ -466,11 +526,11 @@ align-content: center
 		
 		\-- tertiary-button: tertiary-button
 		link: /
-		variant: outline
+		size: medium
 		
 			-- tertiary-button: tertiary-button
 			link: /
-			variant: outline
+			size: medium
 			
 		-- end: ds.rendered
 
@@ -478,93 +538,57 @@ align-content: center
 		
 		\-- tertiary-button: tertiary-button
 		link: /
-		variant: link
+		size: large
 		
 			-- tertiary-button: tertiary-button
 			link: /
-			variant: link
+			size: large
 			
 		-- end: ds.rendered
 
 	-- end: ds.section-row
 
-	-- ds.heading-hero: Success Buttons
+	-- ds.heading-hero: Link Buttons
 	
 	-- ds.section-row:
 	flush: full
 	
+		-- ds.heading-small: Default
+		width: hug-content
+		
 		-- ds.rendered:
 		
-		\-- success-button: success-button
+		\-- link-button: link-button
 		link: /
+		size: small
 		
-			-- success-button: success-button
+			-- link-button: link-button
 			link: /
+			size: small
 			
 		-- end: ds.rendered
 
 		-- ds.rendered:
 		
-		\-- success-button: success-button
+		\-- link-button: link-button
 		link: /
-		variant: outline
+		size: medium
 		
-			-- success-button: success-button
+			-- link-button: link-button
 			link: /
-			variant: outline
+			size: medium
 			
 		-- end: ds.rendered
 
 		-- ds.rendered:
 		
-		\-- success-button: success-button
+		\-- link-button: link-button
 		link: /
-		variant: link
+		size: large
 		
-			-- success-button: success-button
+			-- link-button: link-button
 			link: /
-			variant: link
-			
-		-- end: ds.rendered
-
-	-- end: ds.section-row
-
-	-- ds.heading-hero: Warning Buttons
-	
-	-- ds.section-row:
-	flush: full
-	
-		-- ds.rendered:
-		
-		\-- warning-button: warning-button
-		link: /
-		
-			-- warning-button: warning-button
-			link: /
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- warning-button: warning-button
-		link: /
-		variant: outline
-		
-			-- warning-button: warning-button
-			link: /
-			variant: outline
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- warning-button: warning-button
-		link: /
-		variant: link
-		
-			-- warning-button: warning-button
-			link: /
-			variant: link
+			size: large
 			
 		-- end: ds.rendered
 
@@ -575,13 +599,18 @@ align-content: center
 	-- ds.section-row:
 	flush: full
 	
+		-- ds.heading-small: Default
+		width: hug-content
+		
 		-- ds.rendered:
 		
 		\-- danger-button: danger-button
 		link: /
+		size: small
 		
 			-- danger-button: danger-button
 			link: /
+			size: small
 			
 		-- end: ds.rendered
 
@@ -589,11 +618,13 @@ align-content: center
 		
 		\-- danger-button: danger-button
 		link: /
-		variant: outline
+		size: medium
+		radius: curved
 		
 			-- danger-button: danger-button
 			link: /
-			variant: outline
+			size: medium
+			radius: curved
 			
 		-- end: ds.rendered
 
@@ -601,52 +632,63 @@ align-content: center
 		
 		\-- danger-button: danger-button
 		link: /
-		variant: link
+		size: large
+		rounded: true
 		
 			-- danger-button: danger-button
 			link: /
-			variant: link
+			size: large
+			rounded: true
 			
 		-- end: ds.rendered
 
 	-- end: ds.section-row
 
-	-- ds.heading-hero: Info Buttons
-	
 	-- ds.section-row:
 	flush: full
 	
+		-- ds.heading-small: Disabled
+		width: hug-content
+		
 		-- ds.rendered:
 		
-		\-- info-button: info-button
+		\-- danger-button: danger-button
 		link: /
+		size: small
+		variant: disabled
 		
-			-- info-button: info-button
+			-- danger-button: danger-button
 			link: /
+			size: small
+			variant: disabled
 			
 		-- end: ds.rendered
 
 		-- ds.rendered:
 		
-		\-- info-button: info-button
+		\-- danger-button: danger-button
 		link: /
-		variant: outline
+		size: medium
+		variant: disabled
 		
-			-- info-button: info-button
+			-- danger-button: danger-button
 			link: /
-			variant: outline
+			size: medium
+			variant: disabled
 			
 		-- end: ds.rendered
 
 		-- ds.rendered:
 		
-		\-- info-button: info-button
+		\-- danger-button: danger-button
 		link: /
-		variant: link
+		size: large
+		variant: disabled
 		
-			-- info-button: info-button
+			-- danger-button: danger-button
 			link: /
-			variant: link
+			size: large
+			variant: disabled
 			
 		-- end: ds.rendered
 
