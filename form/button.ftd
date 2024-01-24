@@ -245,22 +245,30 @@ boolean $hover: false
 button-width width: default
 boolean enabled: true
 button-size size: medium
+button-radius radius: none
 button-variant variant: solid
+boolean rounded: false
 
 -- ds.row:
 background.solid if { danger-button.variant == solid }: $ds.colors.cta-danger.base
-radius: $ds.radius.medium
-inset: $ds.spaces.inset-wide.medium
-align-content: center
+background.solid if { danger-button.variant == pressed }: $ds.colors.cta-danger.pressed
+background.solid if { danger-button.variant == disabled }: $ds.colors.cta-danger.disabled
 background.solid if { danger-button.hover }: $ds.colors.cta-danger.hover
+radius if { danger-button.rounded }: $ds.radius.large
+radius if { danger-button.radius == none }: $ds.radius.zero
+radius if { danger-button.radius == curved }: $ds.radius.medium
+inset if { danger-button.size == small }: $ds.spaces.inset-wide.small
+inset if { danger-button.size == medium }: $ds.spaces.inset-wide.medium
+inset if { danger-button.size == large }: $ds.spaces.inset-wide.large
+align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $danger-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $danger-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
 width if { danger-button.width == default }: hug-content
 width.fixed.px if { danger-button.width == wide }: 200
 width if { danger-button.width == full }: fill-container
-border if { danger-button.variant == outline }: $ds.borders.uniform.small
-border-color if { danger-button.variant == outline}: $ds.colors.cta-danger.border
+border: $ds.borders.uniform.small
+border-color: $ds.colors.cta-danger.border
 
 	-- ds.link:
 	text: $danger-button.title
@@ -270,7 +278,6 @@ border-color if { danger-button.variant == outline}: $ds.colors.cta-danger.borde
 -- end: ds.row
 
 -- end: danger-button
-
 
 
 
@@ -302,10 +309,10 @@ align-content: center
 	
 	-- ds.section-row:
 	flush: full
-
+	
 		-- ds.heading-small: Default
 		width: hug-content
-	
+		
 		-- ds.rendered:
 		
 		\-- primary-button: primary-button
@@ -329,7 +336,7 @@ align-content: center
 			link: /
 			size: medium
 			radius: curved
-
+			
 		-- end: ds.rendered
 
 		-- ds.rendered:
@@ -348,12 +355,12 @@ align-content: center
 
 	-- end: ds.section-row
 
--- ds.section-row:
-	flush: full
-
+	-- ds.section-row:
+	 flush: full
+	
 		-- ds.heading-small: Pressed
 		width: hug-content
-	
+		
 		-- ds.rendered:
 		
 		\-- primary-button: primary-button
@@ -379,7 +386,7 @@ align-content: center
 			link: /
 			size: medium
 			variant: pressed
-
+			
 		-- end: ds.rendered
 
 		-- ds.rendered:
@@ -400,10 +407,10 @@ align-content: center
 
 	-- ds.section-row:
 	flush: full
-
+	
 		-- ds.heading-small: Disabled
 		width: hug-content
-	
+		
 		-- ds.rendered:
 		
 		\-- primary-button: primary-button
@@ -429,7 +436,7 @@ align-content: center
 			link: /
 			size: medium
 			variant: disabled
-
+			
 		-- end: ds.rendered
 
 		-- ds.rendered:
@@ -452,10 +459,10 @@ align-content: center
 	
 	-- ds.section-row:
 	flush: full
-
+	
 		-- ds.heading-small: Default
 		width: hug-content
-	
+		
 		-- ds.rendered:
 		
 		\-- secondary-button: secondary-button
@@ -479,7 +486,7 @@ align-content: center
 			link: /
 			size: medium
 			radius: curved
-
+			
 		-- end: ds.rendered
 
 		-- ds.rendered:
@@ -498,12 +505,12 @@ align-content: center
 
 	-- end: ds.section-row
 
--- ds.section-row:
-	flush: full
-
+	-- ds.section-row:
+	 flush: full
+	
 		-- ds.heading-small: Pressed
 		width: hug-content
-	
+		
 		-- ds.rendered:
 		
 		\-- secondary-button: secondary-button
@@ -529,7 +536,7 @@ align-content: center
 			link: /
 			size: medium
 			variant: pressed
-
+			
 		-- end: ds.rendered
 
 		-- ds.rendered:
@@ -550,10 +557,10 @@ align-content: center
 
 	-- ds.section-row:
 	flush: full
-
+	
 		-- ds.heading-small: Disabled
 		width: hug-content
-	
+		
 		-- ds.rendered:
 		
 		\-- secondary-button: secondary-button
@@ -579,7 +586,7 @@ align-content: center
 			link: /
 			size: medium
 			variant: disabled
-
+			
 		-- end: ds.rendered
 
 		-- ds.rendered:
@@ -602,10 +609,10 @@ align-content: center
 	
 	-- ds.section-row:
 	flush: full
-
+	
 		-- ds.heading-small: Default
 		width: hug-content
-	
+		
 		-- ds.rendered:
 		
 		\-- tertiary-button: tertiary-button
@@ -639,7 +646,7 @@ align-content: center
 			-- tertiary-button: tertiary-button
 			link: /
 			size: large
-
+			
 		-- end: ds.rendered
 
 	-- end: ds.section-row
@@ -648,10 +655,10 @@ align-content: center
 	
 	-- ds.section-row:
 	flush: full
-
+	
 		-- ds.heading-small: Default
 		width: hug-content
-	
+		
 		-- ds.rendered:
 		
 		\-- link-button: link-button
@@ -685,12 +692,160 @@ align-content: center
 			-- link-button: link-button
 			link: /
 			size: large
-
+			
 		-- end: ds.rendered
 
 	-- end: ds.section-row
 
-	-- button:
+	-- ds.heading-hero: Danger Buttons
+	
+	-- ds.section-row:
+	flush: full
+	
+		-- ds.heading-small: Default
+		width: hug-content
+		
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		size: small
+		
+			-- danger-button: danger-button
+			link: /
+			size: small
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		size: medium
+		radius: curved
+		
+			-- danger-button: danger-button
+			link: /
+			size: medium
+			radius: curved
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		size: large
+		rounded: true
+		
+			-- danger-button: danger-button
+			link: /
+			size: large
+			rounded: true
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
+
+	-- ds.section-row:
+	 flush: full
+	
+		-- ds.heading-small: Pressed
+		width: hug-content
+		
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		size: small
+		variant: pressed
+		
+			-- danger-button: danger-button
+			link: /
+			size: small
+			variant: pressed
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		size: medium
+		variant: pressed
+		
+			-- danger-button: danger-button
+			link: /
+			size: medium
+			variant: pressed
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		size: large
+		variant: pressed
+		
+			-- danger-button: danger-button
+			link: /
+			size: large
+			variant: pressed
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
+
+	-- ds.section-row:
+	flush: full
+	
+		-- ds.heading-small: Disabled
+		width: hug-content
+		
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		size: small
+		variant: disabled
+		
+			-- danger-button: danger-button
+			link: /
+			size: small
+			variant: disabled
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		size: medium
+		variant: disabled
+		
+			-- danger-button: danger-button
+			link: /
+			size: medium
+			variant: disabled
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- danger-button: danger-button
+		link: /
+		size: large
+		variant: disabled
+		
+			-- danger-button: danger-button
+			link: /
+			size: large
+			variant: disabled
+			
+		-- end: ds.rendered
+
+	-- end: ds.section-row
 
 -- end: ds.section-column
 
