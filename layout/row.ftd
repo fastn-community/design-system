@@ -1,6 +1,7 @@
 -- import: fastn-community.github.io/design-system/spaces
 -- import: fastn-community.github.io/design-system/radius
 -- import: fastn-community.github.io/design-system/borders
+-- import: fastn-community.github.io/design-system/shadow
 
 -- component row:
 optional caption title:
@@ -14,13 +15,13 @@ boolean wrap: false
 optional ftd.resizing height:
 optional ftd.background background:
 ds.element-radius radius: $ds.radius.medium
-integer border-top: $ds.borders.none
-integer border-bottom: $ds.borders.none
-integer border-left: $ds.borders.none
-integer border-right: $ds.borders.none
-optional ftd.color border-color:
+ds.border-data border: $ds.borders.uniform.zero
+ftd.color border-color: $ds.colors.border
+optional ftd.color color:
+optional integer z-index:
 string list css:
 string list js:
+optional ftd.shadow shadow:
 
 -- ftd.row:
 width: $row.width
@@ -42,13 +43,16 @@ border-top-left-radius.percent if { row.radius.top-left == $radius.HACK-RADIUS-R
 border-top-right-radius.percent if { row.radius.top-right == $radius.HACK-RADIUS-ROUND }: 50
 border-bottom-left-radius.percent if { row.radius.bottom-left == $radius.HACK-RADIUS-ROUND }: 50
 border-bottom-right-radius.percent if { row.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
-border-top-width.px: $row.border-top
-border-bottom-width.px: $row.border-bottom
-border-right-width.px: $row.border-right
-border-left-width.px: $row.border-left
+border-top-width.px: $row.border.top
+border-bottom-width.px: $row.border.bottom
+border-left-width.px: $row.border.left
+border-right-width.px: $row.border.right
 border-color: $row.border-color
+z-index: $row.z-index
+color: $row.color
 css: $row.css
 js: $row.js
+shadow: $row.shadow
 
 -- end: ftd.row
 
@@ -91,6 +95,7 @@ js: $row.js
 	radius: $ds.radius.small
 	background.solid: $ds.colors.custom.five
 	align-content: center
+	shadow: $ds.shadow.extra-large
 	
 	\-- ds.copy-regular:
 	text: Text 1
@@ -109,13 +114,11 @@ js: $row.js
 		-- ds.row:
 		width.fixed.px: 280
 		height.fixed.px: 200
-		border-top: $ds.borders.thin
-		border-left: $ds.borders.thin
-		border-right: $ds.borders.thin
-		border-bottom: $ds.borders.thin
+		border: $ds.borders.uniform.small
 		radius: $ds.radius.small
 		background.solid: $ds.colors.custom.five
 		align-content: center
+		shadow: $ds.shadow.extra-large
 		
 			-- ds.copy-regular:
 			text: Row Text
