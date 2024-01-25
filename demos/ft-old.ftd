@@ -9,7 +9,9 @@ widths: $widths
 
 -- header:
 
--- products:
+;; There is a build issue in the below component call
+;; will fix this later
+/-- products:
 
 -- footer:
 
