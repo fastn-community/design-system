@@ -1,6 +1,7 @@
 -- import: fastn-community.github.io/design-system/spaces
 -- import: fastn-community.github.io/design-system/radius
 -- import: fastn-community.github.io/design-system/borders
+-- import: fastn-community.github.io/design-system/shadow
 
 -- component column:
 optional caption title:
@@ -17,6 +18,7 @@ ftd.color border-color: $ds.colors.border
 optional ftd.color color:
 string list css:
 string list js:
+optional ftd.shadow shadow:
 
 -- ftd.column:
 width: $column.width
@@ -44,6 +46,7 @@ border-right-width.px: $column.border.right
 color: $column.color
 css: $column.css
 js: $column.js
+shadow: $column.shadow
 
 -- end: ftd.column
 
@@ -79,10 +82,7 @@ js: $column.js
 	\-- ds.column:
 	width.fixed.px: 200
 	height.fixed.px: 200
-	border-top: $ds.borders.thin
-	border-left: $ds.borders.thin
-	border-right: $ds.borders.thin
-	border-bottom: $ds.borders.thin
+	border: $ds.borders.uniform.small
 	radius: $ds.radius.small
 	background.solid: $ds.colors.custom.two
 	align-content: center
@@ -90,11 +90,8 @@ js: $column.js
 	-- ds.column:
 	width.fixed.px: 200
 	height.fixed.px: 200
-	border-top: $ds.borders.thin
-	border-left: $ds.borders.thin
-	border-right: $ds.borders.thin
-	border-bottom: $ds.borders.thin
 	radius: $ds.radius.small
+	border: $ds.borders.uniform.small
 	background.solid: $ds.colors.background.step-1
 	align-content: center
 	inset: $ds.spaces.inset-square.small

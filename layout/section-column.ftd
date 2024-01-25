@@ -28,6 +28,7 @@ margin-bottom.px: $section-column.margin.gap
 	max-width.fixed if { section-column.flush == narrow }: $ds.widths.narrow
 	max-width.fixed if { section-column.flush == wide }: $ds.widths.wide
 	width.fixed: $ds.widths.regular
+	width if { ftd.device == "mobile" }: fill-container
 	children: $section-column.content
 	spacing if { section-column.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 	spacing.fixed.px: $section-column.spacing.gap

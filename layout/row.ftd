@@ -1,6 +1,7 @@
 -- import: fastn-community.github.io/design-system/spaces
 -- import: fastn-community.github.io/design-system/radius
 -- import: fastn-community.github.io/design-system/borders
+-- import: fastn-community.github.io/design-system/shadow
 
 -- component row:
 optional caption title:
@@ -20,6 +21,7 @@ optional ftd.color color:
 optional integer z-index:
 string list css:
 string list js:
+optional ftd.shadow shadow:
 
 -- ftd.row:
 width: $row.width
@@ -50,6 +52,7 @@ z-index: $row.z-index
 color: $row.color
 css: $row.css
 js: $row.js
+shadow: $row.shadow
 
 -- end: ftd.row
 
@@ -92,6 +95,7 @@ js: $row.js
 	radius: $ds.radius.small
 	background.solid: $ds.colors.custom.five
 	align-content: center
+	shadow: $ds.shadow.extra-large
 	
 	\-- ds.copy-regular:
 	text: Text 1
@@ -110,13 +114,11 @@ js: $row.js
 		-- ds.row:
 		width.fixed.px: 280
 		height.fixed.px: 200
-		border-top: $ds.borders.thin
-		border-left: $ds.borders.thin
-		border-right: $ds.borders.thin
-		border-bottom: $ds.borders.thin
+		border: $ds.borders.uniform.small
 		radius: $ds.radius.small
 		background.solid: $ds.colors.custom.five
 		align-content: center
+		shadow: $ds.shadow.extra-large
 		
 			-- ds.copy-regular:
 			text: Row Text
