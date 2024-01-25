@@ -162,6 +162,8 @@ optional string link:
 button-width width: default
 boolean enabled: true
 button-size size: medium
+boolean $hover: false
+button-variant variant: solid
 
 -- ds.row:
 align-content: center
