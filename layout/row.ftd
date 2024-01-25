@@ -17,6 +17,7 @@ optional ftd.background background:
 ds.element-radius radius: $ds.radius.medium
 ds.border-data border: $ds.borders.uniform.zero
 ftd.color border-color: $ds.colors.border
+optional ftd.color color:
 optional integer z-index:
 string list css:
 string list js:
@@ -48,6 +49,7 @@ border-left-width.px: $row.border.left
 border-right-width.px: $row.border.right
 border-color: $row.border-color
 z-index: $row.z-index
+color: $row.color
 css: $row.css
 js: $row.js
 shadow: $row.shadow

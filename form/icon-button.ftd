@@ -263,45 +263,37 @@ button.button-size size: medium
 boolean outline: false
 button.button-kind kind: primary
 children uis:
-ftd.length.px border-radius: 8
 ;; private stuff
 boolean $hover: false
 
--- ftd.row:
+-- ds.row:
 background.solid if { button-wrapper.kind == primary && button-wrapper.variant == solid}: $ds.colors.cta-primary.base
 background.solid if { button-wrapper.kind == secondary && button-wrapper.variant == solid}: $ds.colors.cta-secondary.base
 background.solid if { button-wrapper.kind == tertiary && button-wrapper.variant == solid}: $ds.colors.cta-tertiary.base
-background.solid if { button-wrapper.kind == success && button-wrapper.variant == solid}: $ds.colors.success.base
-background.solid if { button-wrapper.kind == warning && button-wrapper.variant == solid}: $ds.colors.warning.base
 background.solid if { button-wrapper.kind == danger && button-wrapper.variant == solid}: $ds.colors.cta-danger.base
-background.solid if { button-wrapper.kind == info && button-wrapper.variant == solid}: $ds.colors.info.base
-border-radius: $button-wrapper.border-radius
-border-width.px if { button-wrapper.variant == outline }: 1
+radius: $ds.radius.medium
+border if { button-wrapper.variant == outline }: $ds.borders.uniform.small
 border-color if { button-wrapper.variant == outline && button-wrapper.kind == primary}: $ds.colors.cta-primary.border
 border-color if { button-wrapper.variant == outline && button-wrapper.kind == secondary}: $ds.colors.cta-secondary.border
 border-color if { button-wrapper.variant == outline && button-wrapper.kind == tertiary}: $ds.colors.cta-tertiary.border
-border-color if { button-wrapper.variant == outline && button-wrapper.kind == success}: $ds.colors.success.border
-border-color if { button-wrapper.variant == outline && button-wrapper.kind == warning}: $ds.colors.warning.border
 border-color if { button-wrapper.variant == outline && button-wrapper.kind == danger}: $ds.colors.cta-danger.border
-border-color if { button-wrapper.variant == outline && button-wrapper.kind == info}: $ds.colors.info.border
-padding-horizontal.px: 12
-padding-vertical.px: 8
+inset if { button-wrapper.size == extra-small }: $ds.spaces.inset-wide.small-zero
+inset if { button-wrapper.size == small }: $ds.spaces.inset-wide.small
+inset if { button-wrapper.size == medium }: $ds.spaces.inset-wide.medium
+inset if { button-wrapper.size == large }: $ds.spaces.inset-wide.large
 align-content: center
 background.solid if { button-wrapper.hover }: $ds.colors.background.step-2
 $on-mouse-enter$: $ftd.set-bool($a = $button-wrapper.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-wrapper.hover, v = false)
-spacing.fixed.px: 8
+spacing: $ds.spaces.horizontal-gap.small
 width if { button-wrapper.width == default }: hug-content
 width.fixed.px if { button-wrapper.width == wide }: 200
 width if { button-wrapper.width == full }: fill-container
-link: $button-wrapper.link
 color if { button-wrapper.kind == primary }: $ds.colors.cta-primary.text
 color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.text
 color if { button-wrapper.kind == tertiary }: $ds.colors.cta-tertiary.text
-color if { button-wrapper.kind == success }: $ds.colors.success.text
-color if { button-wrapper.kind == warning }: $ds.colors.warning.text
 color if { button-wrapper.kind == danger }: $ds.colors.cta-danger.text
-color if { button-wrapper.kind == info }: $ds.colors.info.text
+link: $button-wrapper.link
 
 	-- ftd.text: $button-wrapper.title
 	if: { button-wrapper.title != NULL && button-wrapper.icon-position == at-end}
@@ -318,7 +310,7 @@ color if { button-wrapper.kind == info }: $ds.colors.info.text
 	white-space: nowrap
 	align-self: center
 	
--- end: ftd.row
+-- end: ds.row
 
 -- end: button-wrapper
 
@@ -399,38 +391,6 @@ color if { button-wrapper.kind == info }: $ds.colors.info.text
 
 
 
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: success
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: success
-		
-	-- end: ds.rendered
-
-
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: warning
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: warning
-		
-	-- end: ds.rendered
-
 
 
 
@@ -450,22 +410,6 @@ color if { button-wrapper.kind == info }: $ds.colors.info.text
 	-- end: ds.rendered
 
 
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: info
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: info
-		
-	-- end: ds.rendered
 
 
 
@@ -530,41 +474,6 @@ color if { button-wrapper.kind == info }: $ds.colors.info.text
 
 
 
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: success
-	variant: outline
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: success
-		variant: outline
-		
-	-- end: ds.rendered
-
-
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: warning
-	variant: outline
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: warning
-		variant: outline
-		
-	-- end: ds.rendered
 
 
 
@@ -589,22 +498,6 @@ color if { button-wrapper.kind == info }: $ds.colors.info.text
 
 
 
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: info
-	variant: outline
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: info
-		variant: outline
-		
-	-- end: ds.rendered
 
 
 
@@ -669,42 +562,7 @@ color if { button-wrapper.kind == info }: $ds.colors.info.text
 
 
 
-	-- ds.rendered:
 	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: success
-	variant: link
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: success
-		variant: link
-		
-	-- end: ds.rendered
-
-
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: warning
-	variant: link
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: warning
-		variant: link
-		
-	-- end: ds.rendered
-
 
 
 
@@ -728,22 +586,6 @@ color if { button-wrapper.kind == info }: $ds.colors.info.text
 
 
 
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: info
-	variant: link
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: info
-		variant: link
-		
-	-- end: ds.rendered
 
 
 

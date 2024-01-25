@@ -15,6 +15,7 @@ optional ftd.resizing height:
 ds.element-radius radius: $ds.radius.medium
 ds.border-data border: $ds.borders.uniform.zero
 ftd.color border-color: $ds.colors.border
+optional ftd.color color:
 string list css:
 string list js:
 optional ftd.shadow shadow:
@@ -42,6 +43,7 @@ border-top-width.px: $column.border.top
 border-bottom-width.px: $column.border.bottom
 border-left-width.px: $column.border.left
 border-right-width.px: $column.border.right
+color: $column.color
 css: $column.css
 js: $column.js
 shadow: $column.shadow

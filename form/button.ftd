@@ -164,8 +164,10 @@ boolean enabled: true
 button-size size: medium
 
 -- ds.row:
-inset: $ds.spaces.inset-wide.medium
 align-content: center
+background.solid if { tertiary-button.hover && tertiary-button.variant != link }: $ds.colors.cta-tertiary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $tertiary-button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $tertiary-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
 width if { tertiary-button.width == default }: hug-content
 width.fixed.px if { tertiary-button.width == wide }: 200
@@ -194,6 +196,7 @@ inset if { tertiary-button.size == large }: $ds.spaces.inset-wide.large
 
 
 
+
 -- component link-button:
 caption title:
 optional string link:
@@ -203,7 +206,6 @@ button-size size: medium
 boolean $hover: false
 
 -- ds.row:
-inset: $ds.spaces.inset-wide.medium
 align-content: center
 spacing: $ds.spaces.horizontal-gap.small
 width if { link-button.width == default }: hug-content
@@ -273,6 +275,7 @@ width if { danger-button.width == full }: fill-container
 -- end: ds.row
 
 -- end: danger-button
+
 
 
 
