@@ -1,4 +1,4 @@
--- import: fastn-community.github.io/design-system/form/button
+-- import: fastn-community.github.io/design-system/components/button
 -- import: fastn-community.github.io/svg-icons/phosphor
 -- import: fastn-community.github.io/svg-icons/fa
 

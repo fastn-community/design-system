@@ -19,7 +19,7 @@ export: element-radius, radius-data, radius
 -- import: fastn-community.github.io/code-block as _
 export: code, rendered
 
--- import: fastn-community.github.io/design-system/form/button as _
+-- import: fastn-community.github.io/design-system/components/button as _
 export: button, button-kind, button-variant, button-width, button-size, primary-button, secondary-button, tertiary-button, success-button, warning-button, danger-button, info-button, header-link
 
 -- import: fastn-community.github.io/design-system/header as _
@@ -28,7 +28,7 @@ export: header-link
 -- import: fastn-community.github.io/design-system/footer as _
 export: footer-heading, footer-secondary-heading, footer-link, copyright-text
 
--- import: fastn-community.github.io/design-system/form/button-group as _
+-- import: fastn-community.github.io/design-system/components/button-group as _
 export: button-group
 
 -- import: fastn-community.github.io/design-system/layout/page as _
@@ -56,7 +56,7 @@ export: row
 -- import: fastn-community.github.io/design-system/layout/inline-row as _
 export: inline-row
 
--- import: fastn-community.github.io/design-system/form/icon-button as _
+-- import: fastn-community.github.io/design-system/components/icon-button as _
 export: icon-button, circle-button, circle-text-button, phosphor-icon-button, fa-icon-button, icon-position, phosphor-variant
 
 -- import: fastn-community.github.io/design-system/typography as _
@@ -100,10 +100,10 @@ align-content: left
 	
 	This is the package you have been waiting for!
 	
-	- [Alert](form/alert/)
-	- [Buttons](form/button/)
-	- [Icon Buttons](form/icon-button/)
-	- [Button Group (WIP)](form/button-group/)
+	- [Alert](components/alert/)
+	- [Buttons](components/button/)
+	- [Icon Buttons](components/icon-button/)
+	- [Button Group (WIP)](components/button-group/)
 	- [Checkbox](form/checkbox/)
 	- [Input](form/input/)
 	- [Typography](typography/)
