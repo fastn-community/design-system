@@ -24,7 +24,6 @@ optional string checked-text:
 optional string not-checked-text:
 optional string disabled-text:
 boolean $is-checked: false
-boolean checked: false
 boolean disabled-checked: false
 boolean disabled-unchecked: false
 checkbox-size size: medium
@@ -35,7 +34,7 @@ color: $inherited.colors.text
 align-content: left
 
 -- ftd.checkbox:
-checked if { checkbox.disabled-checked || checkbox.checked }: true
+checked if { checkbox.disabled-checked }: true
 enabled if { checkbox.disabled-checked || checkbox.disabled-unchecked }: false
 checked: $checkbox.is-checked
 $on-click$: $ftd.toggle($a = $checkbox.is-checked)
@@ -91,7 +90,7 @@ width: hug-content
 
 		-- ds.row:
 
-		-- ds.copy-regular: Unchecked
+		-- ds.copy-regular: Default
 
 		-- ds.rendered:
 
@@ -120,48 +119,6 @@ width: hug-content
 
 		-- checkbox:
 		size: large
-
-		-- end: ds.rendered
-
-		-- end: ds.row
-
-		-- ds.row:
-
-		-- ds.copy-regular: Checked
-
-		-- ds.rendered:
-
-		\-- checkbox:
-		size: small
-		checked: true
-
-		-- checkbox:
-		size: small
-		checked: true
-
-		-- end: ds.rendered
-
-		-- ds.rendered:
-
-		\-- checkbox:
-		size: medium
-		checked: true
-
-		-- checkbox:
-		size: medium
-		checked: true
-
-		-- end: ds.rendered
-
-		-- ds.rendered:
-
-		\-- checkbox:
-		size: large
-		checked: true
-
-		-- checkbox:
-		size: large
-		checked: true
 
 		-- end: ds.rendered
 
