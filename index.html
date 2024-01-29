@@ -15,7 +15,7 @@
     
                 <script src="markdown-24E09EFC0C2B9A11DEA9AC71888EB3A1E85864FA7D9C95A3EB5075A0E0F49A5F.js"></script>
                 <script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
-                <script src="default-55527EB32D029DB96BEDE60D47A3468680BB0EC1652484F271E68417CA957AA3.js"></script>
+                <script src="default-48B44F5D3D314E51012392E14EE2A47D2DF3D523105E1FFD87EE5E7FFA9EB63E.js"></script>
                 <link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
                 
             
@@ -338,6 +338,8 @@ td {
 <li><a href="form/button/">Buttons</a></li>
 <li><a href="form/icon-button/">Icon Buttons</a></li>
 <li><a href="form/button-group/">Button Group (WIP)</a></li>
+<li><a href="form/checkbox/">Checkbox</a></li>
+<li><a href="form/input/">Input</a></li>
 <li><a href="typography/">Typography</a></li>
 <li><a href="layout/page/">Page</a></li>
 <li><a href="layout/column/">Column</a></li>
@@ -1019,7 +1021,7 @@ font-family: fastn-community-github-io-roboto-font-Roboto }
           },
           function (root, inherited) {
             let rooti0 = fastn_community_github_io_design_system__copy_regular(root, inherited, {
-              text: "This is the package you have been waiting for!\n\n- [Buttons](form/button/)\n- [Icon Buttons](form/icon-button/)\n- [Button Group (WIP)](form/button-group/)\n- [Typography](typography/)\n- [Page](layout/page/)\n- [Column](layout/column/)\n- [Container](layout/container/)\n- [Row](layout/row/)\n- [section-row](layout/section-row/)\n- [section-column](layout/section-column/)"
+              text: "This is the package you have been waiting for!\n\n- [Buttons](form/button/)\n- [Icon Buttons](form/icon-button/)\n- [Button Group (WIP)](form/button-group/)\n- [Checkbox](form/checkbox/)\n- [Input](form/input/)\n- [Typography](typography/)\n- [Page](layout/page/)\n- [Column](layout/column/)\n- [Container](layout/container/)\n- [Row](layout/row/)\n- [section-row](layout/section-row/)\n- [section-column](layout/section-column/)"
             });
           },
           function (root, inherited) {
@@ -1076,7 +1078,7 @@ let fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float = fun
     parenti0.setProperty(fastn_dom.PropertyKind.BorderColor, inherited.get("colors").get("border"), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Bottom, fastn.formula([ftd.device], function () {
       if (function () {
-        return (fastn_utils.getter(ftd.device) == "mobile");
+        return (fastn_utils.getStaticValue(ftd.device) == "mobile");
       }()) {
         return fastn_dom.Length.Px(25);
       } else {
@@ -1086,7 +1088,7 @@ let fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float = fun
     ), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Right, fastn.formula([ftd.device], function () {
       if (function () {
-        return (fastn_utils.getter(ftd.device) == "mobile");
+        return (fastn_utils.getStaticValue(ftd.device) == "mobile");
       }()) {
         return fastn_dom.Length.Px(25);
       } else {
@@ -1100,7 +1102,7 @@ let fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float = fun
       fastn_dom.conditionalDom(root, [
         ftd.follow_system_dark_mode
       ], function () {
-        return fastn_utils.getter(ftd.follow_system_dark_mode);
+        return fastn_utils.getStaticValue(ftd.follow_system_dark_mode);
       }, function (root) {
         let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
         rooti0.addEventHandler(fastn_dom.Event.Click, function () {
@@ -1123,7 +1125,7 @@ let fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float = fun
         ftd.dark_mode,
         ftd.follow_system_dark_mode
       ], function () {
-        return (!fastn_utils.getter(ftd.dark_mode) && !fastn_utils.getter(ftd.follow_system_dark_mode));
+        return (!fastn_utils.getStaticValue(ftd.dark_mode) && !fastn_utils.getStaticValue(ftd.follow_system_dark_mode));
       }, function (root) {
         let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
         rooti0.addEventHandler(fastn_dom.Event.Click, function () {
@@ -1146,7 +1148,7 @@ let fastn_community_github_io_dark_mode_switcher__dark_mode_switcher_float = fun
         ftd.dark_mode,
         ftd.follow_system_dark_mode
       ], function () {
-        return (fastn_utils.getter(ftd.dark_mode) && !fastn_utils.getter(ftd.follow_system_dark_mode));
+        return (fastn_utils.getStaticValue(ftd.dark_mode) && !fastn_utils.getStaticValue(ftd.follow_system_dark_mode));
       }, function (root) {
         let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
         rooti0.addEventHandler(fastn_dom.Event.Click, function () {
@@ -2630,7 +2632,7 @@ let fastn_community_github_io_design_system_typography__heading_hero = function 
     parenti0.setProperty(fastn_dom.PropertyKind.Width, __args__.width, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn.formula([__args__.margin], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.margin) !== null);
+        return (fastn_utils.getStaticValue(__args__.margin) !== null);
       }()) {
         return fastn_dom.Length.Px(__args__.margin.get("gap"));
       }
@@ -2646,19 +2648,19 @@ let fastn_community_github_io_design_system_typography__heading_hero = function 
     __args__.align,
     global.fastn_community_github_io_design_system_typography__display_type.get("justify")], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("left")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("left")));
       }()) {
         return fastn_dom.TextAlign.Start;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("right")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("right")));
       }()) {
         return fastn_dom.TextAlign.End;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("center")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("center")));
       }()) {
         return fastn_dom.TextAlign.Center;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("justify")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("justify")));
       }()) {
         return fastn_dom.TextAlign.Justify;
       }
@@ -2669,11 +2671,11 @@ let fastn_community_github_io_design_system_typography__heading_hero = function 
     __args__.align,
     global.fastn_community_github_io_design_system_typography__display_type.get("inline_block")], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("inline")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("inline")));
       }()) {
         return fastn_dom.Display.Inline;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("inline_block")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("inline_block")));
       }()) {
         return fastn_dom.Display.InlineBlock;
       }
@@ -2736,7 +2738,7 @@ let fastn_community_github_io_svg_icons_phosphor__regular_svg_url = function (ar
   try {
     let __args__ = fastn_utils.getArgs({
     }, args);
-    return ("raw.githubusercontent.com/phosphor-icons/core/main/raw/regular/" + fastn_utils.getter(__args__.icon) + ".svg");
+    return ("raw.githubusercontent.com/phosphor-icons/core/main/raw/regular/" + fastn_utils.getStaticValue(__args__.icon) + ".svg");
   } finally {
     __fastn_package_name__ = __fastn_super_package_name__;
   }
@@ -2774,7 +2776,7 @@ let fastn_community_github_io_svg_icons_phosphor__svg_url = function (args)
   try {
     let __args__ = fastn_utils.getArgs({
     }, args);
-    return ("raw.githubusercontent.com/phosphor-icons/core/main/raw/" + fastn_utils.getter(__args__.prefix) + "/" + fastn_utils.getter(__args__.icon) + "-" + fastn_utils.getter(__args__.prefix) + ".svg");
+    return ("raw.githubusercontent.com/phosphor-icons/core/main/raw/" + fastn_utils.getStaticValue(__args__.prefix) + "/" + fastn_utils.getStaticValue(__args__.icon) + "-" + fastn_utils.getStaticValue(__args__.prefix) + ".svg");
   } finally {
     __fastn_package_name__ = __fastn_super_package_name__;
   }
@@ -3326,11 +3328,11 @@ let fastn_community_github_io_design_system_layout_row__row = function (parent, 
     global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
     __args__.radius.get("top_left")], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.radius.get("top_left")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+        return (fastn_utils.getStaticValue(__args__.radius.get("top_left")) !== fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
       }()) {
         return fastn_dom.Length.Px(__args__.radius.get("top_left"));
       } else if (function () {
-        return (fastn_utils.getter(__args__.radius.get("top_left")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+        return (fastn_utils.getStaticValue(__args__.radius.get("top_left")) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
       }()) {
         return fastn_dom.Length.Percent(50);
       }
@@ -3341,11 +3343,11 @@ let fastn_community_github_io_design_system_layout_row__row = function (parent, 
     global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
     __args__.radius.get("top_right")], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.radius.get("top_right")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+        return (fastn_utils.getStaticValue(__args__.radius.get("top_right")) !== fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
       }()) {
         return fastn_dom.Length.Px(__args__.radius.get("top_right"));
       } else if (function () {
-        return (fastn_utils.getter(__args__.radius.get("top_right")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+        return (fastn_utils.getStaticValue(__args__.radius.get("top_right")) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
       }()) {
         return fastn_dom.Length.Percent(50);
       }
@@ -3356,11 +3358,11 @@ let fastn_community_github_io_design_system_layout_row__row = function (parent, 
     global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
     __args__.radius.get("bottom_left")], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.radius.get("bottom_left")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+        return (fastn_utils.getStaticValue(__args__.radius.get("bottom_left")) !== fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
       }()) {
         return fastn_dom.Length.Px(__args__.radius.get("bottom_left"));
       } else if (function () {
-        return (fastn_utils.getter(__args__.radius.get("bottom_left")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+        return (fastn_utils.getStaticValue(__args__.radius.get("bottom_left")) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
       }()) {
         return fastn_dom.Length.Percent(50);
       }
@@ -3371,11 +3373,11 @@ let fastn_community_github_io_design_system_layout_row__row = function (parent, 
     global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
     __args__.radius.get("bottom_right")], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.radius.get("bottom_right")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+        return (fastn_utils.getStaticValue(__args__.radius.get("bottom_right")) !== fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
       }()) {
         return fastn_dom.Length.Px(__args__.radius.get("bottom_right"));
       } else if (function () {
-        return (fastn_utils.getter(__args__.radius.get("bottom_right")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+        return (fastn_utils.getStaticValue(__args__.radius.get("bottom_right")) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
       }()) {
         return fastn_dom.Length.Percent(50);
       }
@@ -3392,7 +3394,7 @@ let fastn_community_github_io_design_system_layout_row__row = function (parent, 
     parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([__args__.spacing.get("gap"),
     global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER));
+        return (fastn_utils.getStaticValue(__args__.spacing.get("gap")) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER));
       }()) {
         return fastn_dom.Spacing.SpaceBetween;
       } else {
@@ -3475,19 +3477,19 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
       __args__.size,
       global.fastn_community_github_io_design_system_form_button__button_size.get("large")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.size) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_size.get("extra_small")));
+          return (fastn_utils.getStaticValue(__args__.size) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_size.get("extra_small")));
         }()) {
           return global.fastn_community_github_io_design_system__spaces.get("inset_wide").get("small_zero");
         } else if (function () {
-          return (fastn_utils.getter(__args__.size) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_size.get("small")));
+          return (fastn_utils.getStaticValue(__args__.size) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_size.get("small")));
         }()) {
           return global.fastn_community_github_io_design_system__spaces.get("inset_wide").get("small");
         } else if (function () {
-          return (fastn_utils.getter(__args__.size) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_size.get("medium")));
+          return (fastn_utils.getStaticValue(__args__.size) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_size.get("medium")));
         }()) {
           return global.fastn_community_github_io_design_system__spaces.get("inset_wide").get("medium");
         } else if (function () {
-          return (fastn_utils.getter(__args__.size) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_size.get("large")));
+          return (fastn_utils.getStaticValue(__args__.size) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_size.get("large")));
         }()) {
           return global.fastn_community_github_io_design_system__spaces.get("inset_wide").get("large");
         }
@@ -3501,15 +3503,15 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
       __args__.width,
       global.fastn_community_github_io_design_system_form_button__button_width.get("full")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.width) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_width.get("default")));
+          return (fastn_utils.getStaticValue(__args__.width) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_width.get("default")));
         }()) {
           return fastn_dom.Resizing.HugContent;
         } else if (function () {
-          return (fastn_utils.getter(__args__.width) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_width.get("wide")));
+          return (fastn_utils.getStaticValue(__args__.width) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_width.get("wide")));
         }()) {
           return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(200));
         } else if (function () {
-          return (fastn_utils.getter(__args__.width) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_width.get("full")));
+          return (fastn_utils.getStaticValue(__args__.width) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_width.get("full")));
         }()) {
           return fastn_dom.Resizing.FillContainer;
         }
@@ -3522,7 +3524,7 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
           __args__.icon_position,
           __args__.title
         ], function () {
-          return (fastn_utils.getter(__args__.title) !== null && fastn_utils.getter(__args__.icon_position) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__icon_position.get("at_end")));
+          return (fastn_utils.getStaticValue(__args__.title) !== null && fastn_utils.getStaticValue(__args__.icon_position) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_icon_button__icon_position.get("at_end")));
         }, function (root) {
           let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
           rooti0.setProperty(fastn_dom.PropertyKind.Role, global.fastn_community_github_io_design_system__types.get("button_small"), inherited);
@@ -3544,7 +3546,7 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
           __args__.icon_position,
           __args__.title
         ], function () {
-          return (fastn_utils.getter(__args__.title) !== null && fastn_utils.getter(__args__.icon_position) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__icon_position.get("at_start")));
+          return (fastn_utils.getStaticValue(__args__.title) !== null && fastn_utils.getStaticValue(__args__.icon_position) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_icon_button__icon_position.get("at_start")));
         }, function (root) {
           let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
           rooti0.setProperty(fastn_dom.PropertyKind.Role, global.fastn_community_github_io_design_system__types.get("button_small"), inherited);
@@ -3574,23 +3576,23 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
       global.fastn_community_github_io_design_system_form_button__button_variant.get("solid"),
       __args__.hover], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("primary")) && fastn_utils.getter(__args__.variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_variant.get("solid")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("primary")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_variant.get("solid")));
         }()) {
           return fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("cta_primary").get("base"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("secondary")) && fastn_utils.getter(__args__.variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_variant.get("solid")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("secondary")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_variant.get("solid")));
         }()) {
           return fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("cta_secondary").get("base"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("tertiary")) && fastn_utils.getter(__args__.variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_variant.get("solid")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("tertiary")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_variant.get("solid")));
         }()) {
           return fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("cta_tertiary").get("base"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("danger")) && fastn_utils.getter(__args__.variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_variant.get("solid")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("danger")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_variant.get("solid")));
         }()) {
           return fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("cta_danger").get("base"));
         } else if (function () {
-          return fastn_utils.getter(__args__.hover);
+          return fastn_utils.getStaticValue(__args__.hover);
         }()) {
           return fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("background").get("step_2"));
         }
@@ -3601,7 +3603,7 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
       __args__.variant,
       global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")));
+          return (fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")));
         }()) {
           return global.fastn_community_github_io_design_system__borders.get("uniform").get("small");
         }
@@ -3628,19 +3630,19 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
       global.fastn_community_github_io_design_system_form_button__button_kind.get("danger"),
       global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")) && fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("primary")));
+          return (fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")) && fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("primary")));
         }()) {
           return global.fastn_community_github_io_design_system__colors.get("cta_primary").get("border");
         } else if (function () {
-          return (fastn_utils.getter(__args__.variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")) && fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("secondary")));
+          return (fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")) && fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("secondary")));
         }()) {
           return global.fastn_community_github_io_design_system__colors.get("cta_secondary").get("border");
         } else if (function () {
-          return (fastn_utils.getter(__args__.variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")) && fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("tertiary")));
+          return (fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")) && fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("tertiary")));
         }()) {
           return global.fastn_community_github_io_design_system__colors.get("cta_tertiary").get("border");
         } else if (function () {
-          return (fastn_utils.getter(__args__.variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")) && fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("danger")));
+          return (fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_variant.get("outline")) && fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("danger")));
         }()) {
           return global.fastn_community_github_io_design_system__colors.get("cta_danger").get("border");
         }
@@ -3659,19 +3661,19 @@ let fastn_community_github_io_design_system_form_icon_button__button_wrapper = f
       __args__.kind,
       global.fastn_community_github_io_design_system_form_button__button_kind.get("danger")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("primary")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("primary")));
         }()) {
           return global.fastn_community_github_io_design_system__colors.get("cta_primary").get("text");
         } else if (function () {
-          return (fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("secondary")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("secondary")));
         }()) {
           return global.fastn_community_github_io_design_system__colors.get("cta_secondary").get("text");
         } else if (function () {
-          return (fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("tertiary")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("tertiary")));
         }()) {
           return global.fastn_community_github_io_design_system__colors.get("cta_tertiary").get("text");
         } else if (function () {
-          return (fastn_utils.getter(__args__.kind) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_button__button_kind.get("danger")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_button__button_kind.get("danger")));
         }()) {
           return global.fastn_community_github_io_design_system__colors.get("cta_danger").get("text");
         }
@@ -3729,7 +3731,7 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
           __args__.phosphor_variant,
           global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("regular")
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("regular")));
+          return (fastn_utils.getStaticValue(__args__.phosphor_variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("regular")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__regular(root, inherited, {
             name: __args__.icon,
@@ -3743,7 +3745,7 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
           global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("bold"),
           __args__.phosphor_variant
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("bold")));
+          return (fastn_utils.getStaticValue(__args__.phosphor_variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("bold")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__bold(root, inherited, {
             name: __args__.icon,
@@ -3757,7 +3759,7 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
           global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("duotone"),
           __args__.phosphor_variant
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("duotone")));
+          return (fastn_utils.getStaticValue(__args__.phosphor_variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("duotone")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__duotone(root, inherited, {
             name: __args__.icon,
@@ -3771,7 +3773,7 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
           global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("fill"),
           __args__.phosphor_variant
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("fill")));
+          return (fastn_utils.getStaticValue(__args__.phosphor_variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("fill")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__fill(root, inherited, {
             name: __args__.icon,
@@ -3785,7 +3787,7 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
           global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("light"),
           __args__.phosphor_variant
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("light")));
+          return (fastn_utils.getStaticValue(__args__.phosphor_variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("light")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__light(root, inherited, {
             name: __args__.icon,
@@ -3799,7 +3801,7 @@ let fastn_community_github_io_design_system_form_icon_button__phosphor_icon_butt
           __args__.phosphor_variant,
           global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("thin")
         ], function () {
-          return (fastn_utils.getter(__args__.phosphor_variant) == fastn_utils.getter(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("thin")));
+          return (fastn_utils.getStaticValue(__args__.phosphor_variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_form_icon_button__phosphor_variant.get("thin")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_svg_icons_phosphor__thin(root, inherited, {
             name: __args__.icon,
@@ -3858,7 +3860,7 @@ let fastn_community_github_io_design_system_typography__copy_regular = function 
     parenti0.setProperty(fastn_dom.PropertyKind.Height, __args__.height, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn.formula([__args__.margin], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.margin) !== null);
+        return (fastn_utils.getStaticValue(__args__.margin) !== null);
       }()) {
         return fastn_dom.Length.Px(__args__.margin.get("gap"));
       }
@@ -3874,19 +3876,19 @@ let fastn_community_github_io_design_system_typography__copy_regular = function 
     __args__.align,
     global.fastn_community_github_io_design_system_typography__display_type.get("justify")], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("left")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("left")));
       }()) {
         return fastn_dom.TextAlign.Start;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("right")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("right")));
       }()) {
         return fastn_dom.TextAlign.End;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("center")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("center")));
       }()) {
         return fastn_dom.TextAlign.Center;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("justify")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("justify")));
       }()) {
         return fastn_dom.TextAlign.Justify;
       }
@@ -3898,11 +3900,11 @@ let fastn_community_github_io_design_system_typography__copy_regular = function 
     __args__.align,
     global.fastn_community_github_io_design_system_typography__display_type.get("inline_block")], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("inline")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("inline")));
       }()) {
         return fastn_dom.Display.Inline;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("inline_block")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("inline_block")));
       }()) {
         return fastn_dom.Display.InlineBlock;
       }
@@ -3953,11 +3955,11 @@ let fastn_community_github_io_design_system_layout_section_column__section_colum
       __args__.flush,
       ftd.device], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_page__flush.get("full")));
+          return (fastn_utils.getStaticValue(__args__.flush) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_layout_page__flush.get("full")));
         }()) {
           return fastn_dom.Resizing.FillContainer;
         } else if (function () {
-          return (fastn_utils.getter(ftd.device) == "mobile");
+          return (fastn_utils.getStaticValue(ftd.device) == "mobile");
         }()) {
           return fastn_dom.Resizing.FillContainer;
         } else {
@@ -3972,11 +3974,11 @@ let fastn_community_github_io_design_system_layout_section_column__section_colum
       global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("top_left")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.radius.get("top_left")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+          return (fastn_utils.getStaticValue(__args__.radius.get("top_left")) !== fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Px(__args__.radius.get("top_left"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.radius.get("top_left")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+          return (fastn_utils.getStaticValue(__args__.radius.get("top_left")) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Percent(50);
         }
@@ -3987,11 +3989,11 @@ let fastn_community_github_io_design_system_layout_section_column__section_colum
       global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("top_right")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.radius.get("top_right")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+          return (fastn_utils.getStaticValue(__args__.radius.get("top_right")) !== fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Px(__args__.radius.get("top_right"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.radius.get("top_right")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+          return (fastn_utils.getStaticValue(__args__.radius.get("top_right")) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Percent(50);
         }
@@ -4002,11 +4004,11 @@ let fastn_community_github_io_design_system_layout_section_column__section_colum
       global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("bottom_left")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.radius.get("bottom_left")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+          return (fastn_utils.getStaticValue(__args__.radius.get("bottom_left")) !== fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Px(__args__.radius.get("bottom_left"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.radius.get("bottom_left")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+          return (fastn_utils.getStaticValue(__args__.radius.get("bottom_left")) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Percent(50);
         }
@@ -4017,11 +4019,11 @@ let fastn_community_github_io_design_system_layout_section_column__section_colum
       global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND,
       __args__.radius.get("bottom_right")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.radius.get("bottom_right")) !== fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+          return (fastn_utils.getStaticValue(__args__.radius.get("bottom_right")) !== fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Px(__args__.radius.get("bottom_right"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.radius.get("bottom_right")) == fastn_utils.getter(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
+          return (fastn_utils.getStaticValue(__args__.radius.get("bottom_right")) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_radius__HACK_RADIUS_ROUND));
         }()) {
           return fastn_dom.Length.Percent(50);
         }
@@ -4033,11 +4035,11 @@ let fastn_community_github_io_design_system_layout_section_column__section_colum
       __args__.flush,
       global.fastn_community_github_io_design_system_layout_page__flush.get("wide")], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_page__flush.get("narrow")));
+          return (fastn_utils.getStaticValue(__args__.flush) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_layout_page__flush.get("narrow")));
         }()) {
           return fastn_dom.Resizing.Fixed(global.fastn_community_github_io_design_system__widths.get("narrow"));
         } else if (function () {
-          return (fastn_utils.getter(__args__.flush) == fastn_utils.getter(global.fastn_community_github_io_design_system_layout_page__flush.get("wide")));
+          return (fastn_utils.getStaticValue(__args__.flush) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_layout_page__flush.get("wide")));
         }()) {
           return fastn_dom.Resizing.Fixed(global.fastn_community_github_io_design_system__widths.get("wide"));
         }
@@ -4047,7 +4049,7 @@ let fastn_community_github_io_design_system_layout_section_column__section_colum
       rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([__args__.spacing.get("gap"),
       global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER], function () {
         if (function () {
-          return (fastn_utils.getter(__args__.spacing.get("gap")) == fastn_utils.getter(global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER));
+          return (fastn_utils.getStaticValue(__args__.spacing.get("gap")) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER));
         }()) {
           return fastn_dom.Spacing.SpaceBetween;
         } else {
@@ -4083,7 +4085,7 @@ let fastn_community_github_io_design_system_typography__heading_large = function
     parenti0.setProperty(fastn_dom.PropertyKind.Width, __args__.width, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn.formula([__args__.margin], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.margin) !== null);
+        return (fastn_utils.getStaticValue(__args__.margin) !== null);
       }()) {
         return fastn_dom.Length.Px(__args__.margin.get("gap"));
       }
@@ -4099,19 +4101,19 @@ let fastn_community_github_io_design_system_typography__heading_large = function
     __args__.align,
     global.fastn_community_github_io_design_system_typography__display_type.get("justify")], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("left")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("left")));
       }()) {
         return fastn_dom.TextAlign.Start;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("right")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("right")));
       }()) {
         return fastn_dom.TextAlign.End;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("center")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("center")));
       }()) {
         return fastn_dom.TextAlign.Center;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("justify")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("justify")));
       }()) {
         return fastn_dom.TextAlign.Justify;
       }
@@ -4122,11 +4124,11 @@ let fastn_community_github_io_design_system_typography__heading_large = function
     __args__.align,
     global.fastn_community_github_io_design_system_typography__display_type.get("inline_block")], function () {
       if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("inline")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("inline")));
       }()) {
         return fastn_dom.Display.Inline;
       } else if (function () {
-        return (fastn_utils.getter(__args__.align) == fastn_utils.getter(global.fastn_community_github_io_design_system_typography__display_type.get("inline_block")));
+        return (fastn_utils.getStaticValue(__args__.align) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_typography__display_type.get("inline_block")));
       }()) {
         return fastn_dom.Display.InlineBlock;
       }

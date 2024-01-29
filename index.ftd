@@ -103,6 +103,8 @@ align-content: left
 	- [Buttons](form/button/)
 	- [Icon Buttons](form/icon-button/)
 	- [Button Group (WIP)](form/button-group/)
+	- [Checkbox](form/checkbox/)
+	- [Input](form/input/)
 	- [Typography](typography/)
 	- [Page](layout/page/)
 	- [Column](layout/column/)
