@@ -70,7 +70,7 @@ width: hug-content
 
 
 
--- ds.page: Text Input
+-- ds.page: Checkbox
 
 	-- ds.section-column:
 	flush: full
