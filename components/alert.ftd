@@ -163,7 +163,7 @@ $on-click$: $ftd.toggle($a = $alert.toggle)
 		
 		-- end: ds.row
 
-		-- ds.code:
+		-- ds.rendered:
 
 		\-- alert: Some kind of alert!
 		cta-text: Show More
@@ -180,12 +180,36 @@ $on-click$: $ftd.toggle($a = $alert.toggle)
 
 		This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any kind of messages, from informational to warning to success ones.
 
+		-- end: ds.rendered
+
+		-- ds.rendered:
+
+		\-- alert: Some kind of alert!
+		cta-text: Show More
+		cta-link: /
+		kind: warning
+
+		This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any 
+		kind of messages, from informational to warning to success ones.
+
 		-- alert: Some kind of alert!
 		cta-text: Show More
 		cta-link: /
 		kind: warning
 
 		This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any kind of messages, from informational to warning to success ones.
+
+		-- end: ds.rendered
+
+		-- ds.rendered:
+
+		\-- alert: Some kind of alert!
+		cta-text: Show More
+		cta-link: /
+		kind: success
+
+		This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any 
+		kind of messages, from informational to warning to success ones.
 
 		-- alert: Some kind of alert!
 		cta-text: Show More
@@ -194,12 +218,26 @@ $on-click$: $ftd.toggle($a = $alert.toggle)
 
 		This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any kind of messages, from informational to warning to success ones.
 
+		-- end: ds.rendered
+
+		-- ds.rendered:
+
+		\-- alert: Some kind of alert!
+		cta-text: Show More
+		cta-link: /
+		kind: danger
+
+		This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any 
+		kind of messages, from informational to warning to success ones.
+
 		-- alert: Some kind of alert!
 		cta-text: Show More
 		cta-link: /
 		kind: danger
 
 		This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any kind of messages, from informational to warning to success ones.
+
+		-- end: ds.rendered
 
 	-- end: ds.section-column
 
