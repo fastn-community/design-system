@@ -1,0 +1,213 @@
+-- import: fastn-community.github.io/design-system/spaces
+-- import: fastn-community.github.io/design-system/borders
+
+
+
+-- or-type checkbox-size:
+
+-- constant integer large: 0
+-- constant integer medium: 1
+-- constant integer small: 2
+
+-- end: checkbox-size
+
+
+
+
+
+
+
+
+
+-- component checkbox:
+optional string checked-text:
+optional string not-checked-text:
+optional string disabled-text:
+boolean $is-checked: false
+boolean disabled-checked: false
+boolean disabled-unchecked: false
+checkbox-size size: medium
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.small
+color: $inherited.colors.text
+align-content: left
+
+-- ftd.checkbox:
+checked if { checkbox.disabled-checked }: true
+enabled if { checkbox.disabled-checked || checkbox.disabled-unchecked }: false
+checked: $checkbox.is-checked
+$on-click$: $ftd.toggle($a = $checkbox.is-checked)
+height.fixed.px if { checkbox.size == small }: 16
+width.fixed.px if { checkbox.size == small }: 16
+height.fixed.px if { checkbox.size == medium }: 20
+width.fixed.px if { checkbox.size == medium }: 20
+height.fixed.px if { checkbox.size == large }: 24
+width.fixed.px if { checkbox.size == large }: 24
+
+-- ds.copy-regular: $checkbox.checked-text
+if: { checkbox.checked-text != NULL && checkbox.is-checked }
+width: hug-content
+
+-- ds.copy-regular: $checkbox.not-checked-text
+if: { checkbox.not-checked-text != NULL && !checkbox.is-checked }
+width: hug-content
+
+-- ds.copy-regular: $checkbox.disabled-text
+if: {  checkbox.disabled-text != NULL && checkbox.disabled-checked }
+width: hug-content
+
+-- end: ds.row
+
+-- end: checkbox
+
+
+
+
+
+
+
+
+
+
+-- ds.page: Checkbox
+
+	-- ds.section-column:
+	flush: full
+	align-content: center
+
+		-- ds.row:
+		align-content: left
+	
+			-- ds.phosphor-icon-button: Back
+			icon: arrow-left
+			link: index.html
+		
+			-- ds.heading-hero: Icon Buttons
+			width: hug-content
+		
+		-- end: ds.row
+
+		-- ds.row:
+
+		-- ds.copy-regular: Default
+
+		-- ds.rendered:
+
+		\-- checkbox:
+		size: small
+
+		-- checkbox:
+		size: small
+
+		-- end: ds.rendered
+
+		-- ds.rendered:
+
+		\-- checkbox:
+		size: medium
+
+		-- checkbox:
+		size: medium
+
+		-- end: ds.rendered
+
+		-- ds.rendered:
+
+		\-- checkbox:
+		size: large
+
+		-- checkbox:
+		size: large
+
+		-- end: ds.rendered
+
+		-- end: ds.row
+
+		-- ds.row:
+
+		-- ds.copy-regular: Disabled Unchecked
+
+		-- ds.rendered:
+
+		\-- checkbox:
+		size: small
+		disabled-unchecked: true
+
+		-- checkbox:
+		size: small
+		disabled-unchecked: true
+
+		-- end: ds.rendered
+
+		-- ds.rendered:
+
+		\-- checkbox:
+		size: medium
+		disabled-unchecked: true
+
+		-- checkbox:
+		size: medium
+		disabled-unchecked: true
+
+		-- end: ds.rendered
+
+		-- ds.rendered:
+
+		\-- checkbox:
+		size: large
+		disabled-unchecked: true
+
+		-- checkbox:
+		size: large
+		disabled-unchecked: true
+
+		-- end: ds.rendered
+
+		-- end: ds.row
+
+		-- ds.row:
+
+		-- ds.copy-regular: Disabled
+
+		-- ds.rendered:
+
+		\-- checkbox:
+		size: small
+		disabled-checked: true
+
+		-- checkbox:
+		size: small
+		disabled-checked: true
+
+		-- end: ds.rendered
+
+		-- ds.rendered:
+
+		\-- checkbox:
+		size: medium
+		disabled-checked: true
+
+		-- checkbox:
+		size: medium
+		disabled-checked: true
+
+		-- end: ds.rendered
+
+		-- ds.rendered:
+
+		\-- checkbox:
+		size: large
+		disabled-checked: true
+
+		-- checkbox:
+		size: large
+		disabled-checked: true
+
+		-- end: ds.rendered
+
+		-- end: ds.row
+
+	-- end: ds.section-column
+
+-- end: ds.page
