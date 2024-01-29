@@ -3,22 +3,13 @@
 
 
 
--- or-type input-size:
+-- or-type checkbox-size:
 
 -- constant integer large: 0
 -- constant integer medium: 1
 -- constant integer small: 2
 
--- end: input-size
-
-
-
--- or-type input-radius:
-
--- constant integer none: 0
--- constant integer curved: 1
-
--- end: input-radius
+-- end: checkbox-size
 
 
 
@@ -36,9 +27,7 @@ boolean $is-checked: false
 boolean checked: false
 boolean disabled-checked: false
 boolean disabled-unchecked: false
-input-size size: medium
-input-radius radius: none
-boolean rounded: false
+checkbox-size size: medium
 
 -- ds.row:
 spacing: $ds.spaces.horizontal-gap.small
