@@ -145,7 +145,7 @@ $on-click$: $ftd.toggle($a = $alert.toggle)
 
 
 
--- ds.page: Text Input
+-- ds.page: Alert
 
 	-- ds.section-column:
 	flush: full
@@ -158,7 +158,7 @@ $on-click$: $ftd.toggle($a = $alert.toggle)
 			icon: arrow-left
 			link: index.html
 		
-			-- ds.heading-hero: Icon Buttons
+			-- ds.heading-hero: Alert Component
 			width: hug-content
 		
 		-- end: ds.row

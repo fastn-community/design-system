@@ -83,7 +83,7 @@ width: hug-content
 			icon: arrow-left
 			link: index.html
 		
-			-- ds.heading-hero: Icon Buttons
+			-- ds.heading-hero: Checkbox
 			width: hug-content
 		
 		-- end: ds.row
