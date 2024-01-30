@@ -1,0 +1,64 @@
+-- import: fastn-community.github.io/design-system/spaces
+-- import: fastn-community.github.io/design-system/borders
+-- import: fastn-community.github.io/design-system/shadow
+
+
+-- or-type toggle-size:
+
+-- constant integer large: 0
+-- constant integer medium: 1
+-- constant integer small: 2
+
+-- end: toggle-size
+
+
+
+
+
+-- component toggle-button:
+boolean $active: false
+;;boolean disabled:
+toggle-size size: medium
+
+-- ds.container:
+radius: $ds.radius.large
+height.fixed.px: 16
+width.fixed.px: 30
+inset: $ds.spaces.inset-square.extra-small
+$on-click$: $ftd.toggle($a = $toggle-button.active)
+background.solid if { !toggle-button.active}: $ds.colors.background.step-2
+background.solid if { toggle-button.active}: $ds.colors.cta-primary.base
+
+-- ds.row:
+if: { !toggle-button.active}
+radius: $ds.radius.round
+height.fixed.px: 12
+width.fixed.px: 12
+background.solid: $ds.colors.cta-primary.text
+shadow: $ds.shadow.extra-extra-small
+
+-- end: ds.row
+
+/-- ds.row:
+if: { toggle-button.active}
+align-content: right
+radius: $ds.radius.round
+height.fixed.px: 12
+width.fixed.px: 12
+background.solid: $ds.colors.cta-primary.text
+shadow: $ds.shadow.extra-extra-small
+
+-- end: ds.row
+
+-- end: ds.container
+
+-- end: toggle-button
+
+
+
+
+-- ds.page:
+
+-- toggle-button:
+
+-- end: ds.page
