@@ -1,6 +1,6 @@
--- import: fastn-community.github.io/design-system/spaces
--- import: fastn-community.github.io/design-system/radius
--- import: fastn-community.github.io/design-system/borders
+-- import: fastn-community.github.io/design-system/foundation-elements/spaces
+-- import: fastn-community.github.io/design-system/foundation-elements/radius
+-- import: fastn-community.github.io/design-system/foundation-elements/borders
 
 -- component container:
 optional caption title:
