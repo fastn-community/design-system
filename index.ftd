@@ -104,6 +104,7 @@ align-content: left
 	- [Buttons](components/button/)
 	- [Icon Buttons](components/icon-button/)
 	- [Button Group (WIP)](components/button-group/)
+	- [Toggle](components/toggle/)
 	- [Checkbox](form/checkbox/)
 	- [Input](form/input/)
 	- [Typography](typography/)

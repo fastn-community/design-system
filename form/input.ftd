@@ -65,33 +65,33 @@ inset: $ds.spaces.inset-square.small
 	border-color if { text-input.error }: $ds.colors.cta-danger.border
 	background.solid: $inherited.colors.background.step-1
 	border-color if { text-input.flag }: $inherited.colors.shadow
-
-	-- ftd.image:
-	if: { text-input.icon-start }
-	src: $text-input.icon-start
-	width.fixed.px: 20
-	align-self: center
-
-	-- ftd.text-input:
-	placeholder: placeholder
-	width: fill-container
-	background.solid: $inherited.colors.background.step-1
-	color: $ds.colors.text-strong
-	color if { text-input.error }: $ds.colors.cta-danger.text
-	$on-focus$: $ftd.set-bool($a = $text-input.flag, v = true) 
-	$on-blur$: $ftd.set-bool($a = $text-input.flag, v = false) 
-
-    -- ftd.image:
-    if: { text-input.icon-end }
-	src: $text-input.icon-end
-	width.fixed.px: 20
-	align-self: center
 	
+		-- ftd.image:
+		if: { text-input.icon-start }
+		src: $text-input.icon-start
+		width.fixed.px: 20
+		align-self: center
+		
+		-- ftd.text-input:
+		placeholder: placeholder
+		width: fill-container
+		background.solid: $inherited.colors.background.step-1
+		color: $ds.colors.text-strong
+		color if { text-input.error }: $ds.colors.cta-danger.text
+		$on-focus$: $ftd.set-bool($a = $text-input.flag, v = true)
+		$on-blur$: $ftd.set-bool($a = $text-input.flag, v = false)
+		
+		-- ftd.image:
+		if: { text-input.icon-end }
+		src: $text-input.icon-end
+		width.fixed.px: 20
+		align-self: center
+		
 	-- end: ds.row
 
 	-- ds.copy-small: $text-input.hint
 	if: { text-input.hint != NULL }
-
+	
 	-- ds.copy-small: $text-input.error
 	if: { text-input.error != NULL }
 	color: $ds.colors.cta-danger.text
@@ -111,174 +111,174 @@ inset: $ds.spaces.inset-square.small
 
 -- ds.page: Text Input
 
-	-- ds.section-column:
-	flush: full
-	align-content: center
+-- ds.section-column:
+flush: full
+align-content: center
 
-		-- ds.row:
-		align-content: left
+	-- ds.row:
+	align-content: left
 	
-			-- ds.phosphor-icon-button: Back
-			icon: arrow-left
-			link: index.html
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: index.html
 		
-			-- ds.heading-hero: Icon Buttons
-			width: hug-content
+		-- ds.heading-hero: Icon Buttons
+		width: hug-content
 		
-		-- end: ds.row
+	-- end: ds.row
 
-		-- ds.row:
-
+	-- ds.row:
+	
 		-- ds.rendered:
-
-			\-- text-input: Label
+		
+		 \-- text-input: Label
+		 size: small
+		 hint: hint
+		 icon-start: $assets.files.assets.convert.svg
+		 icon-end: $assets.files.assets.convert.svg
+		
+			-- text-input: Label
 			size: small
 			hint: hint
 			icon-start: $assets.files.assets.convert.svg
 			icon-end: $assets.files.assets.convert.svg
-
-			-- text-input: Label
-			size: small
-			hint: hint
-			icon-start: $assets.files.assets.convert.svg
-			icon-end: $assets.files.assets.convert.svg
-
+			
 		-- end: ds.rendered
 
 		-- ds.rendered:
-
-			\-- text-input: Label
-			size: small
-			hint: hint
-			radius: curved
-			icon-start: $assets.files.assets.convert.svg
-
-			-- text-input: Label
-			size: small
-			hint: hint
-			radius: curved
-			icon-start: $assets.files.assets.convert.svg
-
-		-- end: ds.rendered
-
-		-- ds.rendered:
-
-			\-- text-input: Label
-			size: small
-			hint: hint
-			rounded: true
-
-			-- text-input: Label
-			size: small
-			hint: hint
-			rounded: true
-
-		-- end: ds.rendered
-
-		-- end: ds.row
-
-		-- ds.row:
-
-		-- ds.rendered:
-
-			\-- text-input: Label
-			size: medium
-			hint: hint
-
-			-- text-input: Label
-			size: medium
-			hint: hint
-
-		-- end: ds.rendered
-
-		-- ds.rendered:
-
-			\-- text-input: Label
-			size: medium
-			hint: hint
-			radius: curved
-
-			-- text-input: Label
-			size: medium
-			hint: hint
-			radius: curved
-
-		-- end: ds.rendered
-
-		-- ds.rendered:
-
-			\-- text-input: Label
-			size: medium
-			hint: hint
-			rounded: true
-
-			-- text-input: Label
-			size: medium
-			hint: hint
-			rounded: true
-
-		-- end: ds.rendered
-
-		-- end: ds.row
-
-		-- ds.row:
-
-		-- ds.rendered:
-
-			\-- text-input: Label
-			size: large
-			hint: hint
-
-			-- text-input: Label
-			size: large
-			hint: hint
-
-		-- end: ds.rendered
-
-		-- ds.rendered:
-
-			\-- text-input: Label
-			size: large
-			hint: hint
-			radius: curved
-
-			-- text-input: Label
-			size: large
-			hint: hint
-			radius: curved
-
-		-- end: ds.rendered
-
-		-- ds.rendered:
-
-			\-- text-input: Label
-			size: large
-			hint: hint
-			rounded: true
-
-			-- text-input: Label
-			size: large
-			hint: hint
-			rounded: true
-
-		-- end: ds.rendered
-
-		-- end: ds.row
-
-		;; error message to be added
 		
-		-- ds.rendered:
-
-			\-- text-input: Label
-			size: small
-			error: error
-
+		 \-- text-input: Label
+		 size: small
+		 hint: hint
+		 radius: curved
+		 icon-start: $assets.files.assets.convert.svg
+		
 			-- text-input: Label
 			size: small
-			error: error
-
+			hint: hint
+			radius: curved
+			icon-start: $assets.files.assets.convert.svg
+			
 		-- end: ds.rendered
 
-	-- end: ds.section-column
+		-- ds.rendered:
+		
+		 \-- text-input: Label
+		 size: small
+		 hint: hint
+		 rounded: true
+		
+			-- text-input: Label
+			size: small
+			hint: hint
+			rounded: true
+			
+		-- end: ds.rendered
+
+	-- end: ds.row
+
+	-- ds.row:
+	
+		-- ds.rendered:
+		
+		 \-- text-input: Label
+		 size: medium
+		 hint: hint
+		
+			-- text-input: Label
+			size: medium
+			hint: hint
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		 \-- text-input: Label
+		 size: medium
+		 hint: hint
+		 radius: curved
+		
+			-- text-input: Label
+			size: medium
+			hint: hint
+			radius: curved
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		 \-- text-input: Label
+		 size: medium
+		 hint: hint
+		 rounded: true
+		
+			-- text-input: Label
+			size: medium
+			hint: hint
+			rounded: true
+			
+		-- end: ds.rendered
+
+	-- end: ds.row
+
+	-- ds.row:
+	
+		-- ds.rendered:
+		
+		 \-- text-input: Label
+		 size: large
+		 hint: hint
+		
+			-- text-input: Label
+			size: large
+			hint: hint
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		 \-- text-input: Label
+		 size: large
+		 hint: hint
+		 radius: curved
+		
+			-- text-input: Label
+			size: large
+			hint: hint
+			radius: curved
+			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		 \-- text-input: Label
+		 size: large
+		 hint: hint
+		 rounded: true
+		
+			-- text-input: Label
+			size: large
+			hint: hint
+			rounded: true
+			
+		-- end: ds.rendered
+
+	-- end: ds.row
+
+	;; error message to be added
+
+	-- ds.rendered:
+	
+	 \-- text-input: Label
+	 size: small
+	 error: error
+	
+		-- text-input: Label
+		size: small
+		error: error
+		
+	-- end: ds.rendered
+
+-- end: ds.section-column
 
 -- end: ds.page
