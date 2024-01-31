@@ -37,7 +37,7 @@ align-content: left
 checked if { checkbox.disabled-checked }: true
 enabled if { checkbox.disabled-checked || checkbox.disabled-unchecked }: false
 checked: $checkbox.is-checked
-$on-click$: $ftd.toggle($a = $checkbox.is-checked)
+$on-click$: $ftd.set-bool($a = $checkbox.is-checked, v = $CHECKED)
 height.fixed.px if { checkbox.size == small }: 16
 width.fixed.px if { checkbox.size == small }: 16
 height.fixed.px if { checkbox.size == medium }: 20
