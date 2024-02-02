@@ -28,6 +28,18 @@ export: header-link
 -- import: fastn-community.github.io/design-system/components/footer as _
 export: footer-heading, footer-secondary-heading, footer-link, copyright-text
 
+-- import: fastn-community.github.io/design-system/components/alert as _
+export: alert
+
+-- import: fastn-community.github.io/design-system/components/checkbox as _
+export: checkbox
+
+-- import: fastn-community.github.io/design-system/components/input as _
+export: input
+
+-- import: fastn-community.github.io/design-system/components/toggle as _
+export: toggle
+
 -- import: fastn-community.github.io/design-system/components/button-group as _
 export: button-group
 
