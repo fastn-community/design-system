@@ -1,4 +1,4 @@
--- import: fastn-community.github.io/design-system/form/button
+-- import: fastn-community.github.io/design-system/components/button
 -- import: fastn-community.github.io/svg-icons/phosphor
 -- import: fastn-community.github.io/svg-icons/fa
 
@@ -18,12 +18,12 @@ optional caption title:
 ftd.image-src icon:
 icon-position icon-position: at-start
 optional string link:
-button.button-variant variant: solid
 button.button-width width: default
+button.button-variant variant: solid
 button.button-size size: medium
-boolean outline: false
 button.button-kind kind: primary
-;; private stuff
+button.button-radius radius: curved
+boolean rounded: false
 boolean $hover: false
 
 -- button-wrapper:
@@ -33,8 +33,9 @@ link: $icon-button.link
 variant: $icon-button.variant
 width: $icon-button.width
 size: $icon-button.size
-outline: $icon-button.outline
 kind: $icon-button.kind
+radius: $icon-button.radius
+rounded: $icon-button.rounded
 
 	-- ftd.image:
 	src: $icon-button.icon
@@ -53,7 +54,6 @@ caption ftd.image-src icon:
 optional string link:
 boolean enabled: true
 button.button-size size: medium
-boolean outline: false
 button.button-kind kind: primary
 ;; private stuff
 boolean $hover: false
@@ -83,7 +83,6 @@ ftd.image-src icon:
 optional string link:
 boolean enabled: true
 button.button-size size: medium
-boolean outline: false
 button.button-kind kind: primary
 ;; private stuff
 boolean $hover: false
@@ -154,7 +153,6 @@ optional string link:
 button.button-variant variant: solid
 button.button-width width: default
 button.button-size size: medium
-boolean outline: false
 button.button-kind kind: primary
 ;; private stuff
 boolean $hover: false
@@ -166,7 +164,6 @@ link: $phosphor-icon-button.link
 variant: $phosphor-icon-button.variant
 width: $phosphor-icon-button.width
 size: $phosphor-icon-button.size
-outline: $phosphor-icon-button.outline
 kind: $phosphor-icon-button.kind
 
 	-- phosphor.regular: $phosphor-icon-button.icon
@@ -215,7 +212,6 @@ optional string link:
 button.button-variant variant: solid
 button.button-width width: default
 button.button-size size: medium
-boolean outline: false
 button.button-kind kind: primary
 ;; private stuff
 boolean $hover: false
@@ -227,7 +223,6 @@ link: $fa-icon-button.link
 variant: $fa-icon-button.variant
 width: $fa-icon-button.width
 size: $fa-icon-button.size
-outline: $fa-icon-button.outline
 kind: $fa-icon-button.kind
 
 	-- fa.brand: $fa-icon-button.icon
@@ -257,27 +252,24 @@ kind: $fa-icon-button.kind
 optional caption title:
 icon-position icon-position: at-start
 optional string link:
-button.button-variant variant: solid
+boolean $hover: false
 button.button-width width: default
+button.button-radius radius: curved
+button.button-variant variant: solid
+boolean rounded: false
 button.button-size size: medium
-boolean outline: false
 button.button-kind kind: primary
 children uis:
-;; private stuff
-boolean $hover: false
 
 -- ds.row:
 background.solid if { button-wrapper.kind == primary && button-wrapper.variant == solid}: $ds.colors.cta-primary.base
 background.solid if { button-wrapper.kind == secondary && button-wrapper.variant == solid}: $ds.colors.cta-secondary.base
-background.solid if { button-wrapper.kind == tertiary && button-wrapper.variant == solid}: $ds.colors.cta-tertiary.base
 background.solid if { button-wrapper.kind == danger && button-wrapper.variant == solid}: $ds.colors.cta-danger.base
-radius: $ds.radius.medium
-border if { button-wrapper.variant == outline }: $ds.borders.uniform.small
-border-color if { button-wrapper.variant == outline && button-wrapper.kind == primary}: $ds.colors.cta-primary.border
-border-color if { button-wrapper.variant == outline && button-wrapper.kind == secondary}: $ds.colors.cta-secondary.border
-border-color if { button-wrapper.variant == outline && button-wrapper.kind == tertiary}: $ds.colors.cta-tertiary.border
-border-color if { button-wrapper.variant == outline && button-wrapper.kind == danger}: $ds.colors.cta-danger.border
-inset if { button-wrapper.size == extra-small }: $ds.spaces.inset-wide.small-zero
+radius if { button-wrapper.rounded }: $ds.radius.large
+radius if { button-wrapper.radius == none }: $ds.radius.zero
+radius if { button-wrapper.radius == curved }: $ds.radius.medium
+border if { button-wrapper.kind == secondary }: $ds.borders.uniform.small
+border-color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.border
 inset if { button-wrapper.size == small }: $ds.spaces.inset-wide.small
 inset if { button-wrapper.size == medium }: $ds.spaces.inset-wide.medium
 inset if { button-wrapper.size == large }: $ds.spaces.inset-wide.large
@@ -408,189 +400,6 @@ link: $button-wrapper.link
 		kind: danger
 		
 	-- end: ds.rendered
-
-
-
-
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: primary
-	variant: outline
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: primary
-		variant: outline
-		
-	-- end: ds.rendered
-
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: secondary
-	variant: outline
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: secondary
-		variant: outline
-		
-	-- end: ds.rendered
-
-
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: tertiary
-	variant: outline
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: tertiary
-		variant: outline
-		
-	-- end: ds.rendered
-
-
-
-
-
-
-
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: danger
-	variant: outline
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: danger
-		variant: outline
-		
-	-- end: ds.rendered
-
-
-
-
-
-
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: primary
-	variant: link
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: primary
-		variant: link
-		
-	-- end: ds.rendered
-
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: secondary
-	variant: link
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: secondary
-		variant: link
-		
-	-- end: ds.rendered
-
-
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: tertiary
-	variant: link
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: tertiary
-		variant: link
-		
-	-- end: ds.rendered
-
-
-
-
-
-	
-
-
-
-
-	-- ds.rendered:
-	
-	\-- icon-button: Icon
-	icon: $assets.files.assets.convert.svg
-	link: /
-	kind: danger
-	variant: link
-	
-		-- icon-button: Icon
-		icon: $assets.files.assets.convert.svg
-		link: /
-		kind: danger
-		variant: link
-		
-	-- end: ds.rendered
-
-
-
-
-
-
-
-
-
 
 	-- ds.rendered:
 	

@@ -1,5 +1,5 @@
--- import: fastn-community.github.io/design-system/spaces
--- import: fastn-community.github.io/design-system/borders
+-- import: fastn-community.github.io/design-system/foundation-elements/spaces
+-- import: fastn-community.github.io/design-system/foundation-elements/borders
 
 
 -- component section-row:

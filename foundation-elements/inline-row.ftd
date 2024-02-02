@@ -1,4 +1,4 @@
--- import: fastn-community.github.io/design-system/spaces
+-- import: fastn-community.github.io/design-system/foundation-elements/spaces
 
 -- component inline-row:
 optional caption title:
