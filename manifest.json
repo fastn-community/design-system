@@ -20,6 +20,46 @@
       "checksum": "A42D91290C93B5F17412C3B346737EA1C796E5D287306758AFE8B20470119D80",
       "size": 21
     },
+    "assets/alert-danger.svg": {
+      "name": "assets/alert-danger.svg",
+      "checksum": "09FF8BFFD7BAC727D5728D5C7715C6EE19165BDBFC6CE10DF995050D602EB706",
+      "size": 365
+    },
+    "assets/alert-info.svg": {
+      "name": "assets/alert-info.svg",
+      "checksum": "98DAF3BDA5C6B9D48B95096A501117BD217B83D665FCD6BF8F560179E9917154",
+      "size": 365
+    },
+    "assets/alert-success.svg": {
+      "name": "assets/alert-success.svg",
+      "checksum": "CE657815E792E73330006AA43570F67B626EAE14D4C0711EDEBAD28F887DB27A",
+      "size": 365
+    },
+    "assets/alert-warning.svg": {
+      "name": "assets/alert-warning.svg",
+      "checksum": "05C8285C60185F9B13CCC09A640ECEE4F4113203B625B210063F2D7709932893",
+      "size": 365
+    },
+    "assets/arrow-danger.svg": {
+      "name": "assets/arrow-danger.svg",
+      "checksum": "B12F1FD0BF8C9CB854F5D4E28F08B19D139B15747581EEC2482E87C9BA0B8BBF",
+      "size": 280
+    },
+    "assets/arrow-info.svg": {
+      "name": "assets/arrow-info.svg",
+      "checksum": "89378833FE7554DFFABF6BF8B7C0DC255BB949C1BF48A1656961F3ED647FE311",
+      "size": 280
+    },
+    "assets/arrow-success.svg": {
+      "name": "assets/arrow-success.svg",
+      "checksum": "00E5A2D553EB4F26F4B94F28DF7FDAFE52E9BF98FEED9B34DE94C34C85F7A0E1",
+      "size": 280
+    },
+    "assets/arrow-warning.svg": {
+      "name": "assets/arrow-warning.svg",
+      "checksum": "FD5E7521925ED5161E7ABA07E55BBD7EB36E7D0C74C8F9E50242F7AB2F031A95",
+      "size": 280
+    },
     "assets/convert-dark.svg": {
       "name": "assets/convert-dark.svg",
       "checksum": "21F8AF60080DB695FF6ABD4DC4D154CFB984CC94D907EAB710B39E2D405E4BCE",
@@ -29,6 +69,26 @@
       "name": "assets/convert.svg",
       "checksum": "0D5834C7CED25B3DF79D62625C1CFDE9CBFFDBDEB549E3448677D8439828BE2C",
       "size": 1291
+    },
+    "assets/cross-danger.svg": {
+      "name": "assets/cross-danger.svg",
+      "checksum": "DD0E5B5E5D9B855C4F534392AF3F66E81905721556BACE9BE5E245BACA7657B5",
+      "size": 220
+    },
+    "assets/cross-info.svg": {
+      "name": "assets/cross-info.svg",
+      "checksum": "6667BF134DD73352198BABC8D26822B5B99039EDFC11898D561BC738C94FFF7A",
+      "size": 220
+    },
+    "assets/cross-success.svg": {
+      "name": "assets/cross-success.svg",
+      "checksum": "E35ABCF33C931DB8CD5B47B9F41E6EAEB0631800CDEA01DCE7C574558A97C16E",
+      "size": 220
+    },
+    "assets/cross-warning.svg": {
+      "name": "assets/cross-warning.svg",
+      "checksum": "17AAAE1EF7311E1242DE290690E19CF70BBFFAD2D65380F60C4F0E8086BCDCE4",
+      "size": 220
     },
     "assets/gradient.svg": {
       "name": "assets/gradient.svg",
@@ -110,10 +170,50 @@
       "checksum": "7EF1BEC586D66543FD7A37BDDE0B27F6BF893825D0A9986D5E4AD57C0E16F99E",
       "size": 7070
     },
-    "borders.ftd": {
-      "name": "borders.ftd",
-      "checksum": "9A3FD2463C2AB37094DDC687EFBDA97D60C186CFC0E9E1F8FE8BDFBB163375A8",
-      "size": 2338
+    "components/alert.ftd": {
+      "name": "components/alert.ftd",
+      "checksum": "975BD1F9E920D08830EAC7EE516CB789A1393706B0A7A3A2EA9C83E0897E5358",
+      "size": 6555
+    },
+    "components/button-group.ftd": {
+      "name": "components/button-group.ftd",
+      "checksum": "2445A1575C7240FD5F60B54078330B94929E5D859694E889FE25CF9BF3B11E5C",
+      "size": 412
+    },
+    "components/button.ftd": {
+      "name": "components/button.ftd",
+      "checksum": "69CD3C6745FDA3C77B8921A412C155684A769106A274DC629301FCF7183414B9",
+      "size": 13754
+    },
+    "components/checkbox.ftd": {
+      "name": "components/checkbox.ftd",
+      "checksum": "3486F0F1D8A0DF9B0C5D39C65CDEA37294D0FF62CF0D15A38A3D4A105A57A8EF",
+      "size": 3078
+    },
+    "components/footer.ftd": {
+      "name": "components/footer.ftd",
+      "checksum": "E2363B4FBB0988FB41E86E4CF73B6E0C326656BBC0E5DE13742540BCB16C2BD1",
+      "size": 788
+    },
+    "components/header.ftd": {
+      "name": "components/header.ftd",
+      "checksum": "C28A4208DD8D7A84858357B90664DC261F1338035CFFB7F72EFE9D6F4C102F9E",
+      "size": 292
+    },
+    "components/icon-button.ftd": {
+      "name": "components/icon-button.ftd",
+      "checksum": "9CDC6FE2CBDE5A4F756DAF1094D0891D701EB524E282DBA2FAA6BBC61F98F7F0",
+      "size": 9638
+    },
+    "components/input.ftd": {
+      "name": "components/input.ftd",
+      "checksum": "F988BE437CE7EAEB7AE2CA2FCE40C4D86DE5041C5C603060F27D97DA7AE95E2C",
+      "size": 4980
+    },
+    "components/toggle.ftd": {
+      "name": "components/toggle.ftd",
+      "checksum": "FFBFDF30CA180446D45A01C7F62072784FD3A35B16F8FF55AC10A4BD731C09F3",
+      "size": 4275
     },
     "demos/code-snippet.ftd": {
       "name": "demos/code-snippet.ftd",
@@ -140,105 +240,75 @@
       "checksum": "65056A1D6C6AAE6E3DC4626E29F4BD4B628B17A8E9CC1D3A5E8FE9F6743F306B",
       "size": 15406
     },
-    "footer.ftd": {
-      "name": "footer.ftd",
-      "checksum": "E2363B4FBB0988FB41E86E4CF73B6E0C326656BBC0E5DE13742540BCB16C2BD1",
-      "size": 788
+    "foundation-elements/borders.ftd": {
+      "name": "foundation-elements/borders.ftd",
+      "checksum": "9A3FD2463C2AB37094DDC687EFBDA97D60C186CFC0E9E1F8FE8BDFBB163375A8",
+      "size": 2338
     },
-    "form/button-group.ftd": {
-      "name": "form/button-group.ftd",
-      "checksum": "2445A1575C7240FD5F60B54078330B94929E5D859694E889FE25CF9BF3B11E5C",
-      "size": 412
+    "foundation-elements/column.ftd": {
+      "name": "foundation-elements/column.ftd",
+      "checksum": "25157DA5612FA7B00875D756880CA8030718BD3DF194C0AB6A544E8660BCAD13",
+      "size": 3295
     },
-    "form/button.ftd": {
-      "name": "form/button.ftd",
-      "checksum": "637D86626C3BB9CDD78A787CC12831A8773EB7C253A13B823CC3F956EAF7C85B",
-      "size": 13714
+    "foundation-elements/container.ftd": {
+      "name": "foundation-elements/container.ftd",
+      "checksum": "D4E2A46474A2E6ED8C7C85C6C2CE57332BAB140CB7CDEE180C3DD89725D01488",
+      "size": 4466
     },
-    "form/checkbox.ftd": {
-      "name": "form/checkbox.ftd",
-      "checksum": "E33E75EBB556CD3DBE3F5C6E5094E7C0ACF7A1EC41617B8952BC122908DC2C6F",
-      "size": 3332
+    "foundation-elements/floater.ftd": {
+      "name": "foundation-elements/floater.ftd",
+      "checksum": "25F0C205E595E89FED558517132CA4AA58AEC13DEC9B77DC0354B3716D1D0F8D",
+      "size": 2652
     },
-    "form/icon-button.ftd": {
-      "name": "form/icon-button.ftd",
-      "checksum": "B20DF21FB2E4779E9100C7550FE913A4332BA7B4874E6DF10E92F55CA5BFC716",
-      "size": 12288
+    "foundation-elements/inline-row.ftd": {
+      "name": "foundation-elements/inline-row.ftd",
+      "checksum": "D30D027195D70250EBFB94B61208B230CA1B270DC2FF090C171E851F05EECBF0",
+      "size": 677
     },
-    "form/input.ftd": {
-      "name": "form/input.ftd",
-      "checksum": "B9A32E0E015A428BB15EBD97DC721447F10AC396510ADF732EAA52F133692EFB",
-      "size": 4940
-    },
-    "header.ftd": {
-      "name": "header.ftd",
-      "checksum": "A50B05EBF8AF41123403E5A132408C7B64EB92DF7BCC6C13FD77735C75D1FF69",
-      "size": 286
-    },
-    "index.ftd": {
-      "name": "index.ftd",
-      "checksum": "79632E035E3CE4CB471052FCA8174569E7473DB25142845FE34E3334C006B5E5",
-      "size": 3767
-    },
-    "layout/column.ftd": {
-      "name": "layout/column.ftd",
-      "checksum": "A6B9C7743F51632E526460912755EA7CFEBD99B1830ECFB47839B3C16F207B31",
-      "size": 3215
-    },
-    "layout/container.ftd": {
-      "name": "layout/container.ftd",
-      "checksum": "819C599F28BEF2F13A3DD847E7687617C7E6CEC4B39C422C248DC86784067E5B",
-      "size": 4406
-    },
-    "layout/floater.ftd": {
-      "name": "layout/floater.ftd",
-      "checksum": "51706B794D8372912BC65FCF2FD4A217D7C1640F6B5D0E0959398766B34AE2F0",
-      "size": 2572
-    },
-    "layout/inline-row.ftd": {
-      "name": "layout/inline-row.ftd",
-      "checksum": "A4BFD9A5E0A0CE3E6A014277482ADD802CEA31F1897991FB9095FCFEDEF71989",
-      "size": 657
-    },
-    "layout/page.ftd": {
-      "name": "layout/page.ftd",
+    "foundation-elements/page.ftd": {
+      "name": "foundation-elements/page.ftd",
       "checksum": "A2E89F47BD228A3F251E3B81A38B47B1C293F3D375D802AF984EE12E98346297",
       "size": 1645
     },
-    "layout/row.ftd": {
-      "name": "layout/row.ftd",
-      "checksum": "45D4F034812385F895F39AF0FA9B628F6131565BFCED2E64780FAB2E9825DE48",
-      "size": 3563
-    },
-    "layout/section-column.ftd": {
-      "name": "layout/section-column.ftd",
-      "checksum": "496FE40F752D82893CF64309D29221BDB3BA587BA84ECFB7C26F8D34E4FF7C23",
-      "size": 3629
-    },
-    "layout/section-row.ftd": {
-      "name": "layout/section-row.ftd",
-      "checksum": "B926EAB1CBCC189CE8AEA7D3F85392ED3204C0C678ECBD28EACAB198735DD3B3",
-      "size": 2964
-    },
-    "radius.ftd": {
-      "name": "radius.ftd",
+    "foundation-elements/radius.ftd": {
+      "name": "foundation-elements/radius.ftd",
       "checksum": "07C32204FD42F311C2AE55F3235A5E9B4C4D96937FEE3D9922641AD85456CBF8",
       "size": 1106
     },
-    "shadow.ftd": {
-      "name": "shadow.ftd",
+    "foundation-elements/row.ftd": {
+      "name": "foundation-elements/row.ftd",
+      "checksum": "C7F465C62979B61E2DEAD78CBC19380D3B8CE30326AF439134D069AB78E5D946",
+      "size": 3643
+    },
+    "foundation-elements/section-column.ftd": {
+      "name": "foundation-elements/section-column.ftd",
+      "checksum": "886A9B88D39267D62BD21A32EB057F8BF3429464C0AF2F9EAC56A77F1085D962",
+      "size": 3669
+    },
+    "foundation-elements/section-row.ftd": {
+      "name": "foundation-elements/section-row.ftd",
+      "checksum": "777DEFD12A76274C99358D8B5C21BC0820A03BC7308F441B6E238F69E3C23415",
+      "size": 3004
+    },
+    "foundation-elements/shadow.ftd": {
+      "name": "foundation-elements/shadow.ftd",
       "checksum": "0B894AF60D25C995775C510F950744F049B2A63C551E74CCB1C7E582212231C0",
       "size": 1095
+    },
+    "foundation-elements/spaces.ftd": {
+      "name": "foundation-elements/spaces.ftd",
+      "checksum": "91118AAEA9A1C047D31715C96507D318DFAE6533E5B46DA899B8C8397F34C019",
+      "size": 2397
+    },
+    "index.ftd": {
+      "name": "index.ftd",
+      "checksum": "B2B410CF7E17F0D1B0EC3B169B3F118DB0C4F03887E783FB3461FBC133B6AEEC",
+      "size": 4161
     },
     "slide.ftd": {
       "name": "slide.ftd",
       "checksum": "DED1E77FBF1E5845FF5DB62A98BB3EB7711FC1D33D89015DF9082B3EA8DE4689",
       "size": 721
-    },
-    "spaces.ftd": {
-      "name": "spaces.ftd",
-      "checksum": "91118AAEA9A1C047D31715C96507D318DFAE6533E5B46DA899B8C8397F34C019",
-      "size": 2397
     },
     "typography.ftd": {
       "name": "typography.ftd",
@@ -246,6 +316,6 @@
       "size": 9722
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/fa0cf69f00e6681bd7b5da8d60603dea38e48c04.zip",
-  "checksum": "A3ABD9A457AD63284493D9525CDA6BE02D38737CF2C87D3E4B83E3DC527256D4"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/c62acfe6b9148d1e77e0c3047b0e05953cf55f19.zip",
+  "checksum": "C3497ED995B355E254E9DB1159E24203993F4BF14F804C8826A8DEFCE26A8B83"
 }
