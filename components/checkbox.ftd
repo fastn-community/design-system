@@ -20,9 +20,7 @@
 
 
 -- component checkbox:
-optional string checked-text:
-optional string not-checked-text:
-optional string disabled-text:
+caption title:
 boolean $is-checked: false
 boolean disabled-checked: false
 boolean disabled-unchecked: false
@@ -45,16 +43,7 @@ width.fixed.px if { checkbox.size == medium }: 20
 height.fixed.px if { checkbox.size == large }: 24
 width.fixed.px if { checkbox.size == large }: 24
 
--- ds.copy-regular: $checkbox.checked-text
-if: { checkbox.checked-text != NULL && checkbox.is-checked }
-width: hug-content
-
--- ds.copy-regular: $checkbox.not-checked-text
-if: { checkbox.not-checked-text != NULL && !checkbox.is-checked }
-width: hug-content
-
--- ds.copy-regular: $checkbox.disabled-text
-if: {  checkbox.disabled-text != NULL && checkbox.disabled-checked }
+-- ds.copy-regular: $checkbox.title
 width: hug-content
 
 -- end: ds.row
@@ -94,30 +83,30 @@ width: hug-content
 
 		-- ds.rendered:
 
-		\-- checkbox:
+		\-- checkbox: Label
 		size: small
 
-		-- checkbox:
+		-- checkbox: Label
 		size: small
 
 		-- end: ds.rendered
 
 		-- ds.rendered:
 
-		\-- checkbox:
+		\-- checkbox: Label
 		size: medium
 
-		-- checkbox:
+		-- checkbox: Label
 		size: medium
 
 		-- end: ds.rendered
 
 		-- ds.rendered:
 
-		\-- checkbox:
+		\-- checkbox: Label
 		size: large
 
-		-- checkbox:
+		-- checkbox: Label
 		size: large
 
 		-- end: ds.rendered
@@ -130,11 +119,11 @@ width: hug-content
 
 		-- ds.rendered:
 
-		\-- checkbox:
+		\-- checkbox: Label
 		size: small
 		disabled-unchecked: true
 
-		-- checkbox:
+		-- checkbox: Label
 		size: small
 		disabled-unchecked: true
 
@@ -142,11 +131,11 @@ width: hug-content
 
 		-- ds.rendered:
 
-		\-- checkbox:
+		\-- checkbox: Label
 		size: medium
 		disabled-unchecked: true
 
-		-- checkbox:
+		-- checkbox: Label
 		size: medium
 		disabled-unchecked: true
 
@@ -154,11 +143,11 @@ width: hug-content
 
 		-- ds.rendered:
 
-		\-- checkbox:
+		\-- checkbox: Label
 		size: large
 		disabled-unchecked: true
 
-		-- checkbox:
+		-- checkbox: Label
 		size: large
 		disabled-unchecked: true
 
@@ -172,11 +161,11 @@ width: hug-content
 
 		-- ds.rendered:
 
-		\-- checkbox:
+		\-- checkbox: Label
 		size: small
 		disabled-checked: true
 
-		-- checkbox:
+		-- checkbox: Label
 		size: small
 		disabled-checked: true
 
@@ -184,11 +173,11 @@ width: hug-content
 
 		-- ds.rendered:
 
-		\-- checkbox:
+		\-- checkbox: Label
 		size: medium
 		disabled-checked: true
 
-		-- checkbox:
+		-- checkbox: Label
 		size: medium
 		disabled-checked: true
 
@@ -196,11 +185,11 @@ width: hug-content
 
 		-- ds.rendered:
 
-		\-- checkbox:
+		\-- checkbox: Label
 		size: large
 		disabled-checked: true
 
-		-- checkbox:
+		-- checkbox: Label
 		size: large
 		disabled-checked: true
 
