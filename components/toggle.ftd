@@ -16,9 +16,16 @@
 
 
 -- component toggle-button:
+caption title:
 boolean $active: false
 boolean disabled: false
 toggle-size size: medium
+
+-- ds.section-row:
+flush: full
+spacing: $ds.spaces.horizontal-gap.extra-extra-small
+align-content: left
+inset: $ds.spaces.inset-wide.small
 
 -- ds.container:
 radius: $ds.radius.large
@@ -87,6 +94,11 @@ background.solid if { toggle-button.disabled}: $ds.colors.background.step-1
 
 -- end: ds.container
 
+-- ds.copy-regular: $toggle-button.title
+width: hug-content
+
+-- end: ds.section-row
+
 -- end: toggle-button
 
 
@@ -114,30 +126,30 @@ background.solid if { toggle-button.disabled}: $ds.colors.background.step-1
 	
 		-- ds.rendered:
 		
-		\-- toggle-button:
+		\-- toggle-button: Label
 		size: small
 		
-			-- toggle-button:
+			-- toggle-button: Label
 			size: small
 			
 		-- end: ds.rendered
 
 		-- ds.rendered:
 		
-		\-- toggle-button:
+		\-- toggle-button: Label
 		size: medium
 		
-			-- toggle-button:
+			-- toggle-button: Label
 			size: medium
 			
 		-- end: ds.rendered
 
 		-- ds.rendered:
 		
-		\-- toggle-button:
+		\-- toggle-button: Label
 		size: large
 		
-			-- toggle-button:
+			-- toggle-button: Label
 			size: large
 			
 		-- end: ds.rendered
@@ -148,11 +160,11 @@ background.solid if { toggle-button.disabled}: $ds.colors.background.step-1
 	
 		-- ds.rendered:
 		
-		\-- toggle-button:
+		\-- toggle-button: Label
 		size: small
 		disabled: true
 		
-			-- toggle-button:
+			-- toggle-button: Label
 			size: small
 			disabled: true
 			
@@ -160,11 +172,11 @@ background.solid if { toggle-button.disabled}: $ds.colors.background.step-1
 
 		-- ds.rendered:
 		
-		\-- toggle-button:
+		\-- toggle-button: Label
 		size: medium
 		disabled: true
 		
-			-- toggle-button:
+			-- toggle-button: Label
 			size: medium
 			disabled: true
 			
@@ -172,11 +184,11 @@ background.solid if { toggle-button.disabled}: $ds.colors.background.step-1
 
 		-- ds.rendered:
 		
-		\-- toggle-button:
+		\-- toggle-button: Label
 		size: large
 		disabled: true
 		
-			-- toggle-button:
+			-- toggle-button: Label
 			size: large
 			disabled: true
 			
