@@ -3452,7 +3452,12 @@ let fastn_community_github_io_design_system_components_icon_button__button_wrapp
         }
       }
       ),
-      color: fastn.formula([global.fastn_community_github_io_design_system__colors.get("cta_primary").get("text"),
+      color: fastn.formula([global.fastn_community_github_io_design_system__colors.get("text_strong"),
+      __args__.kind,
+      __args__.variant,
+      global.fastn_community_github_io_design_system_components_button__button_variant.get("outline"),
+      global.fastn_community_github_io_design_system_components_button__button_kind.get("secondary"),
+      global.fastn_community_github_io_design_system__colors.get("cta_primary").get("text"),
       __args__.kind,
       global.fastn_community_github_io_design_system_components_button__button_kind.get("primary"),
       global.fastn_community_github_io_design_system__colors.get("cta_secondary").get("text"),
@@ -3465,6 +3470,10 @@ let fastn_community_github_io_design_system_components_icon_button__button_wrapp
       __args__.kind,
       global.fastn_community_github_io_design_system_components_button__button_kind.get("danger")], function () {
         if (function () {
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("secondary")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_variant.get("outline")));
+        }()) {
+          return global.fastn_community_github_io_design_system__colors.get("text_strong");
+        } else if (function () {
           return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("primary")));
         }()) {
           return global.fastn_community_github_io_design_system__colors.get("cta_primary").get("text");

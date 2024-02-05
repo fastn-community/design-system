@@ -111,16 +111,21 @@ $on-mouse-leave$: $ftd.set-bool($a = $circle-button.hover, v = false)
 caption text:
 optional string link:
 
--- ftd.text: $circle-text-button.text
-padding.px: 2
-color: $ds.colors.cta-primary.text
+-- ds.column:
 background.solid: $ds.colors.cta-primary.base
 border-color: $ds.colors.cta-primary.border
-border-width.px: 2
-border-radius.percent: 50
-min-width.fixed.px: 24
-min-height.fixed.px: 24
-link: $circle-text-button.link
+border: $ds.borders.uniform.small
+radius: $ds.radius.round
+width.fixed.px: 40
+height.fixed.px: 40
+align-content: center
+;;link: $circle-text-button.link
+
+-- ds.copy-regular: $circle-text-button.text
+color: $ds.colors.cta-primary.text
+align: center
+
+-- end: ds.column
 
 -- end: circle-text-button
 
@@ -281,6 +286,7 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { button-wrapper.width == default }: hug-content
 width.fixed.px if { button-wrapper.width == wide }: 200
 width if { button-wrapper.width == full }: fill-container
+color if { button-wrapper.kind == secondary && button-wrapper.variant == outline }: $ds.colors.text-strong
 color if { button-wrapper.kind == primary }: $ds.colors.cta-primary.text
 color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.text
 color if { button-wrapper.kind == tertiary }: $ds.colors.cta-tertiary.text
