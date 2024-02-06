@@ -35,10 +35,10 @@ export: alert
 export: checkbox
 
 -- import: fastn-community.github.io/design-system/components/input as _
-export: input
+export: text-input
 
 -- import: fastn-community.github.io/design-system/components/toggle as _
-export: toggle
+export: toggle-button
 
 -- import: fastn-community.github.io/design-system/components/button-group as _
 export: button-group
