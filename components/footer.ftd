@@ -41,8 +41,10 @@ $on-mouse-enter$: $ftd.set-boolean($a = $footer-link.hover, v = false)
 
 -- component copyright-text:
 caption or body text:
+ftd.resizing width: hug-content
 
 -- ds.copy-regular:
+width: $copyright-text.width
 
 $copyright-text.text
 
