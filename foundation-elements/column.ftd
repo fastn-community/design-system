@@ -17,11 +17,13 @@ ds.border-data border: $ds.borders.uniform.zero
 ftd.color border-color: $ds.colors.border
 optional ftd.color color:
 string list css:
+optional string link:
 string list js:
 optional ftd.shadow shadow:
 
 -- ftd.column:
 width: $column.width
+link: $column.link
 padding-vertical.px: $column.inset.vertical
 padding-horizontal.px: $column.inset.horizontal
 spacing.fixed.px: $column.spacing.gap
