@@ -44,7 +44,6 @@ height.fixed.px if { checkbox.size == large }: 24
 width.fixed.px if { checkbox.size == large }: 24
 
 -- ds.copy-small: $checkbox.title
-width: hug-content
 
 -- end: ds.row
 
