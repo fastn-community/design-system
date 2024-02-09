@@ -340,7 +340,7 @@ border: $ds.borders.uniform.small
 radius: $ds.radius.small
 background.solid: $ds.colors.custom.two
 align-content: center
-</code></pre><div data-id="41" class="ft_column __pos-145 __p-146 __bbrr-147 __b-148 __r-149 __z-150"><div data-id="42" class="ft_row __g-151"><comment data-id="43"></comment><div data-id="44" class="ft_row __g-152"><div data-id="45" class="__rl-153 __c-154">Lang:</div><div data-id="46" class="__rl-155 __c-156">ftd</div></div></div></div></div><div data-id="47" class="__rl-157 __w-158 __pb-159 __mt-160 __bbw-161 __bc-162 __c-163">Output</div><div data-id="48" class="ft_column __w-164"></div></div><div data-id="49" class="ft_column __w-165 __h-166 __pl-167 __pr-168 __pt-169 __pb-170 __btw-171 __bbw-172 __blw-173 __brw-174 __btlr-175 __btrr-176 __bblr-177 __bbrr-178 __bc-179 __c-180 __bgc-181 __box-shadow-182 __jc-183 __ali-184 __g-185"><div data-id="50" class="__rl-186 __w-187 __h-188 __c-190 __d-192">Column Text</div><div data-id="51" class="__rl-193 __w-194 __h-195 __c-197 __d-199">Column Text</div><div data-id="52" class="__rl-200 __w-201 __h-202 __c-204 __d-206">Column Text</div></div></div></div><div data-id="53" class="ft_column __w-207 __h-208 __jc-209 __ali-210"><div data-id="54" class="__c-211">Created using fastn</div></div></div></div></div></body><style id="styles">
+</code></pre><div data-id="41" class="ft_column __pos-145 __p-146 __bbrr-147 __b-148 __r-149 __z-150"><div data-id="42" class="ft_row __g-151"><comment data-id="43"></comment><div data-id="44" class="ft_row __g-152"><div data-id="45" class="__rl-153 __c-154">Lang:</div><div data-id="46" class="__rl-155 __c-156">ftd</div></div></div></div></div><div data-id="47" class="__rl-157 __w-158 __pb-159 __mt-160 __bbw-161 __bc-162 __c-163">Output</div><div data-id="48" class="ft_column __w-164"></div></div><div data-id="49" class="ft_column __w-165 __h-166 __pl-167 __pr-168 __pt-169 __pb-170 __btw-171 __bbw-172 __blw-173 __brw-174 __btlr-175 __btrr-176 __bblr-177 __bbrr-178 __bc-179 __c-180 __bgc-181 __box-shadow-182 __jc-183 __ali-184 __g-185"><div data-id="50" class="__rl-186 __w-187 __h-188 __c-190 __d-192">Column Text</div><div data-id="51" class="__rl-193 __w-194 __h-195 __c-197 __d-199">Column Text</div><div data-id="52" class="__rl-200 __w-201 __h-202 __c-204 __d-206">Column Text</div></div></div></div></div></div></div></body><style id="styles">
     .__w-1 { width: 100%; }
 	.__h-2 { height: 100%; }
 	.__pos-3 { position: fixed; }
@@ -586,14 +586,6 @@ align-content: center
 	.__c-204:visited { color: #7C7C7C !important; }
 	body.dark  .__c-204:visited { color: #B8B8B8 !important; }
 	.__d-206 { display: inline; }
-	.__w-207 { width: 100%; }
-	.__h-208 { height: 32px; }
-	.__jc-209 { justify-content: center; }
-	.__ali-210 { align-items: center; }
-	.__c-211 { color: #FFFFFF !important; }
-	body.dark .__c-211 { color: #000000 !important; }
-	.__c-211:visited { color: #FFFFFF !important; }
-	body.dark  .__c-211:visited { color: #000000 !important; }
     </style><style>
 
 
@@ -2640,18 +2632,6 @@ let fastn_community_github_io_design_system_foundation_elements_page__page = fun
           let rooti0 = fastn_utils.getStaticValue(item) (root, inherited);
           return rooti0;
         });
-      },
-      function (root, inherited) {
-        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
-        rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
-        rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(__args__.margin.get("gap"))), inherited);
-        rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
-        rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
-          let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
-          rooti0.setProperty(fastn_dom.PropertyKind.StringValue, "Created using fastn", inherited);
-          rooti0.setProperty(fastn_dom.PropertyKind.Color, global.fastn_community_github_io_design_system__colors.get("background").get("base"), inherited);
-        }
-        ]), inherited);
       }
       ]), inherited);
     }
