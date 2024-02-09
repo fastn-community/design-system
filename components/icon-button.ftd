@@ -116,8 +116,8 @@ background.solid: $ds.colors.cta-primary.base
 border-color: $ds.colors.cta-primary.border
 border: $ds.borders.uniform.small
 radius: $ds.radius.round
-width.fixed.px: 40
-height.fixed.px: 40
+width.fixed.px: 32
+height.fixed.px: 32
 align-content: center
 ;;link: $circle-text-button.link
 
