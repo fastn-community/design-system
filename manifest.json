@@ -187,8 +187,8 @@
     },
     "components/checkbox.ftd": {
       "name": "components/checkbox.ftd",
-      "checksum": "3486F0F1D8A0DF9B0C5D39C65CDEA37294D0FF62CF0D15A38A3D4A105A57A8EF",
-      "size": 3078
+      "checksum": "A0085651264C0363677E16D6493DA5D3C7C27B0AFBEB5C80D35029B17FED683C",
+      "size": 3057
     },
     "components/footer.ftd": {
       "name": "components/footer.ftd",
@@ -202,7 +202,7 @@
     },
     "components/icon-button.ftd": {
       "name": "components/icon-button.ftd",
-      "checksum": "16F852DF6AE1572D1B80F91014D496E7C0254DFFCDEB307DE07CFFDEEA47B7FA",
+      "checksum": "84D6C06993C6F46DDEF49F99CC4377C00482A7B0D9EE023D633337CACE987C46",
       "size": 9816
     },
     "components/input.ftd": {
@@ -247,8 +247,8 @@
     },
     "foundation-elements/column.ftd": {
       "name": "foundation-elements/column.ftd",
-      "checksum": "25157DA5612FA7B00875D756880CA8030718BD3DF194C0AB6A544E8660BCAD13",
-      "size": 3295
+      "checksum": "C92FC1C90E10257DFBE746C84FB3C5A64A71B357410958940B00D80DED60A62F",
+      "size": 3336
     },
     "foundation-elements/container.ftd": {
       "name": "foundation-elements/container.ftd",
@@ -287,8 +287,8 @@
     },
     "foundation-elements/section-row.ftd": {
       "name": "foundation-elements/section-row.ftd",
-      "checksum": "777DEFD12A76274C99358D8B5C21BC0820A03BC7308F441B6E238F69E3C23415",
-      "size": 3004
+      "checksum": "75CFB0562DBFDF7F9FB43B92B2780D02F3455E1E5C5B64706FED24789591F44C",
+      "size": 3145
     },
     "foundation-elements/shadow.ftd": {
       "name": "foundation-elements/shadow.ftd",
@@ -316,6 +316,6 @@
       "size": 9722
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/c9054642da3aa6fbd2d7018ce47222e157fba76a.zip",
-  "checksum": "14018843471B5D459D915FCAB1FD06598970120CF537A776DA8DFA1CB4B3F922"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/bd06866401e17f57249cc82e55476de24f871367.zip",
+  "checksum": "156D6D493D4975EBE6A2A95F11D3C9F27BBA9FAE148D88B290F42D2830234088"
 }

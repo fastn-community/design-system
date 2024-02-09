@@ -20,7 +20,10 @@ width: fill-container
 align-content: center
 background: $section-row.outer-background
 margin-bottom.px: $section-row.margin.gap
+border-top-width.px: $section-row.border.top
 border-bottom-width.px: $section-row.border.bottom
+border-left-width.px: $section-row.border.left
+border-right-width.px: $section-row.border.right
 border-color: $ds.colors.border
 
 	-- ftd.row:
