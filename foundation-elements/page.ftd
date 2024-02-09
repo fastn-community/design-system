@@ -56,16 +56,6 @@ types: $ds.types
 	
 		-- ui:
 		for: $ui in $page.content
-		
-		-- ftd.column:
-		height.fixed.px: $page.margin.gap
-		width: fill-container
-		align-content: center
-		
-			-- ftd.text: Created using fastn
-			color: $ds.colors.background.base
-			
-		-- end: ftd.column
 
 	-- end: ftd.column
 
