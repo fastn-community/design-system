@@ -1,5 +1,6 @@
 -- import: fastn-community.github.io/design-system/foundation-elements/spaces
 -- import: fastn-community.github.io/design-system/foundation-elements/radius
+-- import: fastn-community.github.io/design-system/foundation-elements/borders
 
 
 
@@ -16,12 +17,18 @@ ds.hv inset: $ds.spaces.inset-wide.medium
 ds.gap margin: $ds.spaces.vertical-gap.large
 ftd.align align-content: center
 ds.element-radius radius: $ds.radius.medium
+ds.border-data border: $ds.borders.uniform.zero
 
 -- ftd.column:
 width: fill-container
 align-content: center
 background: $section-column.outer-background
 margin-bottom.px: $section-column.margin.gap
+border-top-width.px: $section-column.border.top
+border-bottom-width.px: $section-column.border.bottom
+border-left-width.px: $section-column.border.left
+border-right-width.px: $section-column.border.right
+border-color: $ds.colors.border
 
 	-- ftd.column:
 	width if { section-column.flush == full }: fill-container
