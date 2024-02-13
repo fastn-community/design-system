@@ -286,6 +286,7 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { button-wrapper.width == default }: hug-content
 width.fixed.px if { button-wrapper.width == wide }: 200
 width if { button-wrapper.width == full }: fill-container
+color if { button-wrapper.variant == link }: $ds.colors.accent.primary
 color if { button-wrapper.kind == secondary && button-wrapper.variant == outline }: $ds.colors.text-strong
 color if { button-wrapper.kind == primary }: $ds.colors.cta-primary.text
 color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.text
