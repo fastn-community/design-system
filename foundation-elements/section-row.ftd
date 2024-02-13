@@ -14,6 +14,7 @@ ds.gap margin: $ds.spaces.vertical-gap.large
 boolean wrap: false
 ftd.align align-content: center
 ds.border-data border: $ds.borders.uniform.zero
+ds.element-radius radius: $ds.radius.medium
 
 -- ftd.column:
 width: fill-container
@@ -39,6 +40,14 @@ border-color: $ds.colors.border
 	padding-vertical.px: $section-row.inset.vertical
 	padding-horizontal.px: $section-row.inset.horizontal
 	background: $section-row.inner-background
+	border-top-left-radius.px if { section-row.radius.top-left != $radius.HACK-RADIUS-ROUND }: $section-row.radius.top-left
+	border-top-right-radius.px if { section-row.radius.top-right != $radius.HACK-RADIUS-ROUND }: $section-row.radius.top-right
+	border-bottom-left-radius.px if { section-row.radius.bottom-left != $radius.HACK-RADIUS-ROUND }: $section-row.radius.bottom-left
+	border-bottom-right-radius.px if { section-row.radius.bottom-right != $radius.HACK-RADIUS-ROUND }: $section-row.radius.bottom-right
+	border-top-left-radius.percent if { section-row.radius.top-left == $radius.HACK-RADIUS-ROUND }: 50
+	border-top-right-radius.percent if { section-row.radius.top-right == $radius.HACK-RADIUS-ROUND }: 50
+	border-bottom-left-radius.percent if { section-row.radius.bottom-left == $radius.HACK-RADIUS-ROUND }: 50
+	border-bottom-right-radius.percent if { section-row.radius.bottom-right == $radius.HACK-RADIUS-ROUND }: 50
 	
 	-- end: ftd.row
 
