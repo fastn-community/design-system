@@ -4471,6 +4471,7 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   record.set("secondary", 2);
   record.set("tertiary", 3);
   record.set("danger", 4);
+  record.set("link", 4);
   return record;
 }());
 let fastn_community_github_io_design_system_components_icon_button__button_wrapper = function (parent, inherited, args)
@@ -4582,27 +4583,30 @@ let fastn_community_github_io_design_system_components_icon_button__button_wrapp
       wrap: true,
       background: fastn.formula([__args__.kind,
       __args__.variant,
+      global.fastn_community_github_io_design_system_components_button__button_kind.get("link"),
       global.fastn_community_github_io_design_system_components_button__button_kind.get("primary"),
       global.fastn_community_github_io_design_system_components_button__button_variant.get("solid"),
       __args__.kind,
       __args__.variant,
+      global.fastn_community_github_io_design_system_components_button__button_kind.get("link"),
       global.fastn_community_github_io_design_system_components_button__button_kind.get("secondary"),
       global.fastn_community_github_io_design_system_components_button__button_variant.get("solid"),
       __args__.kind,
       __args__.variant,
       global.fastn_community_github_io_design_system_components_button__button_kind.get("danger"),
+      global.fastn_community_github_io_design_system_components_button__button_kind.get("link"),
       global.fastn_community_github_io_design_system_components_button__button_variant.get("solid"),
       __args__.hover], function () {
         if (function () {
-          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("primary")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_variant.get("solid")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("primary")) && fastn_utils.getStaticValue(__args__.kind) !== fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("link")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_variant.get("solid")));
         }()) {
           return fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("cta_primary").get("base"));
         } else if (function () {
-          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("secondary")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_variant.get("solid")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("secondary")) && fastn_utils.getStaticValue(__args__.kind) !== fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("link")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_variant.get("solid")));
         }()) {
           return fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("cta_secondary").get("base"));
         } else if (function () {
-          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("danger")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_variant.get("solid")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("danger")) && fastn_utils.getStaticValue(__args__.kind) !== fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("link")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_variant.get("solid")));
         }()) {
           return fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("cta_danger").get("base"));
         } else if (function () {
@@ -4655,11 +4659,9 @@ let fastn_community_github_io_design_system_components_icon_button__button_wrapp
         }
       }
       ),
-      color: fastn.formula([global.fastn_community_github_io_design_system__colors.get("text_strong"),
+      color: fastn.formula([global.fastn_community_github_io_design_system__colors.get("accent").get("primary"),
       __args__.kind,
-      __args__.variant,
-      global.fastn_community_github_io_design_system_components_button__button_variant.get("outline"),
-      global.fastn_community_github_io_design_system_components_button__button_kind.get("secondary"),
+      global.fastn_community_github_io_design_system_components_button__button_kind.get("link"),
       global.fastn_community_github_io_design_system__colors.get("cta_primary").get("text"),
       __args__.kind,
       global.fastn_community_github_io_design_system_components_button__button_kind.get("primary"),
@@ -4671,11 +4673,16 @@ let fastn_community_github_io_design_system_components_icon_button__button_wrapp
       global.fastn_community_github_io_design_system_components_button__button_kind.get("tertiary"),
       global.fastn_community_github_io_design_system__colors.get("cta_danger").get("text"),
       __args__.kind,
-      global.fastn_community_github_io_design_system_components_button__button_kind.get("danger")], function () {
+      global.fastn_community_github_io_design_system_components_button__button_kind.get("danger"),
+      global.fastn_community_github_io_design_system__colors.get("text_strong"),
+      __args__.kind,
+      __args__.variant,
+      global.fastn_community_github_io_design_system_components_button__button_variant.get("outline"),
+      global.fastn_community_github_io_design_system_components_button__button_kind.get("secondary")], function () {
         if (function () {
-          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("secondary")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_variant.get("outline")));
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("link")));
         }()) {
-          return global.fastn_community_github_io_design_system__colors.get("text_strong");
+          return global.fastn_community_github_io_design_system__colors.get("accent").get("primary");
         } else if (function () {
           return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("primary")));
         }()) {
@@ -4692,6 +4699,10 @@ let fastn_community_github_io_design_system_components_icon_button__button_wrapp
           return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("danger")));
         }()) {
           return global.fastn_community_github_io_design_system__colors.get("cta_danger").get("text");
+        } else if (function () {
+          return (fastn_utils.getStaticValue(__args__.kind) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_kind.get("secondary")) && fastn_utils.getStaticValue(__args__.variant) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_variant.get("outline")));
+        }()) {
+          return global.fastn_community_github_io_design_system__colors.get("text_strong");
         }
       }
       )

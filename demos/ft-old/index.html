@@ -4139,6 +4139,7 @@ let fastn_community_github_io_design_system_foundation_elements_section_row__sec
       align_content: fastn_dom.AlignContent.Center,
       border: global.fastn_community_github_io_design_system__borders.get("uniform").get("zero"),
       radius: global.fastn_community_github_io_design_system__radius.get("medium"),
+      link: null,
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
@@ -4243,6 +4244,7 @@ let fastn_community_github_io_design_system_foundation_elements_section_row__sec
         }
       }
       ), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.link, inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Wrap, __args__.wrap, inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, __args__.align_content, inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn.formula([global.fastn_community_github_io_design_system_foundation_elements_spaces__HACK_SPACE_BETWEEN_MAGIC_NUMBER,
@@ -4272,6 +4274,7 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   record.set("secondary", 2);
   record.set("tertiary", 3);
   record.set("danger", 4);
+  record.set("link", 4);
   return record;
 }());
 let fastn_community_github_io_design_system_components_header__header_link = function (parent, inherited, args)
