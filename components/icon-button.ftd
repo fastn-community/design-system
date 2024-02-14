@@ -267,9 +267,9 @@ button.button-kind kind: primary
 children uis:
 
 -- ds.row:
-background.solid if { button-wrapper.kind == primary && button-wrapper.variant == solid}: $ds.colors.cta-primary.base
-background.solid if { button-wrapper.kind == secondary && button-wrapper.variant == solid}: $ds.colors.cta-secondary.base
-background.solid if { button-wrapper.kind == danger && button-wrapper.variant == solid}: $ds.colors.cta-danger.base
+background.solid if { button-wrapper.kind == primary && button-wrapper.kind != link && button-wrapper.variant == solid}: $ds.colors.cta-primary.base
+background.solid if { button-wrapper.kind == secondary && button-wrapper.kind != link && button-wrapper.variant == solid}: $ds.colors.cta-secondary.base
+background.solid if { button-wrapper.kind == danger && button-wrapper.kind != link && button-wrapper.variant == solid}: $ds.colors.cta-danger.base
 radius if { button-wrapper.rounded }: $ds.radius.large
 radius if { button-wrapper.radius == none }: $ds.radius.zero
 radius if { button-wrapper.radius == curved }: $ds.radius.medium
@@ -286,11 +286,11 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { button-wrapper.width == default }: hug-content
 width.fixed.px if { button-wrapper.width == wide }: 200
 width if { button-wrapper.width == full }: fill-container
+color if { button-wrapper.kind == link }: $ds.colors.accent.primary
 color if { button-wrapper.kind == primary }: $ds.colors.cta-primary.text
 color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.text
 color if { button-wrapper.kind == tertiary }: $ds.colors.cta-tertiary.text
 color if { button-wrapper.kind == danger }: $ds.colors.cta-danger.text
-color if { button-wrapper.kind == link }: $ds.colors.accent.primary
 color if { button-wrapper.kind == secondary && button-wrapper.variant == outline }: $ds.colors.text-strong
 link: $button-wrapper.link
 wrap: true
