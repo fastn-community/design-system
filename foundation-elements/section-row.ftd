@@ -16,6 +16,8 @@ boolean wrap: false
 ftd.align align-content: center
 ds.border-data border: $ds.borders.uniform.zero
 ds.element-radius radius: $ds.radius.medium
+ftd.color border-color: $ds.colors.border
+optional string link:
 
 -- ftd.column:
 width: fill-container
@@ -30,6 +32,7 @@ margin-bottom.px: $section-row.margin.gap
 	width.fixed: $ds.widths.regular
 	children: $section-row.content
 	align-content: $section-row.align-content
+	link: $section-row.link
 	spacing if { section-row.spacing.gap == $spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 	spacing.fixed.px: $section-row.spacing.gap
 	wrap: $section-row.wrap
@@ -40,7 +43,7 @@ margin-bottom.px: $section-row.margin.gap
 	border-bottom-width.px: $section-row.border.bottom
 	border-left-width.px: $section-row.border.left
 	border-right-width.px: $section-row.border.right
-	border-color: $ds.colors.border
+	border-color: $section-row.border-color
 	border-top-left-radius.px if { section-row.radius.top-left != $radius.HACK-RADIUS-ROUND }: $section-row.radius.top-left
 	border-top-right-radius.px if { section-row.radius.top-right != $radius.HACK-RADIUS-ROUND }: $section-row.radius.top-right
 	border-bottom-left-radius.px if { section-row.radius.bottom-left != $radius.HACK-RADIUS-ROUND }: $section-row.radius.bottom-left
