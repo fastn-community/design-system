@@ -38,6 +38,7 @@ page-widths widths: $widths
 ;; todo: is the follow reference to `.gap` correct?
 ds.gap margin: $ds.spaces.vertical-gap.large
 ftd.background.solid background: $ds.colors.background.base
+boolean theme-switcher: false
 
 -- ftd.document:
 title: $page.title
@@ -46,6 +47,7 @@ colors: $ds.colors
 types: $ds.types
 
 	-- dms.dark-mode-switcher-float:
+	if: { page.theme-switcher }
 	
 	-- ftd.column:
 	width: fill-container

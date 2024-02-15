@@ -267,8 +267,8 @@
     },
     "foundation-elements/page.ftd": {
       "name": "foundation-elements/page.ftd",
-      "checksum": "2D79160E39E53ACB4CD5FE525C6C4E8EC1CE31DB531DD9E4A17E20341FDE959B",
-      "size": 1440
+      "checksum": "5FA301995009D65781E5CEC7654D0607BDE4AC0E15B579D0AD4D322F72DEA315",
+      "size": 1499
     },
     "foundation-elements/radius.ftd": {
       "name": "foundation-elements/radius.ftd",
@@ -316,6 +316,6 @@
       "size": 9722
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/68f8166f57bbf938bbcaa2bc91e934a4ad8f5e6e.zip",
-  "checksum": "915985D26E49115CD2E0CC2305043CAB143C00A8224CB5123EDF66C03ADF2662"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/07d99b5c58ee846e61e0848c4c7338931122614d.zip",
+  "checksum": "66829B8A0707D57CAC4551DDC31123CD179E3D99E8FEDB2FB61851FB3053F5B9"
 }
