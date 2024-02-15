@@ -17,6 +17,7 @@ ds.hv inset: $ds.spaces.inset-wide.medium
 ds.gap margin: $ds.spaces.vertical-gap.large
 ftd.align align-content: center
 ds.element-radius radius: $ds.radius.medium
+ftd.color border-color: $ds.colors.border
 optional string link:
 ds.border-data border: $ds.borders.uniform.zero
 
@@ -44,7 +45,7 @@ margin-bottom.px: $section-column.margin.gap
 	border-bottom-width.px: $section-column.border.bottom
 	border-left-width.px: $section-column.border.left
 	border-right-width.px: $section-column.border.right
-	border-color: $ds.colors.border
+	border-color: $section-column.border-color
 	border-top-left-radius.px if { section-column.radius.top-left != $radius.HACK-RADIUS-ROUND }: $section-column.radius.top-left
 	border-top-right-radius.px if { section-column.radius.top-right != $radius.HACK-RADIUS-ROUND }: $section-column.radius.top-right
 	border-bottom-left-radius.px if { section-column.radius.bottom-left != $radius.HACK-RADIUS-ROUND }: $section-column.radius.bottom-left
