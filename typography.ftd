@@ -290,6 +290,7 @@ optional ds.gap margin:
 color: $link.color
 role: $ds.types.link
 link: $link.link
+white-space: nowrap
 text-align if { link.align == left }: start
 text-align if { link.align == right }: end
 text-align if { link.align == center }: center
