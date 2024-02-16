@@ -58,7 +58,7 @@ types: $ds.types
 	
 		-- ui:
 		for: $ui in $page.content
-
+		
 	-- end: ftd.column
 
 -- end: ftd.document
