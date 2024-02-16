@@ -312,10 +312,10 @@
     },
     "typography.ftd": {
       "name": "typography.ftd",
-      "checksum": "2C59C518F541A663EFDC70880AAD293A5FD13927AE8D96641037793BD519B791",
-      "size": 10194
+      "checksum": "371D5904BCFA76BDF7AE197E426FDE5B0F34908CD45DC6E2DF880C894737F62C",
+      "size": 10214
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/824d43105694ccf439277b5a3562d36066835e3c.zip",
-  "checksum": "8050A4B1022A0E04DB16B0F374ED4708ED53C5AC590056026C653974940CCBBF"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/5ecbcd9f2836216c87b9b8e858bd19828490af50.zip",
+  "checksum": "0749D6533113B18597FFDE9F02B3F2E359C27A565384AA601400BD5C1FB81D26"
 }
