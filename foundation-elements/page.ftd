@@ -34,7 +34,7 @@ optional caption title:
 optional body description:
 children content:
 ftd.length.px spacing: 0
-page-widths widths: $widths
+page-widths widths: $ds.widths
 ;; todo: is the follow reference to `.gap` correct?
 ds.gap margin: $ds.spaces.vertical-gap.large
 ftd.background.solid background: $ds.colors.background.base
