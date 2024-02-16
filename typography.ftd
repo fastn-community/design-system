@@ -21,6 +21,7 @@ ftd.resizing width: fill-container
 ftd.color color: $ds.colors.text-strong
 display-type align: inline
 optional ds.gap margin:
+optional string link:
 
 -- ftd.text: $heading-hero.text
 width: $heading-hero.width
@@ -33,6 +34,8 @@ text-align if { heading-hero.align == justify }: justify
 display if { heading-hero.align == inline }: inline
 display if { heading-hero.align == inline-block }: inline-block
 margin-bottom.px if { heading-hero.margin != NULL }: $heading-hero.margin.gap
+link: $heading-hero.link
+
 
 -- end: heading-hero
 
@@ -47,6 +50,7 @@ ftd.resizing width: fill-container
 ftd.color color: $ds.colors.text-strong
 display-type align: inline
 optional ds.gap margin:
+optional string link:
 ;; todo: style: uppercase, bold, code
 
 -- ftd.text: $heading-eyebrow.text
@@ -60,6 +64,7 @@ text-align if { heading-eyebrow.align == justify }: justify
 display if { heading-eyebrow.align == inline }: inline
 display if { heading-eyebrow.align == inline-block }: inline-block
 margin-bottom.px if { heading-eyebrow.margin != NULL }: $heading-eyebrow.margin.gap
+link: $heading-eyebrow.link
 
 -- end: heading-eyebrow
 
@@ -70,6 +75,7 @@ ftd.resizing width: fill-container
 display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
+optional string link:
 
 -- ftd.text: $heading-large.text
 width: $heading-large.width
@@ -82,6 +88,7 @@ text-align if { heading-large.align == justify }: justify
 display if { heading-large.align == inline }: inline
 display if { heading-large.align == inline-block }: inline-block
 margin-bottom.px if { heading-large.margin != NULL }: $heading-large.margin.gap
+link: $heading-large.link
 
 -- end: heading-large
 
@@ -92,6 +99,7 @@ ftd.resizing width: fill-container
 display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
+optional string link:
 
 -- ftd.text: $heading-medium.text
 width: $heading-medium.width
@@ -104,6 +112,7 @@ text-align if { heading-medium.align == justify }: justify
 display if { heading-medium.align == inline }: inline
 display if { heading-medium.align == inline-block }: inline-block
 margin-bottom.px if { heading-medium.margin != NULL }: $heading-medium.margin.gap
+link: $heading-medium.link
 
 -- end: heading-medium
 
@@ -114,6 +123,7 @@ ftd.resizing width: fill-container
 display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
+optional string link:
 
 -- ftd.text: $heading-small.text
 width: $heading-small.width
@@ -126,6 +136,7 @@ text-align if { heading-small.align == justify }: justify
 display if { heading-small.align == inline }: inline
 display if { heading-small.align == inline-block }: inline-block
 margin-bottom.px if { heading-small.margin != NULL }: $heading-small.margin.gap
+link: $heading-small.link
 
 -- end: heading-small
 
@@ -139,6 +150,7 @@ ftd.resizing width: fill-container
 display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
+optional string link:
 
 -- ftd.text: $heading-tiny.text
 width: $heading-tiny.width
@@ -151,6 +163,7 @@ text-align if { heading-tiny.align == justify }: justify
 display if { heading-tiny.align == inline }: inline
 display if { heading-tiny.align == inline-block }: inline-block
 margin-bottom.px if { heading-tiny.margin != NULL }: $heading-tiny.margin.gap
+link: $heading-tiny.link
 
 -- end: heading-tiny
 
@@ -162,6 +175,7 @@ margin-bottom.px if { heading-tiny.margin != NULL }: $heading-tiny.margin.gap
 -- component copy-large:
 caption or body text:
 ftd.color color: $ds.colors.text
+optional string link:
 display-type align: inline
 optional ds.gap margin:
 ftd.text-style list style:
@@ -177,6 +191,7 @@ display if { copy-large.align == inline }: inline
 display if { copy-large.align == inline-block }: inline-block
 margin-bottom.px if { copy-large.margin != NULL }: $copy-large.margin.gap
 style: $copy-large.style
+link: $copy-large.link
 
 -- end: copy-large
 
@@ -185,6 +200,7 @@ style: $copy-large.style
 -- component copy-regular:
 caption or body text:
 ftd.color color: $ds.colors.text
+optional string link:
 optional ds.gap margin:
 display-type align: inline
 ftd.resizing width: fill-container
@@ -204,6 +220,7 @@ display if { copy-regular.align == inline }: inline
 display if { copy-regular.align == inline-block }: inline-block
 width: $copy-regular.width
 style: $copy-regular.style
+link: $copy-regular.link
 
 -- end: copy-regular
 
@@ -214,6 +231,7 @@ style: $copy-regular.style
 -- component copy-small:
 caption or body text:
 ftd.color color: $ds.colors.text
+optional string link:
 display-type align: inline
 optional ds.gap margin:
 ftd.text-style list style:
@@ -229,6 +247,7 @@ display if { copy-small.align == inline }: inline
 display if { copy-small.align == inline-block }: inline-block
 margin-bottom.px if { copy-small.margin != NULL }: $copy-small.margin.gap
 style: $copy-small.style
+link: $copy-small.link
 
 -- end: copy-small
 
@@ -239,6 +258,7 @@ style: $copy-small.style
 -- component fine-print:
 caption or body text:
 ftd.color color: $ds.colors.text
+optional string link:
 display-type align: inline
 optional ds.gap margin:
 
@@ -252,6 +272,7 @@ text-align if { fine-print.align == justify }: justify
 display if { fine-print.align == inline }: inline
 display if { fine-print.align == inline-block }: inline-block
 margin-bottom.px if { fine-print.margin != NULL }: $fine-print.margin.gap
+link: $fine-print.link
 
 -- end: fine-print
 
