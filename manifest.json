@@ -172,8 +172,8 @@
     },
     "components/alert.ftd": {
       "name": "components/alert.ftd",
-      "checksum": "975BD1F9E920D08830EAC7EE516CB789A1393706B0A7A3A2EA9C83E0897E5358",
-      "size": 6555
+      "checksum": "943FC081A1F384843449C64101AB5E73396575EF9D26846F33A4019CF9D824ED",
+      "size": 6801
     },
     "components/button-group.ftd": {
       "name": "components/button-group.ftd",
@@ -182,13 +182,13 @@
     },
     "components/button.ftd": {
       "name": "components/button.ftd",
-      "checksum": "6A3F8094DDE3506FD9000D5DC2CA5519C0D9FF86ED086DC5FB418C7D00BA4816",
-      "size": 13797
+      "checksum": "C1A3062FF63F2F6D61BABEB8730A75C65647070DF6E0DDF07F6601C066E8C40B",
+      "size": 13796
     },
     "components/checkbox.ftd": {
       "name": "components/checkbox.ftd",
-      "checksum": "A0085651264C0363677E16D6493DA5D3C7C27B0AFBEB5C80D35029B17FED683C",
-      "size": 3057
+      "checksum": "03B741E9D8422FE62399392088B30E8B8CA98CB355B6773FB5E235C1771ACFEB",
+      "size": 3150
     },
     "components/footer.ftd": {
       "name": "components/footer.ftd",
@@ -202,18 +202,18 @@
     },
     "components/icon-button.ftd": {
       "name": "components/icon-button.ftd",
-      "checksum": "311EE7F79429241DE496E683451ABFD90E63A4CA2A22E435322FCC96D77212D5",
-      "size": 9946
+      "checksum": "AFE707079400585618DCE8C66DA8A8BB3DC8DF2337BF1070C800DC3F72C2187B",
+      "size": 9950
     },
     "components/input.ftd": {
       "name": "components/input.ftd",
-      "checksum": "F988BE437CE7EAEB7AE2CA2FCE40C4D86DE5041C5C603060F27D97DA7AE95E2C",
-      "size": 4980
+      "checksum": "D538EE9DFF7B0560FBF8F748711E6A044A4FFD66A9BF4D118861C500B757969D",
+      "size": 5038
     },
     "components/toggle.ftd": {
       "name": "components/toggle.ftd",
-      "checksum": "FFBFDF30CA180446D45A01C7F62072784FD3A35B16F8FF55AC10A4BD731C09F3",
-      "size": 4275
+      "checksum": "759A8B9CD7CDB7DA3E961F00C4D13B7B857A208C59D49902507E19EC445E30BC",
+      "size": 4338
     },
     "demos/code-snippet.ftd": {
       "name": "demos/code-snippet.ftd",
@@ -267,8 +267,8 @@
     },
     "foundation-elements/page.ftd": {
       "name": "foundation-elements/page.ftd",
-      "checksum": "9E2FFBA10D04BA2C4C09A5AA286A2E51CCEFDEAB4F7059F9402E45F326D52BFF",
-      "size": 1502
+      "checksum": "B224638EE74E3E2D8F9B297A7DDA5A4583A767710DE67B4D6995ADE4EAE611DC",
+      "size": 1504
     },
     "foundation-elements/radius.ftd": {
       "name": "foundation-elements/radius.ftd",
@@ -287,8 +287,8 @@
     },
     "foundation-elements/section-row.ftd": {
       "name": "foundation-elements/section-row.ftd",
-      "checksum": "4A58584FDE12E8EBE0128FA3CF023D16BFEE1BDE3602DDB783A274616F0BE271",
-      "size": 4292
+      "checksum": "B5E3FE43BD74C11F4A2B60FD6411AA9129FD9E285941B119705F43B740C621BF",
+      "size": 4293
     },
     "foundation-elements/shadow.ftd": {
       "name": "foundation-elements/shadow.ftd",
@@ -316,6 +316,6 @@
       "size": 10214
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/5ecbcd9f2836216c87b9b8e858bd19828490af50.zip",
-  "checksum": "0749D6533113B18597FFDE9F02B3F2E359C27A565384AA601400BD5C1FB81D26"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/3c9235d7ce4ec1cb5a9920cc0f3226dc32e2cc06.zip",
+  "checksum": "6BC8B00E23545752F83A84E0EB66317AE9B606086E5AB8BD035EFDCA3685F14B"
 }

@@ -121,10 +121,10 @@ height.fixed.px: 32
 align-content: center
 ;;link: $circle-text-button.link
 
--- ds.copy-regular: $circle-text-button.text
-color: $ds.colors.cta-primary.text
-align: center
-
+	-- ds.copy-regular: $circle-text-button.text
+	color: $ds.colors.cta-primary.text
+	align: center
+	
 -- end: ds.column
 
 -- end: circle-text-button
