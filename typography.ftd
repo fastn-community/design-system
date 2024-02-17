@@ -206,6 +206,7 @@ display-type align: inline
 ftd.resizing width: fill-container
 optional ftd.resizing height:
 ftd.text-style list style:
+optional ftd.white-space white-space:
 
 -- ftd.text: $copy-regular.text
 color: $copy-regular.color
@@ -216,6 +217,7 @@ text-align if { copy-regular.align == left }: start
 text-align if { copy-regular.align == right }: end
 text-align if { copy-regular.align == center }: center
 text-align if { copy-regular.align == justify }: justify
+white-space if { copy-regular.white-space != NULL }: $copy-regular.white-space
 display if { copy-regular.align == inline }: inline
 display if { copy-regular.align == inline-block }: inline-block
 width: $copy-regular.width

@@ -333,7 +333,7 @@ td {
     </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column ft_full_size"><comment data-id="4"></comment><div data-id="5" class="ft_column __w-3 __h-4 __c-5 __bgc-6 __g-7"><comment data-id="6"></comment><div data-id="7" class="ft_column __w-8 __mb-9 __bgc-10 __bgr-11 __bgp-12 __bgs-13 __bgi-14 __bgi-15 __jc-16 __ali-17"><div data-id="8" class="ft_column __w-18 __pl-19 __pr-20 __pt-21 __pb-22 __btw-23 __bbw-24 __blw-25 __brw-26 __btlr-27 __btrr-28 __bblr-29 __bbrr-30 __bc-31 __bgc-32 __bgr-33 __bgp-34 __bgs-35 __bgi-36 __bgi-37 __jc-39 __ali-40 __g-41"><div data-id="9" class="__rl-42 __w-43 __c-45 __d-47">Demos</div><div data-id="10" class="__rl-48 __w-49 __h-50 __c-52 __d-54"><ul>
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column ft_full_size"><comment data-id="4"></comment><div data-id="5" class="ft_column __w-3 __h-4 __c-5 __bgc-6 __g-7"><comment data-id="6"></comment><div data-id="7" class="ft_column __w-8 __mb-9 __bgc-10 __bgr-11 __bgp-12 __bgs-13 __bgi-14 __bgi-15 __jc-16 __ali-17"><div data-id="8" class="ft_column __w-18 __pl-19 __pr-20 __pt-21 __pb-22 __btw-23 __bbw-24 __blw-25 __brw-26 __btlr-27 __btrr-28 __bblr-29 __bbrr-30 __bc-31 __bgc-32 __bgr-33 __bgp-34 __bgs-35 __bgi-36 __bgi-37 __jc-39 __ali-40 __g-41"><div data-id="9" class="__rl-42 __w-43 __c-45 __d-47">Demos</div><div data-id="10" class="__rl-48 __w-49 __h-50 __c-52 __d-55"><ul>
 <li><a href="demos/dropbase/">Dropbase.io</a></li>
 <li><a href="demos/ft-old/">ft(old)</a></li>
 <li><a href="demos/code-snippet/">Card</a></li>
@@ -399,7 +399,7 @@ td {
 	body.dark .__c-52 { color: #B8B8B8 !important; }
 	.__c-52:visited { color: #7C7C7C !important; }
 	body.dark  .__c-52:visited { color: #B8B8B8 !important; }
-	.__d-54 { display: inline; }
+	.__d-55 { display: inline; }
     </style><style>
 
 
@@ -4263,6 +4263,7 @@ let fastn_community_github_io_design_system_typography__copy_regular = function 
       width: fastn_dom.Resizing.FillContainer,
       height: null,
       style: fastn.mutableList([]),
+      white_space: null,
     };
     inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
     __args__ = fastn_utils.getArgs(__args__, args);
@@ -4280,6 +4281,15 @@ let fastn_community_github_io_design_system_typography__copy_regular = function 
     }
     ), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Color, __args__.color, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.WhiteSpace, fastn.formula([__args__.white_space,
+    __args__.white_space], function () {
+      if (function () {
+        return (fastn_utils.getStaticValue(__args__.white_space) !== null);
+      }()) {
+        return __args__.white_space;
+      }
+    }
+    ), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Link, __args__.link, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn.formula([__args__.align,
     global.fastn_community_github_io_design_system_typography__display_type.get("left"),
