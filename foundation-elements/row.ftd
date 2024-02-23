@@ -8,6 +8,7 @@ optional caption title:
 ds.hv inset: $ds.spaces.inset-square.zero
 ds.gap spacing: $ds.spaces.horizontal-gap.zero
 ftd.resizing width: fill-container
+optional ftd.resizing max-width:
 ftd.align align-content: center
 children content:
 optional string link:
@@ -25,6 +26,7 @@ optional ftd.shadow shadow:
 
 -- ftd.row:
 width: $row.width
+max-width.fixed.px: $row.max-width
 height: $row.height
 padding-vertical.px: $row.inset.vertical
 padding-horizontal.px: $row.inset.horizontal
