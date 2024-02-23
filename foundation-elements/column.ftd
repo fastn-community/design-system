@@ -6,7 +6,7 @@
 -- component column:
 optional caption title:
 ds.hv inset: $ds.spaces.inset-square.zero
-ds.gap spacing: $ds.spaces.horizontal-gap.medium
+ds.gap spacing: $ds.spaces.horizontal-gap.zero
 ftd.resizing width: fill-container
 children content:
 ftd.align align-content: center

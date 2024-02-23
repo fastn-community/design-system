@@ -9,12 +9,12 @@ optional caption title:
 ds.flush flush: to-header
 children content:
 ;; todo: is the follow reference to `design-system` correct?
-ds.gap spacing: $ds.spaces.vertical-gap.large
+ds.gap spacing: $ds.spaces.vertical-gap.zero
 optional ftd.background outer-background:
 optional ftd.background inner-background:
 ;; todo: is the follow reference to `design-system` correct?
-ds.hv inset: $ds.spaces.inset-wide.medium
-ds.gap margin: $ds.spaces.vertical-gap.large
+ds.hv inset: $ds.spaces.inset-square.zero
+ds.gap margin: $ds.spaces.vertical-gap.zero
 ftd.align align-content: center
 ds.element-radius radius: $ds.radius.medium
 ftd.color border-color: $ds.colors.border
@@ -31,8 +31,8 @@ margin-bottom.px: $section-column.margin.gap
 	width if { section-column.flush == full }: fill-container
 	max-width.fixed if { section-column.flush == narrow }: $ds.widths.narrow
 	max-width.fixed if { section-column.flush == wide }: $ds.widths.wide
-	width.fixed: $ds.widths.regular
-	width if { ftd.device == "mobile" }: fill-container
+	max-width.fixed: $ds.widths.regular
+	width: fill-container
 	children: $section-column.content
 	spacing if { section-column.spacing.gap == spaces.HACK-SPACE-BETWEEN-MAGIC-NUMBER }: space-between
 	spacing.fixed.px: $section-column.spacing.gap
