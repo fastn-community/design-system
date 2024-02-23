@@ -192,8 +192,8 @@
     },
     "components/button.ftd": {
       "name": "components/button.ftd",
-      "checksum": "C1A3062FF63F2F6D61BABEB8730A75C65647070DF6E0DDF07F6601C066E8C40B",
-      "size": 13796
+      "checksum": "E534F6E37EA74B5C0ECCF987325D5A9ED66055DB8C3E67BACEA2EDD53EB7E2C0",
+      "size": 13802
     },
     "components/checkbox.ftd": {
       "name": "components/checkbox.ftd",
@@ -322,10 +322,10 @@
     },
     "typography.ftd": {
       "name": "typography.ftd",
-      "checksum": "DFE912AE24539FD0E0E377464D9472C0ACAD02427B3B11EE69CB126887CF0F1D",
-      "size": 10331
+      "checksum": "49B5794C75C81871C7D0FB897BACCDC4AB80B4545F4F2A109E9974309A50A43B",
+      "size": 10310
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/fb936fdc0e2a32c0b1c8c40ed577af4aab478fd0.zip",
-  "checksum": "6F4AC51D6FF38F156ED4D9DFF4AC826652B9F99CB1996A29E697831EC51F9213"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/67142a249adfcff2b9ef8454959deb6c7d28fcdf.zip",
+  "checksum": "040D58FDBE459623CD1D2C0C7E045968938B182D09FA30E1A65190C5F5DD55AE"
 }

@@ -68,7 +68,7 @@ boolean $hover: false
 button-width width: default
 boolean enabled: true
 button-size size: medium
-button-radius radius: none
+button-radius radius: curved
 button-variant variant: solid
 boolean rounded: false
 
@@ -115,7 +115,7 @@ boolean $hover: false
 button-width width: default
 boolean enabled: true
 button-size size: medium
-button-radius radius: none
+button-radius radius: curved
 button-variant variant: solid
 boolean rounded: false
 
@@ -248,7 +248,7 @@ boolean $hover: false
 button-width width: default
 boolean enabled: true
 button-size size: medium
-button-radius radius: none
+button-radius radius: curved
 button-variant variant: solid
 boolean rounded: false
 
