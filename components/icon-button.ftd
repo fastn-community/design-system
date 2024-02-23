@@ -275,9 +275,9 @@ radius if { button-wrapper.radius == none }: $ds.radius.zero
 radius if { button-wrapper.radius == curved }: $ds.radius.medium
 border if { button-wrapper.kind == secondary }: $ds.borders.uniform.small
 border-color if { button-wrapper.kind == secondary }: $ds.colors.cta-secondary.border
-inset if { button-wrapper.size == small }: $ds.spaces.inset-wide.small
-inset if { button-wrapper.size == medium }: $ds.spaces.inset-wide.medium
-inset if { button-wrapper.size == large }: $ds.spaces.inset-wide.large
+inset if { button-wrapper.size == small && button-wrapper.kind != tertiary }: $ds.spaces.inset-wide.small
+inset if { button-wrapper.size == medium && button-wrapper.kind != tertiary }: $ds.spaces.inset-wide.medium
+inset if { button-wrapper.size == large && button-wrapper.kind != tertiary }: $ds.spaces.inset-wide.large
 align-content: center
 background.solid if { button-wrapper.hover }: $ds.colors.background.step-2
 $on-mouse-enter$: $ftd.set-bool($a = $button-wrapper.hover, v = true)
