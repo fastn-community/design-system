@@ -17,7 +17,7 @@
 
 -- component heading-hero:
 caption text:
-ftd.resizing width: fill-container
+ftd.resizing width: hug-content
 ftd.color color: $ds.colors.text-strong
 display-type align: inline
 optional ds.gap margin:
@@ -46,7 +46,7 @@ link: $heading-hero.link
 
 -- component heading-eyebrow:
 caption text:
-ftd.resizing width: fill-container
+ftd.resizing width: hug-content
 ftd.color color: $ds.colors.text-strong
 display-type align: inline
 optional ds.gap margin:
@@ -71,7 +71,7 @@ link: $heading-eyebrow.link
 
 -- component heading-large:
 caption text:
-ftd.resizing width: fill-container
+ftd.resizing width: hug-content
 display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
@@ -95,7 +95,7 @@ link: $heading-large.link
 
 -- component heading-medium:
 caption text:
-ftd.resizing width: fill-container
+ftd.resizing width: hug-content
 display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
@@ -119,7 +119,7 @@ link: $heading-medium.link
 
 -- component heading-small:
 caption text:
-ftd.resizing width: fill-container
+ftd.resizing width: hug-content
 display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
@@ -146,7 +146,7 @@ link: $heading-small.link
 
 -- component heading-tiny:
 caption text:
-ftd.resizing width: fill-container
+ftd.resizing width: hug-content
 display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
@@ -203,7 +203,7 @@ ftd.color color: $ds.colors.text
 optional string link:
 optional ds.gap margin:
 display-type align: inline
-ftd.resizing width: fill-container
+ftd.resizing width: hug-content
 optional ftd.resizing height:
 ftd.text-style list style:
 optional ftd.white-space white-space:
