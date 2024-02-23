@@ -11,7 +11,7 @@ ds.gap spacing: $ds.spaces.horizontal-gap.zero
 optional ftd.background outer-background:
 optional ftd.background inner-background:
 ds.hv inset: $ds.spaces.inset-square.zero
-ds.gap margin: $ds.spaces.vertical-gap.zero
+ds.gap margin: $ds.spaces.vertical-gap.large
 boolean wrap: false
 ftd.align align-content: center
 ds.border-data border: $ds.borders.uniform.zero
