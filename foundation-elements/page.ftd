@@ -39,6 +39,7 @@ page-widths widths: $ds.widths
 ds.gap margin: $ds.spaces.vertical-gap.large
 ftd.background.solid background: $ds.colors.background.base
 boolean theme-switcher: false
+boolean fastn-badge: true
 
 -- ftd.document:
 title: $page.title
@@ -48,6 +49,16 @@ types: $ds.types
 
 	-- dms.dark-mode-switcher-float:
 	if: { page.theme-switcher }
+
+	-- ftd.image:
+	if: { page.fastn-badge }
+	src: $assets.files.assets.powered-by.svg
+	anchor: window
+	right.px: 0
+	bottom.px: 0
+	z-index: 99999999999999
+	link: https://fastn.com/
+	open-in-new-tab: true
 	
 	-- ftd.column:
 	width: fill-container

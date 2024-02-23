@@ -145,6 +145,16 @@
       "checksum": "E81B324FCD8ABCEE00AA1E83ECA2AAFC6B91BCB4EEDEF64F7F05C3527312A22C",
       "size": 7625
     },
+    "assets/powered-by.png": {
+      "name": "assets/powered-by.png",
+      "checksum": "20404E6AAED557CF4EFC7A8EDB70D6E5C751DFB756024675AAB50DAF4EADB31B",
+      "size": 2999
+    },
+    "assets/powered-by.svg": {
+      "name": "assets/powered-by.svg",
+      "checksum": "AF53213A694EA60A37905CCF0B62C29DF6D452182407CE64B730B852CF057FFD",
+      "size": 14034
+    },
     "assets/star.svg": {
       "name": "assets/star.svg",
       "checksum": "7774F60F53D680F2CC43E234249C09440D338092FF79A710083916E82C260A77",
@@ -247,13 +257,13 @@
     },
     "foundation-elements/column.ftd": {
       "name": "foundation-elements/column.ftd",
-      "checksum": "C92FC1C90E10257DFBE746C84FB3C5A64A71B357410958940B00D80DED60A62F",
-      "size": 3336
+      "checksum": "9AE66AC138F6D8F8B1281E7E91D53BF1CCB8E2146188F8C093B30E148ADEF50C",
+      "size": 3334
     },
     "foundation-elements/container.ftd": {
       "name": "foundation-elements/container.ftd",
-      "checksum": "D4E2A46474A2E6ED8C7C85C6C2CE57332BAB140CB7CDEE180C3DD89725D01488",
-      "size": 4466
+      "checksum": "16DF7A3990BADC4BBF99F2837005CD942ABBA3859448F28AA6E1615C1901F9D1",
+      "size": 4462
     },
     "foundation-elements/floater.ftd": {
       "name": "foundation-elements/floater.ftd",
@@ -267,8 +277,8 @@
     },
     "foundation-elements/page.ftd": {
       "name": "foundation-elements/page.ftd",
-      "checksum": "B224638EE74E3E2D8F9B297A7DDA5A4583A767710DE67B4D6995ADE4EAE611DC",
-      "size": 1504
+      "checksum": "B10FCDCB5844B584CDA8EE46551C3395BAEAD46077576CDF11A985408AC593A8",
+      "size": 1731
     },
     "foundation-elements/radius.ftd": {
       "name": "foundation-elements/radius.ftd",
@@ -277,18 +287,18 @@
     },
     "foundation-elements/row.ftd": {
       "name": "foundation-elements/row.ftd",
-      "checksum": "C7F465C62979B61E2DEAD78CBC19380D3B8CE30326AF439134D069AB78E5D946",
-      "size": 3643
+      "checksum": "2E0B84746BAE9870A5785E11AD200B616339532D5A9F383FDB5E8F9FF5755AE1",
+      "size": 3641
     },
     "foundation-elements/section-column.ftd": {
       "name": "foundation-elements/section-column.ftd",
-      "checksum": "B24C2460622A314853589BEDF29D1A1BA34E8276C7F542F72D99B37B48373472",
-      "size": 4140
+      "checksum": "C6CC648E8912E85008657AD555EFE065E685F3D7DFFA31187684CB3F55EA7CA0",
+      "size": 4112
     },
     "foundation-elements/section-row.ftd": {
       "name": "foundation-elements/section-row.ftd",
-      "checksum": "B5E3FE43BD74C11F4A2B60FD6411AA9129FD9E285941B119705F43B740C621BF",
-      "size": 4293
+      "checksum": "ACFFA4F9176BB963BE0039F82F56CAED288A4B2CC1BC04BFCD76AD28CB9C5728",
+      "size": 4319
     },
     "foundation-elements/shadow.ftd": {
       "name": "foundation-elements/shadow.ftd",
@@ -316,6 +326,6 @@
       "size": 10331
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/bdc4c50a36ba9a135bd0c0ff08809b6eb954004c.zip",
-  "checksum": "B2F8E2698FD58A9FA8C84CD2390EF4D3177DCEFF9700924B893AFBF451BCD06E"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/fb936fdc0e2a32c0b1c8c40ed577af4aab478fd0.zip",
+  "checksum": "6F4AC51D6FF38F156ED4D9DFF4AC826652B9F99CB1996A29E697831EC51F9213"
 }

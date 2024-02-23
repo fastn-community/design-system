@@ -7,11 +7,11 @@ optional caption title:
 ds.hv inset: $ds.spaces.inset-square.zero
 ftd.resizing width: fill-container
 optional ftd.background background:
-ds.element-radius radius: $ds.radius.medium
+ds.element-radius radius: $ds.radius.zero
 children content:
 optional ftd.resizing height:
-ds.gap margin-vertical: $ds.spaces.vertical-gap.small
-ds.gap margin-horizontal: $ds.spaces.vertical-gap.small
+ds.gap margin-vertical: $ds.spaces.vertical-gap.zero
+ds.gap margin-horizontal: $ds.spaces.vertical-gap.zero
 ds.border-data border: $ds.borders.uniform.zero
 ftd.color border-color: $ds.colors.border
 
