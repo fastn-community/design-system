@@ -29,7 +29,8 @@ margin-bottom.px: $section-row.margin.gap
 	width if { section-row.flush == full }: fill-container
 	max-width.fixed if { section-row.flush == narrow }: $ds.widths.narrow
 	max-width.fixed if { section-row.flush == wide }: $ds.widths.wide
-	width.fixed: $ds.widths.regular
+	max-width.fixed: $ds.widths.regular
+	width: fill-container
 	children: $section-row.content
 	align-content: $section-row.align-content
 	link: $section-row.link
