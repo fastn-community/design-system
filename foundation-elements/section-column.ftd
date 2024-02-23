@@ -14,7 +14,7 @@ optional ftd.background outer-background:
 optional ftd.background inner-background:
 ;; todo: is the follow reference to `design-system` correct?
 ds.hv inset: $ds.spaces.inset-square.zero
-ds.gap margin: $ds.spaces.vertical-gap.zero
+ds.gap margin: $ds.spaces.vertical-gap.extra-extra-large
 ftd.align align-content: center
 ds.element-radius radius: $ds.radius.medium
 ftd.color border-color: $ds.colors.border
