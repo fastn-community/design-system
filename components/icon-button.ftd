@@ -119,7 +119,7 @@ radius: $ds.radius.round
 width.fixed.px: 32
 height.fixed.px: 32
 align-content: center
-;;link: $circle-text-button.link
+link: $circle-text-button.link
 
 	-- ds.copy-regular: $circle-text-button.text
 	color: $ds.colors.cta-primary.text
