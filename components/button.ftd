@@ -89,11 +89,11 @@ spacing: $ds.spaces.horizontal-gap.small
 ;; width if { primary-button.width == default }: hug-content
 width.fixed.px if { primary-button.width == wide }: 200
 width if { primary-button.width == full }: fill-container
+link: $primary-button.link
 
 	-- ds.link:
 	text: $primary-button.title
 	color: $ds.colors.cta-primary.text
-	link: $primary-button.link
 	
 -- end: ds.row
 
@@ -138,11 +138,11 @@ width.fixed.px if { secondary-button.width == wide }: 200
 width if { secondary-button.width == full }: fill-container
 border: $ds.borders.uniform.small
 border-color: $ds.colors.cta-secondary.border
+link: $secondary-button.link
 
 	-- ds.link:
 	text: $secondary-button.title
 	color: $ds.colors.cta-secondary.text
-	link: $secondary-button.link
 	
 -- end: ds.row
 
@@ -178,11 +178,11 @@ width if { tertiary-button.width == full }: fill-container
 inset if { tertiary-button.size == small }: $ds.spaces.inset-wide.small
 inset if { tertiary-button.size == medium }: $ds.spaces.inset-wide.medium
 inset if { tertiary-button.size == large }: $ds.spaces.inset-wide.large
+link: $tertiary-button.link
 
 	-- ds.link:
 	text: $tertiary-button.title
 	color: $ds.colors.cta-tertiary.text
-	link: $tertiary-button.link
 	
 -- end: ds.row
 
@@ -221,11 +221,11 @@ border if { link-button.hover }: $ds.borders.bottom.small
 border-color if { link-button.hover }: $ds.colors.accent.primary
 $on-mouse-enter$: $ftd.set-bool($a = $link-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $link-button.hover, v = false)
+link: $link-button.link
 
 	-- ds.link:
 	text: $link-button.title
 	color: $ds.colors.accent.primary
-	link: $link-button.link
 	
 -- end: ds.row
 
@@ -269,11 +269,11 @@ spacing: $ds.spaces.horizontal-gap.small
 ;; width if { danger-button.width == default }: hug-content
 width.fixed.px if { danger-button.width == wide }: 200
 width if { danger-button.width == full }: fill-container
+link: $danger-button.link
 
 	-- ds.link:
 	text: $danger-button.title
 	color: $ds.colors.cta-danger.text
-	link: $danger-button.link
 	
 -- end: ds.row
 
