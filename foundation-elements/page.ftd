@@ -30,7 +30,7 @@ wide.px: 1000
 
 
 -- component page:
-optional caption title:
+caption title:
 optional body description:
 children content:
 ftd.length.px spacing: 0
@@ -92,7 +92,7 @@ narrow.px: 300
 wide.px: 1200
 
 
--- ds.page:
+-- ds.page: Demo
 ;; widths: $test-widths
 
 -- demos.demo:

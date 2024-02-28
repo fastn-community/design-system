@@ -6,7 +6,7 @@
 -- component row:
 optional caption title:
 ds.hv inset: $ds.spaces.inset-square.zero
-ds.gap spacing: $ds.spaces.horizontal-gap.zero
+ds.gap spacing: $ds.spaces.horizontal-gap.medium
 ftd.resizing width: fill-container
 optional ftd.resizing max-width:
 ftd.align align-content: center
@@ -69,7 +69,7 @@ shadow: $row.shadow
 
 
 
--- ds.page:
+-- ds.page: Row
 
 -- ds.section-column:
 

@@ -192,8 +192,8 @@
     },
     "components/button.ftd": {
       "name": "components/button.ftd",
-      "checksum": "E534F6E37EA74B5C0ECCF987325D5A9ED66055DB8C3E67BACEA2EDD53EB7E2C0",
-      "size": 13802
+      "checksum": "B73367FD70591CB1A8EB0C21083E2D4EAD466E918183836BD75185566C3BC078",
+      "size": 14101
     },
     "components/checkbox.ftd": {
       "name": "components/checkbox.ftd",
@@ -212,8 +212,8 @@
     },
     "components/icon-button.ftd": {
       "name": "components/icon-button.ftd",
-      "checksum": "7BE1B62DE5CC48672F57F3ECFB73783529BDD3008A57CA31E64BF74A2785538B",
-      "size": 10055
+      "checksum": "99B1978A212B79503FBFE0BBF20223999B359067A7166620BC873137D8666D2E",
+      "size": 10053
     },
     "components/input.ftd": {
       "name": "components/input.ftd",
@@ -222,13 +222,13 @@
     },
     "components/toggle.ftd": {
       "name": "components/toggle.ftd",
-      "checksum": "759A8B9CD7CDB7DA3E961F00C4D13B7B857A208C59D49902507E19EC445E30BC",
-      "size": 4338
+      "checksum": "A1DEA8C311755A881C6AF7E6581E4CAB46C60375F205D180CDE075980E2C4D7C",
+      "size": 4352
     },
     "demos/code-snippet.ftd": {
       "name": "demos/code-snippet.ftd",
-      "checksum": "1727D74C7E53AA4C9674DF95C5DA0BC9761A110B79C90450368E7AD2C31975EB",
-      "size": 2013
+      "checksum": "DB4B957FABA9B5721ADA2B9BC8A506DCD8FFFE2DDE114A2BB53D5AB4ADB8DD19",
+      "size": 2018
     },
     "demos/dropbase.ftd": {
       "name": "demos/dropbase.ftd",
@@ -242,8 +242,8 @@
     },
     "demos/index.ftd": {
       "name": "demos/index.ftd",
-      "checksum": "667ACFB0FB665574EB99FB9E0C14B802FB6821A58695F67FA68BDEDEEF42B988",
-      "size": 294
+      "checksum": "6B1460249DB7DDA46B65EF19972D0B7CCB1EA39F81CE8598BBDFAE09442DB297",
+      "size": 299
     },
     "favicon.ico": {
       "name": "favicon.ico",
@@ -257,13 +257,13 @@
     },
     "foundation-elements/column.ftd": {
       "name": "foundation-elements/column.ftd",
-      "checksum": "AEAB988085CB3D2866184C6FD40F04764516AD2A86EE2FCC2130F7976ACC6403",
-      "size": 3405
+      "checksum": "9356330282AF34D6D97F942F4B9243BEB8105DAE1EFFECF1F4DFC65CDF274185",
+      "size": 3412
     },
     "foundation-elements/container.ftd": {
       "name": "foundation-elements/container.ftd",
-      "checksum": "16DF7A3990BADC4BBF99F2837005CD942ABBA3859448F28AA6E1615C1901F9D1",
-      "size": 4462
+      "checksum": "4AC232064A2C73AB42D3A0A6F4D069F79129C07E11077030658EF085299A8767",
+      "size": 4472
     },
     "foundation-elements/floater.ftd": {
       "name": "foundation-elements/floater.ftd",
@@ -277,8 +277,8 @@
     },
     "foundation-elements/page.ftd": {
       "name": "foundation-elements/page.ftd",
-      "checksum": "B10FCDCB5844B584CDA8EE46551C3395BAEAD46077576CDF11A985408AC593A8",
-      "size": 1731
+      "checksum": "CCD75EE9AC03CF39C493F348DB544368A310231F09E1850F61C2A1E5EB329569",
+      "size": 1727
     },
     "foundation-elements/radius.ftd": {
       "name": "foundation-elements/radius.ftd",
@@ -287,18 +287,18 @@
     },
     "foundation-elements/row.ftd": {
       "name": "foundation-elements/row.ftd",
-      "checksum": "2B0319EE5EEA1344C8026B35CEAC2B3A95EAE57BA9752A901CD1CDC5A64A8C81",
-      "size": 3709
+      "checksum": "E3A8DD850FEE67CA8D0C9D8550459AD571538AACD8A8337BDB484FA6E53CC3BE",
+      "size": 3715
     },
     "foundation-elements/section-column.ftd": {
       "name": "foundation-elements/section-column.ftd",
-      "checksum": "F6712335487ECCC92BAD7C6E09BF50D24FF2512118F7101817E729444E5565DD",
-      "size": 4125
+      "checksum": "41CB6A69C6040563A134CDB270384296AF7ED67A38A215F930A6FEF6C5C746F1",
+      "size": 4142
     },
     "foundation-elements/section-row.ftd": {
       "name": "foundation-elements/section-row.ftd",
-      "checksum": "41984048BB9798ED058B52739A465F147BD3D25FF5452D99305673ECB2D191A0",
-      "size": 4332
+      "checksum": "6E34B0FE017A63FA34FDD7C3CA2616F7F47B566591604D33F94ABCB9D58220E1",
+      "size": 4346
     },
     "foundation-elements/shadow.ftd": {
       "name": "foundation-elements/shadow.ftd",
@@ -312,8 +312,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "8F6CB05E85156675C1EF5405F8713BA7BECCE14FB871593789E2BB589B2B4009",
-      "size": 4501
+      "checksum": "3BC83EA7A967CE462BDB40E1B16B47F938BB0A0362D4F3F5CC5C776ECB31B002",
+      "size": 4515
     },
     "slide.ftd": {
       "name": "slide.ftd",
@@ -326,6 +326,6 @@
       "size": 10310
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/9b37e92207f401186c9dd8c23d30a74a5cae26c5.zip",
-  "checksum": "BA54769CDA081F74AD20C3A3102B9CA67147F922948E3C1A7072529E64728D5B"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/043ace8f05839b5c923e36515f287841714940c5.zip",
+  "checksum": "6BC9E5DDBE3644A801E16643C01114B6D4D4B9C670632C73D69F8845C7EB0EE5"
 }
