@@ -87,7 +87,7 @@ exposing: heading-large, copy-regular
 
 
 
--- ds.page:
+-- ds.page: Design System
 widths: $narrow-widths
 
 -- ds.section-column:

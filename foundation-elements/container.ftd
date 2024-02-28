@@ -51,7 +51,7 @@ border-color: $container.border-color
 
 
 
--- ds.page:
+-- ds.page: Container
 
 -- ds.section-column:
 

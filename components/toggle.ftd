@@ -104,7 +104,7 @@ inset: $ds.spaces.inset-wide.small
 
 
 
--- ds.page:
+-- ds.page: Toggle Button
 
 -- ds.section-column:
  flush: full

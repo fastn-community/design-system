@@ -6,7 +6,7 @@
 -- component column:
 optional caption title:
 ds.hv inset: $ds.spaces.inset-square.zero
-ds.gap spacing: $ds.spaces.horizontal-gap.zero
+ds.gap spacing: $ds.spaces.vertical-gap.medium
 ftd.resizing width: fill-container
 optional ftd.resizing max-width:
 children content:
@@ -65,7 +65,7 @@ shadow: $column.shadow
 
 
 
--- ds.page:
+-- ds.page: Column
 
 -- ds.section-column:
 
