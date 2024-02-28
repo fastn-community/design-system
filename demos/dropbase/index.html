@@ -549,7 +549,7 @@ additional queries or functions. Build admin panels in seconds.</div><video data
 	body.dark  .__c-182:visited { color: #B8B8B8 !important; }
 	.__ta-184 { text-align: center; }
 	.__g-186 { gap: 8px; }
-	.__w-187 { width: 100%; }
+	.__w-187 { width: fit-content; }
 	.__h-188 { height: null; }
 	.__pl-189 { padding-left: 16px; }
 	.__pr-190 { padding-right: 16px; }
@@ -1390,7 +1390,7 @@ additional queries or functions. Build admin panels in seconds.</div><video data
 	.__c-960:visited { color: #7C7C7C !important; }
 	body.dark  .__c-960:visited { color: #B8B8B8 !important; }
 	.__ta-961 { text-align: center; }
-	.__w-963 { width: 100%; }
+	.__w-963 { width: fit-content; }
 	.__h-964 { height: null; }
 	.__pl-965 { padding-left: 16px; }
 	.__pr-966 { padding-right: 16px; }
@@ -5904,11 +5904,17 @@ let fastn_community_github_io_design_system_components_button__primary_button = 
       }
       ),
       spacing: global.fastn_community_github_io_design_system__spaces.get("horizontal_gap").get("small"),
-      width: fastn.formula([__args__.width,
+      width: fastn.formula([global.fastn_community_github_io_design_system_components_button__button_width.get("default"),
+      __args__.width,
+      __args__.width,
       global.fastn_community_github_io_design_system_components_button__button_width.get("wide"),
       global.fastn_community_github_io_design_system_components_button__button_width.get("full"),
       __args__.width], function () {
         if (function () {
+          return (fastn_utils.getStaticValue(__args__.width) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_width.get("default")));
+        }()) {
+          return fastn_dom.Resizing.HugContent;
+        } else if (function () {
           return (fastn_utils.getStaticValue(__args__.width) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_button__button_width.get("wide")));
         }()) {
           return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(200));
