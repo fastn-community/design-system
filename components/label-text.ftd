@@ -26,15 +26,7 @@ if: { label-text.placement == horizontal }
 spacing: $ds.spaces.horizontal-gap.small
 align-content: left
 
--- ds.row:
-spacing: $ds.spaces.horizontal-gap.extra-small
-align-content: left
-width: hug-content
-
 -- ds.heading-tiny: $label-text.title
--- ds.heading-tiny: :
-
--- end: ds.row
 
 -- ds.copy-regular: $label-text.value
 
@@ -42,17 +34,10 @@ width: hug-content
 
 -- ds.column:
 if: { label-text.placement == vertical }
-spacing: $ds.spaces.vertical-gap.small
-align-content: left
-
--- ds.row:
-spacing: $ds.spaces.horizontal-gap.small
+spacing: $ds.spaces.vertical-gap.extra-extra-small
 align-content: left
 
 -- ds.heading-tiny: $label-text.title
--- ds.heading-tiny: :
-
--- end: ds.row
 
 -- ds.copy-regular: $label-text.value
 
@@ -86,11 +71,11 @@ align-content: left
 
 	-- ds.rendered:
 		
-		\-- label-text: Create At
+		\-- label-text: Create At:
 		value: 2 Hours
 		placement: horizontal
 		
-			-- label-text: Create At
+			-- label-text: Create At:
 			value: 2 Hours
 			placement: horizontal
 			
@@ -98,11 +83,11 @@ align-content: left
 
 		-- ds.rendered:
 		
-		\-- label-text: Create At
+		\-- label-text: Create At:
 		value: 2 Hours
 		placement: vertical
 		
-			-- label-text: Create At
+			-- label-text: Create At:
 			value: 2 Hours
 			placement: vertical
 			
