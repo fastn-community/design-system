@@ -7,7 +7,7 @@
 optional caption title:
 ds.flush flush: to-header
 children content:
-ds.gap spacing: $ds.spaces.horizontal-gap.zero
+ds.gap spacing: $ds.spaces.horizontal-gap.medium
 optional ftd.background outer-background:
 optional ftd.background inner-background:
 ds.hv inset: $ds.spaces.inset-square.zero
@@ -70,7 +70,7 @@ margin-bottom.px: $section-row.margin.gap
 
 
 
--- ds.page:
+-- ds.page: Section Row
 
 -- ds.section-column:
 
