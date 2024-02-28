@@ -31,8 +31,8 @@ spacing: $ds.spaces.horizontal-gap.extra-small
 align-content: left
 width: hug-content
 
--- ds.copy-regular: $label-text.title
--- ds.copy-regular: :
+-- ds.heading-tiny: $label-text.title
+-- ds.heading-tiny: :
 
 -- end: ds.row
 
@@ -49,8 +49,8 @@ align-content: left
 spacing: $ds.spaces.horizontal-gap.small
 align-content: left
 
--- ds.copy-regular: $label-text.title
--- ds.copy-regular: :
+-- ds.heading-tiny: $label-text.title
+-- ds.heading-tiny: :
 
 -- end: ds.row
 
