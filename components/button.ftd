@@ -11,7 +11,7 @@
 
 -- end: button-kind
 
-;; These are variants
+These are variants
 
 -- or-type button-variant:
 
@@ -86,7 +86,7 @@ align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $primary-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $primary-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
-;; width if { primary-button.width == default }: hug-content
+width if { primary-button.width == default }: hug-content
 width.fixed.px if { primary-button.width == wide }: 200
 width if { primary-button.width == full }: fill-container
 link: $primary-button.link
@@ -134,7 +134,7 @@ align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $secondary-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $secondary-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
-;; width if { secondary-button.width == default }: hug-content
+width if { secondary-button.width == default }: hug-content
 width.fixed.px if { secondary-button.width == wide }: 200
 width if { secondary-button.width == full }: fill-container
 border: $ds.borders.uniform.small
@@ -174,7 +174,7 @@ background.solid if { tertiary-button.hover && tertiary-button.variant != link }
 $on-mouse-enter$: $ftd.set-bool($a = $tertiary-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $tertiary-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
-;; width if { tertiary-button.width == default }: hug-content
+width if { tertiary-button.width == default }: hug-content
 width.fixed.px if { tertiary-button.width == wide }: 200
 width if { tertiary-button.width == full }: fill-container
 inset if { tertiary-button.size == small }: $ds.spaces.inset-wide.small
@@ -214,7 +214,7 @@ boolean $hover: false
 -- ds.row:
 align-content: center
 spacing: $ds.spaces.horizontal-gap.small
-;; width if { link-button.width == default }: hug-content
+width if { link-button.width == default }: hug-content
 width.fixed.px if { link-button.width == wide }: 200
 width if { link-button.width == full }: fill-container
 inset if { link-button.size == small }: $ds.spaces.inset-wide.small
@@ -270,7 +270,7 @@ align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $danger-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $danger-button.hover, v = false)
 spacing: $ds.spaces.horizontal-gap.small
-;; width if { danger-button.width == default }: hug-content
+width if { danger-button.width == default }: hug-content
 width.fixed.px if { danger-button.width == wide }: 200
 width if { danger-button.width == full }: fill-container
 link: $danger-button.link
