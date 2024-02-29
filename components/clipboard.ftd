@@ -1,0 +1,90 @@
+-- import: fastn-community.github.io/design-system/foundation-elements/spaces
+-- import: fastn-community.github.io/design-system/foundation-elements/borders
+
+
+
+
+-- component copy-to-clipboard-text:
+caption title:
+optional ftd.image-src icon:
+boolean $hover: false
+boolean $copy: false
+
+-- ds.section-row:
+margin: $ds.spaces.vertical-gap.zero
+$on-mouse-enter$: $ftd.set-bool($a = $copy-to-clipboard-text.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $copy-to-clipboard-text.hover, v = false)
+align-content: left
+
+-- ds.column:
+width: hug-content
+spacing: $ds.spaces.vertical-gap.small
+align-content: left
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.large
+align-content: left
+
+-- ds.heading-tiny: $copy-to-clipboard-text.title
+
+-- ftd.image:
+src: $assets.files.assets.copy.svg
+src if { copy-to-clipboard-text.copy }: $assets.files.assets.tick.svg
+width.fixed.px: 18
+$on-click$: $ftd.toggle($a = $copy-to-clipboard-text.copy)
+
+-- end: ds.row
+
+-- ds.row:
+if: { copy-to-clipboard-text.hover || copy-to-clipboard-text.copy }
+inset: $ds.spaces.inset-square.small
+;;width: hug-content
+background.solid: $ds.colors.background.step-1
+
+-- ds.fine-print: Copy to clipboard
+if: { copy-to-clipboard-text.hover && !copy-to-clipboard-text.copy }
+
+-- ds.fine-print: Copied
+if: { copy-to-clipboard-text.copy }
+
+-- end: ds.row
+
+-- end: ds.column
+
+-- end: ds.section-row
+
+-- end: copy-to-clipboard-text
+
+
+
+
+
+-- ds.page: Copy to clipboard
+
+-- ds.section-column: 
+ flush: full
+ align-content: center
+
+	-- ds.row:
+	align-content: left
+	
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: /
+		
+		-- ds.heading-hero: Copy to clipboard
+		width: hug-content
+		
+	-- end: ds.row
+
+	-- ds.rendered:
+		
+		\-- copy-to-clipboard-text: Copy to clipboard
+		
+			-- copy-to-clipboard-text: Copy to clipboard
+			
+		-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page

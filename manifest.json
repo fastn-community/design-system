@@ -70,6 +70,16 @@
       "checksum": "0D5834C7CED25B3DF79D62625C1CFDE9CBFFDBDEB549E3448677D8439828BE2C",
       "size": 1291
     },
+    "assets/copy-dark.svg": {
+      "name": "assets/copy-dark.svg",
+      "checksum": "DBBFD0F0E590CC4DDF95D6CEF537B4E3E8B2D338AFCF3759B21757026243D189",
+      "size": 1767
+    },
+    "assets/copy.svg": {
+      "name": "assets/copy.svg",
+      "checksum": "E29572BC1687F0D1D7BE831A367EF85C0326726A58004BD00F5C9C20877DA2D6",
+      "size": 1767
+    },
     "assets/cross-danger.svg": {
       "name": "assets/cross-danger.svg",
       "checksum": "DD0E5B5E5D9B855C4F534392AF3F66E81905721556BACE9BE5E245BACA7657B5",
@@ -170,6 +180,11 @@
       "checksum": "2C996EDA691FD5D58207F6F79249B7E32B0D4D2F342AD1AB580E6CA47CD05F1C",
       "size": 3050
     },
+    "assets/tick.svg": {
+      "name": "assets/tick.svg",
+      "checksum": "A4D18E8A4EBA18F571C8AFAB3C9894EFCFB966119D53476FFD4E941866C39263",
+      "size": 174
+    },
     "assets/video.mp4": {
       "name": "assets/video.mp4",
       "checksum": "5703CD3F57AA0CDC3CFA4E8C26E460713E6DF08D1E6D5D62127B2C2C408C7151",
@@ -199,6 +214,11 @@
       "name": "components/checkbox.ftd",
       "checksum": "03B741E9D8422FE62399392088B30E8B8CA98CB355B6773FB5E235C1771ACFEB",
       "size": 3150
+    },
+    "components/clipboard.ftd": {
+      "name": "components/clipboard.ftd",
+      "checksum": "133484E72BE02C07F7E85F9B98634297609B14A9BA0FC121132C17E346238E6E",
+      "size": 1862
     },
     "components/footer.ftd": {
       "name": "components/footer.ftd",
@@ -317,8 +337,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "5D5E454ABB58B6212D1D5304F2205216DFCB82BFB5A8781C82CFDD2636B47BF5",
-      "size": 4653
+      "checksum": "16FC6E4E770DC80C5B03E41CB481D1EDD0EEBAFEB6E0879AFADA32FABCF4CC18",
+      "size": 4800
     },
     "slide.ftd": {
       "name": "slide.ftd",
@@ -331,6 +351,6 @@
       "size": 10310
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/14ec38a267a6ec297e62b1d9d55685a098f9b9eb.zip",
-  "checksum": "D0B1276D65413ED80B70AE45CE9EBBB2EEFD03C7E7C89F408C280ED4BD90BC00"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/aa679f8a3229fd58102d58fef3d62717b0d3a8e5.zip",
+  "checksum": "6D1F3F7901521EAD87FFA54B18AC6DB4E5D7B2A06BDF1F9199AA7D599DB8716C"
 }

@@ -43,6 +43,9 @@ export: toggle-button
 -- import: fastn-community.github.io/design-system/components/label-text as _
 export: label-text
 
+-- import: fastn-community.github.io/design-system/components/clipboard as _
+export: copy-to-clipboard-text
+
 -- import: fastn-community.github.io/design-system/components/button-group as _
 export: button-group
 
@@ -121,6 +124,7 @@ align-content: left
 	- [Button Group (WIP)](components/button-group/)
 	- [Toggle](components/toggle/)
 	- [Label Text](components/label-text/)
+	- [Clipboard](components/clipboard/)
 	- [Checkbox](components/checkbox/)
 	- [Input](components/input/)
 	- [Typography](typography/)
