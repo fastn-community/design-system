@@ -75,6 +75,16 @@
       "checksum": "DBBFD0F0E590CC4DDF95D6CEF537B4E3E8B2D338AFCF3759B21757026243D189",
       "size": 1767
     },
+    "assets/copy-hover-dark.svg": {
+      "name": "assets/copy-hover-dark.svg",
+      "checksum": "F5EDC961FA806BFF6BC13B508B8414EE1CB2CB8490F9DD14290DB4A4EBF3CCAD",
+      "size": 1767
+    },
+    "assets/copy-hover.svg": {
+      "name": "assets/copy-hover.svg",
+      "checksum": "DD791A63E284ACD26306854B963E49808B40CEE9B4611F6708E15F44FB20BBE1",
+      "size": 1767
+    },
     "assets/copy.svg": {
       "name": "assets/copy.svg",
       "checksum": "E29572BC1687F0D1D7BE831A367EF85C0326726A58004BD00F5C9C20877DA2D6",
@@ -217,8 +227,8 @@
     },
     "components/clipboard.ftd": {
       "name": "components/clipboard.ftd",
-      "checksum": "133484E72BE02C07F7E85F9B98634297609B14A9BA0FC121132C17E346238E6E",
-      "size": 1862
+      "checksum": "B3969993725332F606BF13E0BEAE377B5C520022CCB6D0ADA49FFD9E6545740B",
+      "size": 2539
     },
     "components/footer.ftd": {
       "name": "components/footer.ftd",
@@ -351,6 +361,6 @@
       "size": 10310
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/aa679f8a3229fd58102d58fef3d62717b0d3a8e5.zip",
-  "checksum": "6D1F3F7901521EAD87FFA54B18AC6DB4E5D7B2A06BDF1F9199AA7D599DB8716C"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/ed61f6ce2ae8c369c707598ba4ec831a429a8191.zip",
+  "checksum": "E6C8B4AA06D9B49BE17F6AEED917EE12BC7CFC9CA9B648E4CF49A7A7FA02B641"
 }
