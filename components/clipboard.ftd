@@ -9,11 +9,14 @@ caption title:
 optional ftd.image-src icon:
 boolean $hover: false
 boolean $copy: false
+boolean always-show: true
 
 -- ds.section-row:
 margin: $ds.spaces.vertical-gap.zero
 $on-mouse-enter$: $ftd.set-bool($a = $copy-to-clipboard-text.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $copy-to-clipboard-text.hover, v = false)
+$on-click$: $ftd.set-bool($a = $copy-to-clipboard-text.copy, v = true)
+$on-click-outside$: $ftd.set-bool($a = $copy-to-clipboard-text.copy, v = false)
 align-content: left
 
 -- ds.column:
@@ -22,16 +25,16 @@ spacing: $ds.spaces.vertical-gap.small
 align-content: left
 
 -- ds.row:
-spacing: $ds.spaces.horizontal-gap.large
+spacing: $ds.spaces.horizontal-gap.medium
 align-content: left
 
 -- ds.heading-tiny: $copy-to-clipboard-text.title
 
 -- ftd.image:
-src: $assets.files.assets.copy.svg
+if: { copy-to-clipboard-text.hover && copy-to-clipboard-text.always-show || copy-to-clipboard-text.copy  }
 src if { copy-to-clipboard-text.copy }: $assets.files.assets.tick.svg
+src: $assets.files.assets.copy.svg
 width.fixed.px: 18
-$on-click$: $ftd.toggle($a = $copy-to-clipboard-text.copy)
 
 -- end: ds.row
 
@@ -83,6 +86,16 @@ if: { copy-to-clipboard-text.copy }
 		
 			-- copy-to-clipboard-text: Copy to clipboard
 			
+		-- end: ds.rendered
+
+		-- ds.rendered:
+		
+		\-- copy-to-clipboard-text: Copy to clipboard
+		always-show: false
+		
+			-- copy-to-clipboard-text: Copy to clipboard
+			always-show: false
+
 		-- end: ds.rendered
 
 -- end: ds.section-column
