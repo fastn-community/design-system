@@ -12,17 +12,11 @@ boolean $copy-mouse-in: false
 boolean $mouse-in: false
 string clean-code: $ftd.clean-code(a = $copy-to-clipboard-icon.text, lang = $copy-to-clipboard-icon.lang)
 
--- ds.floater:
+-- ds.row:
 if: { copy-to-clipboard-icon.copy }
-align-content: right
 $on-mouse-enter$: $ftd.set-bool($a = $copy-to-clipboard-icon.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $copy-to-clipboard-icon.mouse-in, v = false)
 $on-mouse-leave$: $ftd.set-string($a = $copy-to-clipboard-icon.copy-text, v = null)
-anchor: parent
-top: 4
-right: 20
-
--- ds.row:
 width: hug-content
 spacing: $ds.spaces.horizontal-gap.small
 
@@ -46,8 +40,6 @@ if: { copy-to-clipboard-icon.copy-text != "null" }
 
 -- end: ds.row
 
--- end: ds.floater
-
 -- end: copy-to-clipboard-icon
 
 
@@ -62,16 +54,15 @@ if: { copy-to-clipboard-icon.copy-text != "null" }
 -- component copy-to-clipboard-text:
 caption or body text:
 
--- ds.section-row:
-align-content: left
-margin: $ds.spaces.vertical-gap.medium
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.space-between
 
 -- ds.copy-regular: $copy-to-clipboard-text.text
 
 -- copy-to-clipboard-icon:
 text: $copy-to-clipboard-text.text
 
--- end: ds.section-row
+-- end: ds.row
 
 -- end: copy-to-clipboard-text
 
