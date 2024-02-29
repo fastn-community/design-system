@@ -4,59 +4,71 @@
 
 
 
--- component copy-to-clipboard-text:
-caption title:
-optional ftd.image-src icon:
-boolean $hover: false
-boolean $copy: false
+-- component copy-to-clipboard:
+caption or body text:
+boolean copy: true
+string lang: ftd
+string $copy-text: null
+boolean $copy-mouse-in: false
 boolean always-show: true
+boolean $mouse-in: false
+string clean-code: $ftd.clean-code(a = $copy-to-clipboard.text, lang = $copy-to-clipboard.lang)
 
 -- ds.section-row:
-margin: $ds.spaces.vertical-gap.zero
-$on-mouse-enter$: $ftd.set-bool($a = $copy-to-clipboard-text.hover, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $copy-to-clipboard-text.hover, v = false)
-$on-click$: $ftd.set-bool($a = $copy-to-clipboard-text.copy, v = true)
-$on-click-outside$: $ftd.set-bool($a = $copy-to-clipboard-text.copy, v = false)
+$on-mouse-enter$: $ftd.set-bool($a = $copy-to-clipboard.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $copy-to-clipboard.mouse-in, v = false)
 align-content: left
+margin: $ds.spaces.vertical-gap.medium
 
--- ds.column:
-width: hug-content
-spacing: $ds.spaces.vertical-gap.small
-align-content: left
+-- ds.floater:
+if: { copy-to-clipboard.copy }
+align-content: right
+$on-mouse-leave$: $ftd.set-string($a = $copy-to-clipboard.copy-text, v = null)
+anchor: parent
+top: 4
+right: 16
 
 -- ds.row:
-spacing: $ds.spaces.horizontal-gap.medium
-align-content: left
-
--- ds.heading-tiny: $copy-to-clipboard-text.title
+width: hug-content
+spacing: $ds.spaces.horizontal-gap.small
 
 -- ftd.image:
-if: { copy-to-clipboard-text.hover && copy-to-clipboard-text.always-show || copy-to-clipboard-text.copy  }
-src if { copy-to-clipboard-text.copy }: $assets.files.assets.tick.svg
+if: { copy-to-clipboard.copy-text == "null" && copy-to-clipboard.always-show }
 src: $assets.files.assets.copy.svg
+src if { copy-to-clipboard.copy-mouse-in }: $assets.files.assets.copy-hover.svg
+$on-mouse-enter$: $ftd.set-bool($a = $copy-to-clipboard.copy-mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $copy-to-clipboard.copy-mouse-in, v = false)
+$on-click$: $ftd.copy-to-clipboard(a = $copy-to-clipboard.clean-code)
+$on-click$: $ftd.set-string($a = $copy-to-clipboard.copy-text, v = Copied!)
 width.fixed.px: 18
 
+-- ftd.image:
+if: { copy-to-clipboard.copy-text == "null" && copy-to-clipboard.mouse-in && !copy-to-clipboard.always-show }
+src: $assets.files.assets.copy.svg
+src if { copy-to-clipboard.copy-mouse-in }: $assets.files.assets.copy-hover.svg
+$on-mouse-enter$: $ftd.set-bool($a = $copy-to-clipboard.copy-mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $copy-to-clipboard.copy-mouse-in, v = false)
+$on-click$: $ftd.copy-to-clipboard(a = $copy-to-clipboard.clean-code)
+$on-click$: $ftd.set-string($a = $copy-to-clipboard.copy-text, v = Copied!)
+width.fixed.px: 18
+
+-- ftd.image:
+if: { copy-to-clipboard.copy-text != "null" }
+src: $assets.files.assets.tick.svg
+width.fixed.px: 18
+
+-- ds.copy-regular: $copy-to-clipboard.copy-text
+if: { copy-to-clipboard.copy-text != "null" }
+
 -- end: ds.row
 
--- ds.row:
-if: { copy-to-clipboard-text.hover || copy-to-clipboard-text.copy }
-inset: $ds.spaces.inset-square.small
-;;width: hug-content
-background.solid: $ds.colors.background.step-1
+-- end: ds.floater
 
--- ds.fine-print: Copy to clipboard
-if: { copy-to-clipboard-text.hover && !copy-to-clipboard-text.copy }
-
--- ds.fine-print: Copied
-if: { copy-to-clipboard-text.copy }
-
--- end: ds.row
-
--- end: ds.column
+-- ds.copy-regular: $copy-to-clipboard.text
 
 -- end: ds.section-row
 
--- end: copy-to-clipboard-text
+-- end: copy-to-clipboard
 
 
 
@@ -82,19 +94,28 @@ if: { copy-to-clipboard-text.copy }
 
 	-- ds.rendered:
 		
-		\-- copy-to-clipboard-text: Copy to clipboard
+		\-- copy-to-clipboard:
+
+		This is clipboard text with also show true
 		
-			-- copy-to-clipboard-text: Copy to clipboard
+			-- copy-to-clipboard:
+
+
+			This is clipboard text with also show true
 			
 		-- end: ds.rendered
 
 		-- ds.rendered:
 		
-		\-- copy-to-clipboard-text: Copy to clipboard
+		\-- copy-to-clipboard:
 		always-show: false
+
+		This is clipboard text with also show false
 		
-			-- copy-to-clipboard-text: Copy to clipboard
+			-- copy-to-clipboard:
 			always-show: false
+
+			This is clipboard text with also show false
 
 		-- end: ds.rendered
 
