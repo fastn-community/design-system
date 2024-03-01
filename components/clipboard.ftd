@@ -53,14 +53,25 @@ if: { copy-to-clipboard-icon.copy-text != "null" }
 
 -- component copy-to-clipboard-text:
 caption or body text:
+string lang: ftd
+string $copy-text: null
+string clean-code: $ftd.clean-code(a = $copy-to-clipboard-text.text, lang = $copy-to-clipboard-text.lang)
 
 -- ds.row:
 spacing: $ds.spaces.horizontal-gap.space-between
+$on-click$: $ftd.copy-to-clipboard(a = $copy-to-clipboard-text.clean-code)
+$on-click$: $ftd.set-string($a = $copy-to-clipboard-text.copy-text, v = Copied!)
+$on-mouse-leave$: $ftd.set-string($a = $copy-to-clipboard-text.copy-text, v = null)
 
 -- ds.copy-regular: $copy-to-clipboard-text.text
+color: $ds.colors.text-strong
 
 -- copy-to-clipboard-icon:
+if: { copy-to-clipboard-text.copy-text == "null" }
 text: $copy-to-clipboard-text.text
+
+-- ds.copy-regular: $copy-to-clipboard-text.copy-text
+if: { copy-to-clipboard-text.copy-text != "null" }
 
 -- end: ds.row
 
@@ -114,4 +125,3 @@ text: $copy-to-clipboard-text.text
 -- end: ds.section-column
 
 -- end: ds.page
-
