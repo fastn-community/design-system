@@ -33,13 +33,14 @@ wide.px: 1000
 caption title:
 optional body description:
 children content:
-ftd.length.px spacing: 0
+ds.gap spacing: $ds.spaces.vertical-gap.zero
 page-widths widths: $ds.widths
 ;; todo: is the follow reference to `.gap` correct?
 ds.gap margin: $ds.spaces.vertical-gap.large
 ftd.background.solid background: $ds.colors.background.base
 boolean theme-switcher: false
 boolean fastn-badge: true
+ftd.align align-content: top-center
 
 -- ftd.document:
 title: $page.title
@@ -60,17 +61,19 @@ types: $ds.types
 	link: https://fastn.com/
 	open-in-new-tab: true
 	
-	-- ftd.column:
+	-- ds.column:
 	width: fill-container
 	height: fill-container
-	spacing.fixed: $page.spacing
+	spacing: $page.spacing
 	color: $ds.colors.text
+	radius: $ds.radius.zero
 	background: $page.background
+	align-content: $page.align-content
 	
 		-- ui:
 		for: $ui in $page.content
 		
-	-- end: ftd.column
+	-- end: ds.column
 
 -- end: ftd.document
 
