@@ -360,7 +360,7 @@ background.solid: $ds.colors.custom.one
 	.__r-5 { right: 0px; }
 	.__z-6 { z-index: 99999999999999; }
 	.__w-7 { width: 100%; }
-	.__h-8 { height: null; }
+	.__h-8 { height: 100%; }
 	.__pl-9 { padding-left: 0px; }
 	.__pr-10 { padding-right: 0px; }
 	.__pt-11 { padding-top: 0px; }
@@ -4415,14 +4415,7 @@ let fastn_community_github_io_design_system_foundation_elements_page__page = fun
         ]),
         align_content: __args__.align_content,
         background: __args__.background,
-        height: fastn.formula([ftd.device], function () {
-          if (function () {
-            return (fastn_utils.getStaticValue(ftd.device) !== "mobile");
-          }()) {
-            return fastn_dom.Resizing.FillContainer;
-          }
-        }
-        ),
+        height: fastn_dom.Resizing.FillContainer,
         radius: global.fastn_community_github_io_design_system__radius.get("zero"),
         color: global.fastn_community_github_io_design_system__colors.get("text")
       });
