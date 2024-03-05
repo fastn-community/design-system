@@ -63,7 +63,7 @@ types: $ds.types
 	
 	-- ds.column:
 	width: fill-container
-	height: fill-container
+	height if { ftd.device != "mobile"}: fill-container
 	spacing: $page.spacing
 	color: $ds.colors.text
 	radius: $ds.radius.zero
