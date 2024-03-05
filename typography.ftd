@@ -22,6 +22,7 @@ ftd.color color: $ds.colors.text-strong
 display-type align: inline
 optional ds.gap margin:
 optional string link:
+ftd.text-style list style:
 
 -- ftd.text: $heading-hero.text
 width: $heading-hero.width
@@ -35,6 +36,7 @@ display if { heading-hero.align == inline }: inline
 display if { heading-hero.align == inline-block }: inline-block
 margin-bottom.px if { heading-hero.margin != NULL }: $heading-hero.margin.gap
 link: $heading-hero.link
+style: $heading-hero.style
 
 
 -- end: heading-hero
@@ -51,6 +53,7 @@ ftd.color color: $ds.colors.text-strong
 display-type align: inline
 optional ds.gap margin:
 optional string link:
+ftd.text-style list style:
 ;; todo: style: uppercase, bold, code
 
 -- ftd.text: $heading-eyebrow.text
@@ -65,6 +68,7 @@ display if { heading-eyebrow.align == inline }: inline
 display if { heading-eyebrow.align == inline-block }: inline-block
 margin-bottom.px if { heading-eyebrow.margin != NULL }: $heading-eyebrow.margin.gap
 link: $heading-eyebrow.link
+style: $heading-eyebrow.style
 
 -- end: heading-eyebrow
 
@@ -76,6 +80,7 @@ display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
 optional string link:
+ftd.text-style list style:
 
 -- ftd.text: $heading-large.text
 width: $heading-large.width
@@ -89,6 +94,7 @@ display if { heading-large.align == inline }: inline
 display if { heading-large.align == inline-block }: inline-block
 margin-bottom.px if { heading-large.margin != NULL }: $heading-large.margin.gap
 link: $heading-large.link
+style: $heading-large.style
 
 -- end: heading-large
 
@@ -100,6 +106,7 @@ display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
 optional string link:
+ftd.text-style list style:
 
 -- ftd.text: $heading-medium.text
 width: $heading-medium.width
@@ -113,6 +120,7 @@ display if { heading-medium.align == inline }: inline
 display if { heading-medium.align == inline-block }: inline-block
 margin-bottom.px if { heading-medium.margin != NULL }: $heading-medium.margin.gap
 link: $heading-medium.link
+style: $heading-medium.style
 
 -- end: heading-medium
 
@@ -124,6 +132,7 @@ display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
 optional string link:
+ftd.text-style list style:
 
 -- ftd.text: $heading-small.text
 width: $heading-small.width
@@ -137,6 +146,7 @@ display if { heading-small.align == inline }: inline
 display if { heading-small.align == inline-block }: inline-block
 margin-bottom.px if { heading-small.margin != NULL }: $heading-small.margin.gap
 link: $heading-small.link
+style: $heading-small.style
 
 -- end: heading-small
 
@@ -151,6 +161,7 @@ display-type align: inline
 optional ds.gap margin:
 ftd.color color: $ds.colors.text-strong
 optional string link:
+ftd.text-style list style:
 
 -- ftd.text: $heading-tiny.text
 width: $heading-tiny.width
@@ -164,6 +175,7 @@ display if { heading-tiny.align == inline }: inline
 display if { heading-tiny.align == inline-block }: inline-block
 margin-bottom.px if { heading-tiny.margin != NULL }: $heading-tiny.margin.gap
 link: $heading-tiny.link
+style: $heading-tiny.style
 
 -- end: heading-tiny
 
