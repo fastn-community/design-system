@@ -23,6 +23,7 @@ optional integer z-index:
 string list css:
 string list js:
 optional ftd.shadow shadow:
+optional ftd.overflow overflow:
 
 -- ftd.row:
 width: $row.width
@@ -55,6 +56,7 @@ color: $row.color
 css: $row.css
 js: $row.js
 shadow: $row.shadow
+overflow: $row.overflow
 
 -- end: ftd.row
 
