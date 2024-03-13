@@ -91,7 +91,7 @@ width if { primary-button.width == default }: hug-content
 width.fixed.px if { primary-button.width == wide }: 200
 width if { primary-button.width == full }: fill-container
 link: $primary-button.link
-	open-in-new-tab: $primary-button.open-in-new-tab
+open-in-new-tab: $primary-button.open-in-new-tab
 
 	-- ds.link:
 	text: $primary-button.title
@@ -143,7 +143,7 @@ width if { secondary-button.width == full }: fill-container
 border: $ds.borders.uniform.small
 border-color: $ds.colors.cta-secondary.border
 link: $secondary-button.link
-	open-in-new-tab: $secondary-button.open-in-new-tab
+open-in-new-tab: $secondary-button.open-in-new-tab
 
 	-- ds.link:
 	text: $secondary-button.title
@@ -171,6 +171,7 @@ boolean enabled: true
 button-size size: medium
 boolean $hover: false
 button-variant variant: solid
+boolean open-in-new-tab: false
 
 -- ds.row:
 align-content: center
@@ -185,7 +186,7 @@ inset if { tertiary-button.size == small }: $ds.spaces.inset-wide.small
 inset if { tertiary-button.size == medium }: $ds.spaces.inset-wide.medium
 inset if { tertiary-button.size == large }: $ds.spaces.inset-wide.large
 link: $tertiary-button.link
-	open-in-new-tab: $tertiary-button.open-in-new-tab
+open-in-new-tab: $tertiary-button.open-in-new-tab
 
 	-- ds.link:
 	text: $tertiary-button.title
@@ -215,6 +216,7 @@ button-width width: default
 boolean enabled: true
 button-size size: medium
 boolean $hover: false
+boolean open-in-new-tab: false
 
 -- ds.row:
 align-content: center
@@ -230,7 +232,7 @@ border-color if { link-button.hover }: $ds.colors.accent.primary
 $on-mouse-enter$: $ftd.set-bool($a = $link-button.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $link-button.hover, v = false)
 link: $link-button.link
-	open-in-new-tab: $link-button.open-in-new-tab
+open-in-new-tab: $link-button.open-in-new-tab
 
 	-- ds.link:
 	text: $link-button.title
@@ -281,7 +283,7 @@ width if { danger-button.width == default }: hug-content
 width.fixed.px if { danger-button.width == wide }: 200
 width if { danger-button.width == full }: fill-container
 link: $danger-button.link
-	open-in-new-tab: $danger-button.open-in-new-tab
+open-in-new-tab: $danger-button.open-in-new-tab
 
 	-- ds.link:
 	text: $danger-button.title
