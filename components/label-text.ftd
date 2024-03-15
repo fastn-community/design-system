@@ -17,6 +17,7 @@
 caption title:
 string value:
 text-placement placement: horizontal
+ftd.align align-content: left
 
 -- ds.section-row:
 margin: $ds.spaces.vertical-gap.zero
@@ -24,7 +25,7 @@ margin: $ds.spaces.vertical-gap.zero
 -- ds.row:
 if: { label-text.placement == horizontal }
 spacing: $ds.spaces.horizontal-gap.small
-align-content: left
+align-content: $label-text.align-content
 
 -- ds.heading-tiny: $label-text.title
 
