@@ -24,6 +24,8 @@ string list css:
 string list js:
 optional ftd.shadow shadow:
 optional ftd.overflow overflow:
+optional ftd.overflow overflow-x:
+optional ftd.overflow overflow-y:
 boolean open-in-new-tab: false
 
 -- ftd.row:
@@ -58,6 +60,8 @@ css: $row.css
 js: $row.js
 shadow: $row.shadow
 overflow: $row.overflow
+overflow-x: $row.overflow-x
+overflow-y: $row.overflow-y
 open-in-new-tab: $row.open-in-new-tab
 
 -- end: ftd.row
