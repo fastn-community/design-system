@@ -22,6 +22,8 @@ optional string link:
 string list js:
 optional ftd.shadow shadow:
 optional ftd.overflow overflow:
+optional ftd.overflow overflow-x:
+optional ftd.overflow overflow-y:
 
 -- ftd.column:
 width: $column.width
@@ -53,6 +55,8 @@ css: $column.css
 js: $column.js
 shadow: $column.shadow
 overflow: $column.overflow
+overflow-x: $column.overflow-x
+overflow-y: $column.overflow-y
 
 -- end: ftd.column
 
