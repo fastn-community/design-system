@@ -21,6 +21,7 @@ optional ds.border-data border:
 optional ftd.color border-color:
 optional ftd.shadow shadow:
 children content:
+optional boolean sticky:
 
 -- ftd.column:
 width: $floater.width
@@ -52,6 +53,7 @@ right.px: $floater.right
 z-index: $floater.z-index
 shadow: $floater.shadow
 children: $floater.content
+sticky: $floater.sticky
 
 -- end: ftd.column
 
