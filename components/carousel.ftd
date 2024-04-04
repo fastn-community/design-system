@@ -55,8 +55,8 @@ height.fixed.px: 6
 radius: $ds.radius.large
 $on-click$: $ftd.toggle($a = $nav-lists.active)
 $on-click$: $ftd.set-integer($a = $current-slide, v = $nav-lists.index)
-background.solid if { nav-lists.index == current-slide }: $inherited.colors.cta-primary.base
-background.solid: $inherited.colors.info.base
+background.solid if { nav-lists.index == current-slide }: $ds.colors.cta-primary.base
+background.solid: $ds.colors.info.base
 $on-mouse-enter$: $ftd.set-bool( $a = $nav-lists.active, v = true )
 $on-mouse-leave$: $ftd.set-bool( $a = $nav-lists.active, v = false )
 
