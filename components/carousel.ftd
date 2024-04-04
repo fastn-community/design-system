@@ -1,0 +1,221 @@
+-- import: fastn-community.github.io/design-system/record as r
+
+-- integer $current-slide: 1
+
+
+
+-- component carousel:
+optional caption title:
+r.carousel-item list carousel-items:
+r.carousel-item-nav list nav:
+
+-- ds.section-column:
+inset: $ds.spaces.inset-square.medium
+spacing: $ds.spaces.vertical-gap.large
+margin: $ds.spaces.vertical-gap.extra-large
+
+-- ds.heading-small: $carousel.title
+if: { carousel.title != NULL }
+
+-- carousel-details:
+for: $obj in $carousel.carousel-items
+title: $obj.title
+sub-title: $obj.sub-title
+image: $obj.image
+body: $obj.body
+index: $obj.index
+
+-- ds.row:
+
+-- nav-lists:
+for: $obj in $carousel.nav
+index: $obj.index
+
+-- end: ds.row
+
+-- end: ds.section-column
+
+-- end: carousel
+
+
+
+
+
+
+
+
+-- component nav-lists:
+integer index: 1
+boolean $active: false
+
+-- ds.row:
+width.fixed.px if { $current-slide == $nav-lists.index }: 80
+width.fixed.px: 32
+height.fixed.px: 6
+radius: $ds.radius.large
+$on-click$: $ftd.toggle($a = $nav-lists.active)
+$on-click$: $ftd.set-integer($a = $current-slide, v = $nav-lists.index)
+background.solid if { nav-lists.index == current-slide }: $inherited.colors.cta-primary.base
+background.solid: $inherited.colors.info.base
+$on-mouse-enter$: $ftd.set-bool( $a = $nav-lists.active, v = true )
+$on-mouse-leave$: $ftd.set-bool( $a = $nav-lists.active, v = false )
+
+-- end: ds.row
+
+-- end: nav-lists
+
+
+
+
+
+
+
+
+
+
+-- component carousel-details:
+optional caption title:
+optional string sub-title:
+optional ftd.image-src image:
+optional body body:
+optional integer index:
+
+-- ds.row:
+if: { carousel-details.index == current-slide }
+spacing: $ds.spaces.horizontal-gap.extra-large
+
+-- ftd.image:
+src: $carousel-details.image
+width.fixed.px: 460
+height.fixed.px: 460
+
+-- ds.column:
+width.fixed.px: 460
+align-content: left
+
+-- ds.heading-medium: $carousel-details.title
+if: { $carousel-details.title != NULL }
+
+-- ds.heading-tiny: $carousel-details.sub-title
+if: { $carousel-details.sub-title != NULL }
+
+-- ds.copy-regular: $carousel-details.body
+if: { $carousel-details.body != NULL }
+
+-- end: ds.column
+
+-- end: ds.row
+
+-- end: carousel-details
+
+
+
+
+-- ds.page: carousel
+
+-- ds.section-column:
+flush: full
+align-content: center
+
+	-- ds.row:
+	align-content: left
+	
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: index.html
+		
+		-- ds.heading-hero: carousel Component
+		width: hug-content
+		
+	-- end: ds.row
+
+	-- ds.rendered:
+	
+	\-- carousel:
+	carousel-items: $list-of-carousel-items
+	nav: $navs
+	
+		-- carousel:
+		carousel-items: $list-of-carousel-items
+		nav: $navs
+		
+	-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- r.carousel-item-nav list navs:
+
+-- r.carousel-item-nav:
+active: true
+index: 1
+
+-- r.carousel-item-nav:
+index: 2
+
+-- r.carousel-item-nav:
+index: 3
+
+-- end: navs
+
+
+
+
+
+
+
+
+-- r.carousel-item list list-of-carousel-items:
+
+-- r.carousel-item: Make the switch to Ecosia
+sub-title: Join the Ecosia community
+image: $assets.files.assets.image-1.jpg
+index: 1
+
+A design approach is a general philosophy that may or may not include a guide
+for specific methods that work.It is a long established fact that a reader will
+be distracted by the readable content of a page when looking at its layout.
+
+-- r.carousel-item: Make the switch sjdhahduiwdhuiw
+sub-title: Join the Ecosia community
+image: $assets.files.assets.image-2.jpg
+index: 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
+in luctus rutrum. Sed eu orci mi. Cras sit amet ligula vitae enim interdum
+ultrices. Sed a ultrices purus, nec faucibus justo. Nulla ut lacus quis odio
+aliquet faucibus.
+
+-- r.carousel-item: hdytvfgf akjdtfhd hdhfmd
+sub-title: Join the Ecosia community
+image: $assets.files.assets.image-3.jpg
+index: 3
+
+Nam lacinia nisi sed mauris luctus, id vestibulum enim luctus. Integer iaculis
+est a turpis consequat, id sagittis tellus aliquam. Suspendisse sagittis elit
+nec turpis viverra feugiat. Morbi fermentum convallis magna, eu sagittis ligula
+faucibus at.
+
+-- end: list-of-carousel-items

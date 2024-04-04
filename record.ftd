@@ -11,3 +11,17 @@ optional string domain-name:
 optional string github-url:
 string list features:
 string list pages:
+
+
+-- record carousel-item-nav:
+integer index: 1
+boolean active: false
+
+
+
+-- record carousel-item:
+optional caption title:
+optional string sub-title:
+optional ftd.image-src image:
+optional body body:
+optional integer index:

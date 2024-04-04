@@ -11,7 +11,7 @@ exposing: border-data, border-thickness, borders
 export: shadow-data, shadow
 
 -- import: fastn-community.github.io/design-system/record as _
-export: package-info
+export: package-info, carousel-item-nav, carousel-item
 
 -- import: fastn-community.github.io/design-system/foundation-elements/spaces as _
 export: hv, gap, insets, squishes, stretches, gaps, space-data, spaces
@@ -36,6 +36,9 @@ export: alert
 
 -- import: fastn-community.github.io/design-system/components/checkbox as _
 export: checkbox
+
+-- import: fastn-community.github.io/design-system/components/carousel as _
+export: carousel
 
 -- import: fastn-community.github.io/design-system/components/input as _
 export: text-input
@@ -78,7 +81,7 @@ export: row
 export: inline-row
 
 -- import: fastn-community.github.io/design-system/components/icon-button as _
-export: icon-button, circle-button, circle-text-button, phosphor-icon-button, fa-icon-button, icon-position, phosphor-variant
+export: icon-button, circle-button, circle-text-button, phosphor-icon-button, fa-icon-button, icon-position, phosphor-variant, square-button
 
 -- import: fastn-community.github.io/design-system/typography as _
 export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny, copy-large, copy-regular, copy-small, fine-print, source-code, link
