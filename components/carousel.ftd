@@ -189,33 +189,28 @@ index: 3
 
 -- r.carousel-item list list-of-carousel-items:
 
--- r.carousel-item: Make the switch to Ecosia
-sub-title: Join the Ecosia community
-image: $assets.files.assets.image-1.jpg
+-- r.carousel-item: Lorem ipsum dolor sit amet
+sub-title: consectetur adipiscing elit
+image: $assets.files.assets.image-placeholder.png
 index: 1
 
-A design approach is a general philosophy that may or may not include a guide
-for specific methods that work.It is a long established fact that a reader will
-be distracted by the readable content of a page when looking at its layout.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua
 
--- r.carousel-item: Make the switch sjdhahduiwdhuiw
-sub-title: Join the Ecosia community
-image: $assets.files.assets.image-2.jpg
+-- r.carousel-item: Ut enim ad minim veniam
+sub-title: sed do eiusmod tempor
+image: $assets.files.assets.image-placeholder.png
 index: 2
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
-in luctus rutrum. Sed eu orci mi. Cras sit amet ligula vitae enim interdum
-ultrices. Sed a ultrices purus, nec faucibus justo. Nulla ut lacus quis odio
-aliquet faucibus.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat
 
--- r.carousel-item: hdytvfgf akjdtfhd hdhfmd
-sub-title: Join the Ecosia community
-image: $assets.files.assets.image-3.jpg
+-- r.carousel-item: Duis aute irure dolor in reprehenderit
+sub-title:  quis nostrud exercitation ullamco
+image: $assets.files.assets.image-placeholder.png
 index: 3
 
-Nam lacinia nisi sed mauris luctus, id vestibulum enim luctus. Integer iaculis
-est a turpis consequat, id sagittis tellus aliquam. Suspendisse sagittis elit
-nec turpis viverra feugiat. Morbi fermentum convallis magna, eu sagittis ligula
-faucibus at.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur
 
 -- end: list-of-carousel-items
