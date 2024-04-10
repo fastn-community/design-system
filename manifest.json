@@ -177,8 +177,8 @@
     },
     "assets/js/update-source.js": {
       "name": "assets/js/update-source.js",
-      "checksum": "C63508F45BA81453E5BEE1DA1C190EE1FB2B9030DB053426C47C612CF2FFB984",
-      "size": 1240
+      "checksum": "79C4D9228F3F647E16052C18BD83C0949A128C6643A697EB05B59ACE2A6EC37B",
+      "size": 1254
     },
     "assets/logo-dark.svg": {
       "name": "assets/logo-dark.svg",
@@ -556,6 +556,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/8d51b613bed6e89e65e8b952acb4fe59a318356e.zip",
-  "checksum": "58E8E3C81D59C1C573A8E4CE493009733859BA3970CC1935D90A18C8B3B36BFF"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/0781a229d5b3ea69fa9654b2a4364b9370b527c2.zip",
+  "checksum": "C70C7AC2CB7F507DB1603C566F1B770A2626B523FE596B46CAD312D72EE68945"
 }

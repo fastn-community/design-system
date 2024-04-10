@@ -17,7 +17,7 @@ async function update_source_code(file) {
         });
     });
 
-    ftd.set_value("ui.fifthtry.com/actions/storybook/navigate#active-file-content", file_source);
+    ftd.set_value("fastn-community.github.io/design-system/actions/navigate#active-file-content", file_source);
 }
 
 async function fetch_ftd_source(file_path) {
