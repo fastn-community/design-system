@@ -6,6 +6,7 @@
 -- import: fastn-community.github.io/roboto-typography
 -- import: fastn-community.github.io/design-system/demos
 -- import: fastn-community.github.io/design-system/web-components
+-- import: fastn-community.github.io/design-system/components/dark-mode-toggle
 
 -- import: fastn-community.github.io/design-system/foundation-elements/borders as _
 export: border-data, border-thickness, borders
@@ -270,6 +271,8 @@ background.solid: $ds.colors.background.step-1
 				src: $assets.files.assets.storybook.new-tab.svg
 
 				-- end: ds.row
+
+				-- dark-mode-toggle.dark-mode-toggle:
 				
 			-- end: ds.row
 
@@ -354,6 +357,8 @@ background.solid: $ds.colors.background.step-1
 					
 						-- ftd.image:
 						src: $assets.files.assets.storybook.logo.svg
+
+						-- dark-mode-toggle.dark-mode-toggle:
 						
 						
 					-- end: ds.row
