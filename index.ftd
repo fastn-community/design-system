@@ -36,7 +36,7 @@ export: header-link
 export: footer-heading, footer-secondary-heading, footer-link, copyright-text
 
 -- import: fastn-community.github.io/design-system/components/alert as _
-export: alert
+export: info-alert, warning-alert, success-alert, danger-alert
 
 -- import: fastn-community.github.io/design-system/components/checkbox as _
 export: checkbox
