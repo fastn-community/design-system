@@ -4,59 +4,258 @@
 
 
 
--- or-type alert-kind:
 
--- constant integer info: 1
--- constant integer warning: 2
--- constant integer success: 3
--- constant integer danger: 4
-
--- end: alert-kind
-
-
-
-
--- component alert:
+-- component info-alert:
 caption title:
 body body:
 optional string cta-text:
 optional string cta-link:
-alert-kind kind: info
 boolean $toggle: false
+boolean $hover: false
 
 -- ds.container:
-background.solid if { alert.kind == info }: $ds.colors.info.base
-background.solid if { alert.kind == warning }: $ds.colors.warning.base
-background.solid if { alert.kind == success }: $ds.colors.success.base
-background.solid if { alert.kind == danger }: $ds.colors.cta-danger.base
+background.solid: $ds.colors.info.base
 border: $ds.borders.uniform.small
-border-color if { alert.kind == info }: $ds.colors.info.border
-border-color if { alert.kind == warning }: $ds.colors.warning.border
-border-color if { alert.kind == success }: $ds.colors.success.border
-border-color if { alert.kind == danger }: $ds.colors.cta-danger.border
+border-color: $ds.colors.info.border
 inset: $ds.spaces.inset-square.large
 
 	-- ds.row:
 	spacing: $ds.spaces.horizontal-gap.medium
 	align-content: top-left
+	$on-mouse-enter$: $ftd.set-bool($a = $info-alert.hover, v = true)
+	$on-mouse-leave$: $ftd.set-bool($a = $info-alert.hover, v = false)
 	
 		-- ftd.image:
-		if: { alert.kind == info }
 		src: $assets.files.assets.alert-info.svg
 		width.fixed.px: 24
 		
+		-- ds.column:
+		spacing: $ds.spaces.vertical-gap.medium
+		align-content: left
+		
+			-- ds.heading-tiny: $info-alert.title
+			color: $ds.colors.info.text
+
+			-- ds.copy-regular:
+			color: $ds.colors.info.text
+
+			$info-alert.body
+			
+			-- ds.row:
+			spacing: $ds.spaces.horizontal-gap.small
+			align-content: left
+			link: $info-alert.cta-link
+			
+				-- ds.copy-regular: $info-alert.cta-text
+				if: { info-alert.cta-text != NULL }
+				width: hug-content
+				color: $ds.colors.info.text
+
+				-- ftd.image:
+				src: $assets.files.assets.arrow-info.svg
+				width.fixed.px: 16
+				
+			-- end: ds.row
+
+		-- end: ds.column
+
+		-- ds.column:
+		width.fixed.px: 24
+
 		-- ftd.image:
-		if: { alert.kind == warning }
+		if: { info-alert.hover }
+		src: $assets.files.assets.cross-info.svg
+		$on-click$: $ftd.toggle($a = $info-alert.toggle)
+		
+	-- end: ds.column
+
+	-- end: ds.row
+
+-- end: ds.container
+
+-- end: info-alert
+
+
+
+
+
+
+-- component warning-alert:
+caption title:
+body body:
+optional string cta-text:
+optional string cta-link:
+boolean $toggle: false
+boolean $hover: false
+
+-- ds.container:
+background.solid: $ds.colors.warning.base
+border: $ds.borders.uniform.small
+border-color: $ds.colors.warning.border
+inset: $ds.spaces.inset-square.large
+
+	-- ds.row:
+	spacing: $ds.spaces.horizontal-gap.medium
+	align-content: top-left
+	$on-mouse-enter$: $ftd.set-bool($a = $warning-alert.hover, v = true)
+	$on-mouse-leave$: $ftd.set-bool($a = $warning-alert.hover, v = false)
+		
+		-- ftd.image:
 		src: $assets.files.assets.alert-warning.svg
 		width.fixed.px: 24
 		
+		-- ds.column:
+		spacing: $ds.spaces.vertical-gap.medium
+		align-content: left
+		
+			-- ds.heading-tiny: $warning-alert.title
+			color: $ds.colors.warning.text
+			
+			-- ds.copy-regular:
+			color: $ds.colors.warning.text
+
+			$warning-alert.body
+			
+			-- ds.row:
+			spacing: $ds.spaces.horizontal-gap.small
+			align-content: left
+			link: $warning-alert.cta-link
+			
+				-- ds.copy-regular: $warning-alert.cta-text
+				if: { warning-alert.cta-text != NULL }
+				width: hug-content
+				color: $ds.colors.warning.text
+				
+				-- ftd.image:
+				src: $assets.files.assets.arrow-warning.svg
+				width.fixed.px: 16
+				
+			-- end: ds.row
+
+		-- end: ds.column
+
+		-- ds.column:
+		width.fixed.px: 24
+
 		-- ftd.image:
-		if: { alert.kind == success }
+		if: { warning-alert.hover }
+		src: $assets.files.assets.cross-warning.svg
+		$on-click$: $ftd.toggle($a = $warning-alert.toggle)
+		
+	-- end: ds.column
+
+	-- end: ds.row
+
+-- end: ds.container
+
+-- end: warning-alert
+
+
+
+
+
+
+
+
+-- component success-alert:
+caption title:
+body body:
+optional string cta-text:
+optional string cta-link:
+boolean $toggle: false
+boolean $hover: false
+
+-- ds.container:
+background.solid: $ds.colors.success.base
+border: $ds.borders.uniform.small
+border-color: $ds.colors.success.border
+inset: $ds.spaces.inset-square.large
+
+	-- ds.row:
+	spacing: $ds.spaces.horizontal-gap.medium
+	align-content: top-left
+	$on-mouse-enter$: $ftd.set-bool($a = $success-alert.hover, v = true)
+	$on-mouse-leave$: $ftd.set-bool($a = $success-alert.hover, v = false)
+
+		-- ftd.image:
 		src: $assets.files.assets.alert-success.svg
 		width.fixed.px: 24
 		
+		-- ds.column:
+		spacing: $ds.spaces.vertical-gap.medium
+		align-content: left
+		
+			-- ds.heading-tiny: $success-alert.title
+			color: $ds.colors.success.text
+			
+			-- ds.copy-regular:
+			color: $ds.colors.success.text
+			
+			$success-alert.body
+			
+			-- ds.row:
+			spacing: $ds.spaces.horizontal-gap.small
+			align-content: left
+			link: $success-alert.cta-link
+			
+				-- ds.copy-regular: $success-alert.cta-text
+				if: { success-alert.cta-text != NULL }
+				width: hug-content
+				color: $ds.colors.success.text
+				
+				-- ftd.image:
+				src: $assets.files.assets.arrow-success.svg
+				width.fixed.px: 16
+				
+			-- end: ds.row
+
+		-- end: ds.column
+		
+		-- ds.column:
+		width.fixed.px: 24
+
 		-- ftd.image:
-		if: { alert.kind == danger }
+		if: { success-alert.hover }
+		src: $assets.files.assets.cross-success.svg
+		$on-click$: $ftd.toggle($a = $success-alert.toggle)
+		
+	-- end: ds.column
+		
+	-- end: ds.row
+
+-- end: ds.container
+
+-- end: success-alert
+
+
+
+
+
+
+
+
+
+-- component danger-alert:
+caption title:
+body body:
+optional string cta-text:
+optional string cta-link:
+boolean $toggle: false
+boolean $hover: false
+
+-- ds.container:
+background.solid: $ds.colors.cta-danger.base
+border: $ds.borders.uniform.small
+border-color: $ds.colors.cta-danger.border
+inset: $ds.spaces.inset-square.large
+
+	-- ds.row:
+	spacing: $ds.spaces.horizontal-gap.medium
+	align-content: top-left
+	$on-mouse-enter$: $ftd.set-bool($a = $danger-alert.hover, v = true)
+	$on-mouse-leave$: $ftd.set-bool($a = $danger-alert.hover, v = false)
+
+		-- ftd.image:
 		src: $assets.files.assets.alert-danger.svg
 		width.fixed.px: 24
 		
@@ -64,82 +263,52 @@ inset: $ds.spaces.inset-square.large
 		spacing: $ds.spaces.vertical-gap.medium
 		align-content: left
 		
-			-- ds.heading-tiny: $alert.title
-			color if { alert.kind == info }: $ds.colors.info.text
-			color if { alert.kind == warning }: $ds.colors.warning.text
-			color if { alert.kind == success }: $ds.colors.success.text
-			color if { alert.kind == danger }: $ds.colors.cta-danger.text
+			-- ds.heading-tiny: $danger-alert.title
+			color: $ds.colors.cta-danger.text
 			
 			-- ds.copy-regular:
-			color if { alert.kind == info }: $ds.colors.info.text
-			color if { alert.kind == warning }: $ds.colors.warning.text
-			color if { alert.kind == success }: $ds.colors.success.text
-			color if { alert.kind == danger }: $ds.colors.cta-danger.text
+			color: $ds.colors.cta-danger.text
 			
-			$alert.body
+			$danger-alert.body
 			
 			-- ds.row:
 			spacing: $ds.spaces.horizontal-gap.small
 			align-content: left
-			link: $alert.cta-link
+			link: $danger-alert.cta-link
 			
-				-- ds.copy-regular: $alert.cta-text
-				if: { alert.cta-text != NULL }
+				-- ds.copy-regular: $danger-alert.cta-text
+				if: { danger-alert.cta-text != NULL }
 				width: hug-content
-				color if { alert.kind == info }: $ds.colors.info.text
-				color if { alert.kind == warning }: $ds.colors.warning.text
-				color if { alert.kind == success }: $ds.colors.success.text
-				color if { alert.kind == danger }: $ds.colors.cta-danger.text
+				color: $ds.colors.cta-danger.text
 				
 				-- ftd.image:
-				if: { alert.kind == info }
-				src: $assets.files.assets.arrow-info.svg
-				width.fixed.px: 16
-				
-				-- ftd.image:
-				if: { alert.kind == warning }
-				src: $assets.files.assets.arrow-warning.svg
-				width.fixed.px: 16
-				
-				-- ftd.image:
-				if: { alert.kind == success }
-				src: $assets.files.assets.arrow-success.svg
-				width.fixed.px: 16
-				
-				-- ftd.image:
-				if: { alert.kind == danger }
 				src: $assets.files.assets.arrow-danger.svg
 				width.fixed.px: 16
 				
 			-- end: ds.row
 
 		-- end: ds.column
+		
+		-- ds.column:
+		width.fixed.px: 24
 
 		-- ftd.image:
-		if: { alert.kind == info }
-		src: $assets.files.assets.cross-info.svg
-		$on-click$: $ftd.toggle($a = $alert.toggle)
-		
-		-- ftd.image:
-		if: { alert.kind == warning }
-		src: $assets.files.assets.cross-warning.svg
-		$on-click$: $ftd.toggle($a = $alert.toggle)
-		
-		-- ftd.image:
-		if: { alert.kind == success }
-		src: $assets.files.assets.cross-success.svg
-		$on-click$: $ftd.toggle($a = $alert.toggle)
-		
-		-- ftd.image:
-		if: { alert.kind == danger }
+		if: { danger-alert.hover }
 		src: $assets.files.assets.cross-danger.svg
-		$on-click$: $ftd.toggle($a = $alert.toggle)
+		$on-click$: $ftd.toggle($a = $danger-alert.toggle)
+		
+	-- end: ds.column
 		
 	-- end: ds.row
 
 -- end: ds.container
 
--- end: alert
+-- end: danger-alert
+
+
+
+
+
 
 
 
@@ -165,18 +334,16 @@ align-content: center
 
 	-- ds.rendered:
 	
-	\-- alert: Some kind of alert!
+	\-- info-alert: Some kind of alert!
 	cta-text: Show More
 	cta-link: /
-	kind: info
 	
 	This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any
 	kind of messages, from informational to warning to success ones.
 	
-		-- alert: Some kind of alert!
+		-- info-alert: Some kind of alert!
 		cta-text: Show More
 		cta-link: /
-		kind: info
 		
 		This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any kind of messages, from informational to warning to success ones.
 		
@@ -184,58 +351,55 @@ align-content: center
 
 	-- ds.rendered:
 	
-	\-- alert: Some kind of alert!
+	\-- warning-alert: Some kind of alert!
 	cta-text: Show More
 	cta-link: /
-	kind: warning
 	
 	This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any
 	kind of messages, from informational to warning to success ones.
 	
-		-- alert: Some kind of alert!
+		-- warning-alert: Some kind of alert!
 		cta-text: Show More
 		cta-link: /
-		kind: warning
 		
 		This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any kind of messages, from informational to warning to success ones.
+		
 		
 	-- end: ds.rendered
 
 	-- ds.rendered:
 	
-	\-- alert: Some kind of alert!
+	\-- success-alert: Some kind of alert!
 	cta-text: Show More
 	cta-link: /
-	kind: success
 	
 	This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any
 	kind of messages, from informational to warning to success ones.
 	
-		-- alert: Some kind of alert!
+		-- success-alert: Some kind of alert!
 		cta-text: Show More
 		cta-link: /
-		kind: success
 		
 		This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any kind of messages, from informational to warning to success ones.
+		
 		
 	-- end: ds.rendered
 
 	-- ds.rendered:
 	
-	\-- alert: Some kind of alert!
+	\-- danger-alert: Some kind of alert!
 	cta-text: Show More
 	cta-link: /
-	kind: danger
 	
 	This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any
 	kind of messages, from informational to warning to success ones.
 	
-		-- alert: Some kind of alert!
+		-- danger-alert: Some kind of alert!
 		cta-text: Show More
 		cta-link: /
-		kind: danger
 		
 		This is an alert message that will be placed inside the body of this alert box. It is important to note that these alert boxes can contain any kind of messages, from informational to warning to success ones.
+		
 		
 	-- end: ds.rendered
 

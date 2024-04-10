@@ -1,7 +1,11 @@
+-- import: fastn/processors as pr
+-- import: fastn-community.github.io/design-system/record as sr
+-- import: fastn-community.github.io/design-system/actions/navigate
 -- import: fastn-community.github.io/dark-flame-cs
 -- import: fastn-community.github.io/saturated-sunset-cs
 -- import: fastn-community.github.io/roboto-typography
 -- import: fastn-community.github.io/design-system/demos
+-- import: fastn-community.github.io/design-system/web-components
 
 -- import: fastn-community.github.io/design-system/foundation-elements/borders as _
 export: border-data, border-thickness, borders
@@ -97,49 +101,543 @@ exposing: heading-large, copy-regular
 
 
 -- ds.page: Design System
-widths: $narrow-widths
+fastn-badge: false
+theme-switcher: true
 
--- ds.section-column:
-spacing: $ds.spaces.vertical-gap.medium
-align-content: left
-
-	-- ds.heading-hero: Design System
-	
-	-- ds.button-group:
-	
-		-- ds.phosphor-icon-button: Github
-		icon: github-logo
-		link: https://github.com/fastn-community/design-system/
-		
-		-- ds.phosphor-icon-button: BSD (Open Source)
-		icon: scales
-		link: https://github.com/fastn-community/design-system/blob/main/LICENSE
-		
-	-- end: ds.button-group
-
-	-- ds.copy-regular:
-	
-	This is the package you have been waiting for!
-	
-	- [Alert](components/alert/)
-	- [Buttons](components/button/)
-	- [Icon Buttons](components/icon-button/)
-	- [Button Group (WIP)](components/button-group/)
-	- [Toggle](components/toggle/)
-	- [Label Text](components/label-text/)
-	- [Clipboard](components/clipboard/)
-	- [Checkbox](components/checkbox/)
-	- [Input](components/input/)
-	- [Typography](typography/)
-	- [Page](foundation-elements/page/)
-	- [Column](foundation-elements/column/)
-	- [Container](foundation-elements/container/)
-	- [Row](foundation-elements/row/)
-	- [section-row](foundation-elements/section-row/)
-	- [section-column](foundation-elements/section-column/)
-	
-	-- demos.demo:
-	
--- end: ds.section-column
+-- storybook:
+list-of-files: $toc
+list-of-tab: $sr.tab
 
 -- end: ds.page
+
+
+-- pr.toc-item list toc:
+$processor$: pr.toc
+
+- Components:
+  - Alert: /components/alert/
+  - Buttons: /components/button/
+  - Icon Buttons: /components/icon-button/
+  - Button Group (WIP): /components/button-group/
+  - Toggle: /components/toggle/
+  - Label Text: /components/label-text/
+  - Clipboard: /components/clipboard/
+  - Checkbox: /components/checkbox/
+  - Input: /components/input/
+
+- Typography:
+  - Typography: /typography/ 
+
+- Foundation Elements:
+  - Page: /foundation-elements/page/
+  - Column: /foundation-elements/column/
+  - Container: /foundation-elements/container/
+  - Row: /foundation-elements/row/
+  - section-row: /foundation-elements/section-row/
+  - section-column: /foundation-elements/section-column/
+
+
+
+
+-- integer $current-slide: 1
+-- string $active-title: Components
+-- string $active-sub-title: Alert
+
+
+-- web-components.source-updater:	
+
+
+-- component storybook:
+pr.toc-item list list-of-files:
+module navigate: navigate
+sr.tabs list list-of-tab:
+boolean $mobile: false
+boolean $desktop: false
+boolean $sidebar: false
+boolean $new-tab: false
+string $copy-text: null
+boolean $toggle: true
+optional integer index:
+
+-- ds.row:
+align-content: top-center
+spacing: $ds.spaces.horizontal-gap.zero
+background.solid: $ds.colors.background.step-1
+
+	-- ftd.desktop:
+	
+		-- ds.column:
+		width.fixed.percent: 26
+		width.fixed.percent if { storybook.sidebar }: 4
+		height.fixed.vh: 100
+		radius: $ds.radius.zero
+		align-content: top-center
+		spacing: $ds.spaces.vertical-gap.small
+		
+			-- ds.row:
+			inset: $ds.spaces.inset-square.medium
+			spacing if { !storybook.sidebar }: $ds.spaces.horizontal-gap.space-between
+			border: $ds.borders.bottom.small
+			border-color: $ds.colors.border-strong
+			radius: $ds.radius.zero
+			
+				-- ftd.image:
+				if: { !storybook.sidebar }
+				src: $assets.files.assets.storybook.logo.svg
+				
+				-- ftd.image:
+				src: $assets.files.assets.storybook.close.svg
+				src if { storybook.sidebar }: $assets.files.assets.storybook.open.svg
+				$on-click$: $ftd.toggle($a = $storybook.sidebar)
+				height.fixed.px: 34
+				
+			-- end: ds.row
+
+			-- ds.column:
+			if: { !storybook.sidebar }
+			overflow-y: scroll
+			align-content: top-left
+			spacing: $ds.spaces.vertical-gap.zero
+			
+				-- render-files:
+				for: $obj in $storybook.list-of-files
+				folder: $obj
+				navigate: $storybook.navigate
+				
+			-- end: ds.column
+
+		-- end: ds.column
+
+		-- ds.column:
+		width.fixed.percent if { storybook.sidebar }: 78
+		spacing: $ds.spaces.vertical-gap.space-between
+		border: $ds.borders.left.small
+		border-color: $ds.colors.border-strong
+		background.solid: $ds.colors.background.base
+		radius: $ds.radius.zero
+		height.fixed.vh: 100
+		
+			-- ds.row:
+			spacing: $ds.spaces.horizontal-gap.space-between
+			inset: $ds.spaces.inset-square.medium
+			border: $ds.borders.bottom.small
+			border-color: $ds.colors.border-strong
+			radius: $ds.radius.zero
+			background.solid: $ds.colors.background.step-1
+			
+				-- ds.row:
+				align-content: left
+				
+					-- ftd.image:
+					src if { storybook.mobile }: $assets.files.assets.storybook.desktop.svg
+					src: $assets.files.assets.storybook.desktop-active.svg
+					$on-click$: $ftd.set-bool($a = $storybook.desktop, v = true)
+					$on-click$: $ftd.set-bool($a = $storybook.mobile, v = false)
+					
+					-- ftd.image:
+					src: $assets.files.assets.storybook.mobile.svg
+					src if { storybook.mobile }: $assets.files.assets.storybook.mobile-active.svg
+					$on-click$: $ftd.set-bool($a = $storybook.mobile, v = true)
+					$on-click$: $ftd.set-bool($a = $storybook.desktop, v = false)
+					
+					-- ds.copy-regular: $active-title
+					
+					-- ftd.image:
+					if: { active-title != NULL }
+					src: $assets.files.assets.storybook.right.svg
+					
+					-- ds.copy-regular: $active-sub-title
+					color: $ds.colors.text-strong
+					
+				-- end: ds.row
+
+				-- ds.row:
+				align-content: right
+
+				-- ds.row:
+				height.fixed.px: 32
+				width.fixed.px: 32
+				radius: $ds.radius.small
+				border: $ds.borders.uniform.small
+				background.solid: $ds.colors.background.step-1
+				link: $storybook.navigate.active-file-preview-url
+				open-in-new-tab: true
+
+				-- ftd.image:
+				src: $assets.files.assets.storybook.new-tab.svg
+
+				-- end: ds.row
+				
+			-- end: ds.row
+
+				-- end: ds.row
+
+
+			-- ds.column:
+			width.fixed.percent: 100
+			width.fixed.percent if { storybook.mobile }: 36
+			
+				-- ftd.iframe:
+				min-height.fixed.vh: 57
+				min-height.fixed.vh if { storybook.toggle }: 83.5
+				src: $storybook.navigate.active-file-preview-url
+				width: fill-container
+				
+			-- end: ds.column
+
+			-- ds.column:
+			border: $ds.borders.horizontal.small
+			border-color: $inherited.colors.border
+			radius: $ds.radius.zero
+			align-content: bottom-center
+			overflow-y: scroll
+			spacing: $ds.spaces.vertical-gap.zero
+			
+				-- ds.row:
+				spacing: $ds.spaces.horizontal-gap.space-between
+				inset: $ds.spaces.inset-wide.medium
+				border: $ds.borders.vertical.small
+				radius: $ds.radius.zero
+				border-color: $ds.colors.border-strong
+				background.solid: $ds.colors.background.step-1
+				
+					-- ds.copy-regular: Source
+					
+					-- ftd.image:
+					src: $assets.files.assets.storybook.down.svg
+					src if { storybook.toggle }: $assets.files.assets.storybook.up.svg
+					$on-click$: $ftd.toggle($a = $storybook.toggle)
+					
+				-- end: ds.row
+
+				-- code:
+				if: { !storybook.toggle }
+
+				$storybook.navigate.active-file-content
+				
+				-- end: code
+
+			-- end: ds.column
+
+		-- end: ds.column
+
+	-- end: ftd.desktop
+
+	-- ftd.mobile:
+	
+		-- ds.column:
+		height: fill-container
+		
+			-- ds.column:
+			spacing: $ds.spaces.vertical-gap.zero
+			align-content: top-center
+			
+				-- ds.floater:
+				anchor: window
+				sticky: true
+				top: -2
+				left: 0
+				align-content: top-left
+				inset: $ds.spaces.inset-square.medium
+				border: $ds.borders.bottom.small
+				radius: $ds.radius.zero
+				border-color: $ds.colors.border-strong
+				z-index: 99
+				background.solid: $ds.colors.background.step-1
+				
+					-- ds.row:
+					if: { $current-slide == 1 }
+					spacing: $ds.spaces.horizontal-gap.space-between
+					
+						-- ftd.image:
+						src: $assets.files.assets.storybook.logo.svg
+						
+						
+					-- end: ds.row
+
+					-- ds.row:
+					if: { $current-slide == 2 }
+					
+						-- ds.copy-regular: $active-title
+						
+						-- ftd.image:
+						if: { active-title != NULL }
+						src: $assets.files.assets.right.svg
+						
+						-- ds.copy-regular: $active-sub-title
+						color: $ds.colors.text-strong
+						
+					-- end: ds.row
+
+					-- ds.row:
+					if: { $current-slide == 3 }
+					align-content: top-left
+					
+						-- ds.copy-regular: Source
+						
+					-- end: ds.row
+
+				-- end: ds.floater
+
+				-- ds.column:
+				if: { $current-slide == 1 }
+				align-content: top-left
+				height: fill-container
+				inset: $ds.spaces.inset-wide.small
+				overflow-y: scroll
+				
+					-- render-files:
+					for: $obj in $storybook.list-of-files
+					folder: $obj
+					navigate: $storybook.navigate
+					
+				-- end: ds.column
+
+				-- ds.column:
+				if: { $current-slide == 2 }
+				align-content: top-left
+				height: fill-container
+				inset: $ds.spaces.inset-wide.small
+				
+					-- ftd.iframe:
+					min-height.fixed.vh: 100
+					src: $storybook.navigate.active-file-preview-url
+					width: fill-container
+					
+				-- end: ds.column
+
+				-- ds.column:
+				if: { $current-slide == 3 }
+				align-content: top-left
+				height: fill-container
+				inset: $ds.spaces.inset-square.medium
+				radius: $ds.radius.zero
+				
+					-- code:
+					
+					$storybook.navigate.active-file-content
+					
+					-- end: code
+
+				-- end: ds.column
+
+			-- end: ds.column
+
+			-- ds.floater:
+			anchor: window
+			sticky: true
+			bottom: -2
+			left: 0
+			background.solid: $ds.colors.background.base
+			inset: $ds.spaces.inset-wide.large
+			border: $ds.borders.top.small
+			radius: $ds.radius.zero
+			border-color: $ds.colors.border-strong
+			
+				-- ds.row:
+				spacing: $ds.spaces.horizontal-gap.extra-large
+				
+					-- tab-content: $obj.title
+					for: $obj in $storybook.list-of-tab
+					index: $obj.index
+					
+				-- end: ds.row
+
+			-- end: ds.floater
+
+		-- end: ds.column
+
+	-- end: ftd.mobile
+
+-- end: ds.row
+
+-- end: storybook
+
+
+
+
+
+
+
+-- component tab-content:
+caption title:
+integer index: 1
+boolean $active: false
+
+-- ds.row:
+radius: $ds.radius.zero
+$on-click$: $ftd.toggle($a = $tab-content.active)
+$on-click$: $ftd.set-integer($a = $current-slide, v = $tab-content.index)
+border: $ds.borders.bottom.medium
+border-color if { tab-content.index == current-slide }: $ds.colors.accent.primary
+border-color: transparent
+
+	-- ds.copy-large: $tab-content.title
+	
+-- end: ds.row
+
+-- end: tab-content
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component code:
+body body:
+optional string icon:
+string text: $code.body
+string lang: ftd
+
+-- ds.column:
+spacing: $ds.spaces.vertical-gap.zero
+radius: $ds.radius.zero
+height.fixed.vh if { ftd.device == "mobile" }: 72
+height.fixed.px: 183
+align-content: top-left
+
+	-- ftd.code:
+	theme: fastn-theme.light
+	theme if { ftd.dark-mode }: fastn-theme.dark
+	text: $code.body
+	lang: $code.lang
+	width: fill-container
+	height: fill-container
+	role: $inherited.types.copy-regular
+	color: $inherited.colors.text
+	background.solid: $inherited.colors.background.step-1
+	overflow-x: auto
+	overflow-y: auto
+	show-line-number: true
+	
+	-- ftd.column:
+	if: { code.lang != NULL }
+	anchor: parent
+	right.px: 12
+	bottom.px: 12
+	z-index: 999
+	padding.px: 6
+	border-bottom-right-radius.px: 4
+	
+		-- ds.row:
+		
+			-- ds.row:
+			spacing: $ds.spaces.horizontal-gap.extra-small
+			
+				-- ds.fine-print: Lang:
+				
+				-- ds.fine-print: $code.lang
+				
+			-- end: ds.row
+
+		-- end: ds.row
+
+	-- end: ftd.column
+
+-- end: ds.column
+
+-- end: code
+
+
+
+
+
+
+
+
+
+
+
+-- component render-files:
+pr.toc-item folder:
+module navigate: navigate
+boolean $open: false
+
+-- ds.column:
+inset: $ds.spaces.inset-square.small
+spacing: $ds.spaces.vertical-gap.small
+
+	-- ds.row:
+	spacing: $ds.spaces.horizontal-gap.space-between
+	
+		-- ds.row:
+		align-content: left
+		
+			-- ftd.image:
+			src: $assets.files.assets.storybook.folder-close.svg
+			src if { !render-files.open }: $assets.files.assets.storybook.folder.svg
+			height.fixed.px: 20
+			
+			-- ds.copy-regular: $render-files.folder.title
+			color: $ds.colors.text-strong
+			style: semi-bold
+			
+		-- end: ds.row
+
+		-- ftd.image:
+		src: $assets.files.assets.storybook.arrow-up.svg
+		src if { !render-files.open }: $assets.files.assets.storybook.arrow-down.svg
+		$on-click$: $ftd.toggle($a = $render-files.open)
+		
+	-- end: ds.row
+
+	-- ds.column:
+	if: { !render-files.open }
+	align-content: left
+	inset: $ds.spaces.inset-wide.small-zero
+	spacing: $ds.spaces.vertical-gap.zero
+	
+		-- render-files-children:
+		for: $obj in $render-files.folder.children
+		file: $obj
+		navigate: $render-files.navigate
+		folder: $render-files.folder.title
+		
+	-- end: ds.column
+
+-- end: ds.column
+
+-- end: render-files
+
+
+
+
+
+
+
+
+
+
+-- component render-files-children:
+pr.toc-item file:
+module navigate: navigate
+string folder:
+
+-- ds.row:
+align-content: left
+spacing: $ds.spaces.horizontal-gap.small
+inset: $ds.spaces.inset-wide.small
+background.solid if { active-sub-title == $render-files-children.file.title }: $ds.colors.background.step-2
+background.solid: $ds.colors.background.step-1
+$on-click$: $render-files-children.navigate.submit(default_file=/, fileurl=$render-files-children.file.url)
+$on-click$: $ftd.set-string($a = $active-sub-title, v= $render-files-children.file.title )
+$on-click$: $ftd.set-string($a = $active-title, v= $render-files-children.folder )
+
+	-- ftd.image:
+	src: $assets.files.assets.storybook.file.svg
+	height.fixed.px: 20
+	
+	-- ds.copy-regular: $render-files-children.file.title
+	color: $ds.colors.text-strong
+	style: medium
+	
+-- end: ds.row
+
+-- end: render-files-children
