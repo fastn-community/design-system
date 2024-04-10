@@ -334,7 +334,7 @@ align-content: center
 
 	-- ds.rendered:
 	
-	\-- info-alert: Some kind of alert!
+	\-- ds.info-alert: Some kind of alert!
 	cta-text: Show More
 	cta-link: /
 	
@@ -351,7 +351,7 @@ align-content: center
 
 	-- ds.rendered:
 	
-	\-- warning-alert: Some kind of alert!
+	\-- ds.warning-alert: Some kind of alert!
 	cta-text: Show More
 	cta-link: /
 	
@@ -369,7 +369,7 @@ align-content: center
 
 	-- ds.rendered:
 	
-	\-- success-alert: Some kind of alert!
+	\-- ds.success-alert: Some kind of alert!
 	cta-text: Show More
 	cta-link: /
 	
@@ -387,7 +387,7 @@ align-content: center
 
 	-- ds.rendered:
 	
-	\-- danger-alert: Some kind of alert!
+	\-- ds.danger-alert: Some kind of alert!
 	cta-text: Show More
 	cta-link: /
 	

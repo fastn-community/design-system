@@ -11,3 +11,26 @@ optional string domain-name:
 optional string github-url:
 string list features:
 string list pages:
+
+
+
+
+
+-- record tabs:
+caption title:
+boolean active: false
+integer index:
+
+-- tabs list tab:
+
+-- tabs: Files
+active: true
+index: 1
+
+-- tabs: Preview
+index: 2
+
+-- tabs: Source
+index: 3
+
+-- end: tab
