@@ -10,20 +10,17 @@ caption title:
 body body:
 optional string cta-text:
 optional string cta-link:
-boolean $toggle: false
-boolean $hover: false
 
 -- ds.container:
 background.solid: $ds.colors.info.base
 border: $ds.borders.uniform.small
 border-color: $ds.colors.info.border
 inset: $ds.spaces.inset-square.large
+width: hug-content
 
 	-- ds.row:
 	spacing: $ds.spaces.horizontal-gap.medium
 	align-content: top-left
-	$on-mouse-enter$: $ftd.set-bool($a = $info-alert.hover, v = true)
-	$on-mouse-leave$: $ftd.set-bool($a = $info-alert.hover, v = false)
 	
 		-- ftd.image:
 		src: $assets.files.assets.alert-info.svg
@@ -59,16 +56,6 @@ inset: $ds.spaces.inset-square.large
 
 		-- end: ds.column
 
-		-- ds.column:
-		width.fixed.px: 24
-
-		-- ftd.image:
-		if: { info-alert.hover }
-		src: $assets.files.assets.cross-info.svg
-		$on-click$: $ftd.toggle($a = $info-alert.toggle)
-		
-	-- end: ds.column
-
 	-- end: ds.row
 
 -- end: ds.container
@@ -85,8 +72,6 @@ caption title:
 body body:
 optional string cta-text:
 optional string cta-link:
-boolean $toggle: false
-boolean $hover: false
 
 -- ds.container:
 background.solid: $ds.colors.warning.base
@@ -97,8 +82,6 @@ inset: $ds.spaces.inset-square.large
 	-- ds.row:
 	spacing: $ds.spaces.horizontal-gap.medium
 	align-content: top-left
-	$on-mouse-enter$: $ftd.set-bool($a = $warning-alert.hover, v = true)
-	$on-mouse-leave$: $ftd.set-bool($a = $warning-alert.hover, v = false)
 		
 		-- ftd.image:
 		src: $assets.files.assets.alert-warning.svg
@@ -134,16 +117,6 @@ inset: $ds.spaces.inset-square.large
 
 		-- end: ds.column
 
-		-- ds.column:
-		width.fixed.px: 24
-
-		-- ftd.image:
-		if: { warning-alert.hover }
-		src: $assets.files.assets.cross-warning.svg
-		$on-click$: $ftd.toggle($a = $warning-alert.toggle)
-		
-	-- end: ds.column
-
 	-- end: ds.row
 
 -- end: ds.container
@@ -162,8 +135,6 @@ caption title:
 body body:
 optional string cta-text:
 optional string cta-link:
-boolean $toggle: false
-boolean $hover: false
 
 -- ds.container:
 background.solid: $ds.colors.success.base
@@ -174,8 +145,6 @@ inset: $ds.spaces.inset-square.large
 	-- ds.row:
 	spacing: $ds.spaces.horizontal-gap.medium
 	align-content: top-left
-	$on-mouse-enter$: $ftd.set-bool($a = $success-alert.hover, v = true)
-	$on-mouse-leave$: $ftd.set-bool($a = $success-alert.hover, v = false)
 
 		-- ftd.image:
 		src: $assets.files.assets.alert-success.svg
@@ -211,16 +180,6 @@ inset: $ds.spaces.inset-square.large
 
 		-- end: ds.column
 		
-		-- ds.column:
-		width.fixed.px: 24
-
-		-- ftd.image:
-		if: { success-alert.hover }
-		src: $assets.files.assets.cross-success.svg
-		$on-click$: $ftd.toggle($a = $success-alert.toggle)
-		
-	-- end: ds.column
-		
 	-- end: ds.row
 
 -- end: ds.container
@@ -240,8 +199,6 @@ caption title:
 body body:
 optional string cta-text:
 optional string cta-link:
-boolean $toggle: false
-boolean $hover: false
 
 -- ds.container:
 background.solid: $ds.colors.cta-danger.base
@@ -252,8 +209,6 @@ inset: $ds.spaces.inset-square.large
 	-- ds.row:
 	spacing: $ds.spaces.horizontal-gap.medium
 	align-content: top-left
-	$on-mouse-enter$: $ftd.set-bool($a = $danger-alert.hover, v = true)
-	$on-mouse-leave$: $ftd.set-bool($a = $danger-alert.hover, v = false)
 
 		-- ftd.image:
 		src: $assets.files.assets.alert-danger.svg
@@ -288,16 +243,6 @@ inset: $ds.spaces.inset-square.large
 			-- end: ds.row
 
 		-- end: ds.column
-		
-		-- ds.column:
-		width.fixed.px: 24
-
-		-- ftd.image:
-		if: { danger-alert.hover }
-		src: $assets.files.assets.cross-danger.svg
-		$on-click$: $ftd.toggle($a = $danger-alert.toggle)
-		
-	-- end: ds.column
 		
 	-- end: ds.row
 
