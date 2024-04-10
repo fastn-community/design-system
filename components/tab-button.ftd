@@ -1,0 +1,44 @@
+-- component tab-button:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+string cta-link-1:
+string cta-link-2:
+string cta-link-3:
+
+-- ds.row:
+background.solid: $ds.colors.background.step-2
+inset: $ds.spaces.inset-wide.large-zero
+width: hug-content
+
+-- ds.tertiary-button: $tab-button.cta-text-1
+link: $tab-button.cta-link-1
+size: medium
+
+-- ds.column:
+border: $ds.borders.left.small
+height.fixed.px: 22
+border-color: $ds.colors.border-strong
+radius: $ds.radius.zero
+
+-- end: ds.column
+
+-- ds.tertiary-button: $tab-button.cta-text-2
+link: $tab-button.cta-link-2
+size: medium
+
+-- ds.column:
+border: $ds.borders.left.small
+height.fixed.px: 22
+border-color: $ds.colors.border-strong
+radius: $ds.radius.zero
+
+-- end: ds.column
+
+-- ds.tertiary-button: $tab-button.cta-text-3
+link: $tab-button.cta-link-3
+size: medium
+
+-- end: ds.row
+
+-- end: tab-button

@@ -16,7 +16,10 @@ exposing: border-data, border-thickness, borders
 export: shadow-data, shadow
 
 -- import: fastn-community.github.io/design-system/record as _
-export: package-info
+export: package-info, tabs
+
+-- import: fastn-community.github.io/design-system/components/tab-button as _
+export: tab-button
 
 -- import: fastn-community.github.io/design-system as _
 export: storybook
