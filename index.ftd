@@ -115,26 +115,26 @@ list-of-tab: $sr.tab
 $processor$: pr.toc
 
 - Components:
-  - Alert: /alert/
-  - Buttons: /components/button/
-  - Icon Buttons: /components/icon-button/
-  - Button Group (WIP): /components/button-group/
-  - Toggle: /components/toggle/
-  - Label Text: /components/label-text/
-  - Clipboard: /components/clipboard/
-  - Checkbox: /components/checkbox/
-  - Input: /components/input/
+  - Alert: components/alert/
+  - Buttons: components/button/
+  - Icon Buttons: components/icon-button/
+  - Button Group (WIP): components/button-group/
+  - Toggle: components/toggle/
+  - Label Text: components/label-text/
+  - Clipboard: components/clipboard/
+  - Checkbox: components/checkbox/
+  - Input: components/input/
 
 - Typography:
-  - Typography: /typography/ 
+  - Typography: typography/ 
 
 - Foundation Elements:
-  - Page: /foundation-elements/page/
-  - Column: /foundation-elements/column/
-  - Container: /foundation-elements/container/
-  - Row: /foundation-elements/row/
-  - section-row: /foundation-elements/section-row/
-  - section-column: /foundation-elements/section-column/
+  - Page: foundation-elements/page/
+  - Column: foundation-elements/column/
+  - Container: foundation-elements/container/
+  - Row: foundation-elements/row/
+  - section-row: foundation-elements/section-row/
+  - section-column: foundation-elements/section-column/
 
 
 

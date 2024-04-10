@@ -532,8 +532,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "5AA246FC8F74CB720AC5500A05739F6485EB92D6F685EA6998B07CEF8BF898A8",
-      "size": 15894
+      "checksum": "A4B12629747D6C9CE95FE6B1407E1DC0E1BCF3D68A4E5907E24F50D89A0E121A",
+      "size": 15889
     },
     "record.ftd": {
       "name": "record.ftd",
@@ -556,6 +556,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/b14ab1533c2654966bf4adcd728bb6c1b9198b6f.zip",
-  "checksum": "7A05532C0404CE85C586F2B0FE5C3EC8EB4BCDE8EBF55A1D240D363C109D73F3"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/d078ec99cd02b67a8a20015d7c989be518c41374.zip",
+  "checksum": "573A41452CA47CB86ABBD2C0AE5854549AFF4D780ACB06A2A33E701964C0D56E"
 }
