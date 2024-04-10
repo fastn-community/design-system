@@ -1,0 +1,13 @@
+-- optional string $active-file-preview-url: https://fastn-community.github.io/design-system/components/alert/
+-- optional string $active-file-content: content
+
+-- void submit(default_file, fileurl):
+string default_file:
+string fileurl:
+string $url: $active-file-preview-url
+js: $assets.files.assets.js.update-source.js
+
+url = fileurl;
+update_source_code(url)
+
+;;callAlert("Navigating to file:" + fileurl + ", default file: " + default_file)
