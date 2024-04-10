@@ -324,11 +324,6 @@ spacing: $ds.spaces.vertical-gap.medium
 
 	-- ds.heading-hero: Primary Buttons
 	
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Default
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -370,13 +365,6 @@ spacing: $ds.spaces.vertical-gap.medium
 			
 		-- end: ds.rendered
 
-	-- end: ds.section-row
-
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Disabled
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -419,16 +407,9 @@ spacing: $ds.spaces.vertical-gap.medium
 			variant: disabled
 			
 		-- end: ds.rendered
-
-	-- end: ds.section-row
 
 	-- ds.heading-hero: Secondary Buttons
 	
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Default
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -469,15 +450,6 @@ spacing: $ds.spaces.vertical-gap.medium
 			rounded: true
 			
 		-- end: ds.rendered
-
-	-- end: ds.section-row
-
-
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Disabled
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -520,16 +492,9 @@ spacing: $ds.spaces.vertical-gap.medium
 			variant: disabled
 			
 		-- end: ds.rendered
-
-	-- end: ds.section-row
 
 	-- ds.heading-hero: Tertiary Buttons
 	
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Default
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -566,16 +531,9 @@ spacing: $ds.spaces.vertical-gap.medium
 			size: large
 			
 		-- end: ds.rendered
-
-	-- end: ds.section-row
 
 	-- ds.heading-hero: Link Buttons
 	
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Default
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -613,15 +571,8 @@ spacing: $ds.spaces.vertical-gap.medium
 			
 		-- end: ds.rendered
 
-	-- end: ds.section-row
-
 	-- ds.heading-hero: Danger Buttons
 	
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Default
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -663,13 +614,6 @@ spacing: $ds.spaces.vertical-gap.medium
 			
 		-- end: ds.rendered
 
-	-- end: ds.section-row
-
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Disabled
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -712,8 +656,6 @@ spacing: $ds.spaces.vertical-gap.medium
 			variant: disabled
 			
 		-- end: ds.rendered
-
-	-- end: ds.section-row
 
 -- end: ds.section-column
 
