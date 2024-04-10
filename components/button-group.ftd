@@ -15,6 +15,8 @@ children: $button-group.buttons
 
 -- ds.page: Button Group
 
+-- ds.section-column:
+
 -- ds.phosphor-icon-button: Back
 icon: arrow-left
 link: index.html
@@ -25,5 +27,7 @@ link: index.html
 	-- ds.button-group:
 	
 -- end: ds.rendered
+
+-- end: ds.section-column
 
 -- end: ds.page
