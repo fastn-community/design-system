@@ -115,7 +115,7 @@ list-of-tab: $sr.tab
 $processor$: pr.toc
 
 - Components:
-  - Alert: /components/alert/
+  - Alert: /alert/
   - Buttons: /components/button/
   - Icon Buttons: /components/icon-button/
   - Button Group (WIP): /components/button-group/
