@@ -640,6 +640,7 @@ inset: $ds.spaces.inset-wide.small
 background.solid if { active-sub-title == $render-files-children.file.title }: $ds.colors.background.step-2
 background.solid: $ds.colors.background.step-1
 $on-click$: $render-files-children.navigate.submit(default_file=/, fileurl=$render-files-children.file.url)
+$on-click$: $ftd.set-string($a = $render-files-children.navigate.active-file-preview-url, v = $render-files-children.file.url)
 $on-click$: $ftd.set-string($a = $active-sub-title, v= $render-files-children.file.title )
 $on-click$: $ftd.set-string($a = $active-title, v= $render-files-children.folder )
 
