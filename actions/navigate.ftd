@@ -1,5 +1,7 @@
 -- optional string $active-file-preview-url: https://fastn-community.github.io/design-system/components/alert/
 -- optional string $active-file-content: content
+-- string $active-title: Components
+-- string $active-sub-title: Alert
 
 -- void submit(default_file, fileurl):
 string default_file:
