@@ -249,7 +249,6 @@ background.solid: $ds.colors.background.step-1
 					-- ds.copy-regular: $storybook.navigate.active-title
 					
 					-- ftd.image:
-					if: { storybook.navigate.active-title != NULL }
 					src: $assets.files.assets.storybook.right.svg
 					
 					-- ds.copy-regular: $storybook.navigate.active-sub-title
@@ -371,7 +370,6 @@ background.solid: $ds.colors.background.step-1
 						-- ds.copy-regular: $storybook.navigate.active-title
 						
 						-- ftd.image:
-						if: { storybook.navigate.active-title != NULL }
 						src: $assets.files.assets.storybook.right.svg
 						
 						-- ds.copy-regular: $storybook.navigate.active-sub-title
