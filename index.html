@@ -3563,8 +3563,7 @@ font-family: fifthtry-github-io-inter-font-Inter }
       title: "Design System",
       content: fastn.mutableList([function (root, inherited) {
         let rooti0 = fastn_community_github_io_design_system___storybook(root, inherited, {
-          list_of_files: global.fastn_community_github_io_design_system___toc,
-          list_of_tab: global.fastn_community_github_io_design_system_record__tab
+          list_of_files: global.fastn_community_github_io_design_system___toc
         });
       }
       ]),
@@ -6680,6 +6679,30 @@ let fastn_community_github_io_design_system___tab_content = function (parent, in
   }
 }
 global["fastn_community_github_io_design_system___tab_content"] = fastn_community_github_io_design_system___tab_content;
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_record__tab", fastn.mutableList([function () {
+  let record = fastn.recordInstance({
+  });
+  record.set("title", "Files");
+  record.set("active", true);
+  record.set("index", 1);
+  return record;
+}(),
+function () {
+  let record = fastn.recordInstance({
+  });
+  record.set("title", "Preview");
+  record.set("active", false);
+  record.set("index", 2);
+  return record;
+}(),
+function () {
+  let record = fastn.recordInstance({
+  });
+  record.set("title", "Source");
+  record.set("active", false);
+  record.set("index", 3);
+  return record;
+}()]));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_actions_navigate__active_file_content", fastn.mutable("content"));
 let fastn_community_github_io_design_system___storybook = function (parent, inherited, args)
 {
@@ -6689,7 +6712,7 @@ let fastn_community_github_io_design_system___storybook = function (parent, inhe
     let __args__ = {
       list_of_files: fastn.mutableList([]),
       navigate: fastn.module("fastn_community_github_io_design_system_actions_navigate", global),
-      list_of_tab: fastn.mutableList([]),
+      list_of_tab: global.fastn_community_github_io_design_system_record__tab,
       mobile: fastn.wrapMutable(false),
       desktop: fastn.wrapMutable(false),
       sidebar: fastn.wrapMutable(false),
@@ -7595,30 +7618,6 @@ function () {
     record.set("children", fastn.mutableList([]));
     return record;
   }()]));
-  return record;
-}()]));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_record__tab", fastn.mutableList([function () {
-  let record = fastn.recordInstance({
-  });
-  record.set("title", "Files");
-  record.set("active", true);
-  record.set("index", 1);
-  return record;
-}(),
-function () {
-  let record = fastn.recordInstance({
-  });
-  record.set("title", "Preview");
-  record.set("active", false);
-  record.set("index", 2);
-  return record;
-}(),
-function () {
-  let record = fastn.recordInstance({
-  });
-  record.set("title", "Source");
-  record.set("active", false);
-  record.set("index", 3);
   return record;
 }()]));
 let fastn_community_github_io_design_system_web_components__source_updater = function (parent, inherited, args)

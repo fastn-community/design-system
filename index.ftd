@@ -113,7 +113,6 @@ theme-switcher: true
 
 -- storybook:
 list-of-files: $toc
-list-of-tab: $sr.tab
 
 -- end: ds.page
 
@@ -156,7 +155,7 @@ $processor$: pr.toc
 -- component storybook:
 pr.toc-item list list-of-files:
 module navigate: navigate
-sr.tabs list list-of-tab:
+sr.tabs list list-of-tab: $sr.tab
 boolean $mobile: false
 boolean $desktop: false
 boolean $sidebar: false
