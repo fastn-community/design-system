@@ -15,6 +15,9 @@ exposing: border-data, border-thickness, borders
 -- import: fastn-community.github.io/design-system/foundation-elements/shadow as _
 export: shadow-data, shadow
 
+-- import: fastn-community.github.io/design-system/components/dark-mode-toggle as _
+export: dark-mode-toggle
+
 -- import: fastn-community.github.io/design-system/record as _
 export: package-info, tabs
 
