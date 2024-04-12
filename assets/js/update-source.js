@@ -1,5 +1,6 @@
-async function update_source_code(file) {
+async function update_source_code(file, source) {
     const static_value = fastn_utils.getStaticValue(file);
+    const source_value = fastn_utils.getStaticValue(source);
 
     if(!static_value) {
         return;
@@ -17,7 +18,7 @@ async function update_source_code(file) {
         });
     });
 
-    ftd.set_value("fastn-community.github.io/design-system/actions/navigate#active-file-content", file_source);
+    ftd.set_value(source_value + "#active-file-content", file_source);
 }
 
 async function fetch_ftd_source(file_path) {

@@ -17,7 +17,7 @@
                 <script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
                 <script src="default-703F31E3F39EDCC57A9A152AD31F69C50F34E41A7392DC3D15C3C17FC6E7A9D8.js"></script>
                 <link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
-                <script src="-/fastn-community.github.io/design-system/assets/js/update-source.js" type="module"></script><script src="-/fastn-community.github.io/design-system/assets/js/update-source.js"></script>
+                <script src="-/fastn-community.github.io/design-system/assets/js/update-source.js"></script><script src="-/fastn-community.github.io/design-system/assets/js/update-source.js" type="module"></script>
             
     
 
@@ -5998,23 +5998,14 @@ let fastn_community_github_io_design_system_typography__copy_regular = function 
 }
 global["fastn_community_github_io_design_system_typography__copy_regular"] = fastn_community_github_io_design_system_typography__copy_regular;
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_assets__files.assets_js_update_source_js", "-/fastn-community.github.io/design-system/assets/js/update-source.js");
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_actions_navigate__active_file_preview_url", fastn.mutable("https://fastn-community.github.io/design-system/components/alert/"));
 let fastn_community_github_io_design_system_actions_navigate__submit = function (args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
   __fastn_package_name__ = "fastn_community_github_io_design_system";
   try {
     let __args__ = fastn_utils.getArgs({
-      url: global.fastn_community_github_io_design_system_actions_navigate__active_file_preview_url,
     }, args);
-    let fastn_utils_val___args___url = fastn_utils.clone(__args__.fileurl);
-    if (fastn_utils_val___args___url instanceof fastn.mutableClass) {
-      fastn_utils_val___args___url = fastn_utils_val___args___url.get();
-    }
-    if (!fastn_utils.setter(__args__.url, fastn_utils_val___args___url)) {
-      __args__.url = fastn_utils_val___args___url;
-    };
-    return (update_source_code(__args__.url));
+    return (update_source_code(__args__.fileurl, "fastn-community.github.io/design-system/actions/navigate"));
   } catch (e) {
     if (!ssr) {
       throw e;
@@ -6076,7 +6067,12 @@ let fastn_community_github_io_design_system___render_files_children = function (
       fastn_utils.getStaticValue(__args__.navigate.get("submit")) ({
         default_file: "/",
         fileurl: __args__.file.get("url"),
-        url: global.fastn_community_github_io_design_system_actions_navigate__active_file_preview_url,
+      }, parenti0);
+    });
+    parenti0.addEventHandler(fastn_dom.Event.Click, function () {
+      ftd.set_string({
+        a: __args__.navigate.get("active_file_preview_url"),
+        v: __args__.file.get("url"),
       }, parenti0);
     });
     parenti0.addEventHandler(fastn_dom.Event.Click, function () {
@@ -6097,6 +6093,7 @@ let fastn_community_github_io_design_system___render_files_children = function (
   }
 }
 global["fastn_community_github_io_design_system___render_files_children"] = fastn_community_github_io_design_system___render_files_children;
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_actions_navigate__active_file_preview_url", fastn.mutable("https://fastn-community.github.io/design-system/components/alert/"));
 let fastn_community_github_io_design_system___render_files = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
