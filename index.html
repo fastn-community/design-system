@@ -17,7 +17,7 @@
                 <script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
                 <script src="default-703F31E3F39EDCC57A9A152AD31F69C50F34E41A7392DC3D15C3C17FC6E7A9D8.js"></script>
                 <link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
-                <script src="-/fastn-community.github.io/design-system/assets/js/update-source.js"></script><script src="-/fastn-community.github.io/design-system/assets/js/update-source.js" type="module"></script>
+                <script src="-/fastn-community.github.io/design-system/assets/js/update-source.js" type="module"></script><script src="-/fastn-community.github.io/design-system/assets/js/update-source.js"></script>
             
     
 
@@ -6022,8 +6022,6 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   record.set("dark", "-/fastn-community.github.io/design-system/assets/storybook/file-dark.svg");
   return record;
 }());
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system___active_sub_title", fastn.mutable("Alert"));
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system___active_title", fastn.mutable("Components"));
 let fastn_community_github_io_design_system___render_files_children = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -6052,9 +6050,9 @@ let fastn_community_github_io_design_system___render_files_children = function (
       }
       ]),
       background: fastn.formula([__args__.file.get("title"),
-      global.fastn_community_github_io_design_system___active_sub_title], function () {
+      __args__.navigate.get("active_sub_title")], function () {
         if (function () {
-          return (fastn_utils.getStaticValue(global.fastn_community_github_io_design_system___active_sub_title) == fastn_utils.getStaticValue(__args__.file.get("title")));
+          return (fastn_utils.getStaticValue(__args__.navigate.get("active_sub_title")) == fastn_utils.getStaticValue(__args__.file.get("title")));
         }()) {
           return fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("background").get("step_2"));
         } else {
@@ -6077,13 +6075,13 @@ let fastn_community_github_io_design_system___render_files_children = function (
     });
     parenti0.addEventHandler(fastn_dom.Event.Click, function () {
       ftd.set_string({
-        a: global.fastn_community_github_io_design_system___active_sub_title,
+        a: __args__.navigate.get("active_sub_title"),
         v: __args__.file.get("title"),
       }, parenti0);
     });
     parenti0.addEventHandler(fastn_dom.Event.Click, function () {
       ftd.set_string({
-        a: global.fastn_community_github_io_design_system___active_title,
+        a: __args__.navigate.get("active_title"),
         v: __args__.folder,
       }, parenti0);
     });
@@ -6093,6 +6091,8 @@ let fastn_community_github_io_design_system___render_files_children = function (
   }
 }
 global["fastn_community_github_io_design_system___render_files_children"] = fastn_community_github_io_design_system___render_files_children;
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_actions_navigate__active_sub_title", fastn.mutable("Alert"));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_actions_navigate__active_title", fastn.mutable("Components"));
 fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_actions_navigate__active_file_preview_url", fastn.mutable("https://fastn-community.github.io/design-system/components/alert/"));
 let fastn_community_github_io_design_system___render_files = function (parent, inherited, args)
 {
@@ -6878,23 +6878,16 @@ let fastn_community_github_io_design_system___storybook = function (parent, inhe
                       },
                       function (root, inherited) {
                         let rooti0 = fastn_community_github_io_design_system__copy_regular(root, inherited, {
-                          text: global.fastn_community_github_io_design_system___active_title
+                          text: __args__.navigate.get("active_title")
                         });
                       },
                       function (root, inherited) {
-                        fastn_dom.conditionalDom(root, [
-                          global.fastn_community_github_io_design_system___active_title
-                        ], function () {
-                          return (fastn_utils.getStaticValue(global.fastn_community_github_io_design_system___active_title) !== null);
-                        }, function (root) {
-                          let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
-                          rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.fastn_community_github_io_design_system_assets__files.get("assets_storybook_right_svg"), inherited);
-                          return rooti0;
-                        });
+                        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+                        rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.fastn_community_github_io_design_system_assets__files.get("assets_storybook_right_svg"), inherited);
                       },
                       function (root, inherited) {
                         let rooti0 = fastn_community_github_io_design_system__copy_regular(root, inherited, {
-                          text: global.fastn_community_github_io_design_system___active_sub_title,
+                          text: __args__.navigate.get("active_sub_title"),
                           color: global.fastn_community_github_io_design_system__colors.get("text_strong")
                         });
                       }
@@ -7088,23 +7081,16 @@ let fastn_community_github_io_design_system___storybook = function (parent, inhe
                           let rooti0 = fastn_community_github_io_design_system__row(root, inherited, {
                             content: fastn.mutableList([function (root, inherited) {
                               let rooti0 = fastn_community_github_io_design_system__copy_regular(root, inherited, {
-                                text: global.fastn_community_github_io_design_system___active_title
+                                text: __args__.navigate.get("active_title")
                               });
                             },
                             function (root, inherited) {
-                              fastn_dom.conditionalDom(root, [
-                                global.fastn_community_github_io_design_system___active_title
-                              ], function () {
-                                return (fastn_utils.getStaticValue(global.fastn_community_github_io_design_system___active_title) !== null);
-                              }, function (root) {
-                                let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
-                                rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.fastn_community_github_io_design_system_assets__files.get("assets_storybook_right_svg"), inherited);
-                                return rooti0;
-                              });
+                              let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+                              rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.fastn_community_github_io_design_system_assets__files.get("assets_storybook_right_svg"), inherited);
                             },
                             function (root, inherited) {
                               let rooti0 = fastn_community_github_io_design_system__copy_regular(root, inherited, {
-                                text: global.fastn_community_github_io_design_system___active_sub_title,
+                                text: __args__.navigate.get("active_sub_title"),
                                 color: global.fastn_community_github_io_design_system__colors.get("text_strong")
                               });
                             }

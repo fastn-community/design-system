@@ -147,8 +147,7 @@ $processor$: pr.toc
 
 
 -- integer $current-slide: 1
--- string $active-title: Components
--- string $active-sub-title: Alert
+
 
 
 -- web-components.source-updater:	
@@ -247,13 +246,12 @@ background.solid: $ds.colors.background.step-1
 					$on-click$: $ftd.set-bool($a = $storybook.mobile, v = true)
 					$on-click$: $ftd.set-bool($a = $storybook.desktop, v = false)
 					
-					-- ds.copy-regular: $active-title
+					-- ds.copy-regular: $storybook.navigate.active-title
 					
 					-- ftd.image:
-					if: { active-title != NULL }
 					src: $assets.files.assets.storybook.right.svg
 					
-					-- ds.copy-regular: $active-sub-title
+					-- ds.copy-regular: $storybook.navigate.active-sub-title
 					color: $ds.colors.text-strong
 					
 				-- end: ds.row
@@ -369,13 +367,12 @@ background.solid: $ds.colors.background.step-1
 					-- ds.row:
 					if: { $current-slide == 2 }
 					
-						-- ds.copy-regular: $active-title
+						-- ds.copy-regular: $storybook.navigate.active-title
 						
 						-- ftd.image:
-						if: { active-title != NULL }
 						src: $assets.files.assets.storybook.right.svg
 						
-						-- ds.copy-regular: $active-sub-title
+						-- ds.copy-regular: $storybook.navigate.active-sub-title
 						color: $ds.colors.text-strong
 						
 					-- end: ds.row
@@ -637,12 +634,12 @@ string folder:
 align-content: left
 spacing: $ds.spaces.horizontal-gap.small
 inset: $ds.spaces.inset-wide.small
-background.solid if { active-sub-title == $render-files-children.file.title }: $ds.colors.background.step-2
+background.solid if { render-files-children.navigate.active-sub-title == $render-files-children.file.title }: $ds.colors.background.step-2
 background.solid: $ds.colors.background.step-1
 $on-click$: $render-files-children.navigate.submit(default_file=/, fileurl=$render-files-children.file.url)
 $on-click$: $ftd.set-string($a = $render-files-children.navigate.active-file-preview-url, v = $render-files-children.file.url)
-$on-click$: $ftd.set-string($a = $active-sub-title, v= $render-files-children.file.title )
-$on-click$: $ftd.set-string($a = $active-title, v= $render-files-children.folder )
+$on-click$: $ftd.set-string($a = $render-files-children.navigate.active-sub-title, v= $render-files-children.file.title )
+$on-click$: $ftd.set-string($a = $render-files-children.navigate.active-title, v= $render-files-children.folder )
 
 	-- ftd.image:
 	src: $assets.files.assets.storybook.file.svg

@@ -22,8 +22,8 @@
     },
     "actions/navigate.ftd": {
       "name": "actions/navigate.ftd",
-      "checksum": "D0A84908103C2CB1F23220D265292030E3B7EBAF9BF10C157EA02D27651E51DF",
-      "size": 453
+      "checksum": "531BA5585E448BE060C18DAF570D821CC7794F60F4A2DDA9298ACC540DB20EA7",
+      "size": 524
     },
     "assets/alert-danger.svg": {
       "name": "assets/alert-danger.svg",
@@ -572,8 +572,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "F5158558AC1CD819802E854A85A0629600F452FF9E60994FCDBF7CB2CEDFD18E",
-      "size": 16362
+      "checksum": "0032F3BD079A7317061BBDB6F1CA0342E73A19801E35739562BDE018A14190B6",
+      "size": 16392
     },
     "record.ftd": {
       "name": "record.ftd",
@@ -596,6 +596,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/07fcc236cea011dbd43c391854e8a7e067fe5892.zip",
-  "checksum": "E6DDCABA6164A6202E434847031164489B7BE00180D40BDE56E993341A3E1142"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/91032cafd521b3eb714ac10d17d3c7f9e118aa0f.zip",
+  "checksum": "4F0DE4325EE8B99654493DAC20F044F656CCC83F3A228156F2659410B4D0B108"
 }
