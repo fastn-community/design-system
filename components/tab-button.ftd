@@ -42,3 +42,51 @@ size: medium
 -- end: ds.row
 
 -- end: tab-button
+
+
+
+
+
+
+-- ds.page: Tab button
+
+-- ds.section-column: 
+ flush: full
+ align-content: center
+
+	-- ds.row:
+	align-content: left
+	
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: /
+		
+		-- ds.heading-hero: Tab button
+		width: hug-content
+		
+	-- end: ds.row
+
+	-- ds.rendered:
+		
+		\-- tab-button:
+		cta-text-1: Text 1
+		cta-text-2: Text 2
+		cta-text-3: Text 3
+		cta-link-1: /
+		cta-link-2: /
+		cta-link-3: /
+		
+			-- tab-button:
+			cta-text-1: Text 1
+			cta-text-2: Text 2
+			cta-text-3: Text 3
+			cta-link-1: components/tab-button/
+			cta-link-2: components/tab-button/
+			cta-link-3: components/tab-button/
+			
+		-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page
+

@@ -1,0 +1,293 @@
+-- import: fastn-community.github.io/svg-icons/phosphor as ph
+
+-- component code:
+optional caption caption:
+body body:
+optional string icon:
+string text: $code.body
+string lang: ftd
+boolean copy: true
+string $copy-text: null
+optional ftd.resizing max-height:
+optional ftd.resizing max-width:
+string clean-code: $ftd.clean-code(a = $code.text, lang = $code.lang)
+boolean line-numbers: false
+
+-- ds.section-column:
+inner-background.solid: $inherited.colors.background.code
+spacing: $ds.spaces.vertical-gap.zero
+radius: $ds.radius.large
+margin: $ds.spaces.vertical-gap.medium
+
+ -- ds.row:
+ if: { code.caption != NULL || code.copy }
+ spacing: $ds.spaces.horizontal-gap.medium
+ inset: $ds.spaces.inset-wide.medium
+ width: fill-container
+ border: $ds.borders.bottom.small
+ border-color: $ds.colors.border-strong
+ radius: $ds.radius.zero
+
+   -- ds.row:
+   spacing: $ds.spaces.horizontal-gap.small
+   align-content: left
+
+   	-- ph.fill:
+   	if: { code.icon == NULL && code.caption == NULL }
+   	name: circle
+    size: 14
+
+    -- ph.fill:
+    if: { code.icon == NULL && code.caption == NULL }
+   	name: circle
+    size: 14
+
+    -- ph.fill:
+    if: { code.icon == NULL && code.caption == NULL }
+   	name: circle
+    size: 14
+
+      -- ph.regular: 
+      if: { code.icon != NULL }
+      name: $code.icon
+      size: 18
+
+      -- ds.copy-regular:
+      if: { code.caption != NULL }
+
+      $code.caption
+
+    -- end: ds.row
+		
+		-- ftd.row:
+		if: { code.copy }
+		align-content: right
+		align-self: end
+		$on-mouse-leave$: $ftd.set-string($a = $code.copy-text, v = null)
+		anchor: parent
+		$on-click$: $ftd.copy-to-clipboard(a = $code.clean-code)
+		$on-click$: $ftd.set-string($a = $code.copy-text, v = Copied!)
+		
+			-- ph.regular:
+			if: { code.copy-text != "null" }
+			name: copy
+			size: 18
+			
+			-- ds.copy-regular: $code.copy-text
+			if: { code.copy-text != "null" }
+			
+		-- end: ftd.row
+
+	-- end: ds.row
+  
+	-- ftd.code:
+	theme: fastn-theme.light
+	theme if { ftd.dark-mode }: fastn-theme.dark
+	text: $code.body
+	lang: $code.lang
+	width: fill-container
+	role: $inherited.types.copy-regular
+	color: $inherited.colors.text
+	background.solid: $inherited.colors.background.code
+	overflow-x: auto
+	overflow-y: auto
+	max-height if { code.max-height != NULL }: $code.max-height
+	max-width if { code.max-width != NULL }: $code.max-width
+	show-line-number if { code.line-numbers }: true
+	
+	-- ftd.column:
+	if: { code.lang != NULL }
+	anchor: parent
+	right.px: 12
+	bottom.px: 12
+	z-index: 999
+	padding.px: 6
+	border-bottom-right-radius.px: 4
+	
+		-- ds.row:
+		spacing: $ds.spaces.horizontal-gap.medium
+		
+			-- ds.row:
+			spacing: $ds.spaces.horizontal-gap.small
+			
+				-- ds.fine-print: Lang:
+				
+				-- ds.fine-print: $code.lang
+				
+			-- end: ds.row
+
+		-- end: ds.row
+
+	-- end: ftd.column
+
+-- end: ds.section-column
+
+-- end: code
+
+
+
+
+
+
+
+
+
+
+-- component code-preview:
+optional caption caption:
+optional string icon:
+children wrapper:
+optional boolean show-window-controls: false
+optional ftd.resizing height:
+
+  -- ds.column:
+  background.solid: $inherited.colors.background.code
+  spacing: $ds.spaces.vertical-gap.zero
+  radius: $ds.radius.large
+
+ -- ds.row:
+ spacing: $ds.spaces.horizontal-gap.medium
+ inset: $ds.spaces.inset-wide.medium
+
+    -- ds.row:
+    if: { code-preview.show-window-controls }
+    width: hug-content
+   	spacing: $ds.spaces.horizontal-gap.extra-extra-small
+
+      -- ph.regular: 
+      name: circle
+      size: 16
+
+      -- ph.regular: 
+      name: circle
+      size: 16
+
+      -- ph.regular: 
+      name: circle
+      size: 16
+
+    -- end: ds.row
+
+    -- ds.row:
+   spacing: $ds.spaces.horizontal-gap.extra-small
+   align-content: left
+
+      -- ph.regular: 
+      if: { code-preview.icon != NULL }
+      name: $code-preview.icon
+      size: 18
+
+      -- ds.copy-regular:
+      if: { code-preview.caption != NULL }
+
+      $code-preview.caption
+
+    -- end: ds.row
+
+  -- end: ds.row
+
+  -- ds.column:
+  content: $code-preview.wrapper
+  spacing: $ds.spaces.vertical-gap.medium
+  background.solid: $inherited.colors.background.base
+  border: $ds.borders.uniform.small
+  inset: $ds.spaces.inset-square.medium
+  radius: $ds.radius.small
+  overflow-y: auto
+  
+  -- end: ds.column
+
+  -- end: ds.column
+
+-- end: code-preview
+
+
+
+
+
+
+
+
+
+-- ds.page: Code Block
+
+-- ds.section-column: 
+ flush: full
+ align-content: center
+
+	-- ds.row:
+	align-content: left
+	
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: /
+		
+		-- ds.heading-hero: Code Block
+		width: hug-content
+		
+	-- end: ds.row
+
+	-- ds.rendered:
+		
+		\-- ds.code:
+
+		\-- ds.column:
+		width.fixed.px: 84
+		height.fixed.px: 84
+		background.solid: $ds.colors.background.step-1
+
+		\-- ds.copy-regular: Text
+
+		\-- end: ds.column
+
+		\-- end: ds.code
+
+		\-- ds.code-preview: Preview
+		icon: globe
+		height.fixed.px: 500
+
+		\-- ds.column:
+		width.fixed.px: 84
+		height.fixed.px: 84
+		background.solid: $ds.colors.background.step-1
+
+		\-- ds.copy-regular: Text
+
+		\-- end: ds.column
+
+		\-- end: ds.code-preview
+		
+		-- code:
+
+		\-- ds.column:
+		width.fixed.px: 84
+		height.fixed.px: 84
+		background.solid: $ds.colors.background.step-1
+
+		\-- ds.copy-regular: Text
+
+		\-- end: ds.column
+
+		-- end: code
+
+		-- code-preview: Preview
+		icon: globe
+		height.fixed.px: 500
+
+		-- ds.column:
+		width.fixed.px: 84
+		height.fixed.px: 84
+		background.solid: $ds.colors.background.step-1
+
+		-- ds.copy-regular: Text
+
+		-- end: ds.column
+
+		-- end: code-preview
+			
+		-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page
+

@@ -2,8 +2,8 @@
   "files": {
     "FASTN.ftd": {
       "name": "FASTN.ftd",
-      "checksum": "CFC777457291D4F3803FB615BE59EF3113B4D322FA52AAEB66A3E797DD6CA1FA",
-      "size": 588
+      "checksum": "D6904EE6DA4B8B6AF86CD9C67BB11E4B3D42A7608E943BC282F754E30C980F37",
+      "size": 589
     },
     "LICENSE": {
       "name": "LICENSE",
@@ -450,6 +450,11 @@
       "checksum": "D3A49FD9A6FE49AADDECB1E7D95DF982EFB07888F218B71970543FE85F57FF22",
       "size": 2998
     },
+    "components/code.ftd": {
+      "name": "components/code.ftd",
+      "checksum": "5D663296C7EE82C3745125659095FB9E076D61A863ADFF001B73EA11EFB2478C",
+      "size": 5482
+    },
     "components/dark-mode-toggle.ftd": {
       "name": "components/dark-mode-toggle.ftd",
       "checksum": "40946600680F1A7E817AB0A73CC727F548FDE71197E5165A32DFB8E45403FAC8",
@@ -482,8 +487,8 @@
     },
     "components/tab-button.ftd": {
       "name": "components/tab-button.ftd",
-      "checksum": "120FEF8B47EE2E77706C09851F6265A5731D9D7E83A1935D683AB2B206D6FE49",
-      "size": 856
+      "checksum": "E8D8E3BEEF106A7FA1F90A8950ADBB91A069331783D4B87AC4D23C749747197D",
+      "size": 1543
     },
     "components/toggle.ftd": {
       "name": "components/toggle.ftd",
@@ -572,8 +577,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "8057944561FAD1B8C34800E3E929CC0E53CD1B8E58F46DD738018B34D1CB1A85",
-      "size": 16379
+      "checksum": "26CE5B3A63DD238C78884C3BA6362CF8D335936B68EB7002B8F636225EA0976D",
+      "size": 16439
     },
     "record.ftd": {
       "name": "record.ftd",
@@ -596,6 +601,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/8f8705d720aa0321f54845eabd2b481866b86c03.zip",
-  "checksum": "E9F31D305A2226AF5FBB14631F98666A2CB0127DAE3E2F4469A3707A1C687C98"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/fcb529066e1da29bf5672c46d6f1a2c970ba3336.zip",
+  "checksum": "39EAF1E2024AD23115A0ED181617436713BDC246D8DDDA2D1869D7407437676F"
 }
