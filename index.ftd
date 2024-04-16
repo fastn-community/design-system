@@ -130,6 +130,8 @@ $processor$: pr.toc
   - Clipboard: components/clipboard/
   - Checkbox: components/checkbox/
   - Input: components/input/
+  - Tabs: components/tab-button/
+  - Code: components/code/
 
 - Typography:
   - Typography: typography/ 
