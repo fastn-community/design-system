@@ -490,6 +490,11 @@
       "checksum": "E8D8E3BEEF106A7FA1F90A8950ADBB91A069331783D4B87AC4D23C749747197D",
       "size": 1543
     },
+    "components/text-area.ftd": {
+      "name": "components/text-area.ftd",
+      "checksum": "632DCD7A641D9C8B81CDC172488A212E81409AC888673C5AE8B60675795B1136",
+      "size": 1206
+    },
     "components/toggle.ftd": {
       "name": "components/toggle.ftd",
       "checksum": "A1DEA8C311755A881C6AF7E6581E4CAB46C60375F205D180CDE075980E2C4D7C",
@@ -577,8 +582,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "26CE5B3A63DD238C78884C3BA6362CF8D335936B68EB7002B8F636225EA0976D",
-      "size": 16439
+      "checksum": "3476083BA538DEF8A873AF65A77B9EA1286DA3F6C0175A1802C218B142552D6E",
+      "size": 16731
     },
     "record.ftd": {
       "name": "record.ftd",
@@ -601,6 +606,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/fcb529066e1da29bf5672c46d6f1a2c970ba3336.zip",
-  "checksum": "39EAF1E2024AD23115A0ED181617436713BDC246D8DDDA2D1869D7407437676F"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/5750c2b532ffec986ad98bac3e8096b53b1675e7.zip",
+  "checksum": "38CEE7FDDF82D31DB2FF4B4B715403429BC341CCC9DA146A5D1826ED7F0643BD"
 }
