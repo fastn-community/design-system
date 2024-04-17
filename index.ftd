@@ -4,7 +4,6 @@
 -- import: fastn-community.github.io/dark-flame-cs
 -- import: fastn-community.github.io/saturated-sunset-cs
 -- import: fastn-community.github.io/roboto-typography
--- import: fastn-community.github.io/design-system/demos
 -- import: fastn-community.github.io/design-system/web-components
 -- import: fastn-community.github.io/design-system/components/dark-mode-toggle
 
@@ -20,6 +19,12 @@ export: package-info, tabs
 
 -- import: fastn-community.github.io/design-system/components/tab-button as _
 export: tab-button
+
+-- import: fastn-community.github.io/design-system/components/code as _
+export: code
+
+-- import: fastn-community.github.io/design-system/components/text-area as _
+export: text-area
 
 -- import: fastn-community.github.io/design-system as _
 export: storybook
@@ -132,6 +137,7 @@ $processor$: pr.toc
   - Input: components/input/
   - Tabs: components/tab-button/
   - Code: components/code/
+  - Text Area: components/text-area/
 
 - Typography:
   - Typography: typography/ 
@@ -143,6 +149,13 @@ $processor$: pr.toc
   - Row: foundation-elements/row/
   - section-row: foundation-elements/section-row/
   - section-column: foundation-elements/section-column/
+
+- Demo:
+  - Dropbase.io: https://nandhinidevie.github.io/dropbase.io/
+  - ft(old): demos/ft-old/
+  - Card: demos/code-snippet/
+
+
 
 
 
