@@ -49,7 +49,7 @@ align-content: center
 		icon: arrow-left
 		link: index.html
 		
-		-- ds.heading-hero: Icon Buttons
+		-- ds.heading-hero: Text Area
 		width: hug-content
 		
 	-- end: ds.row
