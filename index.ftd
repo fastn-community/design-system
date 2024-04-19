@@ -23,6 +23,9 @@ export: tab-button
 -- import: fastn-community.github.io/design-system/components/code as _
 export: code
 
+-- import: fastn-community.github.io/design-system/components/icon-banner as _
+export: icon-banner
+
 -- import: fastn-community.github.io/design-system/components/text-area as _
 export: text-area
 
