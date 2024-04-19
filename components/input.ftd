@@ -33,6 +33,7 @@
 -- component text-input:
 optional caption label:
 optional string hint:
+optional string placeholder:
 optional string error:
 optional ftd.image-src icon-start:
 optional ftd.image-src icon-end:
@@ -73,7 +74,7 @@ inset: $ds.spaces.inset-square.small
 		align-self: center
 		
 		-- ftd.text-input:
-		placeholder: placeholder
+		placeholder: $text-input.placeholder
 		width: fill-container
 		background.solid: $inherited.colors.background.step-1
 		color: $ds.colors.text-strong
@@ -136,12 +137,14 @@ align-content: center
 		 hint: hint
 		 icon-start: $assets.files.assets.convert.svg
 		 icon-end: $assets.files.assets.convert.svg
+		 placeholder: placeholder
 		
 			-- text-input: Label
 			size: small
 			hint: hint
 			icon-start: $assets.files.assets.convert.svg
 			icon-end: $assets.files.assets.convert.svg
+			placeholder: placeholder
 			
 		-- end: ds.rendered
 
