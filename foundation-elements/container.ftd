@@ -10,6 +10,7 @@ optional ftd.background background:
 ds.element-radius radius: $ds.radius.zero
 children content:
 optional ftd.resizing height:
+optional ftd.resizing max-height:
 ds.gap margin-vertical: $ds.spaces.vertical-gap.zero
 ds.gap margin-horizontal: $ds.spaces.vertical-gap.zero
 ds.border-data border: $ds.borders.uniform.zero
@@ -18,6 +19,7 @@ ftd.color border-color: $ds.colors.border
 -- ftd.container:
 width: $container.width
 min-height.fixed.px: $container.height
+max-height.fixed.px: $container.max-height
 padding-vertical.px: $container.inset.vertical
 padding-horizontal.px: $container.inset.horizontal
 children: $container.content
