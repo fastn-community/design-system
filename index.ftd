@@ -23,6 +23,9 @@ export: tab-button
 -- import: fastn-community.github.io/design-system/components/code as _
 export: code
 
+-- import: fastn-community.github.io/design-system/components/tag as _
+export: tag
+
 -- import: fastn-community.github.io/design-system/components/icon-banner as _
 export: icon-banner
 
@@ -145,6 +148,8 @@ $processor$: pr.toc
   - Code: components/code/
   - Text Area: components/text-area/
   - Skeleton: components/skeleton/
+  - Tag: components/tag/
+  - Icon Banner: components/icon-banner/
 
 - Typography:
   - Typography: typography/ 
