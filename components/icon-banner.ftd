@@ -73,12 +73,12 @@ align-content: center
 	\-- ds.icon-banner: Some kind of banner!
 	icon: $assets.files.assets.icon.svg
 	
-	This is an banner message that will be placed inside the body.
+	This is a banner message that will be placed inside the body.
 	
 		-- icon-banner: Some kind of banner!
 		icon: $assets.files.assets.icon.svg
 		
-		This is an banner message that will be placed inside the body.
+		This is a banner message that will be placed inside the body.
 		
 	-- end: ds.rendered
 
