@@ -558,7 +558,7 @@ This is a banner message that will be placed inside the body.
 	.__c-187:visited { color: #7C7C7C !important; }
 	body.dark  .__c-187:visited { color: #B8B8B8 !important; }
 	.__w-188 { width: 100%; }
-	.__w-189 { width: fit-content; }
+	.__w-189 { width: 100%; }
 	.__pl-190 { padding-left: 16px; }
 	.__pr-191 { padding-right: 16px; }
 	.__pt-192 { padding-top: 16px; }
@@ -613,7 +613,7 @@ This is a banner message that will be placed inside the body.
 	.__fw-238 { flex-wrap: no-wrap; }
 	.__jc-239 { justify-content: start; }
 	.__ali-240 { align-items: start; }
-	.__g-241 { gap: 8px; }
+	.__g-241 { gap: 16px; }
 	.__w-242 { width: 20px; }
 	.__w-243 { width: 100%; }
 	.__h-244 { height: null; }
@@ -5625,12 +5625,10 @@ let fastn_community_github_io_design_system_components_icon_banner___icon_banner
     __args__ = fastn_utils.getArgs(__args__, args);
     let parenti0 = fastn_community_github_io_design_system__container(parent, inherited, {
       inset: global.fastn_community_github_io_design_system__spaces.get("inset_square").get("medium"),
-      width: fastn_dom.Resizing.HugContent,
       background: fastn_dom.BackgroundStyle.Solid(global.fastn_community_github_io_design_system__colors.get("background").get("step_1")),
       radius: global.fastn_community_github_io_design_system__radius.get("medium"),
       content: fastn.mutableList([function (root, inherited) {
         let rooti0 = fastn_community_github_io_design_system__row(root, inherited, {
-          spacing: global.fastn_community_github_io_design_system__spaces.get("horizontal_gap").get("small"),
           align_content: fastn_dom.AlignContent.TopLeft,
           content: fastn.mutableList([function (root, inherited) {
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
