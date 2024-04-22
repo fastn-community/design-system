@@ -7,11 +7,9 @@ ftd.image-src icon:
 background.solid: $ds.colors.background.step-1
 border: $ds.borders.uniform.small
 inset: $ds.spaces.inset-square.medium
-width: hug-content
 radius: $ds.radius.medium
 
 	-- ds.row:
-	spacing: $ds.spaces.horizontal-gap.small
 	align-content: top-left
 	
 		-- ftd.image:
