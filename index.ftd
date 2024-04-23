@@ -35,6 +35,9 @@ export: expander
 -- import: fastn-community.github.io/design-system/components/drawer as _
 export: drawer
 
+-- import: fastn-community.github.io/design-system/components/dropdown as _
+export: dropdown
+
 -- import: fastn-community.github.io/design-system/components/icon-banner as _
 export: icon-banner
 
@@ -162,6 +165,7 @@ $processor$: pr.toc
   - Toast: components/toast/
   - Expander: components/expander/
   - Drawer: components/drawer/
+  - Dropdown: components/dropdown/
 
 - Typography:
   - Typography: typography/ 
