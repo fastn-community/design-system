@@ -110,6 +110,11 @@
       "checksum": "DD0E5B5E5D9B855C4F534392AF3F66E81905721556BACE9BE5E245BACA7657B5",
       "size": 220
     },
+    "assets/cross-dark.svg": {
+      "name": "assets/cross-dark.svg",
+      "checksum": "343319A229320DC2AB82FE65FBF4B95C4EFF36EDD706CEC37D3149282632C95B",
+      "size": 220
+    },
     "assets/cross-info.svg": {
       "name": "assets/cross-info.svg",
       "checksum": "6667BF134DD73352198BABC8D26822B5B99039EDFC11898D561BC738C94FFF7A",
@@ -123,6 +128,11 @@
     "assets/cross-warning.svg": {
       "name": "assets/cross-warning.svg",
       "checksum": "17AAAE1EF7311E1242DE290690E19CF70BBFFAD2D65380F60C4F0E8086BCDCE4",
+      "size": 220
+    },
+    "assets/cross.svg": {
+      "name": "assets/cross.svg",
+      "checksum": "809330DACDE47F7935D28E1475A7CDBCFBDAB4118B0277745B6043FEDB9E1415",
       "size": 220
     },
     "assets/dark-mode-dark.svg": {
@@ -485,6 +495,11 @@
       "checksum": "40946600680F1A7E817AB0A73CC727F548FDE71197E5165A32DFB8E45403FAC8",
       "size": 668
     },
+    "components/drawer.ftd": {
+      "name": "components/drawer.ftd",
+      "checksum": "9E45EC2ED021CC525AE7AEE9F37B41EBD9C9A36DD3529FD4ACF493FADC737984",
+      "size": 1811
+    },
     "components/expander.ftd": {
       "name": "components/expander.ftd",
       "checksum": "CC070423C6310B8B1568C98224E47710ACA17FDFE6A0A54A8D567C9DACB454EE",
@@ -632,8 +647,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "D38C22588177B5C4BDF075EEB3B151276CFE84C9CE9B3905994694F3AF1EFC69",
-      "size": 17532
+      "checksum": "A55A4EEC09FFAA37BDF6BF0350ACE3B86957780FE2B663564BB59C8FBDCFBF8E",
+      "size": 17653
     },
     "record.ftd": {
       "name": "record.ftd",
@@ -656,6 +671,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/f874dee3a9fb5b868c642816325ffa20b504e4e2.zip",
-  "checksum": "7CFFE7CA0A632587977144E286F7BCBEC7DCE1C2B48DC9BB63C04E443E74CE6E"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/18050f9c6c210cdfca4436d4860fa225e8a69b46.zip",
+  "checksum": "9A5CAF79B486F32FCA39EF54ECFFFB7E2719BA73697DD2386E2A85FD9A019B71"
 }
