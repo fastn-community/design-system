@@ -542,8 +542,8 @@
     },
     "components/toast.ftd": {
       "name": "components/toast.ftd",
-      "checksum": "051742E4F0AAC20AECA800739C560CB181FA79097B0721448F0B24EB5684079A",
-      "size": 1246
+      "checksum": "6B100B6AA61758A05F25EE284F35A0469CB8064146FD34795DA05C5DE3106157",
+      "size": 1302
     },
     "components/toggle.ftd": {
       "name": "components/toggle.ftd",
@@ -656,6 +656,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/608194892bcba1368bc9983bb3a1f0b232f9461c.zip",
-  "checksum": "88520081747087091D7F43B7BCCCA8536007C5CD3961D0A95F15F6243CA52EF9"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/f874dee3a9fb5b868c642816325ffa20b504e4e2.zip",
+  "checksum": "7CFFE7CA0A632587977144E286F7BCBEC7DCE1C2B48DC9BB63C04E443E74CE6E"
 }
