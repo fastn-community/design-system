@@ -21,6 +21,12 @@ boolean active: false
 
 
 
+-- record expander:
+caption title: 
+body body:
+
+
+
 
 
 -- record tabs:

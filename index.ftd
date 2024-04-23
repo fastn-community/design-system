@@ -29,6 +29,9 @@ export: tag
 -- import: fastn-community.github.io/design-system/components/toast as _
 export: toast
 
+-- import: fastn-community.github.io/design-system/components/expander as _
+export: expander
+
 -- import: fastn-community.github.io/design-system/components/icon-banner as _
 export: icon-banner
 
@@ -154,6 +157,7 @@ $processor$: pr.toc
   - Tag: components/tag/
   - Icon Banner: components/icon-banner/
   - Toast: components/toast/
+  - Expander: components/expander/
 
 - Typography:
   - Typography: typography/ 
