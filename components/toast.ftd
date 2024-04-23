@@ -1,12 +1,13 @@
 -- component toast:
 caption title:
 body body:
+string cta-text:
 boolean $toggle: false
 
 -- ds.section-column:
 align-content: left
 
--- ds.secondary-button: Open Toast
+-- ds.secondary-button: $toast.cta-text
 $on-click$: $ftd.toggle($a = $toast.toggle)
 
 -- ftd.row:
@@ -67,10 +68,12 @@ $on-click$: $ftd.toggle($a = $toast.toggle)
 	-- ds.rendered:
 		
 		\-- ds.toast: This is title
+		cta-text: Open
 		
 		This is body part for the toast component.
 
 		-- toast: This is title
+		cta-text: Open
 		
 		This is body part for the toast component.
 			
