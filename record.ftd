@@ -25,6 +25,10 @@ boolean active: false
 caption title: 
 body body:
 
+-- record dropdown:
+caption title: 
+string option:
+
 
 
 
