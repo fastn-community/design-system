@@ -47,6 +47,9 @@ export: modal
 -- import: fastn-community.github.io/design-system/components/empty-page as _
 export: empty-page
 
+-- import: fastn-community.github.io/design-system/components/timeline as _
+export: timeline
+
 -- import: fastn-community.github.io/design-system/components/icon-banner as _
 export: icon-banner
 
@@ -178,6 +181,7 @@ $processor$: pr.toc
   - Hero: components/hero/
   - Modal: components/modal/
   - Empty Page: components/empty-page/
+  - Timeline: components/timeline/
 
 - Typography:
   - Typography: typography/ 

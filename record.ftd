@@ -25,6 +25,16 @@ boolean active: false
 caption title: 
 body body:
 
+
+-- record timeline:
+caption title: 
+optional body body:
+optional string timestamp:
+optional string place:
+
+
+
+
 -- record dropdown:
 caption title: 
 string option:
