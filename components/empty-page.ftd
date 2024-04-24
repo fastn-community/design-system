@@ -3,14 +3,15 @@ optional caption title:
 optional body body:
 ftd.image-src icon:
 
--- ds.section-column:
+-- ds.column:
 inset: $ds.spaces.inset-square.medium
+height: fill-container
 	
 		-- ftd.image:
 		src: $empty-page.icon
-		width.fixed.px: 86
+		width.fixed.px: 100
 		
-			-- ds.heading-tiny: $empty-page.title
+			-- ds.heading-large: $empty-page.title
 			if: { empty-page.title != NULL }
 			color: $ds.colors.text-strong
 
@@ -20,7 +21,7 @@ inset: $ds.spaces.inset-square.medium
 
 			$empty-page.body
 
--- end: ds.section-column
+-- end: ds.column
 
 -- end: empty-page
 
