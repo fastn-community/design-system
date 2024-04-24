@@ -75,6 +75,11 @@
       "checksum": "9FE08755E974052A1A067681815F9F58D0B7650DFFDEC4230AC287E618E97601",
       "size": 3318
     },
+    "assets/coming-soon.png": {
+      "name": "assets/coming-soon.png",
+      "checksum": "820CEEDE12AC1D38D18D6DCBBA5A80FD348B55B112CE943DD311A07E61BAAFD6",
+      "size": 23528
+    },
     "assets/convert-dark.svg": {
       "name": "assets/convert-dark.svg",
       "checksum": "21F8AF60080DB695FF6ABD4DC4D154CFB984CC94D907EAB710B39E2D405E4BCE",
@@ -154,6 +159,11 @@
       "name": "assets/down.svg",
       "checksum": "4D599E4CA35448A0AD3D0886011B34D86DEEDE0A749F01D51694F31DE0CD064D",
       "size": 660
+    },
+    "assets/empty-box.png": {
+      "name": "assets/empty-box.png",
+      "checksum": "843C708B0BAE3E6618C474A66329ABACA063AEE5DB93470E5F643577A156784B",
+      "size": 33801
     },
     "assets/expand-less.svg": {
       "name": "assets/expand-less.svg",
@@ -515,6 +525,11 @@
       "checksum": "7EDBE2E48DE6129A110A6F360FEED1A701DEE103652B00185C5960E7C3857272",
       "size": 2365
     },
+    "components/empty-page.ftd": {
+      "name": "components/empty-page.ftd",
+      "checksum": "87B504741529C82F74579725B5E7069E352A4D40DD27FF045D0D3DE2AE159AF6",
+      "size": 1181
+    },
     "components/expander.ftd": {
       "name": "components/expander.ftd",
       "checksum": "CC070423C6310B8B1568C98224E47710ACA17FDFE6A0A54A8D567C9DACB454EE",
@@ -672,8 +687,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "4F9405A244018D8A61D2324292A58ACAD77F66880DF76AF6946001B8AE74952C",
-      "size": 18012
+      "checksum": "DFA65677EFE582748DC9250CF15E0DC0F0D197960B07738F09E948F20DC83F5E",
+      "size": 18149
     },
     "record.ftd": {
       "name": "record.ftd",
@@ -696,6 +711,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/a26ef47ab36e4725170d85d3f701c6117366fbfb.zip",
-  "checksum": "913435AF28F77EC737BE1EA851C72CDCCCB21BB357F8AF03647DD31BE23BC65B"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/cc321c7f452bb10237b252a4c0561002dd7abf5a.zip",
+  "checksum": "4827FBC25873D966C6C02D61FAC3FBCA0821D358E4EF99850BB357A4FD9694D5"
 }

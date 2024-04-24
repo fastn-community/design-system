@@ -44,6 +44,9 @@ export: hero
 -- import: fastn-community.github.io/design-system/components/modal as _
 export: modal
 
+-- import: fastn-community.github.io/design-system/components/empty-page as _
+export: empty-page
+
 -- import: fastn-community.github.io/design-system/components/icon-banner as _
 export: icon-banner
 
@@ -174,6 +177,7 @@ $processor$: pr.toc
   - Dropdown: components/dropdown/
   - Hero: components/hero/
   - Modal: components/modal/
+  - Empty Page: components/empty-page/
 
 - Typography:
   - Typography: typography/ 
