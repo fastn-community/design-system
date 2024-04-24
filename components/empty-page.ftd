@@ -1,0 +1,77 @@
+-- component empty-page:
+optional caption title:
+optional body body:
+ftd.image-src icon:
+
+-- ds.section-column:
+inset: $ds.spaces.inset-square.medium
+	
+		-- ftd.image:
+		src: $empty-page.icon
+		width.fixed.px: 86
+		
+			-- ds.heading-tiny: $empty-page.title
+			if: { empty-page.title != NULL }
+			color: $ds.colors.text-strong
+
+			-- ds.copy-regular:
+			if: { empty-page.body != NULL }
+			color: $ds.colors.text
+
+			$empty-page.body
+
+-- end: ds.section-column
+
+-- end: empty-page
+
+
+
+
+
+
+
+
+
+
+
+-- ds.page: Empty Page
+
+-- ds.section-column:
+flush: full
+align-content: center
+
+	-- ds.row:
+	align-content: left
+	
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: index.html
+		
+		-- ds.heading-hero: Empty Page
+		width: hug-content
+		
+	-- end: ds.row
+
+	-- ds.rendered:
+	
+	\-- ds.empty-page: No data
+	icon: $assets.files.assets.empty-box.png
+	
+	-- ds.empty-page: No data
+	icon: $assets.files.assets.empty-box.png
+		
+	-- end: ds.rendered
+
+	-- ds.rendered:
+	
+	\-- ds.empty-page: Coming soon
+	icon: $assets.files.assets.coming-soon.png
+	
+	-- ds.empty-page: Coming soon
+	icon: $assets.files.assets.coming-soon.png
+		
+	-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page
