@@ -61,7 +61,7 @@ align-content: center
 		icon: arrow-left
 		link: index.html
 		
-		-- ds.heading-hero: Icon Banner Component
+		-- ds.heading-hero: Icon Banner
 		width: hug-content
 		
 	-- end: ds.row

@@ -124,7 +124,7 @@ dolore magna aliqua. Ut enim ad minim
 
 
 
--- ds.page: Modal
+-- ds.page: Timeline
 
 -- ds.section-column: 
  flush: full
@@ -137,7 +137,7 @@ dolore magna aliqua. Ut enim ad minim
 		icon: arrow-left
 		link: /
 		
-		-- ds.heading-hero: Modal
+		-- ds.heading-hero: Timeline
 		width: hug-content
 		
 	-- end: ds.row

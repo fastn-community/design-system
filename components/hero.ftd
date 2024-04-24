@@ -41,7 +41,7 @@ width.fixed.px: 460
 
 
 
--- ds.page: Dropdown
+-- ds.page: Hero Component
 
 -- ds.section-column: 
  flush: full
@@ -54,7 +54,7 @@ width.fixed.px: 460
 		icon: arrow-left
 		link: /
 		
-		-- ds.heading-hero: Dropdown
+		-- ds.heading-hero: Hero Component
 		width: hug-content
 		
 	-- end: ds.row

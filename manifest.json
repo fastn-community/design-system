@@ -485,6 +485,11 @@
       "checksum": "C38159921CB23F7429329657D51111577AF4BB18DD386923B863C48FAF7047C7",
       "size": 7638
     },
+    "components/band.ftd": {
+      "name": "components/band.ftd",
+      "checksum": "D71A255C82FC316A5B54DD624CC6667444C5BD204F1ED5431ADFC925153BBE20",
+      "size": 2320
+    },
     "components/button-group.ftd": {
       "name": "components/button-group.ftd",
       "checksum": "A8A3DE433E783A138322499C276A25A16237E9235A09F3EF3DEF2F23E06339BC",
@@ -547,13 +552,13 @@
     },
     "components/hero.ftd": {
       "name": "components/hero.ftd",
-      "checksum": "DBB88D7C717C9051E2367B0D0D1E480BC37382FA51A11404FE19FD42CB2CDD51",
-      "size": 4291
+      "checksum": "5F9C31B595A4A8F6753250FD3C89449B2EFF2502A70D5B3032439133A43C431C",
+      "size": 4303
     },
     "components/icon-banner.ftd": {
       "name": "components/icon-banner.ftd",
-      "checksum": "54AEDE1AA1417A4C4720159AE0D5581FBB1E147FEBC33315FAE3C38BEBFFC966",
-      "size": 1407
+      "checksum": "C90AD293C7719365047A54F10602C247930F966936C7590CC2B55B0895BBF13C",
+      "size": 1397
     },
     "components/icon-button.ftd": {
       "name": "components/icon-button.ftd",
@@ -597,8 +602,8 @@
     },
     "components/timeline.ftd": {
       "name": "components/timeline.ftd",
-      "checksum": "4B197804C2E38DE410D7F55EF21353A289EB92DD47F5B3ED33185C428DA52A98",
-      "size": 3636
+      "checksum": "924DEAA61F5030AB05F89D9ADBF50AFF0470CC67BAD36709C3773BAF10805888",
+      "size": 3642
     },
     "components/toast.ftd": {
       "name": "components/toast.ftd",
@@ -692,8 +697,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "8C311A776FF3E07D21866E09612918167640A1203017EA8475E8C8D57478159B",
-      "size": 18278
+      "checksum": "41C7E01FD896467E2928EFE7B5669832E6526185D0FCE9B02DB8502CA94F9BB8",
+      "size": 18391
     },
     "record.ftd": {
       "name": "record.ftd",
@@ -716,6 +721,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/bd1ba78ac90165bf18a48eb3b8a26963ee1b0137.zip",
-  "checksum": "34D7686574860F1D6D272D991CA0093532400454895568605725A440C6DA4966"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/ba4c1c35ca5ca8e87099c55f5a934fa66008f37a.zip",
+  "checksum": "9D9D04B97A191D9C90A1D97488F47A7E855DDECE97BD379084937FCD2C62E4E5"
 }

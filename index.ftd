@@ -50,6 +50,9 @@ export: empty-page
 -- import: fastn-community.github.io/design-system/components/timeline as _
 export: timeline
 
+-- import: fastn-community.github.io/design-system/components/band as _
+export: band
+
 -- import: fastn-community.github.io/design-system/components/icon-banner as _
 export: icon-banner
 
@@ -182,6 +185,7 @@ $processor$: pr.toc
   - Modal: components/modal/
   - Empty Page: components/empty-page/
   - Timeline: components/timeline/
+  - Band: components/band/
 
 - Typography:
   - Typography: typography/ 
