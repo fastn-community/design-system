@@ -382,12 +382,12 @@ background.solid: $ds.colors.background.step-1
 					
 				-- end: ds.row
 
-				-- code:
+				-- ds.code:
 				if: { !storybook.toggle }
 
 				$storybook.navigate.active-file-content
 				
-				-- end: code
+				-- end: ds.code
 
 			-- end: ds.column
 
@@ -486,11 +486,11 @@ background.solid: $ds.colors.background.step-1
 				inset: $ds.spaces.inset-square.medium
 				radius: $ds.radius.zero
 				
-					-- code:
+					-- ds.code:
 					
 					$storybook.navigate.active-file-content
 					
-					-- end: code
+					-- end: ds.code
 
 				-- end: ds.column
 
@@ -550,76 +550,6 @@ border-color: transparent
 -- end: ds.row
 
 -- end: tab-content
-
-
-
-
-
-
-
-
-
-
-
-
-
--- component code:
-body body:
-optional string icon:
-string text: $code.body
-string lang: ftd
-
--- ds.column:
-spacing: $ds.spaces.vertical-gap.zero
-radius: $ds.radius.zero
-height.fixed.vh if { ftd.device == "mobile" }: 72
-height.fixed.px: 183
-align-content: top-left
-
-	-- ftd.code:
-	theme: fastn-theme.light
-	theme if { ftd.dark-mode }: fastn-theme.dark
-	text: $code.body
-	lang: $code.lang
-	width: fill-container
-	height: fill-container
-	role: $inherited.types.copy-regular
-	color: $inherited.colors.text
-	background.solid: $inherited.colors.background.step-1
-	overflow-x: auto
-	overflow-y: auto
-	show-line-number: true
-	
-	-- ftd.column:
-	if: { code.lang != NULL }
-	anchor: parent
-	right.px: 12
-	bottom.px: 12
-	z-index: 999
-	padding.px: 6
-	border-bottom-right-radius.px: 4
-	
-		-- ds.row:
-		
-			-- ds.row:
-			spacing: $ds.spaces.horizontal-gap.extra-small
-			
-				-- ftd.text: Lang:
-				role: $inherited.types.fine-print
-				
-				-- ftd.text: $code.lang
-				role: $inherited.types.fine-print
-				
-			-- end: ds.row
-
-		-- end: ds.row
-
-	-- end: ftd.column
-
--- end: ds.column
-
--- end: code
-
 
 
 
