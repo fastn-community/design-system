@@ -26,6 +26,13 @@ caption title:
 body body:
 
 
+
+
+-- record social-details:
+ftd.image-src icon:
+string link:
+
+
 -- record timeline:
 caption title: 
 optional body body:
