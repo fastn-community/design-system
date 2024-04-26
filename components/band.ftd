@@ -1,17 +1,17 @@
--- or-type input-size:
+-- or-type band-size:
 
 -- constant integer large: 0
 -- constant integer medium: 1
 -- constant integer small: 2
 
--- end: input-size
+-- end: band-size
 
 
 -- component band:
 optional caption title:
 optional body body:
 optional ftd.background background:
-input-size size: small
+band-size size: small
 ftd.align align-content: center
 
 -- ds.column:
@@ -58,13 +58,13 @@ if: { band.body != NULL }
 
 	-- ds.rendered:
 		
-	\-- ds.band: Hero component title
+	\-- ds.band: Band component title
 	background.solid: $ds.colors.background.step-1
 
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
 	molestie ante in luctus rutrum.
 
-	-- band: Hero component title
+	-- band: Band component title
 	background.solid: $ds.colors.background.step-1
 
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -74,14 +74,14 @@ if: { band.body != NULL }
 
 	-- ds.rendered:
 	
-	\-- ds.band: Hero component title
+	\-- ds.band: Band component title
 	background.solid: $ds.colors.background.step-1
 	size: medium
 
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
 	molestie ante in luctus rutrum.
 
-	-- band: Hero component title
+	-- band: Band component title
 	background.solid: $ds.colors.background.step-1
 	size: medium
 
@@ -92,14 +92,15 @@ if: { band.body != NULL }
 
 	-- ds.rendered:
 	
-	\-- ds.band: Hero component title
+	\-- ds.band: Band component title
 	background.solid: $ds.colors.background.step-1
 	size: large
+	align-content: left
 
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
 	molestie ante in luctus rutrum.
 
-	-- band: Hero component title
+	-- band: Band component title
 	background.solid: $ds.colors.background.step-1
 	size: large
 	align-content: left

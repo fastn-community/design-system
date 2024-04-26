@@ -507,8 +507,8 @@
     },
     "components/band.ftd": {
       "name": "components/band.ftd",
-      "checksum": "D71A255C82FC316A5B54DD624CC6667444C5BD204F1ED5431ADFC925153BBE20",
-      "size": 2320
+      "checksum": "C65E30AABCAE99C6188362061B04B31EC1F599E501F672F7F2CF5DD8C46E534D",
+      "size": 2338
     },
     "components/button-group.ftd": {
       "name": "components/button-group.ftd",
@@ -547,8 +547,8 @@
     },
     "components/dropdown.ftd": {
       "name": "components/dropdown.ftd",
-      "checksum": "7EDBE2E48DE6129A110A6F360FEED1A701DEE103652B00185C5960E7C3857272",
-      "size": 2365
+      "checksum": "343924FB536F6448F4BBCE40D82487A5924EE174648430204574E86823ECE4F4",
+      "size": 2363
     },
     "components/empty-page.ftd": {
       "name": "components/empty-page.ftd",
@@ -557,8 +557,8 @@
     },
     "components/expander.ftd": {
       "name": "components/expander.ftd",
-      "checksum": "CC070423C6310B8B1568C98224E47710ACA17FDFE6A0A54A8D567C9DACB454EE",
-      "size": 3290
+      "checksum": "A411606AAA235F3315ADDB01868723E87F7F497A0237B01C17D41CD3A1C63F7F",
+      "size": 3216
     },
     "components/footer.ftd": {
       "name": "components/footer.ftd",
@@ -746,6 +746,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/1bc88c9b3377c9fffed49c2d63d63276a3f075a3.zip",
-  "checksum": "6A395A278269220628A8A812F9C48C7AE8882D1909406A23701A921D3A657D1A"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/035871f3686d54ff27bbe1b9426fc6d79068f74b.zip",
+  "checksum": "DB319B5E72684BFE5E4A869F415EFDD795E9D2C4B8D9D4A279BA3A6CE8C2270D"
 }

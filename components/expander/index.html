@@ -583,15 +583,16 @@ in luctus rutrum.
 	.__pr-192 { padding-right: 16px; }
 	.__pt-193 { padding-top: 16px; }
 	.__pb-194 { padding-bottom: 16px; }
-	.__btw-195 { border-top-width: 1px; }
-	.__bbw-196 { border-bottom-width: 1px; }
-	.__blw-197 { border-left-width: 1px; }
-	.__brw-198 { border-right-width: 1px; }
+	.__btw-195 { border-top-width: 0px; }
+	.__bbw-196 { border-bottom-width: 0px; }
+	.__blw-197 { border-left-width: 0px; }
+	.__brw-198 { border-right-width: 0px; }
 	.__btlr-199 { border-top-left-radius: 16px; }
 	.__btrr-200 { border-top-right-radius: 16px; }
 	.__bblr-201 { border-bottom-left-radius: 16px; }
 	.__bbrr-202 { border-bottom-right-radius: 16px; }
-	.__bc-203 { border-color: #EF8435; }
+	.__bc-203 { border-color: #D2D2D2; }
+	body.dark .__bc-203 { border-color: #434547; }
 	.__o-204 { overflow: null; }
 	.__ox-205 { overflow-x: null; }
 	.__oy-206 { overflow-y: null; }
@@ -5913,9 +5914,7 @@ let fastn_community_github_io_design_system_components_expander___expander = fun
         });
       }
       ]),
-      radius: global.fastn_community_github_io_design_system__radius.get("large"),
-      border: global.fastn_community_github_io_design_system__borders.get("uniform").get("small"),
-      border_color: global.fastn_community_github_io_design_system__colors.get("accent").get("primary")
+      radius: global.fastn_community_github_io_design_system__radius.get("large")
     });
     return parenti0;
   } finally {

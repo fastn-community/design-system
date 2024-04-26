@@ -7,8 +7,6 @@ r.expander list expanders-list:
 -- ds.column:
 inset: $ds.spaces.inset-square.medium
 spacing: $ds.spaces.vertical-gap.large
-border: $ds.borders.uniform.small
-border-color: $ds.colors.accent.primary
 radius: $ds.radius.large
 
 -- ds.heading-medium: $expander.title
