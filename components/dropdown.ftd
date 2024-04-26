@@ -97,7 +97,7 @@ option: Option 1
 option: Option 2
 
 -- r.dropdown: Option 3
-option: oOption 3
+option: Option 3
 
 -- end: dropdown-list
 
@@ -138,7 +138,7 @@ option: oOption 3
 		option: Option 2
 
 		\-- r.dropdown: Option 3
-		option: oOption 3
+		option: Option 3
 
 		\-- end: dropdown-list
 
