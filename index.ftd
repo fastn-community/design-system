@@ -56,6 +56,9 @@ export: band
 -- import: fastn-community.github.io/design-system/components/person-card as _
 export: person-card
 
+-- import: fastn-community.github.io/design-system/components/avatar as _
+export: avatar
+
 -- import: fastn-community.github.io/design-system/components/icon-banner as _
 export: icon-banner
 
@@ -190,6 +193,7 @@ $processor$: pr.toc
   - Timeline: components/timeline/
   - Band: components/band/
   - Person Card: components/person-card/
+  - Avatar: components/avatar/
 
 - Typography:
   - Typography: typography/ 
