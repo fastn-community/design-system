@@ -1,6 +1,3 @@
--- boolean $popup: false
-
-
 -- component info-alert:
 caption title:
 body body:
@@ -28,10 +25,10 @@ width: hug-content
 		
 			-- ds.heading-tiny: $info-alert.title
 			color: $ds.colors.info.text
-
+			
 			-- ds.copy-regular:
 			color: $ds.colors.info.text
-
+			
 			$info-alert.body
 			
 			-- ds.row:
@@ -43,7 +40,7 @@ width: hug-content
 				if: { info-alert.cta-text != NULL }
 				width: hug-content
 				color: $ds.colors.info.text
-
+				
 				-- ftd.image:
 				src: $assets.files.assets.arrow-info.svg
 				width.fixed.px: 16
@@ -78,7 +75,7 @@ inset: $ds.spaces.inset-square.large
 	-- ds.row:
 	spacing: $ds.spaces.horizontal-gap.medium
 	align-content: top-left
-		
+	
 		-- ftd.image:
 		src: $assets.files.assets.alert-warning.svg
 		width.fixed.px: 24
@@ -92,7 +89,7 @@ inset: $ds.spaces.inset-square.large
 			
 			-- ds.copy-regular:
 			color: $ds.colors.warning.text
-
+			
 			$warning-alert.body
 			
 			-- ds.row:
@@ -141,7 +138,7 @@ inset: $ds.spaces.inset-square.large
 	-- ds.row:
 	spacing: $ds.spaces.horizontal-gap.medium
 	align-content: top-left
-
+	
 		-- ftd.image:
 		src: $assets.files.assets.alert-success.svg
 		width.fixed.px: 24
@@ -175,7 +172,7 @@ inset: $ds.spaces.inset-square.large
 			-- end: ds.row
 
 		-- end: ds.column
-		
+
 	-- end: ds.row
 
 -- end: ds.container
@@ -205,7 +202,7 @@ inset: $ds.spaces.inset-square.large
 	-- ds.row:
 	spacing: $ds.spaces.horizontal-gap.medium
 	align-content: top-left
-
+	
 		-- ftd.image:
 		src: $assets.files.assets.alert-danger.svg
 		width.fixed.px: 24
@@ -239,7 +236,7 @@ inset: $ds.spaces.inset-square.large
 			-- end: ds.row
 
 		-- end: ds.column
-		
+
 	-- end: ds.row
 
 -- end: ds.container
@@ -261,66 +258,14 @@ inset: $ds.spaces.inset-square.large
 flush: full
 align-content: center
 
-	-- ds.row:
-	spacing: $ds.spaces.horizontal-gap.space-between
-
-		-- ds.row:
-		align-content: left
-
+	-- ds.detail: Alert Component
 	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: index.html
-		
-		-- ds.heading-hero: Alert Component
-		width: hug-content
-
-		-- end: ds.row
-
-		-- ftd.image:
-		src: $assets.files.assets.info.svg
-		height.fixed.px: 24
-		width.fixed.px: 24
-		$on-click$: $ftd.set-bool($a = $popup, v = true)
-		$on-click-outside$: $ftd.set-bool($a = $popup, v = false)
-		
-	-- end: ds.row
-
-		-- ftd.column:
-		if: { popup }
-		anchor: parent
-		top.px: 48
-		z-index: 9999
-		right.px: 0
-
-			-- ds.column:
-			inset: $ds.spaces.inset-square.medium
-			background.solid: $ds.colors.background.step-1
-			width.fixed.px: 380
-			overflow-y: scroll
-			shadow: $ds.shadow.extra-extra-large
-
-			-- ds.row:
-			border: $ds.borders.bottom.small
-			spacing: $ds.spaces.horizontal-gap.space-between
-			radius: $ds.radius.zero
-
-			-- ds.heading-tiny: Description:
-
-			-- end: ds.row
-
-			-- ds.copy-regular:
-
-			The alert component in our design system provides a visually
-			prominent way to communicate important information or
-			notifications to users. It features distinct styles to convey
-			different levels of urgency or importance, ensuring that users
-			can quickly understand and respond to the information presented.
-
-			-- end: ds.column
-
-		-- end: ftd.column
-
+	The alert component in our design system provides a visually prominent way
+	to communicate important information or notifications to users. It
+	features distinct styles to convey different levels of urgency or
+	importance, ensuring that users can quickly understand and respond to
+	the information presented.
+	
 	-- ds.rendered:
 	
 	\-- ds.info-alert: Some kind of alert!

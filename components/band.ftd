@@ -22,12 +22,12 @@ inset if { band.size == medium }: $ds.spaces.inset-tall.medium
 inset if { band.size == large }: $ds.spaces.inset-tall.large
 align-content: $band.align-content
 
--- ds.heading-large: $band.title
-if: { band.title != NULL }
-
--- ds.copy-regular: $band.body
-if: { band.body != NULL }
-
+	-- ds.heading-large: $band.title
+	if: { band.title != NULL }
+	
+	-- ds.copy-regular: $band.body
+	if: { band.body != NULL }
+	
 -- end: ds.column
 
 -- end: band
@@ -40,7 +40,7 @@ if: { band.body != NULL }
 
 -- ds.page: Band
 
--- ds.section-column: 
+-- ds.section-column:
  flush: full
  align-content: center
 
@@ -57,19 +57,19 @@ if: { band.body != NULL }
 	-- end: ds.row
 
 	-- ds.rendered:
+	
+	\-- ds.band: Band component title
+	background.solid: $ds.colors.background.step-1
+	
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+	molestie ante in luctus rutrum.
+	
+		-- band: Band component title
+		background.solid: $ds.colors.background.step-1
 		
-	\-- ds.band: Band component title
-	background.solid: $ds.colors.background.step-1
-
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-	molestie ante in luctus rutrum.
-
-	-- band: Band component title
-	background.solid: $ds.colors.background.step-1
-
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-	molestie ante in luctus rutrum.
-	
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+		molestie ante in luctus rutrum.
+		
 	-- end: ds.rendered
 
 	-- ds.rendered:
@@ -77,17 +77,17 @@ if: { band.body != NULL }
 	\-- ds.band: Band component title
 	background.solid: $ds.colors.background.step-1
 	size: medium
-
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-	molestie ante in luctus rutrum.
-
-	-- band: Band component title
-	background.solid: $ds.colors.background.step-1
-	size: medium
-
+	
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
 	molestie ante in luctus rutrum.
 	
+		-- band: Band component title
+		background.solid: $ds.colors.background.step-1
+		size: medium
+		
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+		molestie ante in luctus rutrum.
+		
 	-- end: ds.rendered
 
 	-- ds.rendered:
@@ -96,18 +96,18 @@ if: { band.body != NULL }
 	background.solid: $ds.colors.background.step-1
 	size: large
 	align-content: left
-
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-	molestie ante in luctus rutrum.
-
-	-- band: Band component title
-	background.solid: $ds.colors.background.step-1
-	size: large
-	align-content: left
-
+	
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
 	molestie ante in luctus rutrum.
 	
+		-- band: Band component title
+		background.solid: $ds.colors.background.step-1
+		size: large
+		align-content: left
+		
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+		molestie ante in luctus rutrum.
+		
 	-- end: ds.rendered
 
 -- end: ds.section-column
