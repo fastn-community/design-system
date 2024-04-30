@@ -39,7 +39,7 @@ height.fixed.px if { avatar.size == large }: 32
 
 
 
--- ds.page: Drawer
+-- ds.page: Avatar
 
 -- ds.section-column: 
  flush: full
@@ -52,7 +52,7 @@ height.fixed.px if { avatar.size == large }: 32
 		icon: arrow-left
 		link: /
 		
-		-- ds.heading-hero: Drawer
+		-- ds.heading-hero: Avatar
 		width: hug-content
 		
 	-- end: ds.row

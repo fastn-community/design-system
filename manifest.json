@@ -255,6 +255,11 @@
       "checksum": "E47C3B63B9C5C439A8EE601E3D7A236E4AB3F23E88652564F18F160030538DA9",
       "size": 7379478
     },
+    "assets/info.svg": {
+      "name": "assets/info.svg",
+      "checksum": "762D752366AD3F1B3D4ABD8971F530611682FBEFB810575C776204F5FB3CB876",
+      "size": 304
+    },
     "assets/js/update-source.js": {
       "name": "assets/js/update-source.js",
       "checksum": "8B54D113478ABC20B9261CF5D90330FBDA855D6552948F6B6FD53A1A1D06D7B2",
@@ -502,12 +507,12 @@
     },
     "components/alert.ftd": {
       "name": "components/alert.ftd",
-      "checksum": "C38159921CB23F7429329657D51111577AF4BB18DD386923B863C48FAF7047C7",
-      "size": 7638
+      "checksum": "9EFB0C5749DE3D6176261E249F05FBDA516F19140659A6A84B13745A7E6ED1D9",
+      "size": 8658
     },
     "components/avatar.ftd": {
       "name": "components/avatar.ftd",
-      "checksum": "118F2C79DF4D41CDE0D9166116F1E559FF6A9FFEBF4470435F0CDDFA55BA1CAD",
+      "checksum": "9653C14DCCE315B0401EEFDC976C1C61C098F34920B975849C63210F3E887FD6",
       "size": 1422
     },
     "components/band.ftd": {
@@ -751,6 +756,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/6da2ca0cf59f243382524bf1f650a7a0b5ab496c.zip",
-  "checksum": "6186DCE1104B08B4A54F93196807F667E299D0F7B5E204483F1D47B3188C35CD"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/dd60d4341ec8613292481f650559f9a87a48b015.zip",
+  "checksum": "6E8812571EDD3FAD4ED2D7B97D9D4197C9E9595EF04649E15F4055A032766726"
 }
