@@ -1,0 +1,65 @@
+-- component detail:
+caption title:
+body body:
+boolean $popup: false
+
+-- ds.container:
+
+	-- ds.row:
+	spacing: $ds.spaces.horizontal-gap.space-between
+
+		-- ds.row:
+		align-content: left
+
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: index.html
+		
+		-- ds.heading-hero: $detail.title
+		width: hug-content
+
+		-- end: ds.row
+
+		-- ftd.image:
+		src: $assets.files.assets.info.svg
+		height.fixed.px: 24
+		width.fixed.px: 24
+		$on-click$: $ftd.set-bool($a = $detail.popup, v = true)
+		$on-click-outside$: $ftd.set-bool($a = $detail.popup, v = false)
+		
+	-- end: ds.row
+
+		-- ftd.column:
+		if: { detail.popup }
+		anchor: parent
+		top.px: 48
+		z-index: 9999
+		right.px: 0
+
+			-- ds.column:
+			inset: $ds.spaces.inset-square.medium
+			background.solid: $ds.colors.background.step-1
+			width.fixed.px: 380
+			overflow-y: scroll
+			shadow: $ds.shadow.extra-extra-large
+
+			-- ds.row:
+			border: $ds.borders.bottom.small
+			spacing: $ds.spaces.horizontal-gap.space-between
+			radius: $ds.radius.zero
+
+			-- ds.heading-tiny: Description:
+
+			-- end: ds.row
+
+			-- ds.copy-regular:
+
+			$detail.body
+
+			-- end: ds.column
+
+		-- end: ftd.column
+
+	-- end: ds.container
+
+-- end: detail

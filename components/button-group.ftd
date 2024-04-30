@@ -17,16 +17,16 @@ children: $button-group.buttons
 
 -- ds.section-column:
 
--- ds.phosphor-icon-button: Back
-icon: arrow-left
-link: index.html
-
--- ds.rendered:
-
-\-- button-group:
-	-- ds.button-group:
+	-- ds.phosphor-icon-button: Back
+	icon: arrow-left
+	link: index.html
 	
--- end: ds.rendered
+	-- ds.rendered:
+	
+	\-- button-group:
+		-- ds.button-group:
+		
+	-- end: ds.rendered
 
 -- end: ds.section-column
 

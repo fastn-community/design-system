@@ -68,6 +68,9 @@ export: text-area
 -- import: fastn-community.github.io/design-system/components/skeleton as _
 export: skeleton
 
+-- import: fastn-community.github.io/design-system/components/detail as _
+export: detail
+
 -- import: fastn-community.github.io/design-system as _
 export: storybook
 
