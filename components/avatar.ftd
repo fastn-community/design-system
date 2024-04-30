@@ -45,17 +45,10 @@ height.fixed.px if { avatar.size == large }: 32
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
+	-- ds.detail: Avatar Component
 	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Avatar
-		width: hug-content
-		
-	-- end: ds.row
+	The avatar component in our design system provides a visual representation
+	of a user, typically in the form of a profile image or initials.
 
 		-- ds.rendered:
 		
