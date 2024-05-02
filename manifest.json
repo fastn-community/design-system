@@ -527,8 +527,8 @@
     },
     "components/button.ftd": {
       "name": "components/button.ftd",
-      "checksum": "A156B52318EE7736233C72B9B2EDAB377F792FDFBACAF63C6D769E674E9FDD8C",
-      "size": 13450
+      "checksum": "BB9B5ADE0751DD39CD9EB4F550D0E3F6E3D9AAE85D9FD2919B9E68D54DC80C38",
+      "size": 13583
     },
     "components/card.ftd": {
       "name": "components/card.ftd",
@@ -537,18 +537,18 @@
     },
     "components/checkbox.ftd": {
       "name": "components/checkbox.ftd",
-      "checksum": "03B741E9D8422FE62399392088B30E8B8CA98CB355B6773FB5E235C1771ACFEB",
-      "size": 3150
+      "checksum": "2D33F77FE806D22A270516E6C66F670DBF4FC873739158DC4616340C2F44B53A",
+      "size": 3199
     },
     "components/clipboard.ftd": {
       "name": "components/clipboard.ftd",
-      "checksum": "D3A49FD9A6FE49AADDECB1E7D95DF982EFB07888F218B71970543FE85F57FF22",
-      "size": 2998
+      "checksum": "8D6097A0E1BECF84A00797407A96686A7A9D41122E5E5375C4A7400513B2AAF6",
+      "size": 2848
     },
     "components/code.ftd": {
       "name": "components/code.ftd",
-      "checksum": "CD868125F9F2352BB0BE00C3D78D98ACB242106CD25D675BB032332455A730F9",
-      "size": 4617
+      "checksum": "E3021016401817E43C3CD60CE4F8154EF5E1D44F50564D6D7B3A4BC5DB4375D8",
+      "size": 4698
     },
     "components/dark-mode-toggle.ftd": {
       "name": "components/dark-mode-toggle.ftd",
@@ -557,8 +557,8 @@
     },
     "components/detail.ftd": {
       "name": "components/detail.ftd",
-      "checksum": "8F7A17496815E6F1425CC2F2A9C8EE4F25754EC3A292621F3EAF28792F363847",
-      "size": 1184
+      "checksum": "C5290D41865A6C68CA5DF088063D49CEE7C0498E1615F8A2D7C9B59B1B7C71A9",
+      "size": 1235
     },
     "components/divider.ftd": {
       "name": "components/divider.ftd",
@@ -567,13 +567,13 @@
     },
     "components/drawer.ftd": {
       "name": "components/drawer.ftd",
-      "checksum": "9E45EC2ED021CC525AE7AEE9F37B41EBD9C9A36DD3529FD4ACF493FADC737984",
-      "size": 1811
+      "checksum": "C0E08788D2E5319731247B0D89CEF9B5ADAB4A0490F6A8B37726486AE79112D3",
+      "size": 2029
     },
     "components/dropdown.ftd": {
       "name": "components/dropdown.ftd",
-      "checksum": "343924FB536F6448F4BBCE40D82487A5924EE174648430204574E86823ECE4F4",
-      "size": 2363
+      "checksum": "65BAEEE2408FD45F4CC424FA0758318C6816E71F34B260AE0DC17258FC7DFC0D",
+      "size": 2479
     },
     "components/empty-page.ftd": {
       "name": "components/empty-page.ftd",
@@ -747,8 +747,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "6BD3755304570AE77575338258C905985F8C478F9346C8D74A5A97097B79E42F",
-      "size": 17895
+      "checksum": "37EB03BF132737E55A3EE75503C5D6345C14299A751B8040521E006F48DB55C4",
+      "size": 17902
     },
     "record.ftd": {
       "name": "record.ftd",
@@ -771,6 +771,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/bb9722821514fd2209921878c0f9aa64d055fecc.zip",
-  "checksum": "C7DCF2B1E52D0DAAC60C4F04F61FAD7DDD496948CBCA3DC6846898BBC1CE9E94"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/554de3603e351cbf21d8febb9cc74057f9ebe82e.zip",
+  "checksum": "89A9BA10A3CF5CAC99DD8378B785A9185CAD41D3A2891D8EE1B22C68DB24A80B"
 }
