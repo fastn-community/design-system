@@ -44,17 +44,10 @@ align-content: $band.align-content
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
+	-- ds.detail: Band Component
 	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Band
-		width: hug-content
-		
-	-- end: ds.row
+	A band component is content container with size, background, and content
+	alignment options.
 
 	-- ds.rendered:
 	

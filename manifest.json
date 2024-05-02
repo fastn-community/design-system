@@ -517,8 +517,8 @@
     },
     "components/band.ftd": {
       "name": "components/band.ftd",
-      "checksum": "1F733BABFE5B4EC5A92192FE85F967F27CB536B7E33353F2EC525BEF5C3AB2AF",
-      "size": 2372
+      "checksum": "A73923A22B746261D9266BFC0F88BABA178623DC16D894371977B76FDA681D42",
+      "size": 2329
     },
     "components/button-group.ftd": {
       "name": "components/button-group.ftd",
@@ -761,6 +761,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/9c1c52dee8ff16ba7eb88ece6b3f6b82e52bda3f.zip",
-  "checksum": "17BD50F654384BAFF7C4F5E0F1EBA37B22835AE16E18A80B1E98AFB72BC8FAC5"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/d8be6092e4d5c614ee8f3bba0c3360168028c09d.zip",
+  "checksum": "693280CF0180151A6ACCE1A009F3E72E4F90FE38DA1C9973CFA5BE9B77B45489"
 }
