@@ -74,6 +74,9 @@ export: detail
 -- import: fastn-community.github.io/design-system/components/card as _
 export: card
 
+-- import: fastn-community.github.io/design-system/components/divider as _
+export: divider
+
 -- import: fastn-community.github.io/design-system as _
 export: storybook
 
@@ -201,6 +204,7 @@ $processor$: pr.toc
   - Person Card: components/person-card/
   - Avatar: components/avatar/
   - Card: components/card/
+  - Divider: components/divider/
 
 - Typography:
   - Typography: typography/ 
