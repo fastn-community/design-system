@@ -40,6 +40,8 @@ boolean $popup: false
 			inset: $ds.spaces.inset-square.medium
 			background.solid: $ds.colors.background.step-1
 			width.fixed.px: 380
+			height.fixed.px: 280
+			align-content: top-left
 			overflow-y: scroll
 			shadow: $ds.shadow.extra-extra-large
 

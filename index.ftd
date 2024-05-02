@@ -178,33 +178,33 @@ $processor$: pr.toc
 
 - Components:
   - Alert: components/alert/
-  - Buttons: components/button/
-  - Icon Buttons: components/icon-button/
+  - Avatar: components/avatar/
+  - Band: components/band/
   - Button Group (WIP): components/button-group/
-  - Toggle: components/toggle/
-  - Label Text: components/label-text/
-  - Clipboard: components/clipboard/
+  - Buttons: components/button/
+  - Card: components/card/
   - Checkbox: components/checkbox/
-  - Input: components/input/
-  - Tabs: components/tab-button/
+  - Clipboard: components/clipboard/
   - Code: components/code/
-  - Text Area: components/text-area/
-  - Skeleton: components/skeleton/
-  - Tag: components/tag/
-  - Icon Banner: components/icon-banner/
-  - Toast: components/toast/
-  - Expander: components/expander/
+  - Divider: components/divider/
   - Drawer: components/drawer/
   - Dropdown: components/dropdown/
-  - Hero: components/hero/
-  - Modal: components/modal/
   - Empty Page: components/empty-page/
-  - Timeline: components/timeline/
-  - Band: components/band/
+  - Expander: components/expander/
+  - Hero: components/hero/
+  - Icon Banner: components/icon-banner/
+  - Icon Buttons: components/icon-button/
+  - Input: components/input/
+  - Label Text: components/label-text/
+  - Modal: components/modal/
   - Person Card: components/person-card/
-  - Avatar: components/avatar/
-  - Card: components/card/
-  - Divider: components/divider/
+  - Skeleton: components/skeleton/
+  - Tab Button: components/tab-button/
+  - Tags: components/tag/
+  - Text Area: components/text-area/
+  - Timeline: components/timeline/
+  - Toast: components/toast/
+  - Toggle: components/toggle/
 
 - Typography:
   - Typography: typography/ 

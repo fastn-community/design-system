@@ -64,17 +64,14 @@ content: $drawer.wrapper
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Drawer
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Drawer
+
+	The drawer component in our design system provides a flexible and
+	space-saving solution for displaying supplementary content or
+	navigation options within interfaces. Whether it's used for menus,
+	settings, or notifications, the drawer component enhances usability
+	and organization, ensuring a cohesive user experience across different
+	devices and screen sizes.
 
 		-- ds.rendered:
 		

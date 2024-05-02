@@ -112,18 +112,13 @@ option: Option 3
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Dropdown
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Dropdown
 
+	The dropdown component in our design system offers a versatile way to
+	present a list of options in a compact and accessible format. With its
+	intuitive interface, users can easily select from a range of choices,
+	enhancing usability and interaction efficiency.
+	
 	-- ds.rendered:
 		
 		\-- ds.dropdown:

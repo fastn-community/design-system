@@ -160,17 +160,12 @@ margin: $ds.spaces.vertical-gap.medium
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Code Block
-		width: hug-content
-		
-	-- end: ds.row
+		-- ds.detail: Code
+
+		The code component in our design system offers a clean and readable way to
+		display and format code snippets within interfaces. With syntax
+		highlighting it enhances readability and comprehension for developers
+		and users alike.
 
 	-- ds.rendered:
 		
