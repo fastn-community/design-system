@@ -71,6 +71,9 @@ export: skeleton
 -- import: fastn-community.github.io/design-system/components/detail as _
 export: detail
 
+-- import: fastn-community.github.io/design-system/components/card as _
+export: card
+
 -- import: fastn-community.github.io/design-system as _
 export: storybook
 
@@ -197,6 +200,7 @@ $processor$: pr.toc
   - Band: components/band/
   - Person Card: components/person-card/
   - Avatar: components/avatar/
+  - Card: components/card/
 
 - Typography:
   - Typography: typography/ 
