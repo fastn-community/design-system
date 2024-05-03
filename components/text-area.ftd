@@ -42,17 +42,10 @@ spacing: $ds.spaces.vertical-gap.small
 flush: full
 align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: index.html
-		
-		-- ds.heading-hero: Text Area
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Text Area
+
+	The text area component in our design system provides a user-friendly
+	interface for multi-line text input within forms or interfaces.
 	
 		-- ds.rendered:
 		
