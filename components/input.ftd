@@ -1,7 +1,3 @@
--- import: fastn-community.github.io/design-system/foundation-elements/spaces
--- import: fastn-community.github.io/design-system/foundation-elements/borders
-
-
 
 -- or-type input-size:
 
@@ -116,17 +112,11 @@ inset: $ds.spaces.inset-square.small
 flush: full
 align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: index.html
-		
-		-- ds.heading-hero: Icon Buttons
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Input
+
+	The input component in our design system provides a versatile and
+	user-friendly interface for capturing user input within forms or
+	interfaces.
 
 	-- ds.row:
 	
