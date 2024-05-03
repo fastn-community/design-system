@@ -54,17 +54,12 @@ radius: $ds.radius.medium
 flush: full
 align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: index.html
-		
-		-- ds.heading-hero: Icon Banner
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Icon Banner
+
+	The icon banner component in our design system offers a visually dynamic
+	way to draw attention to important information or actions within
+	interfaces. With its combination of icons and text, it provides a
+	clear and concise message that enhances user engagement.
 
 	-- ds.rendered:
 	
