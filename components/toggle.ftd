@@ -1,7 +1,3 @@
--- import: fastn-community.github.io/design-system/foundation-elements/spaces
--- import: fastn-community.github.io/design-system/foundation-elements/borders
--- import: fastn-community.github.io/design-system/foundation-elements/shadow
-
 
 -- or-type toggle-size:
 
@@ -110,17 +106,13 @@ inset: $ds.spaces.inset-wide.small
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: index.html
-		
-		-- ds.heading-hero: Toggle Button
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Toggle
+
+	The toggle component in our design system offers a simple and intuitive
+	way for users to switch between two states, such as on/off or
+	enabled/disabled. Whether it's used for preferences, settings, or
+	filtering options, the toggle component enhances usability and
+	interaction efficiency.
 
 	-- ds.row:
 	
