@@ -92,17 +92,13 @@ link: /
 flush: full
 align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: index.html
-		
-		-- ds.heading-hero: Person Card
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Person Card
+
+	The person card component in our design system offers a visually appealing
+	and informative representation of individuals within interfaces. With
+	customizable styles for profile images, names, titles, and contact
+	information, it provides a clear and concise overview of individuals'
+	identities and roles.
 
 	-- ds.rendered:
 		

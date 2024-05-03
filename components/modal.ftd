@@ -53,17 +53,14 @@ $on-click$: $ftd.toggle($a = $modal.toggle)
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Modal
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Modal
+
+	The modal component in our design system provides a versatile and
+	attention-grabbing way to present content or interactions that require
+	user attention or action. With its overlay and customizable layout, it
+	temporarily suspends the main interface to focus user attention on the
+	modal content.
+
 
 	-- ds.rendered:
 		
