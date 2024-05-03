@@ -41,17 +41,13 @@ height: fill-container
 flush: full
 align-content: center
 
-	-- ds.row:
-	align-content: left
+	-- ds.detail: Empty Page
 	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: index.html
-		
-		-- ds.heading-hero: Empty Page
-		width: hug-content
-		
-	-- end: ds.row
+	The empty page component in our design system provides a clean and
+	visually appealing layout for instances where there is no content to
+	display. With its minimalist design and customizable elements, it
+	offers a clear canvas for users, guiding them toward relevant actions
+	or content creation.
 
 	-- ds.rendered:
 	
