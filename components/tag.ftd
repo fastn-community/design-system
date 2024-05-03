@@ -69,17 +69,12 @@ width: hug-content
 flush: full
 align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: index.html
-		
-		-- ds.heading-hero: Tag
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Tag
+
+	The tag component in our design system offers a visually distinct and
+	versatile way to highlight or categorize content within interfaces.
+	With customizable styles for color it provides flexibility to suit
+	different contexts and design requirements.
 	
 		-- ds.rendered:
 		
