@@ -69,17 +69,15 @@ background.solid: $ds.colors.background.step-2
 flush: full
 align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: index.html
-		
-		-- ds.heading-hero: Skeleton
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Skeleton
+
+	The skeleton component in our design system provides a placeholder
+	representation of content while it loads, offering users visual
+	feedback and indicating that content is on its way. With its simple
+	and lightweight structure, the skeleton component helps maintain
+	layout consistency and reduces perceived loading times, enhancing the
+	user experience.
+
 	
 		-- ds.rendered:
 		

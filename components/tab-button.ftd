@@ -101,17 +101,11 @@ index: 4
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Tab button
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Tab Button
+
+	The tab button component in our design system provides a sleek and
+	efficient way for users to toggle between different sections or
+	categories within interfaces.
 
 	-- ds.rendered:
 		
