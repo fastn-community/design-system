@@ -109,17 +109,13 @@ in luctus rutrum.
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Expander
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Expander
+
+	The expander component in our design system offers an intuitive way to
+	manage and display content that can be expanded or collapsed based on
+	user interaction. With its compact initial state and clear affordances
+	for expansion, it helps conserve screen space while providing access
+	to additional information or details.
 
 	-- ds.rendered:
 		
