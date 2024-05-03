@@ -130,17 +130,11 @@ dolore magna aliqua. Ut enim ad minim
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Timeline
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Timeline
+
+	The timeline component in our design system offers a visually compelling
+	way to display chronological information or events within interfaces.
+
 
 	-- ds.rendered:
 		

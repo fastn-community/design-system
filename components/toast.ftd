@@ -53,17 +53,10 @@ $on-click$: $ftd.toggle($a = $toast.toggle)
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Toast
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Toast
+
+	The toast component in our design system provides a non-intrusive and
+	temporary way to display brief messages or notifications to users.
 
 	-- ds.rendered:
 		
