@@ -47,17 +47,12 @@ width.fixed.px: 460
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Hero Component
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Hero
+
+	The hero component in our design system offers a visually striking and
+	prominent section at the top of a webpage or interface. With its
+	customizable layout and rich media capabilities, it provides an
+	engaging introduction to content or key features.
 
 	-- ds.rendered:
 		
