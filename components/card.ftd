@@ -6,7 +6,6 @@ optional string cta-text:
 optional string cta-link:
 
 -- ds.container:
-width.fixed.percent: 38
 border: $ds.borders.uniform.small
 radius: $ds.radius.small
 inset: $ds.spaces.inset-square.medium
