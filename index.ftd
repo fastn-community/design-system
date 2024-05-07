@@ -68,6 +68,9 @@ export: text-area
 -- import: fastn-community.github.io/design-system/components/skeleton as _
 export: skeleton
 
+-- import: fastn-community.github.io/design-system/components/rating as _
+export: rating
+
 -- import: fastn-community.github.io/design-system/components/detail as _
 export: detail
 
@@ -198,6 +201,7 @@ $processor$: pr.toc
   - Label Text: components/label-text/
   - Modal: components/modal/
   - Person Card: components/person-card/
+  - Rating: components/rating/
   - Skeleton: components/skeleton/
   - Tab Button: components/tab-button/
   - Tags: components/tag/
