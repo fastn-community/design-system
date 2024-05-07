@@ -80,6 +80,9 @@ export: card
 -- import: fastn-community.github.io/design-system/components/divider as _
 export: divider
 
+-- import: fastn-community.github.io/design-system/components/image as _
+export: image
+
 -- import: fastn-community.github.io/design-system as _
 export: storybook
 
@@ -197,6 +200,7 @@ $processor$: pr.toc
   - Hero: components/hero/
   - Icon Banner: components/icon-banner/
   - Icon Buttons: components/icon-button/
+  - Image: components/image/
   - Input: components/input/
   - Label Text: components/label-text/
   - Modal: components/modal/
