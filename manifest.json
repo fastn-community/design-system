@@ -300,6 +300,11 @@
       "checksum": "3CBF7363F01A7FDE9B486232738E557629FC5F1D66EA1602C69233AF189F110A",
       "size": 4733932
     },
+    "assets/placeholder.png": {
+      "name": "assets/placeholder.png",
+      "checksum": "C72E2456FFE788B6EC038A18912E56148C0633F66C9A686DD2A63D097EC89903",
+      "size": 7630
+    },
     "assets/postgres-dark.svg": {
       "name": "assets/postgres-dark.svg",
       "checksum": "864082C2C74871A77484ED773294DCD4E9649C4EB449C9AE7BA2D4261587C3F4",
@@ -620,6 +625,11 @@
       "checksum": "A19FF555E3F912E91011C5CBBDBAF7D5C888FFA51CBA7AD96849E48592DF5E71",
       "size": 10325
     },
+    "components/image.ftd": {
+      "name": "components/image.ftd",
+      "checksum": "B5BEDBC8363DE587F0AC30AD84F906E2F69A80B87367E646B287110EB205A82F",
+      "size": 2370
+    },
     "components/input.ftd": {
       "name": "components/input.ftd",
       "checksum": "4DEFEB857CE513003FE61EC6F4A19557CB52E79623657913B1759972EE48FA2C",
@@ -762,8 +772,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "4D80646766F262B9CDEC118DA5EB4D2CC85CD1F40139536DC86B2C47F29DE86D",
-      "size": 18023
+      "checksum": "0A904763DC51A63B8827D22C3C7A2BC3B7619D649D0DF6D21CB86E957B0E62F8",
+      "size": 18140
     },
     "record.ftd": {
       "name": "record.ftd",
@@ -786,6 +796,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/899c2abce467fce348836004fded2c7d55409968.zip",
-  "checksum": "4E6F38C74C6A2FF4BBB4F8DC4DCD059A4C9111DCF5BE505361568389C83503A6"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/1630ce53e784a649e01cb5b63fbf38a0563ec37d.zip",
+  "checksum": "089CDA823FA19B80BC9F404F075C0B82DBA6CE025F1DE195EDD1E7EF132EBF79"
 }
