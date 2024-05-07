@@ -50,20 +50,19 @@ shadow: $image.shadow
 
 
 
--- ds.page: Card
+-- ds.page: Image
 
 -- ds.section-column:
  flush: full
  align-content: center
 
-	-- ds.detail: Card Component
+	-- ds.detail: Image
 	
-	The image component in our design system offers a modular way to present
-	content and functionality within interfaces. With its structured
-	layout and customizable elements such as imagery, text, and
-	interactive elements, it provides flexibility for displaying various
-	types of information, from articles and product listings to user
-	profiles and interactive widgets.
+	The image component in a design system serves as a standardized element for
+	displaying visual content within digital interfaces. It allows designers and
+	developers to easily incorporate images, photographs, icons, and other
+	graphical elements into their designs while maintaining consistency and
+	scalability across different platforms and screen sizes.
 
 	-- ds.rendered:
 	
