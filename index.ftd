@@ -83,6 +83,9 @@ export: divider
 -- import: fastn-community.github.io/design-system/components/image as _
 export: image
 
+-- import: fastn-community.github.io/design-system/components/pagination as _
+export: pagination
+
 -- import: fastn-community.github.io/design-system/components/floating-banner as _
 export: floating-banner
 
@@ -208,6 +211,7 @@ $processor$: pr.toc
   - Input: components/input/
   - Label Text: components/label-text/
   - Modal: components/modal/
+  - Pagination: components/pagination/
   - Person Card: components/person-card/
   - Rating: components/rating/
   - Skeleton: components/skeleton/

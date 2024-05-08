@@ -265,6 +265,26 @@
       "checksum": "8B54D113478ABC20B9261CF5D90330FBDA855D6552948F6B6FD53A1A1D06D7B2",
       "size": 1282
     },
+    "assets/left-active-dark.svg": {
+      "name": "assets/left-active-dark.svg",
+      "checksum": "4074CDABE97471E8857D139BDA59888A71995E8A2CBAB688ACF35DCAF63AE115",
+      "size": 572
+    },
+    "assets/left-active.svg": {
+      "name": "assets/left-active.svg",
+      "checksum": "4074CDABE97471E8857D139BDA59888A71995E8A2CBAB688ACF35DCAF63AE115",
+      "size": 572
+    },
+    "assets/left-dark.svg": {
+      "name": "assets/left-dark.svg",
+      "checksum": "D6C9FED15D972958C779550E653D580ABB2F8BF61A1982904CF9606B13504A8A",
+      "size": 572
+    },
+    "assets/left.svg": {
+      "name": "assets/left.svg",
+      "checksum": "D6C9FED15D972958C779550E653D580ABB2F8BF61A1982904CF9606B13504A8A",
+      "size": 572
+    },
     "assets/light-mode-dark.svg": {
       "name": "assets/light-mode-dark.svg",
       "checksum": "BE5E29ACD87CA1F31EAD97AC03B2C4AD2A76A0D1DECC0E3BA974FF7411E2E7E3",
@@ -335,15 +355,25 @@
       "checksum": "21C41BEB25216BD8515FD3B330136202F1BC9467CD236C6F0B7AF7F350AF8B24",
       "size": 1647
     },
+    "assets/right-active-dark.svg": {
+      "name": "assets/right-active-dark.svg",
+      "checksum": "F1A5612D7377E85F28C40BDEEBCA7E00CA22959C34197883F76F728E37FFC3E0",
+      "size": 571
+    },
+    "assets/right-active.svg": {
+      "name": "assets/right-active.svg",
+      "checksum": "F1A5612D7377E85F28C40BDEEBCA7E00CA22959C34197883F76F728E37FFC3E0",
+      "size": 571
+    },
     "assets/right-dark.svg": {
       "name": "assets/right-dark.svg",
-      "checksum": "3CB1D5E88991FC0AA82EBC3C441A04ACEE816184CD6A37D8FFEA8E4F0832CCC6",
-      "size": 671
+      "checksum": "AA37306CE3C1F597465FFF66FCED2EE4F5FC414B3143394C5B3D6830CED50C89",
+      "size": 571
     },
     "assets/right.svg": {
       "name": "assets/right.svg",
-      "checksum": "F596DEDEB6468EB64836802DB28F8FA3657D99213662141627142252818F1F10",
-      "size": 671
+      "checksum": "AA37306CE3C1F597465FFF66FCED2EE4F5FC414B3143394C5B3D6830CED50C89",
+      "size": 571
     },
     "assets/star.svg": {
       "name": "assets/star.svg",
@@ -650,6 +680,11 @@
       "checksum": "D9048D5831BD1DBD90C2C854EA1F82AB79ECF9786F01168ACBC58CA99B467E2E",
       "size": 1426
     },
+    "components/pagination.ftd": {
+      "name": "components/pagination.ftd",
+      "checksum": "22034725B9728DA38BCDFAC3F92A3B26880469C942E548F3F58AB778112FC082",
+      "size": 3257
+    },
     "components/person-card.ftd": {
       "name": "components/person-card.ftd",
       "checksum": "0579A25A68AF52C977342C70B7151B581687AA076671A3360716AF35A62598B3",
@@ -777,8 +812,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "5D34D46FB3DBF1F4131A398FEA25C7B7832DD1269791BC7BD70E845C23DDA0BC",
-      "size": 18297
+      "checksum": "6E4CEA773FAAD18F6A93AF2B6A43537667CD38162759BB2C8EAA8344FA3CDD2F",
+      "size": 18434
     },
     "record.ftd": {
       "name": "record.ftd",
@@ -801,6 +836,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/00af89ac228779171cdfd87931308b30355b96d1.zip",
-  "checksum": "0BADBEBB8A87C598FAA6E9F255F7D3EB366438DDE443E0E6E1CF0D157CCA6511"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/921a6fff13c4e46cbffd6198368cc329d0521a22.zip",
+  "checksum": "94429B6C91EA2A22F8CB1980C51BE521A6B3B9DC5809E7680C01DDA95208C8BE"
 }
