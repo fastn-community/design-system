@@ -83,6 +83,9 @@ export: divider
 -- import: fastn-community.github.io/design-system/components/image as _
 export: image
 
+-- import: fastn-community.github.io/design-system/components/floating-banner as _
+export: floating-banner
+
 -- import: fastn-community.github.io/design-system as _
 export: storybook
 
@@ -197,6 +200,7 @@ $processor$: pr.toc
   - Dropdown: components/dropdown/
   - Empty Page: components/empty-page/
   - Expander: components/expander/
+  - Floating Banner: components/floating-banner/
   - Hero: components/hero/
   - Icon Banner: components/icon-banner/
   - Icon Buttons: components/icon-button/
