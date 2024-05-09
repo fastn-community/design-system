@@ -108,13 +108,13 @@ height.fixed.px: 24
 
 
 
--- ds.page: Band
+-- ds.page: Pagination
 
 -- ds.section-column:
  flush: full
  align-content: center
 
-	-- ds.detail: Band Component
+	-- ds.detail: Pagination Component
 	
 	A band component is content container with size, background, and content
 	alignment options.
