@@ -86,6 +86,9 @@ export: image
 -- import: fastn-community.github.io/design-system/components/pagination as _
 export: pagination
 
+-- import: fastn-community.github.io/design-system/components/search as _
+export: search
+
 -- import: fastn-community.github.io/design-system/components/floating-banner as _
 export: floating-banner
 
@@ -214,6 +217,7 @@ $processor$: pr.toc
   - Pagination: components/pagination/
   - Person Card: components/person-card/
   - Rating: components/rating/
+  - Search: components/search/
   - Skeleton: components/skeleton/
   - Tab Button: components/tab-button/
   - Tags: components/tag/
