@@ -572,8 +572,8 @@
     },
     "components/button.ftd": {
       "name": "components/button.ftd",
-      "checksum": "BB9B5ADE0751DD39CD9EB4F550D0E3F6E3D9AAE85D9FD2919B9E68D54DC80C38",
-      "size": 13583
+      "checksum": "2890AF73F3E014000A9A454C7849CF968D0E65D7273AEE1F3A74C2649B32E5CD",
+      "size": 12356
     },
     "components/card.ftd": {
       "name": "components/card.ftd",
@@ -841,6 +841,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/fce8f8b713eb96f4c7051b5870ba0103fbad4a3f.zip",
-  "checksum": "68C75770812C15CABE32AD342F5E04EB298807AEF995766678337FF34ABE6619"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/09305170661dad3bf6e14a68ffd9e6190c6fadcb.zip",
+  "checksum": "A4A8B7E72DF811AFDD1AD4DEBDB2886DB551C12A3849AAC8DDD4140394AC83C4"
 }
