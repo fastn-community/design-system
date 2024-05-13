@@ -14,13 +14,14 @@ string list pages:
 
 
 -- record carousel-item-nav:
+integer index: 1
+boolean active: false
 
 -- record tab-button:
 string cta-text:
 string cta-link:
 integer index: 1
 boolean active: false
-
 
 
 -- record carousel-item:
