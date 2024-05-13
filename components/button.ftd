@@ -165,7 +165,6 @@ caption title:
 optional string link:
 button-width width: default
 boolean enabled: true
-button-size size: medium
 boolean $hover: false
 button-variant variant: solid
 boolean open-in-new-tab: false
@@ -179,9 +178,6 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { tertiary-button.width == default }: hug-content
 width.fixed.px if { tertiary-button.width == wide }: 200
 width if { tertiary-button.width == full }: fill-container
-inset if { tertiary-button.size == small }: $ds.spaces.inset-wide.small
-inset if { tertiary-button.size == medium }: $ds.spaces.inset-wide.medium
-inset if { tertiary-button.size == large }: $ds.spaces.inset-wide.large
 link: $tertiary-button.link
 open-in-new-tab: $tertiary-button.open-in-new-tab
 
@@ -211,7 +207,6 @@ caption title:
 optional string link:
 button-width width: default
 boolean enabled: true
-button-size size: medium
 boolean $hover: false
 boolean open-in-new-tab: false
 
@@ -221,9 +216,6 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { link-button.width == default }: hug-content
 width.fixed.px if { link-button.width == wide }: 200
 width if { link-button.width == full }: fill-container
-inset if { link-button.size == small }: $ds.spaces.inset-wide.small
-inset if { link-button.size == medium }: $ds.spaces.inset-wide.medium
-inset if { link-button.size == large }: $ds.spaces.inset-wide.large
 border if { link-button.hover }: $ds.borders.bottom.small
 border-color if { link-button.hover }: $ds.colors.accent.primary
 $on-mouse-enter$: $ftd.set-bool($a = $link-button.hover, v = true)
@@ -489,84 +481,29 @@ spacing: $ds.spaces.vertical-gap.medium
 
 	-- ds.heading-hero: Tertiary Buttons
 	
-		
 		-- ds.rendered:
 		
 		\-- tertiary-button: tertiary-button
 		link: /
-		size: small
 		
 			-- tertiary-button: tertiary-button
 			link: /
-			size: small
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- tertiary-button: tertiary-button
-		link: /
-		size: medium
-		
-			-- tertiary-button: tertiary-button
-			link: /
-			size: medium
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- tertiary-button: tertiary-button
-		link: /
-		size: large
-		
-			-- tertiary-button: tertiary-button
-			link: /
-			size: large
 			
 		-- end: ds.rendered
 
 	-- ds.heading-hero: Link Buttons
 	
-		
 		-- ds.rendered:
 		
 		\-- link-button: link-button
 		link: /
-		size: small
 		
 			-- link-button: link-button
 			link: /
-			size: small
 			
 		-- end: ds.rendered
 
-		-- ds.rendered:
-		
-		\-- link-button: link-button
-		link: /
-		size: medium
-		
-			-- link-button: link-button
-			link: /
-			size: medium
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- link-button: link-button
-		link: /
-		size: large
-		
-			-- link-button: link-button
-			link: /
-			size: large
-			
-		-- end: ds.rendered
-
-	-- ds.heading-hero: Danger Buttons
-	
+	-- ds.heading-hero: Danger Buttons	
 		
 		-- ds.rendered:
 		
