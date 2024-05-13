@@ -2,8 +2,8 @@
   "files": {
     "FASTN.ftd": {
       "name": "FASTN.ftd",
-      "checksum": "D6904EE6DA4B8B6AF86CD9C67BB11E4B3D42A7608E943BC282F754E30C980F37",
-      "size": 589
+      "checksum": "49453213AE403C87D31CA59133BAE373093EEC73C0224B62B8193404AB82A35A",
+      "size": 519
     },
     "LICENSE": {
       "name": "LICENSE",
@@ -249,6 +249,11 @@
       "name": "assets/image-2.svg",
       "checksum": "FF2329C2D966A323E17E0FA97C38FC431211368513FD90D69DD3853661CD3CFD",
       "size": 5963177
+    },
+    "assets/image-placeholder.png": {
+      "name": "assets/image-placeholder.png",
+      "checksum": "F8CEDD499315902E0CF4B516B65C9426C3F8B680183B57B86CAD5F309B2BF981",
+      "size": 5203
     },
     "assets/image.svg": {
       "name": "assets/image.svg",
@@ -580,6 +585,11 @@
       "checksum": "78E514782DC60378FEEA5754845F00F37CF355BEFB80F48FED5D38784C707196",
       "size": 2390
     },
+    "components/carousel.ftd": {
+      "name": "components/carousel.ftd",
+      "checksum": "E5C69E2CEAF48C5D5F61778268AEB5D645FB1FF9BCB162108D2441EB72A10736",
+      "size": 3633
+    },
     "components/checkbox.ftd": {
       "name": "components/checkbox.ftd",
       "checksum": "2D33F77FE806D22A270516E6C66F670DBF4FC873739158DC4616340C2F44B53A",
@@ -822,8 +832,8 @@
     },
     "record.ftd": {
       "name": "record.ftd",
-      "checksum": "E67C822D2D24D4E39D12F7551F234A12373024B98311E4388E0D29FD856241F4",
-      "size": 889
+      "checksum": "7462990E037101EC5A0C78E88EE5BC6B9B80C9E173FCB5A532EB1A3E9FC048B6",
+      "size": 1109
     },
     "slide.ftd": {
       "name": "slide.ftd",
@@ -841,6 +851,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/09305170661dad3bf6e14a68ffd9e6190c6fadcb.zip",
-  "checksum": "A4A8B7E72DF811AFDD1AD4DEBDB2886DB551C12A3849AAC8DDD4140394AC83C4"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/f06104762cbfa56c968d3ba25f850778a7e454cd.zip",
+  "checksum": "358D6AC68D7582090AF171E5F8DDEC5D5DCCABCB2F75CC3E10498839F69D2357"
 }
