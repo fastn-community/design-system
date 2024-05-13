@@ -13,12 +13,22 @@ string list features:
 string list pages:
 
 
+-- record carousel-item-nav:
+
 -- record tab-button:
 string cta-text:
 string cta-link:
 integer index: 1
 boolean active: false
 
+
+
+-- record carousel-item:
+optional caption title:
+optional string sub-title:
+optional ftd.image-src image:
+optional body body:
+optional integer index:
 
 
 -- record expander:
