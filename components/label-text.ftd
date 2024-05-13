@@ -1,9 +1,3 @@
--- import: fastn-community.github.io/design-system/foundation-elements/spaces
--- import: fastn-community.github.io/design-system/foundation-elements/borders
-
-
-
-
 -- or-type text-placement:
 
 -- string horizontal: 0
@@ -58,17 +52,11 @@ align-content: left
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Label Text
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Label Text
+
+	The label text component in our design system offers a clear and concise
+	way to provide descriptive text or captions.
+
 
 	-- ds.rendered:
 		

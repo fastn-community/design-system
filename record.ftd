@@ -14,6 +14,10 @@ string list pages:
 
 
 -- record carousel-item-nav:
+
+-- record tab-button:
+string cta-text:
+string cta-link:
 integer index: 1
 boolean active: false
 
@@ -25,3 +29,52 @@ optional string sub-title:
 optional ftd.image-src image:
 optional body body:
 optional integer index:
+
+
+-- record expander:
+caption title: 
+body body:
+
+
+
+
+-- record social-details:
+ftd.image-src icon:
+string link:
+
+
+-- record timeline:
+caption title: 
+optional body body:
+optional string timestamp:
+optional string place:
+
+
+
+
+-- record dropdown:
+caption title: 
+string option:
+
+
+
+
+
+-- record tabs:
+caption title:
+boolean active: false
+integer index:
+
+-- tabs list tab:
+
+-- tabs: Files
+active: true
+index: 1
+
+-- tabs: Preview
+index: 2
+
+-- tabs: Source
+index: 3
+
+-- end: tab

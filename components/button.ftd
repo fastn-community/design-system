@@ -1,6 +1,3 @@
--- import: fastn-community.github.io/design-system/foundation-elements/spaces
--- import: fastn-community.github.io/design-system/foundation-elements/borders
-
 -- or-type button-kind:
 
 -- constant integer primary: 1
@@ -168,7 +165,6 @@ caption title:
 optional string link:
 button-width width: default
 boolean enabled: true
-button-size size: medium
 boolean $hover: false
 button-variant variant: solid
 boolean open-in-new-tab: false
@@ -182,9 +178,6 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { tertiary-button.width == default }: hug-content
 width.fixed.px if { tertiary-button.width == wide }: 200
 width if { tertiary-button.width == full }: fill-container
-inset if { tertiary-button.size == small }: $ds.spaces.inset-wide.small
-inset if { tertiary-button.size == medium }: $ds.spaces.inset-wide.medium
-inset if { tertiary-button.size == large }: $ds.spaces.inset-wide.large
 link: $tertiary-button.link
 open-in-new-tab: $tertiary-button.open-in-new-tab
 
@@ -214,7 +207,6 @@ caption title:
 optional string link:
 button-width width: default
 boolean enabled: true
-button-size size: medium
 boolean $hover: false
 boolean open-in-new-tab: false
 
@@ -224,9 +216,6 @@ spacing: $ds.spaces.horizontal-gap.small
 width if { link-button.width == default }: hug-content
 width.fixed.px if { link-button.width == wide }: 200
 width if { link-button.width == full }: fill-container
-inset if { link-button.size == small }: $ds.spaces.inset-wide.small
-inset if { link-button.size == medium }: $ds.spaces.inset-wide.medium
-inset if { link-button.size == large }: $ds.spaces.inset-wide.large
 border if { link-button.hover }: $ds.borders.bottom.small
 border-color if { link-button.hover }: $ds.colors.accent.primary
 $on-mouse-enter$: $ftd.set-bool($a = $link-button.hover, v = true)
@@ -309,26 +298,18 @@ open-in-new-tab: $danger-button.open-in-new-tab
 align-content: left
 spacing: $ds.spaces.vertical-gap.medium
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: index.html
-		
-		-- ds.heading-hero: Buttons
-		align: center
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Buttons
+
+	The buttons component in our design system offers a versatile set of
+	interactive elements tailored to facilitate user actions and
+	navigation within our interfaces. With customizable styles for size,
+	shape, and color, it adapts seamlessly to various contexts and design
+	requirements. Whether it's a primary call-to-action, a secondary
+	option, or a tertiary action, our buttons component provides
+	consistency and clarity across different screens and devices.
 
 	-- ds.heading-hero: Primary Buttons
 	
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Default
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -370,13 +351,6 @@ spacing: $ds.spaces.vertical-gap.medium
 			
 		-- end: ds.rendered
 
-	-- end: ds.section-row
-
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Disabled
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -419,16 +393,9 @@ spacing: $ds.spaces.vertical-gap.medium
 			variant: disabled
 			
 		-- end: ds.rendered
-
-	-- end: ds.section-row
 
 	-- ds.heading-hero: Secondary Buttons
 	
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Default
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -469,15 +436,6 @@ spacing: $ds.spaces.vertical-gap.medium
 			rounded: true
 			
 		-- end: ds.rendered
-
-	-- end: ds.section-row
-
-
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Disabled
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -520,108 +478,32 @@ spacing: $ds.spaces.vertical-gap.medium
 			variant: disabled
 			
 		-- end: ds.rendered
-
-	-- end: ds.section-row
 
 	-- ds.heading-hero: Tertiary Buttons
 	
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Default
-		width: hug-content
-		
 		-- ds.rendered:
 		
 		\-- tertiary-button: tertiary-button
 		link: /
-		size: small
 		
 			-- tertiary-button: tertiary-button
 			link: /
-			size: small
 			
 		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- tertiary-button: tertiary-button
-		link: /
-		size: medium
-		
-			-- tertiary-button: tertiary-button
-			link: /
-			size: medium
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- tertiary-button: tertiary-button
-		link: /
-		size: large
-		
-			-- tertiary-button: tertiary-button
-			link: /
-			size: large
-			
-		-- end: ds.rendered
-
-	-- end: ds.section-row
 
 	-- ds.heading-hero: Link Buttons
 	
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Default
-		width: hug-content
-		
 		-- ds.rendered:
 		
 		\-- link-button: link-button
 		link: /
-		size: small
 		
 			-- link-button: link-button
 			link: /
-			size: small
 			
 		-- end: ds.rendered
 
-		-- ds.rendered:
-		
-		\-- link-button: link-button
-		link: /
-		size: medium
-		
-			-- link-button: link-button
-			link: /
-			size: medium
-			
-		-- end: ds.rendered
-
-		-- ds.rendered:
-		
-		\-- link-button: link-button
-		link: /
-		size: large
-		
-			-- link-button: link-button
-			link: /
-			size: large
-			
-		-- end: ds.rendered
-
-	-- end: ds.section-row
-
-	-- ds.heading-hero: Danger Buttons
-	
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Default
-		width: hug-content
+	-- ds.heading-hero: Danger Buttons	
 		
 		-- ds.rendered:
 		
@@ -663,13 +545,6 @@ spacing: $ds.spaces.vertical-gap.medium
 			
 		-- end: ds.rendered
 
-	-- end: ds.section-row
-
-	-- ds.section-row:
-	spacing: $ds.spaces.horizontal-gap.medium
-	
-		-- ds.heading-small: Disabled
-		width: hug-content
 		
 		-- ds.rendered:
 		
@@ -712,8 +587,6 @@ spacing: $ds.spaces.vertical-gap.medium
 			variant: disabled
 			
 		-- end: ds.rendered
-
-	-- end: ds.section-row
 
 -- end: ds.section-column
 

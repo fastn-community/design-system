@@ -1,0 +1,30 @@
+-- component detail:
+caption title:
+body body:
+
+-- ds.container:
+
+	-- ds.column:
+	align-content: left
+
+		-- ds.row:
+		align-content: left
+
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: index.html
+		
+		-- ds.heading-hero: $detail.title
+		width: hug-content
+
+		-- end: ds.row
+
+			-- ds.copy-regular:
+
+			$detail.body
+
+			-- end: ds.column
+
+	-- end: ds.container
+
+-- end: detail

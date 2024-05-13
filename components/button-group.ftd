@@ -15,15 +15,19 @@ children: $button-group.buttons
 
 -- ds.page: Button Group
 
--- ds.phosphor-icon-button: Back
-icon: arrow-left
-link: index.html
+-- ds.section-column:
 
--- ds.rendered:
-
-\-- button-group:
-	-- ds.button-group:
+	-- ds.phosphor-icon-button: Back
+	icon: arrow-left
+	link: index.html
 	
--- end: ds.rendered
+	-- ds.rendered:
+	
+	\-- button-group:
+		-- ds.button-group:
+		
+	-- end: ds.rendered
+
+-- end: ds.section-column
 
 -- end: ds.page

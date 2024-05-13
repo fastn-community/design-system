@@ -1,8 +1,3 @@
--- import: fastn-community.github.io/design-system/foundation-elements/spaces
-
-
-
-
 -- component copy-to-clipboard-icon:
 caption or body text:
 boolean copy: true
@@ -87,17 +82,10 @@ if: { copy-to-clipboard-text.copy-text != "null" }
  flush: full
  align-content: center
 
-	-- ds.row:
-	align-content: left
-	
-		-- ds.phosphor-icon-button: Back
-		icon: arrow-left
-		link: /
-		
-		-- ds.heading-hero: Copy to clipboard
-		width: hug-content
-		
-	-- end: ds.row
+	-- ds.detail: Clipboard
+
+	The clipboard component in our design system enables users to copy content
+	with ease.
 
 	-- ds.rendered:
 		
