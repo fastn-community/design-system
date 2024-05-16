@@ -1,0 +1,197 @@
+-- import: fastn-community.github.io/design-system/record as r
+
+-- integer $current-slide: 1
+
+
+
+-- component slider:
+optional caption title:
+r.slider-item-nav list nav:
+children wrap:
+
+-- ds.section-column:
+inset: $ds.spaces.inset-square.medium
+spacing: $ds.spaces.vertical-gap.large
+margin: $ds.spaces.vertical-gap.extra-large
+
+-- ds.heading-small: $slider.title
+if: { slider.title != NULL }
+
+-- ds.column:
+content: $slider.wrap
+
+-- end: ds.column
+
+-- ds.row:
+
+-- nav-lists:
+for: $obj in $slider.nav
+index: $obj.index
+
+-- end: ds.row
+
+-- end: ds.section-column
+
+-- end: slider
+
+
+
+
+
+
+
+
+-- component nav-lists:
+integer index: 1
+boolean $active: false
+
+-- ds.row:
+width.fixed.px if { $current-slide == $nav-lists.index }: 18
+height.fixed.px if { $current-slide == $nav-lists.index }: 18
+width.fixed.px: 14
+height.fixed.px: 14
+radius: $ds.radius.round
+$on-click$: $ftd.toggle($a = $nav-lists.active)
+$on-click$: $ftd.set-integer($a = $current-slide, v = $nav-lists.index)
+background.solid if { nav-lists.index == current-slide }: $ds.colors.cta-primary.base
+background.solid: $ds.colors.info.base
+$on-mouse-enter$: $ftd.set-bool( $a = $nav-lists.active, v = true )
+$on-mouse-leave$: $ftd.set-bool( $a = $nav-lists.active, v = false )
+
+-- end: ds.row
+
+-- end: nav-lists
+
+
+
+
+
+
+
+
+
+-- component slider-details:
+children wrap:
+optional integer index:
+
+-- ds.column:
+if: { slider-details.index == current-slide }
+content: $slider-details.wrap
+
+-- end: ds.column
+
+-- end: slider-details
+
+
+
+
+
+
+
+
+
+
+-- ds.page: slider
+
+-- ds.section-column:
+flush: full
+align-content: center
+
+	-- ds.row:
+	align-content: left
+	
+		-- ds.phosphor-icon-button: Back
+		icon: arrow-left
+		link: index.html
+		
+		-- ds.heading-hero: slider Component
+		width: hug-content
+		
+	-- end: ds.row
+
+	-- ds.rendered:
+	
+	\-- slider:
+	nav: $navs
+
+	\-- slider-details:
+	index: 1
+
+	\-- ds.copy-small: 1
+
+	\-- end: slider-details
+
+	\-- slider-details:
+	index: 2
+
+	\-- ds.copy-small: 2
+
+	\-- end: slider-details
+
+	\-- slider-details:
+	index: 3
+
+	\-- ds.copy-small: 3
+
+	\-- end: slider-details
+
+	\-- end: slider
+	
+		-- slider:
+		nav: $navs
+
+		-- slider-details:
+		index: 1
+
+		-- ds.row:
+
+		-- ds.code:
+
+		\-- ds.copy-small: hello
+
+		-- ftd.text: hello
+		width.fixed.px: 250
+
+		-- end: ds.row
+
+		-- end: slider-details
+
+		-- slider-details:
+		index: 2
+
+		-- ds.copy-small: 2
+
+		-- end: slider-details
+
+		-- slider-details:
+		index: 3
+
+		-- ds.copy-small: 3
+
+		-- end: slider-details
+
+		-- end: slider
+		
+	-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page
+
+
+
+
+
+-- r.slider-item-nav list navs:
+
+-- r.slider-item-nav:
+active: true
+index: 1
+
+-- r.slider-item-nav:
+index: 2
+
+-- r.slider-item-nav:
+index: 3
+
+-- end: navs

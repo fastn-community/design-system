@@ -38,8 +38,14 @@ export: drawer
 -- import: fastn-community.github.io/design-system/components/dropdown as _
 export: dropdown
 
+-- import: fastn-community.github.io/design-system/components/header-dropdown as _
+export: header-dropdown
+
 -- import: fastn-community.github.io/design-system/components/hero as _
 export: hero
+
+-- import: fastn-community.github.io/design-system/components/slider as _
+export: slider
 
 -- import: fastn-community.github.io/design-system/components/modal as _
 export: modal
@@ -88,6 +94,9 @@ export: pagination
 
 -- import: fastn-community.github.io/design-system/components/search as _
 export: search
+
+-- import: fastn-community.github.io/design-system/components/carousel as _
+export: carousel
 
 -- import: fastn-community.github.io/design-system/components/floating-banner as _
 export: floating-banner
@@ -198,6 +207,7 @@ $processor$: pr.toc
   - Button Group (WIP): components/button-group/
   - Buttons: components/button/
   - Card: components/card/
+  - Carousel: components/carousel/
   - Checkbox: components/checkbox/
   - Clipboard: components/clipboard/
   - Code: components/code/
@@ -207,6 +217,7 @@ $processor$: pr.toc
   - Empty Page: components/empty-page/
   - Expander: components/expander/
   - Floating Banner: components/floating-banner/
+  - Header Dropdown: components/header-dropdown/
   - Hero: components/hero/
   - Icon Banner: components/icon-banner/
   - Icon Buttons: components/icon-button/
@@ -219,6 +230,7 @@ $processor$: pr.toc
   - Rating: components/rating/
   - Search: components/search/
   - Skeleton: components/skeleton/
+  - Slider: components/slider/
   - Tab Button: components/tab-button/
   - Tags: components/tag/
   - Text Area: components/text-area/
