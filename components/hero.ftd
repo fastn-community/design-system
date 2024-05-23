@@ -6,9 +6,9 @@ optional string cta-text:
 optional string cta-link:
 optional ftd.background background:
 
--- ds.row:
-spacing: $ds.spaces.horizontal-gap.space-between
-background: $hero.background
+-- ds.section-row:
+;;spacing: $ds.spaces.horizontal-gap.space-between
+outer-background.solid: $hero.background
 inset: $ds.spaces.inset-square.small
 radius: $ds.radius.zero
 
@@ -31,7 +31,7 @@ if: { hero.image != NULL }
 src: $hero.image
 width.fixed.px: 460
 
--- end: ds.row
+-- end: ds.section-row
 
 -- end: hero
 

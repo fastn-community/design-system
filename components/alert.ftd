@@ -66,8 +66,8 @@ body body:
 optional string cta-text:
 optional string cta-link:
 
--- ds.container:
-background.solid: $ds.colors.warning.base
+-- ds.section-row:
+inner-background.solid: $ds.colors.warning.base
 border: $ds.borders.uniform.small
 border-color: $ds.colors.warning.border
 inset: $ds.spaces.inset-square.large
@@ -112,7 +112,7 @@ inset: $ds.spaces.inset-square.large
 
 	-- end: ds.row
 
--- end: ds.container
+-- end: ds.section-row
 
 -- end: warning-alert
 

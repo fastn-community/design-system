@@ -44,6 +44,7 @@ border if { divider.thickness == large }: $ds.borders.left.large
 border-color: $divider.border-color
 radius: $ds.radius.zero
 height: $divider.height
+width: hug-content
 
 -- end: ds.column
 
