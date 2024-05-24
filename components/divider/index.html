@@ -15,7 +15,7 @@
     
                 <script src="markdown-24E09EFC0C2B9A11DEA9AC71888EB3A1E85864FA7D9C95A3EB5075A0E0F49A5F.js"></script>
                 <script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
-                <script src="default-703F31E3F39EDCC57A9A152AD31F69C50F34E41A7392DC3D15C3C17FC6E7A9D8.js"></script>
+                <script src="default-81D863951CD6095EBA7A4313D5931E6548A4EDB6FF74013C943E4F94D7A43CEF.js"></script>
                 <link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
                 <script src="-/fastn-stack.github.io/fastn-js/download.js"></script>
             
@@ -1184,7 +1184,7 @@ thickness: large
 	.__bgi-714 { background-image: null; }
 	.__mxh-715 { max-height: null; }
 	.__mnh-716 { min-height: null; }
-	.__w-717 { width: 100%; }
+	.__w-717 { width: fit-content; }
 	.__h-718 { height: 100px; }
 	.__pl-719 { padding-left: 0px; }
 	.__pr-720 { padding-right: 0px; }
@@ -1344,7 +1344,7 @@ thickness: large
 	.__bgi-850 { background-image: null; }
 	.__mxh-851 { max-height: null; }
 	.__mnh-852 { min-height: null; }
-	.__w-853 { width: 100%; }
+	.__w-853 { width: fit-content; }
 	.__h-854 { height: 100px; }
 	.__pl-855 { padding-left: 0px; }
 	.__pr-856 { padding-right: 0px; }
@@ -1504,7 +1504,7 @@ thickness: large
 	.__bgi-986 { background-image: null; }
 	.__mxh-987 { max-height: null; }
 	.__mnh-988 { min-height: null; }
-	.__w-989 { width: 100%; }
+	.__w-989 { width: fit-content; }
 	.__h-990 { height: 100px; }
 	.__pl-991 { padding-left: 0px; }
 	.__pr-992 { padding-right: 0px; }
@@ -1546,321 +1546,749 @@ thickness: large
 
 
 
+
+
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 100;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 100;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 100;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 100;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 100;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 100;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 100;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 200;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 200;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 200;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 200;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 200;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 200;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 200;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 300;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 300;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 300;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 300;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 300;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 300;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 300;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 400;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 400;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 400;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 400;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 400;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 400;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 400;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 500;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 500;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 500;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 500;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 500;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 500;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 500;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 600;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 600;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 600;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 600;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 600;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 600;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 600;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 700;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 700;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 700;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 700;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 700;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 700;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 700;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 800;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 800;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 800;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 800;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 800;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 800;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 800;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 900;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 900;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 900;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 900;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 900;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 900;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 900;
-src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+
+
+
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-font-Inter }
+
+
+
 
 
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -2443,436 +2871,6 @@ font-family: fastn-community-github-io-opensans-font-Open-Sans }
 
 
 
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: italic;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: italic;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: italic;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: italic;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: italic;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: italic;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: italic;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: italic;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: italic;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: italic;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: italic;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: italic;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: italic;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: italic;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: italic;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: italic;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: italic;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: italic;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: italic;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: italic;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: italic;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: italic;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: italic;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: italic;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: italic;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: italic;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: italic;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: italic;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: italic;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: italic;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: italic;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: italic;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: italic;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: italic;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: italic;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: italic;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: italic;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: italic;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: italic;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: italic;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: italic;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: italic;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 100;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 300;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 400;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 500;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 700;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-cyrillic.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-greek-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-greek.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-vietnamese.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-latin-ext.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 900;
-src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-latin.woff2) format('woff2');
-font-family: fastn-community-github-io-roboto-font-Roboto }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2882,318 +2880,320 @@ font-family: fastn-community-github-io-roboto-font-Roboto }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-100-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-200-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-300-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-400-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-500-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-600-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-700-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-800-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
 font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 font-style: normal;
 font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+1F00-1FFF;
 font-style: normal;
 font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0370-03FF;
 font-style: normal;
 font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 font-style: normal;
 font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 font-style: normal;
 font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
 @font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 font-style: normal;
 font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+src: url(-/fastn-community.github.io/inter-font/static/Inter-900-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-inter-font-Inter }
+
+
 
 
 
@@ -3222,7 +3222,7 @@ font-family: fifthtry-github-io-inter-font-Inter }
                 let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
                   width: fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(200)),
                   content: fastn.mutableList([function (root, inherited) {
-                    let rooti0 = fastn_community_github_io_design_system_components_divider___divider(root, inherited, {
+                    let rooti0 = fastn_community_github_io_design_system_components_divider__divider(root, inherited, {
                       placement: "0",
                       thickness: "0",
                       border_color: global.fastn_community_github_io_design_system__colors.get("shadow")
@@ -3242,7 +3242,7 @@ font-family: fifthtry-github-io-inter-font-Inter }
                 let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
                   width: fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(200)),
                   content: fastn.mutableList([function (root, inherited) {
-                    let rooti0 = fastn_community_github_io_design_system_components_divider___divider(root, inherited, {
+                    let rooti0 = fastn_community_github_io_design_system_components_divider__divider(root, inherited, {
                       placement: "0",
                       thickness: "1"
                     });
@@ -3261,7 +3261,7 @@ font-family: fifthtry-github-io-inter-font-Inter }
                 let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
                   width: fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(200)),
                   content: fastn.mutableList([function (root, inherited) {
-                    let rooti0 = fastn_community_github_io_design_system_components_divider___divider(root, inherited, {
+                    let rooti0 = fastn_community_github_io_design_system_components_divider__divider(root, inherited, {
                       placement: "0",
                       thickness: "2"
                     });
@@ -3279,7 +3279,7 @@ font-family: fifthtry-github-io-inter-font-Inter }
               output: fastn.mutableList([function (root, inherited) {
                 let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
                   content: fastn.mutableList([function (root, inherited) {
-                    let rooti0 = fastn_community_github_io_design_system_components_divider___divider(root, inherited, {
+                    let rooti0 = fastn_community_github_io_design_system_components_divider__divider(root, inherited, {
                       placement: "1",
                       thickness: "0",
                       height: fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(100))
@@ -3298,7 +3298,7 @@ font-family: fifthtry-github-io-inter-font-Inter }
               output: fastn.mutableList([function (root, inherited) {
                 let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
                   content: fastn.mutableList([function (root, inherited) {
-                    let rooti0 = fastn_community_github_io_design_system_components_divider___divider(root, inherited, {
+                    let rooti0 = fastn_community_github_io_design_system_components_divider__divider(root, inherited, {
                       placement: "1",
                       thickness: "1",
                       height: fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(100))
@@ -3317,7 +3317,7 @@ font-family: fifthtry-github-io-inter-font-Inter }
               output: fastn.mutableList([function (root, inherited) {
                 let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
                   content: fastn.mutableList([function (root, inherited) {
-                    let rooti0 = fastn_community_github_io_design_system_components_divider___divider(root, inherited, {
+                    let rooti0 = fastn_community_github_io_design_system_components_divider__divider(root, inherited, {
                       placement: "1",
                       thickness: "2",
                       height: fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(100))
@@ -6536,14 +6536,14 @@ let fastn_community_github_io_design_system_components_detail__detail = function
   }
 }
 global["fastn_community_github_io_design_system_components_detail__detail"] = fastn_community_github_io_design_system_components_detail__detail;
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_components_divider___divider_placement", function () {
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_components_divider__divider_placement", function () {
   let record = fastn.recordInstance({
   });
   record.set("horizontal", "0");
   record.set("vertical", "1");
   return record;
 }());
-fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_components_divider___divider_border", function () {
+fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_components_divider__divider_border", function () {
   let record = fastn.recordInstance({
   });
   record.set("small", "0");
@@ -6551,7 +6551,7 @@ fastn_utils.createNestedObject(global, "fastn_community_github_io_design_system_
   record.set("large", "2");
   return record;
 }());
-let fastn_community_github_io_design_system_components_divider___divider = function (parent, inherited, args)
+let fastn_community_github_io_design_system_components_divider__divider = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
   __fastn_package_name__ = "fastn_community_github_io_design_system";
@@ -6568,31 +6568,31 @@ let fastn_community_github_io_design_system_components_divider___divider = funct
       content: fastn.mutableList([function (root, inherited) {
         fastn_dom.conditionalDom(root, [
           __args__.placement,
-          global.fastn_community_github_io_design_system_components_divider___divider_placement.get("horizontal")
+          global.fastn_community_github_io_design_system_components_divider__divider_placement.get("horizontal")
         ], function () {
-          return (fastn_utils.getStaticValue(__args__.placement) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider___divider_placement.get("horizontal")));
+          return (fastn_utils.getStaticValue(__args__.placement) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider__divider_placement.get("horizontal")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
             radius: global.fastn_community_github_io_design_system__radius.get("zero"),
             border: fastn.formula([global.fastn_community_github_io_design_system__borders.get("bottom").get("small"),
             __args__.thickness,
-            global.fastn_community_github_io_design_system_components_divider___divider_border.get("small"),
+            global.fastn_community_github_io_design_system_components_divider__divider_border.get("small"),
             global.fastn_community_github_io_design_system__borders.get("bottom").get("medium"),
             __args__.thickness,
-            global.fastn_community_github_io_design_system_components_divider___divider_border.get("medium"),
+            global.fastn_community_github_io_design_system_components_divider__divider_border.get("medium"),
             global.fastn_community_github_io_design_system__borders.get("bottom").get("large"),
             __args__.thickness,
-            global.fastn_community_github_io_design_system_components_divider___divider_border.get("large")], function () {
+            global.fastn_community_github_io_design_system_components_divider__divider_border.get("large")], function () {
               if (function () {
-                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider___divider_border.get("small")));
+                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider__divider_border.get("small")));
               }()) {
                 return global.fastn_community_github_io_design_system__borders.get("bottom").get("small");
               } else if (function () {
-                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider___divider_border.get("medium")));
+                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider__divider_border.get("medium")));
               }()) {
                 return global.fastn_community_github_io_design_system__borders.get("bottom").get("medium");
               } else if (function () {
-                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider___divider_border.get("large")));
+                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider__divider_border.get("large")));
               }()) {
                 return global.fastn_community_github_io_design_system__borders.get("bottom").get("large");
               }
@@ -6606,32 +6606,33 @@ let fastn_community_github_io_design_system_components_divider___divider = funct
       function (root, inherited) {
         fastn_dom.conditionalDom(root, [
           __args__.placement,
-          global.fastn_community_github_io_design_system_components_divider___divider_placement.get("vertical")
+          global.fastn_community_github_io_design_system_components_divider__divider_placement.get("vertical")
         ], function () {
-          return (fastn_utils.getStaticValue(__args__.placement) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider___divider_placement.get("vertical")));
+          return (fastn_utils.getStaticValue(__args__.placement) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider__divider_placement.get("vertical")));
         }, function (root) {
           let rooti0 = fastn_community_github_io_design_system__column(root, inherited, {
+            width: fastn_dom.Resizing.HugContent,
             height: __args__.height,
             radius: global.fastn_community_github_io_design_system__radius.get("zero"),
             border: fastn.formula([global.fastn_community_github_io_design_system__borders.get("left").get("small"),
             __args__.thickness,
-            global.fastn_community_github_io_design_system_components_divider___divider_border.get("small"),
+            global.fastn_community_github_io_design_system_components_divider__divider_border.get("small"),
             global.fastn_community_github_io_design_system__borders.get("left").get("medium"),
             __args__.thickness,
-            global.fastn_community_github_io_design_system_components_divider___divider_border.get("medium"),
+            global.fastn_community_github_io_design_system_components_divider__divider_border.get("medium"),
             global.fastn_community_github_io_design_system__borders.get("left").get("large"),
             __args__.thickness,
-            global.fastn_community_github_io_design_system_components_divider___divider_border.get("large")], function () {
+            global.fastn_community_github_io_design_system_components_divider__divider_border.get("large")], function () {
               if (function () {
-                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider___divider_border.get("small")));
+                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider__divider_border.get("small")));
               }()) {
                 return global.fastn_community_github_io_design_system__borders.get("left").get("small");
               } else if (function () {
-                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider___divider_border.get("medium")));
+                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider__divider_border.get("medium")));
               }()) {
                 return global.fastn_community_github_io_design_system__borders.get("left").get("medium");
               } else if (function () {
-                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider___divider_border.get("large")));
+                return (fastn_utils.getStaticValue(__args__.thickness) == fastn_utils.getStaticValue(global.fastn_community_github_io_design_system_components_divider__divider_border.get("large")));
               }()) {
                 return global.fastn_community_github_io_design_system__borders.get("left").get("large");
               }
@@ -6649,7 +6650,7 @@ let fastn_community_github_io_design_system_components_divider___divider = funct
     __fastn_package_name__ = __fastn_super_package_name__;
   }
 }
-global["fastn_community_github_io_design_system_components_divider___divider"] = fastn_community_github_io_design_system_components_divider___divider;
+global["fastn_community_github_io_design_system_components_divider__divider"] = fastn_community_github_io_design_system_components_divider__divider;
 fastn_utils.createNestedObject(global, "fastn_community_github_io_code_block_assets__files.static_copy_svg", function () {
   let record = fastn.recordInstance({
   });
