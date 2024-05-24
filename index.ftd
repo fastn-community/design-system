@@ -22,6 +22,7 @@ export: tab-button
 
 -- import: fastn-community.github.io/design-system/components/code as _
 export: code
+exposing: code
 
 -- import: fastn-community.github.io/design-system/components/tag as _
 export: tag
@@ -161,9 +162,11 @@ export: column
 
 -- import: fastn-community.github.io/design-system/foundation-elements/floater as _
 export: floater
+exposing: floater
 
 -- import: fastn-community.github.io/design-system/foundation-elements/row as _
 export: row
+exposing: row
 
 -- import: fastn-community.github.io/design-system/foundation-elements/inline-row as _
 export: inline-row
@@ -173,7 +176,7 @@ export: icon-button, circle-button, circle-text-button, phosphor-icon-button, fa
 
 -- import: fastn-community.github.io/design-system/typography as _
 export: heading-hero, heading-large, heading-medium, heading-small, heading-tiny, copy-large, copy-regular, copy-small, fine-print, source-code, link
-exposing: heading-large, copy-regular
+exposing: heading-large, copy-regular, copy-large
 
 
 
