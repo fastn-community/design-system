@@ -11,7 +11,79 @@ widths: $widths
 
 ;; There is a build issue in the below component call
 ;; will fix this later
--- products:
+/-- products:
+
+-- ds.hero: Build your next website in less than2 hours
+image: https://www.fifthtry.com/-/ui.fifthtry.com/assets/homepage/hero-dark.svg
+cta-text: Start building
+cta-link: /
+
+- Over 300 Websites Already Launched.
+- Loved by 3000+ tech-enthusiasts
+
+-- ds.section-row:
+align-content: top-center
+margin: $ds.spaces.vertical-gap.extra-extra-large
+
+-- ds.icon-card: FTD Language for prose
+icon: $assets.files.assets.ftd-logo.svg
+cta-link: /
+background.solid: $ds.colors.background.step-1
+cta-text: Read more
+
+FTD is the innovative programming language for writing prose. Say goodbye to
+the complexities of traditional programming languages and hello to a simplified
+and intuitive experience.
+
+-- ds.icon-card: Fastn static site generator
+icon: $assets.files.assets.fastn-logo.svg
+cta-link: /
+background.solid: $ds.colors.background.step-1
+cta-text: Read more
+
+Fastn is a powerful command line tool written in Rust that offers a seamless
+experience for ftd package management and static site generation. With Fastn,
+you can easily convert your .ftd files into .html files.
+
+-- ds.icon-card: HOSTN hosting fastn sites
+cta-link: /
+background.solid: $ds.colors.background.step-1
+cta-text: Read more
+icon: $assets.files.assets.hostn-logo.svg
+
+An FASTN package contains one or more “ftd modules”, and the modules export one
+or more “symbols”, eg records, variables, components and so on. Hosting FASTN
+sites made simple by HOSTN.
+
+-- end: ds.section-row
+
+-- ds.section-row:
+
+-- ds.band: Band component title
+background.solid: $ds.colors.background.step-1
+size: medium
+
+-- ds.band: Band component title
+background.solid: $ds.colors.background.step-1
+size: medium
+
+-- end: ds.section-row
+
+-- ds.section-column:
+
+-- ds.band: Band component title
+size: large
+
+An FASTN package contains one or more “ftd modules”, and the modules export one
+or more “symbols”, eg records, variables, components and so on. Hosting FASTN
+sites made simple by HOSTN.
+
+-- ds.person-card: John Deo
+avatar: $assets.files.assets.avatar.svg
+place: London, UK
+profile: Managing Director
+
+-- end: ds.section-column
 
 -- footer:
 

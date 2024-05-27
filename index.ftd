@@ -46,10 +46,13 @@ export: header-dropdown
 export: hero
 
 -- import: fastn-community.github.io/design-system/components/slider as _
-export: slider
+export: slider, slider-details
 
 -- import: fastn-community.github.io/design-system/components/modal as _
 export: modal
+
+-- import: fastn-community.github.io/design-system/components/icon-card as _
+export: icon-card
 
 -- import: fastn-community.github.io/design-system/components/empty-page as _
 export: empty-page
@@ -255,6 +258,7 @@ $processor$: pr.toc
 - Demo:
   - Dropbase.io: https://nandhinidevie.github.io/dropbase.io/
   - ft(old): demos/ft-old/
+  - Demo Website: demos/demo-website/
   - Card: demos/code-snippet/
   - Code Together: https://nandhinidevie.github.io/code/
   - Talk Notes: https://nandhinidevie.github.io/talknotes-practise/

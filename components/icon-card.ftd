@@ -1,0 +1,42 @@
+
+
+
+
+-- component icon-card:
+caption title:
+ftd.image-src icon:
+body body:
+string cta-link:
+string cta-text:
+ftd.background background:
+
+-- ds.column:
+background: $icon-card.background
+inset: $ds.spaces.inset-square.medium
+height: fill-container
+align-content: left
+
+	-- ds.row:
+	align-content: left
+	
+		-- ftd.image: 
+		src: $icon-card.icon
+
+		-- ds.heading-small: $icon-card.title
+		
+	-- end: ds.row
+
+	-- ds.copy-regular:
+	height: fill-container
+	
+	$icon-card.body
+	
+	-- ds.phosphor-icon-button: $icon-card.cta-text
+	icon: arrow-right
+	link: $icon-card.cta-link
+	icon-position: at-end
+	width: full
+	
+-- end: ds.column
+
+-- end: icon-card

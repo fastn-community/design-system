@@ -27,6 +27,7 @@ align-content: $band.align-content
 	
 	-- ds.copy-regular: $band.body
 	if: { band.body != NULL }
+	align: center
 	
 -- end: ds.column
 
