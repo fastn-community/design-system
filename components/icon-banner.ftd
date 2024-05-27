@@ -3,14 +3,13 @@ optional caption title:
 optional body body:
 ftd.image-src icon:
 
--- ds.container:
-background.solid: $ds.colors.background.step-1
-border: $ds.borders.uniform.small
-inset: $ds.spaces.inset-square.medium
-radius: $ds.radius.medium
-
 	-- ds.row:
 	align-content: top-left
+	width: hug-content
+	background.solid: $ds.colors.background.step-1
+	border: $ds.borders.uniform.small
+	inset: $ds.spaces.inset-square.medium
+	radius: $ds.radius.medium
 	
 		-- ftd.image:
 		src: $icon-banner.icon
@@ -33,8 +32,6 @@ radius: $ds.radius.medium
 		-- end: ds.column
 
 	-- end: ds.row
-
--- end: ds.container
 
 -- end: icon-banner
 

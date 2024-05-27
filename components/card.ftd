@@ -5,17 +5,15 @@ optional ftd.image-src image:
 optional string cta-text:
 optional string cta-link:
 
--- ds.container:
-border: $ds.borders.uniform.small
-radius: $ds.radius.small
-inset: $ds.spaces.inset-square.medium
-
 	-- ds.column:
 	align-content: left
-	
+	border: $ds.borders.uniform.small
+	radius: $ds.radius.small
+	inset: $ds.spaces.inset-square.medium
+
 		-- ftd.image:
 		src: $card.image
-		width: fill-container
+		width.fixed.px: 250
 		border-radius.px: $ds.radius.uniform.small
 
 		-- ds.heading-tiny: $card.title
@@ -28,8 +26,6 @@ inset: $ds.spaces.inset-square.medium
 		width: full
 
 	-- end: ds.column
-
--- end: ds.container
 
 -- end: card
 

@@ -1,0 +1,98 @@
+-- import: fastn-community.github.io/design-system/record as r
+
+-- ds.page: Demo website
+
+-- header:
+
+-- ds.hero: Hero component title
+image: $assets.files.assets.placeholder.jpg
+cta-text: button
+cta-link: /
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
+in luctus rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Quisque molestie ante in luctus rutrum. Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Quisque molestie ante in luctus rutrum.
+
+-- ds.section-column:
+
+-- ds.image:
+src: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/landing.svg
+
+-- end: ds.section-column
+
+-- ds.hero: Hero component title
+image: $assets.files.assets.placeholder.jpg
+background.solid: $ds.colors.background.step-1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
+in luctus rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Quisque molestie ante in luctus rutrum. Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Quisque molestie ante in luctus rutrum.
+
+-- end: ds.page
+
+
+
+
+-- component header:
+
+-- ds.section-row:
+inset: $ds.spaces.inset-wide.large
+outer-background.solid: $ds.colors.background.step-2
+spacing: $ds.spaces.horizontal-gap.space-between
+flush: full
+margin: $ds.spaces.vertical-gap.extra-large
+
+-- ds.heading-small: Demo
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.large
+width: fill-container
+
+-- ds.header-link: Try it
+link: /
+
+-- ds.header-link: How it works
+link: /
+
+-- ds.header-link: Use cases
+link: /
+
+-- ds.header-link: Pricing
+link: /
+
+-- ds.header-link: FAQ
+link: /
+
+-- end: ds.row
+
+-- ds.row:
+width: hug-content
+
+-- ds.primary-button: Login
+link: /
+
+-- end: ds.row
+
+-- end: ds.section-row
+
+-- end: header
+
+
+
+
+-- r.slider-item-nav list navs:
+
+-- r.slider-item-nav:
+active: true
+index: 1
+
+-- r.slider-item-nav:
+index: 2
+
+-- r.slider-item-nav:
+index: 3
+
+-- end: navs
+

@@ -567,8 +567,8 @@
     },
     "components/band.ftd": {
       "name": "components/band.ftd",
-      "checksum": "A73923A22B746261D9266BFC0F88BABA178623DC16D894371977B76FDA681D42",
-      "size": 2329
+      "checksum": "605A18556B7F929ABBDEF94DA15F81633144B6ECDE514AC635D219D06C14A9A8",
+      "size": 2344
     },
     "components/button-group.ftd": {
       "name": "components/button-group.ftd",
@@ -582,8 +582,8 @@
     },
     "components/card.ftd": {
       "name": "components/card.ftd",
-      "checksum": "78E514782DC60378FEEA5754845F00F37CF355BEFB80F48FED5D38784C707196",
-      "size": 2390
+      "checksum": "FC252D2B28498DDC90AF70F608E23C87616FEE69473A853FCE1D5076051DE7E5",
+      "size": 2350
     },
     "components/carousel.ftd": {
       "name": "components/carousel.ftd",
@@ -667,13 +667,18 @@
     },
     "components/icon-banner.ftd": {
       "name": "components/icon-banner.ftd",
-      "checksum": "9A377DCADBBC44EE55CFA75431D367821BD54C2146501041CBF42156E8E11094",
-      "size": 1505
+      "checksum": "CF520E7FB98AFBEB3F8DC0DA725E8FB2C90F2856C748961F94FCA185C1C9B897",
+      "size": 1489
     },
     "components/icon-button.ftd": {
       "name": "components/icon-button.ftd",
       "checksum": "A19FF555E3F912E91011C5CBBDBAF7D5C888FFA51CBA7AD96849E48592DF5E71",
       "size": 10325
+    },
+    "components/icon-card.ftd": {
+      "name": "components/icon-card.ftd",
+      "checksum": "29BDE6E2B0EC51ECA475FBFEEF2B92735BB2FD69AC17118F9F6DA5ABD1D734D8",
+      "size": 638
     },
     "components/image.ftd": {
       "name": "components/image.ftd",
@@ -702,8 +707,8 @@
     },
     "components/person-card.ftd": {
       "name": "components/person-card.ftd",
-      "checksum": "0579A25A68AF52C977342C70B7151B581687AA076671A3360716AF35A62598B3",
-      "size": 4043
+      "checksum": "544E5FBAEA81D2C7AD9F0D843B20A247C322DFA13A57902199E4659907315FCB",
+      "size": 4042
     },
     "components/rating.ftd": {
       "name": "components/rating.ftd",
@@ -760,10 +765,15 @@
       "checksum": "DB4B957FABA9B5721ADA2B9BC8A506DCD8FFFE2DDE114A2BB53D5AB4ADB8DD19",
       "size": 2018
     },
+    "demos/demo-website.ftd": {
+      "name": "demos/demo-website.ftd",
+      "checksum": "86524554597A90CF304EAE15ACE57D55EACE9BBD20CCB78A0F4191989E28DCC6",
+      "size": 1936
+    },
     "demos/ft-old.ftd": {
       "name": "demos/ft-old.ftd",
-      "checksum": "8EF5BE3A8B97EFFE4A229FBCEC464B76A8F56DCE21862B08A2F96E71DB9E053F",
-      "size": 2999
+      "checksum": "4C0F151334BDFD6C5E766ECCA19D601B64777A75B290720B86C095588E0851FD",
+      "size": 5088
     },
     "demos/index.ftd": {
       "name": "demos/index.ftd",
@@ -837,8 +847,8 @@
     },
     "index.ftd": {
       "name": "index.ftd",
-      "checksum": "22FFC81718A87D814C7FFB510F859B907B3F2866D18C3099CB43B72B4DC1BC1E",
-      "size": 19021
+      "checksum": "7CBFB2E8F3AEC2B3E8DD69439637A9A3E927F11B1781662D2E910AB7F5795370",
+      "size": 19171
     },
     "record.ftd": {
       "name": "record.ftd",
@@ -861,6 +871,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/974739aa079abfe323cec02cdeb7942d89083c01.zip",
-  "checksum": "4C3329529001C926B8456A12C4B78EBBD3B59664CD875E9D0BAB0F9DC8047F67"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/ea87b39058d80c669c47253aabf89025088d7980.zip",
+  "checksum": "29BF8F805534B2C7ED399D689CFA590D5FBF360189B6F35B6D3CBF2FC60D6AAB"
 }

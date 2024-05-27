@@ -15,7 +15,7 @@ ftd.color border-color: $ds.colors.border
 inset: $ds.spaces.inset-square.medium
 radius: $ds.radius.small
 background: $person-card.background
-width.fixed.px: 460
+width: hug-content
 border if { person-card.border }: $ds.borders.uniform.small
 border-color: $person-card.border-color
 
