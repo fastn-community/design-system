@@ -81,6 +81,9 @@ export: skeleton
 -- import: fastn-community.github.io/design-system/components/rating as _
 export: rating
 
+-- import: fastn-community.github.io/design-system/components/newsletter as _
+export: newsletter
+
 -- import: fastn-community.github.io/design-system/components/detail as _
 export: detail
 
@@ -231,6 +234,7 @@ $processor$: pr.toc
   - Input: components/input/
   - Label Text: components/label-text/
   - Modal: components/modal/
+  - Newsletter: components/newsletter/
   - Pagination: components/pagination/
   - Person Card: components/person-card/
   - Rating: components/rating/

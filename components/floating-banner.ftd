@@ -1,28 +1,32 @@
 -- component floating-banner:
 optional caption title:
-optional string link:
+optional string cta-link:
+optional string cta-text:
 boolean $hide: false
+boolean top: false
+ftd.background background:
 
 -- ftd.column:
 if: { !floating-banner.hide }
 anchor: window
-bottom.em: 2
+bottom.em if { !floating-banner.top }: 2
+top.em if { floating-banner.top }: 2
 align-self: center
 spacing.fixed.px: 24
-background.solid: $inherited.colors.custom.seven
-;;min-width.fixed.px: 250
-border-radius.px: 6
+background: $floating-banner.background
+width: fill-container
 
 -- ds.row:
-spacing: $ds.spaces.horizontal-gap.space-between
-align-content: left
 inset: $ds.spaces.inset-square.small
 		
 	-- ds.copy-regular: $floating-banner.title
 	if: { floating-banner.title != NULL }
 	style: bold
 	color: $ds.colors.text-strong
-	link: $floating-banner.link
+
+	-- ds.primary-button: $floating-banner.cta-text
+	link: $floating-banner.cta-link
+	rounded: true
 
 	-- ds.image:
 	src: $assets.files.assets.cross.svg
@@ -60,11 +64,15 @@ align-content: center
 
 	-- ds.rendered:
 	
-	\-- ds.floating-banner: Star on GitHub ⭐
-	link: /
+	\-- ds.floating-banner: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	cta-link: /
+	cta-text: subscribe
+	background.solid: $ds.colors.background.step-1
 	
-		-- floating-banner: Star on GitHub ⭐
-		link: components/floating-banner/
+		-- floating-banner: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		cta-link: components/floating-banner/
+		cta-text: subscribe
+		background.solid: $ds.colors.background.step-1
 
 	-- end: ds.rendered
 
