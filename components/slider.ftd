@@ -110,6 +110,8 @@ align-content: center
 	-- end: ds.row
 
 	-- ds.rendered:
+
+	\-- import: fastn-community.github.io/design-system/record as r
 	
 	\-- slider:
 	nav: $navs
@@ -136,6 +138,20 @@ align-content: center
 	\-- end: slider-details
 
 	\-- end: slider
+
+	\-- r.slider-item-nav list navs:
+
+	\-- r.slider-item-nav:
+	active: true
+	index: 1
+
+	\-- r.slider-item-nav:
+	index: 2
+
+	\-- r.slider-item-nav:
+	index: 3
+
+	\-- end: navs
 	
 		-- slider:
 		nav: $navs

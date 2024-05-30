@@ -119,6 +119,8 @@ option: Option 3
 	
 	-- ds.rendered:
 		
+		\-- import: fastn-community.github.io/design-system/record as r
+
 		\-- ds.header-dropdown:
 		dropdown-item: $dropdown-list
 
