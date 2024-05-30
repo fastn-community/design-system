@@ -27,6 +27,7 @@ optional ftd.overflow overflow:
 optional ftd.overflow overflow-x:
 optional ftd.overflow overflow-y:
 boolean open-in-new-tab: false
+optional string download:
 
 -- ftd.row:
 width: $row.width
@@ -63,6 +64,7 @@ overflow: $row.overflow
 overflow-x: $row.overflow-x
 overflow-y: $row.overflow-y
 open-in-new-tab: $row.open-in-new-tab
+download: $row.download
 
 -- end: ftd.row
 

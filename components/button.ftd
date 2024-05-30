@@ -69,6 +69,7 @@ button-radius radius: curved
 button-variant variant: solid
 boolean rounded: false
 boolean open-in-new-tab: false
+optional string download:
 
 -- ds.row:
 background.solid if { primary-button.variant == solid }: $ds.colors.cta-primary.base
@@ -89,6 +90,7 @@ width.fixed.px if { primary-button.width == wide }: 200
 width if { primary-button.width == full }: fill-container
 link: $primary-button.link
 open-in-new-tab: $primary-button.open-in-new-tab
+download: $primary-button.download
 
 	-- ds.link:
 	text: $primary-button.title
