@@ -5,9 +5,8 @@ caption or body text:
 string link:
 button.button-kind kind: primary
 
--- ftd.text: $header-link.text
+-- ds.copy-regular: $header-link.text
 color: $ds.colors.text-strong
-role: $ds.types.link
 link: $header-link.link
 
 -- end: header-link
