@@ -1,3 +1,6 @@
+-- import: fastn-community.github.io/design-system/record as r
+
+
 -- ds.page-widths widths:
 regular.px: 1400
 narrow.px: 1200
@@ -215,6 +218,13 @@ margin: $ds.spaces.vertical-gap.extra-large
 	
 	-- ds.inline-row:
 	spacing: $ds.spaces.horizontal-gap.large
+
+		
+
+		-- ds.header-dropdown: header
+		dropdown-item: $dropdown-list
+
+		
 	
 		-- ds.header-link: Home
 		link: /
@@ -231,3 +241,18 @@ margin: $ds.spaces.vertical-gap.extra-large
 -- end: ds.section-row
 
 -- end: header
+
+
+
+-- r.dropdown list dropdown-list:
+
+		-- r.dropdown: Option 1
+		option: Option 1
+
+		-- r.dropdown: Option 2
+		option: Option 2
+
+		-- r.dropdown: Option 3
+		option: Option 3
+
+		-- end: dropdown-list

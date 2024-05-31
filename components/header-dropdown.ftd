@@ -22,6 +22,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $header-dropdown.hover, v = false)
 $on-click$: $ftd.toggle($a = $show-options)
 align-content: left
 width: hug-content
+spacing: $ds.spaces.vertical-gap.extra-small
 
 -- ds.copy-regular: $header-dropdown.title
 color: $ds.colors.text-strong
@@ -42,6 +43,9 @@ border-radius.px: 16
 min-width.fixed.px: 152
 width: hug-content
 border-color: $inherited.colors.border
+anchor: parent
+top.px: 32
+background.solid: $ds.colors.background.step-2
 
 -- mode-changer: $header-dropdown.title
 for: $obj in $header-dropdown.dropdown-item
