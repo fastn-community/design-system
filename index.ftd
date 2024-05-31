@@ -87,6 +87,9 @@ export: newsletter
 -- import: fastn-community.github.io/design-system/components/detail as _
 export: detail
 
+-- import: fastn-community.github.io/design-system/components/pricing as _
+export: pricing
+
 -- import: fastn-community.github.io/design-system/components/card as _
 export: card
 
@@ -237,6 +240,7 @@ $processor$: pr.toc
   - Newsletter: components/newsletter/
   - Pagination: components/pagination/
   - Person Card: components/person-card/
+  - Pricing: components/pricing/
   - Rating: components/rating/
   - Search: components/search/
   - Skeleton: components/skeleton/
