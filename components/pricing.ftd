@@ -1,0 +1,170 @@
+-- import: fastn-community.github.io/design-system/record as r
+
+-- component pricing-card:
+caption title:
+boolean active:
+integer price:
+string currency:
+string subscription:
+r.feature list feature-list:
+string cta-text:
+string cta-link:
+optional string body-title:
+optional body body:
+optional string tag:
+ftd.color bg-color:
+boolean $cta-hover: false
+
+-- ds.column:
+width.fixed.percent: 30
+background.solid: $ds.colors.background.step-1
+radius: $ds.radius.medium
+
+-- ds.column:
+background.solid: $pricing-card.bg-color
+inset: $ds.spaces.inset-square.medium
+
+-- ds.heading-medium: $pricing-card.title
+
+-- end: ds.column
+
+-- ds.column:
+inset: $ds.spaces.inset-tall.medium
+spacing: $ds.spaces.vertical-gap.large
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.extra-small
+
+-- ds.heading-medium: $pricing-card.currency
+
+-- ftd.integer: $pricing-card.price
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ds.heading-medium: \/
+
+-- ds.heading-medium: $pricing-card.subscription
+
+-- end: ds.row
+
+-- ds.column:
+
+-- feature-loop: $obj.title
+active: $obj.active
+$loop$: $pricing-card.feature-list as $obj
+
+-- end: ds.column
+
+-- ds.primary-button: $pricing-card.cta-text
+link: $pricing-card.cta-link
+width: wide
+rounded: true
+
+-- end: ds.column
+
+-- end: ds.column
+
+-- end: pricing-card
+
+
+
+
+
+
+
+
+
+-- component feature-loop:
+caption title:
+boolean active:
+
+-- ds.row:
+
+-- ds.copy-small: - $feature-loop.title
+color: $ds.colors.text-strong
+color if { !feature-loop.active } : $ds.colors.text
+
+-- end: ds.row
+
+-- end: feature-loop
+
+
+
+
+
+-- r.feature list free-feature-list:
+
+-- r.feature: Lorem ipsum dolor sit amet
+
+-- r.feature: Sed quibusdam sint vel rerum voluptates
+
+-- r.feature: Vel inventore quasi et enim enim
+
+-- r.feature: In incidunt ipsa et possimus
+
+-- r.feature: Quo iste quod aut
+
+-- end: free-feature-list
+
+
+
+-- ds.page: Header Dropdown
+
+-- ds.section-column: 
+ flush: full
+ align-content: center
+
+	-- ds.detail: Header Dropdown
+
+	The dropdown component in our design system offers a versatile way to
+	present a list of options in a compact and accessible format. With its
+	intuitive interface, users can easily select from a range of choices,
+	enhancing usability and interaction efficiency.
+	
+	-- ds.rendered:
+		
+		\-- import: fastn-community.github.io/design-system/record as r
+
+		\-- ds.pricing-card: Basic
+		active: false 
+		price: 0
+		currency: \$
+		subscription: mo
+		feature-list: $free-feature-list
+		cta-text: Get Started
+		cta-link: /pricing/
+		bg-color: $inherited.colors.custom.one
+
+		Lorem ipsum dolor sit amet, consectet adipiscing elit.
+
+		\-- r.feature list free-feature-list:
+
+		\-- r.feature: Lorem ipsum dolor sit amet
+
+		\-- r.feature: Sed quibusdam sint vel rerum voluptates
+
+		\-- r.feature: Vel inventore quasi et enim enim
+
+		\-- r.feature: In incidunt ipsa et possimus
+
+		\-- r.feature: Quo iste quod aut
+
+		\-- end: free-feature-list
+
+		-- pricing-card: Basic
+		active: false 
+		price: 0
+		currency: \$
+		subscription: mo
+		feature-list: $free-feature-list
+		cta-text: Get Started
+		cta-link: /pricing/
+		bg-color: $inherited.colors.custom.one
+
+		Lorem ipsum dolor sit amet, consectet adipiscing elit.
+
+-- end: ds.rendered
+
+-- end: ds.section-column
+
+-- end: ds.page
