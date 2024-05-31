@@ -10,10 +10,11 @@ optional string cta-link:
 	border: $ds.borders.uniform.small
 	radius: $ds.radius.small
 	inset: $ds.spaces.inset-square.medium
+	width: hug-content
 
 		-- ftd.image:
 		src: $card.image
-		width.fixed.px: 250
+		width: fill-container
 		border-radius.px: $ds.radius.uniform.small
 
 		-- ds.heading-tiny: $card.title
