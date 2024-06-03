@@ -6,6 +6,7 @@ optional string placeholder:
 optional string cta-text:
 optional string cta-link:
 optional ftd.background background:
+optional boolean input:
 optional boolean image-left:
 optional boolean image-right:
 
@@ -28,6 +29,16 @@ width.fixed.px: 460
 
 -- ds.copy-regular: $newsletter.body
 align: center
+
+-- ftd.text-input:
+if: { newsletter.input }
+width.fixed.px: 360
+padding.px: 10
+background.solid: transparent
+border-radius.px: 8
+border-width.px: 1
+placeholder: $newsletter.placeholder
+color: $inherited.colors.text-strong
 
 -- ds.primary-button: $newsletter.cta-text
 if: { newsletter.cta-text != NULL }
@@ -95,6 +106,8 @@ width.fixed.px: 460
 	image: $assets.files.assets.placeholder.jpg
 	cta-text: button
 	cta-link: /
+	placeholder: Enter you email...
+	input: true
 
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
@@ -102,6 +115,8 @@ width.fixed.px: 460
 	image: $assets.files.assets.placeholder.jpg
 	cta-text: button
 	cta-link: /
+	placeholder: Enter you email...
+	input: true
 
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 	
