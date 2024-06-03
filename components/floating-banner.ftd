@@ -5,6 +5,8 @@ optional string cta-text:
 boolean $hide: false
 boolean top: false
 ftd.background background:
+optional string placeholder:
+optional boolean input:
 
 -- ftd.column:
 if: { !floating-banner.hide }
@@ -12,26 +14,40 @@ anchor: window
 bottom.em if { !floating-banner.top }: 2
 top.em if { floating-banner.top }: 2
 align-self: center
-spacing.fixed.px: 24
+spacing.fixed.px: 16
 background: $floating-banner.background
 width: fill-container
+padding.px: 16
 
 -- ds.row:
-inset: $ds.spaces.inset-square.small
 		
 	-- ds.copy-regular: $floating-banner.title
 	if: { floating-banner.title != NULL }
 	style: bold
 	color: $ds.colors.text-strong
 
-	-- ds.primary-button: $floating-banner.cta-text
-	link: $floating-banner.cta-link
-	rounded: true
-
 	-- ds.image:
 	src: $assets.files.assets.cross.svg
 	$on-click$: $ftd.set-bool($a = $floating-banner.hide, v = true)
 	width.fixed.px: 32
+
+-- end: ds.row
+
+-- ds.row:
+
+-- ftd.text-input:
+if: { floating-banner.input }
+width.fixed.px: 360
+padding.px: 8
+background.solid: transparent
+border-radius.px: 16
+border-width.px: 1
+placeholder: $floating-banner.placeholder
+color: $inherited.colors.text-strong
+
+	-- ds.primary-button: $floating-banner.cta-text
+	link: $floating-banner.cta-link
+	rounded: true
 
 -- end: ds.row
 
@@ -68,11 +84,15 @@ align-content: center
 	cta-link: /
 	cta-text: subscribe
 	background.solid: $ds.colors.background.step-1
+	input: true
+	placeholder: Start typing...
 	
 		-- floating-banner: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 		cta-link: components/floating-banner/
 		cta-text: subscribe
 		background.solid: $ds.colors.background.step-1
+		input: true
+		placeholder: Start typing...
 
 	-- end: ds.rendered
 
