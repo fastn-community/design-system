@@ -68,7 +68,7 @@ button-size size: medium
 button-radius radius: curved
 button-variant variant: solid
 boolean rounded: false
-boolean open-in-new-tab: false
+optional boolean open-in-new-tab:
 optional string download:
 
 -- ds.row:
@@ -120,7 +120,7 @@ button-size size: medium
 button-radius radius: curved
 button-variant variant: solid
 boolean rounded: false
-boolean open-in-new-tab: false
+optional boolean open-in-new-tab:
 
 -- ds.row:
 background.solid if { secondary-button.variant == solid }: $ds.colors.cta-secondary.base
