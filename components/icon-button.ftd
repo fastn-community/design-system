@@ -25,7 +25,7 @@ button.button-kind kind: primary
 button.button-radius radius: curved
 boolean rounded: false
 boolean $hover: false
-boolean open-in-new-tab: false
+optional boolean open-in-new-tab:
 
 -- button-wrapper:
 title: $icon-button.title
@@ -267,7 +267,7 @@ boolean rounded: false
 button.button-size size: medium
 button.button-kind kind: primary
 children uis:
-boolean open-in-new-tab: false
+optional boolean open-in-new-tab:
 
 -- ds.row:
 background.solid if { button-wrapper.kind == primary && button-wrapper.kind != link && button-wrapper.variant == solid}: $ds.colors.cta-primary.base
