@@ -15,6 +15,7 @@ optional boolean image-right:
 outer-background.solid: $newsletter.background
 inset: $ds.spaces.inset-tall.medium
 radius: $ds.radius.zero
+margin: $ds.spaces.vertical-gap.zero
 
 -- ds.column:
 if: { !newsletter.image-left && !newsletter.image-right }
@@ -30,6 +31,8 @@ width.fixed.px: 460
 -- ds.copy-regular: $newsletter.body
 align: center
 
+-- ds.row:
+
 -- ftd.text-input:
 if: { newsletter.input }
 width.fixed.px: 360
@@ -43,7 +46,8 @@ color: $inherited.colors.text-strong
 -- ds.primary-button: $newsletter.cta-text
 if: { newsletter.cta-text != NULL }
 link: $newsletter.cta-link
-width: wide
+
+-- end: ds.row
 
 -- end: ds.column
 

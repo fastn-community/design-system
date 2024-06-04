@@ -11,6 +11,7 @@ optional ftd.background background:
 outer-background.solid: $hero.background
 inset: $ds.spaces.inset-square.small
 radius: $ds.radius.zero
+margin: $ds.spaces.vertical-gap.zero
 
 -- ds.column:
 width.fixed.px if { hero.image != NULL }: 500
