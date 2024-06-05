@@ -24,7 +24,8 @@ spacing: $ds.spaces.vertical-gap.large
 -- ftd.image:
 if: { newsletter.image != NULL }
 src: $newsletter.image
-width.fixed.px: 460
+max-width.fixed.px: 460
+fit: cover
 
 -- ds.heading-large: $newsletter.title
 
@@ -57,7 +58,8 @@ if: { newsletter.image-left || newsletter.image-right }
 -- ftd.image:
 if: { newsletter.image != NULL && newsletter.image-left }
 src: $newsletter.image
-width.fixed.px: 460
+max-width.fixed.px: 460
+fit: cover
 
 -- ds.column:
 spacing: $ds.spaces.vertical-gap.large
