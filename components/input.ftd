@@ -38,6 +38,8 @@ input-radius radius: none
 boolean $flag: false
 boolean rounded: false
 optional string $value:
+optional boolean multiline:
+optional ftd.text-input-type type:
 
 -- ds.column:
 align-content: top-left
@@ -49,20 +51,15 @@ inset: $ds.spaces.inset-square.small
 	
 	-- ds.row:
 	width: fill-container
-	border-color: $inherited.colors.border
 	radius if { text-input.rounded }: $ds.radius.large
 	radius if { text-input.radius == none }: $ds.radius.zero
 	radius if { text-input.radius == curved }: $ds.radius.medium
-	border: $ds.borders.uniform.small
 	height.fixed.px if { $text-input.size == small }: 40
 	height.fixed.px if { $text-input.size == medium }: 46
 	height.fixed.px if { $text-input.size == large }: 49
 	inset if { $text-input.size == small }: $ds.spaces.inset-wide.small
 	inset if { $text-input.size == medium }: $ds.spaces.inset-wide.medium
 	inset if { $text-input.size == large }: $ds.spaces.inset-wide.large
-	border-color if { text-input.error }: $ds.colors.cta-danger.border
-	background.solid: $inherited.colors.background.step-1
-	border-color if { text-input.flag }: $inherited.colors.shadow
 	
 		-- ftd.image:
 		if: { text-input.icon-start }
@@ -73,12 +70,25 @@ inset: $ds.spaces.inset-square.small
 		-- ftd.text-input:
 		placeholder: $text-input.placeholder
 		width: fill-container
-		background.solid: $inherited.colors.background.step-1
 		color: $ds.colors.text-strong
 		color if { text-input.error }: $ds.colors.cta-danger.text
 		$on-focus$: $ftd.set-bool($a = $text-input.flag, v = true)
 		$on-blur$: $ftd.set-bool($a = $text-input.flag, v = false)
 		$on-input$: $ftd.set-string($a = $text-input.value, v = $VALUE)
+		multiline: $text-input.multiline
+		type: $text-input.type
+		border-color: $inherited.colors.border
+		border-radius.px if { text-input.rounded }: 32
+		border-radius.px if { text-input.radius == none }: 0
+		border-radius.px if { text-input.radius == curved }: 12
+		border-width.px: 1
+		height.fixed.px if { $text-input.size == small }: 40
+		height.fixed.px if { $text-input.size == medium }: 46
+		height.fixed.px if { $text-input.size == large }: 49
+		border-color if { text-input.error }: $ds.colors.cta-danger.border
+		background.solid: $inherited.colors.background.step-1
+		border-color if { text-input.flag }: $inherited.colors.shadow
+		padding-horizontal.px: 12
 		
 		-- ftd.image:
 		if: { text-input.icon-end }
