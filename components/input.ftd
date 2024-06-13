@@ -37,6 +37,7 @@ input-size size: medium
 input-radius radius: none
 boolean $flag: false
 boolean rounded: false
+optional string $value:
 
 -- ds.column:
 align-content: top-left
@@ -77,6 +78,7 @@ inset: $ds.spaces.inset-square.small
 		color if { text-input.error }: $ds.colors.cta-danger.text
 		$on-focus$: $ftd.set-bool($a = $text-input.flag, v = true)
 		$on-blur$: $ftd.set-bool($a = $text-input.flag, v = false)
+		$on-input$: $ftd.set-string($a = $text-input.value, v = $VALUE)
 		
 		-- ftd.image:
 		if: { text-input.icon-end }

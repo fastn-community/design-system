@@ -4907,7 +4907,7 @@ const ftd = (function () {
         );
     };
 
-    exports.string_field_with_default_js = function (name, default_value) {
+    exports.field_with_default_js = function (name, default_value) {
         let r = fastn.recordInstance();
         r.set("name", fastn_utils.getFlattenStaticValue(name));
         r.set("value", fastn_utils.getFlattenStaticValue(default_value));
@@ -5564,13 +5564,46 @@ ftd.toggle = function (args) {
     __fastn_package_name__ = __fastn_super_package_name__;
   }
 }
+ftd.integer_field_with_default = function (args) {
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "fastn_community_github_io_design_system";
+  try {
+    let __args__ = fastn_utils.getArgs({
+    }, args);
+    return (ftd.field_with_default_js(__args__.name, __args__.default));
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+ftd.decimal_field_with_default = function (args) {
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "fastn_community_github_io_design_system";
+  try {
+    let __args__ = fastn_utils.getArgs({
+    }, args);
+    return (ftd.field_with_default_js(__args__.name, __args__.default));
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+ftd.boolean_field_with_default = function (args) {
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "fastn_community_github_io_design_system";
+  try {
+    let __args__ = fastn_utils.getArgs({
+    }, args);
+    return (ftd.field_with_default_js(__args__.name, __args__.default));
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
 ftd.string_field_with_default = function (args) {
   let __fastn_super_package_name__ = __fastn_package_name__;
   __fastn_package_name__ = "fastn_community_github_io_design_system";
   try {
     let __args__ = fastn_utils.getArgs({
     }, args);
-    return (ftd.string_field_with_default_js(__args__.name, __args__.default));
+    return (ftd.field_with_default_js(__args__.name, __args__.default));
   } finally {
     __fastn_package_name__ = __fastn_super_package_name__;
   }
