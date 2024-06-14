@@ -2,6 +2,7 @@
 -- component text-area:
 optional caption label:
 string placeholder:
+optional string $value:
 boolean $flag: false
 
 -- ds.column:
@@ -22,6 +23,7 @@ spacing: $ds.spaces.vertical-gap.small
 		$on-blur$: $ftd.set-bool($a = $text-area.flag, v = false)
 		multiline: true
 		padding.px: 24
+		$on-input$: $ftd.set-string($a = $text-area.value, v = $VALUE)
 	
 -- end: ds.column
 
