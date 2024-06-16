@@ -57,25 +57,25 @@ export: icon-card
 -- import: fastn-community.github.io/design-system/components/empty-page as _
 export: empty-page
 
--- import: fastn-community.github.io/design-system/components/toggle-image-link
+-- import: fastn-community.github.io/design-system/components/toggle-image-link as _
 export: toggle-image-link
 
--- import: fastn-community.github.io/design-system/components/timeline
+-- import: fastn-community.github.io/design-system/components/timeline as _
 export: timeline
 
--- import: fastn-community.github.io/design-system/components/band
+-- import: fastn-community.github.io/design-system/components/band as _
 export: band
 
--- import: fastn-community.github.io/design-system/components/person-card
+-- import: fastn-community.github.io/design-system/components/person-card as _
 export: person-card
 
--- import: fastn-community.github.io/design-system/components/avatar
+-- import: fastn-community.github.io/design-system/components/avatar as _
 export: avatar
 
--- import: fastn-community.github.io/design-system/components/icon-banner
+-- import: fastn-community.github.io/design-system/components/icon-banner as _
 export: icon-banner
 
--- import: fastn-community.github.io/design-system/components/text-area
+-- import: fastn-community.github.io/design-system/components/text-area as _
 export: text-area
 
 -- import: fastn-community.github.io/design-system/components/skeleton as _
