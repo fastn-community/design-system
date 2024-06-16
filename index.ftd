@@ -57,22 +57,25 @@ export: icon-card
 -- import: fastn-community.github.io/design-system/components/empty-page as _
 export: empty-page
 
--- import: fastn-community.github.io/design-system/components/timeline as _
+-- import: fastn-community.github.io/design-system/components/toggle-image-link
+export: toggle-image-link
+
+-- import: fastn-community.github.io/design-system/components/timeline
 export: timeline
 
--- import: fastn-community.github.io/design-system/components/band as _
+-- import: fastn-community.github.io/design-system/components/band
 export: band
 
--- import: fastn-community.github.io/design-system/components/person-card as _
+-- import: fastn-community.github.io/design-system/components/person-card
 export: person-card
 
--- import: fastn-community.github.io/design-system/components/avatar as _
+-- import: fastn-community.github.io/design-system/components/avatar
 export: avatar
 
--- import: fastn-community.github.io/design-system/components/icon-banner as _
+-- import: fastn-community.github.io/design-system/components/icon-banner
 export: icon-banner
 
--- import: fastn-community.github.io/design-system/components/text-area as _
+-- import: fastn-community.github.io/design-system/components/text-area
 export: text-area
 
 -- import: fastn-community.github.io/design-system/components/skeleton as _
@@ -223,6 +226,7 @@ $processor$: pr.toc
   - Checkbox: components/checkbox/
   - Clipboard: components/clipboard/
   - Code: components/code/
+  - Toggle Image Link: components/toggle-image-link/
   - Divider: components/divider/
   - Drawer: components/drawer/
   - Dropdown: components/dropdown/
