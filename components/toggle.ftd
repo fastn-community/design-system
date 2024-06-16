@@ -103,8 +103,6 @@ inset: $ds.spaces.inset-wide.small
 -- ds.page: Toggle Button
 
 -- ds.section-column:
- flush: full
- align-content: center
 
 	-- ds.detail: Toggle
 
