@@ -68,7 +68,7 @@ button-size size: medium
 button-radius radius: curved
 button-variant variant: solid
 boolean rounded: false
-optional boolean open-in-new-tab:
+boolean open-in-new-tab: false
 optional string download:
 
 -- ds.row:

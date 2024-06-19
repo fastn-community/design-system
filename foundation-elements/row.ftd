@@ -63,7 +63,7 @@ shadow: $row.shadow
 overflow: $row.overflow
 overflow-x: $row.overflow-x
 overflow-y: $row.overflow-y
-open-in-new-tab: $row.open-in-new-tab
+open-in-new-tab if { row.open-in-new-tab }: true
 download: $row.download
 
 -- end: ftd.row
