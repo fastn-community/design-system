@@ -57,6 +57,9 @@ export: icon-card
 -- import: fastn-community.github.io/design-system/components/empty-page as _
 export: empty-page
 
+-- import: fastn-community.github.io/design-system/components/toggle-image-link as _
+export: toggle-image-link
+
 -- import: fastn-community.github.io/design-system/components/timeline as _
 export: timeline
 
@@ -223,6 +226,7 @@ $processor$: pr.toc
   - Checkbox: components/checkbox/
   - Clipboard: components/clipboard/
   - Code: components/code/
+  - Toggle Image Link: components/toggle-image-link/
   - Divider: components/divider/
   - Drawer: components/drawer/
   - Dropdown: components/dropdown/
