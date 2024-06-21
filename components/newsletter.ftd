@@ -9,6 +9,7 @@ optional ftd.background background:
 optional boolean input:
 optional boolean image-left:
 optional boolean image-right:
+optional boolean colored-text:
 
 -- ds.section-row:
 ;;spacing: $ds.spaces.horizontal-gap.space-between
@@ -66,6 +67,8 @@ spacing: $ds.spaces.vertical-gap.large
 align-content: left
 
 -- ds.heading-large: $newsletter.title
+color if { newsletter.colored-text }: $ds.colors.shadow
+color: $ds.colors.text-strong
 
 -- ds.copy-regular: $newsletter.body
 
