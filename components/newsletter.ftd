@@ -10,6 +10,7 @@ optional boolean input:
 optional boolean image-left:
 optional boolean image-right:
 optional boolean colored-text:
+optional boolean rounded:
 
 -- ds.section-row:
 ;;spacing: $ds.spaces.horizontal-gap.space-between
@@ -17,6 +18,7 @@ outer-background.solid: $newsletter.background
 inset: $ds.spaces.inset-tall.medium
 radius: $ds.radius.zero
 margin: $ds.spaces.vertical-gap.zero
+radius if { newsletter.rounded }: $ds.radius.large
 
 -- ds.column:
 if: { !newsletter.image-left && !newsletter.image-right }
@@ -29,6 +31,8 @@ max-width.fixed.px: 460
 fit: cover
 
 -- ds.heading-large: $newsletter.title
+color if { newsletter.colored-text }: $ds.colors.shadow
+color: $ds.colors.text-strong
 
 -- ds.copy-regular: $newsletter.body
 align: center
