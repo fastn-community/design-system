@@ -151,7 +151,7 @@ export: toggle-button
 export: label-text
 
 -- import: fastn-community.github.io/design-system/components/clipboard as _
-export: copy-to-clipboard-text
+export: copy-to-clipboard-text, copy-to-clipboard-icon
 
 -- import: fastn-community.github.io/design-system/components/button-group as _
 export: button-group
