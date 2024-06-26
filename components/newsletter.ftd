@@ -13,7 +13,6 @@ optional boolean colored-text:
 optional boolean rounded:
 
 -- ds.section-row:
-;;spacing: $ds.spaces.horizontal-gap.space-between
 margin: $ds.spaces.vertical-gap.zero
 
 -- ds.column:
