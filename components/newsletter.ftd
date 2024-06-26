@@ -13,16 +13,15 @@ optional boolean colored-text:
 optional boolean rounded:
 
 -- ds.section-row:
-;;spacing: $ds.spaces.horizontal-gap.space-between
-outer-background.solid: $newsletter.background
-inset: $ds.spaces.inset-tall.medium
-radius: $ds.radius.zero
 margin: $ds.spaces.vertical-gap.zero
-radius if { newsletter.rounded }: $ds.radius.large
 
 -- ds.column:
 if: { !newsletter.image-left && !newsletter.image-right }
 spacing: $ds.spaces.vertical-gap.large
+radius: $ds.radius.zero
+radius if { newsletter.rounded }: $ds.radius.large
+inset: $ds.spaces.inset-tall.medium
+background.solid: $newsletter.background
 
 -- ftd.image:
 if: { newsletter.image != NULL }
