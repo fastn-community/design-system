@@ -1,0 +1,92 @@
+-- ds.page: Storybook
+
+-- ds.section-column:
+ flush: full
+ align-content: left
+
+	-- ds.detail: Creating the FifthTry Storybook
+	
+	The next step is to create the FifthTry Storybook for your project. This page will display all the pages you create inside this project. The storybook has a table of contents (TOC) section on the left side and the live site in the middle. You can click on the source button at the bottom to view the source code of that particular page. Here is a Storybook example.
+
+	-- ds.heading-small: Step 1: Add Storybook to Your Project
+
+	-- ds.copy-regular:
+
+	- Open your index.ftd file.
+	- Add the following code to the file:
+
+	-- ds.code:
+
+	\-- import: fastn/processors as pr
+	\-- import: ui.fifthtry.com/actions/navigate
+
+	\-- ds.page: Storybook
+	fastn-badge: false
+
+	\-- ds.storybook:
+	list-of-files: $toc
+	navigate: navigate
+
+	\-- end: ds.page
+
+	\-- pr.toc-item list toc:
+	$processor$: pr.toc
+
+	\- Website Pages:
+	  - Logged in Home page: /scenarios/logged-in-home/
+	  - Logged out Home page: /scenarios/logged-out-home/
+
+	-- ds.heading-small: Explanation:
+
+	-- ds.copy-regular:
+
+	- We use the fastn processor to create a table of contents (TOC) to display a list of all pages inside this project.
+	- The import statements are needed to bring in the necessary components.
+	- The ds.storybook component is used to set up the storybook.
+	- After the line $processor$: pr.toc, you can add the names of the folders and the list of pages with their URLs.
+
+	-- ds.heading-small: Step 2: Create the Actions Folder
+
+	-- ds.copy-regular:
+
+	If you haven't already created an actions Folder, follow these steps:
+
+	- Create a folder named actions.
+	- Inside the actions folder, create a file named navigate.ftd.
+
+	-- ds.heading-small:  Step 3: Add Code to navigate.ftd
+
+	-- ds.copy-regular:
+
+	- Open the navigate.ftd file.
+	- Add the following code to the file:
+
+	-- ds.code:
+
+	\-- optional string $active-file-preview-url: scenarios/logged-in-home/
+	\-- optional string $active-file-content: content
+	\-- string $active-title: Website Pages
+	\-- string $active-sub-title: Logged in Home page
+
+	\-- void submit(default_file, fileurl):
+	string default_file:
+	string fileurl:
+	string $url: $active-file-preview-url
+	js: $assets.files.assets.js.update-source.js
+
+	update_source_code(fileurl, "ui.fifthtry.com/actions/navigate")
+
+	-- ds.heading-small: Explanation:
+
+	-- ds.copy-regular:
+
+	- In the above code, replace the active-file-preview-url,active-file-content,active-title and active-sub-title with your information.
+	- In the line update_source_code(fileurl, "ui.fifthtry.com/actions/navigate"), replace "ui.fifthtry.com" with your package name.
+
+	-- ds.copy-regular: 
+
+	By following these steps, you will have a functional Storybook page that displays all the pages within your project, complete with a TOC and the ability to view the source code for each page.
+
+-- end: ds.section-column
+
+-- end: ds.page
