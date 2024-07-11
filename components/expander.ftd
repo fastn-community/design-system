@@ -18,6 +18,7 @@ spacing: $ds.spaces.vertical-gap.large
 -- expander-content: $obj.title
 for: $obj in $expander.expanders-list 
 body: $obj.body
+ui: $obj.ui
 
 -- end: ds.column
 
@@ -39,6 +40,7 @@ caption title:
 body body:
 optional ftd.image-src icon:
 boolean $toggle: false
+children ui:
 
 -- ds.column:
 align-content: left
@@ -59,10 +61,17 @@ color: $ds.colors.text-strong
 -- end: ds.row
 
 -- ds.copy-regular:
-if: { $expander-content.body != NULL && expander-content.toggle }
+if: { expander-content.body != NULL && expander-content.toggle }
 color: $ds.colors.text-strong
 
 $expander-content.body
+
+-- ds.column:
+if: { expander-content.toggle }
+content: $expander-content.ui
+align-content: left
+
+-- end: ds.column
 
 -- end: ds.column
 
@@ -76,12 +85,18 @@ $expander-content.body
 
 -- r.expander: Are there really zero fees?
 
+-- r.expander.body:
+
 At Fastn, we believe businesses shouldn’t have to wait or pay to access money
 they’ve already earned. That’s why it doesn’t cost a penny to create an account
 and there are zero transaction fees when you use the Fastn platform to pay and
-get paid. If you decide to leverage some of our more premium payment features
-(like Fastn Flow, which lets you get paid before your client pays you) there
-may be a small service fee—
+get paid.
+
+-- r.expander.ui:
+
+-- ds.heading-large: hello
+
+-- end: r.expander.ui
 
 -- r.expander: Is Fastn secure?
 
@@ -126,10 +141,18 @@ in luctus rutrum.
 
 		\-- r.expander: Are there really zero fees?
 
+		\-- r.expander.body:
+
 		At Fastn, we believe businesses shouldn’t have to wait or pay to access money
 		they’ve already earned. That’s why it doesn’t cost a penny to create an account
 		and there are zero transaction fees when you use the Fastn platform to pay and
 		get paid.
+
+		\-- r.expander.ui:
+
+		\-- ds.heading-large: hello
+
+		\-- end: r.expander.ui
 
 		\-- r.expander: Is Fastn secure?
 
