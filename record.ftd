@@ -42,7 +42,7 @@ boolean active: false
 -- record expander:
 caption title: 
 body body:
-
+children ui:
 
 
 
@@ -91,3 +91,9 @@ index: 3
 -- record feature:
 caption title:
 boolean active: false
+
+
+-- record link:
+caption text:
+string url:
+boolean is-active:
