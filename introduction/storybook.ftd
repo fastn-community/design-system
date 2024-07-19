@@ -6,7 +6,18 @@
 
 	-- ds.detail: Creating the FifthTry Storybook
 	
-	The next step is to create the FifthTry Storybook for your project. This page will display all the pages you create inside this project. The storybook has a table of contents (TOC) section on the left side and the live site in the middle. You can click on the source button at the bottom to view the source code of that particular page. Here is a Storybook example.
+	A FifthTry Storybook is a page that displays all the pages you create
+	within your website in a single place. The Storybook page features a
+	table of contents (TOC) section on the left side and the live site in
+	the center. You can click the source button at the bottom to view the
+	source code of each specific page. Sound familiar? The page you are on
+	right now is a FifthTry Storybook page. Here is another example:
+	[Storybook example](https://fastn-community.github.io/design-system/). 
+
+	By following the steps below, you will create a functional Storybook page
+	that showcases all the pages in your project, complete with a TOC and
+	the ability to view the source code for each page.
+
 
 	-- ds.heading-small: Step 1: Add Storybook to Your Project
 
@@ -49,7 +60,7 @@
 
 	-- ds.copy-regular:
 
-	If you haven't already created an actions Folder, follow these steps:
+	If you haven't already created an actions Folder in your project, follow these steps:
 
 	- Create a folder named actions.
 	- Inside the actions folder, create a file named navigate.ftd.
