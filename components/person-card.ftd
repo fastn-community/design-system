@@ -10,12 +10,13 @@ r.social-details list social-links:
 optional ftd.background background:
 boolean border: false
 ftd.color border-color: $ds.colors.border
+children ui:
 
 -- ds.container:
 inset: $ds.spaces.inset-square.medium
 radius: $ds.radius.small
 background: $person-card.background
-width: hug-content
+width: fill-container
 border if { person-card.border }: $ds.borders.uniform.small
 border-color: $person-card.border-color
 
@@ -40,9 +41,6 @@ if: { person-card.profile != NULL }
 -- ds.copy-small: $person-card.place
 if: { person-card.place != NULL }
 
--- ds.copy-small: $person-card.desc
-if: { person-card.desc != NULL }
-
 -- ds.row:
 align-content: left
 inset: $ds.spaces.inset-tall.zero-small
@@ -53,6 +51,15 @@ src: $obj.icon
 link: $obj.link
 
 -- end: ds.row
+
+-- ds.copy-small: $person-card.desc
+if: { person-card.desc != NULL }
+
+-- ds.column:
+content: $person-card.ui
+align-content: left
+
+-- end: ds.column
 
 -- end: ds.column
 

@@ -712,8 +712,8 @@
     },
     "components/person-card.ftd": {
       "name": "components/person-card.ftd",
-      "checksum": "544E5FBAEA81D2C7AD9F0D843B20A247C322DFA13A57902199E4659907315FCB",
-      "size": 4042
+      "checksum": "38F0FBE3482B275DEBF6904336107C4C3B630C61D92776F20DE6E36040433E9C",
+      "size": 4137
     },
     "components/pricing.ftd": {
       "name": "components/pricing.ftd",
@@ -891,6 +891,6 @@
       "size": 78
     }
   },
-  "zip_url": "https://github.com/fastn-community/design-system/archive/432342f9e6ac0e4a7160ea807008c3ee2af09c27.zip",
-  "checksum": "8E7D5B7682E06341D4FC48F4E3BFF09ED9EEA4C367B65726C89D54690967F2EB"
+  "zip_url": "https://github.com/fastn-community/design-system/archive/3df8d18f4daafb75470004cad132e8cc2e56e9f9.zip",
+  "checksum": "F49230B8546D32754AF56D66E884317DACE9B9A1261F11FB648551AB5F8CDA06"
 }
