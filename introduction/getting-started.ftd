@@ -1,0 +1,36 @@
+-- ds.page: Getting Started
+
+-- ds.section-column:
+flush: full
+align-content: left
+
+	-- ds.detail: Build consistent and professional websites in minutes
+	
+	Our design system package offers a wide range of components, typographies,
+	and foundational elements to ensure your site looks consistent and
+	professional. It's customizable to match your brand and easy to use
+	even to non-programmers. Check out our demo websites for inspiration
+	and our [tutorial](https://fastn.com/blog/design-system/) to get
+	started quickly.
+
+	We recommend using the FifthTry Editor to use our Design System package, as
+	all projects created with FifthTry come pre-installed with it. Follow these
+	steps to start building your site:
+
+	Insert video:
+	https://www.youtube.com/watch?v=lh3rRbVBses&ab_channel=NandhiniElumalai
+
+Log in to your FifthTry account, or sign up if you don’t have one.
+Click the Create new site + button at the top of your dashboard.
+On the prompted page, enter your desired website domain name (e.g., my-site, read-my-blog). You can choose any domain name at this stage.
+Click the Create site button and navigate to the Editor tab.
+Your site will come pre-installed with the Design System package, including the FASTN.ftd and index.ftd files.
+
+Start building your website using the [components and typography](https://fastn-community.github.io/design-system/) available in the Design System package. Detailed usage instructions are provided on each component’s page.
+
+Note: 
+If you want to learn more about the components or prefer using the Design System package in a different editor, check out our [tutorial](https://fastn.com/blog/design-system/)
+
+-- end: ds.section-column
+
+-- end: ds.page

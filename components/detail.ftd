@@ -14,7 +14,7 @@ body body:
 		icon: arrow-left
 		link: index.html
 		
-		-- ds.heading-hero: $detail.title
+		-- ds.heading-large: $detail.title
 		width: hug-content
 
 		-- end: ds.row
