@@ -218,6 +218,10 @@ list-of-files: $toc
 -- pr.toc-item list toc:
 $processor$: pr.toc
 
+- Introduction:
+  - Getting Started: introduction/getting-started/
+  - Storybook: introduction/storybook/
+
 - Components:
   - Alert: components/alert/
   - Avatar: components/avatar/
@@ -438,6 +442,7 @@ background.solid: $ds.colors.background.step-1
 			align-content: bottom-center
 			overflow-y: scroll
 			spacing: $ds.spaces.vertical-gap.zero
+			height.fixed.px: 360
 			
 				-- ds.row:
 				spacing: $ds.spaces.horizontal-gap.space-between
@@ -698,6 +703,10 @@ spacing: $ds.spaces.vertical-gap.small
 pr.toc-item file:
 module navigate: navigate
 string folder:
+boolean $open: false
+
+-- ds.column:
+align-content: left
 
 -- ds.row:
 align-content: left
@@ -719,5 +728,7 @@ $on-click$: $ftd.set-string($a = $render-files-children.navigate.active-title, v
 	style: medium
 	
 -- end: ds.row
+
+-- end: ds.column
 
 -- end: render-files-children
