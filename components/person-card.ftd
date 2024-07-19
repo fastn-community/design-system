@@ -6,7 +6,7 @@ optional ftd.image-src avatar:
 optional string profile:
 optional string place:
 optional body desc:
-optional r.social-details list social-links:
+r.social-details list social-links:
 optional ftd.background background:
 boolean border: false
 ftd.color border-color: $ds.colors.border
@@ -46,7 +46,6 @@ align-content: left
 inset: $ds.spaces.inset-tall.zero-small
 
 -- ftd.image:
-if: { person-card.social-links != NULL }
 for: $obj in $person-card.social-links
 src: $obj.icon
 link: $obj.link
