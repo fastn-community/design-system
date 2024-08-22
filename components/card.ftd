@@ -4,13 +4,14 @@ body body:
 optional ftd.image-src image:
 optional string cta-text:
 optional string cta-link:
+ftd.resizing width: hug-content
 
 	-- ds.column:
 	align-content: left
 	border: $ds.borders.uniform.small
 	radius: $ds.radius.small
 	inset: $ds.spaces.inset-square.medium
-	width: hug-content
+	width: $card.width
 
 		-- ftd.image:
 		src: $card.image
